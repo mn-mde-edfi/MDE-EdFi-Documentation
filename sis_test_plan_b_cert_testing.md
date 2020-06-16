@@ -2,6 +2,7 @@
 When certification begins, vendors will be provided a key and secret to a sandbox [Operational Data Store (ODS)](https://techdocs.ed-fi.org/display/ETKB/Ed-Fi+Operational+Data+Store+and+API), accessible via API. This ODS will contain the Minnesota Education School and District records synchronized with [MDE ORG](https://public.education.mn.gov/MdeOrgView/), as well as the MN specific descriptors listed in this documentation. When submitting data for each of the Certification scenarios, we ask that you use a district you have access to, and schools within the district.
 
 ## Accessing the Sandbox
+_Please note_ that for the 20-21 school year, sandbox environments now have ```sb20_``` in the base paths for the API. For example: ttps://test.edfi.education.mn.gov/**sb20_**/edfi.ods.webapi/data/v3/. This change will likely require a change in your integration code.
 
 ### Sandbox Admin Website
 As part of Sandbox certification, you will need access to the [Sandbox Admin Site](https://test.edfi.education.mn.gov/sb20_/EdFi.Ods.Admin.Web). To request an account, [contact MDE by email](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us). In the Sandbox Admin Site, you will be able to create ODS instances to use for development and testing of your integrations.
