@@ -5,7 +5,7 @@ When certification begins, vendors will be provided a key and secret to a sandbo
 _Please note_ that for the 20-21 school year, sandbox environments now have ```sb20_``` in the base paths for the API. For example: ttps://test.edfi.education.mn.gov/**sb20_**/edfi.ods.webapi/data/v3/. This change will likely require a change in your integration code.
 
 ### Sandbox Admin Website
-As part of Sandbox certification, you will need access to the [Sandbox Admin Site](https://test.edfi.education.mn.gov/sb20_/EdFi.Ods.Admin.Web). To request an account, [contact MDE by email](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us). In the Sandbox Admin Site, you will be able to create ODS instances to use for development and testing of your integrations.
+As part of Sandbox certification, you will need access to the [Sandbox Admin Site](https://test.edfi.education.mn.gov/sb20_/EdFi.Ods.Admin.Web). To request an account, [contact MDE by email](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us). In the Sandbox Admin Site, you will be able to create ODS instances to use for development and testing of your integrations. ([The Ed-Fi TechDocs](https://techdocs.ed-fi.org/display/ODSAPI31/Using+the+Sandbox+Administration+Portal) have more detailed instructions on setting up sandboxes.)
 
 ### Swagger UI
 Ed-Fi uses the [Swagger UI tool](https://swagger.io/tools/swagger-ui/) to visualize and interact with the ODS API. Developers can access this [UI for the Sandbox](https://test.edfi.education.mn.gov/sb20_/EdFi.Ods.SwaggerUI/) before building integrations as necessary.
