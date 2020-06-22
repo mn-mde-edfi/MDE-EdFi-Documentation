@@ -1,0 +1,61 @@
+{
+    "id": "string",
+    "entryDate": "2020-06-22",
+    "schoolReference": {
+      "schoolId": 0,
+      "link": {
+        "rel": "string",
+        "href": "string"
+      }
+    },
+    "schoolYearTypeReference": {
+      "schoolYear": 0,
+      "link": {
+        "rel": "string",
+        "href": "string"
+      }
+    },
+    "studentReference": {
+      "studentUniqueId": "string",
+      "link": {
+        "rel": "string",
+        "href": "string"
+      }
+    },
+    "entryGradeLevelDescriptor": "string",
+    "entryTypeDescriptor": "string",
+    "exitWithdrawDate": "2020-06-22",
+    "exitWithdrawTypeDescriptor": "string",
+    "_etag": "string",
+    "_ext": {
+      "MN": {
+        "specialEducationEvaluationStatusDescriptor": "string",
+        "stateAidCategoryDescriptor": "string",
+        "homeboundServiceIndicator": true,
+        "specialPupilIndicator": true,
+        "residentLocalEducationAgencyReference": {
+          "localEducationAgencyId": 0,
+          "link": {
+            "rel": "string",
+            "href": "string"
+          }
+        },
+        "membership": {
+          "membershipAttendanceUnitDescriptor": "string",
+          "attendance": 0,
+          "membership": 0,
+          "percentEnrolled": 0
+        },
+        "transportation": {
+          "transportationCategoryDescriptor": "string",
+          "transportingLocalEducationAgencyReference": {
+            "localEducationAgencyId": 0,
+            "link": {
+              "rel": "string",
+              "href": "string"
+            }
+          }
+        }
+      }
+    }
+  }

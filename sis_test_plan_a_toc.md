@@ -18,5 +18,5 @@ Once the Staging data reaches a satisfactory level of quality as determined by M
 ## References
 The following documents contain additional information:
 1. [Sandbox Certification Testing](sis_test_plan_b_cert_testing.md)
-2. Data Requirements and API Resources
-3. Staging Environment Load and Quality Check
+2. [Data Requirements and API Resources](sis_test_plan_c_data_reqs.md)
+3. [Staging Environment Load and Quality Check](sis_test_plan_d_staging.md)
