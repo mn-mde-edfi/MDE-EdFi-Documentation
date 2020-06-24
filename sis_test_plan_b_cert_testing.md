@@ -49,7 +49,7 @@ Authentication In Ed-Fi 3.x ODS/API has been updated to use two-legged OAuth 2.0
 - All Descriptor references now require namespaces, and do not rely on the concept of a default operational context. Descriptor references must be formatted as follows: ```uri://[organization indicator]/[name of descriptor]#[code value]``` For example: ```uri://education.mn.gov/ProgramTypeDescriptor#Special Education```
 - The School IDs and District IDs used for the ODS/API resources are the MDE State Organization IDs (stateOrganizationID).
 
-## Minnesota Ditrict and School IDs
+## Minnesota District and School IDs
 The MDE **stateOrganizationID** (assigned in MDE ORG) is formatted as follows: ```ttddddsssmmm```, where:
 - ``tt`` = district type
 - ``dddd`` = district number, left zero filled
