@@ -10,45 +10,45 @@ This association represents the School in which a student is enrolled. The seman
 
 **Scenarios**
 1.	Submit an Early Education Enrollment record (StudentSchoolAssociation with entrygradelevel = EE) 
-    a.	Required elements
-        i.	School Id
-        ii.	Student Unique Id
-        iii.	Entry Grade Level = EE
-        iv.	Entry Type (Last Location Code) = 0
-        v.	Entry Date = 9/5/2020
-        vi.	Exit Withdraw Date (Defaulted to end of school year)
-        vii.	Exit Withdraw Type = 20
-        viii.	Homebound Service Indicator = N
-        ix.	Resident Local Education Agency
-        x.	Special Pupil Indicator = N
-    b.	Data not collected for Early Education
-        i.	State Aid Category
-        ii.	Membership Attendance Units
-        iii.	Membership Attendance Percent Enrolled
-        iv.	Special Education Eval Status
-        v.	Transportation
+    - Required elements
+        - School Id
+        - Student Unique Id
+        - Entry Grade Level = EE
+        - Entry Type (Last Location Code) = 0
+        - Entry Date = 9/5/2020
+        - Exit Withdraw Date (Defaulted to end of school year)
+        - Exit Withdraw Type = 20
+        - Homebound Service Indicator = N
+        - Resident Local Education Agency
+        - Special Pupil Indicator = N
+    - Data not collected for Early Education
+        - State Aid Category
+        - Membership Attendance Units
+        - Membership Attendance Percent Enrolled
+        - Special Education Eval Status
+        - Transportation
 2.	Submit an Early Education Enrollment record (StudentSchoolAssociation with entrygradelevel = 1) 
-    a.	School Id
-    b.	Student Unique Id
-    c.	Entry Grade Level = 1
-    d.	Entry Type (Last Location Code) = 4
-    e.	Entry Date = 9/6/2020
-    f.	Exit Withdraw Date (Defaulted to end of school year)
-    g.	Exit Withdraw Type = 40
-    h.	Homebound Service Indicator = N
-    i.	Resident Local Education Agency
-    j.	Special Pupil Indicator = N
+    - School Id
+    - Student Unique Id
+    - Entry Grade Level = 1
+    - Entry Type (Last Location Code) = 4
+    - Entry Date = 9/6/2020
+    - Exit Withdraw Date (Defaulted to end of school year)
+    - Exit Withdraw Type = 40
+    - Homebound Service Indicator = N
+    - Resident Local Education Agency
+    - Special Pupil Indicator = N
 3.	Submit an Early Education Enrollment record (StudentSchoolAssociation with entrygradelevel = PA) 
-    a.	School Id
-    b.	Student Unique Id
-    c.	Entry Grade Level = PA
-    d.	Entry Type (Last Location Code) = 4
-    e.	Entry Date = 9/6/2020
-    f.	Exit Withdraw Date (Defaulted to end of school year)
-    g.	Exit Withdraw Type = 40
-    h.	Homebound Service Indicator = N
-    i.	Resident Local Education Agency
-    j.	Special Pupil Indicator = N
+    - School Id
+    - Student Unique Id
+    - Entry Grade Level = PA
+    - Entry Type (Last Location Code) = 4
+    - Entry Date = 9/6/2020
+    - Exit Withdraw Date (Defaulted to end of school year)
+    - Exit Withdraw Type = 40
+    - Homebound Service Indicator = N
+    - Resident Local Education Agency
+    - Special Pupil Indicator = N
 
 
 ## Resource: Parent 
@@ -60,21 +60,21 @@ None
 
 **Scenarios**
 1.	Submit Parent Records for the following Early Ed Student in Gradelevel EE
-    a.	Required Elements:
-        i.	Parent Unique Id
-        ii.	firstName
-        iii.	lastSurname
-        iv.	MiddleName
-        v.	generationCodeSuffix
-        vi.	highestCompletedLevelOfEducationDescriptor
-        vii.	householdIncome
-        viii.	householdSize
-        ix.	receivingInterpreterAssistance
-        x.	classroomVolunteerDescriptor
-        xi.	birthDate
-        xii.	sexDescriptor
-    b.	Submit Parent Records for the following Early Ed Student in Gradelevel 1
-    c.	Submit Parent Records for the following Early Ed Student in Gradelevel PA
+    - Required Elements:
+        - Parent Unique Id
+        - firstName
+        - lastSurname
+        - MiddleName
+        - generationCodeSuffix
+        - highestCompletedLevelOfEducationDescriptor
+        - householdIncome
+        - householdSize
+        - receivingInterpreterAssistance
+        - classroomVolunteerDescriptor
+        - birthDate
+        - sexDescriptor
+2. Submit Parent Records for the following Early Ed Student in Gradelevel 1
+3. Submit Parent Records for the following Early Ed Student in Gradelevel PA
 
 ## Resource: StudentParentAssociation
 **Description**
@@ -87,10 +87,10 @@ This association relates students to their parents, guardians, or caretakers.
 
 **Scenarios**
 1.	Submit Student Parent Association Record for the Early Education Student in Gradelevel EE
-    a.	Required Elements:
-        i.	Parent Unique Id
-        ii.	Student Unique Id
-        iii.	Relation Descriptor
+    - Required Elements:
+        - Parent Unique Id
+        - Student Unique Id
+        - Relation Descriptor
 2.	Submit Student Parent Association Record for the Early Education Student in Gradelevel 1
 3.	Submit Student Parent Association Record for the Early Education Student in Gradelevel PA
 
@@ -104,7 +104,7 @@ This association indicates any relationship between a student and an education o
 
 **Scenarios**
 1.	Create a StudentEducationOrganizationAssociation for the Student Enrolled in Gradelevel EE
-    a.	Include all elements except StudentCharacteristicsDescriptors (ADP, RAEL, IMMIGRANT, SLIFE)
+    - Include all elements except StudentCharacteristicsDescriptors (ADP, RAEL, IMMIGRANT, SLIFE)
 2.	Create a StudentEducationOrganizationAssociation for the Student Enrolled in Gradelevel 1
 3.	Create a StudentEducationOrganizationAssociation for the Student Enrolled in Gradelevel PA
 
@@ -120,31 +120,31 @@ This association represents Students in either School Readiness or Early Childho
 
 **Scenarios**
 1.	Associate gradelevel EE Enrolled Student with this SR StudentEarlyEducationProgramAssociation
-    a.	Begin Date: 9/5/2020
-    b.	End Date: 6/11/2021 (default to last day in the school year)
-    c.	End Reason Code = PE-01
-    d.	Membership: 640
-    e.	Attendance: 580
-    f.	Submit funding sources PF and CC
+    - Begin Date: 9/5/2020
+    - End Date: 6/11/2021 (default to last day in the school year)
+    - End Reason Code = PE-01
+    - Membership: 640
+    - Attendance: 580
+    - Submit funding sources PF and CC
 2.	Associate same gradelevel EE Enrolled Student with this ECFE StudentEarlyEducationProgramAssociation
-    a.	Begin Date =  9/5/2020
-    b.	End Date = 10/15/2020 
-    c.	End Reason Code = PE-02
-    d.	Membership Hours = 40
-    e.	Attendance Hours = 30
-    f.	Submit funding sources PF, CC and TITLE
+    - Begin Date =  9/5/2020
+    - End Date = 10/15/2020 
+    - End Reason Code = PE-02
+    - Membership Hours = 40
+    - Attendance Hours = 30
+    - Submit funding sources PF, CC and TITLE
 3.	Associate gradelevel 1 Enrolled Student with an ECFE StudentEarlyEducationProgramAssociation
-    a.	Begin Date: 10/6/2020
-    b.	End Date: 6/11/2020  (default to last day in the school year)
-    c.	Membership: 640
-    d.	Attendance: 580
-    e.	Submit funding sources ECFE and CC
+    - Begin Date: 10/6/2020
+    - End Date: 6/11/2020  (default to last day in the school year)
+    - Membership: 640
+    - Attendance: 580
+    - Submit funding sources ECFE and CC
 4.	Associate gradelevel PA Enrolled Student with an SR StudentEarlyEducationProgramAssociation
-    a.	Begin Date: 9/7/2020
-    b.	End Date: 6/11/2020  (default to last day in the school year)
-    c.	Membership: 640
-    d.	Attendance: 580
-    e.	Submit funding sources CSPF and OD
+    - Begin Date: 9/7/2020
+    - End Date: 6/11/2020  (default to last day in the school year)
+    - Membership: 640
+    - Attendance: 580
+    - Submit funding sources CSPF and OD
 
 ## Resource: StudentHomelessProgramAssociation
 **Description**
@@ -157,9 +157,9 @@ This association represents the McKinney-Vento Homeless Program program(s) that 
 
 **Scenarios**
 1.	Submit a StudentHomelessProgramAssociation for the EE enrolled student 
-    a.	Primary Nighttime Residence  = SHR
-    b.	Begin Date = 9/5/2019
-    c.	End Date = 12/25/2020
+    - Primary Nighttime Residence  = SHR
+    - Begin Date = 9/5/2019
+    - End Date = 12/25/2020
 
 ## Resource: StudentLanguageInstructionProgramAssociation
 
@@ -173,7 +173,7 @@ This association represents the Title III Language Instruction for Limited Engli
 
 **Scenarios**
 1.	Submit StudentLanguageInstructionProgramAssociation for EE enrolled Student
-    a.	Begin Date = 9/5/2019	
-    b.	End Date = 5/25/2021
-    c.	Lang Service Code = Transitional Bilingual
-    d.	EL Participation = 1
+    - Begin Date = 9/5/2019	
+    - End Date = 5/25/2021
+    - Lang Service Code = Transitional Bilingual
+    - EL Participation = 1

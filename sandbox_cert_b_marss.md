@@ -9,13 +9,13 @@ This entity represents an individual for whom instruction, services, and/or care
 
 **Certification Scenarios**
 1.	Create 14 student records including the following elements:
-    a.	studentUniqueID
-    b.	birthdate
-    c.	birthSexDescriptor
-    d.	firstName
-    e.	generationCodeSuffix
-    f.	lastSurname
-    g.	middleName
+    - studentUniqueID
+    - birthdate
+    - birthSexDescriptor
+    - firstName
+    - generationCodeSuffix
+    - lastSurname
+    - middleName
 
 ## Resource: StudentSchoolAssociations
 
@@ -28,24 +28,24 @@ This association represents the School in which a student is enrolled. The seman
 
 **Certification Scenarios**
 1.	Enroll student 1 at Elementary School, including:
-    a.	homeboundServiceIndicator
-    b.	specialPupilIndicator
+    - homeboundServiceIndicator
+    - specialPupilIndicator
 2.	Enroll student 2 at Middle School. 
 3.	Withdraw student from Middle School.
 4.	Enroll student 2 at High School.
 5.	Create the following records for Student 2:
-    a.	An enrollment
-    b.	Withdrawal 
-    c.	Re-enrollment of a student who changes resident districts but does not change schools.  Place a 20 day gap between records. 
+    - An enrollment
+    - Withdrawal 
+    - Re-enrollment of a student who changes resident districts but does not change schools.  Place a 20 day gap between records. 
 6.	Update Student 1's Percent Enrolled to 50% and set membershipAttendanceUnitDescriptor to days, set membership and attendance.
 7.	Update Student **1's Percent Enrolled to 100%**, membershipAttendanceUnitDescriptor to hours and adjust membership and attendance accordingly.
 8.	Update Student 2's Transportation Category.
 9.	Update Student 3's StateAid Category.
 10.	Create 2 enrollment records (a, b) for a student that is in two different schools within the same district at the same time.  Enrollment dates 09/10/17 through 06/10/18.  
 11.	Create the records for: 
-    a.	An enrollment, 
-    b.	Withdrawal and 
-    c.	Re-enrollment for a kindergarten student who receives an IEP mid-year – send updated special education evaluation status. (Grade change from KA to HK, and specialEducationEvaluationStatus updated)
+    - An enrollment, 
+    - Withdrawal and 
+    - Re-enrollment for a kindergarten student who receives an IEP mid-year – send updated special education evaluation status. (Grade change from KA to HK, and specialEducationEvaluationStatus updated)
 
 ## Resource: StudentEducationOrganizationAssociation
 **Description**
@@ -58,18 +58,18 @@ This association indicates any relationship between a student and an education o
 
 **Scenarios**
 1.	Create a StudentEducationOrganizationAssociation between Student 1 and an Elementary School, Include the following data points:
-    a.	EthnicCode by sending a StudentCharacteristic = 'American Indian - Alaskan Native (Minnesota)'
-    b.	Race = 'American Indian - Alaska Native'
-    c.	Birthdate
-    d.	sexDescriptor
-    e.	firstName, middleName, lastName, generationCodeSuffix
-    f.	hispanicLatinoEthnicity
-    g.	languageDescriptor
-    h.	languageUseDescriptor = 'Home Language'
-    i.	studentIdentificationCodes
-    j.	studentIdentificationSystemDescriptor = 'Local'
-    k.	assigningOrganizationIdentificationCode = 'District Id'
-    l.	identificationCode = local use code
+    - EthnicCode by sending a StudentCharacteristic = 'American Indian - Alaskan Native (Minnesota)'
+    - Race = 'American Indian - Alaska Native'
+    - Birthdate
+    - sexDescriptor
+    - firstName, middleName, lastName, generationCodeSuffix
+    - hispanicLatinoEthnicity
+    - languageDescriptor
+    - languageUseDescriptor = 'Home Language'
+    - studentIdentificationCodes
+    - studentIdentificationSystemDescriptor = 'Local'
+    - assigningOrganizationIdentificationCode = 'District Id'
+    - identificationCode = local use code
 2.	Update Student 1's record to include Ancestry of Ethnic Origin = ai-cherokee
 3.	Update Student 1's record to include a second Ancestry of Ethnic Origin = as-burmese
 4.	Create a StudentEducationOrganizationAssociation between Student 2 and Middle School.
@@ -94,18 +94,18 @@ New properties:
 **MARSS**
 
 1.	Create calendar record for Elementary School grades 1 through 5 (do not include kindergarten as grade level)
-    a.	Length of day = 360
-    b.	Instructional Days = 167
+    - Length of day = 360
+    - Instructional Days = 167
 2.	Update calendar created in scenario one by reducing the Instructional Days from 167 to 166
 3.	Create calendar record for Elementary School for Kindergarten only - use grade KG
-    a.	Length of day = 360
-    b.	Instructional Days = 165
+    - Length of day = 360
+    - Instructional Days = 165
 4.	Create Full Year School Readiness Plus calendar for Elementary School grade RA
-    a.	Length of day = 150
-    b.	Instructional Days = 148
+    - Length of day = 150
+    - Instructional Days = 148
 5.	Create Half Year School Readiness Plus calendar for Elementary School grade RB
-    a.	Length of day = 150
-    b.	Instructional Days = 78
+    - Length of day = 150
+    - Instructional Days = 78
 6.	Create Middle School Calendar
 7.	Create High School Calendar
 

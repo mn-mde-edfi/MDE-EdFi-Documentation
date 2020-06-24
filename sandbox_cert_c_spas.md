@@ -78,9 +78,9 @@ This association represents the McKinney-Vento Homeless Program program(s) that 
 1.	Associate Student 6 with this StudentProgramAssociation
 2.	Change the primary nighttime residence code to 'Doubled-Up' and Unaccompanied Youth to True
 3.	Submit a StudentHomelessProgramAssociation for the EE enrolled student 
-    a.	Primary Nighttime Residence  = SHR
-    b.	Begin Date 9/5/2019
-    c.	End Date 12/25/2020
+      - Primary Nighttime Residence  = SHR
+      - Begin Date 9/5/2019
+      - End Date 12/25/2020
 
 ## Resource: StudentLanguageInstructionProgramAssociation
 **Description**
