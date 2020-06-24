@@ -51,10 +51,10 @@ Authentication In Ed-Fi 3.x ODS/API has been updated to use two-legged OAuth 2.0
 
 ## Minnesota Ditrict and School IDs
 The MDE **stateOrganizationID** (assigned in MDE ORG) is formatted as follows: ```ttddddsssmmm```, where:
-•	``tt`` = district type
-•	``dddd`` = district number, left zero filled
-•	``sss`` = school number, left zero filled, 000 for districts
-•	``mmm`` = 000 for all organizations reported in Ed-Fi
+- ``tt`` = district type
+- ``dddd`` = district number, left zero filled
+- ``sss`` = school number, left zero filled, 000 for districts
+- ``mmm`` = 000 for all organizations reported in Ed-Fi
  
 The MDE **stateOrganizationID** value is stored in Ed-Fi on the Ed-Fi **EducationOrganizationIdentificationCodes** collection and is surfaced via the Ed-Fi **LocalEducationAgencies** and **Schools** resource endpoints. 
 
