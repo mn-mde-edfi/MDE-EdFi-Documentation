@@ -20,3 +20,6 @@ The following documents contain additional information:
 1. [Sandbox Certification Testing](sis_test_plan_b_cert_testing.md)
 2. [Data Requirements and API Resources](sis_test_plan_c_data_reqs.md)
 3. [Staging Environment Load and Quality Check](sis_test_plan_d_staging.md)
+
+## Additional Resources
+Vendors may wish to review the Ed-Fi Alliance's help on [Using the Online Documentation](https://techdocs.ed-fi.org/display/ODSAPI34/Using+the+Online+Documentation) before working in the MDE Sandbox.
