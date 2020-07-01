@@ -17,6 +17,8 @@ This entity represents an individual for whom instruction, services, and/or care
     - lastSurname
     - middleName
 
+_Note:_ You will not be able to view or edit students until you claim them with the creation of an enrollment record via ```StudentSchoolAssociation``` (see next section).
+
 ## Resource: StudentSchoolAssociations
 
 **Description**
