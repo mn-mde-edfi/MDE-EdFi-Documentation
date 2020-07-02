@@ -117,4 +117,6 @@ Program Records for each of the following program types will be loaded for each 
 - The **educationOrganizationReference** for the **StudentProgramAssociation** is the **SchoolId**.  
 - The **educationOrganizationReference** on the StudentProgramAssociation's **programReference** is the **LocalEducationAgencyId**.
 
-
+# Navigation
+- [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
+- [Advance to StudentProgramAssociations](sandbox_cert_c_spas.md)

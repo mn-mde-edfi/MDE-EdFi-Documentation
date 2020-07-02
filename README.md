@@ -4,8 +4,8 @@ This repository contains documentation for Minnesota's implementation of the [Ed
 - [Ed-Fi Data Standard](https://techdocs.ed-fi.org/display/ETKB/Ed-Fi+Data+Standard)
 - [Ed-Fi Operational Data Store (ODS) and API](https://techdocs.ed-fi.org/display/ETKB/Ed-Fi+Operational+Data+Store+and+API)
 
-## Markdown Pilot
-In June-July of 2020, MNIT supporting MDE is testing a conversion of the 2020-2021 school year documentation to markdown files. While the official documentation remains in Word and Excel within this repository, the markdown files at the top level of this repository represent a pilot of storing and maintaining the documentation in markdown, starting with:
+## Markdown Documentation
+In June-July of 2020, MNIT supporting MDE is converted much of the 2020-2021 school year documentation to markdown files. While the official documentation remains in Word and Excel within this repository, the markdown files at the top level of this repository represent a pilot of storing and maintaining the documentation in markdown, starting with:
 
 - [SIS and Vendor Test Plan](sis_test_plan_a_toc.md)
 - [Sandbox Certification Scenarios](sandbox_cert_a_toc.md)

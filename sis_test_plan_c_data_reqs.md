@@ -12,7 +12,7 @@ As an example, to view the required resource properties for a **studentSchoolAss
 Properties in a **studentSchoolAssociation** can be viewed as an [example JSON object](data\example_value_studentSchoolAssociation.json) by selecting **"Example Value"**:
 ![ODS API Swagger studentSchoolAssociations Screen Capture](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ods_api_swagger_studentSchoolAssociations_3.1.1.png "ODS API studentSchoolAssociations Example Value")
 
-Definitions and Data Types in the **studentSchoolAssociations** can be viewed by selecting **“Model”** just to the right of the "Example Value" option.
+Definitions and Data Types in the **studentSchoolAssociations** can be viewed by selecting **“Model”** just to the right of the "Example Value" option. Required components are marked with a red *.
 
 ## Mapping Documentation
 School Year 20-21 will introduce the Ed-Fi collection of Minnesota Common Course Catalogue (MCCC) and Graduation Requirements (GRR). MCCC will not implement any of the Early Childhood elements at this time.
@@ -60,6 +60,7 @@ Education Organization References in the Ed-Fi API allow an API client to submit
 For details on the 2020-2021 API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](sandbox_cert_a_toc.md). That documentation contains resources and scenarios for MARSS, StudentProgramAssociations, and 2020-2021 Early Education Enrollment.
 
 ## 2020-2021 MDE Submitted Data Requirements: API Resources
+Several of the required data elements are provided by MDE within the ODS. This section details those elements.
 ### Resource: LocalEducationAgencies
 
 **Description**
@@ -84,7 +85,7 @@ Note: All required School data will be loaded by MDE.
 
 **Description**
 
-**Ed-Fi Description**: This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students. **MDE will create the following programs for each district with these program types**: 
+*Ed-Fi Description*: This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students. **MDE will create the following programs for each district with these program types**: 
 
 - Section 504 Plan
 - Title I Part A
@@ -127,3 +128,6 @@ The above image describes the dependencies required to work with the MDE Ed-Fi m
 7.	StudentProgramAssociations can be loaded once Programs and StudentSchoolAssociations have been loaded.
 8.	Parent Records, Students and Enrollment records are required prior to setting the Student Parent Association.
 
+# Navigation
+- [Return to SIS Test Plan Overview](sis_test_plan_a_toc.md)
+- [Advance to Staging Environment Load and Quality Check](sis_test_plan_d_staging.md)

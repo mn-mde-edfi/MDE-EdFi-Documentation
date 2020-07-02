@@ -8,7 +8,7 @@ _Please note_ that for the 20-21 school year, sandbox environments now have ```s
 As part of Sandbox certification, you will need access to the [Sandbox Admin Site](https://test.edfi.education.mn.gov/sb20_/EdFi.Ods.Admin.Web). To request an account, [contact MDE by email](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us). In the Sandbox Admin Site, you will be able to create ODS instances to use for development and testing of your integrations. ([The Ed-Fi TechDocs](https://techdocs.ed-fi.org/display/ODSAPI31/Using+the+Sandbox+Administration+Portal) have more detailed instructions on setting up sandboxes.)
 
 ### Swagger UI
-Ed-Fi uses the [Swagger UI tool](https://swagger.io/tools/swagger-ui/) to visualize and interact with the ODS API. Developers can access this [UI for the Sandbox](https://test.edfi.education.mn.gov/sb20_/EdFi.Ods.SwaggerUI/) before building integrations as necessary.
+Ed-Fi uses the [Swagger UI tool](https://swagger.io/tools/swagger-ui/) to visualize and interact with the ODS API. Developers can access this [UI for the Sandbox](https://test.edfi.education.mn.gov/sb20_/EdFi.Ods.SwaggerUI/) to test-drive CRUD actions before building integrations as necessary.
 Please note:
 - All MN Specific resources defined for the **19-20** School Collection can be found under the **Minnesota-SISVendor-Profile**.
 - All MN Specific resources defined for the **20-21** School Collection can be found under the **Minnesota-Twenty-Twenty-One-SISVendor-Profile**.
@@ -88,10 +88,6 @@ Examples:
 - The MDE State Organization ID for [Mayo Senior High](https://public.education.mn.gov/MdeOrgView/organization/show/2734) (an individual school) is ```10535315000```. The corresponding Ed-Fi SchoolId is ```10535315```.
 - The MDE State Organization ID for [Rochester Public School District](https://public.education.mn.gov/MdeOrgView/organization/show/527) (an LEA) is ```10535000000```. The corresponding Ed-Fi LocalEducationAgencyId is ```10535000```
 
-
-
-
-
-
-
-
+# Navigation
+- [Return to SIS Test Plan Overview](sis_test_plan_a_toc.md)
+- [Advance to Data Requirements and API Resources](sis_test_plan_c_data_reqs.md)
