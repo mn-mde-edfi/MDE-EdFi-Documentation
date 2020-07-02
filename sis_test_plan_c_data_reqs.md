@@ -1,5 +1,5 @@
 # 2020-2021 Data Requirements and API Resources
-This document is part of the MDE Ed-Fi [Vendor and District Test Plan](sis_test_plan_a_toc.md). It is currently a stub and being built out to replace the similarly named section in the [official documentation](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/blob/master/2020-21%20MDE%20Ed-Fi%20Documentation/2020-21%20SIS%20Vendor%20and%20District%20Test%20Plan.docx).
+This document is part of the MDE Ed-Fi [Vendor and District Test Plan](sis_test_plan_a_toc.md). It is intended to complement and build upon the similarly named section in the [official documentation](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/blob/master/2020-21%20MDE%20Ed-Fi%20Documentation/2020-21%20SIS%20Vendor%20and%20District%20Test%20Plan.docx). For details on the API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](sandbox_cert_a_toc.md)
 
 ## API Documentation
 For each of the resources described in this document, the elements/properties required are included and browseable in the [Sandbox Swagger UI](https://test.edfi.education.mn.gov/sb20_/EdFi.Ods.SwaggerUI/) (aka "Swagger") under the **Minnesota-SISVendor-Profile** and the **Minnesota-Twenty-Twenty-One-SISVendor-Profile**.

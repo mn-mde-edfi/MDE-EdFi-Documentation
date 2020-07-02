@@ -42,12 +42,36 @@ Authentication In Ed-Fi 3.x ODS/API has been updated to use two-legged OAuth 2.0
 - When creating a sandbox, you have the option of including a set of sample data in the sandbox. The sample data used, is associated with St. Paul Public School District (LocalEducationAgencyId = 10625000). When you do not select the option to include sample data, your sandbox database will be loaded with an essentially empty ODS, except that it will include MN Schools and Districts, and the Descriptors that MDE has customized for this implementation.  
 - The actual certification test will be conducted in a sandbox with no sample data loaded and you will reference your own MDE Schools, Districts and Descriptors in the Scenarios.
 - The Sandbox environment ignores the School Year included in the API base URL. When preparing submissions to Staging and Production, remember to include the year, i.e. "2021". 
+- The School IDs and District IDs used for the ODS/API resources are the MDE State Organization IDs (stateOrganizationID). See section below for details.
 - MN custom descriptor codes have been loaded under the namespace ```uri://education.mn.gov/```
 - Assessment specific descriptors for the MCA/MTAS and Access/Access-ALT assessments have been namespaced as follows with a reference to the assessment in the namespace:
   - ```uri://education.mn.gov/mcamtas/assessmentReportingMethodDescriptor```
   - ```uri://education.mn.gov/access/assessmentReportingMethodDescriptor```
 - All Descriptor references now require namespaces, and do not rely on the concept of a default operational context. Descriptor references must be formatted as follows: ```uri://[organization indicator]/[name of descriptor]#[code value]``` For example: ```uri://education.mn.gov/ProgramTypeDescriptor#Special Education```
-- The School IDs and District IDs used for the ODS/API resources are the MDE State Organization IDs (stateOrganizationID).
+  - This can be seen when updating a studentSchoolAssociation record. For example, within the MN extension part of the record (shown below), the code value for ```membershipAttendanceUnitDescriptor``` is not merely "Days", but **"MembershipAttendanceUnitDescriptor#Days"**:
+  ```javascript
+  "_ext": {
+    "MN": {
+      "homeboundServiceIndicator": true,
+      "specialPupilIndicator": true,
+      "residentLocalEducationAgencyReference": {
+        "localEducationAgencyId": 10625000
+      },
+      "membership": {
+        "membershipAttendanceUnitDescriptor": "uri://education.mn.gov/MembershipAttendanceUnitDescriptor#Days",
+        "attendance": 180,
+        "membership": 180,
+        "percentEnrolled": 100
+      },
+      "transportation": {
+        "transportationCategoryDescriptor": "uri://education.mn.gov/TransportationCategoryDescriptor#01",
+        "transportingLocalEducationAgencyReference": {
+          "localEducationAgencyId": 10625000
+        }
+      }
+    }
+  }
+  ```
 
 ## Minnesota District and School IDs
 The MDE **stateOrganizationID** (assigned in MDE ORG) is formatted as follows: ```ttddddsssmmm```, where:

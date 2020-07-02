@@ -22,7 +22,7 @@ _Note:_ You will not be able to view or edit students until you claim them with 
 ## Resource: StudentSchoolAssociations
 
 **Description**
-This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation.
+This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation. _Remember_: when loading in data that references a Descriptor, you need to include a namespace, i.e. ```uri://education.mn.gov/[name of descriptor]#[code value]```.
 
 **Prerequisite Data**
 - Students
