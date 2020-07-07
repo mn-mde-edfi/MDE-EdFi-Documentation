@@ -27,7 +27,7 @@ Note that Ed-Fi URLs vary based on whether or not core Ed-Fi standard or MN exte
 - **Extensions**: The URL for addressing MN extension resources should include ‘mn’ after v3. For example, when addressing _studentSection504PlanProgramAssociations_, a Minnesota extension entity, the URL is: ```…/edfi.ods.webapi/data/v3/MN/studentSection504PlanProgramAssociations```
 - **Core**: The URL for addressing core resources should include ‘ed-fi’ after v3. For example, when addressing _StudentSchoolAssociation_, a core Ed-Fi entity, the URL is: ```…/edfi.ods.webapi/data/v3/ed-fi/StudentSchoolAssociation```
 
-**Important Note:** the school year must be included after **“/v3/”** and before the core/extension namespace in QA, Stage and Production, but **not in Sandbox**. For example:
+**Important Note:** the school year must be included after **“/v3/”** and before the core/extension namespace in Stage and Production, but **not in Sandbox**. For example:
 ```…/edfi.ods.webapi/data/v3/2021/ed-fi/StudentSchoolAssociation```
 ```…/edfi.ods.webapi/data/v3/2021/MN/studentSection504PlanProgramAssociations```
 
