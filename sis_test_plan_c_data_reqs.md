@@ -15,7 +15,7 @@ Properties in a **studentSchoolAssociation** can be viewed as an [example JSON o
 Definitions and Data Types in the **studentSchoolAssociations** can be viewed by selecting **“Model”** just to the right of the "Example Value" option. Required components are marked with a red *.
 
 ## Mapping Documentation
-School Year 20-21 will introduce the Ed-Fi collection of Minnesota Common Course Catalogue (MCCC) and Graduation Requirements (GRR). MCCC will not implement any of the Early Childhood elements at this time.
+School Year 21-22 will introduce the Ed-Fi collection of Minnesota Common Course Catalogue (MCCC) and Graduation Requirements (GRR). (These can be previewed in the 2021-2022 Sandbox Profile.) MCCC will not implement any of the Early Childhood elements at this time.
 
 In addition, MDE is beginning to work toward the eventual collection of Assessment pre-code and Assessment results data for the MCA and MTAS Assessment.  
 

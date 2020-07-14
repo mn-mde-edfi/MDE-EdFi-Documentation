@@ -8,3 +8,6 @@ Then advance to the specific sections on Sandbox Certification Scenarios:
 - [2020-2021 SIS Submitted MDE Ed-Fi API Resources: MARSS Data Collection](sandbox_cert_b_marss.md)
 - [StudentProgramAssociations](sandbox_cert_c_spas.md)
 - [2020-2021 Early Education Enrollment Certification Scenarios: API Resources](sandbox_cert_d_earlyed.md)
+
+## Future Developments
+- Looking for details on the Minnesota Common Course Catalogue (MCCC) in Ed-Fi? That documentation is currently being developed during the 2021 school year, in anticipation of implementation during the 2021-2022 school year. In the meantime, the Sandbox environment does have a "preview release" for 2021-2022 for your exploration. MDE is expecting minimal changes between that preview release and the final release.
