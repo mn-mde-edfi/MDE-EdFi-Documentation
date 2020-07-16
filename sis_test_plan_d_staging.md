@@ -18,7 +18,7 @@ For each school year, you will have a unique key and secret. Each key and secret
 [The SDK](https://github.com/mn-mde-edfi/MDE-Ed-Fi-ODS-API-SDK/tree/master/MDE-EdFiClientSDK/EdFi/OdsApiv31_2021/src/EdFi.OdsApi.Sdk
 ) includes both profile definitions.
 
-## Ed-Fi Identities API Integration Test 
+## Ed-Fi / MARSS Identities API Integration Test 
 
 Vendors have the option of building in support for interfacing with the MN Student Identity System to create new MARSS Student IDs (Ed-Fi Unique Id) through an Ed-Fi Identities API implementation. Vendors will be able to test their State ID creation integrations in the Staging environment. 
 
@@ -44,7 +44,7 @@ The general process for identity creation is as follows:
 ```
 
 - The identities API validates the student information against the MN Student Identity System.
-- If no match is found in the Student Id System – the student id is created
+- If no match is found in the Student Id System – the student id is created (this is equivalent to code 3002 in the SIS)
 - An HTTP response code ```201``` created is returned from the ODS/API.
 - If the Student ID System returns an error, the student id will fail to be created, and the ODS/API returns an HTTP status code ```400 Bad Request``` with the corresponding message for the error given (see specific errors below under Test 2).
 
@@ -85,7 +85,7 @@ Error|Description|Details
 
 Vendors will be expected to demonstrate a mechanism for timely reporting of ID creation errors back to users, either through the SIS user interface, or through a separate interface, or reporting method.
 
-## Ed-Fi Student Record Validation Test
+## Ed-Fi / MARSS Student Record Validation Test
 When Student Records are created or updated in the Ed-Fi ODS, the API will perform a look up against the MN State Student ID System to determine whether the student is associated to a valid student id.
 
 This validation feature will be enabled in the Staging Environment. Vendors must capture validation errors returned in the API response and surface these errors to district users. 
@@ -111,7 +111,7 @@ Error|Description|Details
 ---|---|---
 3000|(Input SSID not equal SSID)|Student identifying information given matches a single student, but the State Student Id specified as input does not match the official State Student Id of the matched student.
 3001|(Multiple SSIDs found)|Student identifying information given matches multiple existing students.
-3002|(No match found)|Student identifying information given matches multiple existing students.
+3002|(No match found)|Student identifying information given does not match any students. Also no possible suspect student matches found. (May be safe to add as a new student.)
 3003|(Possible Student Already Exists)|Student identifying information given does not match any students. However suspect student matches found using Clean Last Name Initial, Clean First Name Initial, Birth Date and gender equal. Review needed.
 3004|(Possible Student Already Exists)|Student identifying information given does not match any students. However suspect student matches found using Clean Last Name, Clean First Name equal. Exact match. Review needed.
 3005|(Possible Student Already Exists)|Student identifying information given does not match any students. However suspect student matches found using Soundex of Clean Last Name, Soundex of Clean First Name, Gender, and Birth Date + or - 1 year. Review needed.
