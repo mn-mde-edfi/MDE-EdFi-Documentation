@@ -37,8 +37,11 @@ Authentication In Ed-Fi 3.x ODS/API has been updated to use two-legged OAuth 2.0
 
 ## Sandbox Tips
 - In the staging and production environments, SIS vendor API keys will be associated with a claim set limiting access to only the API resources included in this document. This claim set has been enabled in the Sandbox environment. When you access a resource not included in the claim set you will receive the following message in the response: ```Access to the resource could not be authorized. Are you missing a claim?```
-- A SIS Vendor profile has been created limiting access to specific properties on each of the resources required in School Year 19-20.  This is available in the API section: “Profile: Minnesota-SISVendor-Profile”
-  - This profile will be auto-enabled in Staging and Production – meaning you will not have to include the profile in the “accept” or “content-type” headers of the request for the profile to take effect.
+- In the sandbox, multiple SIS Vendor profiles have been created, limiting access to specific properties on each of the resources required in the referenced school year. These appear in the right-hand side of the "Profiles" section and are named as thus:
+  - School Year 2019-2020: “Minnesota-SISVendor-Profile”
+  - 2020-2021 (current): "Minnesota-Twenty-Twenty-One-SISVendor-Profile"
+  - 2021-2022 (preview): "Minnesota-Twenty-Twenty-Two-Preview-SISVendor-Profile"
+    - These profiles are be auto-enabled in Staging and Production – meaning you will not have to include the profile in the “accept” or “content-type” headers of the request for the profile to take effect. (See more details in the [Staging Environment Load and Quality Check section](sis_test_plan_d_staging.md#staging-environment-load-and-quality-check))
 - When creating a sandbox, you have the option of including a set of sample data in the sandbox. The sample data used, is associated with St. Paul Public School District (LocalEducationAgencyId = 10625000). When you do not select the option to include sample data, your sandbox database will be loaded with an essentially empty ODS, except that it will include MN Schools and Districts, and the Descriptors that MDE has customized for this implementation.  
 - The actual certification test will be conducted in a sandbox with no sample data loaded and you will reference your own MDE Schools, Districts and Descriptors in the Scenarios.
 - The Sandbox environment ignores the School Year included in the API base URL. When preparing submissions to Staging and Production, remember to include the year, i.e. "2021". 
