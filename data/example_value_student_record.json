@@ -1,0 +1,8 @@
+{
+    "studentUniqueId": "999999999",
+    "birthDate": "2011-01-13",
+    "birthSexDescriptor": "uri://ed-fi.org/SexDescriptor#Female",
+    "firstName": "Sierra",
+    "lastSurname": "SampleSurName",
+    "middleName": "Midge"
+}

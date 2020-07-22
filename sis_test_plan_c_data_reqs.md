@@ -9,10 +9,10 @@ As an example, to view the required resource properties for a **studentSchoolAss
 ```POST /ed-fi/studentSchoolAssociations Creates or updates resources based on the natural key values of the supplied resource.```
 - _Note:_ "ed-fi" in the path above indicates that this is a core resource.
 
-Properties in a **studentSchoolAssociation** can be viewed as an [example JSON object](data\example_value_studentSchoolAssociation.json) by selecting **"Example Value"**:
+Properties in a **studentSchoolAssociation** can be viewed as an [example/template JSON object](data\example_template_studentSchoolAssociation.json) by selecting **"Example Value"**:
 ![ODS API Swagger studentSchoolAssociations Screen Capture](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ods_api_swagger_studentSchoolAssociations_3.1.1.png "ODS API studentSchoolAssociations Example Value")
 
-Definitions and Data Types in the **studentSchoolAssociations** can be viewed by selecting **“Model”** just to the right of the "Example Value" option. Required components are marked with a red *.
+Definitions and Data Types in the **studentSchoolAssociations** can be viewed by selecting **“Model”** just to the right of the "Example Value" option. Required components are marked with a red *. Often, the actual data posting for an individual record can be much less than what is in the model, as demonstrated in [this example record](data\example_value_studentSchoolAssociation.json).
 
 ## Mapping Documentation
 School Year 21-22 will introduce the Ed-Fi collection of Minnesota Common Course Catalogue (MCCC) and Graduation Requirements (GRR). (These can be previewed in the 2021-2022 Sandbox Profile.) MCCC will not implement any of the Early Childhood elements at this time.

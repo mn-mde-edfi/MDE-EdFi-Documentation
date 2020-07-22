@@ -1,61 +1,35 @@
 {
-    "id": "string",
-    "entryDate": "2020-06-22",
-    "schoolReference": {
-      "schoolId": 0,
-      "link": {
-        "rel": "string",
-        "href": "string"
-      }
-    },
-    "schoolYearTypeReference": {
-      "schoolYear": 0,
-      "link": {
-        "rel": "string",
-        "href": "string"
-      }
-    },
-    "studentReference": {
-      "studentUniqueId": "string",
-      "link": {
-        "rel": "string",
-        "href": "string"
-      }
-    },
-    "entryGradeLevelDescriptor": "string",
-    "entryTypeDescriptor": "string",
-    "exitWithdrawDate": "2020-06-22",
-    "exitWithdrawTypeDescriptor": "string",
-    "_etag": "string",
-    "_ext": {
-      "MN": {
-        "specialEducationEvaluationStatusDescriptor": "string",
-        "stateAidCategoryDescriptor": "string",
-        "homeboundServiceIndicator": true,
-        "specialPupilIndicator": true,
-        "residentLocalEducationAgencyReference": {
-          "localEducationAgencyId": 0,
-          "link": {
-            "rel": "string",
-            "href": "string"
-          }
-        },
-        "membership": {
-          "membershipAttendanceUnitDescriptor": "string",
-          "attendance": 0,
-          "membership": 0,
-          "percentEnrolled": 0
-        },
-        "transportation": {
-          "transportationCategoryDescriptor": "string",
-          "transportingLocalEducationAgencyReference": {
-            "localEducationAgencyId": 0,
-            "link": {
-              "rel": "string",
-              "href": "string"
-            }
-          }
+  "entryDate": "2020-07-01",
+  "schoolReference": {
+    "schoolId": 10625410
+  },
+  "schoolYearTypeReference": {
+    "schoolYear": 2020
+  },
+  "studentReference": {
+    "studentUniqueId": "999999999"
+  },
+  "entryGradeLevelDescriptor": "uri://education.mn.gov/GradeLevelDescriptor#3",
+  "entryTypeDescriptor": "uri://education.mn.gov/EntryTypeDescriptor#4",
+  "_ext": {
+    "MN": {
+      "homeboundServiceIndicator": false,
+      "specialPupilIndicator": false,
+      "residentLocalEducationAgencyReference": {
+        "localEducationAgencyId": 10625000
+      },
+      "membership": {
+        "membershipAttendanceUnitDescriptor": "uri://education.mn.gov/MembershipAttendanceUnitDescriptor#Days",
+        "attendance": 180,
+        "membership": 180,
+        "percentEnrolled": 100
+      },
+      "transportation": {
+        "transportationCategoryDescriptor": "uri://education.mn.gov/TransportationCategoryDescriptor#01",
+        "transportingLocalEducationAgencyReference": {
+          "localEducationAgencyId": 10625000
         }
       }
     }
   }
+}

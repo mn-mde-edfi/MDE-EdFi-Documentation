@@ -17,12 +17,12 @@ This entity represents an individual for whom instruction, services, and/or care
     - lastSurname
     - middleName
 
-_Note:_ You will not be able to view or edit students until you claim them with the creation of an enrollment record via ```StudentSchoolAssociation``` (see next section).
+_Note:_ You will not be able to view or edit students until you claim them with the creation of an enrollment record via ```StudentSchoolAssociation``` (see next section). Within Swagger, only one record can be created at a time. See [this example record](data\example_value_student_record.json) for specific JSON formatting.
 
 ## Resource: StudentSchoolAssociations
 
 **Description**
-This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation. _Remember_: when loading in data that references a Descriptor, you need to include a namespace, i.e. ```uri://education.mn.gov/[name of descriptor]#[code value]```.
+This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation. _Remember_: when loading in data that references a Descriptor, you need to include a namespace, i.e. ```uri://education.mn.gov/[name of descriptor]#[code value]```. See more details in [this example record](data\example_value_studentSchoolAssociation.json).
 
 **Prerequisite Data**
 - Students
