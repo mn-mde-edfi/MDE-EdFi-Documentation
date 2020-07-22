@@ -5,7 +5,7 @@ This repository contains documentation for Minnesota's implementation of the [Ed
 - [Ed-Fi Operational Data Store (ODS) and API](https://techdocs.ed-fi.org/display/ETKB/Ed-Fi+Operational+Data+Store+and+API)
 
 ## Markdown Documentation
-In June-July of 2020, MNIT supporting MDE is converted much of the 2020-2021 school year documentation to markdown files. While the official documentation remains in Word and Excel within this repository, the markdown files at the top level of this repository represent a pilot of storing and maintaining the documentation in markdown, starting with:
+In June-July of 2020, MNIT supporting MDE converted much of the 2020-2021 school year documentation to markdown files. While the official documentation remains in Word and Excel within this repository, the markdown files at the top level of this repository represent a pilot of storing and maintaining the documentation in markdown, starting with:
 
 - [SIS and Vendor Test Plan](sis_test_plan_a_toc.md)
 - [Sandbox Certification Scenarios](sandbox_cert_a_toc.md)
@@ -13,6 +13,9 @@ In June-July of 2020, MNIT supporting MDE is converted much of the 2020-2021 sch
 ## Additional Documentation
 We will also use this repository to store additional documentation that may be useful to Districts and Vendors. See the following:
 - [Descriptors and Resources](descriptors_resources.md)
+
+## Sample Data
+JSON files of sample data are being loaded into the [data directory](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/tree/master/data) in an attempt to assist developers with understanding the Ed-Fi ODS API.
 
 ## Issues List
 As part of this documentation effort, we are also using Github to manage technical issues. See the [Issue List](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/issues) for examples.
