@@ -41,3 +41,27 @@ Regardless of the specific implementations, non-unique parent records is a limit
 
 ## Managing Multiples for Student-Parent Relationships
 When creating a ```Parent``` record, you might notice the ```identificationCodes``` descriptor, which should contain the MARSS ID of a related student. However, if a parent has several students with MARSS IDs, more than one code can be listed - as the Swagger UI reveals, these are identificationCode**s**, and that the descriptor is “An unordered collection of parentIdentificationCodes. Miscellaneous parent Identification Code. E.g., MARSS ID of a related student”. In other words, more than one code can be placed in that data element to handle a 1:M relationship.
+
+## Duplicate "BR" value within accommodationDescriptors
+When viewing SY2021 descriptors, you might note that the code value of “BR” is repeated within ```accommodationDescriptors```, causing problems with database loads that assume that code value is unique across all of those descriptors. However, when incorporating namespace, those values become unique: the value to describe "BR – Accomodation" is within “access” and the value for "Braille" is within "mcamtas", as shown in the descriptor JSON below (available from Swagger). Our contractor also notes that for now this descriptor can be ignored because it’s only used by assessment precode which isn’t in scope until at least SY21-22 or later.
+
+```javascript
+{
+    "id": "9dc5618028ab4caf9bc336a7a0a962f1",
+    "accommodationDescriptorId": 2996,
+    "codeValue": "BR",
+    "description": "BR - Accommodation",
+    "namespace": "uri://education.mn.gov/access/AccommodationDescriptor",
+    "shortDescription": "BR - Accommodation",
+    "_etag": "5248795699641457904"
+  },
+  {
+    "id": "916ef20130b74698ace01f5b559676ca",
+    "accommodationDescriptorId": 2997,
+    "codeValue": "BR",
+    "description": "Braille",
+    "namespace": "uri://education.mn.gov/mcamtas/AccommodationDescriptor",
+    "shortDescription": "Braille",
+    "_etag": "5248795699641457904"
+  },
+```
