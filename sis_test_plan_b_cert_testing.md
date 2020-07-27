@@ -16,7 +16,7 @@ Please note:
 - The Identities Section is not functional in the Sandbox and is provided as documentation only
 
 Upon launch of the Swagger Sandbox UI, the site will finish loading the profiles and appear as follows:
-![ODS API Landing Page Screen Capture](images/ods_api_sandbox_landing_3.1.1.png "ODS API Landing Page")
+![ODS API Landing Page Screen Capture](https://raw.githubusercontent.com/mn-mde-edfi/MDE-EdFi-Documentation/master/images/ods_api_sandbox_landing_3.1.1.png "ODS API Landing Page")
 Clicking one of the profile links will launch you into the Swagger UI for exploration. Once inside the Swagger UI, click the "Authorize" button to enter in the client id (key) and client secret created in the Sandbox Admin site.
 
 ### Sandbox Base and OAuth URLs
