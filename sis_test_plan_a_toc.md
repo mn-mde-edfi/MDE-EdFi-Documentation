@@ -15,6 +15,13 @@ SIS vendors integrating with MDE's Ed-Fi Automated Student Data Collection Syste
 
 Once the Staging data reaches a satisfactory level of quality as determined by MDE, MNIT, and the District, MNIT will enable the vendor to obtain a key and secret for the Production environment.
 
+### Potential Hangups
+As you move from Sandbox to Staging for SY2021, remember the following:
+- Pay attention to the URLs, years in the API path, and key and secret details identified [in the staging load and quality check section](sis_test_plan_d_staging.md#staging-environment-load-and-quality-check). To wit:
+  - Staging and Production require profile-specific coding, as your key and secret will  for a single profile (different profiles for different years)
+  - You will get new key/secret combinations for the 20-21 ODS in production - you won't be able to re-use those issued for 19-20
+- You may only get keys and secrets for individual districts at a time
+
 ## References
 The following documents contain additional information:
 1. [Sandbox Certification Testing](sis_test_plan_b_cert_testing.md)

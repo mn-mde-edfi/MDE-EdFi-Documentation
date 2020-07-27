@@ -24,8 +24,8 @@ Vendors have the option of building in support for interfacing with the MN Stude
 
 Vendors must demonstrate their ability to create new Student IDs when a Student is created in the Student Information System. This would be accomplished by posting to the ```/identities``` endpoint. 
 
-The URL for the identities API in the Staging environment is:
-```https://stage.edfi.education.mn.gov/edfi.ods.webapi/Identity/v2/2020/identities```
+The SY2021 URL for the identities API in the Staging environment is:
+```https://stage.edfi.education.mn.gov/edfi.ods.webapi/Identity/v2/2021/identities```
 
 The general process for identity creation is as follows: 
 

@@ -10,7 +10,7 @@ As an example, to view the required resource properties for a **studentSchoolAss
 - _Note:_ "ed-fi" in the path above indicates that this is a core resource.
 
 Properties in a **studentSchoolAssociation** can be viewed as an [example/template JSON object](data\example_template_studentSchoolAssociation.json) by selecting **"Example Value"**:
-![ODS API Swagger studentSchoolAssociations Screen Capture](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ods_api_swagger_studentSchoolAssociations_3.1.1.png "ODS API studentSchoolAssociations Example Value")
+![ODS API Swagger studentSchoolAssociations Screen Capture](images/ods_api_swagger_studentSchoolAssociations_3.1.1.png?raw=true "ODS API studentSchoolAssociations Example Value")
 
 Definitions and Data Types in the **studentSchoolAssociations** can be viewed by selecting **“Model”** just to the right of the "Example Value" option. Required components are marked with a red *. Often, the actual data posting for an individual record can be much less than what is in the model, as demonstrated in [this example record](data\example_value_studentSchoolAssociation.json).
 
@@ -106,7 +106,7 @@ Note: All required School data will be loaded by MDE.
 
 ## Ed-Fi Model Dependency Graphs
 ### MARSS collection
-![Ed-Fi Model Dependency Graph for MARSS](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_marss_3.1.1.PNG "Ed-Fi Model Dependency Graph for MARSS")
+![Ed-Fi Model Dependency Graph for MARSS](images/ed-fi_model_dependency_marss_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for MARSS")
 The above image describes the dependencies required to work with the MDE Ed-Fi model as part of MARSS collections. In detail:
 1.	Descriptors must be loaded first, as all other resources contain references to descriptor values.
 2.	Once descriptors are loaded, Education Organization data must be loaded by MDE.
@@ -117,7 +117,7 @@ The above image describes the dependencies required to work with the MDE Ed-Fi m
 7.	StudentProgramAssociations can be loaded once Programs and StudentSchoolAssociations have been loaded.
 
 ### Early Education Enrollment and Parent collection
-![Ed-Fi Model Dependency Graph for Early Ed](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_early_ed_parent_3.1.1.PNG "Ed-Fi Model Dependency Graph for Early Ed")
+![Ed-Fi Model Dependency Graph for Early Ed](images/ed-fi_model_dependency_early_ed_parent_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for Early Ed")
 The above image describes the dependencies required to work with the MDE Ed-Fi model as part of Early Education Enrollment and Parent collection. In detail:
 1.	Descriptors must be loaded first, as all other resources contain references to descriptor values.
 2.	Once descriptors are loaded, Education Organization data must be loaded by MDE.
