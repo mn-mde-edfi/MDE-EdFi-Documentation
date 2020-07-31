@@ -11,8 +11,9 @@ In June-July of 2020, MNIT supporting MDE converted much of the 2020-2021 school
 - [Sandbox Certification Scenarios](sandbox_cert_a_toc.md)
 
 ## Additional Documentation
-We will also use this repository to store additional documentation that may be useful to Districts and Vendors. See the following:
-- [Descriptors and Resources](descriptors_resources.md)
+We will also use this repository to store additional documentation and links that may be useful to Districts and Vendors. See the following:
+- [Descriptors and Resources](descriptors_resources.md). This document contains additional information about specific descriptors and data resources that can prove useful in understanding the system.
+- [MARSS Translation Guide](https://education.mn.gov/mdeprod/idcplg?IdcService=GET_FILE&dDocName=MDE033371&RevisionSelectionMethod=latestReleased&Rendition=primary). Also known as the "MDE Translation Guide", this document on the MDE website describes the technical specification and definitions used when extracting information out of the Ed-Fi ODS and translating into the data used by the Minnesota Automated Reporting Student System (MARSS).
 
 ## Sample Data
 JSON files of sample data are being loaded into the [data directory](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/tree/master/data) in an attempt to assist developers with understanding the Ed-Fi ODS API.
