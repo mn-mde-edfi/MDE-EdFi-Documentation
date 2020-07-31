@@ -32,40 +32,6 @@ When MDE extends a pre-existing Ed-Fi descriptor for the MN extension, it may re
 }
 ```
 
-## Avoiding Conflicts for Parent Resources
-**Parent** records are shared among and between Local Education Authorities (LEAs) like student records. But unlike student records, MDE does not have a system of uniquely identifying parents. That means that duplicate parent records are likely to be created.
-
-Similarly, there’s the possibility for conflicting information to be overwritten on updates to parent records if the same unique ID is used. In order to reduce the changes of that, MDE is strongly recommending that a parent ID be prefixed with a district/organization number and dash, such as this:
-- "10625000-" for [SPPS](https://public.education.mn.gov/MdeOrgView/organization/show/566)
-- "526095000-" for [AALASEC](https://public.education.mn.gov/MdeOrgView/organization/show/14583)
-
-This should help avoid mistakenly overwriting a record when using an ID that’s in use elsewhere. We're aware that this will lead to more duplicates, but in our opinion that is preferable to overwrites.
-
-Regardless of the specific implementations, non-unique parent records is a limitation of the system. MDE is not aware of any downstream impacts; for example, ``StudentEarlyEducationProgramAssociation`` is not validated against parent data.
-
-## Dropping API Requirements for ext-MN-identificationCodes Within the Parents Resource
-Within the Minnesota extension for the ```parents``` resource, the MDE team decided on July 24, 2020 that the "MARSS ID (Parent)" element (i.e. "parentIdentificationCode") was redundant due to the fact that student-parent relationships are already available via studentParentAssociation records. Therefore requirements for this element will be dropped from the ODS API as soon as possible. The location of this specific data element within the JSON of a specific Parent resource is below:
-```javascript
-"_ext": {
-    "MN": {
-      "classroomVolunteerDescriptor": "string",
-      "highestCompletedLevelOfEducationDescriptor": "string",
-      "birthDate": "2020-07-24",
-      "householdIncome": 0,
-      "householdSize": 0,
-      "receivingInterpreterAssistance": true,
-      "identificationCodes": [ //This section is no longer needed as of 2020.07.24
-        {
-          "identificationCode": "string"
-        }
-      ]
-    }
-  }
-```
-
-Historical note on managing multiples for student-parent relationships that applied before this decision:
-> When creating a ```Parent``` record, you might notice the ```identificationCodes``` descriptor, which should contain the MARSS ID of a related student. However, if a parent has several students with MARSS IDs, more than one code can be listed - as the Swagger UI reveals, these are identificationCode**s**, and that the descriptor is “An unordered collection of parentIdentificationCodes. Miscellaneous parent Identification Code. E.g., MARSS ID of a related student”. In other words, more than one code can be placed in that data element to handle a 1:M relationship.
-
 ## Duplicate "BR" value within accommodationDescriptors
 When viewing SY2021 descriptors, you might note that the code value of “BR” is repeated within ```accommodationDescriptors```, causing problems with database loads that assume that code value is unique across all of those descriptors. However, when incorporating namespace, those values become unique: the value to describe "BR – Accomodation" is within “access” and the value for "Braille" is within "mcamtas", as shown in the descriptor JSON below (available from Swagger). Our contractor also notes that for now this descriptor can be ignored because it’s only used by assessment precode which isn’t in scope until at least SY21-22 or later.
 
@@ -89,3 +55,43 @@ When viewing SY2021 descriptors, you might note that the code value of “BR” 
     "_etag": "5248795699641457904"
   },
 ```
+
+## Parent Resources
+This section contains various details and decisions on **Parent Resources** that have arisen with the EE rollout, particularly in response to vendor questions.
+
+### Limiting Submissions to Required Records
+MDE is aware that vendors have access to parent records for students **not** participating in an Early Education program, i.e. through grade 12 in Ed-Fi. As of July 31, 2020, MDE requests that vendors and districts **withhold** those Parent records.
+
+### Avoiding Conflicts in Identifiers
+Parent records are shared among and between Local Education Authorities (LEAs) like student records. But unlike student records, MDE does not have a system of uniquely identifying parents. That means that duplicate parent records are likely to be created.
+
+Similarly, there’s the possibility for conflicting information to be overwritten on updates to parent records if the same unique ID is used. In order to reduce the changes of that, MDE is strongly recommending that a parent ID be prefixed with a district/organization number and dash, such as this:
+- "10625000-" for [SPPS](https://public.education.mn.gov/MdeOrgView/organization/show/566)
+- "526095000-" for [AALASEC](https://public.education.mn.gov/MdeOrgView/organization/show/14583)
+
+This should help avoid mistakenly overwriting a record when using an ID that is in use elsewhere. We're aware that this will lead to more duplicates, but in our opinion that is preferable to overwrites.
+
+Regardless of the specific implementations, non-unique parent records is a limitation of the system. MDE is not aware of any downstream impacts; for example, ``StudentEarlyEducationProgramAssociation`` is not validated against parent data.
+
+### Dropping API Requirements for ext-MN-identificationCodes
+Within the Minnesota extension for the ```parents``` resource, the MDE team decided on July 24, 2020 that the "MARSS ID (Parent)" element (i.e. "parentIdentificationCode") was redundant due to the fact that student-parent relationships are already available via studentParentAssociation records. Therefore requirements for this element will be dropped from the ODS API as soon as possible. The location of this specific data element within the JSON of a specific Parent resource is below:
+```javascript
+"_ext": {
+    "MN": {
+      "classroomVolunteerDescriptor": "string",
+      "highestCompletedLevelOfEducationDescriptor": "string",
+      "birthDate": "2020-07-24",
+      "householdIncome": 0,
+      "householdSize": 0,
+      "receivingInterpreterAssistance": true,
+      "identificationCodes": [ //This section is no longer needed as of 2020.07.24
+        {
+          "identificationCode": "string"
+        }
+      ]
+    }
+  }
+```
+
+Historical note on managing multiples for student-parent relationships that applied before this decision:
+> When creating a ```Parent``` record, you might notice the ```identificationCodes``` descriptor, which should contain the MARSS ID of a related student. However, if a parent has several students with MARSS IDs, more than one code can be listed - as the Swagger UI reveals, these are identificationCode**s**, and that the descriptor is “An unordered collection of parentIdentificationCodes. Miscellaneous parent Identification Code. E.g., MARSS ID of a related student”. In other words, more than one code can be placed in that data element to handle a 1:M relationship.
