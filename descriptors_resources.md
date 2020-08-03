@@ -95,3 +95,13 @@ Within the Minnesota extension for the ```parents``` resource, the MDE team deci
 
 Historical note on managing multiples for student-parent relationships that applied before this decision:
 > When creating a ```Parent``` record, you might notice the ```identificationCodes``` descriptor, which should contain the MARSS ID of a related student. However, if a parent has several students with MARSS IDs, more than one code can be listed - as the Swagger UI reveals, these are identificationCode**s**, and that the descriptor is “An unordered collection of parentIdentificationCodes. Miscellaneous parent Identification Code. E.g., MARSS ID of a related student”. In other words, more than one code can be placed in that data element to handle a 1:M relationship.
+
+## ClassroomVolunteerDescriptors
+In the transition to Ed-Fi, MDE is collecting less detail around classroom volunteers compared to past collections in the [Early Education Student Data System](https://education.mn.gov/MDE/dse/datasub/EarlyLearnServDataReport). The table below provides a translation between EES and EdFi:
+|     EES ParticipationCode    |     Description    |     EdFi Code    |     Value    |     Comments    |
+|-|-|-|-|-|
+|     00    |     Not Specified    |     NA    |     NA    |     Do not submit this record to Ed-Fi    |
+|     01    |     Not Volunteering    |     NA    |     NA    |     Do not submit this record to Ed-Fi    |
+|     02    |     Class Room Volunteer    |     **2861**    |     PartTimeVolunteer    |     Code **2860** for FullTimeVolunteer is also available if necessary    |
+|     03    |     Parent Advisory Council    |     **2861**    |     PartTimeVolunteer    |     Code **2860** for FullTimeVolunteer is also available if necessary    |
+|     99    |     Others    |     **2861**    |     PartTimeVolunteer    |     Code **2860** for FullTimeVolunteer is also available if necessary    |
