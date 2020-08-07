@@ -105,3 +105,39 @@ In the transition to Ed-Fi, MDE is collecting less detail around classroom volun
 |     02    |     Class Room Volunteer    |     **2861**    |     PartTimeVolunteer    |     Code **2860** for FullTimeVolunteer is also available if necessary    |
 |     03    |     Parent Advisory Council    |     **2861**    |     PartTimeVolunteer    |     Code **2860** for FullTimeVolunteer is also available if necessary    |
 |     99    |     Others    |     **2861**    |     PartTimeVolunteer    |     Code **2860** for FullTimeVolunteer is also available if necessary    |
+
+## LevelOfEducationDescriptors
+Another descriptor in Ed-Fi that benefits from a translation from EES is **levelOfEducationDescriptors**. As of 8/6, the ODS endpoints now include the MDE-specific descriptors listed in the LevelOfEducationDescriptor tab of the 2020-21 Data Mapping spreadsheet. With one exception, these values are a direct translation from the _EducationBackground_ codes used in the EE system. For example, code value ```1050``` for Associate's degree. The only exception is that EE code ```0000``` for "Not Specified" should be mapped into Ed-Fi code ```9999``` for "Other". The following table details the translation:
+|EES BackgroundCode|EES BackgroundShortName|Ed-Fi levelOfEducationDescriptorId|Ed-Fi codeValue|Ed-Fi description|
+|---|----|-------|------|---|
+|0000              |Not Specified          |3403                              |9999           |09999 - Other                                     |
+|0798              |8th grade              |3397                              |798            |00798 - Eighth grade                              |
+|1044              |HS Diploma             |3381                              |1044           |01044 - High school diploma                       |
+|1049              |Some College           |3382                              |1049           |01049 - Some college but no degree                |
+|1050              |Associate degree       |3383                              |1050           |01050 - Associate's degree (two years or more)    |
+|1051              |Bachelor degree        |3384                              |1051           |01051 - Bachelor's (Baccalaureate) degree         |
+|1054              |Master's degree        |3385                              |1054           |01054 - Master's degree (e.g., M.A., M.S.,etc.)   |
+|1057              |Doctoral degree        |3386                              |1057           |01057 - Doctoral (Doctor's) degree                |
+|1809              |12th grade             |3387                              |1809           |01809 - 12th grade, no diploma                    |
+|2409              |GED                    |3388                              |2409           |02409 - High school equivalency (e.g., GED)       |
+
+
+The following codes are also available in Ed_Fi for additional detail as applications evolve:
+|Ed-Fi levelOfEducationDescriptorId|Ed-Fi codeValue|Ed-Fi description|
+|----|----|----|
+|3380                              |1043           |01043 - No school completed   |
+|3389                              |788            |00788 - Preschool             |
+|3390                              |790            |00790 - First grade           |
+|3391                              |791            |00791 - Second grade          |
+|3392                              |792            |00792 - Third grade           |
+|3393                              |793            |00793 - Fourth grade          |
+|3394                              |794            |00794 - Fifth grade           |
+|3395                              |795            |00795 - Sixth grade           |
+|3396                              |796            |00796 - Seventh grade         |
+|3398                              |799            |00799 - Ninth grade           |
+|3399                              |800            |00800 - Tenth grade           |
+|3400                              |801            |00801 - Eleventh Grade        |
+|3401                              |805            |00805 - Kindergarten          |
+|3402                              |819            |00819 - Career and Technical Ed. cert.|
+
+Note that the namespace for the above descriptors is ```uri://education.mn.gov/LevelOfEducationDescriptor```. Prior to **8/6/2020**, MDE Ed-Fi data stores (including Sandboxes created before that date) only included the base ed-fi descriptors in the ```uri://ed-fi.org/LevelOfEducationDescriptor``` namespace, which created confusion among vendors. These should **NOT** be used. Vendors should create new sandboxes to test this functionality and delete any created before 8/6.
