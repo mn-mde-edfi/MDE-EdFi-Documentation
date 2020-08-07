@@ -20,3 +20,6 @@ JSON files of sample data are being loaded into the [data directory](https://git
 
 ## Issues List
 As part of this documentation effort, we are also using Github to manage technical issues. See the [Issue List](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/issues) for examples.
+
+## Reading with embedded images
+If you're reading these markdown files and ```https://github.com/mn-mde-edfi/``` is in the beginning of your browser window, you may have trouble viewing the images embedded in the markdown. You have two options to remedy this: "click through" to view the image in the repository, or view the entire set of markdown documents in [a "web version" of the repository](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/). (If you see ```https://mn-mde-edfi.github.io/``` in your URL, you are already viewing the web version.)
