@@ -31,6 +31,7 @@ When MDE extends a pre-existing Ed-Fi descriptor for the MN extension, it may re
   }
 }
 ```
+More information on the levelOfEducationDescriptor [is in this section](#levelofeducationdescriptors).
 
 ## Duplicate "BR" value within accommodationDescriptors
 When viewing SY2021 descriptors, you might note that the code value of “BR” is repeated within ```accommodationDescriptors```, causing problems with database loads that assume that code value is unique across all of those descriptors. However, when incorporating namespace, those values become unique: the value to describe "BR – Accomodation" is within “access” and the value for "Braille" is within "mcamtas", as shown in the descriptor JSON below (available from Swagger). Our contractor also notes that for now this descriptor can be ignored because it’s only used by assessment precode which isn’t in scope until at least SY21-22 or later.

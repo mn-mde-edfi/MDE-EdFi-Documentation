@@ -66,7 +66,7 @@ None
         - lastSurname
         - MiddleName
         - generationCodeSuffix
-        - highestCompletedLevelOfEducationDescriptor
+        - [highestCompletedLevelOfEducationDescriptor](descriptors_resources.md#levelofeducationdescriptors)
         - householdIncome
         - householdSize
         - receivingInterpreterAssistance
