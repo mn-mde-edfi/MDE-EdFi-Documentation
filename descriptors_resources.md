@@ -142,3 +142,6 @@ The following codes are also available in Ed_Fi for additional detail as applica
 |3402                              |819            |00819 - Career and Technical Ed. cert.|
 
 Note that the namespace for the above descriptors is ```uri://education.mn.gov/LevelOfEducationDescriptor```. Prior to **8/6/2020**, MDE Ed-Fi data stores (including Sandboxes created before that date) only included the base ed-fi descriptors in the ```uri://ed-fi.org/LevelOfEducationDescriptor``` namespace, which created confusion among vendors. These should **NOT** be used. Vendors should create new sandboxes to test this functionality and delete any created before 8/6.
+
+## Supplemental Program Names
+ODS-API users will note that the sy21 sandbox contains sample records for ```programs```, described as "any program designed to work in conjunction with, or as a supplement to, the main academic program." These programs are set primarily for Early Education (EE), but 16 types have been set up in the programTypeDescriptors for use. Sample JSON is available in the sandbox to view examples of programs that districts can load into Ed-Fi. As of 8/21/2020, MDE is currently determining guidance on naming these programs via the ```programName``` element.

@@ -114,8 +114,9 @@ This association represents Students in either School Readiness or Early Childho
 
 **Prerequisite Data**
 - Schools
-- Program - where ProgramTypeDescriptor = "SR"
-- Program - where ProgramTypeDescriptor = "ECFE"
+- Program - where ProgramTypeDescriptor = "EE-SR"
+- Program - where ProgramTypeDescriptor = "EE-ECFE"
+(_note: these are the two program types that are intended for use with Early Education data_)
 - Students
 
 **Scenarios**
