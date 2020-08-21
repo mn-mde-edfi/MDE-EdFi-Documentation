@@ -21,5 +21,11 @@ JSON files of sample data are being loaded into the [data directory](https://git
 ## Issues List
 As part of this documentation effort, we are also using Github to manage technical issues. See the [Issue List](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/issues) for examples.
 
-## Reading with embedded images
-If you're reading these markdown files and ```https://github.com/mn-mde-edfi/``` is in the beginning of your browser window, you may have trouble viewing the images embedded in the markdown. You have two options to remedy this: "click through" to view the image in the repository, or view the entire set of markdown documents in [a "web version" of the repository](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/). (If you see ```https://mn-mde-edfi.github.io/``` in your URL, you are already viewing the web version.)
+## Viewing Options
+There are two ways to view this documentation: 
+1. [in the Github repository](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation) where ```https://github.com/mn-mde-edfi/``` is in the beginning of the URL in your browser. Raw markdown files are in the "code" section, with links to each other. Github renders this markdown as readable content.
+2. in a ["Web Version"](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/) in which Github attempts to automatically render the markdown files as HTML, and where ```https://mn-mde-edfi.github.io/``` is in the beginning of the URL in your browser
+
+In the Github repository, you may have trouble viewing embedded images embedded in the markdown. You have two options to remedy this: "click through" to view the image in the repository, or view the web version.
+
+In contrast, the web version does not render markdown tables into HTML tables, so tables are best viewed directly [in the Github repository](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation).
