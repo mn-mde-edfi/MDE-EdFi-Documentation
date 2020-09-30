@@ -22,7 +22,7 @@ In addition, MDE is beginning to work toward the eventual collection of Assessme
 (In School Year 19-20, MDE implemented an Ed-Fi based MARSS collection.)
 
 For context around how each MDE collection maps to the Ed-Fi Data Standard please view the following spreadsheets:
-- [MARSS 2019-2020 Mapping Review Matrix Ed-Fi 3.1.xls spreadsheet](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/blob/master/2020-21%20MDE%20Ed-Fi%20Documentation/2020-21%20Student%20Enrollment%20Data%20Mapping%20Matrix%20Ed-Fi%203.1.xlsx) (MARSS)
+- [2020-2021 Mapping Review Matrix Ed-Fi 3.1.xls spreadsheet](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/blob/master/2020-21%20MDE%20Ed-Fi%20Documentation/2020-21%20Student%20Enrollment%20Data%20Mapping%20Matrix%20Ed-Fi%203.1.xlsx) (MARSS)
 - MCCC Mapping Matrix (link TBD)
 - GRR Mapping Matrix (link TBD)
 - Mapping Matrix MN Assessment Pre-code to Ed-Fi 3.1 (link TBD) (MCA/MTAS Precode and Assessment Results)
