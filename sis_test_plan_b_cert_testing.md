@@ -12,7 +12,7 @@ Ed-Fi uses the [Swagger UI tool](https://swagger.io/tools/swagger-ui/) to visual
 Please note:
 - All MN Specific resources defined for the **19-20** School Collection can be found under the **Minnesota-SISVendor-Profile**.
 - All MN Specific resources defined for the **20-21** School Collection can be found under the **Minnesota-Twenty-Twenty-One-SISVendor-Profile**.
-- All MN Specific resources defined for the **20-21** School Collection can be found under the **Minnesota-Twenty-Twenty-Two-Preview-SISVendor-Profile.**
+- All MN Specific resources defined for the **21-22** School Collection can be previewed under the **Minnesota-Twenty-Twenty-Two-Preview-SISVendor-Profile.**
 - The Identities Section is not functional in the Sandbox and is provided as documentation only
 
 Upon launch of the Swagger Sandbox UI, the site will finish loading the profiles and appear as follows:
