@@ -22,7 +22,7 @@ This association represents the School in which a student is enrolled. The seman
         - Resident Local Education Agency
         - Special Pupil Indicator = N
     - Data not collected for Early Education
-        - State Aid Category
+        - State Aid Category (see [issue #16](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/issues/16))
         - Membership Attendance Units
         - Membership Attendance Percent Enrolled
         - Special Education Eval Status
