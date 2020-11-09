@@ -1,5 +1,5 @@
 # 2020-2021 Early Education Enrollment Certification **Scenarios**: API Resources
-_Please note: the following scenarios are example situations, intended to demonstrate that your application can update the MDE Ed-Fi ODS appropriately. They should be only for students currently in grade "EE". They do not necessarily demonstrate all valid combinations; for example, all funding source codes can be used for both School Readiness (SR) and Early Childhood Family Education (ECFE)._
+_Please note: the following scenarios are example situations, intended to demonstrate that your application can update the MDE Ed-Fi ODS appropriately. They do not necessarily demonstrate all valid combinations; for example, all funding source codes can be used for both School Readiness (SR) and Early Childhood Family Education (ECFE)._
 
 ## Resource: StudentSchoolAssociations
 **Description**
