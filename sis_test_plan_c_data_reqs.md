@@ -122,11 +122,22 @@ The above image describes the dependencies required to work with the MDE Ed-Fi m
 1.	Descriptors must be loaded first, as all other resources contain references to descriptor values.
 2.	Once descriptors are loaded, Education Organization data must be loaded by MDE.
 3.	The core Student records must be loaded before students may be enrolled.
-4.	Student enrollment data must be provided via StudentSchoolAssociation in order to establish a valid security claim before any other updates may be made to student records. 
+4.	Student enrollment data must be provided via StudentSchoolAssociation in order to establish a valid security claim before any other updates may be made to student records. (See more details below.) 
 5.	Once student enrollment data is loaded, student demographics may be provided via StudentEducationOrganizationAssociation. 
 6.	Early Education Programs must be loaded for all districts submitting data to the ODS.
 7.	StudentProgramAssociations can be loaded once Programs and StudentSchoolAssociations have been loaded.
 8.	Parent Records, Students and Enrollment records are required prior to setting the Student Parent Association.
+
+#### Grade / Enrollment Requirements for Early Education Enrollment
+As described above, each student must first have a StudentSchoolAssociation record (an enrollment record). For EE Enrollment, allowable grades are EC, K-3 or EE. 
+* Use Grade EE if the student is not already enrolled in a regular grade
+* Use Grade EE if the EE program service is provided in a different school than the regular grade.
+
+Once the enrollment record exists, one or both of the EE Program Associations may then be assigned to the student.
+* Students in Grade EC, K-3 may only have an EE-ECSE program assigned; they cannot have an EE-SR program assignment.
+* Only Grade EE students may have an EE-SR program.
+* Grade EE students may also have an EE-ECFE program alone or in combination with an EE-SR program.
+
 
 # Navigation
 - [Return to SIS Test Plan Overview](sis_test_plan_a_toc.md)
