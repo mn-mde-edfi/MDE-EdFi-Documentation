@@ -94,8 +94,8 @@ This validation feature will be enabled in the Staging Environment. Vendors must
 
 - SIS posts a new or updated Student record to the Ed-Fi API.
 - The Ed-Fi student validator then calls the MDE Student ID System validation process with StateStudentId (StudentUniqueId), LastName, FirstName, BirthDate, and BirthSex.
-  - If the MDE Student ID System returns 0 (Exact Match), the student identity matches all the information exactly and only a single student is found.The Ed-Fi API will allow the Student record to be stored in the ODS. The Ed-Fi API returns HTTP response code ```204```.
-  - Any other return value from the MDE Student ID system validation process results in HTTP response code ```400 Bad Request```, which also passes back the error code and message from the MDE Student ID System.The SIS should present this error code and message to the district user, informing them of the Student ID issue which must be resolved in the MDE Student ID system.
+  - If the MDE Student ID System returns 0 (Exact Match), the student identity matches all the information exactly and only a single student is found. The Ed-Fi API will allow the Student record to be stored in the ODS. The Ed-Fi API returns HTTP response code ```204```.
+  - Any other return value from the MDE Student ID system validation process results in HTTP response code ```400 Bad Request```, which also passes back the error code and message from the MDE Student ID System. The SIS should present this error code and message to the district user, informing them of the Student ID issue which must be resolved in the MDE Student ID system.
 
 #### Validate Student ID Test 1
 

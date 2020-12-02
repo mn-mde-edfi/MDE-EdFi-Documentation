@@ -4,14 +4,14 @@ _Please note: the following scenarios are example situations, intended to demons
 For more information, see the [Early Education Enrollment and Parent collection dependencies section](sis_test_plan_c_data_reqs.md#early-education-enrollment-and-parent-collection) of the SIS Vendor test plan data requirements document.
 
 ## Resource: StudentSchoolAssociations
-**Description**
+**Description:**
 This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation.
 
-**Prerequisite Data**
+**Prerequisite Data:**
 - Students
 - Schools
 
-**Scenarios**
+**Scenarios:**
 1.	Submit an Early Education Enrollment record (StudentSchoolAssociation with entrygradelevel = EE) 
     - Required elements
         - School Id
@@ -55,13 +55,13 @@ This association represents the School in which a student is enrolled. The seman
 
 
 ## Resource: Parent 
-**Description**
+**Description:**
 This entity represents a parent or guardian of a student, such as mother, father, or caretaker.
 
-**Prerequisite Data**
+**Prerequisite Data:**
 None
 
-**Scenarios**
+**Scenarios:**
 1.	Submit Parent Records for the following Early Ed Student in Gradelevel EE
     - Required Elements:
         - Parent Unique Id
@@ -80,15 +80,15 @@ None
 3. Submit Parent Records for the following Early Ed Student in Gradelevel PA
 
 ## Resource: StudentParentAssociation
-**Description**
+**Description:**
 This association relates students to their parents, guardians, or caretakers.
 
-**Prerequisite Data**
+**Prerequisite Data:**
 - Students
 - Parents
 - StudentSchoolAssociations
 
-**Scenarios**
+**Scenarios:**
 1.	Submit Student Parent Association Record for the Early Education Student in Gradelevel EE
     - Required Elements:
         - Parent Unique Id
@@ -98,32 +98,32 @@ This association relates students to their parents, guardians, or caretakers.
 3.	Submit Student Parent Association Record for the Early Education Student in Gradelevel PA
 
 ## Resource: StudentEducationOrganizationAssociation
-**Description**
-This association indicates any relationship between a student and an education organization other than how the state views enrollment. Enrollment relationship semantics are covered by StudentSchoolAssociation. **MDE allows for the capture of student demographic data by school enrollment.** Therefore, a StudentEducationOrganizationAssociation record must be submitted for each school in which the student is enrolled to provide the student demographic data provided to the enrolling school by the parent(s). 
+**Description:**
+This association indicates any relationship between a student and an education organization other than how the state views enrollment. Enrollment relationship semantics are covered by StudentSchoolAssociation. **MDE allows for the capture of student demographic data by school enrollment.** Therefore, a StudentEducationOrganizationAssociation record must be submitted for each **school** in which the student is enrolled to provide the student demographic data provided to the enrolling school by the parent(s). 
 
-**Prerequisite Data**
+**Prerequisite Data:**
 - Students
 - EducationOrganizations (Schools)
 
-**Scenarios**
+**Scenarios:**
 1.	Create a StudentEducationOrganizationAssociation for the Student Enrolled in Gradelevel EE
     - Include all elements except StudentCharacteristicsDescriptors (ADP, RAEL, IMMIGRANT, SLIFE)
 2.	Create a StudentEducationOrganizationAssociation for the Student Enrolled in Gradelevel 1
 3.	Create a StudentEducationOrganizationAssociation for the Student Enrolled in Gradelevel PA
 
 ## Resource: StudentEarlyEducationProgramAssociations
-**Description**
+**Description:**
 This association represents Students in either School Readiness or Early Childhood Family Education programs. Notes:
 - The "EE-SR" and "EE-ECFE" program types are the programs intended for use with Early Education Data
 - "End Reason Code" below correlates to "reasonExitedDescriptor" (see the similarly named Data Mapping Matrix tab)
 
-**Prerequisite Data**
+**Prerequisite Data:**
 - Schools
 - Program - where ProgramTypeDescriptor = "EE-SR"
 - Program - where ProgramTypeDescriptor = "EE-ECFE"
 - Students
 
-**Scenarios**
+**Scenarios:**
 1.	Associate gradelevel EE Enrolled Student with this SR StudentEarlyEducationProgramAssociation
     - Begin Date: 9/5/2020
     - End Date: 6/11/2021 (default to last day in the school year)
@@ -152,15 +152,15 @@ This association represents Students in either School Readiness or Early Childho
     - Submit funding sources CSPF and OD
 
 ## Resource: StudentHomelessProgramAssociation
-**Description**
+**Description:**
 This association represents the McKinney-Vento Homeless Program program(s) that a student participates in or from which the Student receives services.
 
-**Prerequisite Data**
+**Prerequisite Data:**
 - Schools
 - Program - where ProgramTypeDescriptor = "Homeless"
 - Students
 
-**Scenarios**
+**Scenarios:**
 1.	Submit a StudentHomelessProgramAssociation for the EE enrolled student 
     - Primary Nighttime Residence  = SHR
     - Begin Date = 9/5/2019
@@ -168,15 +168,15 @@ This association represents the McKinney-Vento Homeless Program program(s) that 
 
 ## Resource: StudentLanguageInstructionProgramAssociation
 
-**Description**
+**Description:**
 This association represents the Title III Language Instruction for Limited English Proficient and Immigrant Students program(s) that a student participates in or from which the Student receives services.
 
-**Prerequisite Data**
+**Prerequisite Data:**
 - Schools
 - Program - where ProgramTypeDescriptor = "English Learner"
 - Students
 
-**Scenarios**
+**Scenarios:**
 1.	Submit StudentLanguageInstructionProgramAssociation for EE enrolled Student
     - Begin Date = 9/5/2019	
     - End Date = 5/25/2021
