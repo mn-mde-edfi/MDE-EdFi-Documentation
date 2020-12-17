@@ -134,7 +134,7 @@ As described above, each student must first have a StudentSchoolAssociation reco
 * Use Grade EE if the EE program service is provided in a different school than the regular grade.
 
 Once the enrollment record exists, one or both of the EE Program Associations may then be assigned to the student.
-* Students in Grade EC, K-3 may only have an EE-ECSE program assigned; they cannot have an EE-SR program assignment.
+* Students in Grade EC, K-3 may only have an EE-ECFE program assigned; they cannot have an EE-SR program assignment.
 * Only Grade EE students may have an EE-SR program.
 * Grade EE students may also have an EE-ECFE program alone or in combination with an EE-SR program.
 
