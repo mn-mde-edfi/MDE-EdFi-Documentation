@@ -92,6 +92,13 @@ Examples:
 - The MDE State Organization ID for [Mayo Senior High](https://public.education.mn.gov/MdeOrgView/organization/show/2734) (an individual school) is ```10535315000```. The corresponding Ed-Fi SchoolId is ```10535315```.
 - The MDE State Organization ID for [Rochester Public School District](https://public.education.mn.gov/MdeOrgView/organization/show/527) (an LEA) is ```10535000000```. The corresponding Ed-Fi LocalEducationAgencyId is ```10535000```
 
+### Identifiers: Schools vs. Buildings
+MDE's system for identifying individual schools is independent of building or physical address. Therefore, a district may have multiple school identifiers assigned for the same building, especially if that building houses several different [school classifications](https://public.education.mn.gov/MdeOrgView/reference/schoolClassTypes). 
+
+For example, the Comfrey Public School District (0081-01, or ```10081000000```) houses its district office, [elementary](https://public.education.mn.gov/MdeOrgView/organization/show/1135), and [secondary](https://public.education.mn.gov/MdeOrgView/organization/show/1136) schools (along with several other programs) at 305 Ochre Street West in Comfrey (as of December 2020). However, each program gets an individual identifier, such as:
+- *Comfrey Elementary*: Ed-Fi school ID: ```10081010``` formatted ID: 0081-01-010
+- *Comfrey Secondary*: Ed-Fi school ID: ```10081020``` formatted ID: 0081-01-020
+
 # Navigation
 - [Return to SIS Test Plan Overview](sis_test_plan_a_toc.md)
 - [Advance to Data Requirements and API Resources](sis_test_plan_c_data_reqs.md)
