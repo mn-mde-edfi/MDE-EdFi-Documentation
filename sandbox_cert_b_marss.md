@@ -17,7 +17,9 @@ This entity represents an individual for whom instruction, services, and/or care
     - lastSurname
     - middleName
 
-_Note:_ You will not be able to view or edit students until you claim them with the creation of an enrollment record via ```StudentSchoolAssociation``` (see next section). Within Swagger, only one record can be created at a time. See [this example record](data\example_value_student_record.json) for specific JSON formatting.
+_Notes:_ 
+- You will not be able to view or edit students until you claim them with the creation of an enrollment record via ```StudentSchoolAssociation``` (see next section). Within Swagger, only one record can be created at a time. See [this example record](data\example_value_student_record.json) for specific JSON formatting.
+- The student's legal name should be used and stay consistent over time unless the student legally changes their name.
 
 ## Resource: StudentSchoolAssociations
 
@@ -77,6 +79,8 @@ This association indicates any relationship between a student and an education o
 4.	Create a StudentEducationOrganizationAssociation between Student 2 and Middle School.
 5.	Create a StudentEducationOrganizationAssociation between Student 2 and High School.
 6.	Update Student 3's OptOutIndicator
+
+_Note_: as in the Student record, the student's legal name should be used in the StudentEducationOrganizationAssociation.
 
 ## Resource: Calendar
 
