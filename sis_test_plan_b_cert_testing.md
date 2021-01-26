@@ -79,7 +79,7 @@ Authentication In Ed-Fi 3.x ODS/API has been updated to use two-legged OAuth 2.0
 
 ## Minnesota District and School IDs
 The MDE **stateOrganizationID** (assigned in MDE ORG) is formatted as follows: ```ttddddsssmmm```, where:
-- ``tt`` = district type
+- ``tt`` = district/LEA type (note most LEA types are a single digit)
 - ``dddd`` = district number, left zero filled
 - ``sss`` = school number, left zero filled, 000 for districts
 - ``mmm`` = 000 for all organizations reported in Ed-Fi
@@ -91,6 +91,8 @@ The Ed-Fi **LocalEducationAgencyId** and **SchoolId** are derived as follows: ``
 Examples: 
 - The MDE State Organization ID for [Mayo Senior High](https://public.education.mn.gov/MdeOrgView/organization/show/2734) (an individual school) is ```10535315000```. The corresponding Ed-Fi SchoolId is ```10535315```.
 - The MDE State Organization ID for [Rochester Public School District](https://public.education.mn.gov/MdeOrgView/organization/show/527) (an LEA) is ```10535000000```. The corresponding Ed-Fi LocalEducationAgencyId is ```10535000```
+
+More information is available in [MDE ORG](https://public.education.mn.gov/MdeOrgView/), including [this reference on LEA (organization) types](https://public.education.mn.gov/MdeOrgView/reference/orgTypes).
 
 ### Identifiers: Schools vs. Buildings
 MDE's system for identifying individual schools is independent of building or physical address. Therefore, a district may have multiple school identifiers assigned for the same building, especially if that building houses several different [school classifications](https://public.education.mn.gov/MdeOrgView/reference/schoolClassTypes). 
