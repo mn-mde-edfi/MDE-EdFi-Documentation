@@ -13,6 +13,9 @@ In June-July of 2020, MNIT supporting MDE converted much of the 2020-2021 school
 - [SIS and Vendor Test Plan](sis_test_plan_a_toc.md)
 - [Sandbox Certification Scenarios](sandbox_cert_a_toc.md)
 
+### School Year 2021-2022 Additions
+Adding MCCC and Digital Equity into Ed-Fi requires many of the same resources as the MARSS collection, therefore the certification scenarios added for SY2022 are frequently similar. Over time, MDE will cross-reference scenarios to each other in the markdown versions of these documents.
+
 ## Additional Documentation
 We will also use this repository to store additional documentation and links that may be useful to Districts and Vendors. See the following:
 - [Descriptors and Resources](descriptors_resources.md). This document contains additional information about specific descriptors and data resources that can prove useful in understanding the system.
