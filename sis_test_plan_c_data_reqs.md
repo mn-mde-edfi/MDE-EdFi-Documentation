@@ -120,7 +120,7 @@ Note: Sync process will be created by MDE to populate Staff Tables
 
 **Description**
 
-*Ed-Fi Description*: This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students. **MDE will create the following programs for each district with these program types**: 
+*Ed-Fi Description*: This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students. **MDE will create the following programs with these program types**: 
 
 - Section 504 Plan
 - Title I Part A

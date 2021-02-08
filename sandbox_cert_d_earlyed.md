@@ -24,7 +24,7 @@ This association represents the School in which a student is enrolled. The seman
         - Homebound Service Indicator = N
         - Resident Local Education Agency
         - Special Pupil Indicator = N
-    - Data not collected for Early Education
+    - Data **not** collected for Early Education
         - State Aid Category (see [issue #16](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/issues/16))
         - Membership Attendance Units
         - Membership Attendance Percent Enrolled
@@ -185,3 +185,4 @@ This association represents the Title III Language Instruction for Limited Engli
 
 # Navigation
 - [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
+- [Advance to MCCC](sandbox_cert_e_mccc.md)

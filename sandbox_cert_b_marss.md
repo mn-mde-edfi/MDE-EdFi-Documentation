@@ -1,4 +1,6 @@
-# 2020-2021 SIS Submitted MDE Ed-Fi API Resources: MARSS Data Collection
+# MARSS and Ancestry of Ethnic Origin Certification Scenarios – Ed-Fi API Resources
+*Note: Several MARSS resources are related to the new MCCC collection. These resources are repeated within the two sections in the Word version of this documentation. In this markdown document, those resource sections merely link to the appropriate sections within the MCCC certification scenarios.*
+
 ## Resource: Students
 
 **Description**
@@ -90,7 +92,7 @@ Ed-Fi Description: A set of dates associated with an organization. **MDE is not 
 **Prerequisite Data**
 - Schools (published to ODS by MDE)
 
-***Changes from 19-20 to 20-21***
+***Changes implemented in 20-21***
 New properties: 
 - DaysInSession
 - Description
@@ -115,11 +117,53 @@ New properties:
 6.	Create Middle School Calendar
 7.	Create High School Calendar
 
+**MCCC**
+See also [Resource: Calendar section in MCCC certification scenarios.](sandbox_cert_e_mccc.md#resource-calendar)
+
+## Resource: CalendarDate
+
+See [Resource: CalendarDate section in MCCC certification scenarios.](sandbox_cert_e_mccc.md#resource-calendardate)
+
+## Resource: ClassPeriod
+
+See [Resource: ClassPeriod section in MCCC certification scenarios.](sandbox_cert_e_mccc.md#resource-classperiod)
+
+## Resource: GradingPeriod
+
+See [Resource: GradingPeriod section in MCCC certification scenarios.](sandbox_cert_e_mccc.md#resource-gradingperiod)
+
+## Resource: Session
+
+See [Resource: Session section in MCCC certification scenarios.](sandbox_cert_e_mccc.md#resource-session)
+
+## Resource: Course
+
+See [Resource: Course section in MCCC certification scenarios.](sandbox_cert_e_mccc.md#resource-course)
+
+## Resource: CourseOffering
+
+See [Resource: CourseOffering section in MCCC certification scenarios.](sandbox_cert_e_mccc.md#resource-courseoffering)
+
+## Resource: Section
+
+See [Resource: Section section in MCCC certification scenarios.](sandbox_cert_e_mccc.md#resource-section)
+
+## Resource: StaffSectionAssociation
+See [Resource: StaffSectionAssociation section in MCCC certification scenarios.](sandbox_cert_e_mccc.md#resource-staffsectionassociation)
+
+## Resource: StudentSectionAssociation
+
+See [Resource: StudentSectionAssociation section in MCCC certification scenarios.](sandbox_cert_e_mccc.md#resource-studentsectionassociation)
+
+## Resource: Grade
+
+See [Resource: Grade section in MCCC certification scenarios.](sandbox_cert_e_mccc.md#resource-grade)
+
 ## Resource: Programs
 
-Program Records for each of the following program types will be loaded for each district by MDE:
+Program Records for each of the following program types will be loaded by MDE with the StateEducationAgencyid = ```999999000```:
 - The **educationOrganizationReference** for the **StudentProgramAssociation** is the **SchoolId**.  
-- The **educationOrganizationReference** on the StudentProgramAssociation's **programReference** is the **LocalEducationAgencyId**.
+- The **educationOrganizationReference** on the StudentProgramAssociation's **programReference** is the **StateEducationAgencyid (999999000)**.
 
 # Navigation
 - [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)

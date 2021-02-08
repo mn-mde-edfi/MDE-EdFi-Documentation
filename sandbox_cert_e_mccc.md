@@ -58,7 +58,7 @@ MDE allows for the capture of student demographic data by school enrollment. The
 
 ### Description
 
-Ed-Fi Description: A set of dates associated with an organization. MDE is not using the Calendar entity as collection of dates, rather MDE captures the following key pieces of Calendar Metadata in the Calendar file: Instructional Days, Length of Day, and Kindergarten Schedule (when applicable). Calendar is captured at the School Level by grade.
+Ed-Fi Description: A set of dates associated with an organization. **MDE is not using the Calendar entity as collection of dates**, rather MDE captures the following key pieces of Calendar Metadata in the Calendar file: Instructional Days, Length of Day, and Kindergarten Schedule (when applicable). Calendar is captured at the School Level by grade.
 
 ### Prerequisite Data
 
@@ -74,6 +74,9 @@ Ed-Fi Description: A set of dates associated with an organization. MDE is not us
     - Days In Session
     - Instructional Days
     - Description
+
+**MARSS**
+See also the [Resource:Calendar section of the MARSS Certification Scenarios](sandbox_cert_b_marss.md#resource-calendar).
 
 ## Resource: CalendarDate
 
@@ -481,3 +484,7 @@ Ed-Fi Description: This educational entity represents an overall score or assess
     - NumericGradeEarned
     - LetterGradeEarned
     - SectionEnrollmentType
+
+# Navigation
+- [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
+- [Advance to Digital Equity](sandbox_cert_f_digital_equity.md)
