@@ -16,7 +16,7 @@ For each school year, you will have a unique key and secret. Each key and secret
 - In the 20-21 ODS, your key and secret will be constrained to the elements in the **Minnesota_Twenty_Twenty_One_SISVendor_Profile**.
 - In the 21-22 ODS, your key and secret will be constrained to the elements in the **Minnesota_Twenty_One_Twenty_Two_SISVendor_Profile**. 
 
-[The SDK](https://github.com/mn-mde-edfi/MDE-Ed-Fi-ODS-API-SDK/tree/master/MDE-EdFiClientSDK/EdFi/OdsApiv31_2021/src/EdFi.OdsApi.Sdk
+[The SDK](https://github.com/mn-mde-edfi/MDE-Ed-Fi-ODS-API-SDK/tree/master/MDE-EdFiClientSDK/EdFi/OdsApiv31_2022
 ) includes multiple profile definitions.
 
 ## Ed-Fi / MARSS Identities API Integration Test 
