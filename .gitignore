@@ -1,4 +1,5 @@
 data/testing*
 data/example_sandbox_records_studentSchoolAssociation.json
 data/reference*
+devlocal/*
 *~*
