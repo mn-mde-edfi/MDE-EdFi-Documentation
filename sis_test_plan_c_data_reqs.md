@@ -153,15 +153,15 @@ The above image describes the dependencies required to work with the MDE Ed-Fi m
 
 ### MCCC Collection
 ![Ed-Fi Model Dependency Graph for MCCC](images/ed-fi_model_dependency_mccc_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for MCCC")
-The above image describes the dependencies required to work with the MDE Ed-Fi model as part of the MCCC collection. In detail (**this description is pending review**):
-1.	Descriptors must be loaded first, as all other resources contain references to descriptor values.
-2.	Once descriptors are loaded, Education Organization data must be loaded by MDE.
-3.	The core Student records must be loaded before students may be enrolled in courses.
-4. Courses, course offerings, and sections can be loaded after Education Organizations. 
-5. Calendars and Class Periods can be loaded after Education Organizations.
-6. Staff and Staff Section Associations can be loaded after Sections. 
-7.	Student enrollment data must be provided via StudentSectionAssociation in order to establish a valid security claim before any other updates may be made to student records.
-8.	Once student enrollment data is loaded, grades and grading period assications can be assigned.
+The above image describes the dependencies required to work with the MDE Ed-Fi model as part of the MCCC collection. In detail:
+1. Descriptors must be loaded first, as all other resources contain references to descriptor values.
+2. Once descriptors are loaded, Education Organization data must be loaded by MDE. For the MCCC data collection, Colleges will be loaded to the PostSecondaryInstitution resource to allow the association of a college to a college level course. State courses are associated with the StateEducationAgency.
+3. The core Student records must be loaded before students may be enrolled in courses.
+4. Student enrollment data must be provided via StudentSchoolAssociation in order to establish a valid security claim before any other updates may be made to student records
+5. Courses, course offerings, and sections can be loaded after Education Organizations. State Courses are pre-loaded by MDE. 
+6. Calendars and Class Periods can be loaded after Education Organizations.
+7. Staff, Staff Section Associations, and StudentSectionAssociations can be loaded after Sections. 
+8. Once student section enrollment data is loaded, grades and grading period assications can be assigned.
 
 ### Early Education Enrollment and Parent collection
 ![Ed-Fi Model Dependency Graph for Early Ed](images/ed-fi_model_dependency_early_ed_parent_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for Early Ed")
