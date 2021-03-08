@@ -11,5 +11,12 @@ Then advance to the specific sections on Sandbox Certification Scenarios:
 - [Minnesota Common Course Catalog (MCCC) Certification Scenarios](sandbox_cert_e_mccc.md)
 - [Digital Equity Certification Scenarios](sandbox_cert_f_digital_equity.md)
 
+## Deadlines
+The deadlines for vendor certification are: 
+- (First Priority) Digital Equity and 21st Century Supplemental Pieces: **May 31, 2021** with a full roll out in the 2021-22 school year
+- (Second Priority) MCCC: **August, 2021** with pilots in the Spring of 2022 and a full roll out in the 2022-23 school year 
+
+Contact MDE's Tara Chapa for more details.
+
 ## Future Developments
 - Looking for details on future collections for MDE's Ed-Fi? The Word and Excel versions of the documentation will be added into a new folder for each year. In the meantime, the Sandbox environment does have a "preview release" in the Swagger UI for your exploration.
