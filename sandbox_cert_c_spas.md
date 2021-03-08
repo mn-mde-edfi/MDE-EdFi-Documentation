@@ -11,6 +11,11 @@ This association represents Students in the 21st Century Community Learning Cent
 
 **Scenarios**
 - Associate Student 1 with this StudentProgramAssociation 
+- Include required Start Date (“beginDate”)
+- Include program attendance in days (an integer value) AND hours (up to 2 decimal places)
+  - Attendance amounts should not exceed the number of days or hours in a year
+- In a separate transaction, add an End Date to this program association for Student 1
+
 
 ## Resource: StudentCEISProgramAssociation
 **Description**
