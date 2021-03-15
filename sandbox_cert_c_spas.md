@@ -2,7 +2,7 @@
 
 ## Resource: Student21stCenturyLearningCenterGrantProgramAssociation
 **Description**
-This association represents Students in the 21st Century Community Learning Centers Grant Program.
+This association represents Students in the 21st Century Community Learning Centers Grant Program. _Note_: Attendance Days and Attendance Hours are both required, and they represent independent measures of total attendance. For example, if a student attended a program 4 days a week for exactly 3 hours a day, and exactly 10 weeks, Attendance Days would be 40, and Attendance Hours would be 120.
 
 **Prerequisite Data**
 - Schools
@@ -13,7 +13,10 @@ This association represents Students in the 21st Century Community Learning Cent
 - Associate Student 1 with this StudentProgramAssociation 
 - Include required Start Date (“beginDate”)
 - Include program attendance in days (an integer value) AND hours (up to 2 decimal places)
-  - Attendance amounts should not exceed the number of days or hours in a year
+  - For a school year, attendance days should be between 1-300. For summer days, they should be between 1-200.
+  - Attendance amounts should not exceed the number of days (365) or hours in a year. (A reasonable maximum for attendance hours would be 1500.)
+  - The minimum unit for attendance hours should be .25 hours
+  - Attendance Hours divided by Attendance Days should never exceed 24
 - In a separate transaction, add an End Date to this program association for Student 1
 
 
