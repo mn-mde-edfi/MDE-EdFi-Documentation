@@ -11,6 +11,11 @@ This association represents Students in the 21st Century Community Learning Cent
 
 **Scenarios**
 - Associate Student 1 with this StudentProgramAssociation 
+- Include required Start Date (“beginDate”)
+- Include program attendance in days (an integer value) AND hours (up to 2 decimal places)
+  - Attendance amounts should not exceed the number of days or hours in a year
+- In a separate transaction, add an End Date to this program association for Student 1
+
 
 ## Resource: StudentCEISProgramAssociation
 **Description**
@@ -163,7 +168,7 @@ Students who have a Section 504 plan.
 
 ## Resource: StudentSpecialEducationProgramAssociation
 **Description**
-This association represents the special education program(s) that a student participates in or receives services from. The association is an extension of the StudentProgramAssociation particular for special education programs.
+This association represents the special education program(s) that a student participates in or receives services from. The association is an extension of the StudentProgramAssociation particular for special education programs. _Note_: Placing Local Education Agency Reference is an optional element, intended only for students with IEPs who are enrolled in a joint powers or intermediate district.
 
 **Important Notes on Order of Disability**
 
@@ -178,8 +183,9 @@ MDE collects the primary disability code for a student during an enrollment peri
 - Students
 
 **Scenarios**
-1.	Associate Student 13 with this StudentProgramAssociation include a disability with order of priority = 1
-2.	Change disability code to 12, set special education service hours to 1100.5
+1. Associate Student 13 with this StudentProgramAssociation include a disability with order of priority = 1
+2. Change disability code to 12, set special education service hours to 1100.5
+3. Add a Placing Local Education Agency Reference (placingLocalEducationAgencyReference) to Student 13
 
 ## Resource: StudentTitleIPartAProgramAssociations
 **Description**
@@ -195,4 +201,4 @@ This association represents the Title I Part A program(s) that a student partici
 
 # Navigation
 - [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
-- [Advance to 2020-2021 Early Education Enrollment Certification Scenarios: API Resources](sandbox_cert_d_earlyed.md)
+- [Advance Early Education Enrollment Certification Scenarios](sandbox_cert_d_earlyed.md)

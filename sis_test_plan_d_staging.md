@@ -1,22 +1,23 @@
 # Staging Environment Load and Quality Check
 
-At the completion of Scenario based testing in the Sandbox environment, MNIT will grant vendors a key and secret for the district(s) they are working with in the Staging environment.In the Staging environment, vendors will load actual student data, with student enrollment (studentSchoolAssociation), demographic (studentEducationOrganizationAssociation), program and calendar information. 
+At the completion of Scenario based testing in the Sandbox environment, MNIT will grant vendors a key and secret for the district(s) they are working with in the Staging environment. In the Staging environment, vendors will load actual student data, with student enrollment (studentSchoolAssociation), demographic (studentEducationOrganizationAssociation), program and calendar information. 
 
-The main URL for the Staging Environment is:
-```https://stage.edfi.education.mn.gov/edfi.ods.webapi/```
+The main URL for the Staging Environment is: ```https://stage.edfi.education.mn.gov/edfi.ods.webapi/```
 
-Remember, the new SDK contains everything you need to speak to both school years. In Production and Staging there is a single API with multiple school years which are addressed by specifying school year in the path. For example:
+Remember, the new SDK contains everything you need to speak to multiple school years. In Production and Staging there is a single API with multiple school years which are addressed by specifying school year in the path. For example:
 
 - /edfi.ods.webapi/data/v3/**2020**
 - /edfi.ods.webapi/data/v3/**2021**
+- /edfi.ods.webapi/data/v3/**2022**
 
 For each school year, you will have a unique key and secret. Each key and secret will be associated with a profile that allows data to be submitted based on what was required for the school year. Thus:
 
 - In the 19-20 ODS, your key and secret is constrained to the elements in the **Minnesota_SISVendor_Profile**.
-- In the 20-21 ODS, your key and secret will be constrained to the elements in the **Minnesota_Twenty_Twenty_One_SISVendor_Profile**. 
+- In the 20-21 ODS, your key and secret will be constrained to the elements in the **Minnesota_Twenty_Twenty_One_SISVendor_Profile**.
+- In the 21-22 ODS, your key and secret will be constrained to the elements in the **Minnesota_Twenty_One_Twenty_Two_SISVendor_Profile**. 
 
-[The SDK](https://github.com/mn-mde-edfi/MDE-Ed-Fi-ODS-API-SDK/tree/master/MDE-EdFiClientSDK/EdFi/OdsApiv31_2021/src/EdFi.OdsApi.Sdk
-) includes both profile definitions.
+[The SDK](https://github.com/mn-mde-edfi/MDE-Ed-Fi-ODS-API-SDK/tree/master/MDE-EdFiClientSDK/EdFi/OdsApiv31_2022
+) includes multiple profile definitions.
 
 ## Ed-Fi / MARSS Identities API Integration Test 
 
@@ -24,8 +25,8 @@ Vendors have the option of building in support for interfacing with the MN Stude
 
 Vendors must demonstrate their ability to create new Student IDs when a Student is created in the Student Information System. This would be accomplished by posting to the ```/identities``` endpoint. 
 
-The SY2021 URL for the identities API in the Staging environment is:
-```https://stage.edfi.education.mn.gov/edfi.ods.webapi/Identity/v2/2021/identities```
+The SY2022 URL for the identities API in the Staging environment is:
+```https://stage.edfi.education.mn.gov/edfi.ods.webapi/Identity/v2/2022/identities```
 
 The general process for identity creation is as follows: 
 
