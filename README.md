@@ -1,8 +1,6 @@
 # MDE-EdFi-Documentation
 
-****SY2021-2022 Branch ****
-
-_NOTE: Current plans call for this branch will be merged into the main branch on March 15, 2021._
+_NOTE: The SY2021-22 branch was merged into the main branch on March 15, 2021._ Old links to the SY2021-22 branch will no longer function.
 
 This repository contains documentation for Minnesota's implementation of the [Ed-Fi alliance standard](https://www.ed-fi.org/). The Minnesota Department of Education (MDE) is implementing Ed-Fi to help improve the collection of required educational data from Minnesota school districts. Learn more [at MDE's Ed-Fi web page](https://education.mn.gov/MDE/dse/datasub/edfi/) and at the following links:
 - [Ed-Fi Technical Documentation](https://techdocs.ed-fi.org/)
