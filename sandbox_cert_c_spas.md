@@ -171,7 +171,7 @@ Students who have a Section 504 plan.
 
 ## Resource: StudentSpecialEducationProgramAssociation
 **Description**
-This association represents the special education program(s) that a student participates in or receives services from. The association is an extension of the StudentProgramAssociation particular for special education programs. _Note_: Placing Local Education Agency Reference is an optional element, intended only for students with IEPs who are enrolled in a joint powers or intermediate district.
+This association represents the special education program(s) that a student participates in or receives services from. The association is an extension of the StudentProgramAssociation particular for special education programs. _Note_: Placing Local Education Agency Reference is an optional element, intended only for students with IEPs who are enrolled in a joint powers or intermediate district. See the [notes on Placing LEA](descriptors_resources.md#placing-local-education-agency-reference).
 
 **Important Notes on Order of Disability**
 
