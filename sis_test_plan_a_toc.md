@@ -21,7 +21,7 @@ This documentation repository includes the certification requirements for both t
 As you move from Sandbox to Staging for SY2022, remember the following:
 - Pay attention to the URLs, years in the API path, and key and secret details identified [in the staging load and quality check section](sis_test_plan_d_staging.md#staging-environment-load-and-quality-check). To wit:
   - Staging and Production require profile-specific coding, as your key and secret will be for a single profile (different profiles for different years)
-  - You will get new key/secret combinations for the 21-22 ODS in production - you won't be able to re-use those issued for prior years
+  - You will get new key/secret combinations for the 21-22 ODS in production - you won't be able to re-use those issued for prior years. So, for example, your key and secret for the 2020-21 ODS is only associated with the **Twenty_Twenty_One_SISVendor_Profile** and will only work for that profile.
 - You may only get keys and secrets for individual districts at a time
 
 ## References
