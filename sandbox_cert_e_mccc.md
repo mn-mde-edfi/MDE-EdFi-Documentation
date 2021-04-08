@@ -113,7 +113,8 @@ Ed-Fi Description: This entity represents the designation of a regularly schedul
     - SchoolID
     - ClassPeriodDescription
     - StartTime
-    - EndTime
+    - EndTime 
+Note that times should be formatted as "HH:MM", i.e. "09:00", "14:00".
 
 ## Resource: GradingPeriod
 
@@ -381,7 +382,7 @@ Create the following CourseOffering Records:
 
 ### Description
 
-Ed-Fi Description: This entity represents a setting in which organized instruction of course content is provided, in-person or otherwise, to one or more students for a given period of time. A course offering may be offered to more than one section.Most MCCC CourseSectionInfo elements will be collected in the Ed-Fi Section Entity.
+Ed-Fi Description: This entity represents a setting in which organized instruction of course content is provided, in-person or otherwise, to one or more students for a given period of time. A course offering may be offered to more than one section. Most MCCC CourseSectionInfo elements will be collected in the Ed-Fi Section Entity.
 
 ### Prerequisite Data
 
@@ -481,13 +482,14 @@ Ed-Fi Description: This educational entity represents an overall score or assess
 ### Scenarios
 
 1. Create 1 Grade Record for each StudentSectionAssociation loaded. Include the following elements:
+    - GradeTypeDescriptor
+    - GradingPeriodReference
     - StudentSectionAssociationReference
     - CollegeCreditsEarned
     - CollegeGradeEarned
     - LocalCreditEarned
     - NumericGradeEarned
     - LetterGradeEarned
-    - SectionEnrollmentType
 
 # Navigation
 - [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
