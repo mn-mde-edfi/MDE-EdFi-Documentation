@@ -142,6 +142,7 @@ Note: Sync process will be created by MDE to populate Staff Tables
 ## Ed-Fi Model Dependency Graphs
 ### MARSS collection
 ![Ed-Fi Model Dependency Graph for MARSS](images/ed-fi_model_dependency_marss_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for MARSS")
+<img src="images/ed-fi_model_dependency_marss_3.1.1.PNG" alt="Ed-Fi Model Dependency Graph for MARSS">
 The above image describes the dependencies required to work with the MDE Ed-Fi model as part of MARSS collections. In detail:
 1.	Descriptors must be loaded first, as all other resources contain references to descriptor values.
 2.	Once descriptors are loaded, Education Organization data must be loaded by MDE.
