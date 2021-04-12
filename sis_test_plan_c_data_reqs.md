@@ -10,7 +10,7 @@ As an example, to view the required resource properties for a **studentSchoolAss
 - _Note:_ "ed-fi" in the path above indicates that this is a core resource.
 
 Properties in a **studentSchoolAssociation** can be viewed as an [example/template JSON object](data\example_template_studentSchoolAssociation.json) by selecting **"Example Value"**:
-![ODS API Swagger studentSchoolAssociations Screen Capture](images/ods_api_swagger_studentSchoolAssociations_3.1.1.png?raw=true "ODS API studentSchoolAssociations Example Value")
+![ODS API Swagger studentSchoolAssociations Screen Capture](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ods_api_swagger_studentSchoolAssociations_3.1.1.png?raw=true "ODS API studentSchoolAssociations Example Value")
 
 Definitions and Data Types in the **studentSchoolAssociation** can be viewed by selecting **“Model”** just to the right of the "Example Value" option. Required components are marked with a red *. Often, the actual data posting for an individual record can be much less than what is in the model, as demonstrated in [this example record](data\example_value_studentSchoolAssociation.json).
 
@@ -141,8 +141,7 @@ Note: Sync process will be created by MDE to populate Staff Tables
 
 ## Ed-Fi Model Dependency Graphs
 ### MARSS collection
-![Ed-Fi Model Dependency Graph for MARSS](images/ed-fi_model_dependency_marss_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for MARSS")
-<img src="images/ed-fi_model_dependency_marss_3.1.1.PNG" alt="Ed-Fi Model Dependency Graph for MARSS">
+![Ed-Fi Model Dependency Graph for MARSS](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_marss_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for MARSS")
 The above image describes the dependencies required to work with the MDE Ed-Fi model as part of MARSS collections. In detail:
 1.	Descriptors must be loaded first, as all other resources contain references to descriptor values.
 2.	Once descriptors are loaded, Education Organization data must be loaded by MDE.
@@ -153,7 +152,7 @@ The above image describes the dependencies required to work with the MDE Ed-Fi m
 7.	StudentProgramAssociations can be loaded once Programs and StudentSchoolAssociations have been loaded.
 
 ### MCCC Collection
-![Ed-Fi Model Dependency Graph for MCCC](images/ed-fi_model_dependency_mccc_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for MCCC")
+![Ed-Fi Model Dependency Graph for MCCC](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_mccc_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for MCCC")
 The above image describes the dependencies required to work with the MDE Ed-Fi model as part of the MCCC collection. In detail:
 1. Descriptors must be loaded first, as all other resources contain references to descriptor values.
 2. Once descriptors are loaded, Education Organization data must be loaded by MDE. For the MCCC data collection, Colleges will be loaded to the PostSecondaryInstitution resource to allow the association of a college to a college level course. State courses are associated with the StateEducationAgency.
@@ -165,7 +164,7 @@ The above image describes the dependencies required to work with the MDE Ed-Fi m
 8. Once student section enrollment data is loaded, grades and grading period assications can be assigned.
 
 ### Early Education Enrollment and Parent collection
-![Ed-Fi Model Dependency Graph for Early Ed](images/ed-fi_model_dependency_early_ed_parent_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for Early Ed")
+![Ed-Fi Model Dependency Graph for Early Ed](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_early_ed_parent_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for Early Ed")
 The above image describes the dependencies required to work with the MDE Ed-Fi model as part of Early Education Enrollment and Parent collection. In detail:
 1.	Descriptors must be loaded first, as all other resources contain references to descriptor values.
 2.	Once descriptors are loaded, Education Organization data must be loaded by MDE.
