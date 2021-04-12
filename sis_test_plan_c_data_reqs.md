@@ -153,6 +153,7 @@ The above image describes the dependencies required to work with the MDE Ed-Fi m
 
 ### MCCC Collection
 ![Ed-Fi Model Dependency Graph for MCCC](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_mccc_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for MCCC")
+
 The above image describes the dependencies required to work with the MDE Ed-Fi model as part of the MCCC collection. In detail:
 1. Descriptors must be loaded first, as all other resources contain references to descriptor values.
 2. Once descriptors are loaded, Education Organization data must be loaded by MDE. For the MCCC data collection, Colleges will be loaded to the PostSecondaryInstitution resource to allow the association of a college to a college level course. State courses are associated with the StateEducationAgency.

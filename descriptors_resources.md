@@ -163,3 +163,44 @@ In this scenario:
 - B is probably the transporting district
 - B is the placing district (should be a district type of 1, 2, 3 or 7)
 - C is the enrolling/serving district
+
+## Course Records for MCCC
+For sy2021-2022, the Minnesota Common Course Catalogue (MCCC) data collection requires districts to create their course offerings (including college courses) and then relate those courses to state-level course definitions. Over 1700 State Education Agency (SEA - aka MDE) course definitions are available in the populated sandbox and will be available in Staging and Production.
+
+To get the list of SEA-defined courses, perform a GET operation against the "courses" endpoint using the parameter _courseDefinedByDescriptor_ equal to _uri://ed-fi.org/CourseDefinedByDescriptor#SEA_ - in an HTTP request this will be escaped as: ```courseDefinedByDescriptor=uri%3A%2F%2Fed-fi.org%2FCourseDefinedByDescriptor%23SEA```. An example JSON value for an SDE-defined course is below:
+
+```javascript
+  {
+    "id": "70b70ed2d6d143d284da976a391a08ab",
+    "educationOrganizationReference": {
+      "educationOrganizationId": 255901001,
+      "link": {
+        "rel": "School",
+        "href": "/ed-fi/schools/b0f188944e7a46c1ae8eed6464187fb7"
+      }
+    },
+    "courseCode": "03100500",
+    "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
+    "courseDescription": "Algebra I",
+    "courseTitle": "Algebra I",
+    "highSchoolCourseRequirement": true,
+    "numberOfParts": 1,
+    "_ext": {
+      "mn": {
+        "sequenceLimit": 1,
+        "assessmentTools": [],
+        "curriculumUseds": [],
+        "levelTypes": [],
+        "programs": []
+      }
+    },
+    "identificationCodes": [],
+    "learningStandards": [],
+    "levelCharacteristics": [],
+    "offeredGradeLevels": [],
+    "_etag": "5248797570484187904"
+  }
+
+```
+
+Given those course records, districts will be able to relate local course records to SEA-defined courses via course-to-course association records. From there, student attendance, grades, etc can be submitted on the local courses. __Note:__ As of April 12, 2021, MDE and its contractors have identified a potential issue with the courses loaded into the 2021-2022 Sandboxes.
