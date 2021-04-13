@@ -167,27 +167,26 @@ In this scenario:
 ## Course Records for MCCC
 For sy2021-2022, the Minnesota Common Course Catalogue (MCCC) data collection requires districts to create their course offerings (including college courses) and then relate those courses to state-level course definitions. Over 1700 State Education Agency (SEA - aka MDE) course definitions are available in the populated sandbox and will be available in Staging and Production.
 
-To get the list of SEA-defined courses, perform a GET operation against the "courses" endpoint using the parameter _courseDefinedByDescriptor_ equal to _uri://ed-fi.org/CourseDefinedByDescriptor#SEA_ - in an HTTP request this will be escaped as: ```courseDefinedByDescriptor=uri%3A%2F%2Fed-fi.org%2FCourseDefinedByDescriptor%23SEA```. An example JSON value for an SDE-defined course is below:
+To get the list of SEA-defined courses, perform a GET operation against the "courses" endpoint using the parameter _courseDefinedByDescriptor_ equal to _uri://ed-fi.org/CourseDefinedByDescriptor#SEA_ - in an HTTP request this will be escaped as: ```courseDefinedByDescriptor=uri%3A%2F%2Fed-fi.org%2FCourseDefinedByDescriptor%23SEA```. An example JSON value for an SEA-defined course is below:
 
 ```javascript
-  {
-    "id": "70b70ed2d6d143d284da976a391a08ab",
+{
+    "id": "b13d0939aabb450f9e21226dce836364",
     "educationOrganizationReference": {
-      "educationOrganizationId": 255901001,
+      "educationOrganizationId": 999999000,
       "link": {
-        "rel": "School",
-        "href": "/ed-fi/schools/b0f188944e7a46c1ae8eed6464187fb7"
+        "rel": "StateEducationAgency",
+        "href": "/ed-fi/stateEducationAgencies/ed87f88ff6cc4d088ea42d638e051551"
       }
     },
-    "courseCode": "03100500",
-    "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#SEA",
-    "courseDescription": "Algebra I",
-    "courseTitle": "Algebra I",
-    "highSchoolCourseRequirement": true,
-    "numberOfParts": 1,
+    "courseCode": "10001",
+    "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#SEA",
+    "courseDescription": "Courses introduce computers and peripheral devices, the functions and uses of computers, the language used in the computer industry, and computer applications. They typically explore legal and ethical issues associated with computer use, as well as how computers influence modern society. Students may also be required to perform some computer operations.  Careers related to computer hardware and software are often investigated.",
+    "courseTitle": "Introduction to Computers",
+    "dateCourseAdopted": "2011-01-01",
+    "numberOfParts": 0,
     "_ext": {
       "mn": {
-        "sequenceLimit": 1,
         "assessmentTools": [],
         "curriculumUseds": [],
         "levelTypes": [],
