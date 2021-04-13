@@ -167,7 +167,7 @@ In this scenario:
 ## Course Records for MCCC
 For sy2021-2022, the Minnesota Common Course Catalogue (MCCC) data collection requires districts to create their course offerings (including college courses) and then relate those courses to state-level course definitions. Over 1700 State Education Agency (SEA - aka MDE) course definitions are available in the populated sandbox and will be available in Staging and Production.
 
-To get the list of SEA-defined courses, perform a GET operation against the "courses" endpoint using the parameter _courseDefinedByDescriptor_ equal to _uri://ed-fi.org/CourseDefinedByDescriptor#SEA_ - in an HTTP request this will be escaped as: ```courseDefinedByDescriptor=uri%3A%2F%2Fed-fi.org%2FCourseDefinedByDescriptor%23SEA```. An example JSON value for an SEA-defined course is below:
+To get the list of SEA-defined courses, perform a GET operation against the "courses" endpoint using the parameter _courseDefinedByDescriptor_ equal to _uri://education.mn.gov/CourseDefinedByDescriptor#SEA_ - in an HTTP request this will be escaped as: ```courseDefinedByDescriptor=uri%3A%2F%2Feducation.mn.gov%2FCourseDefinedByDescriptor%23SEA```. An example JSON value for an SEA-defined course is below:
 
 ```javascript
 {
@@ -202,4 +202,4 @@ To get the list of SEA-defined courses, perform a GET operation against the "cou
 
 ```
 
-Given those course records, districts will be able to relate local course records to SEA-defined courses via course-to-course association records. From there, student attendance, grades, etc can be submitted on the local courses. __Note:__ As of April 12, 2021, MDE and its contractors have identified a potential issue with the courses loaded into the 2021-2022 Sandboxes.
+Given those course records, districts will be able to relate local course records to SEA-defined courses via course-to-course association records. From there, student attendance, grades, etc can be submitted on the local courses. __Note:__ As of April 12, 2021, MDE and its contractors have identified a potential issue with the courses loaded into the 2021-2022 Sandboxes, and it is being looked into.
