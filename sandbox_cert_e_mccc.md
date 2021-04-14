@@ -163,7 +163,7 @@ Ed-Fi Description: A term in the school year, generally a unit of time into whic
 
 ### Description
 
-Ed-Fi Description: This educational entity represents the organization of subject matter and related learning experiences provided for the instruction of students on a regular or systematic basis. The MCCC collection in Ed-Fi will use Course for collection of District, College and State Courses.
+Ed-Fi Description: This educational entity represents the organization of subject matter and related learning experiences provided for the instruction of students on a regular or systematic basis. The MCCC collection in Ed-Fi will use Course for collection of District, College and State Courses. For more information on the course resource, see the [Course Records for MCCC](descriptors_resources.md#course-records-for-mccc) section of the Descriptors and Resources document.
 
 **Important Note on College Course Codes:** To ensure uniqueness, the College Course Code must include a district’s LocalEducationAgencyId followed by a hyphen with no spaces, then followed by the College’s Course Identifier for that course. For example, an college course code submitted by Saint Paul Public School District would be submitted as ```10625000-ENG1000```.
 

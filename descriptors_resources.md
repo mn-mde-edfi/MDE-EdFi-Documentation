@@ -202,4 +202,12 @@ To get the list of SEA-defined courses, perform a GET operation against the "cou
 
 ```
 
-Given those course records, districts will be able to relate local course records to SEA-defined courses via course-to-course association records. From there, student attendance, grades, etc can be submitted on the local courses. __Note:__ As of April 12, 2021, MDE and its contractors have identified a potential issue with the courses loaded into the 2021-2022 Sandboxes, and it is being looked into.
+Given those course records, districts will be able to relate local course records to SEA-defined courses via course-to-course association records. From there, student attendance, grades, etc can be submitted on the local courses. __Note:__ As of April 12, 2021, MDE and its contractors have identified a potential issue with the levelCharacteristics of courses loaded into the 2021-2022 Sandboxes, and it is being looked into.
+
+### Course Data Elements and Validation
+Note that in the "dateCourseAdopted" element (aka effectiveStartYear from MCCC), the year must be less than or equal to the reporting year to be a valid code.
+
+#### Level Characteristics
+LEAs will commonly need course level characteristics (the "levelCharacteristics" collection on _course_) included such as UC, MM, IS, and PBL. The following characteristics have rules:
+1. **UC - Unclassified Course Indicator**: if included, then a local course description must be entered.  
+2. **MM - Multiple Marks Indicator**: This should be used for the courses that will have subject area information added to the grade. 
