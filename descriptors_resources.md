@@ -211,3 +211,14 @@ Note that in the "dateCourseAdopted" element (aka effectiveStartYear from MCCC),
 LEAs will commonly need course level characteristics (the "levelCharacteristics" collection on _course_) included such as UC, MM, IS, and PBL. The following characteristics have rules:
 1. **UC - Unclassified Course Indicator**: if included, then a local course description must be entered.  
 2. **MM - Multiple Marks Indicator**: This should be used for the courses that will have subject area information added to the grade. 
+
+## Section Enrollment Type Descriptor for MCCC
+MCCC uses the Section enrollment Type Descriptor to handle what was previously called _Student Record Type_. The Ed-Fi implementation uses this descriptor on the student section association. The table below "maps" the MCCC student record types to the Ed-Fi descriptor code values.
+
+|     MCCC Code    |     Student Record Type    |     EdFi Code    |     Ed-Fi Description    |     Comments    |
+|-|-|-|-|-|
+|1|ScheduledStudentRecord  |SC|SCHEDULED|-|
+|2|ProjectStudentRecord|PB|PROJECT_BASED|-|
+|3|IndependentStudyStudentRecord|AI|ALC_IND_STUDY |Use as needed for independent study|
+|4|DirectPayStudentRecord|DP|DIRECT_PAY_PSEO|-|
+|NA|NA|OP |OFFSITE_PSEO |Do not use|
