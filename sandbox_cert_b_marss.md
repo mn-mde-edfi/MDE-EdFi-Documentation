@@ -92,11 +92,6 @@ Ed-Fi Description: A set of dates associated with an organization. **MDE is not 
 **Prerequisite Data**
 - Schools (published to ODS by MDE)
 
-***Changes implemented in 20-21***
-New properties: 
-- DaysInSession
-- Description
-
 **Scenarios**
 **MARSS**
 
