@@ -147,7 +147,7 @@ Ed-Fi Description: This educational entity represents the organization of subjec
 Including the following elements:
   - CourseDescription (only when associated with an Unclassified State Course)
   - HighSchoolCourseRequirement
-  - CourseLevelCharacteristic for End of Course Indicator
+  - CourseLevelCharacteristic for End of Course Indicator (when applicable)
   - Course Code (Local)
   - SequenceLimit
   - LocalEducationAgencyId
