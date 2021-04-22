@@ -54,47 +54,6 @@ MDE allows for the capture of student demographic data by school enrollment. The
 
 1. Create StudentEducationOrganizationAssociation records for each of the students
 
-## Resource: Calendar
-
-### Description
-
-Ed-Fi Description: A set of dates associated with an organization. **MDE is not using the Calendar entity as collection of dates**, rather MDE captures the following key pieces of Calendar Metadata in the Calendar file: Instructional Days, Length of Day, and Kindergarten Schedule (when applicable). Calendar is captured at the School Level by grade.
-
-### Prerequisite Data
-
-- Schools (published to ODS by MDE)
-
-### Scenarios
-
-1. Create MCCC Calendar for elementary, middle and high schools including:
-    - Calendar Code
-    - School ID
-    - School Year
-    - CalendarType = 'MCCC'
-    - Days In Session
-    - Instructional Days
-    - Description
-
-**MARSS**
-See also the [Resource:Calendar section of the MARSS Certification Scenarios](sandbox_cert_b_marss.md#resource-calendar).
-
-## Resource: CalendarDate
-
-### Description
-
-Ed-Fi Description: The type of scheduled or unscheduled event for the day. MDE will be collecting the MCCC ScheduleInfo Start and End Dates using Calendar Date.
-
-### Prerequisite Data
-
-- Schools (published to ODS by MDE)
-- Calendar
-
-### Scenarios
-
-1. Create 2 Calendar Dates for each of the 3 calendars. Both Dates should reference the MCCC Calendar created above.
-    - Date 1 – calendarEventDescriptor = STARTDT
-    - Date 2 – calendarEventDescriptor = ENDDT
-
 ## Resource: ClassPeriod
 
 ### Description

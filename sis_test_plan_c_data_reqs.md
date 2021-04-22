@@ -23,7 +23,7 @@ Each school year's Data Mapping Matrix spreadsheet includes the mappings between
 
 ## School Year 21-22 Collection Updates Summary
 - The Minnesota Common Course Catalogue (MCCC) data collection has been implemented in Ed-Fi for sy2022. Most MCCC elements are collected in the following core Ed-Fi Entities: 
-  - Course, CourseOffering, Section, StudentSectionAssociation, StaffSectionAssignment, ClassPeriod, Calendar and Grade.
+  - Course, CourseOffering, Section, StudentSectionAssociation, StaffSectionAssignment, ClassPeriod, and Grade.
   - An extension resource, **CourseCourseAssociation** has been added to allow associations between District, State and College Level Courses.
 - The MDE Digital Equity Data collection captures details about home access to the internet for students as well as access to a primary learning device. This new collection will be captured in the StudentEducationOrganizationAssociation under the Student Indicator Entity. 
 
@@ -160,7 +160,7 @@ The above image describes the dependencies required to work with the MDE Ed-Fi m
 3. The core Student records must be loaded before students may be enrolled in courses.
 4. Student enrollment data must be provided via StudentSchoolAssociation in order to establish a valid security claim before any other updates may be made to student records
 5. Courses, course offerings, and sections can be loaded after Education Organizations. State Courses are pre-loaded by MDE. 
-6. Calendars and Class Periods can be loaded after Education Organizations.
+6. Class Periods can be loaded after Education Organizations.
 7. Staff, Staff Section Associations, and StudentSectionAssociations can be loaded after Sections. 
 8. Once student section enrollment data is loaded, grades and grading period assications can be assigned.
 

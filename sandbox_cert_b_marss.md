@@ -92,12 +92,6 @@ Ed-Fi Description: A set of dates associated with an organization. **MDE is not 
 **Prerequisite Data**
 - Schools (published to ODS by MDE)
 
-***Changes implemented in 20-21***
-New properties: 
-- DaysInSession
-- Description
-- New CalendarTypeDescriptor for MCCC
-
 **Scenarios**
 **MARSS**
 
@@ -116,13 +110,6 @@ New properties:
     - Instructional Days = 78
 6.	Create Middle School Calendar
 7.	Create High School Calendar
-
-**MCCC**
-See also [Resource: Calendar section in MCCC certification scenarios.](sandbox_cert_e_mccc.md#resource-calendar)
-
-## Resource: CalendarDate
-
-See [Resource: CalendarDate section in MCCC certification scenarios.](sandbox_cert_e_mccc.md#resource-calendardate)
 
 ## Resource: ClassPeriod
 
