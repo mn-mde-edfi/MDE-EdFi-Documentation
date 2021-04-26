@@ -167,7 +167,7 @@ In this scenario:
 ## Course Records for MCCC
 For sy2021-2022, the Minnesota Common Course Catalogue (MCCC) data collection requires districts to create their course offerings (including college courses) and then relate those courses to state-level course definitions. Over 1700 State Education Agency (SEA - aka MDE) course definitions are available in the populated sandbox and will be available in Staging and Production.
 
-To get the list of SEA-defined courses, perform a GET operation against the "courses" endpoint using the parameter _courseDefinedByDescriptor_ equal to _uri://education.mn.gov/CourseDefinedByDescriptor#SEA_ - in an HTTP request this will be escaped as: ```courseDefinedByDescriptor=uri%3A%2F%2Feducation.mn.gov%2FCourseDefinedByDescriptor%23SEA```. An example JSON value for an SEA-defined course is below:
+To get the list of SEA-defined courses, perform a GET operation against the "courses" endpoint, setting the parameter _courseDefinedByDescriptor_ equal to _uri://education.mn.gov/CourseDefinedByDescriptor#SEA_. In an HTTP request this will be escaped as: ```courseDefinedByDescriptor=uri%3A%2F%2Feducation.mn.gov%2FCourseDefinedByDescriptor%23SEA```. An example JSON value for an SEA-defined course is below:
 
 ```javascript
 {
