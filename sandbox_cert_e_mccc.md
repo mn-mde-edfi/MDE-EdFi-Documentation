@@ -73,7 +73,9 @@ Ed-Fi Description: This entity represents the designation of a regularly schedul
     - ClassPeriodDescription
     - StartTime
     - EndTime 
-Note that times should be formatted as "HH:MM", i.e. "09:00", "14:00".
+Notes:
+1. Times should be formatted as "HH:MM", i.e. "09:00", "14:00".
+2. ```ClassPeriodDescriptor``` and ```ClassPeriodDescription``` are expected on each record. Each class period is only expected to be described with one ```ClassPeriodDescriptor``` (i.e. "DURING_SCHOOL"), and a basic description in ```ClassPeriodDescription``` such as the name of the period.
 
 ## Resource: GradingPeriod
 
