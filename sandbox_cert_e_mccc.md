@@ -150,9 +150,9 @@ Including the following elements:
   - CourseDescription (only when associated with an Unclassified State Course)
   - HighSchoolCourseRequirement
   - CourseLevelCharacteristic for End of Course Indicator (when applicable)
-  - Course Code (Local)
+  - Course Code (this can be defined or created using a local pattern but **must** be unique across the LEA)
   - SequenceLimit
-  - LocalEducationAgencyId
+  - LocalEducationAgencyId (this **must** be the LEA organization ID - local courses cannot be validate via a school/site ID)
   - CourseTitle
   - CourseDefinedByDescriptorId = "LEA"
   - CourseIdentificationCode – repeat the CourseCode (this is an ed-fi requirement)
