@@ -452,6 +452,8 @@ Ed-Fi Description: This educational entity represents an overall score or assess
     - NumericGradeEarned
     - LetterGradeEarned
 
+(Note: as of April 2021, LocalCreditEarned has an erroneous label/definition in Swagger of "“College credit earned”. It should say “LEA credit earned”.)
+
 # Navigation
 - [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
 - [Advance to Digital Equity](sandbox_cert_f_digital_equity.md)
