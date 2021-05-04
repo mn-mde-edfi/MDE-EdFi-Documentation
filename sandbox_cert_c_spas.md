@@ -13,8 +13,8 @@ This association represents Students in the 21st Century Community Learning Cent
 - Associate Student 1 with this StudentProgramAssociation 
 - Include required Start Date (“beginDate”)
 - Include program attendance in days (an integer value) AND hours (up to 2 decimal places)
-  - For a school year, attendance days should be between 1-300. For summer days, they should be between 1-200.
-  - Attendance amounts should not exceed the number of days (365) or hours in a year. (A reasonable maximum for attendance hours would be 1500.)
+  - For a school year, attendance days should be between 1-300.
+  - Attendance amounts should not exceed the number of days (365) or hours in a year. (A reasonable maximum for attendance hours would be 2400.)
   - The minimum unit for attendance hours should be .25 hours
   - Attendance Hours divided by Attendance Days should never exceed 24
 - In a separate transaction, add an End Date to this program association for Student 1
