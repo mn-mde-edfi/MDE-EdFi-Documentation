@@ -212,6 +212,9 @@ LEAs will commonly need course level characteristics (the "levelCharacteristics"
 1. **UC - Unclassified Course Indicator**: if included, then a local course description must be entered.  
 2. **MM - Multiple Marks Indicator**: This should be used for the courses that will have subject area information added to the grade. 
 
+### sequenceLimit vs. Number of Parts
+In April 2021, MDE staff determined that our Ed-Fi implementation contains redundant elements in the “course” entity: numberOfParts (Ed-Fi core) and sequenceLimit (MN extension). In order to increase alignment with core Ed-Fi components, we decided to remove the use of sequenceLimit and rely on numberOfParts for the same information.
+
 ## Section Enrollment Type Descriptor for MCCC
 MCCC uses the Section enrollment Type Descriptor to handle what was previously called _Student Record Type_. The Ed-Fi implementation uses this descriptor on the student section association. The table below "maps" the MCCC student record types to the Ed-Fi descriptor code values.
 

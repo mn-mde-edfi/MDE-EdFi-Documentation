@@ -151,7 +151,7 @@ Including the following elements:
   - HighSchoolCourseRequirement
   - CourseLevelCharacteristic for End of Course Indicator (when applicable)
   - Course Code (this can be defined or created using a local pattern but **must** be unique across the LEA)
-  - SequenceLimit
+  - Number of Parts
   - LocalEducationAgencyId (this **must** be the LEA organization ID - local courses cannot be validate via a school/site ID)
   - CourseTitle
   - CourseDefinedByDescriptorId = "LEA"
@@ -204,7 +204,7 @@ Include the following elements:
   - Course Code
   - CourseDescription
   - HighSchoolCourseRequirement
-  - SequenceLimit
+  - Number of Parts
   - LocalEducationAgencyId
   - CourseTitle
   - CourseDefinedByDescriptorId = 'LEA'
