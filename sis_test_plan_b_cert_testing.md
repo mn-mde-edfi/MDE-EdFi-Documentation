@@ -83,13 +83,14 @@ The MDE **stateOrganizationID** (assigned in MDE ORG) is formatted as follows: `
 - ``sss`` = school number, left zero filled, 000 for districts
 - ``mmm`` = 000 for all organizations reported in Ed-Fi
  
-The MDE **stateOrganizationID** value is stored in Ed-Fi on the Ed-Fi **EducationOrganizationIdentificationCodes** collection and is surfaced via the Ed-Fi **LocalEducationAgencies** and **Schools** resource endpoints. 
+The MDE **stateOrganizationID** value is stored in Ed-Fi on the Ed-Fi **EducationOrganizationIdentificationCodes** collection and is surfaced via the Ed-Fi **LocalEducationAgencies**, **Schools**, and **PostSecondaryEducation** resource endpoints. 
 
 The Ed-Fi **LocalEducationAgencyId** and **SchoolId** are derived as follows: ```ttddddsss```.  The final three digits in ```sss``` are always zero filled (```000```) for the LocalEducationAgencyId. 
 
 Examples: 
 - The MDE State Organization ID for [Mayo Senior High](https://public.education.mn.gov/MdeOrgView/organization/show/2734) (an individual school) is ```10535315000```. The corresponding Ed-Fi SchoolId is ```10535315```.
 - The MDE State Organization ID for [Rochester Public School District](https://public.education.mn.gov/MdeOrgView/organization/show/527) (an LEA) is ```10535000000```. The corresponding Ed-Fi LocalEducationAgencyId is ```10535000```
+- The MDE State Organization ID for [University of Minnesota Morris](https://public.education.mn.gov/MdeOrgView/organization/show/137) (a Post Secondary Institution) is ```230005000000```. The corresponding Ed-Fi postSecondaryInstitutionId is ```230005000```
 
 More information is available in [MDE ORG](https://public.education.mn.gov/MdeOrgView/), including [this reference on LEA (organization) types](https://public.education.mn.gov/MdeOrgView/reference/orgTypes).
 

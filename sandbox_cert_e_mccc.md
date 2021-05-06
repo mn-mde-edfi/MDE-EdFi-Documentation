@@ -185,7 +185,7 @@ Including the following elements:
     - 1 with Course Level Type = D
     - 1 with Course Level Type = A
     - 2 college courses to be used for Direct Pay PSEO, including the following elements:
-      - PostSecondaryInstitutionId
+      - PostSecondaryInstitutionId (see [College Courses](descriptors_resources.md#college-courses))
       - MaximumAvailableCredits
       - CourseCode (College Course Identifier – generally dept letters & course number)
       - CourseTitle
