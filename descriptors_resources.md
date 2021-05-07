@@ -218,7 +218,7 @@ In April 2021, MDE staff determined that our Ed-Fi implementation contains redun
 ### College Courses
 When setting up College Courses (i.e. for Dual Enrollment, Articulation and Direct Pay PSEO), you will need an ```educationOrganizationId``` within the ```educationOrganizationReference```. The IDs to use in this element come from MDE ORG and follow the [district pattern](sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids). The identifiers can be acquired via the API at the ```/ed-fi/postSecondaryInstitutions``` endpoint, within the ```postSecondaryInstitutionId``` element. Each record in that list will also contain a cross-reference to the USDE OPE IDs inside the```educationOrganizationIdentificationSystemDescriptor```, labeled as ```uri://ed-fi.org/EducationOrganizationIdentificationSystemDescriptor#USDE - OPE```. 
 
-_Note_: Sandboxes created before May 7, 2021 had only approximately 12 post-secondary institutions loaded in. Sandboxes created on or after May 7 will have at least 100 records, and more will be added as necessary during regular synch processes.
+_Note_: Sandboxes created before May 7, 2021 had only approximately 12 post-secondary institutions loaded in. Sandboxes created on or after May 7 will have at least 100 records for testing. In development, staging, and production servers, records will be updated during regular synch processes.
 
 ## Section Enrollment Type Descriptor for MCCC
 MCCC uses the Section enrollment Type Descriptor to handle what was previously called _Student Record Type_. The Ed-Fi implementation uses this descriptor on the student section association. The table below "maps" the MCCC student record types to the Ed-Fi descriptor code values.
