@@ -49,7 +49,7 @@ Notes:
     the science courses taken that year.
 */
 {
-  "courseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology 5th",
+  "courseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology",
   "identificationCodes": [
     {
       "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
@@ -61,7 +61,7 @@ Notes:
     "educationOrganizationId": {{districtid}}
   },
   "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
-  "courseTitle": "Biology 150",
+  "courseTitle": "HS Biology",
   "dateCourseAdopted": "2021-09-01",
   "highSchoolCourseRequirement": 0,
   "numberOfParts": 2,
