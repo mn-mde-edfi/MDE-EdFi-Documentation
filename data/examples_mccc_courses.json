@@ -1,0 +1,363 @@
+/*
+Example JSON demonstrating courses for MCCC, generally aligning with the Certification scenarios
+Comments above each course record attempt to describe the scenario and any pertinent notes.
+Notes:
+- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
+- Course Titles are not required, but are used in many of these examples for reference
+*/
+
+/* DISTRICT COURSE 1: Algebra 1
+Notes:
+ - Level Type G (course "2" in the test plan)
+*/
+{
+    "courseCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1",
+    "identificationCodes": [
+      {
+        "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
+        "assigningOrganizationIdentificationCode": "{{districtid}}",
+        "identificationCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1"
+      }
+    ],
+    "educationOrganizationReference": {
+      "educationOrganizationId": {{districtid}}
+    },
+    "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+    "courseTitle": "Algebra I",
+    "dateCourseAdopted": "2021-09-01",
+    "highSchoolCourseRequirement": 1,
+    "numberOfParts": 2,
+    "_ext": {
+      "MN": {
+        "standardAddressedDescriptor": "uri://education.mn.gov/StandardAddressedDescriptor#State",
+
+        "levelTypes": [
+          {
+            "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#G"
+          }
+        ]
+      }
+    }
+  }
+
+
+/* DISTRICT COURSE2: Biology (type B)
+Notes:
+ - Level Type B (course "1" in the test plan)
+ - EOC appears here because it is only applied to science courses that are take the year the student take the HS science MCA test. 
+    The grade level year the science MCA test is given is set by the district so this indicator is the only way in MCCC to identify
+    the science courses taken that year.
+*/
+{
+  "courseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology 5th",
+  "identificationCodes": [
+    {
+      "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
+      "assigningOrganizationIdentificationCode": "{{districtid}}",
+      "identificationCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology5th"
+    }
+  ],
+  "educationOrganizationReference": {
+    "educationOrganizationId": {{districtid}}
+  },
+  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseTitle": "Biology 150",
+  "dateCourseAdopted": "2021-09-01",
+  "highSchoolCourseRequirement": 0,
+  "numberOfParts": 2,
+  "levelCharacteristics": [
+    {
+      "courseLevelCharacteristicDescriptor": "uri://education.mn.gov/CourseLevelCharacteristicDescriptor#EOC"
+    }
+  ],
+  "_ext": {
+    "MN": {
+      "standardAddressedDescriptor": "uri://education.mn.gov/StandardAddressedDescriptor#State",
+      "levelTypes": [
+        {
+          "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#B"
+        }
+      ]
+    }
+  }
+}
+
+
+/* DISTRICT COURSE 3: Honors Spanish (type E)
+Notes:
+ - Correlates to Course 3 in test plan (subsequent examples should align with the test plan)
+ - Level Type E
+*/
+{
+  "courseCode": "{{districtid}}-2bc2374a-f383-4c74-9a68-85356915e84f-Honors ESP",
+  "identificationCodes": [
+    {
+      "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
+      "assigningOrganizationIdentificationCode": "{{districtid}}",
+      "identificationCode": "{{districtid}}-2bc2374a-f383-4c74-9a68-85356915e84f-Honors ESP"
+    }
+  ],
+  "educationOrganizationReference": {
+    "educationOrganizationId": {{districtid}}
+  },
+  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseTitle": "Honors Spanish 400",
+  "dateCourseAdopted": "2021-09-01",
+  "highSchoolCourseRequirement": 0,
+  "numberOfParts": 2,
+  "_ext": {
+    "MN": {
+      "standardAddressedDescriptor": "uri://education.mn.gov/StandardAddressedDescriptor#State",
+      "levelTypes": [
+        {
+          "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#E"
+        }
+      ]
+    }
+  }
+}
+
+
+/* DISTRICT COURSE 4: dual / concurrent enrollment (type D)
+Notes:
+ - Level Type D - this is the DISTRICT course to be later associated with a "College Course"
+ - This is the first of two type D courses in the test plan; the second one is in Scenario 3
+ - just used the district ID and a GUID for the identifier, no other text
+*/
+{
+  "courseCode": "{{districtid}}-9de11041-6e57-415c-b772-b6f9faef8ee1",
+  "identificationCodes": [
+    {
+      "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
+      "assigningOrganizationIdentificationCode": "{{districtid}}",
+      "identificationCode": "{{districtid}}-9de11041-6e57-415c-b772-b6f9faef8ee1"
+    }
+  ],
+  "educationOrganizationReference": {
+    "educationOrganizationId": {{districtid}}
+  },
+  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseTitle": "Intro College Economics 401",
+  "dateCourseAdopted": "2021-09-01",
+  "highSchoolCourseRequirement": 1,
+  "numberOfParts": 2,
+  "_ext": {
+    "MN": {
+      "standardAddressedDescriptor": "uri://education.mn.gov/StandardAddressedDescriptor#State",
+      "levelTypes": [
+        {
+          "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#D"
+        }
+      ]
+    }
+  }
+}
+
+/* DISTRICT COURSE 5: articulation agreement
+Notes:
+ - Level Type A - this is the DISTRICT course to be later associated with a "College Course"
+ - This is the first of two type A courses in the test plan; the second one is in Scenario 3
+ - just used the district ID and a GUID
+*/
+{
+  "courseCode": "{{districtid}}-f0ebef3b-19d8-47d4-bde1-5f5a41ef3844",
+  "identificationCodes": [
+    {
+      "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
+      "assigningOrganizationIdentificationCode": "{{districtid}}",
+      "identificationCode": "{{districtid}}-f0ebef3b-19d8-47d4-bde1-5f5a41ef3844"
+    }
+  ],
+  "educationOrganizationReference": {
+    "educationOrganizationId": {{districtid}}
+  },
+  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseTitle": "Small Engines 101-A",
+  "dateCourseAdopted": "2021-09-01",
+  "highSchoolCourseRequirement": 0,
+  "numberOfParts": 2,
+  "_ext": {
+    "MN": {
+      "standardAddressedDescriptor": "uri://education.mn.gov/StandardAddressedDescriptor#None",
+      "levelTypes": [
+        {
+          "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#A"
+        }
+      ]
+    }
+  }
+}
+
+/* DISTRICT COURSE 6: Industry/occupational certification course
+Notes:
+ - Level Type C
+*/
+{
+  "courseCode": "{{districtid}}-a4eaa099-1384-483a-a1ea-f82586202805",
+  "identificationCodes": [
+    {
+      "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
+      "assigningOrganizationIdentificationCode": "{{districtid}}",
+      "identificationCode": "{{districtid}}-a4eaa099-1384-483a-a1ea-f82586202805"
+    }
+  ],
+  "educationOrganizationReference": {
+    "educationOrganizationId": {{districtid}}
+  },
+  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseTitle": "Surveying Certification",
+  "dateCourseAdopted": "2021-09-01",
+  "highSchoolCourseRequirement": 0,
+  "numberOfParts": 2,
+  "_ext": {
+    "MN": {
+      "standardAddressedDescriptor": "uri://education.mn.gov/StandardAddressedDescriptor#None",
+      "levelTypes": [
+        {
+          "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#C"
+        }
+      ]
+    }
+  }
+}
+
+/* DISTRICT COURSE 7 
+Notes:
+ - Level Type X "Not applicable"
+*/
+{
+  "courseCode": "{{districtid}}-1641559e-1a6a-4fa0-9fd9-7d76fbeb74c9",
+  "identificationCodes": [
+    {
+      "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
+      "assigningOrganizationIdentificationCode": "{{districtid}}",
+      "identificationCode": "{{districtid}}-1641559e-1a6a-4fa0-9fd9-7d76fbeb74c9"
+    }
+  ],
+  "educationOrganizationReference": {
+    "educationOrganizationId": {{districtid}}
+  },
+  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseTitle": "SpecEd Life Science",
+  "dateCourseAdopted": "2021-09-01",
+  "highSchoolCourseRequirement": 0,
+  "numberOfParts": 2,
+  "_ext": {
+    "MN": {
+      "standardAddressedDescriptor": "uri://education.mn.gov/StandardAddressedDescriptor#None",
+      "levelTypes": [
+        {
+          "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#X"
+        }
+      ]
+    }
+  }
+}
+
+/* DISTRICT COURSE 8
+Notes:
+ - Level Type N "No credit"
+*/
+{
+  "courseCode": "{{districtid}}-e6a8ac4a-907d-403d-be10-30504420c50f",
+  "identificationCodes": [
+    {
+      "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
+      "assigningOrganizationIdentificationCode": "{{districtid}}",
+      "identificationCode": "{{districtid}}-e6a8ac4a-907d-403d-be10-30504420c50f"
+    }
+  ],
+  "educationOrganizationReference": {
+    "educationOrganizationId": {{districtid}}
+  },
+  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseTitle": "Individual-Duo Sports",
+  "dateCourseAdopted": "2021-09-01",
+  "highSchoolCourseRequirement": 0,
+  "numberOfParts": 2,
+  "_ext": {
+    "MN": {
+      "standardAddressedDescriptor": "uri://education.mn.gov/StandardAddressedDescriptor#None",
+      "levelTypes": [
+        {
+          "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#N"
+        }
+      ]
+    }
+  }
+}
+
+/* DISTRICT COURSE 9: EE Course - early childhood special ed
+Notes:
+ - Level Type P
+ - including early ed course location descriptor based on vendor provided examples
+*/
+{
+  "courseCode": "{{districtid}}-e1f27f5b-7f89-4db8-ba78-0f4bf54eeeb4",
+  "identificationCodes": [
+    {
+      "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
+      "assigningOrganizationIdentificationCode": "{{districtid}}",
+      "identificationCode": "{{districtid}}-e1f27f5b-7f89-4db8-ba78-0f4bf54eeeb4"
+    }
+  ],
+  "educationOrganizationReference": {
+    "educationOrganizationId": {{districtid}}
+  },
+  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseTitle": "Preschool ECSE",
+  "dateCourseAdopted": "2021-09-01",
+  "highSchoolCourseRequirement": 0,
+  "numberOfParts": 1,
+  "learningStandards": [
+    {
+        "learningStandardReference": {
+            "learningStandardId": "99.E5.1"
+        }
+    }
+  ],
+  "levelCharacteristics": [
+    {
+      "courseLevelCharacteristicDescriptor": "uri://education.mn.gov/CourseLevelCharacteristicDescriptor#SPI",
+      "courseLevelCharacteristicDescriptor": "uri://education.mn.gov/CourseLevelCharacteristicDescriptor#FPI"
+    }
+  ],
+  "_ext": {
+    "MN": {
+      "standardAddressedDescriptor": "uri://education.mn.gov/StandardAddressedDescriptor#State",
+      "assessmentTools": [
+        {
+            "assessmentToolDescriptor": "uri://education.mn.gov/AssessmentToolDescriptor#OWL",
+            "implementationStatusDescriptor": "uri://education.mn.gov/ImplementationStatusDescriptor#FULL"
+        }
+      ],
+      "curriculumUseds": [
+        {
+            "curriculumUsedDescriptor": "uri://education.mn.gov/CurriculumUsedDescriptor#CRCUE",
+            "implementationStatusDescriptor": "uri://education.mn.gov/ImplementationStatusDescriptor#FULL"
+        },
+        {
+            "curriculumUsedDescriptor": "uri://education.mn.gov/CurriculumUsedDescriptor#HWOT",
+            "implementationStatusDescriptor": "uri://education.mn.gov/ImplementationStatusDescriptor#CEXP"
+        }
+      ],
+      "earlyEducationCourseLocationDescriptor": "uri://education.mn.gov/EarlyEducationCourseLocationDescriptor#2",
+      "levelTypes": [
+        {
+          "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#P"
+        }
+      ],
+      "programs": [
+        {
+          "programReference": {
+            "educationOrganizationId": {{districtid}},
+            "programName": "ECSE",
+            "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#MCCC-ECSE"
+          }
+        }
+      ]
+    }
+  }
+}
+
+/*Remaining examples are in PostMan - can be copied into here later for review if necessary */

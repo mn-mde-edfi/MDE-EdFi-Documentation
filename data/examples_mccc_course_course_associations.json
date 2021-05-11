@@ -1,0 +1,109 @@
+/* 
+Example JSON demonstrating courseCourseAssociations for MCCC.
+Notes:
+- Comment blocks indicate the scenario of the test plan to reference within /sandbox_cert_e_mccc.md#resource-course
+- Comments above each course association record refer to the course identified in the "examples_mccc_courses.json" file.
+- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
+*/
+
+/*
+**********
+Test Plan Scenario 8 Associations for district to state level courses 
+**********
+ */
+
+/*CourseCourseAssociation - District Course 1 */
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1",
+        "educationOrganizationId": {{districtid}}
+    },
+    "toCourseReference": {
+        "courseCode": "2006",
+        "educationOrganizationId": 999999000
+    }
+}
+
+/*CourseCourseAssociation - District Course 2*/
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology 5th",
+        "educationOrganizationId": {{districtid}}
+    },
+    "toCourseReference": {
+        "courseCode": "23222",
+        "educationOrganizationId": 999999000
+    }
+}
+
+/*CourseCourseAssociation - District Course 3*/
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-2bc2374a-f383-4c74-9a68-85356915e84f-Honors ESP",
+        "educationOrganizationId": {{districtid}}
+    },
+    "toCourseReference": {
+        "courseCode": "24065",
+        "educationOrganizationId": 999999000
+    }
+}
+
+/*CourseCourseAssociation - District Course 4*/
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-9de11041-6e57-415c-b772-b6f9faef8ee1",
+        "educationOrganizationId": {{districtid}}
+    },
+    "toCourseReference": {
+        "courseCode": "4205",
+        "educationOrganizationId": 999999000
+    }
+}
+
+/*CourseCourseAssociation - District Course 5*/
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-f0ebef3b-19d8-47d4-bde1-5f5a41ef3844",
+        "educationOrganizationId": {{districtid}}
+    },
+    "toCourseReference": {
+        "courseCode": "20110",
+        "educationOrganizationId": 999999000
+    }
+}
+
+/*CourseCourseAssociation - District Course 6*/
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-a4eaa099-1384-483a-a1ea-f82586202805",
+        "educationOrganizationId": {{districtid}}
+    },
+    "toCourseReference": {
+        "courseCode": "21011",
+        "educationOrganizationId": 999999000
+    }
+}
+
+/*CourseCourseAssociation - District Course 7*/
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-1641559e-1a6a-4fa0-9fd9-7d76fbeb74c9",
+        "educationOrganizationId": {{districtid}}
+    },
+    "toCourseReference": {
+        "courseCode": "3994",
+        "educationOrganizationId": 999999000
+    }
+}
+
+/*CourseCourseAssociation - District Course 8*/
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-e6a8ac4a-907d-403d-be10-30504420c50f",
+        "educationOrganizationId": {{districtid}}
+    },
+    "toCourseReference": {
+        "courseCode": "8003",
+        "educationOrganizationId": 999999000
+    }
+}
