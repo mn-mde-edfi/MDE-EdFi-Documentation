@@ -27,11 +27,11 @@ Test Plan Scenario 8 Associations for district to state level courses
 /*CourseCourseAssociation - District Course 2*/
 {
     "courseReference": {
-        "courseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology 5th",
+        "courseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology",
         "educationOrganizationId": {{districtid}}
     },
     "toCourseReference": {
-        "courseCode": "23222",
+        "courseCode": "03051",
         "educationOrganizationId": 999999000
     }
 }
@@ -43,7 +43,7 @@ Test Plan Scenario 8 Associations for district to state level courses
         "educationOrganizationId": {{districtid}}
     },
     "toCourseReference": {
-        "courseCode": "24065",
+        "courseCode": "24056",
         "educationOrganizationId": 999999000
     }
 }
@@ -91,7 +91,7 @@ Test Plan Scenario 8 Associations for district to state level courses
         "educationOrganizationId": {{districtid}}
     },
     "toCourseReference": {
-        "courseCode": "3994",
+        "courseCode": "23222",
         "educationOrganizationId": 999999000
     }
 }
