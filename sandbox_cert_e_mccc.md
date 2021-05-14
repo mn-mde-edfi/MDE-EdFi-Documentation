@@ -179,8 +179,8 @@ Including the following elements:
       - CourseIdentificationSystemDescriptor = 'LEA course code'
     - LearningStandardid (99.E5.1)
 
-3. District Courses to associate with College courses
-    - Reference data for District Courses 4 & 5 (levels D and A) for the next section (and CourseCourseAssociation records in Scenario step 9).
+3. Prepare District Courses 4 & 5 to associate with College courses
+    - Review data for District Courses 4 & 5 (levels D and A) to prepare for the next section (and CourseCourseAssociation records in Scenario step 9).
 
 4. Create **College** Courses
     - 1 with Course Level Type = D
