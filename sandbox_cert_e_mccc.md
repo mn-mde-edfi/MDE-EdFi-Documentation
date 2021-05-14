@@ -126,7 +126,7 @@ Ed-Fi Description: A term in the school year, generally a unit of time into whic
 
 Ed-Fi Description: This educational entity represents the organization of subject matter and related learning experiences provided for the instruction of students on a regular or systematic basis. The MCCC collection in Ed-Fi will use Course for collection of District, College and State Courses. For more information on the course resource, see the [Course Records for MCCC](descriptors_resources.md#course-records-for-mccc) section of the Descriptors and Resources document.
 
-**Important Note on College Course Codes:** To ensure uniqueness, the College Course Code must include a district’s LocalEducationAgencyId followed by a hyphen with no spaces, then followed by the College’s Course Identifier for that course. For example, an college course code submitted by Saint Paul Public School District would be submitted as ```10625000-ENG1000```.
+**Important Note on College Course Codes:** To ensure uniqueness, the College Course Code must include a district's LocalEducationAgencyId followed by a hyphen with no spaces, then followed by the College's Course Identifier for that course. For example, a college course code submitted by Saint Paul Public School District would be submitted as ```10625000-ENG1000```.
 
 ### Prerequisite Data
 
@@ -136,7 +136,7 @@ Ed-Fi Description: This educational entity represents the organization of subjec
 
 ### Scenarios
 
-1. Create 8 **District** Courses (set up at least 1 course per school type – Elementary, Middle and High School)
+1. Create 8 **District** Courses (set up at least 1 course per school type - Elementary, Middle and High School)
     - Course 1 Course Level Type = B
     - Course 2 Course Level Type = G
     - Course 3 Course Level Type = E
@@ -155,7 +155,7 @@ Including the following elements:
   - LocalEducationAgencyId (this **must** be the LEA organization ID - local courses cannot be validate via a school/site ID)
   - CourseTitle
   - CourseDefinedByDescriptorId = "LEA"
-  - CourseIdentificationCode – repeat the CourseCode (this is an ed-fi requirement)
+  - CourseIdentificationCode - repeat the CourseCode (this is an ed-fi requirement)
   - CourseIdentificationSystemDescriptor = "LEA course code"
   - _LearningStandardid_ (not currently required)
 
@@ -175,7 +175,7 @@ Including the following elements:
       - AssessmentToolDescriptor
       - ImplementationStatusDescriptor
     - CourseDefinedByDescriptorId = 'LEA'
-      - CourseIdentificationCode – repeat the CourseCode (this is an ed-fi requirement)
+      - CourseIdentificationCode - repeat the CourseCode (this is an ed-fi requirement)
       - CourseIdentificationSystemDescriptor = 'LEA course code'
     - LearningStandardid (99.E5.1)
 
@@ -185,18 +185,19 @@ Including the following elements:
 4. Create **College** Courses
     - 1 with Course Level Type = D
     - 1 with Course Level Type = A
-    - 2 college courses to be used for Direct Pay PSEO, including the following elements:
+    - 2 college courses to be used for Direct Pay PSEO.
+Each should include the following elements:
       - PostSecondaryInstitutionId (see [College Courses](descriptors_resources.md#college-courses))
       - MaximumAvailableCredits
-      - CourseCode (College Course Identifier – generally dept letters & course number)
+      - CourseCode (District ID plus '-' and College Course Identifier - generally dept letters & course number)
       - CourseTitle
       - CourseDefinedByDescriptorId = 'College'
-      - CourseIdentificationCode – repeat the CourseCode (this is an ed-fi requirement)
-      - CourseIdentificationSystemDescriptor = 'University course code'
+      - CourseIdentificationCode - repeat the CourseCode (this is an ed-fi requirement)
+      - CourseIdentificationSystemDescriptor = 'LEA course code' for D&A, 'University Course Code' for PSEO
 
 5. Create a District Course for Independent Study
 
-**NOTE:** Independent Study course section enrollments did not previously require the setup of a course section – the Ed-Fi Model enforces the full set of master schedule entities (course, course offering and section) in order to associate a student with a course and record grades for that course.
+**NOTE:** Independent Study course section enrollments did not previously require the setup of a course section - the Ed-Fi Model enforces the full set of master schedule entities (course, course offering and section) in order to associate a student with a course and record grades for that course.
 
 Separate course, course offering and section records are required for your district to report ALC Independent Study records; however Course Offering and Section will not be used by MDE for reporting. (The Ed-Fi Model requires an entry in Course Offering linked to the non-scheduled term, and a section default.)
 
@@ -209,18 +210,18 @@ Include the following elements:
   - LocalEducationAgencyId
   - CourseTitle
   - CourseDefinedByDescriptorId = 'LEA'
-  - CourseIdentificationCode – repeat the CourseCode (this is an ed-fi requirement)
+  - CourseIdentificationCode - repeat the CourseCode (this is an ed-fi requirement)
   - CourseIdentificationSystemDescriptor = 'LEA course code'
   - LearningStandardid (k-12 Courses)
     
-6. **Create a course** for Direct Pay PSEO section enrollments – the Ed-Fi Model requires course, course offering and section. At minimum, a **single Placeholder course, course offering, and section will be required for your district** to report Direct Pay PSEO Student Section Association records. Ed-Fi required elements:
+6. **Create a course** for Direct Pay PSEO section enrollments - the Ed-Fi Model requires course, course offering and section. At minimum, a **single Placeholder course, course offering, and section will be required for your district** to report Direct Pay PSEO Student Section Association records. Ed-Fi required elements:
     - Course Code: Direct Pay PSEO
     - Course Title
     - Course Identification Code
     - Number of Parts
     - CourseDefinedByDescriptor = 'LEA'
 
-7. **Optional Scenario for Project-Based Student enrollment record.** Create a course for Project Based section enrollments – While these types of enrollments do not include MDE course, course offering or section requirements – the Ed-Fi Model enforces these entities in the Master Schedule. At minimum, a **single Placeholder course, course offering, and section will be required for your district** to report Project Based Student Section Association records. Ed-Fi required elements:
+7. **Optional Scenario for Project-Based Student enrollment record.** Create a course for Project Based section enrollments - While these types of enrollments do not include MDE course, course offering or section requirements - the Ed-Fi Model enforces these entities in the Master Schedule. At minimum, a **single Placeholder course, course offering, and section will be required for your district** to report Project Based Student Section Association records. Ed-Fi required elements:
     - Course Code: Project Based
     - CourseLevelCharacteristic = PBL
     - Course Title
@@ -267,7 +268,7 @@ Create the following CourseOffering Records:
 
 1. CourseOffering 1 References the District Course with Level Type = B
     - CourseReference
-    - LocalCourseCode (this can match the District Course's Course Code – at the discretion of district)
+    - LocalCourseCode (this can match the District Course's Course Code - at the discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
     - InstructionMinutesPerTerm
@@ -296,7 +297,7 @@ Create the following CourseOffering Records:
     - SessionReference (SchoolYear, SchoolId, SessionName)
     - InstructionMinutesPerTerm
 6. CourseOffering 6 References the District Course Associated with Course Level Type = C CourseReference
-    - LocalCourseCode (this can match the District Course's Course Code – at the discretion of district)
+    - LocalCourseCode (this can match the District Course's Course Code - at the discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
     - InstructionMinutesPerTerm
@@ -356,7 +357,7 @@ Ed-Fi Description: This entity represents a setting in which organized instructi
 
 ### Scenarios
 
-1. Create 9 Section Records to associate with the first 9 course offerings (not the IS, Project Based or Direct Pay PSEO courses yet – those will be done in step 2). Include the following elements:
+1. Create 9 Section Records to associate with the first 9 course offerings (not the IS, Project Based or Direct Pay PSEO courses yet - those will be done in step 2). Include the following elements:
     - SectionIdentifier
     - CourseOfferingReference
     - ClassPeriod (for Scheduled Section Enrollments)
