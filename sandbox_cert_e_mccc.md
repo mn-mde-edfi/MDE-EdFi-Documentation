@@ -180,7 +180,8 @@ Including the following elements:
     - LearningStandardid (99.E5.1)
 
 3. District Courses to associate with College courses
-    - Create additional District courses to be associated with college course levels D and A
+    - Reference data for District Courses 4 & 5 (levels D and A) for the next section (and CourseCourseAssociation records in Scenario step 9).
+
 4. Create **College** Courses
     - 1 with Course Level Type = D
     - 1 with Course Level Type = A
