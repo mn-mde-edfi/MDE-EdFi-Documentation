@@ -121,7 +121,7 @@ Notes:
 /* DISTRICT COURSE 4: dual / concurrent enrollment (type D)
 Notes:
  - Level Type D - this is the DISTRICT course to be later associated with a "College Course"
- - This is the first of two type D courses in the test plan; the second one is in Scenario 3
+ - This will be referenced when setting up College Courses
  - just used the district ID and a GUID for the identifier, no other text
 */
 {
@@ -156,7 +156,7 @@ Notes:
 /* DISTRICT COURSE 5: articulation agreement
 Notes:
  - Level Type A - this is the DISTRICT course to be later associated with a "College Course"
- - This is the first of two type A courses in the test plan; the second one is in Scenario 3
+ - This will be referenced when setting up College Courses
  - just used the district ID and a GUID
 */
 {
@@ -360,4 +360,193 @@ Notes:
   }
 }
 
-/*Remaining examples are in PostMan - can be copied into here later for review if necessary */
+/* COLLEGE COURSE 1: for Course Level Type = D 
+Notes: 
+- the district ID prepended to the course code ensures college course codes are unique in the system
+- the ID used in the educationOrganizationId is the Ed-Fi version of the MDE ORG id (Vermilion Community College in this example)
+*/
+
+{
+  "courseCode": "{{districtid}}-Intro College Econ",
+  "courseTitle": "Intro College Economics",
+  "numberOfParts": "1",
+  "identificationCodes": [
+      {
+          "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
+          "identificationCode": "{{districtid}}-Intro College Econ",
+          "assigningOrganizationIdentificationCode": "{{districtid}}"
+      }
+  ],
+  "educationOrganizationReference": {
+      "educationOrganizationId": 210016000
+  },
+  "maximumAvailableCredits": "3",
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#College",
+  "highSchoolCourseRequirement": "0",
+  "_ext": {
+      "MN": {
+          "levelTypes": [
+              {
+                  "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#D"
+              }
+          ]
+      }
+  }
+}
+
+/*COLLEGE COURSE 2: for Course Level Type = A */
+{
+  "courseCode": "{{districtid}}-Small Engines",
+  "courseTitle": "Small Engines 101",
+  "numberOfParts": "1",
+  "identificationCodes": [
+      {
+          "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
+          "identificationCode": "{{districtid}}-Small Engines",
+          "assigningOrganizationIdentificationCode": "{{districtid}}"
+      }
+  ],
+  "educationOrganizationReference": {
+      "educationOrganizationId": 210023000
+  },
+  "maximumAvailableCredits": "3",
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#College",
+  "highSchoolCourseRequirement": "0",
+  "_ext": {
+      "MN": {
+          "levelTypes": [
+              {
+                  "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#A"
+              }
+          ]
+      }
+  }
+}
+
+/*College Course 3 - PSEO 1 
+Note: includes the State course code
+*/
+{
+  "courseCode": "{{districtid}}-Computer Science 100",
+  "courseTitle": "Computer Science 100",
+  "numberOfParts": "1",
+  "identificationCodes": [
+      {
+          "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#University Course Code",
+          "identificationCode": "{{districtid}}-Computer Science 100",
+          "assigningOrganizationIdentificationCode": "{{districtid}}"
+      },
+      {
+          "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#State course code",
+          "identificationCode": "23010",
+          "assigningOrganizationIdentificationCode": "999999000"
+      }
+  ],
+  "educationOrganizationReference": {
+      "educationOrganizationId": 210016000
+  },
+  "maximumAvailableCredits": "2",
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#College",
+  "highSchoolCourseRequirement": "0",
+  "_ext": {
+      "MN": {
+          "levelTypes": [
+              {
+                  "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#D"
+              }
+          ]
+      }
+  }
+}
+
+/*College Course 4 - PSEO 2 */
+{
+  "courseCode": "{{districtid}}-Health Science 101",
+  "courseTitle": "Health Science 101",
+  "numberOfParts": "1",
+  "identificationCodes": [
+      {
+          "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#University course code",
+          "identificationCode": "{{districtid}}-Health Science 100",
+          "assigningOrganizationIdentificationCode": "{{districtid}}"
+      }
+  ],
+  "educationOrganizationReference": {
+      "educationOrganizationId": 210016000
+  },
+  "maximumAvailableCredits": "2",
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#College",
+  "highSchoolCourseRequirement": "0",
+  "_ext": {
+      "MN": {
+          "levelTypes": [
+              {
+                  "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#D"
+              }
+          ]
+      }
+  }
+}
+
+/*District Course 10 - Independent Study
+levelCharactierstic IS
+levelType X
+*/
+
+{
+  "courseCode": "{{districtid}}-ALgebra IS",
+  "courseTitle": "Algebra IS",
+  "numberOfParts": "1",
+  "identificationCodes": [
+      {
+          "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
+          "identificationCode": "{{districtid}}-Algebra IS",
+          "assigningOrganizationIdentificationCode": "{{districtid}}"
+      }
+  ],
+  "educationOrganizationReference": {
+      "educationOrganizationId": {{districtid}}
+  },  
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA",
+  "highSchoolCourseRequirement": "0",
+  "levelCharacteristics": [
+      {
+          "courseLevelCharacteristicDescriptor": "uri://education.mn.gov/CourseLevelCharacteristicDescriptor#IS"
+      }
+  ],
+  "learningStandards": [
+      {
+          "learningStandardReference": {
+              "learningStandardId": "99.E5.7"
+      }
+      }
+  ],
+"_ext": {
+      "MN": {
+          "standardAddressedDescriptor": "uri://education.mn.gov/StandardAddressedDescriptor#State",
+          "levelTypes": [
+              {
+                  "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#X"
+              }
+          ]
+      }
+  }
+}
+
+/*District Course 11 -  Direct Pay PSEO placeholder */
+{
+  "courseCode": "{{districtid}}-Direct Pay PSEO",
+  "courseTitle": "Direct Pay PSEO Placeholder",
+  "numberOfParts": "1",
+  "identificationCodes": [
+      {
+          "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
+          "identificationCode": "{{districtid}}-Direct Pay PSEO",
+          "assigningOrganizationIdentificationCode": "{{districtid}}"
+      }
+  ],
+  "educationOrganizationReference": {
+      "educationOrganizationId": {{districtid}}
+  },  
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA"
+}

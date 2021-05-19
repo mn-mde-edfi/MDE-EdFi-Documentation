@@ -12,7 +12,7 @@ Test Plan Scenario 8 Associations for district to state level courses
 **********
  */
 
-/*CourseCourseAssociation - District Course 1 */
+/*Association Record for District Course 1 */
 {
     "courseReference": {
         "courseCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1",
@@ -24,7 +24,7 @@ Test Plan Scenario 8 Associations for district to state level courses
     }
 }
 
-/*CourseCourseAssociation - District Course 2*/
+/*Association Record for District Course 2*/
 {
     "courseReference": {
         "courseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology",
@@ -36,7 +36,7 @@ Test Plan Scenario 8 Associations for district to state level courses
     }
 }
 
-/*CourseCourseAssociation - District Course 3*/
+/*Association Record for District Course 3*/
 {
     "courseReference": {
         "courseCode": "{{districtid}}-2bc2374a-f383-4c74-9a68-85356915e84f-Honors ESP",
@@ -48,7 +48,7 @@ Test Plan Scenario 8 Associations for district to state level courses
     }
 }
 
-/*CourseCourseAssociation - District Course 4*/
+/*Association Record for District Course 4*/
 {
     "courseReference": {
         "courseCode": "{{districtid}}-9de11041-6e57-415c-b772-b6f9faef8ee1",
@@ -60,7 +60,7 @@ Test Plan Scenario 8 Associations for district to state level courses
     }
 }
 
-/*CourseCourseAssociation - District Course 5*/
+/*Association Record for District Course 5*/
 {
     "courseReference": {
         "courseCode": "{{districtid}}-f0ebef3b-19d8-47d4-bde1-5f5a41ef3844",
@@ -72,7 +72,7 @@ Test Plan Scenario 8 Associations for district to state level courses
     }
 }
 
-/*CourseCourseAssociation - District Course 6*/
+/*Association Record for District Course 6*/
 {
     "courseReference": {
         "courseCode": "{{districtid}}-a4eaa099-1384-483a-a1ea-f82586202805",
@@ -84,7 +84,7 @@ Test Plan Scenario 8 Associations for district to state level courses
     }
 }
 
-/*CourseCourseAssociation - District Course 7*/
+/*Association Record for District Course 7*/
 {
     "courseReference": {
         "courseCode": "{{districtid}}-1641559e-1a6a-4fa0-9fd9-7d76fbeb74c9",
@@ -96,7 +96,7 @@ Test Plan Scenario 8 Associations for district to state level courses
     }
 }
 
-/*CourseCourseAssociation - District Course 8*/
+/*Association Record for District Course 8*/
 {
     "courseReference": {
         "courseCode": "{{districtid}}-e6a8ac4a-907d-403d-be10-30504420c50f",
@@ -107,3 +107,41 @@ Test Plan Scenario 8 Associations for district to state level courses
         "educationOrganizationId": 999999000
     }
 }
+
+/*Association Record for District Course 9 */
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-e1f27f5b-7f89-4db8-ba78-0f4bf54eeeb4",
+        "educationOrganizationId": {{districtid}}
+    },
+    "toCourseReference": {
+        "courseCode": "90201",
+        "educationOrganizationId": 999999000
+    }
+}
+
+/*Association Record for District Course 10 - Independent Study */
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-Algebra IS",
+        "educationOrganizationId": {{districtid}}
+    },
+    "toCourseReference": {
+        "courseCode": "2006",
+        "educationOrganizationId": 999999000
+    }
+}
+
+/*Association Record for District Course 4 to College 1 (Level D) */
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-9de11041-6e57-415c-b772-b6f9faef8ee1",
+        "educationOrganizationId": {{districtid}}
+    },
+    "toCourseReference": {
+        "courseCode": "{{districtid}}-Intro College Econ",
+        "educationOrganizationId": 210016000
+    }
+}
+
+/*Association Records - PSEO... */
