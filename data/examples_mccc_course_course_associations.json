@@ -144,4 +144,67 @@ Test Plan Scenario 8 Associations for district to state level courses
     }
 }
 
-/*Association Records - PSEO... */
+/*Association Record for District Course 5 to College 2 (Level A) */
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-f0ebef3b-19d8-47d4-bde1-5f5a41ef3844",
+        "educationOrganizationId": {{districtid}}
+    },
+    "toCourseReference": {
+        "courseCode": "{{districtid}}-Small Engines",
+        "educationOrganizationId": 210023000
+    }
+}
+
+/*Association Record for Direct Pay PSEO District Placeholder to College Course 3 (PSEO 1) */
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-Direct Pay PSEO",
+        "educationOrganizationId": {{districtid}}
+    },
+    "toCourseReference": {
+        "courseCode": "{{districtid}}-Computer Science 100",
+        "educationOrganizationId": 210016000
+    }
+}
+
+/*Association Record for Direct Pay PSEO District Placeholder to College Course 4 (PSEO 2)
+Note the District Course is the same as above.
+*/
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-Direct Pay PSEO",
+        "educationOrganizationId": {{districtid}}
+    },
+    "toCourseReference": {
+        "courseCode": "{{districtid}}-Health Science 101",
+        "educationOrganizationId": 210016000
+    }
+}
+
+/*Association Record for College Course 3 (PSEO 1) to State */
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-Computer Science 100",
+        "educationOrganizationId": 210016000
+    },
+    "toCourseReference": {
+        "courseCode": "10157",
+        "educationOrganizationId": 999999000
+    }
+}
+
+/*Association Record for College Course 4 (PSEO 2) to State
+Note the SEA course code of 23010 is available as a generic classification 
+for a college course on Direct Pay PSEO - use only if the appropriate SEA code is unknown.
+*/
+{
+    "courseReference": {
+        "courseCode": "{{districtid}}-Health Science 101",
+        "educationOrganizationId": 210016000
+    },
+    "toCourseReference": {
+         "courseCode": "23010",
+        "educationOrganizationId": 999999000
+    }
+}

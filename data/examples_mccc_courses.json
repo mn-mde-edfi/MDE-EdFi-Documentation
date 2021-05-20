@@ -467,7 +467,7 @@ Note: includes the State course code
   "identificationCodes": [
       {
           "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#University course code",
-          "identificationCode": "{{districtid}}-Health Science 100",
+          "identificationCode": "{{districtid}}-Health Science 101",
           "assigningOrganizationIdentificationCode": "{{districtid}}"
       }
   ],
