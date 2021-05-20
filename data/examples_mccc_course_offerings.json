@@ -1,0 +1,233 @@
+/* 
+Example JSON demonstrating courseOffering records for MCCC.
+Notes:
+- Comments above each course offering record refer to the scenario in the test plan - see /sandbox_cert_e_mccc.md#resource-courseoffering
+- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
+*/
+
+/*
+CourseOffering 1 References the District Course with Level Type = B 
+ */
+{
+    "localCourseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology",
+    "courseReference": {
+        "courseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology",
+        "educationOrganizationId": {{districtid}}
+    },
+    "schoolReference": {
+        "schoolId": {{highschoolid}}
+    },
+    "sessionReference": {
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "_ext": {
+        "MN": {
+            "instructionMinutesPerTerm": "1000"
+        }
+    }
+}
+
+/*
+CourseOffering 2 References the District Course with Course Level Type = G
+*/
+{
+    "localCourseCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1",
+    "courseReference": {
+        "courseCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1",
+        "educationOrganizationId": {{districtid}}
+    },
+    "schoolReference": {
+        "schoolId": {{highschoolid}}
+    },
+    "sessionReference": {
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "_ext": {
+        "MN": {
+            "instructionMinutesPerTerm": "1000"
+        }
+    }
+}
+/*
+CourseOffering 3 References the District Course with Course Level Type = E 
+*/
+{
+    "localCourseCode": "{{districtid}}-2bc2374a-f383-4c74-9a68-85356915e84f-Honors ESP",
+    "courseReference": {
+        "courseCode": "{{districtid}}-2bc2374a-f383-4c74-9a68-85356915e84f-Honors ESP",
+        "educationOrganizationId": {{districtid}}
+    },
+    "schoolReference": {
+        "schoolId": {{highschoolid}}
+    },
+    "sessionReference": {
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "_ext": {
+        "MN": {
+            "instructionMinutesPerTerm": "1000"
+        }
+    }
+}
+
+/*
+CourseOffering 4 References the District Course with Course Level Type = D
+*/
+{
+    "localCourseCode": "{{districtid}}-9de11041-6e57-415c-b772-b6f9faef8ee1",
+    "courseReference": {
+        "courseCode": "{{districtid}}-9de11041-6e57-415c-b772-b6f9faef8ee1",
+        "educationOrganizationId": {{districtid}}
+    },
+    "schoolReference": {
+        "schoolId": {{highschoolid}}
+    },
+    "sessionReference": {
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "_ext": {
+        "MN": {
+            "instructionMinutesPerTerm": "1000"
+        }
+    }
+}
+
+/*
+CourseOffering 5 References the District Course with Course Level Type = A 
+*/
+{
+    "localCourseCode": "{{districtid}}-f0ebef3b-19d8-47d4-bde1-5f5a41ef3844",
+    "courseReference": {
+        "courseCode": "{{districtid}}-f0ebef3b-19d8-47d4-bde1-5f5a41ef3844",
+        "educationOrganizationId": {{districtid}}
+    },
+    "schoolReference": {
+        "schoolId": {{highschoolid}}
+    },
+    "sessionReference": {
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "_ext": {
+        "MN": {
+            "instructionMinutesPerTerm": "1000"
+        }
+    }
+}
+
+/*
+CourseOffering 6 References the District Course Associated with Course Level Type = C
+*/
+{
+    "localCourseCode": "{{districtid}}-a4eaa099-1384-483a-a1ea-f82586202805",
+    "courseReference": {
+        "courseCode": "{{districtid}}-a4eaa099-1384-483a-a1ea-f82586202805",
+        "educationOrganizationId": {{districtid}}
+    },
+    "schoolReference": {
+        "schoolId": {{highschoolid}}
+    },
+    "sessionReference": {
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "_ext": {
+        "MN": {
+            "instructionMinutesPerTerm": "1000"
+        }
+    }
+}
+
+/*
+CourseOffering 7 References the District Course with Course Level Type = X 
+*/
+{
+    "localCourseCode": "{{districtid}}-1641559e-1a6a-4fa0-9fd9-7d76fbeb74c9",
+    "courseReference": {
+        "courseCode": "{{districtid}}-1641559e-1a6a-4fa0-9fd9-7d76fbeb74c9",
+        "educationOrganizationId": {{districtid}}
+    },
+    "schoolReference": {
+        "schoolId": {{highschoolid}}
+    },
+    "sessionReference": {
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "_ext": {
+        "MN": {
+            "instructionMinutesPerTerm": "1000"
+        }
+    }
+}
+
+/*
+CourseOffering 8 References the District Course with Course Level Type = N 
+*/
+{
+    "localCourseCode": "{{districtid}}-e6a8ac4a-907d-403d-be10-30504420c50f",
+    "courseReference": {
+        "courseCode": "{{districtid}}-e6a8ac4a-907d-403d-be10-30504420c50f",
+        "educationOrganizationId": {{districtid}}
+    },
+    "schoolReference": {
+        "schoolId": {{middleschoolid}}
+    },
+    "sessionReference": {
+        "schoolId": {{middleschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{middleschoolid}}-Fall"
+    },
+    "_ext": {
+        "MN": {
+            "instructionMinutesPerTerm": "1000"
+        }
+    }
+}
+
+/*
+CourseOffering 9 References the District Course Associated with Course Level Type = P 
+*/
+{
+    "localCourseCode": "{{districtid}}-e1f27f5b-7f89-4db8-ba78-0f4bf54eeeb4",
+    "courseReference": {
+        "courseCode": "{{districtid}}-e1f27f5b-7f89-4db8-ba78-0f4bf54eeeb4",
+        "educationOrganizationId": {{districtid}}
+    },
+    "schoolReference": {
+        "schoolId": {{elementaryschoolid}}
+    },
+    "sessionReference": {
+        "schoolId": {{elementaryschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{elementaryschoolid}}-Fall"
+    },
+    "_ext": {
+        "MN": {
+            "instructionMinutesPerTerm": "1000",
+              "instructionalApproaches": [
+                {
+                    "instructionalApproachDescriptor": "uri://education.mn.gov/InstructionalApproachDescriptor#TE",
+                    "implementationStatusDescriptor": "uri://education.mn.gov/ImplementationStatusDescriptor#FULL"
+                }
+            ],
+            "siteBasedInitiatives": [
+                {
+                    "siteBasedInitiativeDescriptor": "uri://education.mn.gov/SiteBasedInitiativeDescriptor#RPPM",
+                    "implementationStatusDescriptor": "uri://education.mn.gov/ImplementationStatusDescriptor#FULL"
+                }
+            ]
+        }
+    }
+}
