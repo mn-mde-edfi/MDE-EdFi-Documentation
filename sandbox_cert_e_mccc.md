@@ -164,7 +164,7 @@ Including the following elements:
     - Course Description (only required when associated with Unclassified State Course)
     - Course Code (local)
     - Course level Type (P)
-    - Sequence Limit (1)
+    - Number of Parts (1)
     - StandardId (State)
     - High School Course Requirement (False)
     - **Must NOT include CourseLevelCharacteristic for End of Course Indicator**
@@ -365,7 +365,7 @@ Ed-Fi Description: This entity represents a setting in which organized instructi
     - SectionCharacteristicDescriptor (FP 'Fixed Period Indicator' for courses associated to a fixed period, or MA 'Marking Indicator' for sections where grades are recorded)
     - InstructionLanguageDescriptor (only for non-English, using MARSS language descriptor)
     - MediumOfInstructionDescriptor (required)
-    - SequenceOfCourse (must be less than or equal to Section Limit of course referenced)
+    - SequenceOfCourse (must be less than or equal to 'Number of Parts' of course referenced)
 2. Create 3 Section Records, 1 for each of the following course offerings:
     - Independent Study (a section is required for every course offering)
       - SectionIdentifier: IS\_\&lt;LocalCourseCode\&gt;\_Section
