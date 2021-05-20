@@ -231,3 +231,41 @@ CourseOffering 9 References the District Course Associated with Course Level Typ
         }
     }
 }
+
+/*
+CourseOffering 10 for Independent Study
+*/
+{
+    "localCourseCode": "{{districtid}}-ALgebra IS",
+    "courseReference": {
+        "courseCode": "{{districtid}}-ALgebra IS",
+        "educationOrganizationId": {{districtid}}
+    },
+    "schoolReference": {
+        "schoolId": {{highschoolid}}
+    },
+    "sessionReference": {
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Unscheduled"
+    }
+}
+
+/*
+CourseOffering 11 for Direct Pay PSEO 
+*/
+{
+    "localCourseCode": "{{districtid}}-Direct Pay PSEO",
+    "courseReference": {
+        "courseCode": "{{districtid}}-Direct Pay PSEO",
+        "educationOrganizationId": {{districtid}}
+    },
+    "schoolReference": {
+        "schoolId": {{highschoolid}}
+    },
+    "sessionReference": {
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Unscheduled"
+    }
+}
