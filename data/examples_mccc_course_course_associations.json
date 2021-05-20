@@ -132,6 +132,12 @@ Test Plan Scenario 8 Associations for district to state level courses
     }
 }
 
+/*
+**********
+Test Plan Scenario 9 Associations for district to college courses 
+**********
+ */
+
 /*Association Record for District Course 4 to College 1 (Level D) */
 {
     "courseReference": {
@@ -181,6 +187,12 @@ Note the District Course is the same as above.
         "educationOrganizationId": 210016000
     }
 }
+
+/*
+**********
+Test Plan Scenario 10 Associations for Direct Pay PSEO College Records to state level courses 
+**********
+ */
 
 /*Association Record for College Course 3 (PSEO 1) to State */
 {
