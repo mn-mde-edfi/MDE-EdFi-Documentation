@@ -296,7 +296,8 @@ Create the following CourseOffering Records:
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
     - InstructionMinutesPerTerm
-6. CourseOffering 6 References the District Course Associated with Course Level Type = C CourseReference
+6. CourseOffering 6 References the District Course Associated with Course Level Type = C 
+    - CourseReference
     - LocalCourseCode (this can match the District Course's Course Code - at the discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
