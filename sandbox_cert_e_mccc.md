@@ -249,6 +249,8 @@ Include the following elements:
     - ToCourseEducationOrganizationId = State SEA id
     - ToCourseCode = State Course Code
 
+_Note:_ CourseCourseAssociation records are not required between the District Direct Pay PSEO course and the PSEO college courses.
+
 ## Resource: CourseOffering
 
 ### Description
