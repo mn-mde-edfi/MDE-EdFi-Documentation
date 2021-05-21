@@ -368,13 +368,13 @@ Ed-Fi Description: This entity represents a setting in which organized instructi
     - SequenceOfCourse (must be less than or equal to 'Number of Parts' of course referenced)
 2. Create 3 Section Records, 1 for each of the following course offerings:
     - Independent Study (a section is required for every course offering)
-      - SectionIdentifier: IS\_\&lt;LocalCourseCode\&gt;\_Section
+      - SectionIdentifier: IS_```<LocalCourseCode>```_Section
       - CourseOfferingReference
     - Direct Pay PSEO (a single placeholder section is required all Direct Pay PSEO)
-      - SectionIdentifier: DirectPayPSEO\_Section
+      - SectionIdentifier: DirectPayPSEO_Section
       - CourseOfferingReference
     - Project Based (a single placeholder section is required all Project Based)
-      - SectionIdentifier: ProjectBased\_Section
+      - SectionIdentifier: ProjectBased_Section
       - CourseOfferingReference
 
 ## Resource: StaffSectionAssociation
