@@ -162,31 +162,7 @@ Test Plan Scenario 9 Associations for district to college courses
     }
 }
 
-/*Association Record for Direct Pay PSEO District Placeholder to College Course 3 (PSEO 1) */
-{
-    "courseReference": {
-        "courseCode": "{{districtid}}-Direct Pay PSEO",
-        "educationOrganizationId": {{districtid}}
-    },
-    "toCourseReference": {
-        "courseCode": "{{districtid}}-Computer Science 100",
-        "educationOrganizationId": 210016000
-    }
-}
-
-/*Association Record for Direct Pay PSEO District Placeholder to College Course 4 (PSEO 2)
-Note the District Course is the same as above.
-*/
-{
-    "courseReference": {
-        "courseCode": "{{districtid}}-Direct Pay PSEO",
-        "educationOrganizationId": {{districtid}}
-    },
-    "toCourseReference": {
-        "courseCode": "{{districtid}}-Health Science 101",
-        "educationOrganizationId": 210016000
-    }
-}
+/*Note: Association Records are not needed between Direct Pay PSEO District Placeholder to College PSEO Courses*/
 
 /*
 **********

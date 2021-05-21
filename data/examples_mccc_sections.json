@@ -1,0 +1,280 @@
+/* 
+Example JSON demonstrating Section records for MCCC.
+Notes:
+- Comment blocks above each set of records refer to the two scenarios in the test plan - see /sandbox_cert_e_mccc.md#resource-section
+- Comments above each section record refer to the courseOffering being referenced
+- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
+*/
+
+/*
+************
+Scenario 1 - Section Records for the first 9 Course Offerings
+************
+ */
+
+/*
+Section 1 References the Course Offering on Course Level Type = B 
+ */
+ {
+    "sectionIdentifier": "Section1",
+    "courseOfferingReference": {
+        "localCourseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "characteristics": [
+        {
+            "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#MA"
+        },
+        {
+            "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#FP"
+        }
+    ],
+    "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
+    "sequenceOfCourse": "1",
+    "_ext": {
+        "MN": {
+            "instructionalDeliveryModeDescriptor": "uri://education.mn.gov/InstructionalDeliveryModeDescriptor#GD"
+        }
+    }
+}
+
+ /*
+Section 2 References the Course Offering on Course Level Type = G
+*/
+{
+    "sectionIdentifier": "Section2",
+    "courseOfferingReference": {
+        "localCourseCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "characteristics": [
+        {
+            "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#MA"
+        },
+        {
+            "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#FP"
+        }
+    ],
+    "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
+    "sequenceOfCourse": "1",
+    "_ext": {
+        "MN": {
+            "instructionalDeliveryModeDescriptor": "uri://education.mn.gov/InstructionalDeliveryModeDescriptor#HB"
+        }
+    }
+}
+
+/*
+Section 3 References the Course Offering on Course Level Type = E 
+Note: instructionLanguageDescriptor included for Honors Spanish course
+*/
+{
+    "sectionIdentifier": "Section3",
+    "courseOfferingReference": {
+        "localCourseCode": "{{districtid}}-2bc2374a-f383-4c74-9a68-85356915e84f-Honors ESP",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "characteristics": [
+        {
+            "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#MA"
+        },
+        {
+            "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#FP"
+        }
+    ],
+    "instructionLanguageDescriptor":"uri://education.mn.gov/LanguageDescriptor#45",
+    "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
+    "sequenceOfCourse": "1",
+    "_ext": {
+        "MN": {
+            "instructionalDeliveryModeDescriptor": "uri://education.mn.gov/InstructionalDeliveryModeDescriptor#HB"
+        }
+    }
+}
+
+/*
+Section 4 References the Course Offering on Course Level Type = D
+*/
+{
+    "sectionIdentifier": "Section4",
+    "courseOfferingReference": {
+        "localCourseCode": "{{districtid}}-9de11041-6e57-415c-b772-b6f9faef8ee1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "characteristics": [
+        {
+            "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#MA"
+        },
+        {
+            "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#FP"
+        }
+    ],
+    "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
+    "sequenceOfCourse": "1",
+    "_ext": {
+        "MN": {
+            "instructionalDeliveryModeDescriptor": "uri://education.mn.gov/InstructionalDeliveryModeDescriptor#HB"
+        }
+    }
+}
+
+/*
+Section 5 References the Course Offering on Course Level Type = A 
+*/
+{
+    "sectionIdentifier": "Section5",
+    "courseOfferingReference": {
+        "localCourseCode": "{{districtid}}-f0ebef3b-19d8-47d4-bde1-5f5a41ef3844",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "characteristics": [
+        {
+            "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#MA"
+        }
+    ],
+    "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
+    "sequenceOfCourse": "1",
+    "_ext": {
+        "MN": {
+            "instructionalDeliveryModeDescriptor": "uri://education.mn.gov/InstructionalDeliveryModeDescriptor#OS"
+        }
+    }
+}
+
+/*
+Section 6 References the District Course Associated with Course Level Type = C
+*/
+{
+    "sectionIdentifier": "Section6",
+    "courseOfferingReference": {
+        "localCourseCode": "{{districtid}}-a4eaa099-1384-483a-a1ea-f82586202805",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "characteristics": [
+        {
+            "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#MA"
+        }
+    ],
+    "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
+    "sequenceOfCourse": "1",
+    "_ext": {
+        "MN": {
+            "instructionalDeliveryModeDescriptor": "uri://education.mn.gov/InstructionalDeliveryModeDescriptor#GD"
+        }
+    }
+}
+
+/*
+Section 7 References the Course Offering on Course Level Type = X 
+*/
+{
+    "sectionIdentifier": "Section7",
+    "courseOfferingReference": {
+        "localCourseCode": "{{districtid}}-1641559e-1a6a-4fa0-9fd9-7d76fbeb74c9",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "characteristics": [
+        {
+            "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#MA"
+        }
+    ],
+    "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
+    "sequenceOfCourse": "1",
+    "_ext": {
+        "MN": {
+            "instructionalDeliveryModeDescriptor": "uri://education.mn.gov/InstructionalDeliveryModeDescriptor#HB"
+        }
+    }
+}
+
+/*
+Section 8 References the Course Offering on Course Level Type = N 
+*/
+{
+    "sectionIdentifier": "Section8",
+    "courseOfferingReference": {
+        "localCourseCode": "{{districtid}}-e6a8ac4a-907d-403d-be10-30504420c50f",
+        "schoolId": {{middleschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{middleschoolid}}-Fall"
+    },
+    "characteristics": [
+        {
+            "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#MA"
+        }
+    ],
+    "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
+    "sequenceOfCourse": "1",
+    "_ext": {
+        "MN": {
+            "instructionalDeliveryModeDescriptor": "uri://education.mn.gov/InstructionalDeliveryModeDescriptor#GD"
+        }
+    }
+}
+
+/*
+Section 9 References the District Course Associated with Course Level Type = P 
+*/
+{
+    "sectionIdentifier": "Section9",
+    "courseOfferingReference": {
+        "localCourseCode": "{{districtid}}-e1f27f5b-7f89-4db8-ba78-0f4bf54eeeb4",
+        "schoolId": {{elementaryschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{elementaryschoolid}}-Fall"
+    },
+    "characteristics": [
+        {
+            "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#FP"
+        }
+    ],
+    "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
+    "sequenceOfCourse": "1",
+    "_ext": {
+        "MN": {
+            "instructionalDeliveryModeDescriptor": "uri://education.mn.gov/InstructionalDeliveryModeDescriptor#GD"
+        }
+    }
+}
+
+ /*
+************
+Scenario 2 - Section Records for the IS & Direct Pay PSEO offerings
+************
+ */
+
+/*Section 10 - for Independent Study */
+{
+    "sectionIdentifier": "IS_{{districtid}}-Algebra IS_Section",
+    "courseOfferingReference": {
+        "localCourseCode": "{{districtid}}-Algebra IS",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Unscheduled"
+    }
+}
+
+/*Section 11 - for Direct Pay PSEO */
+{
+    "sectionIdentifier": "DirectPayPSEO_Section",
+    "courseOfferingReference": {
+        "localCourseCode": "{{districtid}}-Direct Pay PSEO",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sessionName": "{{highschoolid}}-Unscheduled"
+    }
+}
