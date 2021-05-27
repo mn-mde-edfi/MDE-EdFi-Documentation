@@ -1,0 +1,172 @@
+/* 
+Example JSON demonstrating Staff Section Association records for MCCC.
+Notes:
+- Comments above each section record refer to the section being referenced for the association
+- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
+- staff IDs reference those loaded by MDE
+*/
+
+/*Staff Association for Section1, Course Level B */
+{
+    "classroomPositionDescriptor": "uri://education.mn.gov/ClassroomPositionDescriptor#TOR",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section1",
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "staffReference": {
+        "staffUniqueId": "207288"
+    }
+}
+
+/*Staff Association for Section2, Course Level G */
+{
+    "classroomPositionDescriptor": "uri://education.mn.gov/ClassroomPositionDescriptor#TOR",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section2",
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "staffReference": {
+        "staffUniqueId": "207266"
+    }
+}
+
+/*Staff Association for Section3, Course Level E */
+{
+    "classroomPositionDescriptor": "uri://education.mn.gov/ClassroomPositionDescriptor#TOR",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-2bc2374a-f383-4c74-9a68-85356915e84f-Honors ESP",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section3",
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "staffReference": {
+        "staffUniqueId": "207248"
+    }
+}
+
+/*Staff Association for Section4, Course Level D */
+{
+    "classroomPositionDescriptor": "uri://education.mn.gov/ClassroomPositionDescriptor#TOR",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-9de11041-6e57-415c-b772-b6f9faef8ee1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section4",
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "staffReference": {
+        "staffUniqueId": "207289"
+    }
+}
+
+/*Staff Association for Section5, Course Level A */
+{
+    "classroomPositionDescriptor": "uri://education.mn.gov/ClassroomPositionDescriptor#TOR",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-f0ebef3b-19d8-47d4-bde1-5f5a41ef3844",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section5",
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "staffReference": {
+        "staffUniqueId": "207289"
+    }
+}
+
+/*Staff Association for Section6, Course Level C */
+{
+    "classroomPositionDescriptor": "uri://education.mn.gov/ClassroomPositionDescriptor#TOR",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-a4eaa099-1384-483a-a1ea-f82586202805",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section6",
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "staffReference": {
+        "staffUniqueId": "207290"
+    }
+}
+
+/*Staff Association for Section7, Course Level X */
+{
+    "classroomPositionDescriptor": "uri://education.mn.gov/ClassroomPositionDescriptor#TOR",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-1641559e-1a6a-4fa0-9fd9-7d76fbeb74c9",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section7",
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "staffReference": {
+        "staffUniqueId": "207291"
+    }
+}
+
+/*Staff Association for Section8, Course Level N */
+{
+    "classroomPositionDescriptor": "uri://education.mn.gov/ClassroomPositionDescriptor#TOR",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-e6a8ac4a-907d-403d-be10-30504420c50f",
+        "schoolId": {{middleschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section8",
+        "sessionName": "{{middleschoolid}}-Fall"
+    },
+    "staffReference": {
+        "staffUniqueId": "207292"
+    }
+}
+
+/*Staff Association for Section9, Course Level P */
+{
+    "classroomPositionDescriptor": "uri://education.mn.gov/ClassroomPositionDescriptor#TOR",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-e1f27f5b-7f89-4db8-ba78-0f4bf54eeeb4",
+        "schoolId": {{elementaryschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section9",
+        "sessionName": "{{elementaryschoolid}}-Fall"
+    },
+    "staffReference": {
+        "staffUniqueId": "207293"
+    }
+}
+
+/*Staff Association for Section10, Independent Study */
+{
+    "classroomPositionDescriptor": "uri://education.mn.gov/ClassroomPositionDescriptor#TOR",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-Algebra IS",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "IS_{{districtid}}-Algebra IS_Section",
+        "sessionName": "{{highschoolid}}-Unscheduled"
+    },
+    "staffReference": {
+        "staffUniqueId": "207294"
+    }
+}
+
+/*Staff Association for Section11, PSEO */
+{
+    "classroomPositionDescriptor": "uri://education.mn.gov/ClassroomPositionDescriptor#TOR",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-Direct Pay PSEO",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "DirectPayPSEO_Section",
+        "sessionName": "{{highschoolid}}-Unscheduled"
+    },
+    "staffReference": {
+        "staffUniqueId": "207295"
+    }
+}
