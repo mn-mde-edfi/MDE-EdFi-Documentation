@@ -1,0 +1,252 @@
+/* 
+Example JSON demonstrating Student Section Association records for MCCC.
+Notes:
+- Comments above each section record refer to the section being referenced for the association
+- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
+*/
+
+/*Student Association for Section1, Course Level B */
+{
+    "beginDate": "08-01-2021",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section1",
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "studentReference": {
+        "studentUniqueId": "605704"
+    },
+    "_ext": {
+        "MN": {
+            "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
+        }
+    }
+}
+
+/*Student Association for Section2, Course Level G */
+{
+    "beginDate": "09-01-2021",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section2",
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "studentReference": {
+        "studentUniqueId": "604888"
+    },
+    "_ext": {
+        "MN": {
+            "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
+            
+        }
+    }
+}
+
+/*Student Association for Section3, Course Level E */
+{
+    "beginDate": "08-31-2021",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-2bc2374a-f383-4c74-9a68-85356915e84f-Honors ESP",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section3",
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "studentReference": {
+        "studentUniqueId": "605372"
+    },
+    "_ext": {
+        "MN": {
+            "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
+            
+        }
+    }
+}
+
+/*Student Association for Section4, Course Level D */
+{
+    "beginDate": "08-31-2021",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-9de11041-6e57-415c-b772-b6f9faef8ee1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section4",
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "studentReference": {
+        "studentUniqueId": "604903"
+    },
+    "_ext": {
+        "MN": {
+            "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
+            
+        }
+    }
+}
+
+/*Student Association for Section5, Course Level A */
+{
+    "beginDate": "09-07-2021",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-f0ebef3b-19d8-47d4-bde1-5f5a41ef3844",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section5",
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "studentReference": {
+        "studentUniqueId": "605086"
+    },
+    "_ext": {
+        "MN": {
+            "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
+            
+        }
+    }
+}
+
+/*Student Association for Section6, Course Level C */
+{
+    "beginDate": "08-31-2021",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-a4eaa099-1384-483a-a1ea-f82586202805",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section6",
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "studentReference": {
+        "studentUniqueId": "604893"
+    },
+    "_ext": {
+        "MN": {
+            "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
+            
+        }
+    }
+}
+
+/*Student Association for Section7, Course Level X */
+{
+    "beginDate": "08-31-2021",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-1641559e-1a6a-4fa0-9fd9-7d76fbeb74c9",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section7",
+        "sessionName": "{{highschoolid}}-Fall"
+    },
+    "studentReference": {
+        "studentUniqueId": "605364"
+    },
+    "_ext": {
+        "MN": {
+            "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
+            
+        }
+    }
+}
+
+/*Student Association for Section8, Course Level N */
+{
+    "beginDate": "08-31-2021",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-e6a8ac4a-907d-403d-be10-30504420c50f",
+        "schoolId": {{middleschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section8",
+        "sessionName": "{{middleschoolid}}-Fall"
+    },
+    "studentReference": {
+        "studentUniqueId": "604922"
+    },
+    "_ext": {
+        "MN": {
+            "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
+            
+        }
+    }
+}
+
+/*Student Association for Section9, Course Level P */
+{
+    "beginDate": "08-31-2021",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-e1f27f5b-7f89-4db8-ba78-0f4bf54eeeb4",
+        "schoolId": {{elementaryschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section9",
+        "sessionName": "{{elementaryschoolid}}-Fall"
+    },
+    "studentReference": {
+        "studentUniqueId": "605279"
+    },
+    "_ext": {
+        "MN": {
+            "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC",
+             "instructionalApproaches": [
+                {
+                    "instructionalApproachDescriptor": "uri://education.mn.gov/InstructionalApproachDescriptor#ABA",
+                    "implementationStatusDescriptor": "uri://education.mn.gov/ImplementationStatusDescriptor#FULL"
+                }
+            ],
+            "siteBasedInitiatives": [
+                {
+                    "siteBasedInitiativeDescriptor": "uri://education.mn.gov/SiteBasedInitiativeDescriptor#CLASS",
+                    "implementationStatusDescriptor": "uri://education.mn.gov/ImplementationStatusDescriptor#YR2"
+                }
+            ]
+            
+        }
+    }
+}
+
+/*Student Association for Section10, Independent Study */
+{
+    "beginDate": "08-31-2021",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-Algebra IS",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "IS_{{districtid}}-Algebra IS_Section",
+        "sessionName": "{{highschoolid}}-Unscheduled"
+    },
+    "studentReference": {
+        "studentUniqueId": "604826"
+    },
+    "_ext": {
+        "MN": {
+            "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#AI"
+            
+        }
+    }
+}
+
+/*Student Association for Section11, Direct Pay PSEO */
+{
+    "beginDate": "08-31-2021",
+    "sectionReference": {
+        "localCourseCode": "{{districtid}}-Direct Pay PSEO",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "DirectPayPSEO_Section",
+        "sessionName": "{{highschoolid}}-Unscheduled"
+    },
+    "studentReference": {
+        "studentUniqueId": "605157"
+    },
+    "_ext": {
+        "MN": {
+            "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#AI"
+            
+        },
+        "collegeCourseReference": {
+                "courseCode": "{{districtid}}-Health Science 101",
+                "educationOrganizationId": 210016000
+        }
+    }
+}
