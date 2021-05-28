@@ -1,0 +1,294 @@
+/* 
+Example JSON demonstrating Grade records for MCCC.
+Notes:
+- Comments above each section record refer to the student section association being referenced for the grade
+- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
+- Depending on the Course type, various grades and credit scenarios apply
+*/
+
+/*Grade for Section1, Course Level B, student 605704*/
+{
+    "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
+    "gradingPeriodReference": {
+        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "periodSequence": "1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022
+    },
+    "studentSectionAssociationReference": {
+        "beginDate": "2021-08-01",
+        "localCourseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section1",
+        "sessionName": "{{highschoolid}}-Fall",
+        "studentUniqueId": "605704"
+    },
+    "letterGradeEarned": "A",
+    "numericGradeEarned": "95",
+    "_ext": {
+        "MN": {
+            "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#14"
+        }
+    }
+}
+
+/*Grade for Section2, Course Level G, student 604888*/
+{
+    "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
+    "gradingPeriodReference": {
+        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "periodSequence": "1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022
+    },
+    "studentSectionAssociationReference": {
+        "beginDate": "2021-09-01",
+        "localCourseCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section2",
+        "sessionName": "{{highschoolid}}-Fall",
+        "studentUniqueId": "604888"
+    },
+    "letterGradeEarned": "B",
+    "numericGradeEarned": "82",
+    "_ext": {
+        "MN": {
+            "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#2"
+        }
+    }
+}
+
+/*Grade for Section3, Course Level E, student 605372*/
+{
+    "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
+    "gradingPeriodReference": {
+        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "periodSequence": "1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022
+    },
+    "studentSectionAssociationReference": {
+        "beginDate": "2021-08-31",
+        "localCourseCode": "{{districtid}}-2bc2374a-f383-4c74-9a68-85356915e84f-Honors ESP",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section3",
+        "sessionName": "{{highschoolid}}-Fall",
+        "studentUniqueId": "605372"
+    },
+    "letterGradeEarned": "B+",
+    "numericGradeEarned": "89",
+    "_ext": {
+        "MN": {
+            "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#24",
+            "localCreditEarned": "3"
+        }
+    }
+}
+
+/*Grade for Section4, Course Level D, student 604903*/
+
+{
+    "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
+    "gradingPeriodReference": {
+        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "periodSequence": "1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022
+    },
+    "studentSectionAssociationReference": {
+        "beginDate": "2021-08-31",
+        "localCourseCode": "{{districtid}}-9de11041-6e57-415c-b772-b6f9faef8ee1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section4",
+        "sessionName": "{{highschoolid}}-Fall",
+        "studentUniqueId": "604903"
+    },
+    "letterGradeEarned": "A-",
+    "numericGradeEarned": "90",
+    "_ext": {
+        "MN": {
+            "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#4",
+            "localCreditEarned": "3",
+            "collegeCreditEarned": "3",
+            "collegeGradeEarned": "A"
+        }
+    }
+}
+
+/*Grade for Section5, Course Level A, student 605086*/
+{
+    "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
+    "gradingPeriodReference": {
+        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "periodSequence": "1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022
+    },
+    "studentSectionAssociationReference": {
+        "beginDate": "2021-09-07",
+        "localCourseCode": "{{districtid}}-f0ebef3b-19d8-47d4-bde1-5f5a41ef3844",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section5",
+        "sessionName": "{{highschoolid}}-Fall",
+        "studentUniqueId": "605086"
+    },
+    "letterGradeEarned": "B",
+    "numericGradeEarned": "86",
+    "_ext": {
+        "MN": {
+            "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#21",
+            "localCreditEarned": "3",
+            "collegeCreditEarned": "3",
+            "collegeGradeEarned": "B"
+        }
+    }
+}
+
+/*Grade for Section6, Course Level C, student 604893*/
+{
+    "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
+    "gradingPeriodReference": {
+        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "periodSequence": "1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022
+    },
+    "studentSectionAssociationReference": {
+        "beginDate": "2021-08-31",
+        "localCourseCode": "{{districtid}}-a4eaa099-1384-483a-a1ea-f82586202805",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section6",
+        "sessionName": "{{highschoolid}}-Fall",
+        "studentUniqueId": "604893"
+    },
+    "letterGradeEarned": "A",
+    "numericGradeEarned": "100",
+    "_ext": {
+        "MN": {
+            "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#17",
+            "localCreditEarned": "3"
+        }
+    }
+}
+
+/*Grade for Section7, Course Level X, student 605364*/
+{
+    "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
+    "gradingPeriodReference": {
+        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "periodSequence": "1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022
+    },
+    "studentSectionAssociationReference": {
+        "beginDate": "2021-08-31",
+        "localCourseCode": "{{districtid}}-1641559e-1a6a-4fa0-9fd9-7d76fbeb74c9",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section7",
+        "sessionName": "{{highschoolid}}-Fall",
+        "studentUniqueId": "605364"
+    },
+    "letterGradeEarned": "B",
+    "numericGradeEarned": "87",
+    "_ext": {
+        "MN": {
+            "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#3",
+            "localCreditEarned": "3"
+        }
+    }
+}
+
+/*Grade for Section8, Course Level N, student 604922*/
+{
+    "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
+    "gradingPeriodReference": {
+        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "periodSequence": "1",
+        "schoolId": {{middleschoolid}},
+        "schoolYear": 2022
+    },
+    "studentSectionAssociationReference": {
+        "beginDate": "2021-08-31",
+        "localCourseCode": "{{districtid}}-e6a8ac4a-907d-403d-be10-30504420c50f",
+        "schoolId": {{middleschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "Section8",
+        "sessionName": "{{middleschoolid}}-Fall",
+        "studentUniqueId": "604922"
+    },
+    "letterGradeEarned": "A",
+    "numericGradeEarned": "99",
+    "_ext": {
+        "MN": {
+            "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#8",
+            "localCreditEarned": "2"
+        }
+    }
+}
+
+/*Grade for Section10, Independent Study, student 604826 */
+{
+    "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
+    "gradingPeriodReference": {
+        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "periodSequence": "1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022
+    },
+    "studentSectionAssociationReference": {
+        "beginDate": "2021-08-31",
+        "localCourseCode": "{{districtid}}-Algebra IS",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "IS_{{districtid}}-Algebra IS_Section",
+        "sessionName": "{{highschoolid}}-Unscheduled",
+        "studentUniqueId": "604826"
+    },
+    "letterGradeEarned": "A",
+    "numericGradeEarned": "98",
+    "_ext": {
+        "MN": {
+            "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#2",
+            "localCreditEarned": "3",
+            "collegeCreditEarned": "3",
+            "collegeGradeEarned": "A"
+        }
+    }
+}
+
+/*Grade for Section11, Direct Pay PSEO, student 605157 */
+{
+    "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
+    "gradingPeriodReference": {
+        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "periodSequence": "1",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022
+    },
+    "studentSectionAssociationReference": {
+        "beginDate": "2021-08-31",
+        "localCourseCode": "{{districtid}}-Direct Pay PSEO",
+        "schoolId": {{highschoolid}},
+        "schoolYear": 2022,
+        "sectionIdentifier": "DirectPayPSEO_Section",
+        "sessionName": "{{highschoolid}}-Unscheduled",
+        "studentUniqueId": "605157"
+    },
+    "letterGradeEarned": "B",
+    "numericGradeEarned": "88",
+    "_ext": {
+        "MN": {
+            "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#9",
+            "localCreditEarned": "3",
+            "collegeCreditEarned": "3",
+            "collegeGradeEarned": "B"
+        }
+    }
+}
