@@ -41,7 +41,6 @@ Notes:
     "_ext": {
         "MN": {
             "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
-            
         }
     }
 }
@@ -62,7 +61,6 @@ Notes:
     "_ext": {
         "MN": {
             "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
-            
         }
     }
 }
@@ -83,7 +81,6 @@ Notes:
     "_ext": {
         "MN": {
             "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
-            
         }
     }
 }
@@ -104,7 +101,6 @@ Notes:
     "_ext": {
         "MN": {
             "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
-            
         }
     }
 }
@@ -125,7 +121,6 @@ Notes:
     "_ext": {
         "MN": {
             "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
-            
         }
     }
 }
@@ -146,7 +141,6 @@ Notes:
     "_ext": {
         "MN": {
             "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
-            
         }
     }
 }
@@ -167,7 +161,6 @@ Notes:
     "_ext": {
         "MN": {
             "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#SC"
-            
         }
     }
 }
@@ -200,7 +193,6 @@ Notes:
                     "implementationStatusDescriptor": "uri://education.mn.gov/ImplementationStatusDescriptor#YR2"
                 }
             ]
-            
         }
     }
 }
@@ -221,7 +213,6 @@ Notes:
     "_ext": {
         "MN": {
             "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#AI"
-            
         }
     }
 }
@@ -241,8 +232,7 @@ Notes:
     },
     "_ext": {
         "MN": {
-            "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#AI"
-            
+            "sectionEnrollmentTypeDescriptor": "uri://education.mn.gov/SectionEnrollmentTypeDescriptor#DP"
         },
         "collegeCourseReference": {
                 "courseCode": "{{districtid}}-Health Science 101",
