@@ -4,6 +4,7 @@ Notes:
 - Comments above each section record refer to the student section association being referenced for the grade
 - Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
 - Depending on the Course type, various grades and credit scenarios apply
+- Notice no grade assigned for Section9, which is an Early Education course and not graded.
 */
 
 /*Grade for Section1, Course Level B, student 605704*/
