@@ -3,7 +3,7 @@ Example JSON demonstrating Staff Section Association records for MCCC.
 Notes:
 - Comments above each section record refer to the section being referenced for the association
 - Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
-- staff IDs reference those loaded by MDE
+- staff IDs reference those loaded by MDE; note that 7-digit staff IDs relate to the teacher file folder number (FFN)
 */
 
 /*Staff Association for Section1, Course Level B */
@@ -17,7 +17,7 @@ Notes:
         "sessionName": "{{highschoolid}}-Fall"
     },
     "staffReference": {
-        "staffUniqueId": "207288"
+        "staffUniqueId": "1001022"
     }
 }
 
@@ -32,7 +32,7 @@ Notes:
         "sessionName": "{{highschoolid}}-Fall"
     },
     "staffReference": {
-        "staffUniqueId": "207266"
+        "staffUniqueId": "1003627"
     }
 }
 
@@ -47,7 +47,7 @@ Notes:
         "sessionName": "{{highschoolid}}-Fall"
     },
     "staffReference": {
-        "staffUniqueId": "207248"
+        "staffUniqueId": "1002621"
     }
 }
 
@@ -62,7 +62,7 @@ Notes:
         "sessionName": "{{highschoolid}}-Fall"
     },
     "staffReference": {
-        "staffUniqueId": "207289"
+        "staffUniqueId": "1002857"
     }
 }
 
@@ -77,7 +77,7 @@ Notes:
         "sessionName": "{{highschoolid}}-Fall"
     },
     "staffReference": {
-        "staffUniqueId": "207289"
+        "staffUniqueId": "1000477"
     }
 }
 
@@ -92,7 +92,7 @@ Notes:
         "sessionName": "{{highschoolid}}-Fall"
     },
     "staffReference": {
-        "staffUniqueId": "207290"
+        "staffUniqueId": "1000727"
     }
 }
 
@@ -107,7 +107,7 @@ Notes:
         "sessionName": "{{highschoolid}}-Fall"
     },
     "staffReference": {
-        "staffUniqueId": "207291"
+        "staffUniqueId": "1000995"
     }
 }
 
@@ -122,7 +122,7 @@ Notes:
         "sessionName": "{{middleschoolid}}-Fall"
     },
     "staffReference": {
-        "staffUniqueId": "207292"
+        "staffUniqueId": "1002133"
     }
 }
 
@@ -137,7 +137,7 @@ Notes:
         "sessionName": "{{elementaryschoolid}}-Fall"
     },
     "staffReference": {
-        "staffUniqueId": "207293"
+        "staffUniqueId": "1002135"
     }
 }
 
@@ -152,7 +152,7 @@ Notes:
         "sessionName": "{{highschoolid}}-Unscheduled"
     },
     "staffReference": {
-        "staffUniqueId": "207294"
+        "staffUniqueId": "1002280"
     }
 }
 
@@ -167,6 +167,6 @@ Notes:
         "sessionName": "{{highschoolid}}-Unscheduled"
     },
     "staffReference": {
-        "staffUniqueId": "207295"
+        "staffUniqueId": "1002302"
     }
 }
