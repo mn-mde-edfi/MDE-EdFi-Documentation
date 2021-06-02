@@ -113,9 +113,7 @@ Notes:
     "_ext": {
         "MN": {
             "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#4",
-            "localCreditEarned": "3",
-            "collegeCreditEarned": "3",
-            "collegeGradeEarned": "A"
+            "localCreditEarned": "3"
         }
     }
 }
@@ -143,9 +141,7 @@ Notes:
     "_ext": {
         "MN": {
             "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#21",
-            "localCreditEarned": "3",
-            "collegeCreditEarned": "3",
-            "collegeGradeEarned": "B"
+            "localCreditEarned": "3"
         }
     }
 }
