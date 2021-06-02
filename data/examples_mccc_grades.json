@@ -26,7 +26,6 @@ Notes:
         "studentUniqueId": "605704"
     },
     "letterGradeEarned": "A",
-    "numericGradeEarned": "95",
     "_ext": {
         "MN": {
             "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#14"
@@ -53,7 +52,6 @@ Notes:
         "studentUniqueId": "604888"
     },
     "letterGradeEarned": "B",
-    "numericGradeEarned": "82",
     "_ext": {
         "MN": {
             "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#2"
@@ -80,7 +78,6 @@ Notes:
         "studentUniqueId": "605372"
     },
     "letterGradeEarned": "B+",
-    "numericGradeEarned": "89",
     "_ext": {
         "MN": {
             "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#24",
@@ -109,7 +106,6 @@ Notes:
         "studentUniqueId": "604903"
     },
     "letterGradeEarned": "A-",
-    "numericGradeEarned": "90",
     "_ext": {
         "MN": {
             "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#4",
@@ -137,7 +133,6 @@ Notes:
         "studentUniqueId": "605086"
     },
     "letterGradeEarned": "B",
-    "numericGradeEarned": "86",
     "_ext": {
         "MN": {
             "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#21",
@@ -165,7 +160,6 @@ Notes:
         "studentUniqueId": "604893"
     },
     "letterGradeEarned": "A",
-    "numericGradeEarned": "100",
     "_ext": {
         "MN": {
             "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#17",
@@ -174,7 +168,9 @@ Notes:
     }
 }
 
-/*Grade for Section7, Course Level X, student 605364*/
+/*Grade for Section7, Course Level X, student 605364
+- Note the letter grade uses an integer code of 3 - code for "Good (Meets standards for the assignment or course)"
+*/
 {
     "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
     "gradingPeriodReference": {
@@ -192,8 +188,7 @@ Notes:
         "sessionName": "{{highschoolid}}-Fall",
         "studentUniqueId": "605364"
     },
-    "letterGradeEarned": "B",
-    "numericGradeEarned": "87",
+    "letterGradeEarned": "3",
     "_ext": {
         "MN": {
             "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#3",
@@ -221,7 +216,6 @@ Notes:
         "studentUniqueId": "604922"
     },
     "letterGradeEarned": "A",
-    "numericGradeEarned": "99",
     "_ext": {
         "MN": {
             "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#8",
@@ -249,7 +243,6 @@ Notes:
         "studentUniqueId": "604826"
     },
     "letterGradeEarned": "A",
-    "numericGradeEarned": "98",
     "_ext": {
         "MN": {
             "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#2",
@@ -279,7 +272,6 @@ Notes:
         "studentUniqueId": "605157"
     },
     "letterGradeEarned": "B",
-    "numericGradeEarned": "88",
     "_ext": {
         "MN": {
             "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#9",

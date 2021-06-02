@@ -451,13 +451,14 @@ Ed-Fi Description: This educational entity represents an overall score or assess
     - GradeTypeDescriptor
     - GradingPeriodReference
     - StudentSectionAssociationReference
-    - CollegeCreditsEarned
-    - CollegeGradeEarned
+    - CollegeCreditsEarned (applicable only to Direct Pay PSEO Enrollments)
+    - CollegeGradeEarned (applicable only to Direct Pay PSEO Enrollments)
     - LocalCreditEarned
-    - NumericGradeEarned
     - LetterGradeEarned
 
-(Note: as of April 2021, LocalCreditEarned has an erroneous label/definition in Swagger of "“College credit earned”. It should say “LEA credit earned”.)
+Notes: 
+1. Letter Grades can also contain numeric codes, such as those on a 0-4 (Failing-Outstanding) scale. While 'numeric grade earned' is available via the API, the MCCC program wants to limit grade submissions to the letter grade earned element.
+2. As of April 2021, LocalCreditEarned has an erroneous label/definition in Swagger of "“College credit earned”. It should say “LEA credit earned”.
 
 # Navigation
 - [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
