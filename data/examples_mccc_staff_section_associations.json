@@ -156,17 +156,4 @@ Notes:
     }
 }
 
-/*Staff Association for Section11, PSEO */
-{
-    "classroomPositionDescriptor": "uri://education.mn.gov/ClassroomPositionDescriptor#TOR",
-    "sectionReference": {
-        "localCourseCode": "{{districtid}}-Direct Pay PSEO",
-        "schoolId": {{highschoolid}},
-        "schoolYear": 2022,
-        "sectionIdentifier": "DirectPayPSEO_Section",
-        "sessionName": "{{highschoolid}}-Unscheduled"
-    },
-    "staffReference": {
-        "staffUniqueId": "1002302"
-    }
-}
+/*Note that a Staff Association is not required for the Section11, Direct Pay PSEO section.*/
