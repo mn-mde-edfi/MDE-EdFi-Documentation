@@ -183,8 +183,7 @@ Test Plan Scenario 10 Associations for Direct Pay PSEO College Records to state 
 }
 
 /*Association Record for College Course 4 (PSEO 2) to State
-Note the SEA course code of 23010 is available as a generic classification 
-for a college course on Direct Pay PSEO - use only if the appropriate SEA code is unknown.
+Please use the most descriptive state course code for each of the college courses taken
 */
 {
     "courseReference": {
@@ -192,7 +191,7 @@ for a college course on Direct Pay PSEO - use only if the appropriate SEA code i
         "educationOrganizationId": 210016000
     },
     "toCourseReference": {
-         "courseCode": "23010",
+        "courseCode": "14002",
         "educationOrganizationId": 999999000
     }
 }
