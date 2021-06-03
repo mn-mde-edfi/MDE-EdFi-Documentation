@@ -250,6 +250,33 @@ Include the following elements:
 
 _Note:_ CourseCourseAssociation records are not required between the District Direct Pay PSEO course and the PSEO college courses.
 
+### Learning Standards
+Learning Standard elements are only required on the EE courses. These standards are validated on course records as they are loaded through the API, at the top of the course record. Only the identifier should be used in the reference (not the description):
+
+```javascript
+  "learningStandards": [
+    {
+        "learningStandardReference": {
+            "learningStandardId": "99.E5.4"
+        }
+    }
+  ]
+```
+
+They change relatively infrequently, so they are being documented here.
+
+|ID|Description|
+|--|--|
+|99.E5.All|All eight domains in ages birth through five|
+|99.E5.1|1. Social and Emotional Domain|
+|99.E5.2|2. Approaches to Learning Domain|
+|99.E5.3|3. Language, Literacy and Communication |
+|99.E5.4|4. The Arts Domain|
+|99.E5.5|5. Social Systems- Cognitive Domain|
+|99.E5.6|6. Physical and Movement Development Domain|
+|99.E5.7|7. Mathematics Domain|
+|99.E5.8|8. Scientific Thinking Domain|
+
 ## Resource: CourseOffering
 
 ### Description
@@ -458,33 +485,6 @@ Ed-Fi Description: This educational entity represents an overall score or assess
 Notes: 
 1. Letter Grades can also contain numeric codes, such as those on a 0-4 (Failing-Outstanding) scale. While 'numeric grade earned' is available via the API, the MCCC program wants to limit grade submissions to the letter grade earned element.
 2. As of April 2021, LocalCreditEarned has an erroneous label/definition in Swagger of "“College credit earned”. It should say “LEA credit earned”.
-
-## Learning Standards
-Learning Standard elements are only required on the EE courses. These standards are validated on course records as they are loaded through the API, at the top of the course record. Only the identifier should be referenced:
-
-```javascript
-  "learningStandards": [
-    {
-        "learningStandardReference": {
-            "learningStandardId": "99.E5.4"
-        }
-    }
-  ]
-```
-
-They change relatively infrequently, so they are being documented here.
-
-|ID|Description|
-|--|--|
-|99.E5.All|All eight domains in ages birth through five|
-|99.E5.1|1. Social and Emotional Domain|
-|99.E5.2|2. Approaches to Learning Domain|
-|99.E5.3|3. Language, Literacy and Communication |
-|99.E5.4|4. The Arts Domain|
-|99.E5.5|5. Social Systems- Cognitive Domain|
-|99.E5.6|6. Physical and Movement Development Domain|
-|99.E5.7|7. Mathematics Domain|
-|99.E5.8|8. Scientific Thinking Domain|
 
 # Navigation
 - [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
