@@ -365,13 +365,13 @@ Notes:
 */
 
 {
-  "courseCode": "{{districtid}}-Intro College Econ",
+  "courseCode": "{{districtid}}-ECO 101",
   "courseTitle": "Intro College Economics",
   "numberOfParts": "1",
   "identificationCodes": [
       {
           "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
-          "identificationCode": "{{districtid}}-Intro College Econ",
+          "identificationCode": "{{districtid}}-ECO 101",
           "assigningOrganizationIdentificationCode": "{{districtid}}"
       }
   ],
@@ -394,13 +394,13 @@ Notes:
 
 /*COLLEGE COURSE 2: for Course Level Type = A */
 {
-  "courseCode": "{{districtid}}-Small Engines",
+  "courseCode": "{{districtid}}-MAPS 1101",
   "courseTitle": "Small Engines 101",
   "numberOfParts": "1",
   "identificationCodes": [
       {
           "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
-          "identificationCode": "{{districtid}}-Small Engines",
+          "identificationCode": "{{districtid}}-MAPS 1101",
           "assigningOrganizationIdentificationCode": "{{districtid}}"
       }
   ],
@@ -425,13 +425,13 @@ Notes:
 Note: includes the State course code
 */
 {
-  "courseCode": "{{districtid}}-Computer Science 100",
+  "courseCode": "{{districtid}}-SC 50",
   "courseTitle": "Computer Science 100",
   "numberOfParts": "1",
   "identificationCodes": [
       {
           "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#University Course Code",
-          "identificationCode": "{{districtid}}-Computer Science 100",
+          "identificationCode": "{{districtid}}-SC 50",
           "assigningOrganizationIdentificationCode": "{{districtid}}"
       },
       {
@@ -459,13 +459,13 @@ Note: includes the State course code
 
 /*College Course 4 - PSEO 2 */
 {
-  "courseCode": "{{districtid}}-Health Science 101",
+  "courseCode": "{{districtid}}-HSCI 101",
   "courseTitle": "Health Science 101",
   "numberOfParts": "1",
   "identificationCodes": [
       {
           "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#University course code",
-          "identificationCode": "{{districtid}}-Health Science 101",
+          "identificationCode": "{{districtid}}-HSCI 101",
           "assigningOrganizationIdentificationCode": "{{districtid}}"
       }
   ],

@@ -127,7 +127,7 @@ Test Plan Scenario 8 Associations for district to state level courses
         "educationOrganizationId": {{districtid}}
     },
     "toCourseReference": {
-        "courseCode": "2006",
+        "courseCode": "2997",
         "educationOrganizationId": 999999000
     }
 }
@@ -145,7 +145,7 @@ Test Plan Scenario 9 Associations for district to college courses
         "educationOrganizationId": {{districtid}}
     },
     "toCourseReference": {
-        "courseCode": "{{districtid}}-Intro College Econ",
+        "courseCode": "{{districtid}}-ECO 101",
         "educationOrganizationId": 210016000
     }
 }
@@ -157,7 +157,7 @@ Test Plan Scenario 9 Associations for district to college courses
         "educationOrganizationId": {{districtid}}
     },
     "toCourseReference": {
-        "courseCode": "{{districtid}}-Small Engines",
+        "courseCode": "{{districtid}}-MAPS 1101",
         "educationOrganizationId": 210023000
     }
 }
@@ -173,7 +173,7 @@ Test Plan Scenario 10 Associations for Direct Pay PSEO College Records to state 
 /*Association Record for College Course 3 (PSEO 1) to State */
 {
     "courseReference": {
-        "courseCode": "{{districtid}}-Computer Science 100",
+        "courseCode": "{{districtid}}-SC 50",
         "educationOrganizationId": 210016000
     },
     "toCourseReference": {
@@ -187,7 +187,7 @@ Please use the most descriptive state course code for each of the college course
 */
 {
     "courseReference": {
-        "courseCode": "{{districtid}}-Health Science 101",
+        "courseCode": "{{districtid}}-HSCI 101",
         "educationOrganizationId": 210016000
     },
     "toCourseReference": {
