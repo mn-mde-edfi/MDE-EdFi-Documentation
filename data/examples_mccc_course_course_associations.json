@@ -15,11 +15,11 @@ Test Plan Scenario 8 Associations for district to state level courses
 /*Association Record for District Course 1 */
 {
     "courseReference": {
-        "courseCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1",
+        "courseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology",
         "educationOrganizationId": {{districtid}}
     },
     "toCourseReference": {
-        "courseCode": "2006",
+        "courseCode": "03051",
         "educationOrganizationId": 999999000
     }
 }
@@ -27,11 +27,11 @@ Test Plan Scenario 8 Associations for district to state level courses
 /*Association Record for District Course 2*/
 {
     "courseReference": {
-        "courseCode": "{{districtid}}-264a0595-c229-4af6-80be-138293da0b6a-Biology",
+        "courseCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1",
         "educationOrganizationId": {{districtid}}
     },
     "toCourseReference": {
-        "courseCode": "03051",
+        "courseCode": "2006",
         "educationOrganizationId": 999999000
     }
 }

@@ -6,44 +6,9 @@ Notes:
 - Course Titles are not required, but are used in many of these examples for reference
 */
 
-/* DISTRICT COURSE 1: Algebra 1
+/* DISTRICT COURSE1: Biology (type B)
 Notes:
- - Level Type G (course "2" in the test plan)
-*/
-{
-    "courseCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1",
-    "identificationCodes": [
-      {
-        "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
-        "assigningOrganizationIdentificationCode": "{{districtid}}",
-        "identificationCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1"
-      }
-    ],
-    "educationOrganizationReference": {
-      "educationOrganizationId": {{districtid}}
-    },
-    "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
-    "courseTitle": "Algebra I",
-    "dateCourseAdopted": "2021-09-01",
-    "highSchoolCourseRequirement": 1,
-    "numberOfParts": 2,
-    "_ext": {
-      "MN": {
-        "standardAddressedDescriptor": "uri://education.mn.gov/StandardAddressedDescriptor#State",
-
-        "levelTypes": [
-          {
-            "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#G"
-          }
-        ]
-      }
-    }
-  }
-
-
-/* DISTRICT COURSE2: Biology (type B)
-Notes:
- - Level Type B (course "1" in the test plan)
+ - Level Type B
  - EOC appears here because it is only applied to science courses that are take the year the student take the HS science MCA test. 
     The grade level year the science MCA test is given is set by the district so this indicator is the only way in MCCC to identify
     the science courses taken that year.
@@ -82,6 +47,39 @@ Notes:
   }
 }
 
+/* DISTRICT COURSE 2: Algebra 1
+Notes:
+ - Level Type G
+*/
+{
+  "courseCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1",
+  "identificationCodes": [
+    {
+      "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#LEA course code",
+      "assigningOrganizationIdentificationCode": "{{districtid}}",
+      "identificationCode": "{{districtid}}-dc975f0a-78b8-4a4b-af1b-1b6a4317e66c-Algebra1"
+    }
+  ],
+  "educationOrganizationReference": {
+    "educationOrganizationId": {{districtid}}
+  },
+  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseTitle": "Algebra I",
+  "dateCourseAdopted": "2021-09-01",
+  "highSchoolCourseRequirement": 1,
+  "numberOfParts": 2,
+  "_ext": {
+    "MN": {
+      "standardAddressedDescriptor": "uri://education.mn.gov/StandardAddressedDescriptor#State",
+
+      "levelTypes": [
+        {
+          "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#G"
+        }
+      ]
+    }
+  }
+}
 
 /* DISTRICT COURSE 3: Honors Spanish (type E)
 Notes:
