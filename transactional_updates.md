@@ -23,7 +23,7 @@ When you have to change information on an Ed-Fi resource, such as a student, you
 
 ## Q&A
 Since this topic came up based on some questions from a district, we'll reflect the answers to those questions here:
-- **Q:** Are we supposed to send some sort of ‘delete’ existing record(s) to update a student's new entry date along with the new data?
+- **Q:** Are we supposed to send some sort of 'delete' existing record(s) to update a student's new entry date along with the new data?
 - **A:** You could either delete the StudentSchoolAssociation and resubmit with the correct date OR submit a PUT to update the record. Using POST (upserting) won't work because the date is part of the natural key. The more straightforward option is likely just delete and resubmit.  
 - **Q:** Should we plan on removing all existing data somehow so we can reload from scratch each time?
 - **A:** This is generally discouraged because it bogs down the server with unnecessary api requests. Instead, sending deletes and reloads for individual records or students needing to be refreshed is preferred. 
