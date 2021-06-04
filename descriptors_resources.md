@@ -165,7 +165,10 @@ In this scenario:
 - C is the enrolling/serving district
 
 ## Course Records for MCCC
-For sy2021-2022, the Minnesota Common Course Catalogue (MCCC) data collection requires districts to create their course offerings (including college courses) and then relate those courses to state-level course definitions. Over 1700 State Education Agency (SEA - aka MDE) course definitions are available in the populated sandbox and will be available in Staging and Production.
+For sy2021-2022, the Minnesota Common Course Catalogue (MCCC) data collection requires districts to create their course offerings (including college courses) and then relate those courses to state-level course definitions. This section contains details on those course record requirements.
+
+### SEA Defined Courses
+Over 1700 State Education Agency (SEA - aka MDE) course definitions are available in the populated sandbox and will be available in Staging and Production.
 
 To get the list of SEA-defined courses, perform a GET operation against the "courses" endpoint, setting the parameter _courseDefinedByDescriptor_ equal to _uri://education.mn.gov/CourseDefinedByDescriptor#SEA_. In an HTTP request this will be escaped as: ```courseDefinedByDescriptor=uri%3A%2F%2Feducation.mn.gov%2FCourseDefinedByDescriptor%23SEA```. An example JSON value for an SEA-defined course is below:
 
@@ -205,12 +208,16 @@ To get the list of SEA-defined courses, perform a GET operation against the "cou
 Given those course records, districts will be able to relate local course records to SEA-defined courses via course-to-course association records. From there, student attendance, grades, etc can be submitted on the local courses. __Note:__ As of April 12, 2021, MDE and its contractors identified an issue with the levelCharacteristics of courses loaded into the 2021-2022 Sandboxes, which was rectified on April 29,2021. Sandboxes created before that date will have extra characteristics on the SEA courses.
 
 ### Course Data Elements and Validation
-Note that in the "dateCourseAdopted" element (aka effectiveStartYear from MCCC), the year must be less than or equal to the reporting year to be a valid code.
+Note that in the ```dateCourseAdopted``` element (aka "effectiveStartYear" from MCCC), the year must be less than or equal to the reporting year to be a valid code.
 
 #### Level Characteristics
 LEAs will commonly need course level characteristics (the "levelCharacteristics" collection on _course_) included such as UC, MM, IS, and PBL. The following characteristics have rules:
 1. **UC - Unclassified Course Indicator**: if included, then a local course description must be entered.  
-2. **MM - Multiple Marks Indicator**: This should be used for the courses that will have subject area information added to the grade. 
+2. **MM - Multiple Marks Indicator**: This should be used for the courses that will have subject area information added to the grade, which enables assigning multiple grades (against different subject areas) to students for a Multiple Marks course; Must be associated with an MM SEA-defined course.*
+3. **IS - Independent Study Indicator**: This should be used for Independent Study courses; Must be associated with an IS SEA-defined course.* In addition, when students are enrolled via studentSectionAssociations, the ```SectionEnrollmentTypeDescriptor``` must be **AI** (ALC_IND_STUDY).
+4. **PBL - Project Based Learning Indicator**: This should be used for Project Based courses; Must be associated with a PBL SEA-defined course.* In addition, when students are enrolled via studentSectionAssociations, the ```SectionEnrollmentTypeDescriptor``` must be **PB** (PROJECT_BASED).
+
+*To be valid, MM, IS, and PBL characteristics on District Courses must align with the SEA-defined courses they are related to via ```courseCourseAssociation``` records. Getting the SEA-defined course records (see above) reveals which of those courses are assigned these level characteristics.
 
 ### sequenceLimit vs. Number of Parts
 In April 2021, MDE staff determined that our Ed-Fi implementation contains redundant elements in the “course” entity: numberOfParts (Ed-Fi core) and sequenceLimit (MN extension). In order to increase alignment with core Ed-Fi components, we decided to remove the use of sequenceLimit and rely on numberOfParts for the same information.
