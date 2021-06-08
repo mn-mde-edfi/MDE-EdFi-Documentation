@@ -446,9 +446,9 @@ Ed-Fi Description: This association indicates the course sections to which a stu
     - BeginDate
     - College Course Reference (only applicable to Direct Pay PSEO)
     - Early Education fields (only for Couse Level Type 'P')
-      - instructionalApproachDescriptor
+      - instructionalApproachDescriptor (if different than the course offering)
       - implementationStatusDescriptor
-      - siteBasedInitiativeDescriptor
+      - siteBasedInitiativeDescriptor (if different than the course offering)
       - implementationStatusDescriptor
     - SectionEnrollmentType
       - Match the enrollment type with the appropriate course/section.
