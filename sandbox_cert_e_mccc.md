@@ -483,7 +483,7 @@ Ed-Fi Description: This educational entity represents an overall score or assess
     - LetterGradeEarned
 
 Notes: 
-1. Letter Grades can also contain numeric codes, such as those on a 0-4 (Failing-Outstanding) scale. While 'numeric grade earned' is available via the API, the MCCC program wants to limit grade submissions to the letter grade earned element.
+1. Letter Grades can also contain numeric codes, such as those on a 0-4 (Failing-Outstanding) scale. Note that 'numeric grade earned' was removed from the sandbox API on June 7, 2021, reflecting the MCCC program desire to limit grade submissions to the ```LetterGradeEarned``` element.
 2. As of April 2021, LocalCreditEarned has an erroneous label/definition in Swagger of "“College credit earned”. It should say “LEA credit earned”.
 
 # Navigation
