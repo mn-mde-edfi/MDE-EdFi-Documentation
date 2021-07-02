@@ -70,12 +70,13 @@ Ed-Fi Description: This entity represents the designation of a regularly schedul
     - ClassPeriodName
     - ClassPeriodDescriptor
     - SchoolID
-    - ClassPeriodDescription
     - StartTime
-    - EndTime 
+    - EndTime
+    
 Notes:
 1. Times should be formatted as "HH:MM", i.e. "09:00", "14:00".
-2. ```ClassPeriodDescriptor``` and ```ClassPeriodDescription``` are expected on each record. Each class period is only expected to be described with one ```ClassPeriodDescriptor``` (i.e. "DURING_SCHOOL"), and a basic description in ```ClassPeriodDescription``` such as the name of the period.
+2. ```ClassPeriodDescriptor``` is expected on each record. Each class period is only expected to be described with one ```ClassPeriodDescriptor``` (i.e. "DURING_SCHOOL").
+3. Note that the name of the period should be placed within the ClassPeriodName element, and we are no longer using the ```ClassPeriodDescription``` element.
 
 ## Resource: GradingPeriod
 
