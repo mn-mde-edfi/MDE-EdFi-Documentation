@@ -4,6 +4,7 @@ Notes:
 - Comment blocks above each set of records refer to the two scenarios in the test plan - see /sandbox_cert_e_mccc.md#resource-section
 - Comments above each section record refer to the courseOffering being referenced
 - Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
+- Scheduled sections require a class period reference; that data was added to these examples in July 2021 because we previously did not have that element available in the profile.
 */
 
 /*
@@ -29,6 +30,14 @@ Section 1 References the Course Offering on Course Level Type = B
         },
         {
             "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#FP"
+        }
+    ],
+    "classPeriods": [
+        {
+          "classPeriodReference": {
+            "classPeriodName": "Period 1",
+            "schoolId": {{highschoolid}}
+          }
         }
     ],
     "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
@@ -57,6 +66,14 @@ Section 2 References the Course Offering on Course Level Type = G
         },
         {
             "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#FP"
+        }
+    ],
+    "classPeriods": [
+        {
+          "classPeriodReference": {
+            "classPeriodName": "Period 2",
+            "schoolId": {{highschoolid}}
+          }
         }
     ],
     "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
@@ -88,6 +105,14 @@ Note: instructionLanguageDescriptor included for Honors Spanish course
             "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#FP"
         }
     ],
+    "classPeriods": [
+        {
+          "classPeriodReference": {
+            "classPeriodName": "Period 3",
+            "schoolId": {{highschoolid}}
+          }
+        }
+    ],
     "instructionLanguageDescriptor":"uri://education.mn.gov/LanguageDescriptor#45",
     "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
     "sequenceOfCourse": "1",
@@ -117,6 +142,14 @@ Section 4 References the Course Offering on Course Level Type = D
             "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#FP"
         }
     ],
+    "classPeriods": [
+        {
+          "classPeriodReference": {
+            "classPeriodName": "Period 1",
+            "schoolId": {{highschoolid}}
+          }
+        }
+    ],
     "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
     "sequenceOfCourse": "1",
     "_ext": {
@@ -140,6 +173,14 @@ Section 5 References the Course Offering on Course Level Type = A
     "characteristics": [
         {
             "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#MA"
+        }
+    ],
+    "classPeriods": [
+        {
+          "classPeriodReference": {
+            "classPeriodName": "Period 2",
+            "schoolId": {{highschoolid}}
+          }
         }
     ],
     "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
@@ -167,6 +208,14 @@ Section 6 References the District Course Associated with Course Level Type = C
             "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#MA"
         }
     ],
+    "classPeriods": [
+        {
+          "classPeriodReference": {
+            "classPeriodName": "Period 3",
+            "schoolId": {{highschoolid}}
+          }
+        }
+    ],
     "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
     "sequenceOfCourse": "1",
     "_ext": {
@@ -190,6 +239,14 @@ Section 7 References the Course Offering on Course Level Type = X
     "characteristics": [
         {
             "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#MA"
+        }
+    ],
+    "classPeriods": [
+        {
+          "classPeriodReference": {
+            "classPeriodName": "Period 1",
+            "schoolId": {{highschoolid}}
+          }
         }
     ],
     "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
@@ -217,6 +274,14 @@ Section 8 References the Course Offering on Course Level Type = N
             "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#MA"
         }
     ],
+    "classPeriods": [
+        {
+          "classPeriodReference": {
+            "classPeriodName": "Period 1",
+            "schoolId": {{middleschoolid}}
+          }
+        }
+    ],
     "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
     "sequenceOfCourse": "1",
     "_ext": {
@@ -240,6 +305,14 @@ Section 9 References the District Course Associated with Course Level Type = P
     "characteristics": [
         {
             "sectionCharacteristicDescriptor": "uri://education.mn.gov/SectionCharacteristicDescriptor#FP"
+        }
+    ],
+    "classPeriods": [
+        {
+          "classPeriodReference": {
+            "classPeriodName": "Block1",
+            "schoolId": {{elementaryschoolid}}
+          }
         }
     ],
     "mediumOfInstructionDescriptor": "uri://education.mn.gov/MediumOfInstructionDescriptor#CR",
