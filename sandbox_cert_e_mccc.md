@@ -202,8 +202,9 @@ Each should include the following elements:
 
 Separate course, course offering and section records are required for your district to report ALC Independent Study records; however Course Offering and Section will not be used by MDE for reporting. (The Ed-Fi Model requires an entry in Course Offering linked to the non-scheduled term, and a section default.)
 
+Please also note the validation rules described in the [Level Characteristics section](descriptors_resources.md#level-characteristics) of the Descriptors and Resources document.
+
 Include the following elements:
-  - CourseLevelCharacteristic = IS
   - Course Code
   - CourseDescription
   - HighSchoolCourseRequirement
@@ -221,9 +222,8 @@ Include the following elements:
     - Number of Parts
     - CourseDefinedByDescriptor = 'LEA'
 
-7. **Optional Scenario for Project-Based Student enrollment record.** Create a course for Project Based section enrollments - While these types of enrollments do not include MDE course, course offering or section requirements - the Ed-Fi Model enforces these entities in the Master Schedule. At minimum, a **single Placeholder course, course offering, and section will be required for your district** to report Project Based Student Section Association records. Ed-Fi required elements:
+7. **Optional Scenario for Project-Based Student enrollment record.** Create a course for Project Based section enrollments - While these types of enrollments do not include MDE course, course offering or section requirements - the Ed-Fi Model enforces these entities in the Master Schedule. At minimum, a **single Placeholder course, course offering, and section will be required for your district** to report Project Based Student Section Association records. Please also note the validation rules described in the [Level Characteristics section](descriptors_resources.md#level-characteristics) of the Descriptors and Resources document. Ed-Fi required elements:
     - Course Code: Project Based
-    - CourseLevelCharacteristic = PBL
     - Course Title
     - Course Identification Code
     - Number of Parts
@@ -234,7 +234,7 @@ Include the following elements:
     - CourseCode = District Course Code
     - ToCourseEducationOrganizationId = State Course EducationOrganizationId
     - ToCourseCode = State Course Code
-      - IS can only use state codes with CourseLevelCharacteristicDescription = IS and Project Based can only use state codes with CourseLevelCharacteristicDescription = PBL.
+      - IS can only be related to state courses with CourseLevelCharacteristicDescription = IS and Project Based can be related to state courses with CourseLevelCharacteristicDescription = PBL. See the [Level Characteristics section](descriptors_resources.md#level-characteristics) for validation details.
       - Scheduled course work type cannot use CourseLevelCharacteristicDescription = PBL.
 
 9. Create CourseCourseAssociation records between the College Courses A and D and the District Courses created for this association.
@@ -451,12 +451,14 @@ Ed-Fi Description: This association indicates the course sections to which a stu
       - implementationStatusDescriptor
       - siteBasedInitiativeDescriptor (if different than the course offering)
       - implementationStatusDescriptor
-    - SectionEnrollmentType
-      - Match the enrollment type with the appropriate course/section.
-        - Scheduled
-        - Independent Study
-        - Direct Pay PSEO
-        - Project Based (if available)
+    - SectionEnrollmentType Descriptor
+      - Match the enrollment type with the appropriate course/section:
+        - **SC**: Scheduled
+        - **AI**: Independent Study
+        - **DP**: Direct Pay PSEO
+        - **PB**: Project Based (if available)
+
+Please note the importance of the SectionEnrollmentType Descriptor in validating Project-Based and Independent Study courses as describe in the [Level Characteristics section](descriptors_resources.md#level-characteristics) of the Descriptors and Resources document.
 
 ## Resource: Grade
 

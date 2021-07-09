@@ -487,7 +487,7 @@ Note: includes the State course code
 }
 
 /*District Course 10 - Independent Study
-levelCharactierstic IS
+Note that the levelCharactierstic of "IS" does not actually exist on the course record.
 levelType X
 */
 
@@ -507,11 +507,6 @@ levelType X
   },  
   "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA",
   "highSchoolCourseRequirement": "0",
-  "levelCharacteristics": [
-      {
-          "courseLevelCharacteristicDescriptor": "uri://education.mn.gov/CourseLevelCharacteristicDescriptor#IS"
-      }
-  ],
   "learningStandards": [
       {
           "learningStandardReference": {
