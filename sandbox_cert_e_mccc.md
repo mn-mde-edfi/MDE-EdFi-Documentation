@@ -189,13 +189,13 @@ Including the following elements:
     - 2 college courses to be used for Direct Pay PSEO.
 
 Each college course should include the following elements:
-      - PostSecondaryInstitutionId (see [College Courses](descriptors_resources.md#college-courses))
-      - MaximumAvailableCredits
-      - CourseCode (District ID plus '-' and College Course Identifier - generally dept letters & course number)
-      - CourseTitle
-      - CourseDefinedByDescriptorId = 'College'
-      - CourseIdentificationCode - repeat the CourseCode (this is an ed-fi requirement)
-      - CourseIdentificationSystemDescriptor = 'LEA course code' for the first two, 'University Course Code' for the PSEO courses
+- PostSecondaryInstitutionId (see [College Courses](descriptors_resources.md#college-courses))
+- MaximumAvailableCredits
+- CourseCode (District ID plus '-' and College Course Identifier - generally dept letters & course number)
+- CourseTitle
+- CourseDefinedByDescriptorId = 'College'
+- CourseIdentificationCode - repeat the CourseCode (this is an ed-fi requirement)
+- CourseIdentificationSystemDescriptor = 'LEA course code' for the first two, 'University Course Code' for the PSEO courses
 
 5. Create a District Course for Independent Study
 
