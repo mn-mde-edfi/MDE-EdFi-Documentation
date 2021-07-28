@@ -360,17 +360,17 @@ Create the following CourseOffering Records:
     - CourseReference (reference to district course)
     - LocalCourseCode (District Course's Code - at discretion of district)
     - Schoolid
-    - SessionReference (SchoolYear, SchoolId, SessionName = 'Unscheduled')
+    - SessionReference (SchoolYear, SchoolId, SessionName. Should reference a session with TermDescriptor 'NS' for non-scheduled.)
 11. CourseOffering 11 for Direct Pay PSEO **(you will have a single course offering linked to a single district course set up as a placeholder)**
     - CourseReference (reference to district course)
     - LocalCourseCode (District Course's Code - at discretion of district)
     - Schoolid
-    - SessionReference (SchoolYear, SchoolId, SessionName = 'Unscheduled')
+    - SessionReference (SchoolYear, SchoolId, SessionName. Should reference a session with TermDescriptor 'NS' for non-scheduled.)
 12. CourseOffering 12 for Project Based **(not submitted by SIS vendors)** **- (Requires****a single course offering linked to a single course which is associated to all project-based college courses)**
     - CourseReference (reference to district course)
     - LocalCourseCode (District Course's Code - at discretion of district)
     - Schoolid
-    - SessionReference (SchoolYear, SchoolId, SessionName = 'Unscheduled')
+    - SessionReference (SchoolYear, SchoolId, SessionName. Should reference a session with TermDescriptor 'NS' for non-scheduled.)
 
 ## Resource: Section
 
