@@ -66,7 +66,7 @@ MDE is aware that vendors have access to parent records for students **not** par
 ### Avoiding Conflicts in Identifiers
 Parent records are shared among and between Local Education Authorities (LEAs) like student records. But unlike student records, MDE does not have a system of uniquely identifying parents. That means that duplicate parent records are likely to be created.
 
-Similarly, there’s the possibility for conflicting information to be overwritten on updates to parent records if the same unique ID is used. In order to reduce the changes of that, MDE is requiring that a parent ID be prefixed with a district/organization number and dash (using the Ed-Fi identifier conventions), such as this:
+Similarly, there’s the possibility for conflicting information to be overwritten on updates to parent records if the same unique ID is used. In order to reduce the changes of that, MDE is requiring that a parent ID be prefixed with a district/organization number and dash (using the [Ed-Fi identifier conventions](sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids)), such as this:
 - "10625000-" for [SPPS](https://public.education.mn.gov/MdeOrgView/organization/show/566)
 - "526095000-" for [AALASEC](https://public.education.mn.gov/MdeOrgView/organization/show/14583)
 

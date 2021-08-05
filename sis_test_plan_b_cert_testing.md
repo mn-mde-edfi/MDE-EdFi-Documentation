@@ -81,11 +81,11 @@ The MDE **stateOrganizationID** (assigned in MDE ORG) is formatted as follows: `
 - ``tt`` = district/LEA type (note most LEA types are a single digit)
 - ``dddd`` = district number, left zero filled
 - ``sss`` = school number, left zero filled, 000 for districts
-- ``mmm`` = 000 for all organizations reported in Ed-Fi
+- ``mmm`` = 000 for all organizations reported in Ed-Fi (and excluded in the Ed-Fi ID)
  
 The MDE **stateOrganizationID** value is stored in Ed-Fi on the Ed-Fi **EducationOrganizationIdentificationCodes** collection and is surfaced via the Ed-Fi **LocalEducationAgencies**, **Schools**, and **PostSecondaryEducation** resource endpoints. 
 
-The Ed-Fi **LocalEducationAgencyId** and **SchoolId** are derived as follows: ```ttddddsss```.  The final three digits in ```sss``` are always zero filled (```000```) for the LocalEducationAgencyId. 
+The Ed-Fi **LocalEducationAgencyId** and **SchoolId** are derived as follows: ```ttddddsss```.  The final three digits in ```sss``` are always zero filled (```000```) for the LocalEducationAgencyId. **Do not** use a leading zero in the LEA type portion.
 
 Examples: 
 - The MDE State Organization ID for [Mayo Senior High](https://public.education.mn.gov/MdeOrgView/organization/show/2734) (an individual school) is ```10535315000```. The corresponding Ed-Fi SchoolId is ```10535315```.
