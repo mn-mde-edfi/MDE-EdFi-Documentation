@@ -37,23 +37,6 @@ This association represents the School in which a student is enrolled. The seman
 
 1. Enroll the 12 students (spread across elementary, middle and high school)
 
-## Resource: StudentEducationOrganizationAssociation
-
-### Description
-
-This association indicates any relationship between a student and an education organization other than how the state views enrollment. Enrollment relationship semantics are covered by StudentSchoolAssociation.
-
-MDE allows for the capture of student demographic data by school enrollment. Therefore, a StudentEducationOrganizationAssociation record must be submitted for each **school** in which the student is enrolled to provide the student demographic data provided to the enrolling school by the parent(s).
-
-### Prerequisite Data
-
-- Students
-- EducationOrganizations (Schools)
-
-### Scenarios
-
-1. Create StudentEducationOrganizationAssociation records for each of the students
-
 ## Resource: ClassPeriod
 
 ### Description
