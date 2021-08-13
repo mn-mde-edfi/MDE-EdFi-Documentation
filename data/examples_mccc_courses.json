@@ -422,7 +422,8 @@ Notes:
 }
 
 /*College Course 3 - PSEO 1 
-Note: includes the State course code
+Note: technically the identificationCodes is a collection, and can include additional identifiers such as the
+state course code. However, that reference is unneecessary given that relationship is created via Course/Course Association.
 */
 {
   "courseCode": "{{districtid}}-SC 50",
@@ -433,11 +434,6 @@ Note: includes the State course code
           "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#University Course Code",
           "identificationCode": "{{districtid}}-SC 50",
           "assigningOrganizationIdentificationCode": "{{districtid}}"
-      },
-      {
-          "courseIdentificationSystemDescriptor": "uri://ed-fi.org/CourseIdentificationSystemDescriptor#State course code",
-          "identificationCode": "23010",
-          "assigningOrganizationIdentificationCode": "999999000"
       }
   ],
   "educationOrganizationReference": {
