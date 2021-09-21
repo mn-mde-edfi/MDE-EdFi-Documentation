@@ -216,7 +216,7 @@ Include the following elements:
 8. Create CourseCourseAssociation records between the district Courses and State Level Courses (including IS, and Project Based if applicable)
     - EducationOrganizationId = District ID
     - CourseCode = District Course Code
-    - ToCourseEducationOrganizationId = State Course EducationOrganizationId
+    - ToCourseEducationOrganizationId = State Education Agency ID (999999000)
     - ToCourseCode = State Course Code
       - IS can only be related to state courses with CourseLevelCharacteristicDescription = IS and Project Based can be related to state courses with CourseLevelCharacteristicDescription = PBL. See the [Level Characteristics section](descriptors_resources.md#level-characteristics) for validation details.
       - Scheduled course work type cannot use CourseLevelCharacteristicDescription = PBL.
@@ -230,7 +230,7 @@ Include the following elements:
 10. Create CourseCourseAssociation records between the Direct Pay College Courses and the applicable State Course (PSEO Direct Pay)
     - EducationOrganizationId = College Education Organization ID
     - CourseCode = College Course Code
-    - ToCourseEducationOrganizationId = State SEA id
+    - ToCourseEducationOrganizationId = State Education Agency ID (999999000)
     - ToCourseCode = State Course Code
 
 _Note:_ CourseCourseAssociation records are not required between the District Direct Pay PSEO course and the PSEO college courses.
