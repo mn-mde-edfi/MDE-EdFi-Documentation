@@ -248,7 +248,7 @@ Learning Standard elements are **only** required on the Early Education (EE) cou
   ]
 ```
 
-They change relatively infrequently, so they are being documented here for vendors to build local tables. While this data exists within the API for validation, it is hidden from most users via a security conifiguration. Nevertheless, using a code that is not in the table below will result in a record rejection from the API.
+They change relatively infrequently, so they are being documented here for vendors to build local tables. While this data exists within the API for validation, it is hidden from most users via a security configuration. Nevertheless, using a code that is not in the table below will result in a record rejection from the API.
 
 |ID|Description|
 |--|--|
