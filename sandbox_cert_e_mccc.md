@@ -236,7 +236,7 @@ Include the following elements:
 _Note:_ CourseCourseAssociation records are not required between the District Direct Pay PSEO course and the PSEO college courses.
 
 ### Learning Standards
-Learning Standard elements are only required on the EE courses. These standards are validated on course records as they are loaded through the API, at the top of the course record. Only the identifier should be used in the reference (not the description):
+Learning Standard elements are **only** required on the Early Education (EE) courses. These standards are validated on course records as they are loaded through the API, at the top of the course record. Only the identifier should be used in the reference (not the description):
 
 ```javascript
   "learningStandards": [
@@ -248,7 +248,7 @@ Learning Standard elements are only required on the EE courses. These standards 
   ]
 ```
 
-They change relatively infrequently, so they are being documented here.
+They change relatively infrequently, so they are being documented here for vendors to build local tables. While this data exists within the API for validation, it is hidden from most users via a security conifiguration. Nevertheless, using a code that is not in the table below will result in a record rejection from the API.
 
 |ID|Description|
 |--|--|
