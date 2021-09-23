@@ -503,13 +503,6 @@ levelType X
   },  
   "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA",
   "highSchoolCourseRequirement": "0",
-  "learningStandards": [
-      {
-          "learningStandardReference": {
-              "learningStandardId": "99.E5.7"
-      }
-      }
-  ],
 "_ext": {
       "MN": {
           "standardAddressedDescriptor": "uri://education.mn.gov/StandardAddressedDescriptor#State",
