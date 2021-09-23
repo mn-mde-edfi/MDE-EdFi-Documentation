@@ -488,7 +488,7 @@ levelType X
 */
 
 {
-  "courseCode": "{{districtid}}-ALgebra IS",
+  "courseCode": "{{districtid}}-Algebra IS",
   "courseTitle": "Algebra IS",
   "numberOfParts": "1",
   "identificationCodes": [
