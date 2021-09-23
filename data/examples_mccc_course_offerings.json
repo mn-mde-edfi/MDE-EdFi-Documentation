@@ -236,9 +236,9 @@ CourseOffering 9 References the District Course Associated with Course Level Typ
 CourseOffering 10 for Independent Study
 */
 {
-    "localCourseCode": "{{districtid}}-ALgebra IS",
+    "localCourseCode": "{{districtid}}-Algebra IS",
     "courseReference": {
-        "courseCode": "{{districtid}}-ALgebra IS",
+        "courseCode": "{{districtid}}-Algebra IS",
         "educationOrganizationId": {{districtid}}
     },
     "schoolReference": {
