@@ -170,34 +170,33 @@ Including the following elements:
     - 1 with Course Level Type = D
     - 1 with Course Level Type = A
     - 2 college courses to be used for Direct Pay PSEO.
+   Each college course should include the following elements:
+      - EducationOrganizationId for the college (use the PostSecondaryInstitutionId as detailed in the [College Courses](descriptors_resources.md#college-courses) section)
+      - MaximumAvailableCredits
+      - CourseCode (District ID plus '-' and College Course Identifier - generally dept letters & course number)
+      - CourseTitle
+      - CourseDefinedByDescriptorId = 'College'
+      - CourseIdentificationCode - repeat the CourseCode (this is an ed-fi requirement)
+      - CourseIdentificationSystemDescriptor = 'LEA course code' for the first two, 'University Course Code' for the PSEO courses
 
-Each college course should include the following elements:
-- EducationOrganizationId for the college (use the PostSecondaryInstitutionId as detailed in the [College Courses](descriptors_resources.md#college-courses) section)
-- MaximumAvailableCredits
-- CourseCode (District ID plus '-' and College Course Identifier - generally dept letters & course number)
-- CourseTitle
-- CourseDefinedByDescriptorId = 'College'
-- CourseIdentificationCode - repeat the CourseCode (this is an ed-fi requirement)
-- CourseIdentificationSystemDescriptor = 'LEA course code' for the first two, 'University Course Code' for the PSEO courses
 
 5. Create a District Course for Independent Study
+    **NOTE:** Independent Study course section enrollments did not previously require the setup of a course section - the Ed-Fi Model enforces the full set of master schedule entities (course, course offering and section) in order to associate a student with a course and record grades for that course.
 
-**NOTE:** Independent Study course section enrollments did not previously require the setup of a course section - the Ed-Fi Model enforces the full set of master schedule entities (course, course offering and section) in order to associate a student with a course and record grades for that course.
+    - Separate course, course offering and section records are required for your district to report ALC Independent Study records; however Course Offering and Section will not be used by MDE for reporting. (The Ed-Fi Model requires an entry in Course Offering linked to the non-scheduled term, and a section default.)
 
-Separate course, course offering and section records are required for your district to report ALC Independent Study records; however Course Offering and Section will not be used by MDE for reporting. (The Ed-Fi Model requires an entry in Course Offering linked to the non-scheduled term, and a section default.)
+    Please also note the validation rules described in the [Level Characteristics section](descriptors_resources.md#level-characteristics) of the Descriptors and Resources document.
 
-Please also note the validation rules described in the [Level Characteristics section](descriptors_resources.md#level-characteristics) of the Descriptors and Resources document.
-
-Include the following elements:
-  - Course Code
-  - CourseDescription
-  - HighSchoolCourseRequirement
-  - Number of Parts
-  - LocalEducationAgencyId
-  - CourseTitle
-  - CourseDefinedByDescriptorId = 'LEA'
-  - CourseIdentificationCode - repeat the CourseCode (this is an ed-fi requirement)
-  - CourseIdentificationSystemDescriptor = 'LEA course code'
+    Include the following elements:
+      - Course Code
+      - CourseDescription
+      - HighSchoolCourseRequirement
+      - Number of Parts
+      - LocalEducationAgencyId
+      - CourseTitle
+      - CourseDefinedByDescriptorId = 'LEA'
+      - CourseIdentificationCode - repeat the CourseCode (this is an ed-fi requirement)
+      - CourseIdentificationSystemDescriptor = 'LEA course code'
     
 6. **Create a course** for Direct Pay PSEO section enrollments - the Ed-Fi Model requires course, course offering and section. At minimum, a **single Placeholder course, course offering, and section will be required for your district** to report Direct Pay PSEO Student Section Association records. Ed-Fi required elements:
     - Course Code: Direct Pay PSEO
