@@ -51,14 +51,14 @@ Ed-Fi Description: This entity represents the designation of a regularly schedul
 
 1. Create a series of Class Periods for elementary, middle and high school. Each Period must include:
     - ClassPeriodName
-    - ClassPeriodDescriptor
+    - ClassPeriodTypeDescriptor
     - SchoolID
     - StartTime
     - EndTime
     
 Notes:
 1. Times should be formatted as "HH:MM", i.e. "09:00", "14:00".
-2. ```ClassPeriodDescriptor``` is expected on each record. Each class period is only expected to be described with one ```ClassPeriodDescriptor``` (i.e. "DURING_SCHOOL").
+2. ```ClassPeriodTypeDescriptor``` is expected on each record. Each class period is only expected to be described with one ```ClassPeriodTypeDescriptor``` (i.e. "DS" for "DURING_SCHOOL").
 3. Note that the name of the period should be placed within the ClassPeriodName element, and we are no longer using the ```ClassPeriodDescription``` element.
 
 ## Resource: GradingPeriod
