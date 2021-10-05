@@ -315,10 +315,8 @@ Notes:
     }
   ],
   "levelCharacteristics": [
-    {
-      "courseLevelCharacteristicDescriptor": "uri://education.mn.gov/CourseLevelCharacteristicDescriptor#SPI",
-      "courseLevelCharacteristicDescriptor": "uri://education.mn.gov/CourseLevelCharacteristicDescriptor#FPI"
-    }
+    {"courseLevelCharacteristicDescriptor": "uri://education.mn.gov/CourseLevelCharacteristicDescriptor#FPI"},
+    {"courseLevelCharacteristicDescriptor": "uri://education.mn.gov/CourseLevelCharacteristicDescriptor#SPI"}
   ],
   "_ext": {
     "MN": {
