@@ -94,7 +94,7 @@ Ed-Fi Description: A term in the school year, generally a unit of time into whic
 ### Scenarios
 
 1. Create Sessions for elementary, middle and high school (Fall, Spring, and non-scheduled). Each Period must include:
-    - TermDescriptor (S for Semester, NS for non-scheduled)
+    - TermDescriptor (i.e. "Non-Scheduled" - see TermDescriptor tab in Data Mapping Matrix)
     - School Year
     - SchoolId
     - DaysInSession
@@ -102,7 +102,6 @@ Ed-Fi Description: A term in the school year, generally a unit of time into whic
     - SessionName
     - BeginDate
     - EndDate
-    - TermNumber
 
 ## Resource: Course
 
