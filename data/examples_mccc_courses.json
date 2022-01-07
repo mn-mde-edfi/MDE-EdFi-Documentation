@@ -4,6 +4,10 @@ Comments above each course record attempt to describe the scenario and any perti
 Notes:
 - Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
 - Course Titles are not required, but are used in many of these examples for reference
+- courseCode at the top of each example MUST match identificationCode within the identificationCodes section. 
+  This code must be unique to the course and is what is used to link to courses in other resources.
+- The courseCode examples shown here demonstrate several different ways to include descriptive details within a courseCode, if desired.
+  As long as the code is unique to the course, it can be any string - the only strict requirement is for College Courses, as described in sandbox_cert_e_mccc.md#resource-course
 */
 
 /* DISTRICT COURSE1: Biology (type B)
