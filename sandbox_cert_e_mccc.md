@@ -282,55 +282,46 @@ Create the following CourseOffering Records:
     - LocalCourseCode (this can match the District Course's Course Code - at the discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
-    - InstructionMinutesPerTerm
 2. CourseOffering 2 References the District Course with Course Level Type = G
     - CourseReference
     - LocalCourseCode (District Course's Code - at discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
-    - InstructionMinutesPerTerm
 3. CourseOffering 3 References the District Course with Course Level Type = E
     - CourseReference
     - LocalCourseCode (District Course's Code - at discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
-    - InstructionMinutesPerTerm
 4. CourseOffering 4 References the District Course with Course Level Type = D
     - CourseReference
     - LocalCourseCode (District Course's Code - at discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
-    - InstructionMinutesPerTerm
 5. CourseOffering 5 References the District Course with Course Level Type = A
     - CourseReference
     - LocalCourseCode (District Course's Code - at discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
-    - InstructionMinutesPerTerm
 6. CourseOffering 6 References the District Course Associated with Course Level Type = C 
     - CourseReference
     - LocalCourseCode (this can match the District Course's Course Code - at the discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
-    - InstructionMinutesPerTerm
 7. CourseOffering 7 References the District Course with Course Level Type = X
     - CourseReference
     - LocalCourseCode (District Course's Code - at discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
-    - InstructionMinutesPerTerm
 8. CourseOffering 8 References the District Course with Course Level Type = N
     - CourseReference
     - LocalCourseCode (District Course's Code - at discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
-    - InstructionMinutesPerTerm
 9. CourseOffering 9 References the District Course Associated with Course Level Type = P
     - CourseReference
     - LocalCourseCode (District Course's Code - at discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
-    - InstructionMinutesPerTerm
     - InstructionalApproach
       - InstructionalApproachDescriptor
       - ImplementationStatusDescriptor
@@ -357,7 +348,7 @@ Create the following CourseOffering Records:
 
 ### Description
 
-Ed-Fi Description: This entity represents a setting in which organized instruction of course content is provided, in-person or otherwise, to one or more students for a given period of time. A course offering may be offered to more than one section. Most MCCC CourseSectionInfo elements will be collected in the Ed-Fi Section Entity.
+Ed-Fi Description: This entity represents a setting in which organized instruction of course content is provided, in-person or otherwise, to one or more students for a given period of time. A course offering may be offered to more than one section. Most MCCC CourseSectionInfo elements will be collected in the Ed-Fi Section Entity. _Note: in late 2021, the ``instructionMinutesPerTerm`` element was moved from the courseOffering resource to the section resource. Sandbox instances created prior to 12/22/2021 will not include this change, requiring vendors to initialize new sandbox instances in order to work with the latest configuration._
 
 ### Prerequisite Data
 
@@ -377,6 +368,7 @@ Ed-Fi Description: This entity represents a setting in which organized instructi
     - InstructionLanguageDescriptor (only for non-English, using MARSS language descriptor)
     - MediumOfInstructionDescriptor (required)
     - SequenceOfCourse (must be less than or equal to 'Number of Parts' of course referenced)
+    - InstructionMinutesPerTerm
 2. Create 3 Section Records, 1 for each of the following course offerings:
     - Independent Study (a section is required for every course offering)
       - SectionIdentifier: IS_```<LocalCourseCode>```_Section

@@ -21,11 +21,6 @@ CourseOffering 1 References the District Course with Level Type = B
         "schoolId": {{highschoolid}},
         "schoolYear": 2022,
         "sessionName": "{{highschoolid}}-Fall"
-    },
-    "_ext": {
-        "MN": {
-            "instructionMinutesPerTerm": "1000"
-        }
     }
 }
 
@@ -45,11 +40,6 @@ CourseOffering 2 References the District Course with Course Level Type = G
         "schoolId": {{highschoolid}},
         "schoolYear": 2022,
         "sessionName": "{{highschoolid}}-Fall"
-    },
-    "_ext": {
-        "MN": {
-            "instructionMinutesPerTerm": "1000"
-        }
     }
 }
 /*
@@ -68,11 +58,6 @@ CourseOffering 3 References the District Course with Course Level Type = E
         "schoolId": {{highschoolid}},
         "schoolYear": 2022,
         "sessionName": "{{highschoolid}}-Fall"
-    },
-    "_ext": {
-        "MN": {
-            "instructionMinutesPerTerm": "1000"
-        }
     }
 }
 
@@ -92,11 +77,6 @@ CourseOffering 4 References the District Course with Course Level Type = D
         "schoolId": {{highschoolid}},
         "schoolYear": 2022,
         "sessionName": "{{highschoolid}}-Fall"
-    },
-    "_ext": {
-        "MN": {
-            "instructionMinutesPerTerm": "1000"
-        }
     }
 }
 
@@ -116,11 +96,6 @@ CourseOffering 5 References the District Course with Course Level Type = A
         "schoolId": {{highschoolid}},
         "schoolYear": 2022,
         "sessionName": "{{highschoolid}}-Fall"
-    },
-    "_ext": {
-        "MN": {
-            "instructionMinutesPerTerm": "1000"
-        }
     }
 }
 
@@ -140,11 +115,6 @@ CourseOffering 6 References the District Course Associated with Course Level Typ
         "schoolId": {{highschoolid}},
         "schoolYear": 2022,
         "sessionName": "{{highschoolid}}-Fall"
-    },
-    "_ext": {
-        "MN": {
-            "instructionMinutesPerTerm": "1000"
-        }
     }
 }
 
@@ -164,11 +134,6 @@ CourseOffering 7 References the District Course with Course Level Type = X
         "schoolId": {{highschoolid}},
         "schoolYear": 2022,
         "sessionName": "{{highschoolid}}-Fall"
-    },
-    "_ext": {
-        "MN": {
-            "instructionMinutesPerTerm": "1000"
-        }
     }
 }
 
@@ -188,11 +153,6 @@ CourseOffering 8 References the District Course with Course Level Type = N
         "schoolId": {{middleschoolid}},
         "schoolYear": 2022,
         "sessionName": "{{middleschoolid}}-Fall"
-    },
-    "_ext": {
-        "MN": {
-            "instructionMinutesPerTerm": "1000"
-        }
     }
 }
 
@@ -215,7 +175,6 @@ CourseOffering 9 References the District Course Associated with Course Level Typ
     },
     "_ext": {
         "MN": {
-            "instructionMinutesPerTerm": "1000",
               "instructionalApproaches": [
                 {
                     "instructionalApproachDescriptor": "uri://education.mn.gov/InstructionalApproachDescriptor#TE",
