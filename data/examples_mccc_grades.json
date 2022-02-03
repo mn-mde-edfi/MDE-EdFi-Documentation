@@ -97,7 +97,9 @@ Notes:
     "letterGradeEarned": "A-",
     "_ext": {
         "MN": {
-            "localCreditEarned": "3"
+            "localCreditEarned": "3",
+            "collegeCreditEarned": "3",
+            "collegeGradeEarned": "B"
         }
     }
 }
@@ -123,7 +125,9 @@ Notes:
     "letterGradeEarned": "B",
     "_ext": {
         "MN": {
-            "localCreditEarned": "3"
+            "localCreditEarned": "3",
+            "collegeCreditEarned": "3",
+            "collegeGradeEarned": "B"
         }
     }
 }
@@ -229,9 +233,7 @@ Notes:
     "letterGradeEarned": "A",
     "_ext": {
         "MN": {
-            "localCreditEarned": "3",
-            "collegeCreditEarned": "3",
-            "collegeGradeEarned": "A"
+            "localCreditEarned": "3"
         }
     }
 }
@@ -254,10 +256,8 @@ Notes:
         "sessionName": "{{highschoolid}}-Unscheduled",
         "studentUniqueId": "605157"
     },
-    "letterGradeEarned": "B",
     "_ext": {
         "MN": {
-            "localCreditEarned": "3",
             "collegeCreditEarned": "3",
             "collegeGradeEarned": "B"
         }
