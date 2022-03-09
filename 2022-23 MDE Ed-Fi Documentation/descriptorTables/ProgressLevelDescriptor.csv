@@ -1,0 +1,5 @@
+"Mapping Method","Namespace","Descriptor Name","Code Value","Short Description","Description","Length of Short Desc"
+"Core","uri://education.mn.gov/ProgressLevelDescriptor","ProgressLevelDescriptor","NEGGRADE","Negative change","Negative change","15"
+"Core","uri://education.mn.gov/ProgressLevelDescriptor","ProgressLevelDescriptor","NOCHANGE","No change","No change","9"
+"Core","uri://education.mn.gov/ProgressLevelDescriptor","ProgressLevelDescriptor","UPGTONE","More than one full grade","More than one full grade","24"
+"Core","uri://education.mn.gov/ProgressLevelDescriptor","ProgressLevelDescriptor","UPONEGRADE","Up to one full grade","Up to one full grade","20"
