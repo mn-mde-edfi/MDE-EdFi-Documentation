@@ -3,6 +3,7 @@ This folder contains a series of CSV tables that list various descriptor values,
 1. Allowing full names of descriptors to label a table, instead of being limited by Excel's character limit for tabs.
 2. Reducing the size of the Mapping Matrix spreadsheet.
 3. Enabling viewers to see when each individual descriptor was last updated
+4. Enabling viewers a quick preview of each table when selecting it within GitHub
 
 ## Source Details
 As of the most recent run, these tables are derived from the following database at MDE:
