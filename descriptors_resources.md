@@ -165,7 +165,7 @@ In this scenario:
 - C is the enrolling/serving district
 
 ## Course Records for MCCC
-For sy2021-2022, the Minnesota Common Course Catalogue (MCCC) data collection requires districts to create their course offerings (including college courses) and then relate those courses to state-level course definitions. This section contains details on those course record requirements.
+The Minnesota Common Course Catalogue (MCCC) data collection requires districts to create their course offerings (including college courses) and then relate those courses to state-level course definitions. This section contains details on those course record requirements.
 
 ### SEA Defined Courses
 Over 1700 State Education Agency (SEA - aka MDE) course definitions are available in the populated sandbox and will be available in Staging and Production.
