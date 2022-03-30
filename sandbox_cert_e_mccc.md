@@ -57,9 +57,11 @@ Ed-Fi Description: This entity represents the designation of a regularly schedul
     - EndTime
     
 Notes:
-1. Times should be formatted as "HH:MM", i.e. "09:00", "14:00".
-2. ```ClassPeriodTypeDescriptor``` is expected on each record. Each class period is only expected to be described with one ```ClassPeriodTypeDescriptor``` (i.e. "DS" for "DURING_SCHOOL").
-3. Note that the name of the period should be placed within the ClassPeriodName element, and we are no longer using the ```ClassPeriodDescription``` element.
+1. Times should be formatted as "HH:MM", i.e. "09:00", "14:00", which should be contained within the "meetingTimes" element.
+2. Each class period record should only contain **one** set of meeting times (one start time and one end time).
+3. ```ClassPeriodTypeDescriptor``` is expected on each record. Each class period is only expected to be described with one ```ClassPeriodTypeDescriptor``` (i.e. "DS" for "DURING_SCHOOL").
+4. Note that the name of the period should be placed within the ClassPeriodName element, and we are no longer using the ```ClassPeriodDescription``` element.
+5. Also note that the name of the Class Period should be unique enough to fit your scheduling needs; when assigning class periods to sections, ClassPeriodName and SchoolID will form the composite key to reference each class period.
 
 ## Resource: GradingPeriod
 
