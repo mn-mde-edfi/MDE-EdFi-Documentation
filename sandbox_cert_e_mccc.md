@@ -365,7 +365,7 @@ Ed-Fi Description: This entity represents a setting in which organized instructi
 1. Create 9 Section Records to associate with the first 9 course offerings (not the IS, Project Based or Direct Pay PSEO courses yet - those will be done in step 2). Include the following elements:
     - SectionIdentifier
     - CourseOfferingReference
-    - ClassPeriod (for Scheduled Section Enrollments)
+    - ClassPeriod (for Scheduled Section Enrollments)*
     - SectionCharacteristicDescriptor (FP 'Fixed Period Indicator' for courses associated to a fixed period, or MA 'Marking Indicator' for sections where grades are recorded)
     - InstructionLanguageDescriptor (only for non-English, using MARSS language descriptor)
     - MediumOfInstructionDescriptor (required)
@@ -381,6 +381,8 @@ Ed-Fi Description: This entity represents a setting in which organized instructi
     - Project Based (a single placeholder section is required all Project Based)
       - SectionIdentifier: ProjectBased_Section
       - CourseOfferingReference
+
+*Note that more than one ClassPeriod can be contained within the ```classPeriods``` element, enabling a 1:M relationship between Section and Class Period if necessary.
 
 ## Resource: StaffSectionAssociation
 
