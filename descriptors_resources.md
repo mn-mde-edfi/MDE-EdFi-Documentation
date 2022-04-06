@@ -33,6 +33,14 @@ When MDE extends a pre-existing Ed-Fi descriptor for the MN extension, it may re
 ```
 More information on the levelOfEducationDescriptor [is in this section](#levelofeducationdescriptors).
 
+### Multiple Use Descriptors
+Since some descriptors are used for multiple data elements, within the ODS API there are often data elements that use a descriptor, but do not match precisely the name of the descriptor that is used. For example:
+- Within the Language Academic Honors collection (inside ```studentEducationOrganizationAssociation```), there is an ```assessedGradeLevelDescriptor```. Use the GradeLevelDescriptor values for this element.  
+- Within the for Neglected or Delinquent collection, there are elements titled ``elaProgressLevelDescriptor`` and ``mathematicsProgressLevelDescriptor``. Use the ProgressLevelDescriptor values for this element.
+
+
+Usually the required relationship can be found within the Data Mapping Matrix. Vendors that spot any discrepancies or missing elements are encouraged to contact the [Ed-Fi vendor support team](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us) by email. 
+
 ## Duplicate "BR" value within accommodationDescriptors
 When viewing SY2021 descriptors, you might note that the code value of “BR” is repeated within ```accommodationDescriptors```, causing problems with database loads that assume that code value is unique across all of those descriptors. However, when incorporating namespace, those values become unique: the value to describe "BR – Accomodation" is within “access” and the value for "Braille" is within "mcamtas", as shown in the descriptor JSON below (available from Swagger). Our contractor also notes that for now this descriptor can be ignored because it’s only used by assessment precode which isn’t in scope until at least SY21-22 or later.
 
