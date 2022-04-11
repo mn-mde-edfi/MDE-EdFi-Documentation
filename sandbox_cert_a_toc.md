@@ -1,5 +1,5 @@
 # Sandbox Certification Scenarios
-This document holds the overview and table of contents for the MDE Ed-Fi Sandbox Certification Scenarios. You may wish to download the [Word and Excel documents](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/tree/master/2021-22%20MDE%20Ed-Fi%20Documentation) inside this repository as complements to this documentation.
+This document holds the overview and table of contents for the MDE Ed-Fi Sandbox Certification Scenarios. You may wish to download the [Word and Excel documents](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/tree/master/2022-23%20MDE%20Ed-Fi%20Documentation) inside this repository as complements to this documentation.
 
 ## References
 Before reading this documentation, please refer to the [SIS Vendor and District Test Plan](sis_test_plan_a_toc.md), particularly the [Data Requirements and API Resources](sis_test_plan_c_data_reqs.md) section.
@@ -11,12 +11,8 @@ Then advance to the specific sections on Sandbox Certification Scenarios:
 - [Minnesota Common Course Catalog (MCCC) Certification Scenarios](sandbox_cert_e_mccc.md)
 - [Digital Equity Certification Scenarios](sandbox_cert_f_digital_equity.md)
 
-## Deadlines
-The deadlines for vendor certification are: 
-- (First Priority) Digital Equity and 21st Century Supplemental Pieces: **May 31, 2021** with a full roll out in the 2021-22 school year
-- (Second Priority) MCCC: **August, 2021** with pilots in the Spring of 2022 and a full roll out in the 2022-23 school year 
-
-Contact MDE's Tara Chapa for more details.
+## Deadlines and Logistics
+Please consult MDE's [Ed-Fi web pages](https://education.mn.gov/MDE/dse/datasub/edfi/) or reach out to the Ed-Fi vendor support team by email (EdFiProjectSupportMNIT.MDE@state.mn.us) if you have questions on deadlines or any other vendor logistics.
 
 ## Future Developments
 - Looking for details on future collections for MDE's Ed-Fi? The Word and Excel versions of the documentation will be added into a new folder for each year. In the meantime, the Sandbox environment does have a "preview release" in the Swagger UI for your exploration.

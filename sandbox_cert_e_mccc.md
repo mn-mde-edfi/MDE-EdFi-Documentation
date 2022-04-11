@@ -57,9 +57,11 @@ Ed-Fi Description: This entity represents the designation of a regularly schedul
     - EndTime
     
 Notes:
-1. Times should be formatted as "HH:MM", i.e. "09:00", "14:00".
-2. ```ClassPeriodTypeDescriptor``` is expected on each record. Each class period is only expected to be described with one ```ClassPeriodTypeDescriptor``` (i.e. "DS" for "DURING_SCHOOL").
-3. Note that the name of the period should be placed within the ClassPeriodName element, and we are no longer using the ```ClassPeriodDescription``` element.
+1. Times should be formatted as "HH:MM", i.e. "09:00", "14:00", which should be contained within the "meetingTimes" element.
+2. Each class period record should only contain **one** set of meeting times (one start time and one end time).
+3. ```ClassPeriodTypeDescriptor``` is expected on each record. Each class period is only expected to be described with one ```ClassPeriodTypeDescriptor``` (i.e. "DS" for "DURING_SCHOOL").
+4. Note that the name of the period should be placed within the ClassPeriodName element, and we are no longer using the ```ClassPeriodDescription``` element.
+5. Also note that the name of the Class Period should be unique enough to fit your scheduling needs; when assigning class periods to sections, ClassPeriodName and SchoolID will form the composite key to reference each class period.
 
 ## Resource: GradingPeriod
 
@@ -363,7 +365,7 @@ Ed-Fi Description: This entity represents a setting in which organized instructi
 1. Create 9 Section Records to associate with the first 9 course offerings (not the IS, Project Based or Direct Pay PSEO courses yet - those will be done in step 2). Include the following elements:
     - SectionIdentifier
     - CourseOfferingReference
-    - ClassPeriod (for Scheduled Section Enrollments)
+    - ClassPeriod (for Scheduled Section Enrollments)*
     - SectionCharacteristicDescriptor (FP 'Fixed Period Indicator' for courses associated to a fixed period, or MA 'Marking Indicator' for sections where grades are recorded)
     - InstructionLanguageDescriptor (only for non-English, using MARSS language descriptor)
     - MediumOfInstructionDescriptor (required)
@@ -379,6 +381,8 @@ Ed-Fi Description: This entity represents a setting in which organized instructi
     - Project Based (a single placeholder section is required all Project Based)
       - SectionIdentifier: ProjectBased_Section
       - CourseOfferingReference
+
+*Note that more than one ClassPeriod can be contained within the ```classPeriods``` element, enabling a 1:M relationship between Section and Class Period if necessary.
 
 ## Resource: StaffSectionAssociation
 
