@@ -1,6 +1,6 @@
 # MDE-EdFi-Documentation
 
-_NOTE: The SY2021-22 branch was merged into the main branch on March 15, 2021._ Old links to the SY2021-22 branch will no longer function.
+_NOTE: As of April 11, 2022, this "master" branch of our documentation is focusing on the 2022-2023 school year._ Additional branches may be built and then merged for specific **releases** of the 2022-2023 school year.
 
 This repository contains documentation for Minnesota's implementation of the [Ed-Fi alliance standard](https://www.ed-fi.org/). The Minnesota Department of Education (MDE) is implementing Ed-Fi to help improve the collection of required educational data from Minnesota school districts. Learn more [at MDE's Ed-Fi web page](https://education.mn.gov/MDE/dse/datasub/edfi/) and at the following links:
 - [Ed-Fi Technical Documentation](https://techdocs.ed-fi.org/)
@@ -15,14 +15,37 @@ MNIT supporting MDE is now complementing each collection year's documentation in
 
 By serving documentation in both Word and Markdown, MDE hopes to increase vendor access to the documentation as well as provide options for understanding and visualization changes over time.
 
-### School Year 2021-2022 Additions
-Adding MCCC and Digital Equity into Ed-Fi requires many of the same resources as the MARSS collection, therefore the certification scenarios added for SY2022 are frequently similar. In this repository, MDE has cross-referenced scenarios to each other in the markdown versions of these documents.
+### School Year 2022-2023 Plans
+The following updates are currently in process and/or planned for school year 2022-2023:
+- Upgrade to Ed-Fi version 5.2 and Data Standard v3.3.0-a
+- Move from ESCT to new Ed-Fi ODS Admin App
+- Ed-Fi API 2022-2023 Data Mapping Matrix Changes for **AncestryEthnicOrigin**, **HighestCompletedLevelOfEducation**, and **StudentCharacteristicDescriptor**
+
+#### New Data Collections
+The following new data collections are planned for school year 2022-2023, organized into a suite of releases:
+- Release 1:
+  - SEOA.LanguageAcademicHonors
+  - SEOA.GenderIdentities
+  - SEOA.PreferredPronouns
+  - StudentNeglectedOrDelinquentProgramAssociation
+- Release 2:
+  - Online Learning Course Completion 
+  - Virtual School Status 
+  - Other LanguageInstructionProgramService Description
+Release 3 and beyond:
+ - Student Preferred Name 
+ - Direct Certification for NSLP and Applied But Did Not Qualify
+
+#### Migration of Custom Descriptor Tables
+Within the **2022-23 MDE Ed-Fi Documentation** folder, the MDE MNIT Team has undertaken a migration of our custom descriptor tables from the Data Mapping Matrix to a suite of CSV files that are automatically exported from our Ed-Fi database(s). These can be viewed in the **2022-23 MDE Ed-Fi Documentation/descriptorTables** folder. See [the about descriptor tables document](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables/AboutDescriptorTables.md) for more information.
+
+As of **April 11, 2022**, this migration is still under way - so the custom descriptor tables are still viewable in the Data Mapping Matrix. But at some point they will be removed from that spreadsheet and viewable only through the descriptorTables folder.
 
 ## Additional Documentation
 We will also use this repository to store additional documentation and links that may be useful to Districts and Vendors. See the following:
 - [Descriptors and Resources](descriptors_resources.md). This document contains additional information about specific descriptors and data resources that can prove useful in understanding the system.
-- [MARSS Translation Guide](https://education.mn.gov/mdeprod/idcplg?IdcService=GET_FILE&dDocName=MDE033371&RevisionSelectionMethod=latestReleased&Rendition=primary). Also known as the "MDE Translation Guide", this document on the MDE website describes the technical specification and definitions used when extracting information out of the Ed-Fi ODS and translating into the data used by the Minnesota Automated Reporting Student System (MARSS).
 - [Transactional Update Procedures](transactional_updates.md) covers some of the core concepts of updating records with individual transactions in lieu of bulk uploads, including some examples from Ed-Fi to illustrate.
+- Additional Documentation is available on [MDE's Ed-Fi Documentation page](https://education.mn.gov/MDE/dse/datasub/edfi/doc/)
 
 ## Sample Data
 JSON files of sample data are being loaded into the [data directory](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/tree/master/data) in an attempt to assist developers with understanding the Ed-Fi ODS API.
