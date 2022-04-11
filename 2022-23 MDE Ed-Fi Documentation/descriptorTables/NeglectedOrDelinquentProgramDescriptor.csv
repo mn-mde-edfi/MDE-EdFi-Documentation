@@ -1,0 +1,6 @@
+"Mapping Method","Namespace","Descriptor Name","Code Value","Short Description","Description","Length of Short Desc"
+"Core","uri://education.mn.gov/NeglectedOrDelinquentProgramDescriptor","NeglectedOrDelinquentProgramDescriptor","ATRISK","At-risk programs","At-risk programs","16"
+"Core","uri://education.mn.gov/NeglectedOrDelinquentProgramDescriptor","NeglectedOrDelinquentProgramDescriptor","JUVCORR","Juvenile correction","Juvenile correction","19"
+"Core","uri://education.mn.gov/NeglectedOrDelinquentProgramDescriptor","NeglectedOrDelinquentProgramDescriptor","JUVDET","Juvenile detention","Juvenile detention","18"
+"Core","uri://education.mn.gov/NeglectedOrDelinquentProgramDescriptor","NeglectedOrDelinquentProgramDescriptor","NEGLECT","Neglected programs","Neglected programs","18"
+"Core","uri://education.mn.gov/NeglectedOrDelinquentProgramDescriptor","NeglectedOrDelinquentProgramDescriptor","OTHER","Other programs","Other programs","14"

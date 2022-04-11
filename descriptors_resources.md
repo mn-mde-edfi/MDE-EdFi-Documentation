@@ -33,6 +33,14 @@ When MDE extends a pre-existing Ed-Fi descriptor for the MN extension, it may re
 ```
 More information on the levelOfEducationDescriptor [is in this section](#levelofeducationdescriptors).
 
+### Multiple Use Descriptors
+Since some descriptors are used for multiple data elements, within the ODS API there are often data elements that use a descriptor, but do not match precisely the name of the descriptor that is used. For example:
+- Within the Language Academic Honors collection (inside ```studentEducationOrganizationAssociation```), there is an ```assessedGradeLevelDescriptor```. Use the GradeLevelDescriptor values for this element.  
+- Within the for Neglected or Delinquent collection, there are elements titled ``elaProgressLevelDescriptor`` and ``mathematicsProgressLevelDescriptor``. Use the ProgressLevelDescriptor values for this element.
+
+
+Usually the required relationship can be found within the Data Mapping Matrix. Vendors that spot any discrepancies or missing elements are encouraged to contact the [Ed-Fi vendor support team](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us) by email. 
+
 ## Duplicate "BR" value within accommodationDescriptors
 When viewing SY2021 descriptors, you might note that the code value of “BR” is repeated within ```accommodationDescriptors```, causing problems with database loads that assume that code value is unique across all of those descriptors. However, when incorporating namespace, those values become unique: the value to describe "BR – Accomodation" is within “access” and the value for "Braille" is within "mcamtas", as shown in the descriptor JSON below (available from Swagger). Our contractor also notes that for now this descriptor can be ignored because it’s only used by assessment precode which isn’t in scope until at least SY21-22 or later.
 
@@ -165,7 +173,7 @@ In this scenario:
 - C is the enrolling/serving district
 
 ## Course Records for MCCC
-For sy2021-2022, the Minnesota Common Course Catalogue (MCCC) data collection requires districts to create their course offerings (including college courses) and then relate those courses to state-level course definitions. This section contains details on those course record requirements.
+The Minnesota Common Course Catalogue (MCCC) data collection requires districts to create their course offerings (including college courses) and then relate those courses to state-level course definitions. This section contains details on those course record requirements.
 
 ### SEA Defined Courses
 Over 1700 State Education Agency (SEA - aka MDE) course definitions are available in the populated sandbox and will be available in Staging and Production.
@@ -237,3 +245,97 @@ MCCC uses the Section enrollment Type Descriptor to handle what was previously c
 |3|IndependentStudyStudentRecord|AI|ALC_IND_STUDY |Use as needed for independent study|
 |4|DirectPayStudentRecord|DP|DIRECT_PAY_PSEO|-|
 |NA|NA|OP |OFFSITE_PSEO |Do not use|
+
+## Complex Class Schedules for MCCC
+A vendor raised a question about how a complex "modified block" schedule should be set up within Minnesota's Ed-Fi implementation for MCCC. The scenario in question:
+>A 5-day cycle has 4 blocks per day Monday thru Thursday; Monday and Wednesday are "A days", Tuesday and Thursday are "B days". Some courses use both types of day, some use only one. On Friday all courses meet for only a "skinny" half block of time.
+
+>A Days: periods 1-4 (block length)
+>B Days: periods 5-8 (block length)
+>AB Day (Friday): periods 1-8 (skinny length)
+
+As referenced in the [certification scenario for class period](sandbox_cert_e_mccc.md#resource-classperiod), class periods should be named uniquely enough to fit your scheduling needs, and each one should only have one set of meeting times. And as described in the [section scenario](sandbox_cert_e_mccc.md#resource-section), a 1:M relationship between section and class periods is allowed. Therefore, the following partial JSON examples for class periods and a single section detail how a modified block schedule could work for a single class that meets all days of the week. (You may need more or less detail in the names used to identify individual elements uniquely.)
+
+### Class Periods
+Notice the naming of the class periods and their meeting times. 
+
+#### A Day
+``` JSON
+{
+  "classPeriodName": "ADayBlockPeriod4",
+  "schoolReference": {
+    "schoolId": 10621070,
+  },
+  "meetingTimes": [
+    {
+      "startTime": "13:00", 
+      "endTime": "14:30"
+    }
+  ],
+...//additional required elements here
+}
+
+```
+
+#### B Day
+``` JSON
+{
+  "classPeriodName": "BDayBlockPeriod8",
+  "schoolReference": {
+    "schoolId": 10621070,
+  },
+  "meetingTimes": [
+    {
+      "startTime": "13:00", 
+      "endTime": "14:30"
+    }
+  ],
+...//additional required elements here
+}
+```
+
+#### AB Day
+``` JSON
+{
+  "classPeriodName": "ABDayBlockPeriod16",
+  "schoolReference": {
+    "schoolId": 10621070,
+  },
+  "meetingTimes": [
+    {
+      "startTime": "13:45", 
+      "endTime": "14:30"
+    }
+  ],
+...//additional required elements here
+}
+```
+### Section Record
+Notice this section uses three different class periods because it meets every day of the week.
+```JSON
+{
+  "sectionIdentifier": "Section36",
+  ...//additional required elements here
+  "classPeriods": [
+    {
+      "classPeriodReference": {
+        "classPeriodName": "ADayBlockPeriod4",
+        "schoolId": 10621070,
+      }
+    },
+    {
+      "classPeriodReference": {
+        "classPeriodName": "BDayBlockPeriod8",
+        "schoolId": 10621070,
+      }
+    },
+    {
+      "classPeriodReference": {
+        "classPeriodName": "ABDayBlockPeriod16",
+        "schoolId": 10621070,
+      }
+    }
+  ],
+  ...//additional required elements here
+}
+```

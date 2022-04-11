@@ -1,8 +1,8 @@
-# 2021-2022 Data Requirements and API Resources
+# 2022-2023 Data Requirements and API Resources
 This document is part of the MDE Ed-Fi [Vendor and District Test Plan](sis_test_plan_a_toc.md). It is intended to complement and build upon the similarly named section in the [official documentation](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/blob/master/2021-22%20MDE%20Ed-Fi%20Documentation/2021-22%20SIS%20Vendor%20and%20District%20Test%20Plan.docx). For details on the API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](sandbox_cert_a_toc.md)
 
 ## API Documentation
-For each of the resources described in this document, the elements/properties required are included and browseable in the [Sandbox Swagger UI](https://test.edfi.education.mn.gov/sb21_/EdFi.Ods.SwaggerUI/) (aka "Swagger") under the current profile.
+For each of the resources described in this document, the elements/properties required are included and browseable in the [Sandbox Swagger UI](https://test.edfi5.education.mn.gov/swagger/) (aka "Swagger") under the current profile.
 
 ### Example
 As an example, to view the required resource properties for a **studentSchoolAssociation**, open the "POST" action in Swagger:
@@ -15,19 +15,9 @@ Properties in a **studentSchoolAssociation** can be viewed as an [example/templa
 Definitions and Data Types in the **studentSchoolAssociation** can be viewed by selecting **“Model”** just to the right of the "Example Value" option. Required components are marked with a red *. Often, the actual data posting for an individual record can be much less than what is in the model, as demonstrated in [this example record](data\example_value_studentSchoolAssociation.json).
 
 ## Mapping Documentation
-School Year 21-22 introduces the Ed-Fi collection of Minnesota Common Course Catalogue (MCCC) and suppport for the Digital Equity collection.
-
 For context around how each MDE collection maps to the Ed-Fi Data Standard please view the Mapping Matrix spreadsheets published in the "(YYYY-YY School Year) MDE Ed-Fi Documentation" folders [at the top of this repository](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation).
 
-Each school year's Data Mapping Matrix spreadsheet includes the mappings between MDE elements and Ed-Fi core and extension entities and elements, in the **Data Elements** tab. Additionally, the Descriptor values applicable to each Collection are also included in these documents for reference, in the remaining tabs of the spreadsheet.
-
-## School Year 21-22 Collection Updates Summary
-- The Minnesota Common Course Catalogue (MCCC) data collection has been implemented in Ed-Fi for sy2022. Most MCCC elements are collected in the following core Ed-Fi Entities: 
-  - Course, CourseOffering, Section, StudentSectionAssociation, StaffSectionAssignment, ClassPeriod, and Grade.
-  - An extension resource, **CourseCourseAssociation** has been added to allow associations between District, State and College Level Courses.
-- The MDE Digital Equity Data collection captures details about home access to the internet for students as well as access to a primary learning device. This new collection will be captured in the StudentEducationOrganizationAssociation under the Student Indicator Entity. 
-
-_NOTE_: The "Minnesota-Preview-SISVendor-Profile" in the 2021-2022 sandbox is being provided to assist vendors with previews of API resources anticipated to be in future releases.
+Each school year's Data Mapping Matrix spreadsheet includes the mappings between MDE elements and Ed-Fi core and extension entities and elements, in the **Data Elements** tab. Additionally, the Descriptor values applicable to each Collection are also included in these documents for reference, in the remaining tabs of the spreadsheet. (We are currently testing out a process to automate custom descriptor CSVs as exports from the database, allowing you to view individual descriptor tables as well as more easily visualize changes and history.)
 
 ## Education Organization Id usage by Resource
 
@@ -49,15 +39,20 @@ Education Organization References in the Ed-Fi API allow an API client to submit
 * Note the change here from _Local Education Agency Id_ used in 2020-2021.
 
 ## API Resources and Certification Scenarios
-For details on the 2021-2022 API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](sandbox_cert_a_toc.md). That documentation contains resources and scenarios for the various programs MDE has incorporated into Ed-Fi.
+For details on the 2021-2022 API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](sandbox_cert_a_toc.md). That documentation contains resources and scenarios for the various programs MDE has incorporated into Ed-Fi, including:
+- MARSS and Ancestry Ethnic Origin
+- Early Education
+- Digital Equity
+- MCCC
+- 21st Century Learning Center Grant Program
 
-## 2021-2022 MDE Submitted Data Requirements: API Resources
+## Read-Only API endpoints 
 Several of the required data elements are provided by MDE within the ODS. This section details those elements.
 
 ### Resource: LocalEducationAgencies
 
 **Description**
-This entity represents an administrative unit at the local level which exists primarily to operate schools or to contract for educational services. It includes school districts, charter schools, charter management organizations, or other local administrative organizations.
+This entity represents an administrative unit at the local level which exists primarily to operate schools or to contract for educational services. It includes school districts, charter schools, or other local administrative organizations.
 
 **Prerequisite Data**
 - None
