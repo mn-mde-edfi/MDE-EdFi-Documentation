@@ -42,7 +42,7 @@ Since some descriptors are used for multiple data elements, within the ODS API t
 Usually the required relationship can be found within the Data Mapping Matrix. Vendors that spot any discrepancies or missing elements are encouraged to contact the [Ed-Fi vendor support team](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us) by email. 
 
 ## Duplicate "BR" value within accommodationDescriptors
-When viewing SY2021 descriptors, you might note that the code value of “BR” is repeated within ```accommodationDescriptors```, causing problems with database loads that assume that code value is unique across all of those descriptors. However, when incorporating namespace, those values become unique: the value to describe "BR – Accomodation" is within “access” and the value for "Braille" is within "mcamtas", as shown in the descriptor JSON below (available from Swagger). Our contractor also notes that for now this descriptor can be ignored because it’s only used by assessment precode which isn’t in scope until at least SY21-22 or later.
+When viewing SY2021 descriptors, you might note that the code value of "BR" is repeated within ```accommodationDescriptors```, causing problems with database loads that assume that code value is unique across all of those descriptors. However, when incorporating namespace, those values become unique: the value to describe "BR – Accomodation" is within "access" and the value for "Braille" is within "mcamtas", as shown in the descriptor JSON below (available from Swagger). Our contractor also notes that for now this descriptor can be ignored because it’s only used by assessment precode which isn’t in scope until at least SY21-22 or later.
 
 ```javascript
 {
@@ -103,7 +103,7 @@ Within the Minnesota extension for the ```parents``` resource, the MDE team deci
 ```
 
 Historical note on managing multiples for student-parent relationships that applied before this decision:
-> When creating a ```Parent``` record, you might notice the ```identificationCodes``` descriptor, which should contain the MARSS ID of a related student. However, if a parent has several students with MARSS IDs, more than one code can be listed - as the Swagger UI reveals, these are identificationCode**s**, and that the descriptor is “An unordered collection of parentIdentificationCodes. Miscellaneous parent Identification Code. E.g., MARSS ID of a related student”. In other words, more than one code can be placed in that data element to handle a 1:M relationship.
+> When creating a ```Parent``` record, you might notice the ```identificationCodes``` descriptor, which should contain the MARSS ID of a related student. However, if a parent has several students with MARSS IDs, more than one code can be listed - as the Swagger UI reveals, these are identificationCode**s**, and that the descriptor is "An unordered collection of parentIdentificationCodes. Miscellaneous parent Identification Code. E.g., MARSS ID of a related student". In other words, more than one code can be placed in that data element to handle a 1:M relationship.
 
 ## ClassroomVolunteerDescriptors
 In the transition to Ed-Fi, MDE is collecting less detail around classroom volunteers compared to past collections in the [Early Education Student Data System](https://education.mn.gov/MDE/dse/datasub/EarlyLearnServDataReport). The table below provides a translation between EES and EdFi:
@@ -228,7 +228,7 @@ LEAs and vendors will need to understand the validation rules around course leve
 *It is important to note that UC, MM, IS, and PBL characteristics are **not actually carried** on the LEA-defined (District) course records. Instead, when they are associated the SEA-defined courses via ```courseCourseAssociation``` records, the validations should occur through other data elements, as described above. Getting the SEA-defined course records (see [SEA Defined Courses](#sea-defined-courses)) reveals which of those courses are assigned these level characteristics.
 
 ### sequenceLimit vs. Number of Parts
-In April 2021, MDE staff determined that our Ed-Fi implementation contains redundant elements in the “course” entity: numberOfParts (Ed-Fi core) and sequenceLimit (MN extension). In order to increase alignment with core Ed-Fi components, we decided to remove the use of sequenceLimit and rely on numberOfParts for the same information.
+In April 2021, MDE staff determined that our Ed-Fi implementation contains redundant elements in the "course" entity: numberOfParts (Ed-Fi core) and sequenceLimit (MN extension). In order to increase alignment with core Ed-Fi components, we decided to remove the use of sequenceLimit and rely on numberOfParts for the same information.
 
 ### College Courses
 When setting up College Courses (i.e. for Dual Enrollment, Articulation and Direct Pay PSEO), you will need an ```educationOrganizationId``` within the ```educationOrganizationReference```. The IDs to use in this element come from MDE ORG and follow the [district pattern](sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids). The identifiers can be acquired via the API at the ```/ed-fi/postSecondaryInstitutions``` endpoint, within the ```postSecondaryInstitutionId``` element. Each record in that list will also contain a cross-reference to the USDE OPE IDs inside the ```educationOrganizationIdentificationSystemDescriptor```, labeled as ```uri://ed-fi.org/EducationOrganizationIdentificationSystemDescriptor#USDE - OPE```. 
@@ -255,6 +255,8 @@ A vendor raised a question about how a complex "modified block" schedule should 
 >AB Day (Friday): periods 1-8 (skinny length)
 
 As referenced in the [certification scenario for class period](sandbox_cert_e_mccc.md#resource-classperiod), class periods should be named uniquely enough to fit your scheduling needs, and each one should only have one set of meeting times. And as described in the [section scenario](sandbox_cert_e_mccc.md#resource-section), a 1:M relationship between section and class periods is allowed. Therefore, the following partial JSON examples for class periods and a single section detail how a modified block schedule could work for a single class that meets all days of the week. (You may need more or less detail in the names used to identify individual elements uniquely.)
+
+_Please note: MCCC does not **require** data replicating the complex schedules in place at many schools. If a single simplified & representative schedule can be set up and used for reporting to MCCC, that is acceptable - as long as it accurately communicates the **time of day** instruction is provided for the course._
 
 ### Class Periods
 Notice the naming of the class periods and their meeting times. 
