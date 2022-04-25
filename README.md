@@ -32,9 +32,9 @@ The following new data collections are planned for school year 2022-2023, organi
   - Online Learning Course Completion 
   - Virtual School Status 
   - Other LanguageInstructionProgramService Description
-Release 3 and beyond:
- - Student Preferred Name 
- - Direct Certification for NSLP and Applied But Did Not Qualify
+- Release 3 and beyond:
+  - Student Preferred Name 
+  - Direct Certification for NSLP and Applied But Did Not Qualify
 
 #### Migration of Custom Descriptor Tables
 Within the **2022-23 MDE Ed-Fi Documentation** folder, the MDE MNIT Team has undertaken a migration of our custom descriptor tables from the Data Mapping Matrix to a suite of CSV files that are automatically exported from our Ed-Fi database(s). These can be viewed in the **2022-23 MDE Ed-Fi Documentation/descriptorTables** folder. See [the about descriptor tables document](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables/AboutDescriptorTables.md) for more information.
