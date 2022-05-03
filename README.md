@@ -17,9 +17,11 @@ By serving documentation in both Word and Markdown, MDE hopes to increase vendor
 
 ### School Year 2022-2023 Plans
 The following updates are currently in process and/or planned for school year 2022-2023:
-- Upgrade to Ed-Fi version 5.2 and Data Standard v3.3.0-a
+- Upgrade to [Ed-Fi ODS/API version 5.2](https://techdocs.ed-fi.org/display/ODSAPIS3V520) and [Data Standard v3.3.0-a](https://techdocs.ed-fi.org/display/EFDS33/What%27s+New+-+v3.3-a)
 - Move from ESCT to new Ed-Fi ODS Admin App
 - Ed-Fi API 2022-2023 Data Mapping Matrix Changes for **AncestryEthnicOrigin**, **HighestCompletedLevelOfEducation**, and **StudentCharacteristicDescriptor**
+
+Use the links above to access reference documentation from the Ed-Fi  website.
 
 #### New Data Collections
 The following new data collections are planned for school year 2022-2023, organized into a suite of releases:
