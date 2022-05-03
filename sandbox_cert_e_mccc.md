@@ -83,6 +83,8 @@ Ed-Fi Description: This entity represents the time span for which grades are rep
     - BeginDate
     - EndDate
 
+_Note:_ you may notice the _totalInstructionalDays_ element in the API for the **gradingPeriods** resource. This exists because it is [a required field by the Ed-Fi model](https://schema.ed-fi.org/datahandbook-v31/Ed-Fi-UDM-Handbook-Index.html#/GradingPeriod561). But MDE is **not** using it for MCCC, so please submit zero as the value and provide total instructional days as part of the Session resource.
+
 ## Resource: Session
 
 ### Description
