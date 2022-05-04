@@ -10,6 +10,11 @@
         "sexDescriptor": "uri://ed-fi.org/SexDescriptor#Not Selected",
         "_ext": {
             "mn": {
+                "birthDate": "2011-05-04",
+                "firstName": "Dustin",
+                "generationCodeSuffix": "Jr",
+                "lastSurname": "Baker",
+                "middleName": "John",
                 "genderIdentities": [
                     {
                         "genderIdentityDescriptor": "uri://education.mn.gov/GenderIdentityDescriptor#AG"
