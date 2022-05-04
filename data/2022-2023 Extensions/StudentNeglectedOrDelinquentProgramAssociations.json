@@ -1,0 +1,31 @@
+    {
+        "educationOrganizationReference": {
+            "educationOrganizationId": 255901
+        },
+        "programReference": {
+            "educationOrganizationId": 255901,
+            "programName": "Neglected or Delinquent Program",
+            "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#Neglected or Delinquent"
+        },
+        "studentReference": {
+            "studentUniqueId": "604848"
+        },
+        "beginDate": "2010-08-30",
+        "elaProgressLevelDescriptor": "uri://education.mn.gov/ProgressLevelDescriptor#UPGTONE",
+        "mathematicsProgressLevelDescriptor": "uri://education.mn.gov/ProgressLevelDescriptor#NOCHANGE",
+        "neglectedOrDelinquentProgramDescriptor": "uri://education.mn.gov/NeglectedOrDelinquentProgramDescriptor#NEGLECT",
+        "_ext": {
+            "mn": {
+                      "neglectedOrDelinquentProgramOutcomeDescriptor": "uri://education.mn.gov/neglectedOrDelinquentProgramOutcomeDescriptor#ENROLLSCH",
+                      "exitedNeglectedOrDelinquentProgramOutcomeDescriptor": "uri://education.mn.gov/neglectedOrDelinquentProgramOutcomeDescriptor#EARNGED"
+            }
+        },
+        "neglectedOrDelinquentProgramServices": [
+            {
+                "neglectedOrDelinquentProgramServiceDescriptor": "uri://education.mn.gov/NeglectedOrDelinquentProgramServiceDescriptor#1",
+                "primaryIndicator": true,
+                "serviceBeginDate": "2010-08-30",
+                "serviceEndDate": "2010-12-31"
+            }
+        ]
+    }

@@ -1,0 +1,24 @@
+    {
+        "educationOrganizationReference": {
+            "educationOrganizationId": 255901
+        },
+        "programReference": {
+            "educationOrganizationId": 255901,
+            "programName": "English Learner",
+            "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#English Learner"
+        },
+        "studentReference": {
+            "studentUniqueId": "604847"
+        },
+        "beginDate": "2010-08-31",
+        "_ext": {
+            "mn": {
+                "languageInstructionProgramServiceOtherDescription": "Reason for Other"
+                }
+        },
+        "languageInstructionProgramServices": [
+            {
+                "languageInstructionProgramServiceDescriptor": "uri://education.mn.gov/LanguageInstructionProgramServiceDescriptor#Other"
+            }
+        ]
+    }

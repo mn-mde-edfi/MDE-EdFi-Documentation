@@ -1,0 +1,103 @@
+{
+  
+        "educationOrganizationReference": {
+            "educationOrganizationId": 10625001
+        },
+        "studentReference": {
+            "studentUniqueId": "1010102"
+        },
+        "hispanicLatinoEthnicity": false,
+        "sexDescriptor": "uri://ed-fi.org/SexDescriptor#Not Selected",
+        "_ext": {
+            "mn": {
+                "genderIdentities": [
+                    {
+                        "genderIdentityDescriptor": "uri://education.mn.gov/GenderIdentityDescriptor#AG"
+                    },
+                    {
+                        "genderIdentityDescriptor": "uri://education.mn.gov/GenderIdentityDescriptor#NB"
+                    }
+                ],
+                "languageAcademicHonors": [
+                    {
+                        "assessedSchoolYearTypeReference": {
+                            "schoolYear": 2018
+                        },
+                        "academicHonorCategoryDescriptor": "uri://education.mn.gov/AcademicHonorCategoryDescriptor#bilingualOrMultilingual",
+                        "honorDescription": "Bilingual-Gold-French-2017-2018-1",
+                        "achievementCategoryDescriptor": "uri://education.mn.gov/AchievementCategoryDescriptor#bilingualGold",
+                        "assessedGradeLevelDescriptor": "uri://education.mn.gov/GradeLevelDescriptor#10",
+                        "assessmentCategoryDescriptor": "uri://education.mn.gov/AssessmentCategoryDescriptor#7",
+                        "assessmentTitle": "Minnesota Bilingual Seals Assessment",
+                        "honorAwardDate": "2017-08-23",
+                        "languages": [
+                            {
+                                "languageDescriptor": "uri://education.mn.gov/LanguageDescriptor#15"
+                            }
+                        ]
+                    }
+                ],
+                "optOutIndicators": [
+                    {
+                        "optOutIndicatorsDescriptor": "uri://education.mn.gov/OptOutIndicatorsDescriptor#MNC"
+                    }
+                ],
+                "otherNames": [
+                    {
+                        "otherNameTypeDescriptor": "uri://education.mn.gov/OtherNameTypeDescriptor#PR",
+                        "firstName": "John",
+                        "lastSurname": "w8"
+                    }
+                ],
+                "preferredPronouns": [
+                    {
+                        "preferredPronounDescriptor": "uri://education.mn.gov/PreferredPronounDescriptor#N"
+                    },
+                    {
+                        "preferredPronounDescriptor": "uri://education.mn.gov/PreferredPronounDescriptor#O"
+                    }
+                ],
+                "studentCrisisEvents": [
+                    {
+                        "crisisEventDescriptor": "uri://education.mn.gov/CrisisEventDescriptor#2",
+                        "displacedStudentIndicator": true
+                    }
+                ]
+            }
+        },
+        "ancestryEthnicOrigins": [
+            {
+                "ancestryEthnicOriginDescriptor": "uri://education.mn.gov/AncestryEthnicOriginDescriptor#ai-notindicated"
+            },
+            {
+                "ancestryEthnicOriginDescriptor": "uri://education.mn.gov/AncestryEthnicOriginDescriptor#as-notindicated"
+            }
+        ],
+        "languages": [],
+        "races": [
+            {
+                "raceDescriptor": "uri://ed-fi.org/RaceDescriptor#Asian"
+            }
+            ],
+        "studentCharacteristics": [
+            {
+            "studentCharacteristicDescriptor": "uri://education.mn.gov/StudentCharacteristicDescriptor#1"
+            }
+        ],
+        "studentIdentificationCodes": [],
+        "studentIndicators": [ {
+        "indicatorName": "InternetAccessInResidence",
+        "indicator": "Yes",
+        "indicatorGroup": "DigitalEquity"
+      },
+      {
+        "indicatorName": "InternetAccessTypeInResidence",
+        "indicator": "ResidentialBroadband",
+        "indicatorGroup": "DigitalEquity"
+      },
+      {
+        "indicatorName": "InternetPerformance",
+        "indicator": "Yes - No issues",
+        "indicatorGroup": "DigitalEquity"
+      }]
+    }

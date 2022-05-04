@@ -1,0 +1,11 @@
+
+	{
+
+        "educationOrganizationReference": {
+            "educationOrganizationId": 255901
+        },
+        "programName": "School Food Service",
+        "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#School Food Service",
+        "programId": "99999"
+    }
+]
