@@ -41,7 +41,18 @@ The following new data collections are planned for school year 2022-2023, organi
 For an overview of "What's New" in school year 2022-2023, please refer to the [MDE 2022-2023 School Year Ed-FI Collection Updates](2022-23%20MDE%20Ed-Fi%20Documentation/MDE%202022-2023%20School%20Year%20Ed-FI%20Collection%20Updates.docx) document. 
 
 #### New and Updated Certification Scenarios
-Several of the new data collections listed above are address with brand new, or additional certification scenarios, while others are more integrated into older certification scenarios. As those scenarios are at least drafted for the 2022-2023 school year, they will be listed below.
+Several of the new data collections listed above are address with brand new, or additional certification scenarios, while others are more integrated into older certification scenarios. As those scenarios are at least drafted for the 2022-2023 school year, they will be listed below. If a scenario is not marked as "DRAFT" or "under development", you can assume it is complete for now.
+- Release 1:
+  - [Language Academic Honors](sandbox_cert_b_marss.md#language-academic-honors)
+  - [Gender Identities and Preferred Pronouns](sandbox_cert_b_marss.md#gender-identity-and-preferred-pronouns)
+  - [Neglected Or Delinquent Program Association](sandbox_cert_c_spas.md#resource-studentneglectedordelinquentprogramassociation)
+- Release 2:
+  - [Online Learning Course Completion ](sandbox_cert_e_mccc.md#online-learning)
+  - [Virtual School Status ](sandbox_cert_g_school_attribute.md#virtual-school-status)
+  - Other LanguageInstructionProgramService Description (TBD)
+- Release 3 and beyond:
+  - [Student Preferred Name ](sandbox_cert_b_marss.md#preferred-name)
+  - Direct Certification for NSLP and Applied But Did Not Qualify (TBD)
 
 #### Migration of Custom Descriptor Tables
 Within the **2022-23 MDE Ed-Fi Documentation** folder, the MDE MNIT Team has undertaken a migration of our custom descriptor tables from the Data Mapping Matrix to a suite of CSV files that are automatically exported from our Ed-Fi database(s). These can be viewed in the **2022-23 MDE Ed-Fi Documentation/descriptorTables** folder. See [the about descriptor tables document](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables/AboutDescriptorTables.md) for more information.
