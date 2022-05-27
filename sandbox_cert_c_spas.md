@@ -11,7 +11,7 @@ This association represents Students in the 21st Century Community Learning Cent
 
 **Scenarios**
 - Associate Student 1 with this StudentProgramAssociation 
-- Include required Start Date (“beginDate”)
+- Include required Start Date ("beginDate")
 - Include program attendance in days (an integer value) AND hours (up to 2 decimal places)
   - For a school year, attendance days should be between 1-300.
   - Attendance amounts should not exceed the number of days (365) or hours in a year. (A reasonable maximum for attendance hours would be 2400.)
@@ -103,6 +103,66 @@ This association represents the Title III Language Instruction for Limited Engli
 1.	Associate Student 7 with this StudentProgramAssociation where English Learner Participation is set to True (Indicates EL Served)
 2.	Change the English Learner Participation to False, to Indicate EL Identified, but not served
 3.	Associate another student with this program and set the language service code to 'Newcomer Program'
+
+## Resource: StudentNeglectedOrDelinquentProgramAssociation
+**Description**
+This association represents the Title I Part D Neglected or Delinquent program(s) that a student participates in or from which the Student receives services.
+**THESE CERTIFICATION SCENARIOS ARE DRAFT AS OF MAY 27, 2022**
+
+**Prerequisite Data**
+- 5 Students
+- Student School Association
+
+**Scenarios**
+Create a Neglected or Delinquent Program Association for 5 students:
+ - Assign Program Association of **"Neglected" to Student 1**, including a begin date and an end date
+   - Attach Program Service descriptors, including begin and end dates for each:
+      - Attach a Program Service of "GED" to this student. Indicate this service as the Primary service.
+      - Attach a Program Service of "Credit" to this student
+      - Attach a Program Service of "Transitional Career Counseling Services" to        this student
+      - Demonstrate that the Program Service begin and end dates cannot be entered outside the Program Association begin and end dates
+   - Assign a Progress Level of "up to one full grade" to this student for Math
+   - Assign a Progress Level of "no change" to this student for ELA
+   - Assign a Program Outcome of "Earned high school course credits" as an in-program outcome for this student
+   - Assign a Program Outcome of "Earned a GED" as an exited outcome for this student
+   - Assign a Program Outcome of "Obtained employment" as an exited outcome for this student
+ - Assign Program Association of **"Juvenile detention" to Student 2**, including only a begin date
+    - Attach Program Service descriptors:
+      - Attach a Program Service of "Mental Health Services" to this student. Indicate this service as the Primary service and include a begin date.
+      - Attach a Program Service of "Credit" to this student. Include a begin date and end date.
+   - Assign a Progress Level of "negative change" to this student for Math
+   - Assign a Progress Level of "more than one full grade" to this student for ELA
+   - Assign a Program Outcome of "Earned high school course credits" as an in-program outcome for this student
+   - Assign a Program Outcome of "Enrolled in job training courses/programs" as an exited outcome for this student
+ - Assign Program Association of **"At-risk programs" to Student 3**
+   - Attach Program Service descriptors, including begin and end dates for each:
+     - Attach a Program Service of "GED" to this student. Indicate this service as the Primary    service.
+     - Attach a Program Service of "Tutoring, Mentoring Services" to this student
+     - Attach a Program Service of "College and Career Readiness" to this student
+     - Attach a Program Service of "Industrial Certification" to this student
+     - Attach a Program Service of "Personal Education Plans" to this student
+     - Attach a Program Service of "Family and Student involvement" to this student
+     - Attach a Program Service of "Job Placement Services or Apprenticeship" to this student
+     - Attach a Program Service of "Assistance Obtaining Student Financial Aid" to this student
+   - Assign a Progress Level of "no change" to this student for Math
+   - Assign a Progress Level of "no change" to this student for ELA
+   - Assign a Program Outcome of "Obtained high school diploma" as an in-program outcome for this student
+   - Assign a Program Outcome of "Were accepted and/or enrolled into post-secondary education" as an exited outcome for this student
+ - Assign Program Association of **"Juvenile correction" to Student 4**
+   - Attach Program Service descriptors, including begin and end dates for each:
+      - Attach a Program Service of "Family and Student involvement" to this student. Indicate this     service as the Primary service.
+      - Attach a Program Service of "Job Placement Services or Apprenticeship" to this student
+      - Attach a Program Service of "Assistance Obtaining Student Financial Aid" to this student
+   - Assign a Progress Level of "no change" to this student for Math
+   - Assign a Progress Level of "no change" to this student for ELA
+   - Assign a Program Outcome of "Obtained high school diploma" as an in-program outcome for this student
+   - Assign a Program Outcome of "Enrolled in job training courses/programs" as an exited outcome for this student
+ - Assign Program Association of **"Other" to Student 5**
+   - Attach Program Service descriptors, including begin and end dates for each:
+      - Attach a Program Service of "Family and Student involvement" to this student. Indicate this service as the Primary service.
+    - Assign a Progress Level of "no change" to this student for Math
+    - Assign a Progress Level of "no change" to this student for ELA
+    - Assign a Program Outcome of "Enrolled in job training courses/programs" as an exited outcome for this student
 
 ## Resource: StudentPSEOConcurrentProgramAssociation
 **Description**

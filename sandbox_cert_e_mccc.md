@@ -467,7 +467,39 @@ Ed-Fi Description: This educational entity represents an overall score or assess
 
 Notes: 
 1. Letter Grades can also contain numeric codes, such as those on a 0-4 (Failing-Outstanding) scale. Note that 'numeric grade earned' was removed from the sandbox API on June 7, 2021, reflecting the MCCC program desire to limit grade submissions to the ```LetterGradeEarned``` element.
-2. As of April 2021, LocalCreditEarned has an erroneous label/definition in Swagger of "“College credit earned”. It should say “LEA credit earned”.
+2. As of April 2021, LocalCreditEarned has an erroneous label/definition in Swagger of ""College credit earned". It should say "LEA credit earned".
+
+## Online Learning
+The OLL/Course Completion file is submitted by state-approved OLL programs to request OLL aid for public school students who complete OLL supplemental courses but who are enrolled in another Minnesota school district. Certification Scenarios for Online Learning are being placed in this document due to the integration with MCCC.
+
+### Prerequisites for Vendor
+  - Certified on MCCC
+
+### Prerequisite Data
+  - Schools
+  - Students
+  - Student School Associations
+  - Courses
+  - Sessions
+  - Course Offerings
+
+### Scenarios
+**Course Scenario**
+  - Create a course and demonstrate population of credits attempted within the maximum available credits element
+
+**Section Scenario**
+  - Create a Section for a Course Offering with a Medium of Instruction of type "SFSL" (*note that this is replacing the former "SL" value*)
+  - Demonstrate that such a section creation is only possible on a school with a classification of 46
+
+**Student Section Association Scenario**
+  - Associate a student to the Section created above, including all required elements
+  - Demonstrate that an end date is being recorded
+  - Demonstrate that the record's begin and end dates are within the Student's School Association enrollment dates
+
+**Multiple District Enrollment Scenario**
+Description: a student is enrolled in school X (district A) for traditional in-person classes, and enrolled in school Y (district B) for online learning. (The schools could be in the same district or different districts.)
+*Scenarios in development as of May 27, 2022.*
+
 
 # Navigation
 - [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)

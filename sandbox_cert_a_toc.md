@@ -10,6 +10,7 @@ Then advance to the specific sections on Sandbox Certification Scenarios:
 - [Early Education Enrollment Certification Scenarios](sandbox_cert_d_earlyed.md)
 - [Minnesota Common Course Catalog (MCCC) Certification Scenarios](sandbox_cert_e_mccc.md)
 - [Digital Equity Certification Scenarios](sandbox_cert_f_digital_equity.md)
+- [School Attribute Certification Scenarios](sandbox_cert_g_school_attribute.md)
 
 ## Deadlines and Logistics
 Please consult MDE's [Ed-Fi web pages](https://education.mn.gov/MDE/dse/datasub/edfi/) or reach out to the Ed-Fi vendor support team by email (EdFiProjectSupportMNIT.MDE@state.mn.us) if you have questions on deadlines or any other vendor logistics.

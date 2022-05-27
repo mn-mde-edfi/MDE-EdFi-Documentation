@@ -142,10 +142,26 @@ The Gender Identity collection object records a Student's gender identity. (This
 
 Districts are expected to send both gender identity and preferred pronoun values, although they are optional.
 
+**Prerequisite Data**
+-	Schools
+-	Students
+
 **Scenarios**
 1. Create a StudentEducationOrganizationAssociation with a single Gender Identity value and a single Preferred Pronoun value.
 2. Create a StudentEducationOrganizationAssociation with multiple Gender Identity values and multiple Preferred Pronoun values.
 
+### Preferred Name
+The student's preferred name, using the "otherNames" collection element within the MN extension of ```studentEducationOrganizationAssociation```.
+
+**Prerequisite Data**
+-	Students
+-	Student Education Organization Association
+
+**Scenarios**
+-	Demonstrate the ability to add a preferred name for a student
+-	Demonstrate the ability to remove a preferred name for a student
+-	Demonstrate the ability to change a preferred name for a student
+-	Repeat for first, last, middle, and generation suffix
 
 ## Resource: Calendar
 
