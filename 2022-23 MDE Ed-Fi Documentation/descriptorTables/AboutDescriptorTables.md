@@ -5,7 +5,7 @@ This folder contains a series of CSV tables that list various descriptor values,
 3. Enabling viewers to see when each individual descriptor was last updated
 4. Enabling viewers a quick preview of each table when selecting it within GitHub
 
-As of 2022-04-13, we are in the middle of developing "Release 2" for the 2022-2023 school year, and transitioning from the Data Mapping Matrix to this system. For now, you can still see these descriptors in the Data Mapping Matrix (be sure to reference the one tied to the release you are interested in).
+On 2022-05-09, we published "Release 2" for the 2022-2023 school year, and continued transitioning from the Data Mapping Matrix to this system. For now, you can still see these descriptors in the Data Mapping Matrix (be sure to reference the spreadsheet tied to the release you are interested in).
 
 ## Source Details
 As of the most recent run, these tables are derived from the following database at MDE:

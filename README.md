@@ -34,7 +34,6 @@ The following new data collections are planned for school year 2022-2023, organi
   - Online Learning Course Completion 
   - Virtual School Status 
   - Other LanguageInstructionProgramService Description
-- Release 3 and beyond:
   - Student Preferred Name 
   - Direct Certification for NSLP and Applied But Did Not Qualify
 
@@ -50,7 +49,6 @@ Several of the new data collections for school year 2022-2023 are addressed with
   - [Online Learning](sandbox_cert_e_mccc.md#online-learning)
   - [Virtual School Status](sandbox_cert_g_school_attribute.md#virtual-school-status)
   - Other Language Instruction Program Service Description (TBD)
-- Release 3 and beyond:
   - [Student Preferred Name ](sandbox_cert_b_marss.md#preferred-name)
   - Direct Certification for NSLP and Applied But Did Not Qualify (TBD)
   - Displaced Students (TBD)
