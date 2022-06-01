@@ -96,43 +96,42 @@ This collection object within the SEOA records one or more Student Academic dist
  - Student Education Organization Association to update
 
 **Honor Scenarios**
- - Create a Bilingual honor record for Student 1 with:
+ - Create a Bilingual honor record for **Student 1** with:
    - Academic Honor Category of Bilingual Seal
    - Academic Achievement Category using one of:
      - bilingualGold
      - bilingualPlatinum
- - Create a Multilingual Seals honor record for Student 2 with:
+ - Create a Multilingual Seals honor record for **Student 2** with:
    - Academic Honor Category of Multilingual Seals
-   - Academic Achievement Category using one of:
+   - Academic Achievement Category using one of the following Achievement Categories:
      - multilingualGold
      - multilingualPlatinum
- - Create a World Language Proficiency honor record for Student 3 with:
+ - Create a World Language Proficiency honor record for **Student 3** with:
    - Academic Honor Category of World Languages Proficiency Certificate
    - Academic Achievement Category of World Languages Proficiency Certificate
- - Create multiple honor records for Student 4 with:
+ - Create multiple honor records for **Student 4** with:
    - a World Language Proficiency honor record:
      - Academic Honor Category of World Languages Proficiency Certificate
      - Academic Achievement Category of World Languages Proficiency Certificate
    - a Bilingual honor record:
      - Academic Honor Category of Bilingual Seal
-     - Academic Achievement Category using one of:
- - bilingualGold
- - For each honor record, include an Honor Award Date. 
+     - Academic Achievement Category of bilingualGold
+ - For **each** honor record, include an Honor Award Date. 
    - For Multilingual and Bilingual honors, demonstrate that the year of this date must match the year of the student graduation date. (Note that World Language Proficiency can be awarded in any year.)
- - For each record, include a collection of languages
+ - For **each** record, include a collection of languages
    - Demonstrate that only one non-English language can be submitted for Student 1 (Bilingual Seal)
    - Demonstrate that two or more non-English languages must be submitted for Student 2 (Multilingual Seal)
    - Demonstrate that only one non-English language can be submitted for Student 3 (World Language Proficiency)
    - Follow the same rules for Student 4
- - For each record, include an assessment category
+ - For **each** record, include an assessment category
    - For Student 1, assign code 7, "Minnesota Bilingual Seals Assessments"
    - For Student 2, assign code 3, "AVANT STAMP WS and Minnesota Bilingual Seals Assessment"
    - For Student 3, assign code 6, "IB DP Language B Exam"
    - For Student 4, assign code 0, "Other language assessment" to the World Language Proficiency honor. Demonstrate that the Assessment Title text will be required to describe the assessment with this category. (Note this is optional for other assessment category codes.)
    - For Student 4, assign code 7, "Minnesota Bilingual Seals Assessments" to the Bilingual honor
- - For each record, add a grade level for when the student was tested for the award
+ - For **each** record, add a grade level for when the student was tested for the award
    - Demonstrate that the student's current enrollment grade level in the student school association is the highest available value that can be assigned to this element
- - For each record add an assessed school year value
+ - For **each** record add an assessed school year value
    - Demonstrate that future school years cannot be assigned to this element. (Note either current or past school year values are valid.)
 
 _**Note** that the honor description text field is optional from a policy standpoint. (We are attempting to make it completely optional in the API; if resources won't post without it, feel free to use a string repeating the Academic Honor Category.)_
