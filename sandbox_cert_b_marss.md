@@ -134,7 +134,7 @@ This collection object within the SEOA records one or more Student Academic dist
  - For **each** record add an assessed school year value
    - Demonstrate that future school years cannot be assigned to this element. (Note either current or past school year values are valid.)
 
-_**Note** that the honor description text field is optional from a policy standpoint. (We are attempting to make it completely optional in the API; if resources won't post without it, feel free to use a string repeating the Academic Honor Category.)_
+_**Note** that the ```honor description``` text field is optional from a policy standpoint. Unfortunately, the way we have it modeled after the Ed-Fi academic honor resource, that field is part of the unique identification of an honor for a student. Therefore, we are unable to make it optional in the API, and we recommend vendors repeat the short description of the Achievement Category within the ```honor description``` text field._
 
 ### Gender Identity and Preferred Pronouns
 The Gender Identity collection object records a Student's gender identity. (This may be different from SEOA.Sex & Student.BirthSex, which collect the student's gender as reported to the federal government). The Preferred Pronouns extension records a Student's personal preferred pronouns. Both are delivered via the SEOA.
