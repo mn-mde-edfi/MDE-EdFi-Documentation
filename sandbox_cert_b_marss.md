@@ -129,6 +129,7 @@ This collection object within the SEOA records one or more Student Academic dist
    - For Student 3, assign code 6, "IB DP Language B Exam"
    - For Student 4, assign code 0, "Other language assessment" to the World Language Proficiency honor. Demonstrate that the Assessment Title text will be required to describe the assessment with this category. (Note this is optional for other assessment category codes.)
    - For Student 4, assign code 7, "Minnesota Bilingual Seals Assessments" to the Bilingual honor
+   - Demonstrate that only codes 0-9 (**not** codes beginning with '00') for [Assessment Category Descriptors](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/blob/master/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables/AssessmentCategoryDescriptor.csv) can be used for Language Academic Honors.
  - For **each** record, add a grade level for when the student was tested for the award
    - Demonstrate that the student's current enrollment grade level in the student school association is the highest available value that can be assigned to this element
  - For **each** record add an assessed school year value
