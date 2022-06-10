@@ -107,14 +107,25 @@ This association represents the Title III Language Instruction for Limited Engli
 ## Resource: StudentNeglectedOrDelinquentProgramAssociation
 **Description**
 This association represents the Title I Part D Neglected or Delinquent program(s) that a student participates in or from which the Student receives services.
-**THESE CERTIFICATION SCENARIOS ARE DRAFT AS OF MAY 27, 2022**
+**NOTE:** these certification scenarios are **DRAFT** as of MAY 27, 2022, and **LAST UPDATED** JUNE 10, 2022. Vendors may want to use [the sample JSON](/data/2022-2023%20Extensions/StudentNeglectedOrDelinquentProgramAssociations.json) for this association to better understand the data model.
 
 **Prerequisite Data**
 - 5 Students
 - Student School Association
+- Program - where ProgramTypeDescriptor = "Neglected or Delinquent" (MDE should have one of these pre-loaded for each LEA in the API, with a ```programName``` of "Neglected or Delinquent Program", and a ```programTypeDescriptor``` of ```"uri://education.mn.gov/ProgramTypeDescriptor#Neglected or Delinquent"```.)
+
+Note: be sure to be testing code with a new, minimal sandbox in order to get the latest descriptor values, etc.
 
 **Scenarios**
-Create a Neglected or Delinquent Program Association for 5 students:
+Using the ```/ed-fi/studentNeglectedOrDelinquentProgramAssociations``` resource, create a Neglected or Delinquent Program Association for 5 students as detailed below. For each scenario:
+1. The programReference element should point to the appropriate LEA program preloaded (as described above in Prerequisite Data). 
+2. Use the ```neglectedOrDelinquentProgramDescriptor``` element, and the appropriate descriptor value (see [this table](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables/NeglectedOrDelinquentProgramDescriptor.csv)), to assign the specific Program Association (Neglected, Juvenile detention, At-risk, etc)
+3. Begin Date and End Date for the Program Association are at the top level of the resource.
+4. Math and ELA progress level descriptors are at the top level of the resource.
+5. Program *Service* data, since there can be multiples, are in a collection called ```neglectedOrDelinquentProgramServices```. See [this table](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables/NeglectedOrDelinquentProgramServiceDescriptor.csv) for descriptor values. Each of these needs a begin and end date and one value needs to be indicated as primary.
+6. "In Program" and "Exited" outcomes are within the "mn" extension. Both types of outcomes reference the same outcome descriptor values (see [this table](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables/NeglectedOrDelinquentProgramOutcomeDescriptor.csv)). Use ```neglectedOrDelinquentProgramOutcomeDescriptor``` to designate an in-program outcome, and ```exitedNeglectedOrDelinquentProgramOutcomeDescriptor``` to designate an exited outcome.
+
+Then, unique elements for each student are further described below:
  - Assign Program Association of **"Neglected" to Student 1**, including a begin date and an end date
    - Attach Program Service descriptors, including begin and end dates for each:
       - Attach a Program Service of "GED" to this student. Indicate this service as the Primary service.

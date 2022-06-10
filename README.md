@@ -40,7 +40,7 @@ The following new data collections are planned for school year 2022-2023, organi
 For an overview of "What's New" in school year 2022-2023, please refer to the [MDE 2022-2023 School Year Ed-FI Collection Updates](2022-23%20MDE%20Ed-Fi%20Documentation/MDE%202022-2023%20School%20Year%20Ed-FI%20Collection%20Updates.docx) document. 
 
 #### New and Updated Certification Scenarios
-Several of the new data collections for school year 2022-2023 are addressed with brand new, or additional certification scenarios, while others are more integrated into older certification scenarios. A brief list of those scenarios is below, with "TBD" marking those that have not yet been created. If a scenario is not marked as "DRAFT" or "under development" within the text, you can assume it is complete for now.
+Several of the new data collections for school year 2022-2023 are addressed with brand new, or additional certification scenarios, while others are more integrated into older certification scenarios. A brief list of those scenarios is below, with "TBD" marking those that have not yet been created. If a scenario is not marked as "DRAFT" or "under development" within the text of the certification itself, you can assume it is complete for now.
 - Release 1:
   - [Language Academic Honors](sandbox_cert_b_marss.md#language-academic-honors)
   - [Gender Identities and Preferred Pronouns](sandbox_cert_b_marss.md#gender-identity-and-preferred-pronouns)
