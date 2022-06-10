@@ -105,18 +105,18 @@ This association represents the Title III Language Instruction for Limited Engli
 3.	Associate another student with this program and set the language service code to 'Newcomer Program'
 
 ## Resource: StudentNeglectedOrDelinquentProgramAssociation
-**Description**
+### **Description**
 This association represents the Title I Part D Neglected or Delinquent program(s) that a student participates in or from which the Student receives services.
 **NOTE:** these certification scenarios are **DRAFT** as of MAY 27, 2022, and **LAST UPDATED** JUNE 10, 2022. Vendors may want to use [the sample JSON](/data/2022-2023%20Extensions/StudentNeglectedOrDelinquentProgramAssociations.json) for this association to better understand the data model.
 
-**Prerequisite Data**
+### **Prerequisite Data**
 - 5 Students
 - Student School Association
 - Program - where ProgramTypeDescriptor = "Neglected or Delinquent" (MDE should have one of these pre-loaded for each LEA in the API, with a ```programName``` of "Neglected or Delinquent Program", and a ```programTypeDescriptor``` of ```"uri://education.mn.gov/ProgramTypeDescriptor#Neglected or Delinquent"```.)
 
 Note: be sure to be testing code with a new, minimal sandbox in order to get the latest descriptor values, etc.
 
-**Scenarios**
+### **Scenarios**
 Using the ```/ed-fi/studentNeglectedOrDelinquentProgramAssociations``` resource, create a Neglected or Delinquent Program Association for 5 students as detailed below. For each scenario:
 1. The programReference element should point to the appropriate LEA program preloaded (as described above in Prerequisite Data). 
 2. Use the ```neglectedOrDelinquentProgramDescriptor``` element, and the appropriate descriptor value (see [this table](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables/NeglectedOrDelinquentProgramDescriptor.csv)), to assign the specific Program Association (Neglected, Juvenile detention, At-risk, etc)
