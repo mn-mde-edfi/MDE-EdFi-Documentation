@@ -87,7 +87,7 @@ Please note that additional collections have been integrated into SEOA for the 2
 _Note_: as in the Student record, the student's legal name should be used in the StudentEducationOrganizationAssociation.
 
 ### Language Academic Honors
-This collection object within the SEOA records one or more Student Academic distinctions awarded for languages including World Languages Proficiency Certificate, Bilingual Seal, and Multilingual Seal.
+This collection object within the SEOA records one or more Student Academic distinctions awarded for languages including World Languages Proficiency Certificate, Bilingual Seal, and Multilingual Seal. See [additional documentation](README.md#language-academic-honor-documentation) in the readme file.
 
 **Prerequisite Data**
  - School

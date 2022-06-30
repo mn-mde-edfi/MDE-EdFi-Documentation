@@ -26,7 +26,7 @@ Use the links above to access reference documentation from the Ed-Fi  website.
 #### New Data Collections
 The following new data collections are planned for school year 2022-2023, organized into a suite of releases:
 - Release 1:
-  - SEOA.LanguageAcademicHonors
+  - SEOA.LanguageAcademicHonors (see [additional documentation](#language-academic-honor-documentation) below)
   - SEOA.GenderIdentities
   - SEOA.PreferredPronouns
   - StudentNeglectedOrDelinquentProgramAssociation
