@@ -19,7 +19,6 @@ This association represents Students in the 21st Century Community Learning Cent
   - Attendance Hours divided by Attendance Days should never exceed 24
 - In a separate transaction, add an End Date to this program association for Student 1
 
-
 ## Resource: StudentCEISProgramAssociation
 **Description**
 This association represents Students in the Coordinated Early Intervening Service Program.
@@ -103,8 +102,7 @@ This association represents the Title III Language Instruction for Limited Engli
 1.	Associate Student 7 with this StudentProgramAssociation where English Learner Participation is set to True (Indicates EL Served)
 2.	Change the English Learner Participation to False, to Indicate EL Identified, but not served
 3.	Associate another student with this program and set the language service code to 'Newcomer Program'
-**New for school year 2022-23**:
-4.  Associate another student with this program and set the language service code to 'Other'. In addition, add text to the ```languageInstructionProgramServiceOtherDescription``` element to describe the 'Other' program.
+4. **New for school year 2022-23**: Associate another student with this program and set the language service code to 'Other'. In addition, add text to the ```languageInstructionProgramServiceOtherDescription``` element to describe the 'Other' program.
 
 ## Resource: StudentNeglectedOrDelinquentProgramAssociation
 ### **Description**
@@ -221,7 +219,7 @@ This association represents the school food services program(s), such as the **F
 
 **Notes:** 
 1. In School Year 18-19 schoolFoodServicesEligibility was tracked as a separate field under StudentSchoolAssociation. This element is now tracked using SchoolFoodServiceProgramService on studentSchoolFoodServicesProgramAssociation.
-2. For School Year 22-23, please also see the section for [Applied but Did Not Qualify](sandbox_cert_b_marss.md#Applied-but-Did-Not-Qualify) in the Student Education Organization Association certification scenarios.
+2. For School Year 22-23, please also see the section for [Applied but Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify) in the Student Education Organization Association certification scenarios.
 
 **Prerequisite Data**
 - Schools
