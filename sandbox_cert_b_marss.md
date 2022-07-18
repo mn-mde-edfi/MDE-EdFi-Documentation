@@ -86,6 +86,20 @@ Please note that additional collections have been integrated into SEOA for the 2
 
 _Note_: as in the Student record, the student's legal name should be used in the StudentEducationOrganizationAssociation.
 
+### Applied but Did Not Qualify
+**New for school year 2022-23:** This provides the ability for the district to identify a student that applied for the National School Lunch Program (NSLP) but did not qualify and is not served Free or Reduced Price meals.
+
+**Scenario**
+- Designate **Student 2** accordingly by adding ```studentCharacteristicDescriptor``` codeValue 10 (Applied for National School Lunch Program but did not qualify) to the ```studentCharacteristics``` collection.
+
+### Displaced Students and Student Crisis Events
+**New for school year 2022-23:** This provides a way to identify crisis events that may have displaced students in the district. 
+
+**Scenario**
+- Designate **Student 3** as displaced by setting the ```displacedStudentIndicator``` to true
+- Describe the crisis event inside the ```crisisEventDescriptor``` element using code 4, 'Displaced by War in Ukraine'
+- Demonstrate dynamic loading of crisis event descriptors via the API within your software's interface, in order to facilitate rapid designation of students for future events.
+
 ### Language Academic Honors
 This collection object within the SEOA records one or more Student Academic distinctions awarded for languages including World Languages Proficiency Certificate, Bilingual Seal, and Multilingual Seal. See [additional documentation](README.md#language-academic-honor-documentation) in the readme file.
 

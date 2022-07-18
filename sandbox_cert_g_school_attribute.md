@@ -21,7 +21,19 @@ Defines schools that are self-designating as virtual schools beyond state-design
   - Change School 1's Virtual School Status Level from FULLVIRTUAL to NOTVIRTUAL
 
 ## Title I Part A School Designation
-*Scenarios in development as of May 27, 2022.*
+While the Title I Part A designation is available for *get* (read only) requests on the *school* resource in the API, using the School Attribute resource provides districts a way to *post* (write) information about this designation.
+
+### **Prerequisite Data**
+  - Schools (loaded by MDE)
+  - Use of an API endpoint containing:
+    - the new /MN/schoolAttributes resource ("schoolAttributes")
+    - ```titleIPartASchoolDesignationDescriptors```
+
+### **Scenarios**
+ - Submit a designation of ```Schoolwide``` for an elementary school
+ - Submit a designation of ```Targeted Assistance``` for a high school
+ - Remove the ```Schoolwide``` designation from the elementary school
+
 
 # Navigation
 - [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
