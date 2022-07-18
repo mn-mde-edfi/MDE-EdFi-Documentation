@@ -24,26 +24,13 @@ The following updates are currently in process and/or planned for school year 20
 Use the links above to access reference documentation from the Ed-Fi  website.
 
 #### New Data Collections
-The following new data collections are planned for school year 2022-2023, organized into a suite of releases:
-- Release 1:
-  - SEOA.LanguageAcademicHonors (see [additional documentation](#language-academic-honor-documentation) below)
-  - SEOA.GenderIdentities
-  - SEOA.PreferredPronouns
-  - StudentNeglectedOrDelinquentProgramAssociation
-- Release 2:
-  - Online Learning Course Completion 
-  - Virtual School Status 
-  - Other LanguageInstructionProgramService Description
-  - Student Preferred Name 
-  - Direct Certification for NSLP and Applied But Did Not Qualify
-
-For an overview of "What's New" in school year 2022-2023, please refer to the [MDE 2022-2023 School Year Ed-FI Collection Updates](2022-23%20MDE%20Ed-Fi%20Documentation/MDE%202022-2023%20School%20Year%20Ed-FI%20Collection%20Updates.docx) document. 
+For an overview of "What's New" in school year 2022-2023, please refer to the [MDE 2022-2023 School Year Ed-FI Collection Updates](2022-23%20MDE%20Ed-Fi%20Documentation/MDE%202022-2023%20School%20Year%20Ed-FI%20Collection%20Updates.docx) document and the updated scenarios listed in the next section.
 
 #### New and Updated Certification Scenarios
-Several of the new data collections for school year 2022-2023 are addressed with brand new, or additional certification scenarios, while others are more integrated into older certification scenarios. A brief list of those scenarios is below, with "TBD" marking those that have not yet been created. If a scenario is not marked as "DRAFT" or "under development" within the text of the certification itself, you can assume it is complete for now.
+Several of the new data collections for school year 2022-2023 are addressed with brand new, or additional certification scenarios, while others are more integrated into older certification scenarios. A brief list of those scenarios is below.
 
 - Release 1:
-  - [Language Academic Honors](sandbox_cert_b_marss.md#language-academic-honors)
+  - [Language Academic Honors](sandbox_cert_b_marss.md#language-academic-honors) (see [additional documentation](#language-academic-honor-documentation) below)
   - [Gender Identities and Preferred Pronouns](sandbox_cert_b_marss.md#gender-identity-and-preferred-pronouns)
   - [Neglected Or Delinquent Program Association](sandbox_cert_c_spas.md#resource-studentneglectedordelinquentprogramassociation)
 - Release 2:
@@ -51,7 +38,7 @@ Several of the new data collections for school year 2022-2023 are addressed with
   - [Virtual School Status](sandbox_cert_g_school_attribute.md#virtual-school-status)
   - [Title I Part A School Designation](sandbox_cert_g_school_attribute.md#title-i-part-a-school-designation)
   - [Student Preferred Name ](sandbox_cert_b_marss.md#preferred-name)
-  - [Direct Certification for NSLP](sandbox_cert_c_spas.md#resource-studentschoolfoodserviceprogramassociation) and [Applied But Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify) 
+  - [Direct Certification for NSLP](sandbox_cert_c_spas.md#resource-studentschoolfoodserviceprogramassociation) and [Applied But Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify)
   - [Other Language Instruction Program Service Description](sandbox_cert_c_spas.md#resource-studentlanguageinstructionprogramassociation)
   - [Displaced Students and Student Crisis Events](sandbox_cert_b_marss.md#displaced-students-and-student-crisis-events)
 
