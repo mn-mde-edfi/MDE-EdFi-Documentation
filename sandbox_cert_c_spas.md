@@ -214,7 +214,7 @@ This association represents Students in a State Approved Alternative Program.
 2.	Change SAAP Credits to 5.75 and Set Independent Study indicator to True and SAAP concurrent indicator to Yes
 
 ## Resource: StudentSchoolFoodServiceProgramAssociation
-**Description**
+**Description** 
 This association represents the school food services program(s), such as the **Free or Reduced Price Lunch Program**, that a student participates in, or from which the Student receives services. This includes the ability for a district to identify whether or not the "Direct Certification" report was used to determine student eligibility.
 
 **Notes:** 
@@ -227,9 +227,16 @@ This association represents the school food services program(s), such as the **F
 - Students
 
 **Scenarios**
-1. Associate Student 11 with this StudentProgramAssociation with SchoolFoodServiceProgramService  = 2
-2. Change FRP Meal Code to 1
-3. **New for School Year 22-23**: Set the Direct Certification element to True for this student
+1. Associate Student 11 with this StudentProgramAssociation using SchoolFoodServiceProgramServiceDescriptor = 2 (Free)
+2. Change SchoolFoodServiceProgramServiceDescriptor to 1 (Reduced)
+
+**New for School Year 2022-23**
+The following scenarios are added for school year 2022-23 to test for _Direct Certification_:
+  1. Associate Student 1 as code **2 (Free)** based on the application for educational benefits. Demonstrate that this student's default value for Direct Certification is **false**. Then set the Direct Certification element to **true** for this student.
+  2. Associate Student 2 as **1 (Reduced)** on the application for educational benefits. Demonstrate that this student's default value for Direct Certification is **false**. Then set the Direct Certification element to **True** for this student. Then, set the Direct Certification element to **False**.
+  3. Demonstrate that Student 3 is not eligible by default (no assocation). Now associate this student to **2 (Free)** and set the Direct Certification element to **True**.
+  4. Return to Student 1, and change the Direct Certification value back to **false**.
+  5. Return to Student 2 and set the **end date** for the entire program association to the end of the school year in order to demonstrate that they will no longer be eligible after this year.
 
 ## Resource: StudentSection504PlanProgramAssociation
 **Description**
