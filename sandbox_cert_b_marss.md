@@ -1,5 +1,5 @@
 # MARSS and Ancestry of Ethnic Origin Certification Scenarios – Ed-Fi API Resources
-*Note: Several MARSS resources are related to the new MCCC collection. These resources are repeated within the two sections in the Word version of this documentation. In this markdown document, those resource sections merely link to the appropriate sections within the MCCC certification scenarios.*
+*Note: Several MARSS resources are related to the MCCC collection. As a result, in this markdown document, those resource sections are also listed here, and link to the appropriate sections within the MCCC certification scenarios.*
 
 ## Resource: Students
 
@@ -20,13 +20,13 @@ This entity represents an individual for whom instruction, services, and/or care
     - middleName
 
 _Notes:_ 
-- You will not be able to view or edit students until you claim them with the creation of an enrollment record via ```StudentSchoolAssociation``` (see next section). Within Swagger, only one record can be created at a time. See [this example record](data\example_value_student_record.json) for specific JSON formatting.
+- You will not be able to view or edit students until you claim them with the creation of an enrollment record via ```StudentSchoolAssociation``` (see next section). Within Swagger, only one record can be created at a time. See [this example record](data/example_value_student_record.json) for specific JSON formatting.
 - The student's legal name should be used and stay consistent over time unless the student legally changes their name.
 
 ## Resource: StudentSchoolAssociations
 
 **Description**
-This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation. _Remember_: when loading in data that references a Descriptor, you need to include a namespace, i.e. ```uri://education.mn.gov/[name of descriptor]#[code value]```. See more details in [this example record](data\example_value_studentSchoolAssociation.json).
+This association represents the School in which a student is enrolled. Note that the semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation. _Remember_: when loading in data that references a Descriptor, you need to include a namespace, i.e. ```uri://education.mn.gov/[name of descriptor]#[code value]```. See more details in [this example record](data/example_value_studentSchoolAssociation.json).
 
 **Prerequisite Data**
 - Students
@@ -56,7 +56,7 @@ This association represents the School in which a student is enrolled. The seman
 ## Resource: StudentEducationOrganizationAssociation
 **Description**
 
-The Student Education Organization Association (SEOA) indicates any relationship between a student and an education organization other than how the state views enrollment. Enrollment relationship semantics are covered by StudentSchoolAssociation. **MDE allows for the capture of student demographic data by school enrollment.** Therefore, a StudentEducationOrganizationAssociation record must be submitted for each ***school*** in which the student is enrolled to provide the student demographic data provided to the enrolling school by the parent(s).
+The Student Education Organization Association (SEOA) indicates any relationship between a student and an education organization other than how the state views enrollment. (Enrollment relationship semantics are covered by StudentSchoolAssociation.) **MDE allows for the capture of student demographic data by school enrollment.** Therefore, a StudentEducationOrganizationAssociation record must be submitted for each ***school*** in which the student is enrolled to provide the student demographic data provided to the enrolling school by the parent(s).
 
 Please note that additional collections have been integrated into SEOA for the 2022-2023 school year. These are described in separate headings below the original scenario.
 
