@@ -2,6 +2,8 @@
 A new resource has been created for the purpose of collecting school specific information. Ed-fi School records are currently created and maintained by MDE, which necessitated a new extension entity to capture school specific data to be provided by the districts for their respective schools.
 
 ## Virtual School Status
+**Postponed until after school year 2022-23.**
+
 Defines schools that are self-designating as virtual schools beyond state-designated Online Learning providers. For example, when using blended learning and other hybrid combinations.
 
 **Prerequisite Data**
@@ -21,6 +23,8 @@ Defines schools that are self-designating as virtual schools beyond state-design
   - Change School 1's Virtual School Status Level from FULLVIRTUAL to NOTVIRTUAL
 
 ## Title I Part A School Designation
+**Postponed until after school year 2022-23.**
+
 While the Title I Part A designation is available for *get* (read only) requests on the *school* resource in the API, using the School Attribute resource provides districts a way to *post* (write) information about this designation.
 
 ### **Prerequisite Data**

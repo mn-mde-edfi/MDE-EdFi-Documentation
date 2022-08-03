@@ -69,7 +69,7 @@ None
         - lastSurname
         - MiddleName
         - generationCodeSuffix
-        - [highestCompletedLevelOfEducationDescriptor](descriptors_resources.md#levelofeducationdescriptors)
+        - [highestCompletedLevelOfEducationDescriptor](descriptors_resources.md#levelofeducationdescriptors) (see note below)
         - householdIncome
         - householdSize
         - receivingInterpreterAssistance
@@ -78,6 +78,8 @@ None
         - sexDescriptor
 2. Submit Parent Records for the following Early Ed Student in Gradelevel 1
 3. Submit Parent Records for the following Early Ed Student in Gradelevel PA
+
+_Note_: The ```highestCompletedLevelOfEducationDescriptor``` element has been moved from the MN extenstion to Ed-Fi Core in v5.2, which is being implemented for **School Year 2022-23**.
 
 ## Resource: StudentParentAssociation
 **Description:**

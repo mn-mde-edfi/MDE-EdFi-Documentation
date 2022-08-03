@@ -1,6 +1,6 @@
 # MDE-EdFi-Documentation
 
-_NOTE: As of April 11, 2022, this "master" branch of our documentation is focusing on the 2022-2023 school year._ Additional branches may be built and then merged for specific **releases** of the 2022-2023 school year.
+_NOTE: As of August 3, 2022, this documentation is focusing on the changes implemented for the 2022-2023 school year._ Several new elements have been delayed for future years, but documentation remains in this repository, marked as **"Postponed until after school year 2022-23"**.
 
 This repository contains documentation for Minnesota's implementation of the [Ed-Fi alliance standard](https://www.ed-fi.org/). The Minnesota Department of Education (MDE) is implementing Ed-Fi to help improve the collection of required educational data from Minnesota school districts. Learn more [at MDE's Ed-Fi web page](https://education.mn.gov/MDE/dse/datasub/edfi/) and at the following links:
 - [Ed-Fi Technical Documentation](https://techdocs.ed-fi.org/)
@@ -16,29 +16,30 @@ MNIT supporting MDE is now complementing each collection year's documentation in
 By serving documentation in both Word and Markdown, MDE hopes to increase vendor access to the documentation as well as provide options for understanding and visualization changes over time.
 
 ### School Year 2022-2023 Plans
-The following updates are currently in process and/or planned for school year 2022-2023:
+The following updates are currently being implemented for school year 2022-2023:
 - Upgrade to [Ed-Fi ODS/API version 5.2](https://techdocs.ed-fi.org/display/ODSAPIS3V520) and [Data Standard v3.3.0-a](https://techdocs.ed-fi.org/display/EFDS33/What%27s+New+-+v3.3-a)
 - Move from ESCT to new Ed-Fi ODS Admin App
 - Ed-Fi API 2022-2023 Data Mapping Matrix Changes for **AncestryEthnicOrigin**, **HighestCompletedLevelOfEducation**, and **StudentCharacteristicDescriptor**
+- New Data Collection for Direct Certification (see below)
 
 Use the links above to access reference documentation from the Ed-Fi  website.
 
 #### New Data Collections
-For an overview of "What's New" in school year 2022-2023, please refer to the [MDE 2022-2023 School Year Ed-FI Collection Updates](2022-23%20MDE%20Ed-Fi%20Documentation/MDE%202022-2023%20School%20Year%20Ed-FI%20Collection%20Updates.docx) document and the updated scenarios listed in the next section.
+For an overview of new data collections that were originally planned for school year 2022-2023, please refer to the [MDE 2022-2023 School Year Ed-FI Collection Updates](2022-23%20MDE%20Ed-Fi%20Documentation/MDE%202022-2023%20School%20Year%20Ed-FI%20Collection%20Updates.docx) document. All _new_ collections except for the "Direct Certification" data have been **delayed to a future year**. Note:
+- New certification scenarios for Direct Certification for NSLP have been added to the [Student School Food Service Program Association Section](sandbox_cert_c_spas.md#resource-studentschoolfoodserviceprogramassociation) - see those marked "New for School Year 2022-23"
+- Vendors will be asked to double check their programming against changes implemented as part of the v5.2 API update, such as moving AncestryEthnicOrigin in the StudentEducationOrganizationAssociation entity from the MN extension to a core Ed-Fi data element.
 
-#### New and Updated Certification Scenarios
-Several of the new data collections for school year 2022-2023 are addressed with brand new, or additional certification scenarios, while others are more integrated into older certification scenarios. A brief list of those scenarios is below.
+#### New and Updated Certification Scenarios for Future Years
+Several of the new data collections originally planned for school year 2022-2023 are now **postponed until after school year 2022-23**. However, they are addressed in this documentation with either new or updated certification scenarios. A brief list of those scenarios is below.
 
-- Release 1:
   - [Language Academic Honors](sandbox_cert_b_marss.md#language-academic-honors) (see [additional documentation](#language-academic-honor-documentation) below)
   - [Gender Identities and Preferred Pronouns](sandbox_cert_b_marss.md#gender-identity-and-preferred-pronouns)
   - [Neglected Or Delinquent Program Association](sandbox_cert_c_spas.md#resource-studentneglectedordelinquentprogramassociation)
-- Release 2:
   - [Online Learning](sandbox_cert_e_mccc.md#online-learning)
   - [Virtual School Status](sandbox_cert_g_school_attribute.md#virtual-school-status)
   - [Title I Part A School Designation](sandbox_cert_g_school_attribute.md#title-i-part-a-school-designation)
   - [Student Preferred Name ](sandbox_cert_b_marss.md#preferred-name)
-  - [Direct Certification for NSLP](sandbox_cert_c_spas.md#resource-studentschoolfoodserviceprogramassociation) and [Applied But Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify)
+  -  and [Applied But Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify)
   - [Other Language Instruction Program Service Description](sandbox_cert_c_spas.md#resource-studentlanguageinstructionprogramassociation)
   - [Displaced Students and Student Crisis Events](sandbox_cert_b_marss.md#displaced-students-and-student-crisis-events)
 
@@ -54,7 +55,7 @@ We will also use this repository to store additional documentation and links tha
 - Additional Documentation is available on [MDE's Ed-Fi Documentation page](https://education.mn.gov/MDE/dse/datasub/edfi/doc/)
 
 ### Language Academic Honor Documentation
-New to MDE's Ed-Fi in SY2022-2023, Language Academic Honor information was previously collected from districts via a Microsoft Word Form in aggregate. For more information about this collection, we encourage vendors to visit:
+**Postponed until after school year 2022-23**. Language Academic Honor information was previously collected from districts via a Microsoft Word Form in aggregate. For more information about this collection, we encourage vendors to visit:
   - The MDE web page about [World Languages](https://education.mn.gov/MDE/dse/stds/world/)
   - The [Microsoft Word Form](https://education.mn.gov/mdeprod/idcplg?IdcService=GET_FILE&dDocName=MDE086116&RevisionSelectionMethod=latestReleased&Rendition=primary) previously used to collect the information in aggregate.
   - The MDE web page about the [Minnesota Bilingual Seals Program](https://education.mn.gov/MDE/dse/stds/world/seals/)

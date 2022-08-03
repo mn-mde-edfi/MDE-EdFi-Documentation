@@ -102,9 +102,11 @@ This association represents the Title III Language Instruction for Limited Engli
 1.	Associate Student 7 with this StudentProgramAssociation where English Learner Participation is set to True (Indicates EL Served)
 2.	Change the English Learner Participation to False, to Indicate EL Identified, but not served
 3.	Associate another student with this program and set the language service code to 'Newcomer Program'
-4. **New for school year 2022-23**: Associate another student with this program and set the language service code to 'Other'. In addition, add text to the ```languageInstructionProgramServiceOtherDescription``` element to describe the 'Other' program.
+4. ****Postponed until after school year 2022-23.****: Associate another student with this program and set the language service code to 'Other'. In addition, add text to the ```languageInstructionProgramServiceOtherDescription``` element to describe the 'Other' program.
 
 ## Resource: StudentNeglectedOrDelinquentProgramAssociation
+**Postponed until after school year 2022-23.**
+
 ### **Description**
 This association represents the Title I Part D Neglected or Delinquent program(s) that a student participates in or from which the Student receives services.
 **NOTE:** these certification scenarios are **DRAFT** as of MAY 27, 2022, and **LAST UPDATED** JUNE 10, 2022. Vendors may want to use [the sample JSON](/data/2022-2023%20Extensions/StudentNeglectedOrDelinquentProgramAssociations.json) for this association to better understand the data model.
@@ -219,7 +221,7 @@ This association represents the school food services program(s), such as the **F
 
 **Notes:** 
 1. In School Year 18-19 schoolFoodServicesEligibility was tracked as a separate field under StudentSchoolAssociation. This element is now tracked using SchoolFoodServiceProgramService on studentSchoolFoodServicesProgramAssociation.
-2. For School Year 22-23, please also see the section for [Applied but Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify) in the Student Education Organization Association certification scenarios.
+2. **Postponed until after school year 2022-23.**, please also see the section for [Applied but Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify) in the Student Education Organization Association certification scenarios.
 
 **Prerequisite Data**
 - Schools
@@ -230,7 +232,8 @@ This association represents the school food services program(s), such as the **F
 1. Associate Student 11 with this StudentProgramAssociation using SchoolFoodServiceProgramServiceDescriptor = 2 (Free)
 2. Change SchoolFoodServiceProgramServiceDescriptor to 1 (Reduced)
 
-**New for School Year 2022-23**
+### **New for School Year 2022-23**
+
 The following scenarios are added for school year 2022-23 to test for _Direct Certification_:
   1. Associate Student 1 as code **2 (Free)** based on the application for educational benefits. Demonstrate that this student's default value for Direct Certification is **false**. Then set the Direct Certification element to **true** for this student.
   2. Associate Student 2 as **1 (Reduced)** on the application for educational benefits. Demonstrate that this student's default value for Direct Certification is **false**. Then set the Direct Certification element to **True** for this student. Then, set the Direct Certification element to **False**.

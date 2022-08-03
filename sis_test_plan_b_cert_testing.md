@@ -13,9 +13,9 @@ We continue to use the [Swagger UI tool](https://swagger.io/tools/swagger-ui/) t
 _Please note:_ MDE's Swagger website has been customized to remove the generic "Resources" section. All MN Specific resources can be found under the Profiles for each School Year. Note the order of the following Profiles is alphabetical, not chronological:
 
 - A preview of future releases is under the generic-named _Minnesota-Preview-SISVendor-Profile_.
-- All MN Specific resources defined for the _2021-2022_ School Collection can be previewed under the _Minnesota-Twenty-One-Twenty-Two-SISVendor-Profile._
 - All MN Specific resources defined for the **2022-2023** School Collection can be found under the **Minnesota-Twenty-Two-Twenty-Three-SISVendor-Profile**.
 - The Identities Section is not functional in the Sandbox and is provided as documentation only
+- Please ignore any section marked for Assessments at this time.
 
 Upon launch of the Swagger Sandbox UI, the site will finish loading the profiles and appear similarly to previous years, with a landing page where profiles can be selected. Clicking one of the profile links will launch you into the Swagger UI for exploration. Once inside the Swagger UI, click the "Authorize" button to enter in the client id (key) and client secret you created in the Sandbox Admin site. This will allow you to test GET, PUT, and other API request via the Swagger UI.
 
