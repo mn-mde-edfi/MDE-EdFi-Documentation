@@ -221,7 +221,7 @@ This association represents the school food services program(s), such as the **F
 
 **Notes:** 
 1. In School Year 18-19 schoolFoodServicesEligibility was tracked as a separate field under StudentSchoolAssociation. This element is now tracked using SchoolFoodServiceProgramService on studentSchoolFoodServicesProgramAssociation.
-2. **Postponed until after school year 2022-23.**, please also see the section for [Applied but Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify) in the Student Education Organization Association certification scenarios.
+2. Usage and of the [Applied but Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify) element in the Student Education Organization Association has been **postponed until after school year 2022-23.**
 
 **Prerequisite Data**
 - Schools
