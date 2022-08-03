@@ -78,13 +78,14 @@ Please note that additional collections have been integrated into SEOA for the 2
     - studentIdentificationSystemDescriptor = 'Local'
     - assigningOrganizationIdentificationCode = 'District Id'
     - identificationCode = local use code
-2.	Update Student 1's record to include Ancestry of Ethnic Origin = ai-cherokee
+2.	Update Student 1's record to include Ancestry of Ethnic Origin = ai-cherokee (see Note 2 below)
 3.	Update Student 1's record to include a second Ancestry of Ethnic Origin = as-burmese
 4.	Create a StudentEducationOrganizationAssociation between Student 2 and Middle School.
 5.	Create a StudentEducationOrganizationAssociation between Student 2 and High School.
 6.	Update Student 3's OptOutIndicator
 
-_Note_: as in the Student record, the student's legal name should be used in the StudentEducationOrganizationAssociation.
+_Note 1_: as in the Student record, the student's legal name should be used in the StudentEducationOrganizationAssociation.
+_Note 2_: for **school year 2022-23**, with upgrading to version 5.2, the ```ancestryEthnicOrigins``` element is now part of Ed-Fi core, and not in the Minnesota extension.
 
 ### Applied but Did Not Qualify
 **New for school year 2022-23:** This provides the ability for the district to identify a student that applied for the National School Lunch Program (NSLP) but did not qualify and is not served Free or Reduced Price meals.
