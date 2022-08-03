@@ -39,7 +39,7 @@ Several of the new data collections originally planned for school year 2022-2023
   - [Virtual School Status](sandbox_cert_g_school_attribute.md#virtual-school-status)
   - [Title I Part A School Designation](sandbox_cert_g_school_attribute.md#title-i-part-a-school-designation)
   - [Student Preferred Name ](sandbox_cert_b_marss.md#preferred-name)
-  -  and [Applied But Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify)
+  - [Applied But Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify)
   - [Other Language Instruction Program Service Description](sandbox_cert_c_spas.md#resource-studentlanguageinstructionprogramassociation)
   - [Displaced Students and Student Crisis Events](sandbox_cert_b_marss.md#displaced-students-and-student-crisis-events)
 
