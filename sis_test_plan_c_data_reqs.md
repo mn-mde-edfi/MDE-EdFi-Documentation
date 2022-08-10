@@ -39,12 +39,7 @@ Education Organization References in the Ed-Fi API allow an API client to submit
 * Note the change here from _Local Education Agency Id_ used in 2020-2021.
 
 ## API Resources and Certification Scenarios
-For details on the 2021-2022 API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](sandbox_cert_a_toc.md). That documentation contains resources and scenarios for the various programs MDE has incorporated into Ed-Fi, including:
-- MARSS and Ancestry Ethnic Origin
-- Early Education
-- Digital Equity
-- MCCC
-- 21st Century Learning Center Grant Program
+For details on the current API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](sandbox_cert_a_toc.md). That documentation contains resources and scenarios for the various programs MDE has incorporated into Ed-Fi.
 
 ## Read-Only API endpoints 
 Several of the required data elements are provided by MDE within the ODS. This section details those elements.
@@ -54,20 +49,14 @@ Several of the required data elements are provided by MDE within the ODS. This s
 **Description**
 This entity represents an administrative unit at the local level which exists primarily to operate schools or to contract for educational services. It includes school districts, charter schools, or other local administrative organizations.
 
-**Prerequisite Data**
-- None
-
-Note: All required Local Education Agency data will be loaded by MDE.
+**All required Local Education Agency data will be loaded by MDE.**
 
 ### Resource: Schools
 
 **Description**
 This entity represents an educational organization that includes staff and students who participate in classes and educational activity groups.
 
-**Prerequisite Data**
-- None
-
-Note: All required School data will be loaded by MDE.
+**All required School data will be loaded by MDE.**
 
 ### Resource: Post-Secondary Institutions
 
@@ -75,11 +64,7 @@ Note: All required School data will be loaded by MDE.
 
 An organization that provides educational programs for individuals who have completed or otherwise left educational programs in secondary school(s).
 
-**Prerequisite Data**
-
-- None
-
-Note: All required College data will be loaded by MDE.
+**All required College data will be loaded by MDE.**
 
 ### Resource: Course (State Level Only)
 
@@ -91,7 +76,7 @@ This educational entity represents the organization of subject matter and relate
 
 - Education Organization for State Education Agency (SEA)
 
-Note: All required State Course data will be loaded by MDE.
+**All required State Course data will be loaded by MDE.**
 
 ### Resource: Staff
 
@@ -105,11 +90,7 @@ This entity represents an individual who performs specified activities for any p
 4. An in-kind service provider.
 5. An independent contractor or businessperson working at a school site.
 
-**Prerequisite Data**
-
-- none
-
-Note: Sync process will be created by MDE to populate Staff Tables
+**Sync process will be created by MDE to populate Staff Tables.**
 
 ### Resource: Program
 
