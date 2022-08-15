@@ -1,15 +1,21 @@
 {
+    "beginDate": "2022-09-15",
     "educationOrganizationReference": {
-        "educationOrganizationId": 255901
+      "educationOrganizationId": 10625212
     },
     "programReference": {
-        "educationOrganizationId": 255901,
-        "programName": "School Food Service",
-        "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#School Food Service"
+      "educationOrganizationId": 10625000,
+      "programName": "School Food Service",
+      "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#School Food Service"
     },
     "studentReference": {
-        "studentUniqueId": "605000"
+      "studentUniqueId": "999001"
     },
-    "beginDate": "2010-08-31",
-    "directCertification": true
-}
+    "directCertification": true,
+    "endDate": "2023-06-01",
+    "schoolFoodServiceProgramServices": [
+      {
+        "schoolFoodServiceProgramServiceDescriptor": "uri://education.mn.gov/SchoolFoodServiceProgramServiceDescriptor#1"
+      }
+    ]
+  }

@@ -1,11 +1,11 @@
-
+//When building the program reference to a School Food Service program, you must use the LEA organization ID, 
+//and the specific programName and TypeDescriptor below. These programs are GET-able from the API via /api/data/v3/ed-fi/programs
 	{
 
         "educationOrganizationReference": {
-            "educationOrganizationId": 255901
+            "educationOrganizationId": 10624000
         },
         "programName": "School Food Service",
-        "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#School Food Service",
-        "programId": "99999"
+        "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#School Food Service"
     }
 ]
