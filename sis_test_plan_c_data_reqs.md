@@ -26,7 +26,7 @@ Education Organization References in the Ed-Fi API allow an API client to submit
 | ----------|----------|----|
 | StudentEducationOrganizationAssociation | educationOrganizationReference.educationOrganizationId | School Id|
 | StudentProgramAssociation (all program types) | educationOrganizationReference. educationOrganizationId | School Id |
-| StudentProgramAssociation (all program types) | programReference.educationOrganizationId | State Education Agency Id* |
+| StudentProgramAssociation (all program types) | programReference.educationOrganizationId | Local Education Agency Id |
 |Course |educationOrganizationReference.educationOrganizationId|District Course – **LocalEducationAgencyId**; State Course (loaded by MDE) – **StateEducationAgencyId**; College Course – **postSecondaryInstitutionId**|
 | CourseOffering | SchoolReference; CourseReference | SchoolId; EducationOrganizationId on the Course record |
 | ClassPeriod | SchoolReference | SchoolId |
@@ -35,8 +35,6 @@ Education Organization References in the Ed-Fi API allow an API client to submit
 | StaffSectionAssociation | sectionReference.CourseOfferingReference | SchoolId |
 | Grade | StudentSectionAssociationReference.sectionReference.CourseOfferingReference | SchoolId |
 | GradingPeriod | SchoolReference | SchoolId |
-
-* Note the change here from _Local Education Agency Id_ used in 2020-2021.
 
 ## API Resources and Certification Scenarios
 For details on the current API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](sandbox_cert_a_toc.md). That documentation contains resources and scenarios for the various programs MDE has incorporated into Ed-Fi.
