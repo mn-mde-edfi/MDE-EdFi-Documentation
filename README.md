@@ -46,7 +46,7 @@ Several of the new data collections originally planned for school year 2022-2023
 #### Migration of Custom Descriptor Tables
 Within the **2022-23 MDE Ed-Fi Documentation** folder, the MDE MNIT Team has undertaken a migration of our custom descriptor tables from the Data Mapping Matrix to a suite of CSV files that are automatically exported from our Ed-Fi database(s). These can be viewed in the **2022-23 MDE Ed-Fi Documentation/descriptorTables** folder. See [the about descriptor tables document](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables/AboutDescriptorTables.md) for more information.
 
-As of **April 11, 2022**, this migration is still under way - so the custom descriptor tables are still viewable in the Data Mapping Matrix. But at some point they will be removed from that spreadsheet and viewable only through the descriptorTables folder.
+As of **August 22, 2022**, this migration has been finalized; the custom descriptor tabs have been removed from the "final" Data Mapping Matrix for School Year 2022-23. Older versions of the Data Mapping Matrix still have them, but those are no longer being maintained. Refer to the data in the [descriptor tables folder](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables) from now on.
 
 ## Additional Documentation
 We will also use this repository to store additional documentation and links that may be useful to Districts and Vendors. See the following:
