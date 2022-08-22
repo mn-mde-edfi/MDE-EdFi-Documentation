@@ -11,8 +11,8 @@ On 2022-05-09, we published "Release 2" for the 2022-2023 school year, and conti
 As of the most recent run, these tables are derived from the following database at MDE:
 - **Version**: 5.2
 - **School Year**: 2022-2023
-- **Environment**: Test/Stage/Sandbox
-- **Database**: EdFi Ods Minimal Template
+- **Environment**: Production
+- **Database**: EdFi Ods 2023 (for school year 2022-23)
 
 ## List of Custom Descriptors and Links
 Below is a list of known custom descriptors using the ```uri://education.mn.gov``` namespace, excluding any subfolders within that space. Links are to the CSV files that you can view inside this directory. This list is automatically generated out of the same database as above, but there may be broken links of certain descriptors that we have not yet exported.
