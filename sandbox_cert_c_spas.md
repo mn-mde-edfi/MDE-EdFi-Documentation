@@ -60,6 +60,8 @@ This association represents Students in the Gifted Talented Program.
 1.	Associate Student 4 with this StudentProgramAssociation
 2.	Change the gifted talented participation code to 'Full-time services'
 
+**Note:** As of summer 2022, our Ed-Fi API implementation does not allow the same student to be submitted in multiple gifted & talented programs, at the same school, with the same start date. If you have a need to describe associate a student to multiple gifted & talented programs, an acceptable workaround is to use multiple records with a slight offset in the begin date. We are aware this is less than ideal and are investigating a solution.
+
 ## Resource: StudentADSISProgramAssociation
 **Description**
 This association represents Students in the Alternative Delivery of Specialized Instruction (ADSIS) Program.
