@@ -1,0 +1,8 @@
+"Mapping Method","Namespace","Descriptor Name","Code Value","Short Description","Description","Length of Short Desc"
+"Extension","uri://education.mn.gov/EarlyChildhoodScreeningExitStatusDescriptor","EarlyChildhoodScreeningExitStatusDescriptor","1","No referral ","No referral ","11"
+"Extension","uri://education.mn.gov/EarlyChildhoodScreeningExitStatusDescriptor","EarlyChildhoodScreeningExitStatusDescriptor","2","Referral to Special Education ","Referral to Special Education ","29"
+"Extension","uri://education.mn.gov/EarlyChildhoodScreeningExitStatusDescriptor","EarlyChildhoodScreeningExitStatusDescriptor","3","Referral to health care provider","Referral to health care provider","32"
+"Extension","uri://education.mn.gov/EarlyChildhoodScreeningExitStatusDescriptor","EarlyChildhoodScreeningExitStatusDescriptor","4","Referral to Special Education and health care provider","Referral to Special Education and health care provider","54"
+"Extension","uri://education.mn.gov/EarlyChildhoodScreeningExitStatusDescriptor","EarlyChildhoodScreeningExitStatusDescriptor","5","Referral to early childhood programs","Referral to early childhood programs, e.g., School Readiness, Head Start , ECFE, family literacy","36"
+"Extension","uri://education.mn.gov/EarlyChildhoodScreeningExitStatusDescriptor","EarlyChildhoodScreeningExitStatusDescriptor","6","Preschool student referral offered, parent declined","Preschool student referral offered, parent declined","51"
+"Extension","uri://education.mn.gov/EarlyChildhoodScreeningExitStatusDescriptor","EarlyChildhoodScreeningExitStatusDescriptor","7","Rescreen","Rescreen","8"
