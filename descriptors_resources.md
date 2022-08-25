@@ -114,6 +114,12 @@ The following codes are also available in Ed_Fi for additional detail as applica
 
 Note that the namespace for the above descriptors is ```uri://education.mn.gov/LevelOfEducationDescriptor```. Prior to **8/6/2020**, MDE Ed-Fi data stores (including Sandboxes created before that date) only included the base ed-fi descriptors in the ```uri://ed-fi.org/LevelOfEducationDescriptor``` namespace, which created confusion among vendors. These should **NOT** be used. Vendors should create new sandboxes to test this functionality and delete any created before 8/6.
 
+### Student Characteristic Descriptors
+Note that several changes have been implemented in the Student Characteristic Desciprtors for sy2023. This section will make note of specific issues with this descriptor.
+
+#### Migrant Descriptor value
+A vendor asked about the "Migrant" descriptor; while we do not collect the Migrant indicator through Ed-Fi, we do collect that information via other sources, which is populated in the Ed-Fi ODS. As a result, the Migrant indicator was added as a read-only attribute in the Ed-Fi API to allow SIS vendors to be able to read this information and display it to district users in their SIS. This was implemented back in our first year of Ed-Fi for 2018-19. 
+
 ## Resources
 The following sections contain details about various resources (also called "entities" in some documentation) within the Ed-Fi API and data model.
 
