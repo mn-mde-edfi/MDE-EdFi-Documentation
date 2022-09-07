@@ -12,7 +12,7 @@ Vendors have the option of building in support for interfacing with the MN Stude
 
 Vendors must demonstrate their ability to create new Student IDs when a Student is created in the Student Information System. This would be accomplished by posting to the ```/identities``` endpoint. 
 
-The SY2023 URL for the identities API in the Staging environment is ```not currently active```.
+Testing for the identities API can be conducted in the Staging environment. [Contact the MNIT Team](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us) partnering with MDE on EdFi for more details.
 
 The general process for identity creation is as follows: 
 
