@@ -6,7 +6,7 @@ The main URL for the Staging Environment is: ```https://stage.edfi5.education.mn
 
 As is MDE convention, the production URL is the same as staging, except with the "stage." prefix removed.
 
-## Ed-Fi / MARSS Identities API Integration Test 
+## Ed-Fi / MARSS Identities API Integrations
 
 Vendors have the option of building in support for interfacing with the MN Student Identity System to create new MARSS Student IDs (Ed-Fi Unique Id) through an Ed-Fi Identities API implementation. Vendors will be able to test their State ID creation integrations in the Staging environment. 
 
@@ -14,6 +14,7 @@ Vendors must demonstrate their ability to create new Student IDs when a Student 
 
 Testing for the identities API can be conducted in the Staging environment. [Contact the MNIT Team](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us) partnering with MDE on EdFi for more details.
 
+### Student Identity Process Overview
 The general process for identity creation is as follows: 
 
 - A Vendor posts a new Student Identity including the following properties to the ODS/API identities end-point:
@@ -34,6 +35,12 @@ The general process for identity creation is as follows:
 - If no match is found in the Student Id System – the student id is created (this is equivalent to code 3002 in the SIS)
 - An HTTP response code ```201``` created is returned from the ODS/API.
 - If the Student ID System returns an error, the student id will fail to be created, and the ODS/API returns an HTTP status code ```400 Bad Request``` with the corresponding message for the error given (see specific errors below under Test 2).
+- If an error is returned, that error should be displayed by the SIS to the district user, who will then need to use MDE's Student ID System to resolve the issue. More information about that system is in [Appendix C of the MARSS manual](https://education.mn.gov/mdeprod/idcplg?IdcService=GET_FILE&dDocName=MDE074459&RevisionSelectionMethod=latestReleased&Rendition=primary).
+
+#### Notes
+- SIS Vendors are expected to create initial student identifiers for students, similar to MARSS. Typically the first four digits of the identifier is the district number of the first district to enroll the student. If the ID is less than 13 characters long, the Student ID System will prepend zeroes in order to make the length of the ID exactly 13 characters long.
+- The Identities API is only intended to create a new student **ID**, so that the creation of the student resource via Ed-Fi can succeed.
+- The endpoint does not enable a "GET" or "search" function, so unsuccessful creation attempts will not return a list of close matches.
 
 ### Create Student ID Test 1
 
@@ -53,7 +60,7 @@ Sample JSON:
 }
 ```
 **Response** 
-```201: created```
+A successful test will produce a response of ```201: created```.
 
 ### Create Student ID Test 2 
 
@@ -68,7 +75,7 @@ Error|Description|Details
 3006|(Possible Student Already Exists)|Student identifying information given does not match any students. However, the State Student Id is already in use by a non-matched student. Review needed.
 
 **Response** 
-```400: BAD REQUEST { “message”: “<error number> <error description><error details>” }```
+```400: BAD REQUEST { "message": "<error number> <error description><error details>" }```
 
 Vendors will be expected to demonstrate a mechanism for timely reporting of ID creation errors back to users, either through the SIS user interface, or through a separate interface, or reporting method.
 
@@ -86,7 +93,7 @@ This validation feature will be enabled in the Staging Environment. Vendors must
 
 #### Validate Student ID Test 1
 
-**Description**: Vendor posts a new valid Ed-Fi Student record to the ODS/API Student end-point. Vendor submits Ed-Fi student record to the student’s resource endpoint using a valid student id and associated to the same student.
+**Description**: Vendor posts a new valid Ed-Fi Student record to the ODS/API Student end-point. Vendor submits Ed-Fi student record to the student's resource endpoint using a valid student id and associated to the same student.
 
 **Response** 
 ```201: created```
