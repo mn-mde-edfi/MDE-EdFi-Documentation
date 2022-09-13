@@ -8,21 +8,19 @@ This repository contains documentation for Minnesota's implementation of the [Ed
 - [Ed-Fi Operational Data Store (ODS) and API](https://techdocs.ed-fi.org/display/ETKB/Ed-Fi+Operational+Data+Store+and+API)
 
 ## Markdown Documentation
-MNIT supporting MDE is now complementing each collection year's documentation in markdown files. While the official documentation remains in Word and Excel within this repository, the markdown files at the top level of this repository represent an effort to store and maintain the documentation in markdown, in particular:
+MNIT supporting MDE is now complementing each collection year's documentation in markdown files. While some documentation remains in Word and Excel within this repository, the markdown files at the top level of this repository represent an effort to store and maintain the documentation in markdown, in particular:
 
 - [SIS and Vendor Test Plan](sis_test_plan_a_toc.md)
 - [Sandbox Certification Scenarios](sandbox_cert_a_toc.md)
 
-By serving documentation in both Word and Markdown, MDE hopes to increase vendor access to the documentation as well as provide options for understanding and visualization changes over time.
+By serving documentation in both Word and Markdown, our goal is to increase vendor access to the documentation as well as provide options for understanding and visualization changes over time.
 
 ### School Year 2022-2023 Plans
 The following updates are currently being implemented for school year 2022-2023:
-- Upgrade to [Ed-Fi ODS/API version 5.2](https://techdocs.ed-fi.org/display/ODSAPIS3V520) and [Data Standard v3.3.0-a](https://techdocs.ed-fi.org/display/EFDS33/What%27s+New+-+v3.3-a)
+- Upgrade to [Ed-Fi ODS/API version 5.2](https://techdocs.ed-fi.org/display/ODSAPIS3V520) and [Data Standard v3.3.0-a](https://techdocs.ed-fi.org/display/EFDS33/What%27s+New+-+v3.3-a) (links are reference documentation from the Ed-Fi website)
 - Move from ESCT to new Ed-Fi ODS Admin App
 - Ed-Fi API 2022-2023 data location changes for **AncestryEthnicOrigin**, **HighestCompletedLevelOfEducation**, and **StudentCharacteristicDescriptor**
 - New Data Collection for Direct Certification (see below)
-
-Use the links above to access reference documentation from the Ed-Fi  website.
 
 #### New Data Collections
 For an overview of new data collections that were originally planned for school year 2022-2023, please refer to the [MDE 2022-2023 School Year Ed-FI Collection Updates](2022-23%20MDE%20Ed-Fi%20Documentation/MDE%202022-2023%20School%20Year%20Ed-FI%20Collection%20Updates.docx) document. All _new_ collections except for the "Direct Certification" data have been **delayed to a future year**. Note:
@@ -46,13 +44,13 @@ Several of the new data collections originally planned for school year 2022-2023
 #### Migration of Custom Descriptor Tables
 Within the **2022-23 MDE Ed-Fi Documentation** folder, the MDE MNIT Team has undertaken a migration of our custom descriptor tables from the Data Mapping Matrix to a suite of CSV files that are automatically exported from our Ed-Fi database(s). These can be viewed in the **2022-23 MDE Ed-Fi Documentation/descriptorTables** folder. See [the about descriptor tables document](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables/AboutDescriptorTables.md) for more information.
 
-As of **August 22, 2022**, this migration has been finalized; the custom descriptor tabs have been removed from the "final" Data Mapping Matrix for School Year 2022-23. Older versions of the Data Mapping Matrix still have them, but those are no longer being maintained. Refer to the data in the [descriptor tables folder](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables) from now on.
+As of **August 22, 2022**, this migration has been finalized; the custom descriptor tabs have been *removed* from the "final" Data Mapping Matrix for School Year 2022-23. Older versions of the Data Mapping Matrix still have them, but those are no longer being maintained. The data in the [descriptor tables folder](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables) should be used as the "source of truth" reference.
 
 ## Additional Documentation
 We will also use this repository to store additional documentation and links that may be useful to Districts and Vendors. See the following:
-- [Descriptors and Resources](descriptors_resources.md). This document contains additional information about specific descriptors and data resources that can prove useful in understanding the system.
+- [Descriptors and Resources](descriptors_resources.md). This document contains additional information about specific descriptors and data resources that can prove useful in understanding MDE's Ed-Fi implementation.
 - [Transactional Update Procedures](transactional_updates.md) covers some of the core concepts of updating records with individual transactions in lieu of bulk uploads, including some examples from Ed-Fi to illustrate.
-- Additional Documentation is available on [MDE's Ed-Fi Documentation page](https://education.mn.gov/MDE/dse/datasub/edfi/doc/)
+- Additional Documentation, particularly useful to districts/LEAs, is available on [MDE's Ed-Fi Documentation page](https://education.mn.gov/MDE/dse/datasub/edfi/doc/)
 
 ### Language Academic Honor Documentation
 **Postponed until after school year 2022-23**. Language Academic Honor information was previously collected from districts via a Microsoft Word Form in aggregate. For more information about this collection, we encourage vendors to visit:
@@ -74,4 +72,4 @@ There are two ways to view this documentation:
 
 In the Github repository, you may have trouble viewing embedded images embedded in the markdown. You have two options to remedy this: "click through" to view the image in the repository, or view the web version.
 
-In contrast, the web version does not render markdown tables into HTML tables, so tables are best viewed directly [in the Github repository](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation).
+In contrast, the web version does not render markdown tables into HTML tables, so tables are best viewed directly [in the Github repository](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation). Viewing markdown files directly within GitHub also allows you to use their [table of contents functionality](https://github.blog/changelog/2021-04-13-table-of-contents-support-in-markdown-files/) to navigate.
