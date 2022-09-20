@@ -207,6 +207,11 @@ Including the following elements:
     - Course Identification Code
     - Number of Parts
     - CourseDefinedByDescriptor = 'LEA'
+    - Please note the following elements (many optional in the API) will be required for this placeholder course by **2022-12-31**:
+      - Course Level Type Descriptor of 'X'
+      - Standards Addressed Descriptor of 'None'
+      - High School Course Requirement of '0' (false)
+      - Number of Parts = 1.
 
 7. **(UNDER DEVELOPMENT) Scenario for Project-Based Student enrollment record.** (_The data model for Project Based learning is still under development, and vendors will not be tested for the pilot year._) Create a course for Project Based section enrollments - While these types of enrollments do not include MDE course, course offering or section requirements - the Ed-Fi Model enforces these entities in the Master Schedule. At minimum, a **single Placeholder course, course offering, and section will be required for your district** to report Project Based Student Section Association records. Please also note the validation rules described in the [Level Characteristics section](descriptors_resources.md#level-characteristics) of the Descriptors and Resources document. Ed-Fi required elements:
     - Course Code: Project Based
@@ -342,12 +347,6 @@ Create the following CourseOffering Records:
     - LocalCourseCode (District Course's Code - at discretion of district)
     - Schoolid
     - SessionReference (SchoolYear, SchoolId, SessionName. Should reference a session with TermDescriptor 'NS' for non-scheduled.)
-    - Please note the following elements (many optional in the API) will be required for this placeholder course by **2022-12-31**:
-      - Course Level Type Descriptor of 'X'
-      - Standards Addressed Descriptor of 'None'
-      - High School Course Requirement of '0' (false)
-      - Number of Parts = 1.
-
 12. CourseOffering 12 for Project Based **(not submitted by SIS vendors)** **- (Requires****a single course offering linked to a single course which is associated to all project-based college courses)**
     - CourseReference (reference to district course)
     - LocalCourseCode (District Course's Code - at discretion of district)
