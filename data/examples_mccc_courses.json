@@ -13,7 +13,7 @@ Notes:
 /* DISTRICT COURSE1: Biology (type B)
 Notes:
  - Level Type B
- - EOC appears here because it is only applied to science courses that are take the year the student take the HS science MCA test. 
+ - EOC appears here because it is only applied to science courses that are taken the year the student takes the HS science MCA test. 
     The grade level year the science MCA test is given is set by the district so this indicator is the only way in MCCC to identify
     the science courses taken that year.
 */
@@ -521,6 +521,7 @@ levelType X
 {
   "courseCode": "{{districtid}}-Direct Pay PSEO",
   "courseTitle": "Direct Pay PSEO Placeholder",
+  "highSchoolCourseRequirement": 0,
   "numberOfParts": "1",
   "identificationCodes": [
       {
@@ -532,5 +533,15 @@ levelType X
   "educationOrganizationReference": {
       "educationOrganizationId": {{districtid}}
   },  
-  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA"
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA",
+  "_ext": {
+      "MN": {
+      "standardAddressedDescriptor": "uri://education.mn.gov/StandardAddressedDescriptor#None",
+      "levelTypes": [
+          {
+          "courseLevelTypeDescriptor": "uri://education.mn.gov/CourseLevelTypeDescriptor#X"
+          }
+      ]
+      }
+  }
 }

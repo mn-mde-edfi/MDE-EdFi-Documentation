@@ -342,6 +342,12 @@ Create the following CourseOffering Records:
     - LocalCourseCode (District Course's Code - at discretion of district)
     - Schoolid
     - SessionReference (SchoolYear, SchoolId, SessionName. Should reference a session with TermDescriptor 'NS' for non-scheduled.)
+    - Please note the following elements (many optional in the API) will be required for this placeholder course by **2022-12-31**:
+      - Course Level Type Descriptor of 'X'
+      - Standards Addressed Descriptor of 'None'
+      - High School Course Requirement of '0' (false)
+      - Number of Parts = 1.
+
 12. CourseOffering 12 for Project Based **(not submitted by SIS vendors)** **- (Requires****a single course offering linked to a single course which is associated to all project-based college courses)**
     - CourseReference (reference to district course)
     - LocalCourseCode (District Course's Code - at discretion of district)
