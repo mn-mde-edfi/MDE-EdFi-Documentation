@@ -219,7 +219,7 @@ This association represents Students in a State Approved Alternative Program.
 
 ## Resource: StudentSchoolFoodServiceProgramAssociation
 **Description** 
-This association represents the school food services program(s), such as the **Free or Reduced Price Lunch Program**, that a student participates in, or from which the Student receives services. This includes the ability for a district to identify whether or not the "Direct Certification" report was used to determine student eligibility.
+This association represents the school food services program(s), such as the **Free or Reduced Price Lunch Program**, that a student participates in, or from which the Student receives services. This includes the ability for a district to identify whether or not the "Direct Certification" report was used to determine student eligibility. (See [this quick reference document](/2022-23%20MDE%20Ed-Fi%20Documentation/MDE%20MARSS%20Translation%20Logic%20for%20School%20Food%20Service%20with%20Direct%20Certification.docx) for MARSS translation logic.)
 
 **Notes:** 
 1. In School Year 18-19 schoolFoodServicesEligibility was tracked as a separate field under StudentSchoolAssociation. This element is now tracked using SchoolFoodServiceProgramService on studentSchoolFoodServicesProgramAssociation.
