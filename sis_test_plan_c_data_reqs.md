@@ -113,7 +113,14 @@ This entity represents an individual who performs specified activities for any p
 - School Readiness
 - Early Childhood Family Education
 
-## Ed-Fi Model Dependency Graphs
+## Ed-Fi Model Dependency
+Ed-Fi uses a data-dependency security model that enforces the order of creation when inserting various records via the API. This is often encountered via API errors such as the following:
+>```Authorization denied. The claim does not have any established relationships with the requested resource.```
+
+The Ed-Fi Alliance calls this type of error "Dependency order enforced by authorization". More documentation on dependency order by entity relationships or by authorization is available in the [Ed-Fi 5.2 tech docs](https://techdocs.ed-fi.org/display/ODSAPIS3V520/Resource+Dependency+Order).
+
+Graphs demonstrating the dependencies of various data resources in MDE's collections are below, and a [basic overview PDF](images/ed-fi_model_dependency_mde_collections.pdf) of the various MDE collections is available.
+
 ### MARSS collection
 ![Ed-Fi Model Dependency Graph for MARSS](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_marss_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for MARSS")
 The above image describes the dependencies required to work with the MDE Ed-Fi model as part of MARSS collections. In detail:
