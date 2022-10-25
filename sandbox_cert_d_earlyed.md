@@ -116,7 +116,7 @@ This association indicates any relationship between a student and an education o
 ## Resource: StudentEarlyEducationProgramAssociations
 **Description:**
 This association represents Students in either School Readiness or Early Childhood Family Education programs. Notes:
-- The "EE-SR" and "EE-ECFE" program types are the programs intended for use with Early Education Data
+- The "EE-SR" and "EE-ECFE" program types are the programs intended for use with Early Education Data. These can also be used to cover the Early Ed programs formerly described as "SR/AB" and "ECFE/AB", respectively.
 - "End Reason Code" below correlates to "reasonExitedDescriptor" (see the similarly named Data Mapping Matrix tab)
 
 **Prerequisite Data:**
