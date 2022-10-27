@@ -228,7 +228,9 @@ To get the list of SEA-defined courses, perform a GET operation against the "cou
 Given those course records, districts will be able to relate local course records to SEA-defined courses via course-to-course association records. From there, student attendance, grades, etc can be submitted on the local courses. __Note:__ As of April 12, 2021, MDE and its contractors identified an issue with the levelCharacteristics of courses loaded into the 2021-2022 Sandboxes, which was rectified on April 29,2021. Sandboxes created before that date will have extra characteristics on the SEA courses.
 
 #### Course Data Elements and Validation
-Note that in the ```dateCourseAdopted``` element (aka "effectiveStartYear" from MCCC), the year must be less than or equal to the reporting year to be a valid code.
+This section contains information about the Course resource, including data elements within it and specific validation scenarios we want vendors to be aware of. See the individual sections below. In addition:
+ - Note that in the ```dateCourseAdopted``` element (aka "effectiveStartYear" from MCCC), the year must be less than or equal to the reporting year to be a valid code.
+ - Vendors may notice the Ed-Fi core element ```offeredGradeLevels``` in the API as an optional API. MDE prefers that vendors specifically do **NOT** include this element when submitting MCCC data to MDE via Ed-Fi.
 
 ##### Level Characteristics
 LEAs and vendors will need to understand the validation rules around course level characteristics (the "levelCharacteristics" collection on _course_) that are included on some SEA-defined courses. The following characteristics have rules*:
