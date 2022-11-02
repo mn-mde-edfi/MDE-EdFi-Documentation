@@ -24,7 +24,7 @@ Below is a list of known custom descriptors using the ```uri://education.mn.gov`
 - [AssessmentToolDescriptor](AssessmentToolDescriptor.csv)
 - [CalendarEventDescriptor](CalendarEventDescriptor.csv)
 - [CalendarTypeDescriptor](CalendarTypeDescriptor.csv)
-- [CareerClusterDescriptor](CareerClusterDescriptor.csv)
+- CareerClusterDescriptor - note that this descriptor is only used courses for defined by the SEA.
 - [ClassPeriodTypeDescriptor](ClassPeriodTypeDescriptor.csv)
 - [ClassroomPositionDescriptor](ClassroomPositionDescriptor.csv)
 - [ClassroomVolunteerDescriptor](ClassroomVolunteerDescriptor.csv)

@@ -230,7 +230,8 @@ Given those course records, districts will be able to relate local course record
 #### Course Data Elements and Validation
 This section contains information about the Course resource, including data elements within it and specific validation scenarios we want vendors to be aware of. See the individual sections below. In addition:
  - Note that in the ```dateCourseAdopted``` element (aka "effectiveStartYear" from MCCC), the year must be less than or equal to the reporting year to be a valid code.
- - Vendors may notice the Ed-Fi core element ```offeredGradeLevels``` in the API as an optional API. MDE prefers that vendors specifically do **NOT** include this element when submitting MCCC data to MDE via Ed-Fi.
+ - Vendors may notice the Ed-Fi core element ```offeredGradeLevels``` in the API as an optional component. MDE prefers that vendors specifically do **NOT** include this element when submitting MCCC data to MDE via Ed-Fi.
+ - Vendors may also notice the mn extension element ```careerClusterDescriptor``` in the API as an optional component. This element is **only** used courses for defined by the SEA (MDE). Therefore, vendors have no reason to submit career cluster data for courses their customers are creating, and it can be omitted in submissions.
 
 ##### Level Characteristics
 LEAs and vendors will need to understand the validation rules around course level characteristics (the "levelCharacteristics" collection on _course_) that are included on some SEA-defined courses. The following characteristics have rules*:
