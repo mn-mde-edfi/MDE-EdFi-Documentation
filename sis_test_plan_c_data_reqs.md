@@ -164,7 +164,7 @@ As described above, each student must first have a StudentSchoolAssociation reco
 
 Once the enrollment record exists, one or both of the EE Program Associations may then be assigned to the student.
 * Students in Grade EC, K-3 may only have an EE-ECFE program assigned; they cannot have an EE-SR program assignment.
-* Only Grade EE students may have an EE-SR program.
+* Only Grade EE students may have an EE-SR program. (If you have a need to associate students in *ECSE schools* with an EE-SR program, use the guidance in the [Early Education Disambiguation Workaround](early_ed_disamb_work.md)) document.
 * Grade EE students may also have an EE-ECFE program alone or in combination with an EE-SR program.
 
 
