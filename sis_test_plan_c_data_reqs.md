@@ -25,7 +25,7 @@ Education Organization References in the Ed-Fi API allow an API client to submit
 | Resource  | Element  | ID |
 | ----------|----------|----|
 | StudentEducationOrganizationAssociation | educationOrganizationReference.educationOrganizationId | School Id|
-| StudentProgramAssociation (all program types) | educationOrganizationReference. educationOrganizationId | School Id |
+| StudentProgramAssociation (all program types) | educationOrganizationReference.educationOrganizationId | School Id |
 | StudentProgramAssociation (all program types) | programReference.educationOrganizationId | Local Education Agency Id |
 |Course |educationOrganizationReference.educationOrganizationId|District Course – **LocalEducationAgencyId**; State Course (loaded by MDE) – **StateEducationAgencyId**; College Course – **postSecondaryInstitutionId**|
 | CourseOffering | SchoolReference; CourseReference | SchoolId; EducationOrganizationId on the Course record |
