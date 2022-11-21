@@ -45,3 +45,5 @@ Student Early Education Program Association (SEEPA) records are specific types o
 |Student ID |**10271000999001**|   "studentReference": "studentUniqueId"||
 |Enrollment Date| **2022-09-07** |"beginDate" |Should match the **unofficial date** used in SSA record 2 |
 |Program| **EE-SR**|"programReference": "programTypeDescriptor" | |
+
+*Note*: technically the date and other data can be the same for each SEEPA, and both records will be created (the second one will not overwrite the first one, even with the same date). Offsetting the date on the EE-SR record helps us process the program association properly with this workaround.
