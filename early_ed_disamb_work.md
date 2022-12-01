@@ -3,7 +3,9 @@
 
 This document describers the *workaround* for **school years 2021-22 and 2022-23** when building and submitting records for these students. We are including tabular descriptions designed for a district audience, and links to JSON examples designed for vendors.
 
-This scenario detailed here describes a student enrolled in an ECSE school (such as [Bloomington ECSE 0271-01-502](https://public.education.mn.gov/MdeOrgView/organization/show/1800)) that is also attending ECFE **and** School Readiness programs. For brevity, we are describing **only** the unique elements required to understand this workaround, not all of the requirements of each record.
+This scenario detailed here describes a student enrolled in an ECSE school (such as [Bloomington ECSE 0271-01-502](https://public.education.mn.gov/MdeOrgView/organization/show/1800)) that is also attending ECFE **and** School Readiness programs. This is just one of several scenarios that may need to use this workaround due to the inability to submit multiple SSAs for the same student, same school, and same begin date. When this problem arises and the workaround is required, the key thing to remember is to use the **actual enrollment date** for the SSA record used for MARSS Early Education programs (which use grade levels EC for ECSE, RA-RJ for SR+, PA-PJ for VPK, and PS for PS.)
+
+For brevity, we are describing just one of the potentially conflicting scenarios, and including **only** the unique elements required to understand this workaround, not all of the requirements of each record.
 
 ## Student School Association Records
 Student School Association (SSA) records can be considered enrollment records. This scenario requires *two* SSA records to be built in order to handle the MDE requirements. 
