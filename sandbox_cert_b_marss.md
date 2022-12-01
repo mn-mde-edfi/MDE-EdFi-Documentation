@@ -183,6 +183,8 @@ Districts are expected to send both gender identity and preferred pronoun values
 **Description**
 Ed-Fi Description: A set of dates associated with an organization. **MDE is not using the Calendar entity as collection of dates**; rather MDE captures the following key pieces of Calendar Metadata in the Calendar file: Instructional Days, Length of Day, and Kindergarten Schedule (when applicable). Calendar is captured at the School Level by grade. 
 
+**NOTE:** MDE expects districts to only send **one** calendar *per grade level, per school* to MDE's Ed-Fi API, selecting specifically the calendar which is expected to be used for MARSSWES financial reporting.
+
 **Prerequisite Data**
 - Schools (published to ODS by MDE)
 
