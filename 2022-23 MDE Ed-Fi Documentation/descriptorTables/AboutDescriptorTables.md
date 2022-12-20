@@ -5,7 +5,7 @@ This folder contains a series of CSV tables that list various descriptor values,
 3. Enabling viewers to see when each individual descriptor was last updated
 4. Enabling viewers a quick preview of each table when selecting it within GitHub
 
-On 2022-08-22, we published a "final" Mapping Matrix spreadsheet for the 2022-2023 school year, removing the manually-maintaned descriptor tabs. You can still see descriptor tabs in older release copies, but they will no longer be maintained. Refer to the CSVs in this folder instead for the 2022-23 school year.
+On 2022-08-22, we published a "final" Mapping Matrix spreadsheet for the 2022-2023 school year, removing the manually-maintained descriptor tabs. You can still see descriptor tabs in older release copies, but they will no longer be maintained. Refer to the CSVs in this folder instead for the 2022-23 school year.
 
 ## Source Details
 As of the most recent run, these tables are derived from the following database at MDE:
@@ -13,6 +13,8 @@ As of the most recent run, these tables are derived from the following database 
 - **School Year**: 2022-2023
 - **Environment**: Production
 - **Database**: EdFi Ods 2023 (for school year 2022-23)
+
+Refer to the change/commit log in GitHub to see what the latest changes are for this set of tables.
 
 ## List of Custom Descriptors and Links
 Below is a list of known custom descriptors using the ```uri://education.mn.gov``` namespace, excluding any subfolders within that space. Links are to the CSV files that you can view inside this directory. This list is automatically generated out of the same database as above, but there may be broken links of certain descriptors that we have not yet exported.
