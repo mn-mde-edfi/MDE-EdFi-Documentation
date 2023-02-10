@@ -133,17 +133,23 @@ The above image describes the dependencies required to work with the MDE Ed-Fi m
 7.	StudentProgramAssociations can be loaded once Programs and StudentSchoolAssociations have been loaded.
 
 ### MCCC Collection
-![Ed-Fi Model Dependency Graph for MCCC](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_mccc_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for MCCC")
+![Ed-Fi Model Dependency Graph for MCCC](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_mccc_5.2.PNG?raw=true "Ed-Fi Model Dependency Graph for MCCC")
 
 The above image describes the dependencies required to work with the MDE Ed-Fi model as part of the MCCC collection. In detail:
 1. Descriptors must be loaded first, as all other resources contain references to descriptor values.
-2. Once descriptors are loaded, Education Organization data must be loaded by MDE. For the MCCC data collection, Colleges will be loaded to the PostSecondaryInstitution resource to allow the association of a college to a college level course. State courses are associated with the StateEducationAgency.
+2. Several other dependencies are loaded by MDE:
+    - Education Organizations
+    - Colleges (in the PostSecondaryInstitution resource) 
+    - State Courses (associated with the StateEducationAgency)
+    - Staff records 
 3. The core Student records must be loaded before students may be enrolled in courses.
-4. Student enrollment data must be provided via StudentSchoolAssociation in order to establish a valid security claim before any other updates may be made to student records
-5. Courses, course offerings, and sections can be loaded after Education Organizations. State Courses are pre-loaded by MDE. 
-6. Class Periods can be loaded after Education Organizations.
-7. Staff, Staff Section Associations, and StudentSectionAssociations can be loaded after Sections. 
-8. Once student section enrollment data is loaded, grades and grading period assications can be assigned.
+4. Student enrollment data must be provided via StudentSchoolAssociation in order to establish a valid security claim before any other updates may be made to student records.
+5. Grading Periods can be created after Education Organizations, and must be created before students can be assigned course grades.
+6. Sessions and Class Periods can be loaded after Education Organizations. Sessions must be loaded before Course Offerings, and Class Periods must be loaded before Sections.
+7. Courses and CourseCourse Associations can be loaded after Education Organizations.
+8. After Courses are created, Course Offerings can be loaded, and then Sections after that.
+9. Staff Section Associations, and StudentSectionAssociations can be loaded after Sections. 
+10. Once Student Section Associations are created, course Grades can be assigned using references to the Grading Periods.
 
 ### Early Education Enrollment and Parent collection
 ![Ed-Fi Model Dependency Graph for Early Ed](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_early_ed_parent_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for Early Ed")

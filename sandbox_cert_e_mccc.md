@@ -182,7 +182,6 @@ Including the following elements:
       - CourseIdentificationCode - repeat the CourseCode (this is an ed-fi requirement)
       - CourseIdentificationSystemDescriptor = 'LEA course code' for the first two, 'University Course Code' for the PSEO courses
 
-
 5. Create a District Course for Independent Study
     **NOTE:** Independent Study course section enrollments did not previously require the setup of a course section - the Ed-Fi Model enforces the full set of master schedule entities (course, course offering and section) in order to associate a student with a course and record grades for that course.
 
@@ -220,7 +219,17 @@ Including the following elements:
     - Number of Parts
     - CourseDefinedByDescriptor = 'LEA'
 
-8. Create CourseCourseAssociation records between the district Courses and State Level Courses (including IS, and Project Based if applicable)
+## Resource: CourseCourseAssociation
+*Note:* The following scenarios *directly reference* the Courses created above. For example, "College Course A" below references the "Course Level Type A" created above under "Create **College** Courses". Vendors may find it useful to track the courses created above with their own labels and identifiers before continuing with the section below.
+
+### Description
+```CourseCourseAssociations``` connect various Course records to one another, to support situations such as:
+ - Associating a Course created by the LEA to its relevant State Level Course
+ - Associating a College Level Course created by the LEA to the appropriate College Organization, as needed
+ - Supporting connections for various PSEO requirements, as needed
+
+### Scenarios
+1. Create CourseCourseAssociation records between the district Courses and State Level Courses (including IS, and Project Based if applicable)
     - EducationOrganizationId = District ID
     - CourseCode = District Course Code
     - ToCourseEducationOrganizationId = State Education Agency ID (999999000)
@@ -228,13 +237,13 @@ Including the following elements:
       - IS can only be related to state courses with CourseLevelCharacteristicDescription = IS and Project Based can be related to state courses with CourseLevelCharacteristicDescription = PBL. See the [Level Characteristics section](descriptors_resources.md#level-characteristics) for validation details.
       - Scheduled course work type cannot use CourseLevelCharacteristicDescription = PBL.
 
-9. Create CourseCourseAssociation records between the College Courses A and D and the District Courses created for this association.
+2. Create CourseCourseAssociation records between the College Courses A and D and the District Courses 4 & 5, which were created for this association.
     - EducationOrganizationId = District ID
     - CourseCode = District Course Code
     - ToCourseEducationOrganizationId = College Course's PostSecondaryInstitutionId
     - ToCourseCode = College Course Code
 
-10. Create CourseCourseAssociation records between the Direct Pay College Courses and the applicable State Course (PSEO Direct Pay)
+10. Create CourseCourseAssociation records between the 2 Direct Pay College Courses and the applicable State Course (PSEO Direct Pay)
     - EducationOrganizationId = College Education Organization ID
     - CourseCode = College Course Code
     - ToCourseEducationOrganizationId = State Education Agency ID (999999000)
