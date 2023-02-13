@@ -5,14 +5,14 @@ This folder contains a series of CSV tables that list various descriptor values,
 3. Enabling viewers to see when each individual descriptor was last updated
 4. Enabling viewers a quick preview of each table when selecting it within GitHub
 
-On 2022-08-22, we published a "final" Mapping Matrix spreadsheet for the 2022-2023 school year, removing the manually-maintained descriptor tabs. You can still see descriptor tabs in older release copies, but they will no longer be maintained. Refer to the CSVs in this folder instead for the 2022-23 school year.
+On 2022-08-22, we published a "final" Mapping Matrix spreadsheet for the 2022-2023 school year, removing the manually-maintained descriptor tabs. You can still see descriptor tabs in older release copies, but they will no longer be maintained. Refer to the CSVs in this folder instead for either the coming school year (spring), or the current school year in effect (summer, fall, and winter). See details below.
 
 ## Source Details
 As of the most recent run, these tables are derived from the following database at MDE:
 - **Version**: 5.2
-- **School Year**: 2022-2023
-- **Environment**: Production
-- **Database**: EdFi Ods 2023 (for school year 2022-23)
+- **School Year**: 2023-2024
+- **Environment**: Test Sandbox
+- **Database**: EdFi_sb24_Ods_Minimal_Template
 
 Refer to the change/commit log in GitHub to see what the latest changes are for this set of tables.
 

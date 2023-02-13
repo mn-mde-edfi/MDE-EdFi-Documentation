@@ -27,7 +27,7 @@ The following updates are currently being implemented for school year 2023-2024:
 Vendor certification scenarios are being created for the Ambiguity Resolution change, and will be linked here once drafted. In the meantime, a description of the problem being resolved is available in [this workaround document](./early_ed_disamb_work.md).
 
 #### New Data Collections
-No new data collections are planned for school year 2023-2024. MCCC and Assessment collections remain in the pilot stages.
+No new data collections are planned for school year 2023-2024.
 
 #### Certification Scenarios for Future Years
 Several of the new data collections originally planned for school year 2022-2023 are now **Postponed until further notice**. However, they are addressed in this documentation with either new or updated certification scenarios. A brief list of those scenarios is below.
