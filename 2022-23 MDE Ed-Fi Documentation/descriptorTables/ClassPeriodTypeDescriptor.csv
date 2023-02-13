@@ -1,6 +1,0 @@
-"Mapping Method","Namespace","Descriptor Name","Code Value","Short Description","Description","Length of Short Desc"
-"Extension","uri://education.mn.gov/ClassPeriodTypeDescriptor","ClassPeriodTypeDescriptor","AS","AFTER_SCHOOL","AFTER_SCHOOL","12"
-"Extension","uri://education.mn.gov/ClassPeriodTypeDescriptor","ClassPeriodTypeDescriptor","BS","BEFORE_SCHOOL","BEFORE_SCHOOL","13"
-"Extension","uri://education.mn.gov/ClassPeriodTypeDescriptor","ClassPeriodTypeDescriptor","DS","DURING_SCHOOL","DURING_SCHOOL","13"
-"Extension","uri://education.mn.gov/ClassPeriodTypeDescriptor","ClassPeriodTypeDescriptor","DSL","DURING_SCHOOL_LUNCH","DURING_SCHOOL_LUNCH","19"
-"Extension","uri://education.mn.gov/ClassPeriodTypeDescriptor","ClassPeriodTypeDescriptor","ES","EVENING_SCHOOL","EVENING_SCHOOL","14"

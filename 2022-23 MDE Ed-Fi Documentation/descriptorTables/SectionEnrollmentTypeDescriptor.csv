@@ -1,6 +1,0 @@
-"Mapping Method","Namespace","Descriptor Name","Code Value","Short Description","Description","Length of Short Desc"
-"Extension","uri://education.mn.gov/SectionEnrollmentTypeDescriptor","SectionEnrollmentTypeDescriptor","AI","ALC_IND_STUDY","ALC_IND_STUDY","13"
-"Extension","uri://education.mn.gov/SectionEnrollmentTypeDescriptor","SectionEnrollmentTypeDescriptor","DP","DIRECT_PAY_PSEO","DIRECT_PAY_PSEO","15"
-"Extension","uri://education.mn.gov/SectionEnrollmentTypeDescriptor","SectionEnrollmentTypeDescriptor","OP","OFFSITE_PSEO","OFFSITE_PSEO","12"
-"Extension","uri://education.mn.gov/SectionEnrollmentTypeDescriptor","SectionEnrollmentTypeDescriptor","PB","PROJECT_BASED","PROJECT_BASED","13"
-"Extension","uri://education.mn.gov/SectionEnrollmentTypeDescriptor","SectionEnrollmentTypeDescriptor","SC","SCHEDULED","SCHEDULED","9"

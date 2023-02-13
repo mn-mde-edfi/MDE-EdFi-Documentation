@@ -484,7 +484,7 @@ Notes:
 2. As of April 2021, LocalCreditEarned has an erroneous label/definition in Swagger of ""College credit earned". It should say "LEA credit earned".
 
 ## Online Learning
-**Postponed until after school year 2022-23.**
+**Postponed until further notice.**
 
 The Online Learning (OLL) Course Completion information is submitted by state-approved OLL programs to request OLL aid for public school students who complete OLL supplemental courses but who are enrolled in another Minnesota school district. Certification Scenarios for Online Learning are being placed in this document due to the integration with MCCC.
 
