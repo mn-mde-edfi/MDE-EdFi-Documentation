@@ -40,7 +40,7 @@ This association represents Students in the Early Childhood Screening Associatio
 
 **Prerequisite Data**
 - Schools
-- Program - where ProgramTypeDescriptor = "Early Childhood Screening"
+- Program - where ProgramTypeDescriptor = "EE-ECS"
 - Students
 
 **Scenarios**
