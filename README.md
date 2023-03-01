@@ -24,7 +24,7 @@ The following updates are currently being implemented for school year 2023-2024:
 - Early Education / MARSS Program Ambiguity Resolution 
 - Various descriptor changes
 
-Vendor certification scenarios are being created for the Ambiguity Resolution change, and will be linked here once drafted. In the meantime, a description of the problem being resolved is available in [this workaround document](./early_ed_disamb_work.md).
+Vendor certification scenarios are being updated for the Ambiguity Resolution change, and will be linked here once drafted. In the meantime, a description of the problem being resolved is available in [this workaround document](./early_ed_disamb_work.md).
 
 #### New Data Collections
 No new data collections are planned for school year 2023-2024.
