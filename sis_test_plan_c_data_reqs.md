@@ -27,7 +27,7 @@ Education Organization References in the Ed-Fi API allow an API client to submit
 | StudentEducationOrganizationAssociation | educationOrganizationReference.educationOrganizationId | School Id|
 | StudentProgramAssociation (all program types) | educationOrganizationReference.educationOrganizationId | School Id |
 | StudentProgramAssociation (all program types) | programReference.educationOrganizationId | Local Education Agency Id |
-|Course |educationOrganizationReference.educationOrganizationId|District Course – **LocalEducationAgencyId**; State Course (loaded by MDE) – **StateEducationAgencyId**; College Course – **postSecondaryInstitutionId**|
+|Course |educationOrganizationReference.educationOrganizationId|District Course - **LocalEducationAgencyId**; State Course (loaded by MDE) - **StateEducationAgencyId**; College Course - **postSecondaryInstitutionId**|
 | CourseOffering | SchoolReference; CourseReference | SchoolId; EducationOrganizationId on the Course record |
 | ClassPeriod | SchoolReference | SchoolId |
 | Section | CourseOfferingReference; ClassPeriodReference | SchoolId; SchoolId |
@@ -164,15 +164,7 @@ The above image describes the dependencies required to work with the MDE Ed-Fi m
 8.	Parent Records, Students and Enrollment records are required prior to setting the Student Parent Association.
 
 #### Grade / Enrollment Requirements for Early Education Enrollment
-As described above, each student must first have a StudentSchoolAssociation record (an enrollment record). For EE Enrollment, allowable grades are EC, K-3 or EE. 
-* Use Grade EE if the student is not already enrolled in a regular grade
-* Use Grade EE if the EE program service is provided in a different school than the regular grade.
-
-Once the enrollment record exists, one or both of the EE Program Associations may then be assigned to the student.
-* Students in Grade EC, K-3 may only have an EE-ECFE program assigned; they cannot have an EE-SR program assignment.
-* Only Grade EE students may have an EE-SR program. (If you have a need to associate students in *ECSE schools* with an EE-SR program, use the guidance in the [Early Education Disambiguation Workaround](early_ed_disamb_work.md)) document.
-* Grade EE students may also have an EE-ECFE program alone or in combination with an EE-SR program.
-
+As described above, each student must first have a StudentSchoolAssociation record (an enrollment record). Starting in SY2023-24, all EE enrollments will use grade 'EE'. 
 
 # Navigation
 - [Return to SIS Test Plan Overview](sis_test_plan_a_toc.md)
