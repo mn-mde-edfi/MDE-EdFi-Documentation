@@ -14,6 +14,8 @@ As of the most recent run, these tables are derived from the following database 
 - **Environment**: Test Sandbox
 - **Database**: EdFi_sb24_Ods_Minimal_Template
 
+**Exception**: The Calendar Type Descriptor values are pulled from production EdFi_Ods_2023 until such time the recent updates are reflected in 2024 databases.
+
 Refer to the change/commit log in GitHub to see what the latest changes are for this set of tables.
 
 ## List of Custom Descriptors and Links
