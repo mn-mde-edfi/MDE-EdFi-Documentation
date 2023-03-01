@@ -15,3 +15,4 @@
 "Core","uri://education.mn.gov/MediumOfInstructionDescriptor","MediumOfInstructionDescriptor","ITVS","ITVSend","ITV Sending","7"
 "Core","uri://education.mn.gov/MediumOfInstructionDescriptor","MediumOfInstructionDescriptor","O","Other","Other","5"
 "Core","uri://education.mn.gov/MediumOfInstructionDescriptor","MediumOfInstructionDescriptor","SFSL","State-Funded Supplemental","Use this designation for state-funded online courses that can be taken to replace courses offered in the enrolling district. One specific use is by state-approved online providers to indicate supplemental online courses. ","25"
+"Core","uri://education.mn.gov/MediumOfInstructionDescriptor","MediumOfInstructionDescriptor","SL","Supplemental","Use this designation for online courses that can be taken to replace courses offered in the enrolling district. One specific use is by state-approved online providers to indicate supplemental online courses.","12"
