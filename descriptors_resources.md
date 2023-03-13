@@ -45,28 +45,9 @@ Since some descriptors are used for multiple data elements, within the ODS API t
 Usually the required relationship can be found within the Data Mapping Matrix. Vendors that spot any discrepancies or missing elements are encouraged to contact the [Ed-Fi vendor support team](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us) by email. 
 
 ### Duplicate "BR" value within accommodationDescriptors
-When viewing SY2021 descriptors, you might note that the code value of "BR" is repeated within ```accommodationDescriptors```, causing problems with database loads that assume that code value is unique across all of those descriptors. However, when incorporating namespace, those values become unique: the value to describe "BR – Accomodation" is within "access" and the value for "Braille" is within "mcamtas", as shown in the descriptor JSON below (available from Swagger). Note that for now this descriptor can be ignored because it's only used by assessment precode which isn't in scope until at least SY22-23 or later.
+**As of 2023-02-28, the duplicate descriptor within the "access" namespace has been deleted from SY2022-23 ODS instances.** For 2023-24, the duplicate issue described below is no longer an issue, given expanded re-classification of Braille accommodation descriptors.
 
-```javascript
-{
-    "id": "9dc5618028ab4caf9bc336a7a0a962f1",
-    "accommodationDescriptorId": 2996,
-    "codeValue": "BR",
-    "description": "BR - Accommodation",
-    "namespace": "uri://education.mn.gov/access/AccommodationDescriptor",
-    "shortDescription": "BR - Accommodation",
-    "_etag": "5248795699641457904"
-  },
-  {
-    "id": "916ef20130b74698ace01f5b559676ca",
-    "accommodationDescriptorId": 2997,
-    "codeValue": "BR",
-    "description": "Braille",
-    "namespace": "uri://education.mn.gov/mcamtas/AccommodationDescriptor",
-    "shortDescription": "Braille",
-    "_etag": "5248795699641457904"
-  },
-```
+>When viewing SY2021 descriptors, you might note that the code value of "BR" is repeated within ```accommodationDescriptors```, causing problems with database loads that assume that code value is unique across all of those descriptors. However, when incorporating namespace, those values become unique: the value to describe "BR - Accomodation" is within "access" and the value for "Braille" is within "mcamtas", as shown in the descriptor JSON below (available from Swagger). Note that for now this descriptor can be ignored because it's only used by assessment precode which isn't in scope until at least SY22-23 or later.
 
 ### ClassroomVolunteerDescriptors
 In the transition to Ed-Fi, MDE is collecting less detail around classroom volunteers compared to past collections in the [Early Education Student Data System](https://education.mn.gov/MDE/dse/datasub/EarlyLearnServDataReport). The table below provides a translation between EES and EdFi:
