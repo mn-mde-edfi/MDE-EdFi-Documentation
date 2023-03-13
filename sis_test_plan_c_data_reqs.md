@@ -1,8 +1,8 @@
-# 2022-2023 Data Requirements and API Resources
-This document is part of the MDE Ed-Fi [Vendor and District Test Plan](sis_test_plan_a_toc.md). It is intended to complement and build upon the similarly named section in the [official documentation](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/blob/master/2021-22%20MDE%20Ed-Fi%20Documentation/2021-22%20SIS%20Vendor%20and%20District%20Test%20Plan.docx). For details on the API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](sandbox_cert_a_toc.md)
+# Data Requirements and API Resources
+This document is part of the MDE Ed-Fi [Vendor and District Test Plan](sis_test_plan_a_toc.md).  For details on the API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](sandbox_cert_a_toc.md)
 
 ## API Documentation
-For each of the resources described in this document, the elements/properties required are included and browseable in the [Sandbox Swagger UI](https://test.edfi5.education.mn.gov/swagger/) (aka "Swagger") under the current profile.
+For each of the resources described in this document, the elements/properties required are included and browseable in the Sandbox Swagger UI (aka "Swagger") under the current profile. (More information about Swagger is in the [Sandbox Certification Testing document](sis_test_plan_b_cert_testing.md).)
 
 ### Example
 As an example, to view the required resource properties for a **studentSchoolAssociation**, open the "POST" action in Swagger:
@@ -15,9 +15,9 @@ Properties in a **studentSchoolAssociation** can be viewed as an [example/templa
 Definitions and Data Types in the **studentSchoolAssociation** can be viewed by selecting **“Model”** just to the right of the "Example Value" option. Required components are marked with a red *. Often, the actual data posting for an individual record can be much less than what is in the model, as demonstrated in [this example record](data\example_value_studentSchoolAssociation.json).
 
 ## Mapping Documentation
-For context around how each MDE collection maps to the Ed-Fi Data Standard please view the Mapping Matrix spreadsheets published in the "(YYYY-YY School Year) MDE Ed-Fi Documentation" folders [at the top of this repository](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation).
+For context around how each MDE collection "maps" to the Ed-Fi Data Standard please view the Mapping Matrix spreadsheets published in the "(YYYY-YY School Year) MDE Ed-Fi Documentation" folders [at the top of this repository](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation).
 
-Each school year's Data Mapping Matrix spreadsheet includes the mappings between MDE elements and Ed-Fi core and extension entities and elements, in the **Data Elements** tab. Additionally, the Descriptor values applicable to each Collection are also included in these documents for reference, in the remaining tabs of the spreadsheet. (We are currently testing out a process to automate custom descriptor CSVs as exports from the database, allowing you to view individual descriptor tables as well as more easily visualize changes and history.)
+Each school year's Data Mapping Matrix spreadsheet includes the mappings between MDE elements and Ed-Fi core and extension entities and elements, in the **Data Elements** tab. Whereas previously these spreadsheets also contained tabs for custome descriptor values, those are now accessible within the [descriptorTables folder](./descriptorTables/). (See the "AboutDescriptorTables" markdown document within that folder.)
 
 ## Education Organization Id usage by Resource
 
@@ -94,24 +94,7 @@ This entity represents an individual who performs specified activities for any p
 
 **Description**
 
-*Ed-Fi Description*: This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students. **MDE will create the following programs with these program types**: 
-
-- Section 504 Plan
-- Title I Part A
-- English Learner
-- Gifted and Talented
-- Special Education
-- 21st Century Learning Center Grant
-- Alternative Delivery Of SIS
-- Coordinated Early Intervening Services
-- Homeless
-- PSEO Concurrent
-- PSEO Program
-- School Food Service
-- Early Childhood Screening
-- SAAP
-- School Readiness
-- Early Childhood Family Education
+*Ed-Fi Description*: This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students. **MDE will automatically create programs for each LEA** with the program types identified in the [ProgramTypeDescriptor table](/descriptorTables/ProgramTypeDescriptor.csv).
 
 ## Ed-Fi Model Dependency
 Ed-Fi uses a data-dependency security model that enforces the order of creation when inserting various records via the API. This is often encountered via API errors such as the following:
@@ -164,7 +147,7 @@ The above image describes the dependencies required to work with the MDE Ed-Fi m
 8.	Parent Records, Students and Enrollment records are required prior to setting the Student Parent Association.
 
 #### Grade / Enrollment Requirements for Early Education Enrollment
-As described above, each student must first have a StudentSchoolAssociation record (an enrollment record). Starting in SY2023-24, all EE enrollments will use grade 'EE'. 
+As described above, each student must first have a StudentSchoolAssociation record (an enrollment record). Starting in SY2023-24, all EE enrollments will use grade 'EE' as described in [this resolution document](./2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_disamb_resolution_v2023-03-10.pdf).
 
 # Navigation
 - [Return to SIS Test Plan Overview](sis_test_plan_a_toc.md)
