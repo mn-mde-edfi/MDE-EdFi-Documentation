@@ -1,5 +1,5 @@
 # Early Education Enrollment Certification **Scenarios**: API Resources
-_Please note: the following scenarios are example situations, intended to demonstrate that your application can update the MDE Ed-Fi ODS appropriately. They do not necessarily demonstrate all valid combinations; for example, all funding source codes can be used for both School Readiness (SR) and Early Childhood Family Education (ECFE). **These scenarios will be updated for school year 2023-2024, which resolves the Early Education disambiguation issue.**_
+_Please note: the following scenarios are example situations, intended to demonstrate that your application can update the MDE Ed-Fi ODS appropriately. They do not necessarily demonstrate all valid combinations; for example, all funding source codes can be used for both School Readiness (SR) and Early Childhood Family Education (ECFE). **Continuous updates are being applied to these scenarios for school year 2023-2024, resolving the Early Education program ambiguity issue.**_
 
 For more information, see the [Early Education Enrollment and Parent collection dependencies section](sis_test_plan_c_data_reqs.md#early-education-enrollment-and-parent-collection) of the SIS Vendor test plan data requirements document.
 

@@ -110,8 +110,7 @@ This association represents the Title III Language Instruction for Limited Engli
 **Postponed until further notice.**
 
 ### **Description**
-This association represents the Title I Part D Neglected or Delinquent program(s) that a student participates in or from which the Student receives services.
-**NOTE:** these certification scenarios are **DRAFT** as of MAY 27, 2022, and **LAST UPDATED** JUNE 10, 2022. Vendors may want to use [the sample JSON](/data/2022-2023%20Extensions/StudentNeglectedOrDelinquentProgramAssociations.json) for this association to better understand the data model.
+This association represents the Title I Part D Neglected or Delinquent program(s) that a student participates in or from which the Student receives services. Vendors may want to use [the sample JSON](/data/2022-2023%20Extensions/StudentNeglectedOrDelinquentProgramAssociations.json) for this association to better understand the data model.
 
 ### **Prerequisite Data**
 - 5 Students
@@ -222,7 +221,7 @@ This association represents Students in a State Approved Alternative Program.
 This association represents the school food services program(s), such as the **Free or Reduced Price Lunch Program**, that a student participates in, or from which the Student receives services. This includes the ability for a district to identify whether or not the "Direct Certification" report was used to determine student eligibility. (See [this quick reference document](/2022-23%20MDE%20Ed-Fi%20Documentation/MDE%20MARSS%20Translation%20Logic%20for%20School%20Food%20Service%20with%20Direct%20Certification.docx) for MARSS translation logic.)
 
 **Notes:** 
-1. In School Year 18-19 schoolFoodServicesEligibility was tracked as a separate field under StudentSchoolAssociation. This element is now tracked using SchoolFoodServiceProgramService on studentSchoolFoodServicesProgramAssociation.
+1. In early Ed-Fi implementations, schoolFoodServicesEligibility was tracked as a separate field under StudentSchoolAssociation. This element is now tracked using SchoolFoodServiceProgramService on studentSchoolFoodServicesProgramAssociation.
 2. Usage and of the [Applied but Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify) element in the Student Education Organization Association has been **Postponed until further notice.**
 
 **Prerequisite Data**
@@ -234,9 +233,9 @@ This association represents the school food services program(s), such as the **F
 1. Associate Student 11 with this StudentProgramAssociation using SchoolFoodServiceProgramServiceDescriptor = 2 (Free)
 2. Change SchoolFoodServiceProgramServiceDescriptor to 1 (Reduced)
 
-### **New for School Year 2022-23**
+**Direct Certification**
 
-The following scenarios are added for school year 2022-23 to test for _Direct Certification_:
+The following scenarios were  added in school year 2022-23 to test for _Direct Certification_:
   1. Associate Student 1 as code **2 (Free)** based on the application for educational benefits. Demonstrate that this student's default value for Direct Certification is **false**. Then set the Direct Certification element to **true** for this student.
   2. Associate Student 2 as **1 (Reduced)** on the application for educational benefits. Demonstrate that this student's default value for Direct Certification is **false**. Then set the Direct Certification element to **True** for this student. Then, set the Direct Certification element to **False**.
   3. Demonstrate that Student 3 is not eligible by default (no assocation). Now associate this student to **2 (Free)** and set the Direct Certification element to **True**.
