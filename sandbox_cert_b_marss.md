@@ -87,12 +87,6 @@ Please note that additional collections integrated into SEOA have been **postpon
 _Note 1_: as in the Student record, the student's legal name should be used in the StudentEducationOrganizationAssociation.
 _Note 2_: In **school year 2022-23**, with upgrading to version 5.2, the ```ancestryEthnicOrigins``` element became part of Ed-Fi core, and not in the Minnesota extension.
 
-### Applied but Did Not Qualify
-**Postponed until further notice:** This provides the ability for the district to identify a student that applied for the National School Lunch Program (NSLP) but did not qualify and is not served Free or Reduced Price meals.
-
-**Scenario**
-- Designate **Student 2** accordingly by adding ```studentCharacteristicDescriptor``` codeValue 10 (Applied for National School Lunch Program but did not qualify) to the ```studentCharacteristics``` collection.
-
 ### Displaced Students and Student Crisis Events
 **Postponed until further notice:** This provides a way to identify crisis events that may have displaced students in the district. 
 
@@ -183,7 +177,7 @@ Districts are expected to send both gender identity and preferred pronoun values
 **Description**
 Ed-Fi Description: A set of dates associated with an organization. **MDE is not using the Calendar entity as collection of dates**; rather MDE captures the following key pieces of Calendar Metadata in the Calendar file: Instructional Days, Length of Day, and Kindergarten Schedule (when applicable). Calendar is captured at the School Level by grade. 
 
-**NOTE:** MDE expects districts to only send **one** calendar *per grade level, per school* to MDE's Ed-Fi API, selecting specifically the calendar which is expected to be used for MARSSWES financial reporting. As of **school year 2023-24**, a new CalendarType descriptor value has been added: "MARSS-A". This allows district users to distinguish between calendars intended for MARSS vs. calendars that should **not** be loaded into MARSS (designated with the "School/Grade Characteristics" descriptor value). _Please contact MDE if you want to have your LEAs implement this change for sy2024._
+**NOTE:** MDE expects districts to only send **one** calendar *per grade level, per school* to MDE's Ed-Fi API, selecting specifically the calendar which is expected to be used for MARSSWES financial reporting. As of **school year 2023-24**, a new CalendarType descriptor value has been added: "MARSS-A". This allows district users to distinguish between calendars intended for MARSS vs. calendars that should **not** be loaded into MARSS (designated with the "School/Grade Characteristics" descriptor value). _Until a pilot is complete, please hold off on implementing this change for the 2023-24 school year._
 
 **Prerequisite Data**
 - Schools (published to ODS by MDE)
@@ -197,12 +191,14 @@ Ed-Fi Description: A set of dates associated with an organization. **MDE is not 
 3.	Create calendar record for Elementary School for Kindergarten only - use grade KG
     - Length of day = 360
     - Instructional Days = 165
-4.	Create Full Year School Readiness Plus calendar for Elementary School grade RA
+4.	Create Full Year School Readiness Plus calendar for Elementary School grade EE
     - Length of day = 150
     - Instructional Days = 148
-5.	Create Half Year School Readiness Plus calendar for Elementary School grade RB
+    - TBD: add an element designating the section A
+5.	Create Half Year School Readiness Plus calendar for Elementary School grade EE
     - Length of day = 150
     - Instructional Days = 78
+    - TBD: add an element designating the section B
 6.	Create Middle School Calendar
 7.	Create High School Calendar
 

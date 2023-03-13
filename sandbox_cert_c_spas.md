@@ -104,7 +104,6 @@ This association represents the Title III Language Instruction for Limited Engli
 1.	Associate Student 7 with this StudentProgramAssociation where English Learner Participation is set to True (Indicates EL Served)
 2.	Change the English Learner Participation to False, to Indicate EL Identified, but not served
 3.	Associate another student with this program and set the language service code to 'Newcomer Program'
-4. ****Postponed until further notice.****: Associate another student with this program and set the language service code to 'Other'. In addition, add text to the ```languageInstructionProgramServiceOtherDescription``` element to describe the 'Other' program.
 
 ## Resource: StudentNeglectedOrDelinquentProgramAssociation
 **Postponed until further notice.**

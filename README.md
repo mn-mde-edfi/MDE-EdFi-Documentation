@@ -40,8 +40,6 @@ Several of the new data collections originally planned for prior school years ar
   - [Virtual School Status](sandbox_cert_g_school_attribute.md#virtual-school-status)
   - [Title I Part A School Designation](sandbox_cert_g_school_attribute.md#title-i-part-a-school-designation)
   - [Student Preferred Name ](sandbox_cert_b_marss.md#preferred-name)
-  - [Applied But Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify)
-  - [Other Language Instruction Program Service Description](sandbox_cert_c_spas.md#resource-studentlanguageinstructionprogramassociation)
   - [Displaced Students and Student Crisis Events](sandbox_cert_b_marss.md#displaced-students-and-student-crisis-events)
 
 #### Migration of Custom Descriptor Tables
