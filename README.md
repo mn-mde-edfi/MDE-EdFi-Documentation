@@ -12,25 +12,26 @@ This repository contains technical documentation for Minnesota's implementation 
 The primary audience for this documentation is SIS vendors and State of Minnesota technical staff (from MDE and MNIT).
 
 ## Markdown Documentation
-MNIT supporting MDE is now complementing each collection year's documentation in markdown files. While some documentation remains in Word and Excel within this repository, the markdown files at the top level of this repository represent an effort to store and maintain the documentation in markdown, in particular:
+MNIT supporting MDE is now complementing each collection year's documentation in markdown and CSV files. While some documentation remains in Word and Excel within this repository, the markdown files at the top level of this repository represent an effort to store and maintain the documentation in markdown and CSV, in particular:
 
 - [SIS and Vendor Test Plan](sis_test_plan_a_toc.md)
 - [Sandbox Certification Scenarios](sandbox_cert_a_toc.md)
+- [Descriptor Tables](./descriptorTables/)
 
-By serving documentation in both Word and Markdown, our goal is to increase vendor access to the documentation as well as provide options for understanding and visualization changes over time.
+By serving documentation in multiple formats, our goal is to increase vendor access to the documentation as well as provide options for understanding and visualization changes over time.
 
 ### School Year 2023-2024 Plans
-The following updates are currently being implemented for school year 2023-2024:
+The following updates are being implemented for school year 2023-2024:
 - Early Education / MARSS [Program Ambiguity Resolution](./2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_disamb_resolution_v2023-03-10.pdf)
-- Various descriptor changes (see the top-level ``descriptorTables`` folder)
+- Various descriptor changes (see the [descriptor tables folder](./descriptorTables/))
 
-Vendor certification scenarios are being updated for the Ambiguity Resolution change, and will be linked here once drafted. In the meantime, a description of the problem being resolved is available in the document linked above. For reference, [this workaround document](./early_ed_disamb_work.md) details the methods requested of vendors to work around this issue for school year 2022-23 and prior.
+Vendor certification scenarios are being updated for the Ambiguity Resolution change, and are currently drafted within the [early education scenarios](/sandbox_cert_d_earlyed.md). In the meantime, a description of the problem being resolved is available in the document linked above. For reference, [this workaround document](./early_ed_disamb_work.md) details the methods requested of vendors to work around this issue for school year 2022-23 and prior.
 
 #### New Data Collections
-No new data collections are planned for school year 2023-2024.
+_No new data collections are planned for school year 2023-2024._
 
 #### Certification Scenarios for Future Years
-Several of the new data collections originally planned for school year 2022-2023 are now **Postponed until further notice**. However, they are addressed in this documentation with either new or updated certification scenarios. A brief list of those scenarios is below.
+Several of the new data collections originally planned for prior school years are now **Postponed until further notice**. However, they are addressed in this documentation with either new or updated certification scenarios. A brief list of those scenarios is below.
 
   - [Language Academic Honors](sandbox_cert_b_marss.md#language-academic-honors) (see [additional documentation](#language-academic-honor-documentation) below)
   - [Gender Identities and Preferred Pronouns](sandbox_cert_b_marss.md#gender-identity-and-preferred-pronouns)
@@ -53,6 +54,7 @@ We will also use this repository to store additional documentation and links tha
 - [Descriptors and Resources](descriptors_resources.md). This document contains additional information about specific descriptors and data resources that can prove useful in understanding MDE's Ed-Fi implementation.
 - [Transactional Update Procedures](transactional_updates.md) covers some of the core concepts of updating records with individual transactions in lieu of bulk uploads, including some examples from Ed-Fi to illustrate.
 - Additional Documentation, particularly useful to districts/LEAs, is available on [MDE's Ed-Fi Documentation page](https://education.mn.gov/MDE/dse/datasub/edfi/doc/)
+- The [Common Ed-Fi Errors page](/common_errors.md) will attempt to provide additional documentation on the types of API errors that can arise for vendors and LEAs.
 
 ### Language Academic Honor Documentation
 **Postponed until further notice**. Language Academic Honor information was previously collected from districts via a Microsoft Word Form in aggregate. For more information about this collection, we encourage vendors to visit:
@@ -72,6 +74,4 @@ There are two ways to view this documentation:
 1. [in the Github repository](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation) where ```https://github.com/mn-mde-edfi/``` is in the beginning of the URL in your browser. Raw markdown files are in the "code" section, with links to each other. Github renders this markdown as readable content.
 2. in a ["Web Version"](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/) in which Github attempts to automatically render the markdown files as HTML, and where ```https://mn-mde-edfi.github.io/``` is in the beginning of the URL in your browser
 
-In the Github repository, you may have trouble viewing embedded images embedded in the markdown. You have two options to remedy this: "click through" to view the image in the repository, or view the web version.
-
-In contrast, the web version does not render markdown tables into HTML tables, so tables are best viewed directly [in the Github repository](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation). Viewing markdown files directly within GitHub also allows you to use their [table of contents functionality](https://github.blog/changelog/2021-04-13-table-of-contents-support-in-markdown-files/) to navigate.
+In general we recommend using the GitHub repository version, given the limitations of the web version. For example, the web version does not render markdown tables into HTML tables, so tables are best viewed directly [in the Github repository](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation). Viewing markdown files directly within GitHub also allows you to use their [table of contents functionality](https://github.blog/changelog/2021-04-13-table-of-contents-support-in-markdown-files/) to navigate.
