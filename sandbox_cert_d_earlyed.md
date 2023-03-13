@@ -8,17 +8,17 @@ For more information, see the [Early Education Enrollment and Parent collection 
 This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation.
 
 **Prerequisite Data:**
-- Students
+- Students (create 6 students, referenced as students A-F below)
 - Schools
 
 **Scenarios:**
-1.	Submit an Early Education Enrollment record (StudentSchoolAssociation with entrygradelevel = EE) 
+1.	1.	Submit a StudentSchoolAssociation record for **Student A**
     - Required elements
         - School Id
         - Student Unique Id
-        - Entry Grade Level = EE
+        - Entry Grade Level = **EE**
         - Entry Type (Last Location Code) = 0
-        - Entry Date = 9/5/2020
+        - Entry Date = 9/5/2023
         - Exit Withdraw Date (Defaulted to end of school year)
         - Exit Withdraw Type = 20
         - Homebound Service Indicator = N
@@ -30,23 +30,56 @@ This association represents the School in which a student is enrolled. The seman
         - Membership Attendance Percent Enrolled
         - Special Education Eval Status
         - Transportation
-2.	Submit an Early Education Enrollment record (StudentSchoolAssociation with entrygradelevel = 1) 
+2.	Submit a StudentSchoolAssociation record for **Student B**
     - School Id
     - Student Unique Id
-    - Entry Grade Level = 1
+    - Entry Grade Level = **1**
     - Entry Type (Last Location Code) = 4
-    - Entry Date = 9/6/2020
+    - Entry Date = 9/5/2023
     - Exit Withdraw Date (Defaulted to end of school year)
     - Exit Withdraw Type = 40
     - Homebound Service Indicator = N
     - Resident Local Education Agency
     - Special Pupil Indicator = N
-3.	Submit an Early Education Enrollment record (StudentSchoolAssociation with entrygradelevel = PA) 
+3.	Submit a StudentSchoolAssociation record for **Student C**
     - School Id
     - Student Unique Id
-    - Entry Grade Level = PA
+    - Entry Grade Level = **EE**
     - Entry Type (Last Location Code) = 4
-    - Entry Date = 9/6/2020
+    - Entry Date = 9/5/2023
+    - Exit Withdraw Date (Defaulted to end of school year)
+    - Exit Withdraw Type = 40
+    - Homebound Service Indicator = N
+    - Resident Local Education Agency
+    - Special Pupil Indicator = N
+4.	Submit a StudentSchoolAssociation record for **Student D**
+    - School Id
+    - Student Unique Id
+    - Entry Grade Level = **EE**
+    - Entry Type (Last Location Code) = 4
+    - Entry Date = 10/17/2023
+    - Exit Withdraw Date (Defaulted to end of school year)
+    - Exit Withdraw Type = 40
+    - Homebound Service Indicator = N
+    - Resident Local Education Agency
+    - Special Pupil Indicator = N
+5.	Submit a StudentSchoolAssociation record for **Student E**
+    - School Id
+    - Student Unique Id
+    - Entry Grade Level = **EE** 
+    - Entry Type (Last Location Code) = 4
+    - Entry Date = 9/5/2023
+    - Exit Withdraw Date (Defaulted to end of school year)
+    - Exit Withdraw Type = 40
+    - Homebound Service Indicator = N
+    - Resident Local Education Agency
+    - Special Pupil Indicator = N
+6.	Submit a StudentSchoolAssociation record for **Student F**
+    - School Id
+    - Student Unique Id
+    - Entry Grade Level = **EE** 
+    - Entry Type (Last Location Code) = 4
+    - Entry Date = 9/5/2023
     - Exit Withdraw Date (Defaulted to end of school year)
     - Exit Withdraw Type = 40
     - Homebound Service Indicator = N
@@ -79,7 +112,7 @@ None
 2. Submit Parent Records for the following Early Ed Student in Gradelevel 1
 3. Submit Parent Records for the following Early Ed Student in Gradelevel PA
 
-_Note_: The ```highestCompletedLevelOfEducationDescriptor``` element has been moved from the MN extenstion to Ed-Fi Core in v5.2, which is being implemented for **School Year 2022-23**.
+_Note_: The ```highestCompletedLevelOfEducationDescriptor``` element has been moved from the MN extenstion to Ed-Fi Core in v5.2, which was implemented for school year 2022-23.
 
 ## Resource: StudentParentAssociation
 **Description:**
@@ -108,50 +141,80 @@ This association indicates any relationship between a student and an education o
 - EducationOrganizations (Schools)
 
 **Scenarios:**
-1.	Create a StudentEducationOrganizationAssociation for the Student Enrolled in Gradelevel EE
+1.	Create a StudentEducationOrganizationAssociation for **Student A**
     - Include all elements except StudentCharacteristicsDescriptors (ADP, RAEL, IMMIGRANT, SLIFE)
-2.	Create a StudentEducationOrganizationAssociation for the Student Enrolled in Gradelevel 1
-3.	Create a StudentEducationOrganizationAssociation for the Student Enrolled in Gradelevel PA
+2.	Create a StudentEducationOrganizationAssociation for **Student B**
+3.	Create a StudentEducationOrganizationAssociation for **Student E**
 
 ## Resource: StudentEarlyEducationProgramAssociations
 **Description:**
-This association represents Students in either School Readiness or Early Childhood Family Education programs. Notes:
+This association now represents Students in either MARSS (School Readiness Plus, Early Childhood Special Education, or Voluntary Pre-Kindergarten) or non-MARSS (School Readiness or Early Childhood Family Education) early education programs. Notes:
+- MARSS Early Childhood Screening (aka Preschool Screening) is covered in [this program association](/sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations).
 - The "EE-SR" and "EE-ECFE" program types are the programs intended for use with Early Education Data. These can also be used to cover the Early Ed programs formerly described as "SR/AB" and "ECFE/AB", respectively.
 - "End Reason Code" below correlates to "reasonExitedDescriptor" (see the similarly named Data Mapping Matrix tab)
 
 **Prerequisite Data:**
 - Schools
 - Program - where ProgramTypeDescriptor = "EE-SR"
+- Program - where ProgramTypeDescriptor = "EE-SR+"
 - Program - where ProgramTypeDescriptor = "EE-ECFE"
+- Program - where ProgramTypeDescriptor = "EE-ECSE"
+- Program - where ProgramTypeDescriptor = "EE-VPK"
 - Students
 
 **Scenarios:**
-1.	Associate gradelevel EE Enrolled Student with this SR StudentEarlyEducationProgramAssociation
-    - Begin Date: 9/5/2020
-    - End Date: 6/11/2021 (default to last day in the school year)
+1.	Associate **Student A** with an EE-SR Program 
+    - Begin Date: 9/5/2023
+    - End Date: 6/11/2024 (default to last day in the school year)
     - End Reason Code = PE-01
     - Membership: 640
     - Attendance: 580
     - Submit funding sources PF and CC
-2.	Associate same gradelevel EE Enrolled Student with this ECFE StudentEarlyEducationProgramAssociation
-    - Begin Date =  9/5/2020
-    - End Date = 10/15/2020 
+2.	Add an association for **Student A**, with an EE-ECFE Program
+    - Begin Date = 9/5/2023
+    - End Date = 10/15/2023
     - End Reason Code = PE-02
     - Membership Hours = 40
     - Attendance Hours = 30
     - Submit funding sources PF, CC and TITLE
-3.	Associate gradelevel 1 Enrolled Student with an ECFE StudentEarlyEducationProgramAssociation
-    - Begin Date: 10/6/2020
-    - End Date: 6/11/2020  (default to last day in the school year)
+3.	Demonstrate how **Student A** can be simultaneously associated with an Early Childhood Screening Association (aka Preschool Screening) with the same Begin Date of 9/5/2023.
+4.	Associate **Student B** with an EE-ECFE Program 
+    - Begin Date: 10/6/2023
+    - End Date: 6/11/2024 (default to last day in the school year)
     - Membership: 640
     - Attendance: 580
     - Submit funding sources ECFE and CC
-4.	Associate gradelevel PA Enrolled Student with an SR StudentEarlyEducationProgramAssociation
-    - Begin Date: 9/7/2020
-    - End Date: 6/11/2020  (default to last day in the school year)
+5.	Associate **Student C** with an EE-SR Program 
+    - Begin Date: 9/7/2023
+    - End Date: 6/11/2024 (default to last day in the school year)
     - Membership: 640
     - Attendance: 580
     - Submit funding sources CSPF and OD
+6.	Add an association for **Student C** with an EE-ECSE Program starting on the same date demonstrating that they can be associated with both EE-ECSE and EE-SR at the same time.
+    - Begin Date: 9/7/2023
+    - End Date: 6/11/2024 (default to last day in the school year)
+    - Membership: 640
+    - Attendance: 580
+7.	Associate **Student D** with an EE-ECSE Program
+    - Begin Date: 10/17/2023
+    - End Date: 6/11/2024 (default to last day in the school year)
+    - Membership: 540
+    - Attendance: 500
+8.	Associate **Student E** with an EE-SR+ Program
+    - Begin Date: 9/5/2023
+    - End Date: 6/11/2024 (default to last day in the school year)
+    - Program Section Descriptor of Section D
+    - Membership: 60 (days)
+    - Attendance: 50
+9.	Associate **Student F** with an EE-VPK Program
+    - Begin Date: 9/5/2023 
+    - End Date: 6/11/2024 (default to last day in the school year)
+    - Program Section Descriptor of Section F
+    - Membership: 60
+    - Attendance: 50
+10.	Change **Student C's** association from EE-SR to EE-VPK
+    - Demonstrate how a Program Section Descriptor will now be required, and enter Section J
+11.	Please demonstrate how your software differentiates between various program choices, in particular how users will tell the difference between Early Childhood Screening (EE-ECS) and Early Childhood Special Education (EE-ECSE).
 
 ## Resource: StudentHomelessProgramAssociation
 **Description:**
