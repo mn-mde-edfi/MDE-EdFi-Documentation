@@ -194,11 +194,9 @@ Ed-Fi Description: A set of dates associated with an organization. **MDE is not 
 4.	Create Full Year School Readiness Plus calendar for Elementary School grade EE
     - Length of day = 150
     - Instructional Days = 148
-    - TBD: add an element designating the section A
 5.	Create Half Year School Readiness Plus calendar for Elementary School grade EE
     - Length of day = 150
     - Instructional Days = 78
-    - TBD: add an element designating the section B
 6.	Create Middle School Calendar
 7.	Create High School Calendar
 

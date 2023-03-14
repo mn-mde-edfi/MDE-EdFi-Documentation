@@ -1,5 +1,5 @@
 # Early Education Enrollment Certification **Scenarios**: API Resources
-_Please note: the following scenarios are example situations, intended to demonstrate that your application can update the MDE Ed-Fi ODS appropriately. They do not necessarily demonstrate all valid combinations; for example, all funding source codes can be used for both School Readiness (SR) and Early Childhood Family Education (ECFE). **Continuous updates are being applied to these scenarios for school year 2023-2024, resolving the Early Education program ambiguity issue.**_
+_Please note: the following scenarios are example situations, intended to demonstrate that your application can update the MDE Ed-Fi ODS appropriately. They do not necessarily demonstrate all valid combinations; for example, all funding source codes can be used for both School Readiness (SR) and Early Childhood Family Education (ECFE). **Continuous updates are being applied to these scenarios for school year 2023-2024, resolving the Early Education program ambiguity issue.** In particular, we are still drafting and testing how we will resolve the relationship to calendars that will no longer be able to use grade levels of PA-PJ and RA-RJ._
 
 For more information, see the [Early Education Enrollment and Parent collection dependencies section](sis_test_plan_c_data_reqs.md#early-education-enrollment-and-parent-collection) of the SIS Vendor test plan data requirements document.
 
@@ -152,6 +152,7 @@ This association now represents Students in either MARSS (School Readiness Plus,
 - MARSS Early Childhood Screening (aka Preschool Screening) is covered in [this program association](/sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations).
 - The "EE-SR" and "EE-ECFE" program types are the programs intended for use with Early Education Data. These can also be used to cover the Early Ed programs formerly described as "SR/AB" and "ECFE/AB", respectively.
 - "End Reason Code" below correlates to "reasonExitedDescriptor" (see the similarly named Data Mapping Matrix tab)
+- A calendar reference may be added to the VPK and SR+ scenarios in order to relate specific calendar records to sections of those programs.
 
 **Prerequisite Data:**
 - Schools
