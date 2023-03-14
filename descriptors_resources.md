@@ -1,8 +1,8 @@
 # Descriptors and Resources
-This document will store various knowledge items and articles about the MDE Ed-Fi ODS/API, especially with respect to Minnesota extensions and customizations that differ from the Core Ed-Fi Data Standard and ODS/API.
+This document will store various knowledge items and articles about the MDE Ed-Fi ODS/API, especially with respect to Minnesota extensions and customizations that differ from the Core Ed-Fi Data Standard and ODS/API. Some of these issues have been resolved by subsequent updates of the ODS/API.
 
 ## Descriptors
-Sections below will have additional information about various descriptors.
+Sections below will have additional information about various descriptors. Note that the latest information about custom descriptors can be found in the [descriptorTables folder](./descriptorTables/).
 
 ### Naming Pattern for Extension Descriptors
 When MDE extends a pre-existing Ed-Fi descriptor for the MN extension, it may rename the implementation of that descriptor when additional context clarifies the intended use of the descriptor. For example, the [core Ed-Fi descriptor](https://api.ed-fi.org/v3.4.0/docs/index.html?urls.primaryName=Descriptors#/levelOfEducationDescriptors) ```levelOfEducationDescriptors``` is implemented as ```highestCompletedLevelOfEducationDescriptor``` within the "parents" resource (the namespace remains ```uri://education.mn.gov/LevelOfEducationDescriptor```). This can be visualized in the example value for the "parents" resource:
@@ -45,28 +45,9 @@ Since some descriptors are used for multiple data elements, within the ODS API t
 Usually the required relationship can be found within the Data Mapping Matrix. Vendors that spot any discrepancies or missing elements are encouraged to contact the [Ed-Fi vendor support team](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us) by email. 
 
 ### Duplicate "BR" value within accommodationDescriptors
-When viewing SY2021 descriptors, you might note that the code value of "BR" is repeated within ```accommodationDescriptors```, causing problems with database loads that assume that code value is unique across all of those descriptors. However, when incorporating namespace, those values become unique: the value to describe "BR – Accomodation" is within "access" and the value for "Braille" is within "mcamtas", as shown in the descriptor JSON below (available from Swagger). Note that for now this descriptor can be ignored because it's only used by assessment precode which isn't in scope until at least SY22-23 or later.
+**As of 2023-02-28, the duplicate descriptor within the "access" namespace has been deleted from SY2022-23 ODS instances.** For 2023-24, the duplicate issue described below is no longer an issue, given expanded re-classification of Braille accommodation descriptors.
 
-```javascript
-{
-    "id": "9dc5618028ab4caf9bc336a7a0a962f1",
-    "accommodationDescriptorId": 2996,
-    "codeValue": "BR",
-    "description": "BR - Accommodation",
-    "namespace": "uri://education.mn.gov/access/AccommodationDescriptor",
-    "shortDescription": "BR - Accommodation",
-    "_etag": "5248795699641457904"
-  },
-  {
-    "id": "916ef20130b74698ace01f5b559676ca",
-    "accommodationDescriptorId": 2997,
-    "codeValue": "BR",
-    "description": "Braille",
-    "namespace": "uri://education.mn.gov/mcamtas/AccommodationDescriptor",
-    "shortDescription": "Braille",
-    "_etag": "5248795699641457904"
-  },
-```
+>When viewing SY2021 descriptors, you might note that the code value of "BR" is repeated within ```accommodationDescriptors```, causing problems with database loads that assume that code value is unique across all of those descriptors. However, when incorporating namespace, those values become unique: the value to describe "BR - Accomodation" is within "access" and the value for "Braille" is within "mcamtas", as shown in the descriptor JSON below (available from Swagger). Note that for now this descriptor can be ignored because it's only used by assessment precode which isn't in scope until at least SY22-23 or later.
 
 ### ClassroomVolunteerDescriptors
 In the transition to Ed-Fi, MDE is collecting less detail around classroom volunteers compared to past collections in the [Early Education Student Data System](https://education.mn.gov/MDE/dse/datasub/EarlyLearnServDataReport). The table below provides a translation between EES and EdFi:
@@ -79,7 +60,7 @@ In the transition to Ed-Fi, MDE is collecting less detail around classroom volun
 |     99    |     Others    |     **2861**    |     PartTimeVolunteer    |     Code **2860** for FullTimeVolunteer is also available if necessary    |
 
 ### LevelOfEducationDescriptors
-Another descriptor in Ed-Fi that benefits from a translation from EES is **levelOfEducationDescriptors**. As of 8/6/2020, the ODS endpoints now include the MDE-specific descriptors listed in the LevelOfEducationDescriptor tab of the 2020-21 Data Mapping spreadsheet. With one exception, these values are a direct translation from the _EducationBackground_ codes used in the EE system. For example, code value ```1050``` for Associate's degree. The only exception is that EE code ```0000``` for "Not Specified" should be mapped into Ed-Fi code ```9999``` for "Other". The following table details the translation:
+Another descriptor in Ed-Fi that benefits from a translation from EES is **levelOfEducationDescriptors**. See the [descriptorTables folder](./descriptorTables/) for the latest list of codes. With one exception, these values are a direct translation from the _EducationBackground_ codes used in the EE system. For example, code value ```1050``` for Associate's degree. The only exception is that EE code ```0000``` for "Not Specified" should be mapped into Ed-Fi code ```9999``` for "Other". The following table details the translation:
 |EES BackgroundCode|EES BackgroundShortName|Ed-Fi levelOfEducationDescriptorId|Ed-Fi codeValue|Ed-Fi description|
 |---|----|-------|------|---|
 |0000              |Not Specified          |3403                              |9999           |09999 - Other                                     |
@@ -112,13 +93,10 @@ The following codes are also available in Ed_Fi for additional detail as applica
 |3401                              |805            |00805 - Kindergarten          |
 |3402                              |819            |00819 - Career and Technical Ed. cert.|
 
-Note that the namespace for the above descriptors is ```uri://education.mn.gov/LevelOfEducationDescriptor```. Prior to **8/6/2020**, MDE Ed-Fi data stores (including Sandboxes created before that date) only included the base ed-fi descriptors in the ```uri://ed-fi.org/LevelOfEducationDescriptor``` namespace, which created confusion among vendors. These should **NOT** be used. Vendors should create new sandboxes to test this functionality and delete any created before 8/6.
+Note that the namespace for the above descriptors is ```uri://education.mn.gov/LevelOfEducationDescriptor```. Prior to **8/6/2020**, MDE Ed-Fi data stores (including Sandboxes created before that date) only included the base ed-fi descriptors in the ```uri://ed-fi.org/LevelOfEducationDescriptor``` namespace, which created confusion among vendors. These should **NOT** be used. This situation demonstrates how vendors should use new sandboxes whenever possible for testing code and integrations.
 
 ### Student Characteristic Descriptors
-Note that several changes have been implemented in the Student Characteristic Desciprtors for sy2023. This section will make note of specific issues with this descriptor.
-
-#### Migrant Descriptor value
-A vendor asked about the "Migrant" descriptor; while we do not collect the Migrant indicator through Ed-Fi, we do collect that information via other sources, which is populated in the Ed-Fi ODS. As a result, the Migrant indicator was added as a read-only attribute in the Ed-Fi API to allow SIS vendors to be able to read this information and display it to district users in their SIS. This was implemented back in our first year of Ed-Fi for 2018-19. 
+Note that several changes were implemented in the Student Characteristic Desciprtors for sy2023. In particular, there was some confusion about the "Migrant" descriptor; while we do not collect the Migrant indicator through Ed-Fi, we do collect that information via other sources, which is populated in the Ed-Fi ODS. As a result, the Migrant indicator was added as a read-only attribute in the Ed-Fi API to allow SIS vendors to be able to read this information and display it to district users in their SIS. This was implemented back in our first year of Ed-Fi for 2018-19. 
 
 ## Resources
 The following sections contain details about various resources (also called "entities" in some documentation) within the Ed-Fi API and data model.
@@ -127,12 +105,12 @@ The following sections contain details about various resources (also called "ent
 This section contains various details and decisions on **Parent Resources** that have arisen with the EE rollout, particularly in response to vendor questions.
 
 #### Limiting Submissions to Required Records
-MDE is aware that vendors have access to parent records for students **not** participating in an Early Education program, i.e. through grade 12 in Ed-Fi. As of July 31, 2020, MDE requests that vendors and districts **withhold** those Parent records.
+MDE is aware that vendors have access to parent records for students **not** participating in an Early Education program, i.e. through grade 12 in Ed-Fi. In 2020 MDE requested that vendors and districts **withhold** those Parent records.
 
 #### Avoiding Conflicts in Identifiers
 Parent records are shared among and between Local Education Authorities (LEAs) like student records. But unlike student records, MDE does not have a system of uniquely identifying parents. That means that duplicate parent records are likely to be created.
 
-Similarly, there’s the possibility for conflicting information to be overwritten on updates to parent records if the same unique ID is used. In order to reduce the changes of that, MDE is requiring that a parent ID be prefixed with a district/organization number and dash (using the [Ed-Fi identifier conventions](sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids)), such as this:
+Similarly, there's the possibility for conflicting information to be overwritten on updates to parent records if the same unique ID is used. In order to reduce the changes of that, MDE is requiring that a parent ID be prefixed with a district/organization number and dash (using the [Ed-Fi identifier conventions](sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids)), such as this:
 - "10625000-" for [SPPS](https://public.education.mn.gov/MdeOrgView/organization/show/566)
 - "526095000-" for [AALASEC](https://public.education.mn.gov/MdeOrgView/organization/show/14583)
 
@@ -141,30 +119,10 @@ This should help avoid mistakenly overwriting a record when using an ID that is 
 Regardless of the specific implementations, non-unique parent records is a limitation of the system. MDE is not aware of any downstream impacts; for example, ``StudentEarlyEducationProgramAssociation`` is not validated against parent data.
 
 #### Dropping API Requirements for ext-MN-identificationCodes
-Within the Minnesota extension for the ```parents``` resource, the MDE team decided on July 24, 2020 that the "MARSS ID (Parent)" element (i.e. "parentIdentificationCode") was redundant due to the fact that student-parent relationships are already available via studentParentAssociation records. Therefore requirements for this element will be dropped from the ODS API as soon as possible. The location of this specific data element within the JSON of a specific Parent resource is below:
-```javascript
-"_ext": {
-    "MN": {
-      "classroomVolunteerDescriptor": "string",
-      "highestCompletedLevelOfEducationDescriptor": "string",
-      "birthDate": "2020-07-24",
-      "householdIncome": 0,
-      "householdSize": 0,
-      "receivingInterpreterAssistance": true,
-      "identificationCodes": [ //This section is no longer needed as of 2020.07.24
-        {
-          "identificationCode": "string"
-        }
-      ]
-    }
-  }
-```
+Within the Minnesota extension for the ```parents``` resource, the MDE team decided in 2020 that the "MARSS ID (Parent)" element (i.e. "parentIdentificationCode") was redundant due to the fact that student-parent relationships are already available via studentParentAssociation records. Therefore requirements for this element were dropped from the ODS API.
 
 Historical note on managing multiples for student-parent relationships that applied before this decision:
 > When creating a ```Parent``` record, you might notice the ```identificationCodes``` descriptor, which should contain the MARSS ID of a related student. However, if a parent has several students with MARSS IDs, more than one code can be listed - as the Swagger UI reveals, these are identificationCode**s**, and that the descriptor is "An unordered collection of parentIdentificationCodes. Miscellaneous parent Identification Code. E.g., MARSS ID of a related student". In other words, more than one code can be placed in that data element to handle a 1:M relationship.
-
-### Supplemental Program Names
-ODS-API users will note that the sy21 sandbox contains sample records for ```programs```, described as "any program designed to work in conjunction with, or as a supplement to, the main academic program." These programs are set primarily for Early Education (EE), but 16 types have been set up in the programTypeDescriptors for use. Sample JSON is available in the sandbox to view examples of programs that districts can load into Ed-Fi. As of 8/21/2020, MDE is currently determining guidance on naming these programs via the ```programName``` element.
 
 ### Student Early Childhood Screening Program Associations (SECSPA)
 When working with MARSS, LEAs previously would enter in State Aid Categories with Early Childhood Screening. With Ed-Fi, EC screening is now recorded with a Student Early Childhood Screening Program Associations record, which does not carry State Aid Categories. Instead, it carries an ```earlyChildhoodScreenerDescriptor``` and a ```earlyChildhoodScreeningExitStatusDescriptor```. This created a question (see [issue #16](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/issues/16)) around the State Aid Category 41 of "Screening by School District". This code is no longer available as a State Aid Category; so for the SECSPA record, an LEA can choose a "PreSchoolScreenerDescriptor" code of 1, "Screening by serving school district".
@@ -188,7 +146,7 @@ In this scenario:
 The Minnesota Common Course Catalogue (MCCC) data collection requires districts to create their course offerings (including college courses) and then relate those courses to state-level course definitions. This section contains details on those course record requirements.
 
 #### SEA Defined Courses
-Over 1700 State Education Agency (SEA - aka MDE) course definitions are available in the populated sandbox and will be available in Staging and Production.
+Over 1700 State Education Agency (SEA - aka MDE) course definitions are available in all ODS instances, available for LEAs implementing the MCCC pilot.
 
 To get the list of SEA-defined courses, perform a GET operation against the "courses" endpoint, setting the parameter _courseDefinedByDescriptor_ equal to _uri://education.mn.gov/CourseDefinedByDescriptor#SEA_. In an HTTP request this will be escaped as: ```courseDefinedByDescriptor=uri%3A%2F%2Feducation.mn.gov%2FCourseDefinedByDescriptor%23SEA```. An example JSON value for an SEA-defined course is below:
 
@@ -243,12 +201,12 @@ LEAs and vendors will need to understand the validation rules around course leve
 *It is important to note that UC, MM, IS, and PBL characteristics are **not actually carried** on the LEA-defined (District) course records. Instead, when they are associated the SEA-defined courses via ```courseCourseAssociation``` records, the validations should occur through other data elements, as described above. Getting the SEA-defined course records (see [SEA Defined Courses](#sea-defined-courses)) reveals which of those courses are assigned these level characteristics.
 
 #### sequenceLimit vs. Number of Parts
-In April 2021, MDE staff determined that our Ed-Fi implementation contains redundant elements in the "course" entity: numberOfParts (Ed-Fi core) and sequenceLimit (MN extension). In order to increase alignment with core Ed-Fi components, we decided to remove the use of sequenceLimit and rely on numberOfParts for the same information.
+In 2021 MDE staff determined that our Ed-Fi implementation contains redundant elements in the "course" entity: numberOfParts (Ed-Fi core) and sequenceLimit (MN extension). In order to increase alignment with core Ed-Fi components, we decided to remove the use of sequenceLimit and rely on numberOfParts for the same information.
 
 #### College Courses
 When setting up College Courses (i.e. for Dual Enrollment, Articulation and Direct Pay PSEO), you will need an ```educationOrganizationId``` within the ```educationOrganizationReference```. The IDs to use in this element come from MDE ORG and follow the [district pattern](sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids). The identifiers can be acquired via the API at the ```/ed-fi/postSecondaryInstitutions``` endpoint, within the ```postSecondaryInstitutionId``` element. Each record in that list will also contain a cross-reference to the USDE OPE IDs inside the ```educationOrganizationIdentificationSystemDescriptor```, labeled as ```uri://ed-fi.org/EducationOrganizationIdentificationSystemDescriptor#USDE - OPE```. 
 
-_Note_: Sandboxes created before May 7, 2021 had only approximately 12 post-secondary institutions loaded in. Sandboxes created on or after May 7 will have at least 100 records for testing. In development, staging, and production servers, records will be updated during regular synch processes.
+_Note_: Sandboxes created before May 7, 2021 had only approximately 12 post-secondary institutions loaded in. Sandboxes created on or after that date had at least 100 records for testing. In development, staging, and production servers, records will be updated during regular synch processes.
 
 ### Section Enrollment Type Descriptor for MCCC
 MCCC uses the Section enrollment Type Descriptor to handle what was previously called _Student Record Type_. The Ed-Fi implementation uses this descriptor on the student section association. The table below "maps" the MCCC student record types to the Ed-Fi descriptor code values.

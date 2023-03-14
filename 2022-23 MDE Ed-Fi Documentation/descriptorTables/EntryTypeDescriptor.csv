@@ -1,8 +1,0 @@
-"Mapping Method","Namespace","Descriptor Name","Code Value","Short Description","Description","Length of Short Desc"
-"Core","uri://education.mn.gov/EntryTypeDescriptor","EntryTypeDescriptor","0","Last enrollment in a public school in the reporting district ","Last enrollment in a public school in the reporting district. Default value for kids staying in same district or school; re-entry means this year, original entry, first time this year with no intervening enrollments.","60"
-"Core","uri://education.mn.gov/EntryTypeDescriptor","EntryTypeDescriptor","1","Last enrollment in nonpublic school in Minnesota ","Last enrollment in nonpublic school in Minnesota with no intervening enrollments.","48"
-"Core","uri://education.mn.gov/EntryTypeDescriptor","EntryTypeDescriptor","2","Last enrollment in another State ","Last enrollment in another State with no intervening enrollments.","32"
-"Core","uri://education.mn.gov/EntryTypeDescriptor","EntryTypeDescriptor","24","Changed enrollment status ","Changed enrollment status; re-enrolled in the same school during the current school year, e.g., changes in PSEO, Percent Enrolled, Special Education Status, resident district, school, grade","25"
-"Core","uri://education.mn.gov/EntryTypeDescriptor","EntryTypeDescriptor","3","Last enrollment in another country ","Last enrollment in another country with no intervening enrollments.","34"
-"Core","uri://education.mn.gov/EntryTypeDescriptor","EntryTypeDescriptor","4","Last enrollment in a Minnesota school in another district","Last enrollment in a Minnesota school in another district with no intervening enrollments.","57"
-"Core","uri://education.mn.gov/EntryTypeDescriptor","EntryTypeDescriptor","5","Student has never been in school","Student has never been in school","32"

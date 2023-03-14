@@ -1,8 +1,0 @@
-"Mapping Method","Namespace","Descriptor Name","Code Value","Short Description","Description","Length of Short Desc"
-"Extension","uri://education.mn.gov/ImplementationStatusDescriptor","ImplementationStatusDescriptor","CBEG","Beginning - Centers of Excellence ONLY","Beginning - Centers of Excellence ONLY","38"
-"Extension","uri://education.mn.gov/ImplementationStatusDescriptor","ImplementationStatusDescriptor","CEXP","Expanding - Centers of Excellence ONLY","Expanding - Centers of Excellence ONLY","38"
-"Extension","uri://education.mn.gov/ImplementationStatusDescriptor","ImplementationStatusDescriptor","CMNT","Maintaining - Centers of Excellence ONLY","Maintaining - Centers of Excellence ONLY","40"
-"Extension","uri://education.mn.gov/ImplementationStatusDescriptor","ImplementationStatusDescriptor","FULL","Full Implementation","Full Implementation","19"
-"Extension","uri://education.mn.gov/ImplementationStatusDescriptor","ImplementationStatusDescriptor","X","Does not apply","Does not apply","14"
-"Extension","uri://education.mn.gov/ImplementationStatusDescriptor","ImplementationStatusDescriptor","YR1","Initial Implementation Year 1","Initial Implementation Year 1","29"
-"Extension","uri://education.mn.gov/ImplementationStatusDescriptor","ImplementationStatusDescriptor","YR2","Initial Implementation Year 2","Initial Implementation Year 2","29"

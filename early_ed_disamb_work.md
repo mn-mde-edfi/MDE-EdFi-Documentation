@@ -1,5 +1,5 @@
 # Early Education Disambiguation Workaround
->For **school year 2023-24**, MDE will be implementing an "Early Education disambiguation project" that will allow districts to enroll students in both a "non-MARSS Early Education program" and a "MARSS Early Education program" at the same school, at the same time period. 
+>For **school year 2023-24**, MDE is implementing an "Early Education ambiguity resolution" that will allow districts to enroll students in both a "non-MARSS Early Education program" and a "MARSS Early Education program" at the same school, during the same time period. More information on that resolution is available [in this PDF](./2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_disamb_resolution_v2023-03-10.pdf), and integrated into at least the [Early Education vendor certification scenarios](sandbox_cert_d_earlyed.md).
 
 This document describers the *workaround* for **school years 2021-22 and 2022-23** when building and submitting records for these students. We are including tabular descriptions designed for a district audience, and links to JSON examples designed for vendors.
 

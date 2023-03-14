@@ -1,5 +1,5 @@
 # Sandbox Certification Scenarios
-This document holds the overview and table of contents for the MDE Ed-Fi Sandbox Certification Scenarios. You may wish to download the [Word and Excel documents](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/tree/master/2022-23%20MDE%20Ed-Fi%20Documentation) inside this repository as complements to this documentation.
+This document holds the overview and table of contents for the MDE Ed-Fi Sandbox Certification Scenarios. You may wish to review the Word, Excel, and PDF documents inside this repository as complements to this documentation - see the "YYYY-YY MDE Ed-Fi Documentation" folder for the latest.
 
 ## References
 Before reading this documentation, please refer to the [SIS Vendor and District Test Plan](sis_test_plan_a_toc.md), particularly the [Data Requirements and API Resources](sis_test_plan_c_data_reqs.md) section.
@@ -16,4 +16,4 @@ Then advance to the specific sections on Sandbox Certification Scenarios:
 Please consult MDE's [Ed-Fi web pages](https://education.mn.gov/MDE/dse/datasub/edfi/) or reach out to the Ed-Fi vendor support team by email (EdFiProjectSupportMNIT.MDE@state.mn.us) if you have questions on deadlines or any other vendor logistics.
 
 ## Future Developments
-- Looking for details on future collections for MDE's Ed-Fi? The Word and Excel versions of the documentation will be added into a new folder for each year. In the meantime, the Sandbox environment does have a "preview release" in the Swagger UI for your exploration.
+- Looking for details on future collections for MDE's Ed-Fi? This documentation will be updated each year. When a new year's worth of documentation is being developed, there will be a newly named "branch" in the repository - branches can be [viewed here](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/branches). In the meantime, the Sandbox environment does have a "preview release" in the Swagger UI for your exploration.

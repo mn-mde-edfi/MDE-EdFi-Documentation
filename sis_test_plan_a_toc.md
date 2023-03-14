@@ -1,8 +1,8 @@
 # SIS Vendor and District Test Plan
-This document contains an overview and references for the Student Information Systems (SIS) and District Test Plan for the Minnesota **2022-2023 School Year**, aligning with Ed-Fi **version 5.2** and **Data Standard 3.3.0-a**. The documentation in this repository is maintained by Minnesota IT Services (MNIT), partnering with the the Minnesota Department of Education (MDE).
+This document contains an overview and references for the Student Information Systems (SIS) and District Test Plan for the Minnesota **2023-2024 School Year**, aligning with Ed-Fi **version 5.2** and **Data Standard 3.3.0-a**. The documentation in this repository is maintained by Minnesota IT Services (MNIT), partnering with the the Minnesota Department of Education (MDE).
 
 ## Overview
-The 2022-23 School Year Certification is currently aligned with the [Ed-Fi 3.3.0-a Data Standard](https://github.com/Ed-Fi-Alliance-OSS/Ed-Fi-Standard/releases/tag/v3.3.0-a) and ODS/API, with extensions customized for MDE.
+The 2023-24 School Year Certification is currently aligned with the [Ed-Fi 3.3.0-a Data Standard](https://github.com/Ed-Fi-Alliance-OSS/Ed-Fi-Standard/releases/tag/v3.3.0-a) and ODS/API, with extensions customized for MDE.
 
 Student Information System (SIS) vendors integrating with MDE's Ed-Fi Automated Student Data Collection System are required to pass 2 levels of testing prior to being granted a district's API key and secret to the Production environment.
 
@@ -18,10 +18,10 @@ Once the Staging data reaches a satisfactory level of quality as determined by M
 This documentation repository includes the Certification Requirements for both the scenario-based sandbox testing and staging environment data loading.
 
 ### Potential Hangups
-As you move from Sandbox to Staging for SY2023, remember the following:
+As you move from Sandbox to Staging for SY2024, remember the following:
 - Pay attention to the URLs, years in the API path, and key and secret details identified [in the staging load and quality check section](sis_test_plan_d_staging.md#staging-environment-load-and-quality-check). To wit:
   - Staging and Production require profile-specific coding, as your key and secret will be for a single profile (different profiles for different years)
-  - You will get new key/secret combinations for the 22-23 ODS in production - you won't be able to re-use those issued for prior years. So, for example, your key and secret for the 2020-21 ODS was only associated with the **Twenty_Twenty_One_SISVendor_Profile** and only worked for that profile.
+  - You will get new key/secret combinations for the new school year's ODS in production - you won't be able to re-use those issued for prior years. So, for example, your key and secret for the 2020-21 ODS was only associated with the **Twenty_Twenty_One_SISVendor_Profile** and only worked for that profile.
 - You may only get keys and secrets for individual districts at a time
 
 ## References

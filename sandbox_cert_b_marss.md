@@ -58,7 +58,7 @@ This association represents the School in which a student is enrolled. Note that
 
 The Student Education Organization Association (SEOA) indicates any relationship between a student and an education organization other than how the state views enrollment. (Enrollment relationship semantics are covered by StudentSchoolAssociation.) **MDE allows for the capture of student demographic data by school enrollment.** Therefore, a StudentEducationOrganizationAssociation record must be submitted for each ***school*** in which the student is enrolled to provide the student demographic data provided to the enrolling school by the parent(s).
 
-Please note that additional collections integrated into SEOA have been **postponed until after school year 2022-23**. These are described in separate headings below the original scenario.
+Please note that additional collections integrated into SEOA have been **postponed until further notice**. These are described in separate headings below the original scenario.
 
 **Prerequisite Data**
 - Students
@@ -85,16 +85,10 @@ Please note that additional collections integrated into SEOA have been **postpon
 6.	Update Student 3's OptOutIndicator
 
 _Note 1_: as in the Student record, the student's legal name should be used in the StudentEducationOrganizationAssociation.
-_Note 2_: for **school year 2022-23**, with upgrading to version 5.2, the ```ancestryEthnicOrigins``` element is now part of Ed-Fi core, and not in the Minnesota extension.
-
-### Applied but Did Not Qualify
-**Postponed until after school year 2022-23:** This provides the ability for the district to identify a student that applied for the National School Lunch Program (NSLP) but did not qualify and is not served Free or Reduced Price meals.
-
-**Scenario**
-- Designate **Student 2** accordingly by adding ```studentCharacteristicDescriptor``` codeValue 10 (Applied for National School Lunch Program but did not qualify) to the ```studentCharacteristics``` collection.
+_Note 2_: In **school year 2022-23**, with upgrading to version 5.2, the ```ancestryEthnicOrigins``` element became part of Ed-Fi core, and not in the Minnesota extension.
 
 ### Displaced Students and Student Crisis Events
-**Postponed until after school year 2022-23:** This provides a way to identify crisis events that may have displaced students in the district. 
+**Postponed until further notice:** This provides a way to identify crisis events that may have displaced students in the district. 
 
 **Scenario**
 - Designate **Student 3** as displaced by setting the ```displacedStudentIndicator``` to true
@@ -102,7 +96,7 @@ _Note 2_: for **school year 2022-23**, with upgrading to version 5.2, the ```anc
 - Demonstrate dynamic loading of crisis event descriptors via the API within your software's interface, in order to facilitate rapid designation of students for future events.
 
 ### Language Academic Honors
-**Postponed until after school year 2022-23.** This collection object within the SEOA records one or more Student Academic distinctions awarded for languages including World Languages Proficiency Certificate, Bilingual Seal, and Multilingual Seal. See [additional documentation](README.md#language-academic-honor-documentation) in the readme file.
+**Postponed until further notice.** This collection object within the SEOA records one or more Student Academic distinctions awarded for languages including World Languages Proficiency Certificate, Bilingual Seal, and Multilingual Seal. See [additional documentation](README.md#language-academic-honor-documentation) in the readme file.
 
 **Prerequisite Data**
  - School
@@ -153,7 +147,7 @@ _Note 2_: for **school year 2022-23**, with upgrading to version 5.2, the ```anc
 _**Note** that the ```honor description``` text field is optional from a policy standpoint. Unfortunately, the way we have it modeled after the Ed-Fi academic honor resource, that field is part of the unique identification of an honor for a student. Therefore, we are unable to make it optional in the API, and we recommend vendors repeat the short description of the Achievement Category within the ```honor description``` text field._
 
 ### Gender Identity and Preferred Pronouns
-**Postponed until after school year 2022-23.** The Gender Identity collection object records a Student's gender identity. (This may be different from SEOA.Sex & Student.BirthSex, which collect the student's gender as reported to the federal government). The Preferred Pronouns extension records a Student's personal preferred pronouns. Both are delivered via the SEOA.
+**Postponed until further notice.** The Gender Identity collection object records a Student's gender identity. (This may be different from SEOA.Sex & Student.BirthSex, which collect the student's gender as reported to the federal government). The Preferred Pronouns extension records a Student's personal preferred pronouns. Both are delivered via the SEOA.
 
 Districts are expected to send both gender identity and preferred pronoun values, although they are optional.
 
@@ -166,7 +160,7 @@ Districts are expected to send both gender identity and preferred pronoun values
 2. Create a StudentEducationOrganizationAssociation with multiple Gender Identity values and multiple Preferred Pronoun values.
 
 ### Preferred Name
-**Postponed until after school year 2022-23.** The student's preferred name, using the "otherNames" collection element within the MN extension of ```studentEducationOrganizationAssociation```.
+**Postponed until further notice.** The student's preferred name, using the "otherNames" collection element within the MN extension of ```studentEducationOrganizationAssociation```.
 
 **Prerequisite Data**
 -	Students
@@ -183,13 +177,12 @@ Districts are expected to send both gender identity and preferred pronoun values
 **Description**
 Ed-Fi Description: A set of dates associated with an organization. **MDE is not using the Calendar entity as collection of dates**; rather MDE captures the following key pieces of Calendar Metadata in the Calendar file: Instructional Days, Length of Day, and Kindergarten Schedule (when applicable). Calendar is captured at the School Level by grade. 
 
-**NOTE:** MDE expects districts to only send **one** calendar *per grade level, per school* to MDE's Ed-Fi API, selecting specifically the calendar which is expected to be used for MARSSWES financial reporting.
+**NOTE:** MDE expects districts to only send **one** calendar *per grade level, per school* to MDE's Ed-Fi API, selecting specifically the calendar which is expected to be used for MARSSWES financial reporting. As of **school year 2023-24**, a new CalendarType descriptor value has been added: "MARSS-A". This allows district users to distinguish between calendars intended for MARSS vs. calendars that should **not** be loaded into MARSS (designated with the "School/Grade Characteristics" descriptor value). _Until a pilot is complete, please hold off on implementing this change for the 2023-24 school year._
 
 **Prerequisite Data**
 - Schools (published to ODS by MDE)
 
 **Scenarios**
-**MARSS**
 
 1.	Create calendar record for Elementary School grades 1 through 5 (do not include kindergarten as grade level)
     - Length of day = 360
@@ -198,12 +191,14 @@ Ed-Fi Description: A set of dates associated with an organization. **MDE is not 
 3.	Create calendar record for Elementary School for Kindergarten only - use grade KG
     - Length of day = 360
     - Instructional Days = 165
-4.	Create Full Year School Readiness Plus calendar for Elementary School grade RA
+4.	Create Full Year School Readiness Plus calendar for Elementary School grade EE
     - Length of day = 150
     - Instructional Days = 148
-5.	Create Half Year School Readiness Plus calendar for Elementary School grade RB
+    - TBD: add an element designating the section A
+5.	Create Half Year School Readiness Plus calendar for Elementary School grade EE
     - Length of day = 150
     - Instructional Days = 78
+    - TBD: add an element designating the section B
 6.	Create Middle School Calendar
 7.	Create High School Calendar
 
