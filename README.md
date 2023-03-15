@@ -6,8 +6,8 @@
 
 This repository contains technical documentation for Minnesota's implementation of the [Ed-Fi alliance standard](https://www.ed-fi.org/). The Minnesota Department of Education (MDE) is implementing Ed-Fi to help improve the collection of required educational data from Minnesota school districts. Learn more [at MDE's Ed-Fi web page](https://education.mn.gov/MDE/dse/datasub/edfi/) and at the following links:
 - [Ed-Fi Technical Documentation](https://techdocs.ed-fi.org/)
-- [Ed-Fi Data Standard](https://techdocs.ed-fi.org/display/ETKB/Ed-Fi+Data+Standard)
-- [Ed-Fi Operational Data Store (ODS) and API](https://techdocs.ed-fi.org/display/ETKB/Ed-Fi+Operational+Data+Store+and+API)
+- [Ed-Fi Standards](https://techdocs.ed-fi.org/display/ETKB/Ed-Fi+Standards)
+- [Ed-Fi Products and Technology](https://techdocs.ed-fi.org/pages/viewpage.action?pageId=95257892)
 
 The primary audience for this documentation is SIS vendors and State of Minnesota technical staff (from MDE and MNIT).
 
