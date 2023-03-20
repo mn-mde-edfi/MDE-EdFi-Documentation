@@ -238,9 +238,10 @@ See [Resource: Grade section in MCCC certification scenarios.](sandbox_cert_e_mc
 ## Resource: Programs
 
 Program Records for each of the following program types will be loaded by MDE for each LEA known to be active in the school year. Note that within a Student Program Association record, the organization identifiers will appear in multiple places:
-•	The educationOrganizationReference near the top of the StudentProgramAssociation - this should carry the **school ID**
-•	The educationOrganizationReference inside the programReference element of the StudentProgramAssociation - this should be the **LEA ID**.
+- The educationOrganizationReference near the top of the StudentProgramAssociation - this should carry the **school ID**
+- The educationOrganizationReference inside the programReference element of the StudentProgramAssociation - this should be the **LEA ID**.
 
+For more information, see the [Student Program Association scenarios](./sandbox_cert_c_spas.md) and the [Education Organization Id usage by Resource](./sis_test_plan_c_data_reqs.md#education-organization-id-usage-by-resource) section.
 
 # Navigation
 - [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
