@@ -1,9 +1,9 @@
     {
         "educationOrganizationReference": {
-            "educationOrganizationId": 255901
+            "educationOrganizationId": 10625220
         },
         "programReference": {
-            "educationOrganizationId": 255901,
+            "educationOrganizationId": 10625000,
             "programName": "Neglected or Delinquent Program",
             "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#Neglected or Delinquent"
         },
