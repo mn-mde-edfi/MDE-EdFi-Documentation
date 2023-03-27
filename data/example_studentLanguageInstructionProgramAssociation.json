@@ -1,0 +1,19 @@
+{
+    "beginDate": "2023-09-15",
+    "educationOrganizationReference": {
+        "educationOrganizationId": 10535315
+    },
+    "programReference": {
+        "educationOrganizationId": 10535000,
+        "programName": "English Learner",
+        "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#English Learner"
+    },
+    "studentReference": {
+        "studentUniqueId": "999004"
+    },
+    "languageInstructionProgramServices": [
+        {
+            "languageInstructionProgramServiceDescriptor": "uri://education.mn.gov/LanguageInstructionProgramServiceDescriptor#Two-Way Immersion"
+        }
+    ]
+}
