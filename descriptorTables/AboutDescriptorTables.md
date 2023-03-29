@@ -16,7 +16,22 @@ As of the most recent run, these tables are derived from the following database 
 
 **Exception**: The Calendar Type Descriptor values are pulled from production EdFi_Ods_2023 until such time the recent updates are reflected in 2024 databases.
 
-Refer to the change/commit log in GitHub to see what the latest changes are for this set of tables.
+Refer to the change/commit log in GitHub to see what the latest changes are for the tables in this folder.
+
+### Assessment Descriptors
+The following Descriptors used for **Assessment** purposes are pulled from  Staging EdFi_Ods_2023:
+- [AccommodationDescriptor](AccommodationDescriptor.csv)
+- [AssessmentFormatDescriptor](AssessmentFormatDescriptor.csv)
+- [assessmentReportingMethodDescriptor](assessmentReportingMethodDescriptor.csv) - should be renamed to *AssessmentReportingMethodDescriptor*
+- [AttemptLogicDescriptor](AttemptLogicDescriptor.csv) - should be renamed to *AttemptLogic**Met**Descriptor*
+- [GeneralEnrollmentDescriptor](GeneralEnrollmentDescriptor.csv)
+- [OperationalPassageDescriptor](OperationalPassageDescriptor.csv)
+- [PerformanceLevelDescriptor](PerformanceLevelDescriptor.csv)
+- [ReasonNotTestedDescriptor](ReasonNotTestedDescriptor.csv)
+- [ResultDatatypeTypeDescriptor](ResultDatatypeTypeDescriptor.csv)
+
+Note that Assessment vendors will also want to make use of the [AcademicSubjectDescriptor](AcademicSubjectDescriptor.csv) and [GradeLevelDescriptor](GradeLevelDescriptor.csv) tables; but these are pulled from the database listed in "Source Details" above.
+
 
 ## List of Custom Descriptors and Links
 Below is a list of known custom descriptors, typically using the ```uri://education.mn.gov``` namespace, excluding any subfolders within that space. Links are to the CSV files that you can view inside this directory. This list is automatically generated out of the same database as above, but there may be broken links of certain descriptors that we have not yet exported.

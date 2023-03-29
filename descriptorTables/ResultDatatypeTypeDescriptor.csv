@@ -1,0 +1,7 @@
+"Mapping Method","Namespace","Descriptor Name","Code Value","Short Description","Description","Length of Short Desc"
+"Extension","uri://ed-fi.org/ResultDatatypeTypeDescriptor","ResultDatatypeTypeDescriptor","Decimal","Decimal","Decimal","7"
+"Extension","uri://ed-fi.org/ResultDatatypeTypeDescriptor","ResultDatatypeTypeDescriptor","Integer","Integer","Integer","7"
+"Extension","uri://ed-fi.org/ResultDatatypeTypeDescriptor","ResultDatatypeTypeDescriptor","Level","Level","Level","5"
+"Extension","uri://ed-fi.org/ResultDatatypeTypeDescriptor","ResultDatatypeTypeDescriptor","Percentage","Percentage","Percentage","10"
+"Extension","uri://ed-fi.org/ResultDatatypeTypeDescriptor","ResultDatatypeTypeDescriptor","Percentile","Percentile","Percentile","10"
+"Extension","uri://ed-fi.org/ResultDatatypeTypeDescriptor","ResultDatatypeTypeDescriptor","Range","Range","Range","5"

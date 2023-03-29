@@ -1,0 +1,8 @@
+"Mapping Method","Namespace","Descriptor Name","Code Value","Short Description","Description","Length of Short Desc"
+"Core","uri://education.mn.gov/mcamtas/PerformanceLevelDescriptor","PerformanceLevelDescriptor","A","Above Expectations ","Above Expectations ","18"
+"Core","uri://education.mn.gov/mcamtas/PerformanceLevelDescriptor","PerformanceLevelDescriptor","B","Below Expectations ","Below Expectations ","18"
+"Core","uri://education.mn.gov/mcamtas/PerformanceLevelDescriptor","PerformanceLevelDescriptor","DS","Does Not Meet the Achievement Standards","Does Not Meet the Achievement Standards","39"
+"Core","uri://education.mn.gov/mcamtas/PerformanceLevelDescriptor","PerformanceLevelDescriptor","ES","Exceeds the Achievement Standards","Exceeds the Achievement Standards","33"
+"Core","uri://education.mn.gov/mcamtas/PerformanceLevelDescriptor","PerformanceLevelDescriptor","MS","Meets the Achievement Standards","Meets the Achievement Standards","31"
+"Core","uri://education.mn.gov/mcamtas/PerformanceLevelDescriptor","PerformanceLevelDescriptor","N","Near Expectations ","Near Expectations ","17"
+"Core","uri://education.mn.gov/mcamtas/PerformanceLevelDescriptor","PerformanceLevelDescriptor","PS","Partially Meets the Achievement Standards","Partially Meets the Achievement Standards","41"
