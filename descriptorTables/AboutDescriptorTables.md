@@ -5,7 +5,9 @@ This folder contains a series of CSV tables that list various descriptor values,
 3. Enabling viewers to see when each individual descriptor was last updated
 4. Enabling viewers a quick preview of each table when selecting it within GitHub
 
-During the 2022-2023 school year we removed the manually-maintained descriptor tabs from the "Mapping Matrix". You can still see descriptor tabs in older release copies, but they will no longer be maintained. Refer to the CSVs in this folder instead for either the coming school year (spring), or the current school year in effect (summer, fall, and winter). See details below.
+Refer to the CSVs in this folder for either the coming school year (spring), or the current school year in effect (summer, fall, and winter). See details below.
+
+_Note_: occasionally special characters, such as em dashes, are stored in the database but do not translate well into CSV exports. An example is in code value 2 for ``SpecialEducationEvaluationStatusDescriptor``: "Shared-Time K-12 – Evaluated, EC – Evaluated" appears as "Shared-Time K-12 ? Evaluated, EC ? Evaluated". This is merely an artifact of character translations and can be ignored.
 
 ## Source Details
 As of the most recent run, these tables are derived from the following database at MDE:
