@@ -147,7 +147,7 @@ The above image describes the dependencies required to work with the MDE Ed-Fi m
 8.	Parent Records, Students and Enrollment records are required prior to setting the Student Parent Association.
 
 #### Grade / Enrollment Requirements for Early Education Enrollment
-As described above, each student must first have a StudentSchoolAssociation record (an enrollment record). Starting in SY2023-24, all EE enrollments will use grade 'EE' as described in [this resolution document](./2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_disamb_resolution_v2023-03-10.pdf).
+As described above, each student must first have a StudentSchoolAssociation record (an enrollment record). Starting in SY2023-24, all EE enrollments will use grade 'EE' due to the resolution described in the [early education disambiguation resolution](./early_ed_disamb_work.md).
 
 # Navigation
 - [Return to SIS Test Plan Overview](sis_test_plan_a_toc.md)
