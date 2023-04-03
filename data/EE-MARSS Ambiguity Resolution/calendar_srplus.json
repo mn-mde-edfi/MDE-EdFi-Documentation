@@ -1,0 +1,26 @@
+/* 
+Example JSON demonstrating a calendar record to be used in relation to a School Readiness Plus program association.
+Notes:
+- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
+- Note that the grade no longer references a section for SR Plus, only "EE".
+*/
+
+{
+    "calendarCode": "SRPlusGradeEE",
+    "schoolReference": {
+      "schoolId": {{elemORGID}}
+    },
+    "schoolYearTypeReference": {
+      "schoolYear": 2024
+    },
+    "calendarTypeDescriptor": "uri://education.mn.gov/CalendarTypeDescriptor#School/Grade Characteristics",
+    "gradeLevels": [
+      {"gradeLevelDescriptor": "uri://education.mn.gov/GradeLevelDescriptor#EE"}
+    ],
+    "_ext": {
+      "MN": {
+        "instructionalDays": 148,
+        "lengthOfDay": 150
+      }
+    }
+  }

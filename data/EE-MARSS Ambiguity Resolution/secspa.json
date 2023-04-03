@@ -1,0 +1,24 @@
+/* 
+Example JSON demonstrating a student Early Childhood Screening Program Association (SECSPA).
+Notes:
+- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
+- Unlike the other program associations in this folder, this JSON needs to be sent to a different endpoint:
+     {{ApiUrl}}/MN/studentEarlyChildhoodScreeningProgramAssociations
+*/
+{
+    "beginDate": "2023-09-05",
+    "educationOrganizationReference": {
+      "educationOrganizationId": {{elemORGID}}
+    },
+    "programReference": {
+      "educationOrganizationId": {{leaORGID}},
+      "programName": "EE-ECS",
+      "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#EE-ECS"
+    },
+    "studentReference": {
+      "studentUniqueId": "99900A"
+    },
+    "endDate": "2024-06-01",
+    "earlyChildhoodScreenerDescriptor": "uri://education.mn.gov/EarlyChildhoodScreenerDescriptor#3",
+    "earlyChildhoodScreeningExitStatusDescriptor": "uri://education.mn.gov/EarlyChildhoodScreeningExitStatusDescriptor#7"
+  }

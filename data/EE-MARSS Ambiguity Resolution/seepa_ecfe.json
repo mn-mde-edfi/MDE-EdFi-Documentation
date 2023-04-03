@@ -1,0 +1,32 @@
+/* 
+Example JSON demonstrating a student Early Education Program Association (SEEPA) for ECFE.
+Notes:
+- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
+- Send to endpoint {{ApiUrl}}/MN/studentEarlyEducationProgramAssociations
+*/
+{
+    "beginDate": "2023-10-06",
+    "educationOrganizationReference": {
+      "educationOrganizationId": {{elemORGID}}
+    },
+    "programReference": {
+      "educationOrganizationId": {{leaORGID}},
+      "programName": "EE-ECFE",
+      "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#EE-ECFE"
+    },
+    "studentReference": {
+      "studentUniqueId": "99900B"
+    },
+    "endDate": "2024-06-11",
+    "fundingSources": [
+      {"fundingSourceDescriptor": "uri://education.mn.gov/FundingSourceDescriptor#ECFE"},
+      {"fundingSourceDescriptor": "uri://education.mn.gov/FundingSourceDescriptor#CC"}
+    ],
+    "memberships": [
+      {
+        "membershipAttendanceUnitDescriptor": "uri://education.mn.gov/MembershipAttendanceUnitDescriptor#Hours",
+        "attendance": 580,
+        "membership": 640
+      }
+    ]
+  }

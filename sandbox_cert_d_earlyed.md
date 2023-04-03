@@ -153,7 +153,7 @@ This association now represents Students in either MARSS (School Readiness Plus,
 - MARSS Early Childhood Screening (aka Preschool Screening) is covered in [this program association](/sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations).
 - The "EE-SR" and "EE-ECFE" program types are the programs intended for use with Early Education Data. These can also be used to cover the Early Ed programs formerly described as "SR/AB" and "ECFE/AB", respectively.
 - "End Reason Code" below correlates to "reasonExitedDescriptor" (see the similarly named Data Mapping Matrix tab)
-- Note that a calendar reference has been added to the VPK and SR+ scenarios in order to relate specific calendar records to sections of those programs.
+- Note that a calendar reference has been added to the VPK and SR+ scenarios in order to relate specific calendar records to sections of those programs. Sample JSON files for calendars and program associations are available in the [EE-MARSS Ambiguity Resolution](/data/EE-MARSS%20Ambiguity%20Resolution/) folder of the data directory.
 
 **Prerequisite Data:**
 - Schools

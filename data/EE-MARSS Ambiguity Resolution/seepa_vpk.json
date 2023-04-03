@@ -1,0 +1,36 @@
+/* 
+Example JSON demonstrating a student Early Education Program Association (SEEPA) for Voluntary Pre-K (VPK).
+Notes:
+- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
+- Send to endpoint {{ApiUrl}}/MN/studentEarlyEducationProgramAssociations
+- Note the calendar reference and the program section descriptor
+*/
+
+{
+    "beginDate": "2023-09-05",
+    "calendarReference": {
+      "calendarCode": "VPKGradeEE",
+      "schoolId": {{elemORGID}},
+      "schoolYear": 2024
+    },
+    "educationOrganizationReference": {
+      "educationOrganizationId": {{elemORGID}}
+    },
+    "programReference": {
+      "educationOrganizationId": {{leaORGID}},
+      "programName": "EE-VPK",
+      "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#EE-VPK"
+    },
+    "studentReference": {
+      "studentUniqueId": "99900F"
+    },
+    "endDate": "2024-06-11",
+    "memberships": [
+      {
+        "membershipAttendanceUnitDescriptor": "uri://education.mn.gov/MembershipAttendanceUnitDescriptor#Days",
+        "attendance": 50,
+        "membership": 60
+      }
+    ],
+    "programSectionDescriptor": "uri://education.mn.gov/ProgramSectionDescriptor#F"
+  }

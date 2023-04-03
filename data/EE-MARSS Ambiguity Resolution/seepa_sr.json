@@ -1,0 +1,32 @@
+/* 
+Example JSON demonstrating a student Early Education Program Association (SEEPA) for School Readiness.
+Notes:
+- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
+- Send to endpoint {{ApiUrl}}/MN/studentEarlyEducationProgramAssociations
+*/
+{
+    "beginDate": "2023-09-07",
+    "educationOrganizationReference": {
+      "educationOrganizationId": {{elemORGID}}
+    },
+    "programReference": {
+      "educationOrganizationId": {{leaORGID}},
+      "programName": "EE-SR",
+      "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#EE-SR"
+    },
+    "studentReference": {
+      "studentUniqueId": "99900C"
+    },
+    "endDate": "2024-06-11",
+    "fundingSources": [
+      {"fundingSourceDescriptor": "uri://education.mn.gov/FundingSourceDescriptor#CSPF"},
+      {"fundingSourceDescriptor": "uri://education.mn.gov/FundingSourceDescriptor#OD"}
+    ],
+    "memberships": [
+      {
+        "membershipAttendanceUnitDescriptor": "uri://education.mn.gov/MembershipAttendanceUnitDescriptor#Hours",
+        "attendance": 580,
+        "membership": 640
+      }
+    ]
+  }
