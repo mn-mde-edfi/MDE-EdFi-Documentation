@@ -122,6 +122,7 @@ This association relates students to their parents, guardians, or caretakers.
 - Students
 - Parents
 - StudentSchoolAssociations
+- Calendar Records with an "EE" grade, but with specific length of day and instructional days for VPK and School Readiness Plus
 
 **Scenarios:**
 1.	Submit Student Parent Association Record for the Early Education Student in Gradelevel EE
@@ -152,7 +153,7 @@ This association now represents Students in either MARSS (School Readiness Plus,
 - MARSS Early Childhood Screening (aka Preschool Screening) is covered in [this program association](/sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations).
 - The "EE-SR" and "EE-ECFE" program types are the programs intended for use with Early Education Data. These can also be used to cover the Early Ed programs formerly described as "SR/AB" and "ECFE/AB", respectively.
 - "End Reason Code" below correlates to "reasonExitedDescriptor" (see the similarly named Data Mapping Matrix tab)
-- A calendar reference may be added to the VPK and SR+ scenarios in order to relate specific calendar records to sections of those programs.
+- Note that a calendar reference has been added to the VPK and SR+ scenarios in order to relate specific calendar records to sections of those programs.
 
 **Prerequisite Data:**
 - Schools
@@ -207,14 +208,16 @@ This association now represents Students in either MARSS (School Readiness Plus,
     - Program Section Descriptor of Section D
     - Membership: 60 (days)
     - Attendance: 50
+    - Calendar Reference: link to the EE calendar set up for School Readiness Plus
 9.	Associate **Student F** with an EE-VPK Program
     - Begin Date: 9/5/2023 
     - End Date: 6/11/2024 (default to last day in the school year)
     - Program Section Descriptor of Section F
     - Membership: 60
     - Attendance: 50
+    - Calendar Reference: link to the EE calendar set up for VPK
 10.	Change **Student C's** association from EE-SR to EE-VPK
-    - Demonstrate how a Program Section Descriptor will now be required, and enter Section J
+    - Demonstrate how both a Program Section Descriptor and a Calendar Reference will now be required, describing Section J for this school year
 11.	Please demonstrate how your software differentiates between various program choices, in particular how users will tell the difference between Early Childhood Screening (EE-ECS) and Early Childhood Special Education (EE-ECSE).
 
 ## Resource: StudentHomelessProgramAssociation
