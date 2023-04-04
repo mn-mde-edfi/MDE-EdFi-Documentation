@@ -1,0 +1,66 @@
+{
+	"studentAssessmentIdentifier": "1111",
+	"assessmentReference": {
+		"assessmentIdentifier": "MTAS_Pearson_2021_Reading_3to5",
+		"namespace": "http://www.pearson.com/mtas/Pearson_2021_Reading_3to5"
+	},
+	"schoolYearTypeReference": {
+		"schoolYear": 2023
+	},
+	"studentReference": {
+		"studentUniqueId": "9999990001234"
+	},
+	"accommodations": [{
+		"accommodationDescriptor": "uri://education.mn.gov/mcamtas/AccommodationDescriptor#AT"
+	}],
+	"administrationDate": "2022-06-09",
+	"administrationEndDate": "2022-06-09",
+	"performanceLevels": [{
+		"assessmentReportingMethodDescriptor": "uri://education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#ACHL",
+		"performanceLevelDescriptor": "uri://education.mn.gov/mcamtas/PerformanceLevelDescriptor#ES",
+		"performanceLevelMet": true
+	}],
+	"scoreResults": [{
+		"assessmentReportingMethodDescriptor": "uri: //education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#SSCO",
+		"resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+		"result": "298"
+	}],
+	"serialNumber": "123142412",
+	"studentObjectiveAssessments": [{
+		"objectiveAssessmentReference": {
+			"assessmentIdentifier": "MTAS_Pearson_2021_Reading_3to5",
+			"identificationCode": "LSS",
+			"namespace": "http://www.pearson.com/mtas/Pearson_2021_Reading_3to5"
+		},
+		"performanceLevels": [{
+			"assessmentReportingMethodDescriptor": "uri://education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#RSCO",
+			"performanceLevelDescriptor": "uri://education.mn.gov/mcamtas/PerformanceLevelDescriptor#ES",
+			"performanceLevelMet": true
+		}],
+		"scoreResults": [{
+			"assessmentReportingMethodDescriptor": "uri: //education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#RSCO",
+			"resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+			"result": "4980"
+		}],
+		"whenAssessedGradeLevelDescriptor": "uri://education.mn.gov/GradeLevelDescriptor#5"
+	}],
+	"_ext": {
+		"MN": {
+			"assessmentFormatDescriptor": "uri://education.mn.gov/mcamtas/AssessmentFormatDescriptor#O",
+			"attemptLogicMetDescriptor": "uri://education.mn.gov/mcamtas/AttemptLogicMetDescriptor#Y",
+			"operationalPassage1Descriptor": "uri://education.mn.gov/mcamtas/OperationalPassageDescriptor#2",
+			"operationalPassage2Descriptor": "uri://education.mn.gov/mcamtas/OperationalPassageDescriptor#2",
+			"operationalPassage3Descriptor": "uri://education.mn.gov/mcamtas/OperationalPassageDescriptor#2",
+			"sexDescriptor": "uri://ed-fi.org/SexDescriptor#Female",
+			"birthDate": "2012-1-12",
+			"catStudentTestId": "123123",
+			"firstName": "Anne",
+			"itemAttempted": true,
+			"lastSurname": "Sample",
+			"middleName": "Q",
+			"siteEducationOrganizationReference": {
+				"educationOrganizationId": 10659002
+			}
+		}
+	}
+}
