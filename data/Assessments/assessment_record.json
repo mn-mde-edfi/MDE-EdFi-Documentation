@@ -1,9 +1,8 @@
 {
-    "assessmentIdentifier": "MTAS_Pearson_2021_Reading_3to5",
-    "namespace": "http://www.pearson.com/mtas/Pearson_2021_Reading_3to5",
-    "assessmentForm": "Form",
-    "assessmentTitle": "MTAS_Pearson_2021_Reading_3to5",
-    "assessmentVersion": 2022,
+    "assessmentIdentifier": "2023_testcode_formcode",
+    "namespace": "http://www.pearson.com/",
+    "assessmentForm": "A",
+    "assessmentTitle": "MCA-III",
     "academicSubjects": [
       {
         "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#R"
@@ -11,22 +10,10 @@
     ],
     "scores": [
       {
-        "assessmentReportingMethodDescriptor": "uri://education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#QNTL",
-        "maximumScore": "50",
-        "minimumScore": "0",
-        "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range"
-      },
-      {
-        "assessmentReportingMethodDescriptor": "uri://education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#QNTU",
-        "maximumScore": "300",
-        "minimumScore": "200",
-        "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range"
-      },
-      {
         "assessmentReportingMethodDescriptor": "uri://education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#SSCO",
         "maximumScore": "300",
         "minimumScore": "200",
-        "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range"
+        "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
       }
     ]
   }

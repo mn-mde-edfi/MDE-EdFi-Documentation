@@ -1,8 +1,8 @@
 {
-	"studentAssessmentIdentifier": "1111",
+	"studentAssessmentIdentifier": "AAAOGP11916000001843",
 	"assessmentReference": {
-		"assessmentIdentifier": "MTAS_Pearson_2021_Reading_3to5",
-		"namespace": "http://www.pearson.com/mtas/Pearson_2021_Reading_3to5"
+		"assessmentIdentifier": "2023_testcode_formcode",
+		"namespace": "http://www.pearson.com/"
 	},
 	"schoolYearTypeReference": {
 		"schoolYear": 2023
@@ -13,33 +13,48 @@
 	"accommodations": [{
 		"accommodationDescriptor": "uri://education.mn.gov/mcamtas/AccommodationDescriptor#AT"
 	}],
-	"administrationDate": "2022-06-09",
-	"administrationEndDate": "2022-06-09",
+	"administrationDate": "2023-03-27T21:50:21.642Z",
+	"administrationEndDate": "2023-03-27T21:50:21.642Z",
 	"performanceLevels": [{
 		"assessmentReportingMethodDescriptor": "uri://education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#ACHL",
 		"performanceLevelDescriptor": "uri://education.mn.gov/mcamtas/PerformanceLevelDescriptor#ES",
 		"performanceLevelMet": true
 	}],
-	"scoreResults": [{
+	"scoreResults": [
+	{
 		"assessmentReportingMethodDescriptor": "uri: //education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#SSCO",
-		"resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
-		"result": "298"
+		"resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+		"result": "4980"
+	},
+	{
+		"assessmentReportingMethodDescriptor": "uri: //education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#LEXS",
+		"resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+		"result": "250"
+	},
+	{
+		"assessmentReportingMethodDescriptor": "uri: //education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#QNTL",
+		"resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+		"result": "character value"
+	},
+	{
+		"assessmentReportingMethodDescriptor": "uri: //education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#QNTU",
+		"resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+		"result": "character value"
 	}],
-	"serialNumber": "123142412",
 	"studentObjectiveAssessments": [{
 		"objectiveAssessmentReference": {
-			"assessmentIdentifier": "MTAS_Pearson_2021_Reading_3to5",
+			"assessmentIdentifier": "2023_testcode_formcode",
 			"identificationCode": "LSS",
-			"namespace": "http://www.pearson.com/mtas/Pearson_2021_Reading_3to5"
+			"namespace": "http://www.pearson.com/"
 		},
 		"performanceLevels": [{
-			"assessmentReportingMethodDescriptor": "uri://education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#RSCO",
-			"performanceLevelDescriptor": "uri://education.mn.gov/mcamtas/PerformanceLevelDescriptor#ES",
+			"assessmentReportingMethodDescriptor": "uri://education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#SPL",
+			"performanceLevelDescriptor": "uri://education.mn.gov/mcamtas/PerformanceLevelDescriptor#A",
 			"performanceLevelMet": true
 		}],
 		"scoreResults": [{
 			"assessmentReportingMethodDescriptor": "uri: //education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#RSCO",
-			"resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+			"resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
 			"result": "4980"
 		}],
 		"whenAssessedGradeLevelDescriptor": "uri://education.mn.gov/GradeLevelDescriptor#5"
@@ -48,9 +63,10 @@
 		"MN": {
 			"assessmentFormatDescriptor": "uri://education.mn.gov/mcamtas/AssessmentFormatDescriptor#O",
 			"attemptLogicMetDescriptor": "uri://education.mn.gov/mcamtas/AttemptLogicMetDescriptor#Y",
-			"operationalPassage1Descriptor": "uri://education.mn.gov/mcamtas/OperationalPassageDescriptor#2",
-			"operationalPassage2Descriptor": "uri://education.mn.gov/mcamtas/OperationalPassageDescriptor#2",
-			"operationalPassage3Descriptor": "uri://education.mn.gov/mcamtas/OperationalPassageDescriptor#2",
+			"generalEnrollmentDescriptor": "uri://education.mn.gov/mcamtas/GeneralEnrollmentDescriptor#A",
+			"firstOperationalPassageDescriptor": "uri://education.mn.gov/mcamtas/OperationalPassageDescriptor#2",
+			"secondOperationalPassageDescriptor": "uri://education.mn.gov/mcamtas/OperationalPassageDescriptor#2",
+			"thirdOperationalPassageDescriptor": "uri://education.mn.gov/mcamtas/OperationalPassageDescriptor#2",
 			"sexDescriptor": "uri://ed-fi.org/SexDescriptor#Female",
 			"birthDate": "2012-1-12",
 			"catStudentTestId": "123123",

@@ -1,7 +1,7 @@
 {
     "assessmentReference": {
-      "assessmentIdentifier": "MTAS_Pearson_2021_Reading_3to5",
-      "namespace": "http://www.pearson.com/mtas/Pearson_2021_Reading_3to5",
+      "assessmentIdentifier": "2023_testcode_formcode",
+      "namespace": "http://www.pearson.com/",
       "link": {
         "rel": "Assessment",
         "href": "/ed-fi/assessments/4e9a63f245df465f800bb10c95e670fb"
@@ -9,18 +9,13 @@
     },
     "identificationCode": "LSS",
     "academicSubjectDescriptor": "uri://education.mn.gov/AcademicSubjectDescriptor#R",
-    "description": "Literature Strand",
+    "description": "str",
     "scores": [
       {
         "assessmentReportingMethodDescriptor": "uri://education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#RSCO",
         "maximumScore": "4985",
         "minimumScore": "0",
-        "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
-      },
-      {
-        "assessmentReportingMethodDescriptor": "uri://education.mn.gov/mcamtas/AssessmentReportingMethodDescriptor#SES",
-        "maximumScore": "15",
-        "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+        "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
       }
     ]
   }
