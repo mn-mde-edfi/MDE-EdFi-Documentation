@@ -21,11 +21,11 @@ As of the most recent run, these tables are derived from the following database 
 Refer to the change/commit log in GitHub to see what the latest changes are for the tables in this folder.
 
 ### Assessment Descriptors
-The following Descriptors used for **Assessment** purposes are pulled from  Staging EdFi_Ods_2023:
+The following Descriptors used for **Assessment** purposes are pulled from Staging EdFi_Ods_2023:
 - [AccommodationDescriptor](AccommodationDescriptor.csv)
 - [AssessmentFormatDescriptor](AssessmentFormatDescriptor.csv)
-- [assessmentReportingMethodDescriptor](assessmentReportingMethodDescriptor.csv) - should be renamed to *AssessmentReportingMethodDescriptor*
-- [AttemptLogicDescriptor](AttemptLogicDescriptor.csv) - should be renamed to *AttemptLogic**Met**Descriptor*
+- [AssessmentReportingMethodDescriptor](AssessmentReportingMethodDescriptor.csv) - recently corrected from *assessmentReportingMethodDescriptor*
+- [AttemptLogicMetDescriptor](AttemptLogicMetDescriptor.csv) - recently corrected from *AttemptLogicDescriptor*
 - [GeneralEnrollmentDescriptor](GeneralEnrollmentDescriptor.csv)
 - [OperationalPassageDescriptor](OperationalPassageDescriptor.csv)
 - [PerformanceLevelDescriptor](PerformanceLevelDescriptor.csv)
