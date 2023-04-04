@@ -43,9 +43,9 @@ Several of the new data collections originally planned for prior school years ar
   - [Displaced Students and Student Crisis Events](sandbox_cert_b_marss.md#displaced-students-and-student-crisis-events)
 
 #### Migration of Custom Descriptor Tables
-For **school year 2023-24** the MDE MNIT team has *moved* the custom [descriptor tables folder](./descriptorTables/) to the top-level of this repository. Going forward, this folder will reflect the most recent information about desciptor tables, either planned for the coming year (spring) or in effect for the current year (summer through winter). The current state of the tables within the folder will be detailed in the[ About Descriptor Tables](./descriptorTables/AboutDescriptorTables.md) markdown file. Viewing the commit history of the folder will allow vendors to more easily visualize chnages from year to year.
+For **school year 2023-24** the MDE MNIT team has *moved* the custom [descriptor tables folder](./descriptorTables/) to the top-level of this repository. Going forward, this folder will reflect the most recent information about desciptor tables, either planned for the coming year (spring) or in effect for the current year (summer through winter). The current state of the tables within the folder will be detailed in the[ About Descriptor Tables](./descriptorTables/AboutDescriptorTables.md) markdown file. Viewing the commit history of the folder will allow vendors to more easily visualize changes from year to year.
 
-The folder will continue to contain a suite of CSV files that are automatically exported from our Ed-Fi database(s), and should be used as the "source of truth" reference. Older versions of the Data Mapping Matrix still have them, but those are no longer being maintained.
+The folder will continue to contain a suite of CSV files that are exported from our Ed-Fi database(s), and should be used as the "source of truth" reference.
 
 ## Additional Documentation
 We will also use this repository to store additional documentation and links that may be useful to Districts and Vendors. See the following:
@@ -62,7 +62,7 @@ We will also use this repository to store additional documentation and links tha
   - The [FAQ page for the Minnesota Bilingual Seals Program](https://education.mn.gov/MDE/dse/stds/world/seals/PROD034397)
 
 ## Sample Data
-JSON files of sample data are being loaded into the [data directory](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/tree/master/data) in an attempt to assist developers with understanding the Ed-Fi ODS API.
+JSON files of sample data can be found in the [data directory](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/tree/master/data). These files are intended to assist developers with understanding the Ed-Fi ODS API.
 
 ## Issues List
 As part of this documentation effort, we are also using Github to manage technical issues. See the [Issue List](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/issues) for examples.
