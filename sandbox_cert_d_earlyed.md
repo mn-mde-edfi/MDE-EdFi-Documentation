@@ -1,5 +1,5 @@
 # Early Education Enrollment Certification **Scenarios**: API Resources
-_Please note: the following scenarios are example situations, intended to demonstrate that your application can update the MDE Ed-Fi ODS appropriately. They do not necessarily demonstrate all valid combinations; for example, all funding source codes can be used for both School Readiness (SR) and Early Childhood Family Education (ECFE). **Continuous updates are being applied to these scenarios for school year 2023-2024, resolving the Early Education program ambiguity issue.** In particular, we are still drafting and testing how we will resolve the relationship to calendars that will no longer be able to use grade levels of PA-PJ and RA-RJ._
+_Please note: the following scenarios are example situations, intended to demonstrate that your application can update the MDE Ed-Fi ODS appropriately. They do not necessarily demonstrate all valid combinations; for example, all funding source codes can be used for both School Readiness (SR) and Early Childhood Family Education (ECFE). **Updates have been applied to these scenarios for school year 2023-2024, resolving the Early Education program ambiguity issue.** Please note that this resolution also involves [Calendar recsources](./sandbox_cert_b_marss.md#resource-calendar) and [StudentEarlyChildhoodScreeningProgramAssociations](./sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations)._
 
 For more information, see the [Early Education Enrollment and Parent collection dependencies section](sis_test_plan_c_data_reqs.md#early-education-enrollment-and-parent-collection) of the SIS Vendor test plan data requirements document.
 
@@ -163,6 +163,7 @@ This association now represents Students in either MARSS (School Readiness Plus,
 - Program - where ProgramTypeDescriptor = "EE-ECSE"
 - Program - where ProgramTypeDescriptor = "EE-VPK"
 - Students
+- Calendar records with grade "EE" for use with VPK and SR+ programs
 
 **Scenarios:**
 1.	Associate **Student A** with an EE-SR Program 
