@@ -22,7 +22,7 @@ By serving documentation in multiple formats, our goal is to increase vendor acc
 
 ### School Year 2023-2024 Plans
 The following updates are being implemented for school year 2023-2024:
-- Early Education / MARSS [Program Ambiguity Resolution](./2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_disamb_resolution_v2023-04-03.pdf)
+- Early Education / MARSS [Program Ambiguity Resolution](./2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_marss_conflict_resolution.pdf)
 - Various descriptor changes (see the [descriptor tables folder](./descriptorTables/))
 
 Vendor certification scenarios are available for the Ambiguity Resolution change, and can be found within the [early education scenarios](/sandbox_cert_d_earlyed.md). In addition, a description of the problem being resolved is available in the document linked above. For reference, [this workaround document](./early_ed_disamb_work.md) details the methods requested of vendors to work around this issue for school year 2022-23 and prior.
