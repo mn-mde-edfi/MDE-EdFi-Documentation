@@ -154,6 +154,7 @@ This association now represents Students in either MARSS (School Readiness Plus,
 - The "EE-SR" and "EE-ECFE" program types are the programs intended for use with Early Education Data. These can also be used to cover the Early Ed programs formerly described as "SR/AB" and "ECFE/AB", respectively.
 - "End Reason Code" below correlates to "reasonExitedDescriptor" (see the similarly named Data Mapping Matrix tab)
 - Note that a calendar reference has been added to the VPK and SR+ scenarios in order to relate specific calendar records to sections of those programs. Sample JSON files for calendars and program associations are available in the [EE-MARSS Ambiguity Resolution](/data/EE-MARSS%20Ambiguity%20Resolution/) folder of the data directory.
+- Note that *custom* membership and attendance elements on these associations have been replaced with an element similar to the Student School Association. For ECFE and SR program types, units must be ``Hours`` and percentEnrolled should be either zero or omitted. For the other early learning program types, the rules for membership & attendance data elements are the same as if the information were posted on the Student School Association from previous years. 
 
 **Prerequisite Data:**
 - Schools
@@ -170,6 +171,8 @@ This association now represents Students in either MARSS (School Readiness Plus,
     - Begin Date: 9/5/2023
     - End Date: 6/11/2024 (default to last day in the school year)
     - End Reason Code = PE-01
+    - Membership / Attendance Units: Hours
+    - Percent Enrolled: 0 or omitted
     - Membership: 640
     - Attendance: 580
     - Submit funding sources PF and CC
@@ -177,43 +180,53 @@ This association now represents Students in either MARSS (School Readiness Plus,
     - Begin Date = 9/5/2023
     - End Date = 10/15/2023
     - End Reason Code = PE-02
-    - Membership Hours = 40
-    - Attendance Hours = 30
+    - Membership / Attendance Units: Hours
+    - Percent Enrolled: 0 or omitted
+    - Membership = 40
+    - Attendance = 30
     - Submit funding sources PF, CC and TITLE
 3.	Demonstrate how **Student A** can be simultaneously associated with an Early Childhood Screening Association (aka Preschool Screening) with the same Begin Date of 9/5/2023.
 4.	Associate **Student B** with an EE-ECFE Program 
     - Begin Date: 10/6/2023
     - End Date: 6/11/2024 (default to last day in the school year)
+    - Membership / Attendance Units: Hours
+    - Percent Enrolled: 0 or omitted
     - Membership: 640
     - Attendance: 580
     - Submit funding sources ECFE and CC
 5.	Associate **Student C** with an EE-SR Program 
     - Begin Date: 9/7/2023
     - End Date: 6/11/2024 (default to last day in the school year)
+    - Membership / Attendance Units: Hours
+    - Percent Enrolled: 0 or omitted
     - Membership: 640
     - Attendance: 580
     - Submit funding sources CSPF and OD
 6.	Add an association for **Student C** with an EE-ECSE Program starting on the same date demonstrating that they can be associated with both EE-ECSE and EE-SR at the same time.
     - Begin Date: 9/7/2023
     - End Date: 6/11/2024 (default to last day in the school year)
+    - Membership / Attendance Units: Hours
     - Membership: 640
     - Attendance: 580
 7.	Associate **Student D** with an EE-ECSE Program
     - Begin Date: 10/17/2023
     - End Date: 6/11/2024 (default to last day in the school year)
+    - Membership / Attendance Units: Hours
     - Membership: 540
     - Attendance: 500
 8.	Associate **Student E** with an EE-SR+ Program
     - Begin Date: 9/5/2023
     - End Date: 6/11/2024 (default to last day in the school year)
     - Program Section Descriptor of Section D
-    - Membership: 60 (days)
+    - Membership / Attendance Units: Days
+    - Membership: 60
     - Attendance: 50
     - Calendar Reference: link to the EE calendar set up for School Readiness Plus
 9.	Associate **Student F** with an EE-VPK Program
     - Begin Date: 9/5/2023 
     - End Date: 6/11/2024 (default to last day in the school year)
     - Program Section Descriptor of Section F
+    - Membership / Attendance Units: Days
     - Membership: 60
     - Attendance: 50
     - Calendar Reference: link to the EE calendar set up for VPK
