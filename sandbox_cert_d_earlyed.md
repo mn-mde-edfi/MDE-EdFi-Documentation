@@ -154,7 +154,7 @@ This association now represents Students in either MARSS (School Readiness Plus,
 - The "EE-SR" and "EE-ECFE" program types are the programs intended for use with Early Education Data. These can also be used to cover the Early Ed programs formerly described as "SR/AB" and "ECFE/AB", respectively.
 - "End Reason Code" below correlates to "reasonExitedDescriptor" (see the similarly named Data Mapping Matrix tab)
 - Note that a calendar reference has been added to the VPK and SR+ scenarios in order to relate specific calendar records to sections of those programs. Sample JSON files for calendars and program associations are available in the [EE-MARSS Ambiguity Resolution](/data/EE-MARSS%20Ambiguity%20Resolution/) folder of the data directory.
-- Note that *custom* membership and attendance elements on these associations have been replaced with an element similar to the Student School Association. For ECFE and SR program types, units must be ``Hours`` and percentEnrolled should be either zero or omitted. For the other early learning program types, the rules for membership & attendance data elements are the same as if the information were posted on the Student School Association from previous years. 
+- Note that *custom* membership and attendance elements on these associations have been replaced with an element similar to the Student School Association. For ECFE and SR program types, units must be ``Hours`` and percentEnrolled should be either zero or omitted. For the other early learning program types, the rules for membership & attendance data elements remain the same as they have been as defined by MARSS; the data elements are merely shifted to this resource instead of on the Student School Association. 
 
 **Prerequisite Data:**
 - Schools
