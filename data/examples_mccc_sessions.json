@@ -1,0 +1,224 @@
+/* 
+Example JSON demonstrating Session records for MCCC.
+Notes:
+- Comment blocks above each set of records refer to the requirements in the test scenario - see /sandbox_cert_e_mccc.md#resource-session
+- Comments above each section record refer to the session being referenced
+- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
+- The primary key for a session is simply its name, which is why we recommend names that can indicate the school and term descriptor
+*/
+
+/*
+Elementary Fall Session
+*/
+
+{
+    "sessionName": "{{elementaryschoolid}}-Fall",
+    "termDescriptor": "uri://education.mn.gov/TermDescriptor#First Semester",
+    "beginDate": "08-01-2020",
+    "endDate": "12-21-2020",
+    "totalInstructionalDays": "85",
+    "schoolReference": {
+        "schoolId": {{elementaryschoolid}}
+    },
+    "schoolYearTypeReference": {
+        "schoolYear": 2022
+    },
+    "_ext": {
+        "MN": {
+            "daysInSession": "85",
+            "termNumber": "1"
+        }
+    }
+}
+
+/*
+Middle Fall Session
+*/
+
+{
+    "sessionName": "{{middleschoolid}}-Fall",
+    "termDescriptor": "uri://education.mn.gov/TermDescriptor#First Semester",
+    "beginDate": "08-01-2020",
+    "endDate": "12-21-2020",
+    "totalInstructionalDays": "85",
+    "schoolReference": {
+        "schoolId": {{middleschoolid}}
+    },
+    "schoolYearTypeReference": {
+        "schoolYear": 2022
+    },
+    "_ext": {
+        "MN": {
+            "daysInSession": "85",
+            "termNumber": "1"
+        }
+    }
+}
+
+/*
+High Fall Session
+*/
+
+{
+    "sessionName": "{{highschoolid}}-Fall",
+    "termDescriptor": "uri://education.mn.gov/TermDescriptor#First Semester",
+    "beginDate": "08-01-2020",
+    "endDate": "12-21-2020",
+    "totalInstructionalDays": "85",
+    "schoolReference": {
+        "schoolId": {{highschoolid}}
+    },
+    "schoolYearTypeReference": {
+        "schoolYear": 2022
+    },
+    "_ext": {
+        "MN": {
+            "daysInSession": "85",
+            "termNumber": "1"
+        }
+    }
+}
+
+/*
+Elementary Spring Session
+*/
+
+{
+    "sessionName": "{{elementaryschoolid}}-Spring",
+    "termDescriptor": "uri://education.mn.gov/TermDescriptor#Second Semester",
+    "beginDate": "01-08-2021",
+    "endDate": "06-30-2021",
+    "totalInstructionalDays": "86",
+    "schoolReference": {
+        "schoolId": {{elementaryschoolid}}
+    },
+    "schoolYearTypeReference": {
+        "schoolYear": 2022
+    },
+    "_ext": {
+        "MN": {
+            "daysInSession": "86",
+            "termNumber": "2"
+        }
+    }
+}
+
+/*
+Middle Spring Session
+*/
+
+{
+    "sessionName": "{{middleschoolid}}-Spring",
+    "termDescriptor": "uri://education.mn.gov/TermDescriptor#Second Semester",
+    "beginDate": "01-08-2021",
+    "endDate": "06-30-2021",
+    "totalInstructionalDays": "86",
+    "schoolReference": {
+        "schoolId": {{middleschoolid}}
+    },
+    "schoolYearTypeReference": {
+        "schoolYear": 2022
+    },
+    "_ext": {
+        "MN": {
+            "daysInSession": "86",
+            "termNumber": "2"
+        }
+    }
+}
+
+/*
+High Spring Session
+*/
+
+{
+    "sessionName": "{{highschoolid}}-Spring",
+    "termDescriptor": "uri://education.mn.gov/TermDescriptor#Second Semester",
+    "beginDate": "01-08-2021",
+    "endDate": "06-30-2021",
+    "totalInstructionalDays": "86",
+    "schoolReference": {
+        "schoolId": {{highschoolid}}
+    },
+    "schoolYearTypeReference": {
+        "schoolYear": 2022
+    },
+    "_ext": {
+        "MN": {
+            "daysInSession": "86",
+            "termNumber": "2"
+        }
+    }
+}
+
+/*
+Elementary Non-Scheduled Session
+*/
+
+{
+    "sessionName": "{{elementaryschoolid}}-Unscheduled",
+    "termDescriptor": "uri://education.mn.gov/TermDescriptor#Non-Scheduled",
+    "beginDate": "01-01-2021",
+    "endDate": "01-02-2021",
+    "totalInstructionalDays": "0",
+    "schoolReference": {
+        "schoolId": {{elementaryschoolid}}
+    },
+    "schoolYearTypeReference": {
+        "schoolYear": 2022
+    },
+    "_ext": {
+        "MN": {
+            "daysInSession": "0",
+            "termNumber": "3"
+        }
+    }
+}
+
+/*
+Middle Non-Scheduled Session
+*/
+
+{
+    "sessionName": "{{middleschoolid}}-Unscheduled",
+    "termDescriptor": "uri://education.mn.gov/TermDescriptor#Non-Scheduled",
+    "beginDate": "01-01-2021",
+    "endDate": "01-02-2021",
+    "totalInstructionalDays": "0",
+    "schoolReference": {
+        "schoolId": {{middleschoolid}}
+    },
+    "schoolYearTypeReference": {
+        "schoolYear": 2022
+    },
+    "_ext": {
+        "MN": {
+            "daysInSession": "0",
+            "termNumber": "3"
+        }
+    }
+}
+
+/*
+High Non-Scheduled Session
+*/
+
+{
+    "sessionName": "{{highschoolid}}-Unscheduled",
+    "termDescriptor": "uri://education.mn.gov/TermDescriptor#Non-Scheduled",
+    "beginDate": "01-01-2021",
+    "endDate": "01-02-2021",
+    "totalInstructionalDays": "0",
+    "schoolReference": {
+        "schoolId": {{highschoolid}}
+    },
+    "schoolYearTypeReference": {
+        "schoolYear": 2022
+    },
+    "_ext": {
+        "MN": {
+            "daysInSession": "0",
+            "termNumber": "3"
+        }
+    }
+}
