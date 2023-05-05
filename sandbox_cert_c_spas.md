@@ -221,7 +221,7 @@ This association represents the school food services program(s), such as the **F
 
 **Notes:** 
 1. In early Ed-Fi implementations, schoolFoodServicesEligibility was tracked as a separate field under StudentSchoolAssociation. This element is now tracked using SchoolFoodServiceProgramService on studentSchoolFoodServicesProgramAssociation.
-2. Usage and of the [Applied but Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify) element in the Student Education Organization Association has been **Postponed until further notice.**
+2. Usage of the [Applied but Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify) element in the Student Education Organization Association has been **Postponed until further notice.**
 
 **Prerequisite Data**
 - Schools
