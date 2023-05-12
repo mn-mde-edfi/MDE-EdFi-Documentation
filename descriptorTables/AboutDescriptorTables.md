@@ -23,6 +23,7 @@ Refer to the change/commit log in GitHub to see what the latest changes are for 
 ### Assessment Descriptors
 The following Descriptors used for **Assessment** purposes are pulled from Staging EdFi_Ods_2023:
 - [AccommodationDescriptor](AccommodationDescriptor.csv)
+- [AssessmentIdentificationSystemDescriptor](AssessmentIdentificationSystemDescriptor.csv)
 - [AssessmentFormatDescriptor](AssessmentFormatDescriptor.csv)
 - [AssessmentReportingMethodDescriptor](AssessmentReportingMethodDescriptor.csv) - recently corrected from *assessmentReportingMethodDescriptor*
 - [AttemptLogicMetDescriptor](AttemptLogicMetDescriptor.csv) - recently corrected from *AttemptLogicDescriptor*
