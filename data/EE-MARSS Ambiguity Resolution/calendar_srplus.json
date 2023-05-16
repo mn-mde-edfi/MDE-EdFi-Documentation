@@ -13,7 +13,7 @@ Notes:
     "schoolYearTypeReference": {
       "schoolYear": 2024
     },
-    "calendarTypeDescriptor": "uri://education.mn.gov/CalendarTypeDescriptor#School/Grade Characteristics",
+    "calendarTypeDescriptor": "uri://education.mn.gov/CalendarTypeDescriptor#MARSS-A",
     "gradeLevels": [
       {"gradeLevelDescriptor": "uri://education.mn.gov/GradeLevelDescriptor#EE"}
     ],
