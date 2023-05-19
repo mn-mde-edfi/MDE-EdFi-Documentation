@@ -21,10 +21,10 @@ As of the most recent run, these tables are derived from the following database 
 Refer to the change/commit log in GitHub to see what the latest changes are for the tables in this folder.
 
 ### Assessment Descriptors
-The following Descriptors used for **Assessment** purposes are pulled from Staging EdFi_Ods_2023:
+The following Descriptors used for **Assessment** purposes were originally pulled from the Staging ODS for school year 2023. After an updated production deployment for school year 2023, they were double checked and remain the same in Production. Individually, see:
 - [AccommodationDescriptor](AccommodationDescriptor.csv)
-- [AssessmentIdentificationSystemDescriptor](AssessmentIdentificationSystemDescriptor.csv)
 - [AssessmentFormatDescriptor](AssessmentFormatDescriptor.csv)
+- [AssessmentIdentificationSystemDescriptor](AssessmentIdentificationSystemDescriptor.csv)
 - [AssessmentReportingMethodDescriptor](AssessmentReportingMethodDescriptor.csv) - recently corrected from *assessmentReportingMethodDescriptor*
 - [AttemptLogicMetDescriptor](AttemptLogicMetDescriptor.csv) - recently corrected from *AttemptLogicDescriptor*
 - [GeneralEnrollmentDescriptor](GeneralEnrollmentDescriptor.csv)
