@@ -13,27 +13,27 @@ _Note_: occasionally special characters, such as em dashes, are stored in the da
 As of the most recent run, these tables are derived from the following database at MDE:
 - **Version**: 5.2
 - **School Year**: 2023-2024
-- **Environment**: Test Sandbox
-- **Database**: EdFi_sb24_Ods_Minimal_Template
+- **Environment**: QA
+- **Database**: EdFi_Ods_2024
 
-**Exception**: The Calendar Type Descriptor values are pulled from production EdFi_Ods_2023 until such time the recent updates are reflected in 2024 databases.
+**Exceptions** will be marked with details below as necessary.
 
 Refer to the change/commit log in GitHub to see what the latest changes are for the tables in this folder.
 
 ### Assessment Descriptors
-The following Descriptors used for **Assessment** purposes were originally pulled from the Staging ODS for school year 2023. After an updated production deployment for school year 2023, they were double checked and remain the same in Production. Individually, see:
+The following Descriptors used for **Assessment** purposes are now being exported along with other descriptor values, from the source listed above, with each new environment deploy. Please note that only assessment vendors will need to use these descriptors. Individually, see:
 - [AccommodationDescriptor](AccommodationDescriptor.csv)
 - [AssessmentFormatDescriptor](AssessmentFormatDescriptor.csv)
-- [AssessmentIdentificationSystemDescriptor](AssessmentIdentificationSystemDescriptor.csv)
-- [AssessmentReportingMethodDescriptor](AssessmentReportingMethodDescriptor.csv) - recently corrected from *assessmentReportingMethodDescriptor*
-- [AttemptLogicMetDescriptor](AttemptLogicMetDescriptor.csv) - recently corrected from *AttemptLogicDescriptor*
+- [AssessmentIdentificationSystemDescriptor](AssessmentIdentificationSystemDescriptor.csv) - **Exception Note**: as of 2023-05-30, this descriptor source is production 2022-23. We are working to ensure that it is accurately reflected in QA and/or higher environments for school year 2023-24.
+- [AssessmentReportingMethodDescriptor](AssessmentReportingMethodDescriptor.csv) - we will again correct *assessmentReportingMethodDescriptor* to *AssessmentReportingMethodDescriptor*.
+- [AttemptLogicMetDescriptor](AttemptLogicMetDescriptor.csv)
 - [GeneralEnrollmentDescriptor](GeneralEnrollmentDescriptor.csv)
 - [OperationalPassageDescriptor](OperationalPassageDescriptor.csv)
 - [PerformanceLevelDescriptor](PerformanceLevelDescriptor.csv)
 - [ReasonNotTestedDescriptor](ReasonNotTestedDescriptor.csv)
 - [ResultDatatypeTypeDescriptor](ResultDatatypeTypeDescriptor.csv)
 
-Note that Assessment vendors will also want to make use of the [AcademicSubjectDescriptor](AcademicSubjectDescriptor.csv) and [GradeLevelDescriptor](GradeLevelDescriptor.csv) tables; but these are pulled from the database listed in "Source Details" above.
+Note that Assessment vendors will also want to make use of the [AcademicSubjectDescriptor](AcademicSubjectDescriptor.csv) and [GradeLevelDescriptor](GradeLevelDescriptor.csv) tables listed below.
 
 
 ## List of Custom Descriptors and Links
