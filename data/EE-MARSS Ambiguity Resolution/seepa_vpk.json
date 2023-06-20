@@ -4,6 +4,7 @@ Notes:
 - Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
 - Send to endpoint {{ApiUrl}}/MN/studentEarlyEducationProgramAssociations
 - Note the calendar reference and the program section descriptor
+- Percent Enrolled is required for VPK
 */
 
 {
@@ -28,6 +29,7 @@ Notes:
     "memberships": [
       {
         "membershipAttendanceUnitDescriptor": "uri://education.mn.gov/MembershipAttendanceUnitDescriptor#Days",
+        "percentEnrolled":100,
         "attendance": 50,
         "membership": 60
       }

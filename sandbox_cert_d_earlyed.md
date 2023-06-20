@@ -154,7 +154,7 @@ This association now represents Students in either MARSS (School Readiness Plus,
 - The "EE-SR" and "EE-ECFE" program types are the programs intended for use with Early Education Data. These can also be used to cover the Early Ed programs formerly described as "SR/AB" and "ECFE/AB", respectively.
 - "End Reason Code" below correlates to "reasonExitedDescriptor" (see the similarly named Data Mapping Matrix tab)
 - Note that a calendar reference has been added to the VPK and SR+ scenarios in order to relate specific calendar records to sections of those programs. Sample JSON files for calendars and program associations are available in the [EE-MARSS Ambiguity Resolution](/data/EE-MARSS%20Ambiguity%20Resolution/) folder of the data directory.
-- Note that *custom* membership and attendance elements on these associations have been replaced with an element similar to the Student School Association. For ECFE and SR program types, units must be ``Hours`` and percentEnrolled should be either zero or omitted. For the other early learning program types, the rules for membership & attendance data elements remain the same as they have been as defined by MARSS; the data elements are merely shifted to this resource instead of on the Student School Association. 
+- Note that *custom* membership and attendance elements on these associations have been replaced with an element similar to the Student School Association. For ECFE and SR program types, units must be ``Hours`` and percentEnrolled should be either zero or omitted. (A zero is likely the best approach to avoid API errors.) For the other early learning program types, the rules for membership & attendance data elements remain the same as they have been as defined by MARSS; the data elements are merely shifted to this resource instead of on the Student School Association. (For example, percentEnrolled is required for ECSE, VPK and SR+)
 
 **Prerequisite Data:**
 - Schools
@@ -206,12 +206,14 @@ This association now represents Students in either MARSS (School Readiness Plus,
     - Begin Date: 9/7/2023
     - End Date: 6/11/2024 (default to last day in the school year)
     - Membership / Attendance Units: Hours
+    - Percent Enrolled: 999
     - Membership: 640
     - Attendance: 580
 7.	Associate **Student D** with an EE-ECSE Program
     - Begin Date: 10/17/2023
     - End Date: 6/11/2024 (default to last day in the school year)
     - Membership / Attendance Units: Hours
+    - Percent Enrolled: 999
     - Membership: 540
     - Attendance: 500
 8.	Associate **Student E** with an EE-SR+ Program
@@ -219,6 +221,7 @@ This association now represents Students in either MARSS (School Readiness Plus,
     - End Date: 6/11/2024 (default to last day in the school year)
     - Program Section Descriptor of Section D
     - Membership / Attendance Units: Days
+    - Percent Enrolled: 100
     - Membership: 60
     - Attendance: 50
     - Calendar Reference: link to the EE calendar set up for School Readiness Plus
@@ -227,6 +230,7 @@ This association now represents Students in either MARSS (School Readiness Plus,
     - End Date: 6/11/2024 (default to last day in the school year)
     - Program Section Descriptor of Section F
     - Membership / Attendance Units: Days
+    - Percent Enrolled: 100
     - Membership: 60
     - Attendance: 50
     - Calendar Reference: link to the EE calendar set up for VPK

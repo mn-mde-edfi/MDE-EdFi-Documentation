@@ -3,6 +3,7 @@ Example JSON demonstrating a student Early Education Program Association (SEEPA)
 Notes:
 - Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
 - Send to endpoint {{ApiUrl}}/MN/studentEarlyEducationProgramAssociations
+- percent Enrolled is required for ECSE records
 */
 {
     "beginDate": "2023-10-17",
@@ -21,6 +22,7 @@ Notes:
     "memberships": [
       {
         "membershipAttendanceUnitDescriptor": "uri://education.mn.gov/MembershipAttendanceUnitDescriptor#Hours",
+        "percentEnrolled":999,
         "attendance": 540,
         "membership": 500
       }
