@@ -5,6 +5,20 @@ During a certification call for school year 2023-24, a vendor asked for guidance
 
 Please note that MDE will only use the begin and end date elements on the SEEPA records to "translate" the data into appropriate MDE-required data systems, such as MARSS; the only true requirement for the SSA is to associate the student with a school, in the grade that reflects their enrollment within that school. **(KEEP THIS PARAGRAPH? Is it accurate? Is it necessary?)**
 
+## Questions this Guidance Needs to Answer
+1. If an SSA applies to more than one SEEPA, how should the begin and end dates be constructed?
+2. How should membership elements be treated in that SSA? Should it combine information or be left blank/zero?
+3. How should other elements of the SSA be constructed, such as the following?
+- entryTypeDescriptor / LastLocationOfAttendance
+- ExitWithdrawTypeDescriptor
+- mn.StateAidCategoryDescriptor
+- mn.SpecialPupilIndicator
+- mn.SpecialEducationEvaluationStatusDescriptor
+- mn.transLocalEducationAgencyReference
+- mn.ResidentLocalEducationAgencyReference
+- mn.HomeboundServiceIndicator
+
+
 ## Guidelines
 When constructing an SSA that relates to multiple SEEPAs, the following guidelines hold:
 1. The **earliest begin date** from the *combined* SEEPA records should be used as the begin date for the SSA.
