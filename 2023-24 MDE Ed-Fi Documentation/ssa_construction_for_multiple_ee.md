@@ -8,7 +8,8 @@ Please note that MDE will only use the begin and end date elements on the SEEPA 
 ## Questions this Guidance Needs to Answer
 1. If an SSA applies to more than one SEEPA, how should the begin and end dates be constructed?
 2. How should membership elements be treated in that SSA? Should it combine information or be left blank/zero?
-3. How should other elements of the SSA be constructed, such as the following?
+3. Assuming the student isn't already enrolled in Kindergarten or a higher grade level, what should the *default* grade level be for the SSA? (All our documentation points to "EE" for this.)
+4. How should other elements of the SSA be constructed, such as the following?
 - entryTypeDescriptor / LastLocationOfAttendance
 - ExitWithdrawTypeDescriptor
 - mn.StateAidCategoryDescriptor
