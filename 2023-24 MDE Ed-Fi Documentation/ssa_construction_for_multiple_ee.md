@@ -1,5 +1,5 @@
 # Guidance on Constructing a Single SSA for Multiple Early Education Program Associations
-**NOTE: as of 2023-06-26, this guidance should be considered DRAFT ONLY. MDE teams are working to ensure it meets our essential requirements.**
+**NOTE: as of 2023-06-28, this guidance has been deemed INCOMPLETE. MDE teams are working to develop new guidance that meets our essential requirements.**
 
 During a certification call for school year 2023-24, a vendor asked for guidance on how to construct a single Student School Association (SSA) to send to Ed-Fi if a student has multiple early education program associations (SEEPAs), in particular if the begin/end dates on the program associations do not precisely match one another. This document attempts to provide that guidance. Depending on  individual SIS entry screens, this guidance may or not be useful to specific vendors. 
 
