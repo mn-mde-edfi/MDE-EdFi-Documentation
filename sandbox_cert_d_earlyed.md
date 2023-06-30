@@ -5,7 +5,7 @@ For more information, see the [Early Education Enrollment and Parent collection 
 
 ## Resource: StudentSchoolAssociations
 **Description:**
-This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation.
+This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation. Please take the time to read the [Instructions on Constructing SSAs for Multiple Early Education Program Associations](/2023-24%20MDE%20Ed-Fi%20Documentation/ssa_construction_for_multiple_ee.md) document with respect to handling SSAs when multiple SEEPAs are involved.
 
 **Prerequisite Data:**
 - Students (create 6 students, referenced as students A-F below)
@@ -152,7 +152,7 @@ This association indicates any relationship between a student and an education o
 This association now represents Students in either MARSS (School Readiness Plus, Early Childhood Special Education, or Voluntary Pre-Kindergarten) or non-MARSS (School Readiness or Early Childhood Family Education) early education programs. Notes:
 - MARSS Early Childhood Screening (aka Preschool Screening) is covered in [this program association](/sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations).
 - The "EE-SR" and "EE-ECFE" program types are the programs intended for use with Early Education Data. These can also be used to cover the Early Ed programs formerly described as "SR/AB" and "ECFE/AB", respectively.
-- "End Reason Code" below correlates to "reasonExitedDescriptor" (see the similarly named Data Mapping Matrix tab)
+- "End Reason Code" below correlates to "reasonExitedDescriptor" (see the similarly named Data Mapping Matrix tab). Please note that this is important information to include on the SEEPA record especially for non-MARSS program associations.
 - Note that a calendar reference has been added to the VPK and SR+ scenarios in order to relate specific calendar records to sections of those programs. Sample JSON files for calendars and program associations are available in the [EE-MARSS Ambiguity Resolution](/data/EE-MARSS%20Ambiguity%20Resolution/) folder of the data directory.
 - Note that *custom* membership and attendance elements on these associations have been replaced with an element similar to the Student School Association. For ECFE and SR program types, units must be ``Hours`` and percentEnrolled should be either zero or omitted. (A zero is likely the best approach to avoid API errors.) For the other early learning program types, the rules for membership & attendance data elements remain the same as they have been as defined by MARSS; the data elements are merely shifted to this resource instead of on the Student School Association. (For example, percentEnrolled is required for ECSE, VPK and SR+)
 
