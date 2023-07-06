@@ -1,12 +1,12 @@
 # Instructions on Constructing SSAs for Multiple Early Education Program Associations
-**NOTE: as of 2023-06-30, these instructions are in a DRAFT state. MDE teams are working to ensure the methods described here meet our essential requirements.**
+**NOTE: as of 2023-07-06, these instructions are considered APPROVED. MDE teams have worked through several iterations to ensure the methods described here meet our essential requirements. We apologize that these scenarios were not identified earlier in the ambiguity resolution.**
 
-During a certification call for school year 2023-24, a vendor asked for instructions on how to construct Student School Associations (SSAs) to send to Ed-Fi if a student has multiple early education program associations (SEEPAs), in particular if the begin/end dates on the program associations do not precisely match one another. This document attempts to provide instructions that will best meet MDE's needs for various program and enrollment requirements. In order to ensure proper translations of data into various MDE systems, vendors must follow these instructions precisely.
+During a certification call for school year 2023-24, a vendor asked for instructions on how to construct Student School Associations (SSAs) to send to Ed-Fi if a student has multiple early education program associations (SEEPAs or SECSPA, for Student Early Childhood Screening Program Association), in particular if the begin/end dates on the program associations do not precisely match one another. This document attempts to provide instructions that will best meet MDE's needs for various program and enrollment requirements. In order to ensure proper translations of data into various MDE systems, vendors must follow these instructions precisely.
 
 ## Definitions
 For the purposes of these instructions, "early education program" applies to any of the following program associations (the **bold** abbreviations used are from [Ed-Fi program types](/descriptorTables/ProgramTypeDescriptor.csv)), which will be used in the SEEPA records:
  - MARSS programs
-   - **EE-ECS**, Early Childhood Screening (aka Preschool Screening)
+   - **EE-ECS**, Early Childhood Screening (aka Preschool Screening -uses the SECSPA record)
    - **EE-ECSE**, Early Childhood Special Education
    - **EE-SR+**, School Readiness Plus
    - **EE-VPK**, Voluntary Pre-Kindergarten
@@ -17,12 +17,12 @@ There will often be different requirements for MARSS programs vs. Non-MARSS prog
 
 ## Basic Principles
 When constructing SSA records and SEEPA records, the following basic principles hold:
-1. If you have a situation where MARSS would justify a new enrollment (for example, a change in transportation district or state aid category), as usual you must construct a new SSA to hold that information, with new begin and end dates. As a result, you must also construct a new SEEPA record (or records, if multiple programs apply) with matching begin and end dates.
-    - One exception is an EE-ECS Early Childhood Screening (aka Preschool Screening) record; these records will continue to be translated as previously, and the begin date on the SEEPA should be the date the screening concluded. As explained in the Early Childhood Screening section of the Ed-Fi data guide, the LEA does not need to add an SSA record if the student is already reported in another grade. If no prior SSA exists for the student, an "EE" grade SSA record should be created in order to enable the EE-ECS SEEPA record.
-2. For each program, the membership information (membership attendance units, membership, attendance, and percent enrolled) will come from the SEEPA record. All other "enrollment information" will be derived from the SSA record for MARSS programs.
-    - If you find yourself in a situation where you have SEEPA records for both MARSS and non-MARSS programs with the same begin dates, bias the required enrollment elements on the matching SSA record toward the MARSS programs. Virtually all information required for the non-MARSS programs is held on the SEEPA record.
+1. If you have a situation where MARSS would justify a **new enrollment** (for example, a change in transportation district or state aid category), as usual you **must construct a new SSA** to hold that information, with new begin and end dates. As a result, you **must also construct a new SEEPA record** (or records, if multiple programs apply) with matching begin and end dates.
+    - One exception is an EE-ECS Early Childhood Screening (aka Preschool Screening) record; these records will continue to be translated as previously, and the begin date on the SECSPA should be the date the screening concluded. As explained in the Early Childhood Screening section of the Ed-Fi data guide, the LEA does not need to add an SSA record if the student is already reported in another grade. If no prior SSA exists for the student, an "EE" grade SSA record should be created in order to enable the EE-ECS SECSPA record.
+2. For each program, the **membership information** (membership attendance units, membership, attendance, and percent enrolled) will **come from the SEEPA record**. All other "enrollment information" will be derived from the SSA record for MARSS programs.
+    - If you find yourself in a situation where you have SEEPA records for both MARSS and non-MARSS programs with the same begin dates, **bias** the required enrollment elements on the matching SSA record toward the **MARSS programs**. Virtually all information required for the non-MARSS programs is held on the SEEPA record.
 3.	As long as the combination of school, student, and begin date is unique, you may construct as many SSA records as you need in order to manage the various enrollment changes AND/OR the appropriate SEEPA records for the student.
-4.	If the student is not already enrolled in a grade of Kindergarten or higher, the default grade level on the SSA should be "EE". (Please note that the ambiguity resolution eliminates many previously used grade descriptors that integrated program sections.)
+4.	If the student is not already enrolled in a grade of Kindergarten or higher, the default **grade level on the SSA should be "EE"**. (Please note that the ambiguity resolution eliminates many previously used grade descriptors that integrated program sections.)
 
 ## Example Situations
 In each of the situations below, basic tables are used to demonstrate the specifics, in an effort to convey the guidance. We use a "pseudo MARSS format" in order to enhance understanding of the situations - but it is **important to remember** the following:
@@ -32,14 +32,14 @@ In each of the situations below, basic tables are used to demonstrate the specif
 ### Situation A: Two Overlapping MARSS Associations
 We demonstrate this situation with a hypothetical student, using a pseudo-MARSS format to explain their enrollments:
 
-|School     |MARSS#       |Grade|BeginDate |EndDate                        |MAU  |Membership|Attendance|%Enrolled|
-|-----------|-------------|-----|----------|-------------------------------|-----|----------|----------|---------|
-|0242-01-002|1231231231234|PA   |2023-09-07|2023-12-31                     |Days |180       |180       |100      |
-|0242-01-002|1231231231234|EC\* |2023-09-15|2024-06-01|Hours|640       |580       |999      |
+|School     |MARSS#       |Grade|BeginDate |EndDate                        |MAU  |Membership|Attendance|%Enrolled|SEES|
+|-----------|-------------|-----|----------|-------------------------------|-----|----------|----------|---------|----|
+|0242-01-002|1231231231234|PA   |2023-09-07|2023-12-31                     |Days |180       |180       |100      |2|
+|0242-01-002|1231231231234|EC |2023-09-15|2024-06-01|Hours|640       |580       |999      |2|
 
-Note that this scenario of an overlapping EC record can **only happen** if the special education evaluation status is 2, and this is the **only valid combination** of overlapping records with MARSS programs.
+Note that this scenario of two overlapping records can **only happen** if the special education evaluation status is **2**. The **only valid combination** of overlapping records with MARSS programs is with that SEES=2, and with either VPK or SR+ alongside the EC. 
 
-For this situation, you must create two SSAs in Ed-Fi, using the following pattern. (Notice how membership elements are blank.)
+For this situation, you must create **two SSAs** in Ed-Fi, using the following pattern. (Notice how membership elements are blank.)
 
 |School  |StudentUniqueId|Grade|BeginDate |EndDate   |Non-membership required elements                                                                         |
 |--------|---------------|-----|----------|----------|---------------------------------------------------------------------------------------------------------|
