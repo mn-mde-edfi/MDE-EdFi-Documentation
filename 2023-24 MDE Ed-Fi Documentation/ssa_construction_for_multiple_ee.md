@@ -52,7 +52,7 @@ In order to complete the data in Ed-Fi, the above SSA **must** then be combined 
 |10242002|1231231231234  |EE-VPK      |A              |2023-09-07|2023-12-31|Days |180       |180       |100      |
 |10242002|1231231231234  |EE-ECSE     |               |2023-09-15|2024-06-01|Hours|640       |580       |999      |
 
-If you encounter a situation where the EE-ECSE program begin date exactly matches the EE-VPK begin date, and you need to differentiate non-membership elements in the SSA, contact MDE for a workaround.
+If you encounter a situation where the EE-ECSE program begin date exactly matches the begin date for an EE-VPK or EE-SR+ program, and you need to differentiate non-membership elements in the SSA, contact MDE for a workaround.
 
 ### Situation B: A MARSS Association Overlapping with a non-MARSS Association, same begin dates
 We demonstrate this situation with a hypothetical student, using a pseudo-MARSS format to explain their enrollment in just the MARSS program:
