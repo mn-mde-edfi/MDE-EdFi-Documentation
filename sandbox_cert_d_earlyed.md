@@ -236,10 +236,12 @@ This association now represents Students in either MARSS (School Readiness Plus,
     - Attendance: 50
     - Calendar Reference: link to the EE calendar set up for VPK
 10.	Perform the following actions for **Student C**:
-    - **Delete** the EE-ECSE program association
-    - Change Student C's association from EE-SR to EE-VPK
-    - Demonstrate how both a Program Section Descriptor and a Calendar Reference will now be required, describing Section J for this school year
-    - (Note: the main purpose of this scenario is to demonstrate how VPK and SR+ require program section descriptors and calendar references. But as described in the [SSA construction for multiple EE](./2023-24%20MDE%20Ed-Fi%20Documentation/ssa_construction_for_multiple_ee.md) document, two MARSS programs would overlap only in rare circumstances - which is why we first ask for the ECSE association to be deleted here.)
+    - **Change the end date to 10/13/2023** for the EE-ECSE program association
+    - Change the associated SSA record to have the same end date.
+    - Create a new SSA record, **setting the begin date to 10/16/2023** and defaulting the end date to the end of the school year
+    - Change the EE-SR association to EE-VPK, setting the begin and end dates to match the new SSA
+    - Demonstrate how both a Program Section Descriptor and a Calendar Reference will now be required on the EE-VPK program association, describing Section J for this school year
+    - (Note: the main purpose of this scenario is to demonstrate how VPK and SR+ require program section descriptors and calendar references. But as described in the [SSA construction for multiple EE](./2023-24%20MDE%20Ed-Fi%20Documentation/ssa_construction_for_multiple_ee.md) document, two MARSS programs would overlap only in rare circumstances - which is why we first ask for the ECSE association to be ended here.)
 11.	Please demonstrate how your software differentiates between various program choices, in particular how users will tell the difference between Early Childhood Screening (EE-ECS) and Early Childhood Special Education (EE-ECSE).
 
 ## Resource: StudentHomelessProgramAssociation
