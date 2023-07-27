@@ -235,8 +235,11 @@ This association now represents Students in either MARSS (School Readiness Plus,
     - Membership: 60
     - Attendance: 50
     - Calendar Reference: link to the EE calendar set up for VPK
-10.	Change **Student C's** association from EE-SR to EE-VPK
+10.	Perform the following actions for **Student C**:
+    - **Delete** the EE-ECSE program association
+    - Change Student C's association from EE-SR to EE-VPK
     - Demonstrate how both a Program Section Descriptor and a Calendar Reference will now be required, describing Section J for this school year
+    - (Note: the main purpose of this scenario is to demonstrate how VPK and SR+ require program section descriptors and calendar references. But as described in the [SSA construction for multiple EE](./2023-24%20MDE%20Ed-Fi%20Documentation/ssa_construction_for_multiple_ee.md) document, two MARSS programs would overlap only in rare circumstances - which is why we first ask for the ECSE association to be deleted here.)
 11.	Please demonstrate how your software differentiates between various program choices, in particular how users will tell the difference between Early Childhood Screening (EE-ECS) and Early Childhood Special Education (EE-ECSE).
 
 ## Resource: StudentHomelessProgramAssociation
