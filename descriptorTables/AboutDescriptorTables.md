@@ -7,14 +7,15 @@ This folder contains a series of CSV tables that list various descriptor values,
 
 Refer to the CSVs in this folder for either the coming school year (spring), or the current school year in effect (summer, fall, and winter). See details below.
 
-_Note_: occasionally special characters, such as em dashes, are stored in the database but do not translate well into CSV exports. An example is in code value 2 for ``SpecialEducationEvaluationStatusDescriptor``: "Shared-Time K-12 – Evaluated, EC – Evaluated" appears as "Shared-Time K-12 ? Evaluated, EC ? Evaluated". This is merely an artifact of character translations and can be ignored.
+_Note_: occasionally special characters, such as em dashes, are stored in the database but do not translate well into CSV exports. An example is in code value 2 for ``SpecialEducationEvaluationStatusDescriptor``: "Shared-Time K-12 – Evaluated, EC – Evaluated" appears as "Shared-Time K-12 ? Evaluated, EC ? Evaluated". This is merely an artifact of character translations to CSV files and can be ignored. Several other examples appear in the [LanguageDescriptor Export](LanguageDescriptor.csv); when you pull from the API, you should be able to see the full special characters instead of what you see in these CSVs.
 
 ## Source Details
 As of the most recent run, these tables are derived from the following database at MDE:
 - **Version**: 5.2
 - **School Year**: 2023-2024
-- **Environment**: QA
+- **Environment**: Production
 - **Database**: EdFi_Ods_2024
+- **Date Exported**: 2023-07-28
 
 **Exceptions** will be marked with details below as necessary.
 
@@ -24,8 +25,8 @@ Refer to the change/commit log in GitHub to see what the latest changes are for 
 The following Descriptors used for **Assessment** purposes are now being exported along with other descriptor values, from the source listed above, with each new environment deploy. Please note that only assessment vendors will need to use these descriptors. Individually, see:
 - [AccommodationDescriptor](AccommodationDescriptor.csv)
 - [AssessmentFormatDescriptor](AssessmentFormatDescriptor.csv)
-- [AssessmentIdentificationSystemDescriptor](AssessmentIdentificationSystemDescriptor.csv) - **Exception Note**: as of 2023-05-30, this descriptor source is production 2022-23. We are working to ensure that it is accurately reflected in QA and/or higher environments for school year 2023-24.
-- [AssessmentReportingMethodDescriptor](AssessmentReportingMethodDescriptor.csv) - we will again correct *assessmentReportingMethodDescriptor* to *AssessmentReportingMethodDescriptor*.
+- [AssessmentIdentificationSystemDescriptor](AssessmentIdentificationSystemDescriptor.csv)
+- [AssessmentReportingMethodDescriptor](AssessmentReportingMethodDescriptor.csv)
 - [AttemptLogicMetDescriptor](AttemptLogicMetDescriptor.csv)
 - [GeneralEnrollmentDescriptor](GeneralEnrollmentDescriptor.csv)
 - [OperationalPassageDescriptor](OperationalPassageDescriptor.csv)
@@ -37,32 +38,32 @@ Note that Assessment vendors will also want to make use of the [AcademicSubjectD
 
 
 ## List of Custom Descriptors and Links
-Below is a list of known custom descriptors, typically using the ```uri://education.mn.gov``` namespace, excluding any subfolders within that space. Links are to the CSV files that you can view inside this directory. This list is automatically generated out of the same database as above, but there may be broken links of certain descriptors that we have not yet exported.
+Below is a list of known custom descriptors, typically using the ```uri://education.mn.gov``` namespace, excluding any subfolders within that space. Links are to the CSV files that you can view inside this directory. This list is automatically generated out of the same database as above, but we've manually removed links here if the descriptor has not yet been exported.
 - [AcademicHonorCategoryDescriptor](AcademicHonorCategoryDescriptor.csv)
 - [AcademicSubjectDescriptor](AcademicSubjectDescriptor.csv)
 - [AchievementCategoryDescriptor](AchievementCategoryDescriptor.csv)
-- [AesTypeDescriptor](AesTypeDescriptor.csv)
+- AesTypeDescriptor
 - [AncestryEthnicOriginDescriptor](AncestryEthnicOriginDescriptor.csv)
 - [AssessmentCategoryDescriptor](AssessmentCategoryDescriptor.csv)
 - [AssessmentToolDescriptor](AssessmentToolDescriptor.csv)
-- [BehaviorDescriptor](BehaviorDescriptor.csv)
-- [BullyingHarassmentTypeDescriptor](BullyingHarassmentTypeDescriptor.csv)
-- [CalendarEventDescriptor](CalendarEventDescriptor.csv)
+- BehaviorDescriptor
+- BullyingHarassmentTypeDescriptor
+- CalendarEventDescriptor
 - [CalendarTypeDescriptor](CalendarTypeDescriptor.csv)
 - [ClassPeriodTypeDescriptor](ClassPeriodTypeDescriptor.csv)
 - [ClassroomPositionDescriptor](ClassroomPositionDescriptor.csv)
 - [ClassroomVolunteerDescriptor](ClassroomVolunteerDescriptor.csv)
-- [CostToPropertyDescriptor](CostToPropertyDescriptor.csv)
-- [CostToVictimDescriptor](CostToVictimDescriptor.csv)
+- CostToPropertyDescriptor
+- CostToVictimDescriptor
 - [CourseDefinedByDescriptor](CourseDefinedByDescriptor.csv)
 - [CourseLevelCharacteristicDescriptor](CourseLevelCharacteristicDescriptor.csv)
 - [CourseLevelTypeDescriptor](CourseLevelTypeDescriptor.csv)
 - [CrisisEventDescriptor](CrisisEventDescriptor.csv)
 - [CurriculumUsedDescriptor](CurriculumUsedDescriptor.csv)
 - [DisabilityDescriptor](DisabilityDescriptor.csv)
-- [DisciplineDescriptor](DisciplineDescriptor.csv)
+- DisciplineDescriptor
 - [DistrictTypeDescriptor](DistrictTypeDescriptor.csv)
-- [DrugTypeDescriptor](DrugTypeDescriptor.csv)
+- DrugTypeDescriptor
 - [EarlyChildhoodScreenerDescriptor](EarlyChildhoodScreenerDescriptor.csv)
 - [EarlyChildhoodScreeningExitStatusDescriptor](EarlyChildhoodScreeningExitStatusDescriptor.csv)
 - [EarlyEducationCourseLocationDescriptor](EarlyEducationCourseLocationDescriptor.csv)
@@ -82,7 +83,7 @@ Below is a list of known custom descriptors, typically using the ```uri://educat
 - [GradingPeriodDescriptor](GradingPeriodDescriptor.csv)
 - [HomelessPrimaryNighttimeResidenceDescriptor](HomelessPrimaryNighttimeResidenceDescriptor.csv)
 - [ImplementationStatusDescriptor](ImplementationStatusDescriptor.csv)
-- [IncidentLocationDescriptor](IncidentLocationDescriptor.csv)
+- IncidentLocationDescriptor
 - [IndicatorDescriptor](IndicatorDescriptor.csv)
 - [IndicatorLevelDescriptor](IndicatorLevelDescriptor.csv)
 - [InstructionalApproachDescriptor](InstructionalApproachDescriptor.csv)
