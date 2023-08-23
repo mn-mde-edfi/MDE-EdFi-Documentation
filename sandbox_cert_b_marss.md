@@ -51,7 +51,7 @@ This association represents the School in which a student is enrolled. Note that
 11.	Create the records for: 
     - An enrollment, 
     - Withdrawal and 
-    - Re-enrollment for a kindergarten student who receives an IEP mid-year – send updated special education evaluation status. (Grade change from KA to HK, and specialEducationEvaluationStatus updated)
+    - Re-enrollment for a kindergarten student who receives an IEP mid-year - send updated special education evaluation status.
 
 ## Resource: StudentEducationOrganizationAssociation
 **Description**
