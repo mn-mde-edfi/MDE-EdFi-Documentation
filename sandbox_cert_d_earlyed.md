@@ -24,7 +24,7 @@ This association represents the School in which a student is enrolled. The seman
         - Homebound Service Indicator = N
         - Resident Local Education Agency
         - Special Pupil Indicator = N
-    - Data **not** collected for Early Education
+    - Note that the following data pieces were traditionally **not** collected for non-MARSS programs such as EE-ECFE and EE-SR, but that does *not* mean that this data will not be needed for other student school associations. Please do *NOT* exclude these elements from SSAs solely due to these certification scenarios.
         - State Aid Category (see [issue #16](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/issues/16))
         - Membership Attendance Units
         - Membership Attendance Percent Enrolled
