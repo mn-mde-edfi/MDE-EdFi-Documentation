@@ -351,8 +351,8 @@ Notes:
         {
           "programReference": {
             "educationOrganizationId": {{districtid}},
-            "programName": "ECSE",
-            "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#MCCC-ECSE"
+            "programName": "EE-ECSE",
+            "programTypeDescriptor": "uri://education.mn.gov/ProgramTypeDescriptor#EE-ECSE"
           }
         }
       ]
