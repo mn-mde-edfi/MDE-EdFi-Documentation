@@ -186,7 +186,7 @@ This association now represents Students in either MARSS (School Readiness Plus,
     - Attendance = 30
     - Submit funding sources PF, CC and TITLE
 3.	Demonstrate how **Student A** can be simultaneously associated with an Early Childhood Screening Association (aka Preschool Screening) with the same Begin Date of 9/5/2023. (In other words, add an Early Childhood Screening Association record for Student A.) 
-    - **NOTE:** As described in the [EE ambiguity resolution](/2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_marss_conflict_resolution.pdf), the descriptor value for Early Childhood Screening has changed for SY2023-24. Reference the specific [Student Program Association scenario](sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations) for more information.
+    - **NOTE:** As described in the [EE ambiguity resolution](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_marss_conflict_resolution.pdf), the descriptor value for Early Childhood Screening has changed for SY2023-24. Reference the specific [Student Program Association scenario](sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations) for more information.
 4.	Associate **Student B** with an EE-ECFE Program 
     - Begin Date: 10/6/2023
     - End Date: 6/11/2024 (default to last day in the school year)

@@ -22,7 +22,7 @@ By serving documentation in multiple formats, our goal is to increase vendor acc
 
 ### School Year 2023-2024 Plans
 The following updates are being implemented for school year 2023-2024:
-- Early Education / MARSS [Program Ambiguity Resolution](./2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_marss_conflict_resolution.pdf)
+- Early Education / MARSS [Program Ambiguity Resolution](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_marss_conflict_resolution.pdf)
 - MARSS-A Calendar Type - See draft updated certification scenario for [MARSS calendar](./sandbox_cert_b_marss.md#resource-calendar).
 - Various descriptor changes (see the [descriptor tables folder](./descriptorTables/))
 
