@@ -1,7 +1,7 @@
 # MDE-EdFi-Documentation
 
 ## SCHEDULE NOTES
-- _This documentation reflects the MDE Ed-Fi implementation for  **School Year 2023-24**._
+- _This documentation reflects the MDE Ed-Fi implementation for  **School Year 2023-24**. Initial documentation for **School Year 2024-25*** is available in [this folder](./2024-25%20MDE%20Ed-Fi%20Documentation/)._
  - _NOTE: Several new elements remain delayed for future years_. When found in this repository, those elements are marked as **"Postponed until further notice"**.
 
 This repository contains technical documentation for Minnesota's implementation of the [Ed-Fi alliance standard](https://www.ed-fi.org/). The Minnesota Department of Education (MDE) is implementing Ed-Fi to help improve the collection of required educational data from Minnesota school districts. Learn more [at MDE's Ed-Fi web page](https://education.mn.gov/MDE/dse/datasub/edfi/) and at the following links:
