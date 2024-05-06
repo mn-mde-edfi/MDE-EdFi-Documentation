@@ -1,5 +1,5 @@
 # Deleting Resources Certification Scenarios
-For school year 2024-25, vendors will be required to demonstrate the ability to delete data from MDE's Ed-Fi ODS/API. This document will outline scenarios for these capabilities, focusing on the MARSS-related data resources and elements.
+For school year 2024-25, vendors will be required to demonstrate their customer's ability to delete data from MDE's Ed-Fi ODS/API. This document will outline scenarios for these capabilities, focusing on the MARSS-related data resources and elements.
 
 ## References and Background
 Before reading these scenarios, please refer to the [Ed-Fi Model Dependency Diagrams](sis_test_plan_c_data_reqs.md#ed-fi-model-dependency), particularly the [MARSS collection diagram](sis_test_plan_c_data_reqs.md#marss-collection) section. Understanding data dependencies in the Ed-Fi data model is critical to implementing the ability to delete data. For example, a student record cannot be deleted before a related student school association record, because the latter relies on the former.
@@ -31,7 +31,9 @@ These scenarios assume the ability to successfully **create** new data as outlin
         - associated with a ``StudentLanguageInstructionProgramAssociation``
 
 ## Scenarios
-In each of the scenarios below, the vendor should be prepared to demonstrate how when data is deleted **within** the SIS software and databases, the pertinent data is then **also** deleted in the Ed-Fi ODS via appropriate API calls, either through regular automated synching procedures or manual procedures available to the district user.
+In each of the scenarios below, the vendor should be prepared to demonstrate how when data is deleted **within** the SIS user interface and databases, the pertinent data is then **also** deleted in the Ed-Fi ODS via appropriate API calls, either through regular automated synching procedures or manual procedures available to the district user.
+
+_Note:_ The scenarios below are **not** intended to test situations where the end goal is updated record(s). Whether vendor- or district-directed, if records are updated by a process/strategy executed as "first delete, then add back with updated information", the vendor does not need to demonstrate that capability.
 
 ### Scenario A: Delete Data at the Bottom of the Hierarchy
 This scenario focuses on deleting data at the bottom of the data hierarchy. Presumably when a district is deleting a record at the lower end of the dependency model, they are likely not needing to delete a whole student record, but **associated** records. 
