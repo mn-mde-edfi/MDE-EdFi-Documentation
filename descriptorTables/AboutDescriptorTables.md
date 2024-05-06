@@ -18,8 +18,8 @@ As of the most recent run, these tables are derived from the following database 
 - **Date Exported**: 2023-12-14 (update to [MediumOfInstructionDescriptor](MediumOfInstructionDescriptor.csv))
 
 **Exceptions** will be marked with details below as necessary.
-- **NOTE:** For school year 2024-25, the 'Responsibility Descriptor' has been exported. This is a **NEW** descriptor used for Joint Powers solutions.
-- **NOTE:** For school year 2023-24, the "HK" grade level has been retired on legislative direction. That grade has been removed from MARSS submissions, but as of 2023-08-23, we are still in the process of removing it from the Ed-Fi API and ODS. In the meantime, please encourage your districts NOT to use the HK gradelevel. (Notice the descriptor code has been updated to show "DO NOT USE".)
+- **NOTE:** For school year 2024-25, the 'Responsibility Descriptor' has been exported. This is a **NEW** descriptor used for Joint Powers solutions. We are in the process of validating and double checking the remaining custom descriptors for the 2024-25 school year.
+- **NOTE:** For school year 2023-24, the "HK" grade level was retired on legislative direction. That grade has been removed from MARSS submissions, but as of 2023-08-23, we are still in the process of removing it from the Ed-Fi API and ODS. In the meantime, please encourage your districts NOT to use the HK gradelevel. (Notice the descriptor code has been updated to show "DO NOT USE".)
 
 Refer to the change/commit log in GitHub to see what the latest changes are for the tables in this folder.
 
