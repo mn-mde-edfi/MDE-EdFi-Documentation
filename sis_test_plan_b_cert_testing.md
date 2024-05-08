@@ -2,7 +2,7 @@
 When certification begins, vendors will be required to generate a key and secret to a "Minimal" sandbox [Operational Data Store (ODS)](https://techdocs.ed-fi.org/display/ETKB/Ed-Fi+Operational+Data+Store+and+API) with no sample data pre-loaded. This ODS will contain the Minnesota Education School and District records synchronized with [MDE ORG](https://public.education.mn.gov/MdeOrgView/), MN specific descriptors, District Programs, and the State Course Catalog and Staff records required for the MCCC data collection. When submitting data for each of the Certification scenarios, we ask that you use a district you have access to, and schools within the district.
 
 ## Accessing the Sandbox
-_Please note_: In school years ending 2020 though 2022, sandbox environments were given ```sbYY_``` in the base paths for the API, affecting sandbox and Swagger URLs. For school year 2022-2023, the base sandbox URL was merely ``https://test.edfi5.education.mn.gov/swagger/`` - note the "edfi5" portion of the URL, but no ```sbYY_``` portion. For the 2023-2024 school year, a sandbox identifier has returned without an underscore: ``https://test.edfi5.education.mn.gov/sb24/api/``.
+_Please note_: In school years ending 2020 though 2022, sandbox environments were given ```sbYY_``` in the base paths for the API, affecting sandbox and Swagger URLs. For school year 2022-2023, the base sandbox URL was merely ``https://test.edfi5.education.mn.gov/swagger/`` - note the "edfi5" portion of the URL, but no ```sbYY_``` portion. For the 2023-2024 school year, a sandbox identifier returned without an underscore: ``https://test.edfi5.education.mn.gov/sb24/api/``. For the 2024-25 school year, given minimal changes, we have merely added a 2024-25 profile to that same sandbox environment.
 
 ### Sandbox Admin Website
 As part of Sandbox certification, you will need access to the [Sandbox Admin Site](https://test.edfi5.education.mn.gov/sb24/admin). To request an account, [contact MDE by email](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us). In the Sandbox Admin Site, you will be able to create ODS instances to use for development and testing of your integrations. ([The Ed-Fi TechDocs](https://techdocs.ed-fi.org/display/ODSAPI31/Using+the+Sandbox+Administration+Portal) have more detailed instructions on setting up sandboxes.)
@@ -13,7 +13,7 @@ We continue to use the [Swagger UI tool](https://swagger.io/tools/swagger-ui/) t
 _Please note:_ When using Swagger, always double-check the "API Section" listed in the upper right drop-down, and note:
 
 - The listings in the drop-down are alphabetical, not chronological
-- All MN Specific resources defined for the **2023-2024** School Collection can be found under the **Minnesota-Twenty-Three-Twenty-Four-SISVendor-Profile**.
+- All MN Specific resources defined for the **2024-2025** School Collection can be found under the **Minnesota-Twenty-Four-Twenty-Five-SISVendor-Profile**. It includes the ``StudentEducationOrganizationResponsibilityAssociation`` and ``ResponsibilityDescriptor`` with the MDE extension for the Joint Powers solution.
 - A preview of future releases is under the generic-named _Minnesota-Preview-SISVendor-Profile_.
 - The Identities Section is not functional in the Sandbox and is provided as documentation only
 - Please ignore the "Assessment-Read-Only" and "Assessment-Read-Write" profiles at this time.

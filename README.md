@@ -1,7 +1,7 @@
 # MDE-EdFi-Documentation
 
 ## SCHEDULE NOTES
-- _The majority of this documentation still reflects the MDE Ed-Fi implementation for  **School Year 2023-24**. Initial documentation for **School Year 2024-25** is available in [this folder](./2024-25%20MDE%20Ed-Fi%20Documentation/)._
+- This documentation now reflects the MDE Ed-Fi implementation for **School Year 2024-25**. Note that very little is changing from the 2023-24 school year, outside of some additional certification testing such as the [Deleting Resources Certification Scenarios](sandbox_cert_h_deleting_resources.md). Overview documentation is available in [this folder](./2024-25%20MDE%20Ed-Fi%20Documentation/).
  - _NOTE: Several new elements remain delayed for future years_. When found in this repository, those elements are marked as **"Postponed until further notice"**.
 
 This repository contains technical documentation for Minnesota's implementation of the [Ed-Fi alliance standard](https://www.ed-fi.org/). The Minnesota Department of Education (MDE) is implementing Ed-Fi to help improve the collection of required educational data from Minnesota school districts. Learn more [at MDE's Ed-Fi web page](https://education.mn.gov/MDE/dse/datasub/edfi/) and at the following links:
@@ -20,16 +20,8 @@ MNIT supporting MDE is now complementing each collection year's documentation in
 
 By serving documentation in multiple formats, our goal is to increase vendor access to the documentation as well as provide options for understanding and visualization changes over time.
 
-### School Year 2023-2024 Plans
-The following updates are being implemented for school year 2023-2024:
-- Early Education / MARSS [Program Ambiguity Resolution](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_marss_conflict_resolution.pdf)
-- MARSS-A Calendar Type - See draft updated certification scenario for [MARSS calendar](./sandbox_cert_b_marss.md#resource-calendar).
-- Various descriptor changes (see the [descriptor tables folder](./descriptorTables/))
-
-Vendor certification scenarios are available for the Ambiguity Resolution change, and can be found within the [early education scenarios](/sandbox_cert_d_earlyed.md). In addition, a description of the problem being resolved is available in the document linked above. For reference, [this workaround document](./early_ed_disamb_work.md) details the methods requested of vendors to work around this issue for school year 2022-23 and prior.
-
 #### New Data Collections
-_No new data collections are planned for school year 2023-2024._
+_No new data collections are planned for school year 2024-2025. MDE anticipates piloting a solution for Joint Powers and Intermediate School Districts._
 
 #### Certification Scenarios for Future Years
 Several of the new data collections originally planned for prior school years are now **Postponed until further notice**. However, they are addressed in this documentation with either new or updated certification scenarios. A brief list of those scenarios is below.
@@ -44,7 +36,7 @@ Several of the new data collections originally planned for prior school years ar
   - [Displaced Students and Student Crisis Events](sandbox_cert_b_marss.md#displaced-students-and-student-crisis-events)
 
 #### Migration of Custom Descriptor Tables
-For **school year 2023-24** the MDE MNIT team has *moved* the custom [descriptor tables folder](./descriptorTables/) to the top-level of this repository. Going forward, this folder will reflect the most recent information about desciptor tables, either planned for the coming year (spring) or in effect for the current year (summer through winter). The current state of the tables within the folder will be detailed in the[ About Descriptor Tables](./descriptorTables/AboutDescriptorTables.md) markdown file. Viewing the commit history of the folder will allow vendors to more easily visualize changes from year to year.
+For **school year 2023-24** the MDE MNIT team *moved* the custom [descriptor tables folder](./descriptorTables/) to the top-level of this repository. Going forward, this folder will reflect the most recent information about desciptor tables, either planned for the coming year (spring) or in effect for the current year (summer through winter). The current state of the tables within the folder will be detailed in the[ About Descriptor Tables](./descriptorTables/AboutDescriptorTables.md) markdown file. Viewing the commit history of the folder will allow vendors to more easily visualize changes from year to year.
 
 The folder will continue to contain a suite of CSV files that are exported from our Ed-Fi database(s), and should be used as the "source of truth" reference.
 
