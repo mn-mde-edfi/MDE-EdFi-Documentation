@@ -1,7 +1,7 @@
 # MDE-EdFi-Documentation
 
 ## SCHEDULE NOTES
-- This documentation now reflects the MDE Ed-Fi implementation for **School Year 2024-25**. Note that very little is changing from the 2023-24 school year, outside of some additional certification testing such as the [Deleting Resources Certification Scenarios](sandbox_cert_h_deleting_resources.md). Overview documentation is available in [this folder](./2024-25%20MDE%20Ed-Fi%20Documentation/).
+- This documentation now reflects the MDE Ed-Fi implementation for **School Year 2024-25**. Note that very little is changing from the 2023-24 school year, outside of some additional certification testing such as the [Deleting Resources Certification Scenarios](sandbox_cert_h_deleting_resources.md). Overview documentation is available in [this folder](./2024-25%20MDE%20Ed-Fi%20Documentation/), including [this Joint Powers diagram](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/2024-25%20MDE%20Ed-Fi%20Documentation/Joint%20Powers%20District%20Scenarios%20Diagram.pdf).
  - _NOTE: Several new elements remain delayed for future years_. When found in this repository, those elements are marked as **"Postponed until further notice"**.
 
 This repository contains technical documentation for Minnesota's implementation of the [Ed-Fi alliance standard](https://www.ed-fi.org/). The Minnesota Department of Education (MDE) is implementing Ed-Fi to help improve the collection of required educational data from Minnesota school districts. Learn more [at MDE's Ed-Fi web page](https://education.mn.gov/MDE/dse/datasub/edfi/) and at the following links:
@@ -63,6 +63,12 @@ As part of this documentation effort, we are also using Github to manage technic
 ## Viewing Options
 There are two ways to view this documentation: 
 1. [in the Github repository](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation) where ```https://github.com/mn-mde-edfi/``` is in the beginning of the URL in your browser. Raw markdown files are in the "code" section, with links to each other. Github renders this markdown as readable content.
-2. in a ["Web Version"](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/) in which Github attempts to automatically render the markdown files as HTML, and where ```https://mn-mde-edfi.github.io/``` is in the beginning of the URL in your browser
+2. in a ["Web Version"](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/) in which Github attempts to automatically render the markdown files as HTML, and where ```https://mn-mde-edfi.github.io/``` is in the beginning of the URL in your browser.
 
-In general we recommend using the GitHub repository version, given the limitations of the web version. For example, the web version does not render markdown tables into HTML tables, so tables are best viewed directly [in the Github repository](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation). Viewing markdown files directly within GitHub also allows you to use their [table of contents functionality](https://github.blog/changelog/2021-04-13-table-of-contents-support-in-markdown-files/) to navigate.
+In general we recommend using the GitHub repository version, given the limitations of the web version:
+1.  the web version does not render markdown tables into HTML tables, so tables are best viewed directly [in the Github repository](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation). 
+2. Viewing markdown files directly within GitHub also allows you to use their [table of contents functionality](https://github.blog/changelog/2021-04-13-table-of-contents-support-in-markdown-files/) to navigate.
+
+However, the web version is occasionally advantageous, such as when viewing PDFs. For example:
+1. [The Ed-Fi EE-MARSS Program Ambiguity Resolution](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_marss_conflict_resolution.pdf) for school year 2023-24.
+2. [The Joint Powers diagram](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/2024-25%20MDE%20Ed-Fi%20Documentation/Joint%20Powers%20District%20Scenarios%20Diagram.pdf) for school year 2024-25.
