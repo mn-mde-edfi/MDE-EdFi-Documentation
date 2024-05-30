@@ -12,16 +12,16 @@ _Note_: occasionally special characters, such as em dashes, are stored in the da
 ## Source Details
 As of the most recent run, these tables are derived from the following database at MDE:
 - **Version**: 5.2
-- **School Year**: 2023-2024
-- **Environment**: Production
-- **Database**: EdFi_Ods_2024
-- **Date Exported**: 2023-12-14 (update to [MediumOfInstructionDescriptor](MediumOfInstructionDescriptor.csv))
+- **School Year**: 2024-2025
+- **Environment**: QA
+- **Database**: EdFi_Ods_2025
+- **Date Exported**: 2024-05-30 (updated to [GradeLevelDescriptor](GradeLevelDescriptor.csv) to remove HK permanently)
 
 **Exceptions** will be marked with details below as necessary.
-- **NOTE:** For school year 2024-25, the 'Responsibility Descriptor' has been exported. This is a **NEW** descriptor used for Joint Powers solutions. We are in the process of validating and double checking the remaining custom descriptors for the 2024-25 school year.
-- **NOTE:** For school year 2023-24, the "HK" grade level was retired on legislative direction. That grade has been removed from MARSS submissions, but as of 2023-08-23, we are still in the process of removing it from the Ed-Fi API and ODS. In the meantime, please encourage your districts NOT to use the HK gradelevel. (Notice the descriptor code has been updated to show "DO NOT USE".)
+- **NOTE:** For school year 2024-25, the 'Responsibility Descriptor' has been exported. This is a **NEW** descriptor used for Joint Powers solutions. We are in the process of validating and double checking the remaining custom descriptors for the 2024-25 school year. When the above run is marked for "Production", this process will be finished.
+- **NOTE:** For school year 2023-24, the "HK" grade level was retired on legislative direction. Instead of removing it entirely from the ODS API, it was updated to show "DO NOT USE". For school year 2024-25, it will not be available in the API at all.
 
-Refer to the change/commit log in GitHub to see what the latest changes are for the tables in this folder.
+Vendors may also wish to refer to the change/commit log in GitHub to see what the latest changes are for the tables in this folder.
 
 ### Assessment Descriptors
 The following Descriptors used for **Assessment** purposes are now being exported along with other descriptor values, from the source listed above, with each new environment deploy. Please note that only assessment vendors will need to use these descriptors. Individually, see:
