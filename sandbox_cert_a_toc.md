@@ -12,6 +12,7 @@ Then advance to the specific sections on Sandbox Certification Scenarios:
 - [Digital Equity Certification Scenarios](sandbox_cert_f_digital_equity.md)
 - [School Attribute Certification Scenarios](sandbox_cert_g_school_attribute.md)
 - [Deleting Resources Certification Scenarios](sandbox_cert_h_deleting_resources.md) (**New** for SY 2024-25.)
+- [Joint Powers Certification Scenarios](/sandbox_cert_j_joint_powers.md) (**New** for SY 2024-25.)
 
 ## Deadlines and Logistics
 Please consult MDE's [Ed-Fi web pages](https://education.mn.gov/MDE/dse/datasub/edfi/) or reach out to the Ed-Fi vendor support team by email (EdFiProjectSupportMNIT.MDE@state.mn.us) if you have questions on deadlines or any other vendor logistics.
