@@ -56,16 +56,14 @@ If the vendor opts to include warnings, demonstrate the following abilities for 
 - The ``StudentHomelessProgramAssociation``
 - The ``StudentEducationOrganizationAssociation``
 - The middle school ``StudentSchoolAssociation``
-- The student record itself
 
 #### Option 2: Without Warnings
 If the vendor deems warnings unnecessary, demonstrate how the district can initiate the deletion of all data associated with  **Student B**, and then demonstrate how that data is then deleted from the ODS via either automated or manual synching procedures. Then the following records should be deleted via the Ed-Fi API, in order:
 - The ``StudentHomelessProgramAssociation``
 - The ``StudentEducationOrganizationAssociation``
 - The middle school ``StudentSchoolAssociation``
-- The student record itself
 
-At the end of the scenario, all records associated with Student B should be eliminated from the ODS.
+At the end of the scenario, all but the **student** record for Student B should be eliminated from the ODS.
 
 ### Scenario C: Mixed Deletions in the Middle of the Hierarchy
 This scenario assumes that the district wants to delete most of the dependent records, but keep the student itself. MDE also suggests that the process may benefit from conveying those hierarchies to the user via warnings.
