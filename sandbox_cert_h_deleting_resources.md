@@ -44,7 +44,7 @@ For **Student A**, demonstrate the ability to delete, in this order:
 
 Each step can be executed in the SIS first, then synched to the ODS via separate process. At the end of the scenario, only the elementary school ``StudentSchoolAssociation`` and the Student A record itself should remain in the ODS.
 
-### Scenario B: Delete All Dependent Data Along with Student
+### Scenario B: Delete All Dependent Data Associated with Student
 This scenario starts from the assumption that an entire student record, along with **all** dependent data, can be deleted from one step in the SIS, if that is desired by the user. Presumably when a district is deleting a student record at the **top** of the dependency model, they want all dependent data deleted as well - but they may need to be warned about those deletions and given an opportunity to reverse course. 
 
 Such warnings are optional, so vendors will be asked to choose from one of the following options:
