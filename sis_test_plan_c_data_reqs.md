@@ -59,6 +59,57 @@ Some example requests:
 - ``{{ApiUrl}}/ed-fi/schools?totalCount=true&limit=50&offset=0`` will obtain the first 50 schools in the ODS, and a total count will be returned in the Header of the response. That total count can be used to determine how many paginated requests to make in order to acquire a complete list. (The default limit is 25, and the maximum is 500.)
 - ``{{ApiUrl}}/ed-fi/schools?limit=50&offset=0&localEducationAgencyId=616004000`` will obtain the first 50 schools for [Freshwater Education District 6004-61](https://public.education.mn.gov/MdeOrgView/organization/show/7878).
 
+An example JSON response, with some annotations, is below. The response will include the "schoolId", which is the Ed-Fi style organization ID, which can be further broken down into district type, district number, and school number, as detailed in [this section on MN district and school IDs](./sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids).
+```JSON
+{
+        "id": "745bfcdfe80a44d0bdeebf881f245266",
+        "localEducationAgencyReference": {
+            "localEducationAgencyId": 616004000,
+            "link": {
+                "rel": "LocalEducationAgency",
+                "href": "/ed-fi/localEducationAgencies/02da72cce56d4de38d258009501f0f4c"
+            }
+        },
+        "schoolId": 616004030,//Ed-Fi style Organization ID
+        "nameOfInstitution": "Freshwater Targeted Services",
+        "shortNameOfInstitution": "FRSH TS",
+        "webSite": "https://www.fed.k12.mn.us/",
+        "addresses": [
+            {
+ //...contains physical address details
+            }
+        ],
+        "educationOrganizationCategories": [
+            {
+                "educationOrganizationCategoryDescriptor": "uri://ed-fi.org/EducationOrganizationCategoryDescriptor#School"
+            }
+        ],
+        "identificationCodes": [//full MDE ORG stateOrganizationId
+            {
+                "educationOrganizationIdentificationSystemDescriptor": "uri://ed-fi.org/EducationOrganizationIdentificationSystemDescriptor#SEA",
+                "identificationCode": "616004030000"
+            }
+        ],
+//...
+        "_ext": {
+            "mn": {
+                "schoolClassificationDescriptor": "uri://education.mn.gov/SchoolClassificationDescriptor#45"
+            }
+        },
+        "schoolCategories": [],
+        "gradeLevels": [
+            {
+                "gradeLevelDescriptor": "uri://education.mn.gov/GradeLevelDescriptor#1"
+            },
+            {
+                "gradeLevelDescriptor": "uri://education.mn.gov/GradeLevelDescriptor#5"
+            },
+            //remaining grade levels...
+        ],
+        "_etag": "5250059405458521237"
+    }
+```
+
 ### Resource: Post-Secondary Institutions
 
 **Description**
