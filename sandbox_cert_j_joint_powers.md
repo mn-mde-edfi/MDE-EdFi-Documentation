@@ -19,7 +19,7 @@ Both patterns have a **prerequisite** of a Sandbox loaded with Education Organiz
 
 Within each pattern, scenarios are presented on a student-by-student enrollment record basis, because MDE expects that SIS software will benefit from tight integration between SSA and SEORA records. However, if vendors prefer to be tested on a resource-by-resource basis (first SSAs, then SEORAs), that is acceptable.
 
-Student and School Identifiers used in the scenarios below are **for reference only** in order to demonstrate the required integration. Vendors are expected to generate their own student identifiers and to use school IDs from districts they support.
+Student and School Identifiers used in the scenarios below are **for reference only** in order to demonstrate the required integration. Vendors are expected to generate their own student identifiers and to use school IDs from districts they support. Any additional school identifiers needed can be acquired from the ODS API, as detailed in the [Read-Only Endpoints](./sis_test_plan_c_data_reqs.md#read-only-api-endpoints) section of the Data Requirements and API Resources document. 
 
 ### Pattern 1: Member SEORA
 

@@ -40,41 +40,36 @@ Education Organization References in the Ed-Fi API allow an API client to submit
 For details on the current API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](sandbox_cert_a_toc.md). That documentation contains resources and scenarios for the various programs MDE has incorporated into Ed-Fi.
 
 ## Read-Only API endpoints 
-Several of the required data elements are provided by MDE within the ODS. This section details those elements.
+Several of the required data elements are provided by MDE within the ODS. This section details those elements. Vendors can pull this data into their SIS databases by using GET requests against the ODS API. (See the Schools section below for details)
 
 ### Resource: LocalEducationAgencies
 
 **Description**
-This entity represents an administrative unit at the local level which exists primarily to operate schools or to contract for educational services. It includes school districts, charter schools, or other local administrative organizations.
-
-**All required Local Education Agency data will be loaded by MDE.**
+This entity represents an administrative unit at the local level which exists primarily to operate schools or to contract for educational services. It includes school districts, charter schools, or other local administrative organizations. **All required Local Education Agency data are loaded by MDE.**
 
 ### Resource: Schools
 
 **Description**
-This entity represents an educational organization that includes staff and students who participate in classes and educational activity groups.
+This entity represents an educational organization that includes staff and students who participate in classes and educational activity groups **All required School data are loaded by MDE.**
 
-**All required School data will be loaded by MDE.**
+#### Requesting Schools from the API
+GET requests against the API can be used to obtain lists of schools, which can be useful for populating a list of reporting organizations to be used in a Student Education Organization Responsibility Association (see the [Joint Powers Certification](./sandbox_cert_j_joint_powers.md) document).
+
+Some example requests:
+- ``{{ApiUrl}}/ed-fi/schools?totalCount=true&limit=50&offset=0`` will obtain the first 50 schools in the ODS, and a total count will be returned in the Header of the response. That total count can be used to determine how many paginated requests to make in order to acquire a complete list. (The default limit is 25, and the maximum is 500.)
+- ``{{ApiUrl}}/ed-fi/schools?limit=50&offset=0&localEducationAgencyId=616004000`` will obtain the first 50 schools for [Freshwater Education District 6004-61](https://public.education.mn.gov/MdeOrgView/organization/show/7878).
 
 ### Resource: Post-Secondary Institutions
 
 **Description**
 
-An organization that provides educational programs for individuals who have completed or otherwise left educational programs in secondary school(s).
-
-**All required College data will be loaded by MDE.**
+An organization that provides educational programs for individuals who have completed or otherwise left educational programs in secondary school(s). **All required College data are loaded by MDE.**
 
 ### Resource: Course (State Level Only)
 
 **Description**
 
-This educational entity represents the organization of subject matter and related learning experiences provided for the instruction of students on a regular or systematic basis.
-
-**Prerequisite Data**
-
-- Education Organization for State Education Agency (SEA)
-
-**All required State Course data will be loaded by MDE.**
+This educational entity represents the organization of subject matter and related learning experiences provided for the instruction of students on a regular or systematic basis. The **required State Course data are loaded by MDE.**
 
 ### Resource: Staff
 
@@ -88,13 +83,13 @@ This entity represents an individual who performs specified activities for any p
 4. An in-kind service provider.
 5. An independent contractor or businessperson working at a school site.
 
-**Sync process will be created by MDE to populate Staff Tables.**
+**A sync process created by MDE is used to populate Staff Tables.**
 
 ### Resource: Program
 
 **Description**
 
-*Ed-Fi Description*: This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students. **MDE will automatically create programs for each LEA** with the program types identified in the [ProgramTypeDescriptor table](/descriptorTables/ProgramTypeDescriptor.csv).
+*Ed-Fi Description*: This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students. **MDE automatically creates programs for each LEA** with the program types identified in the [ProgramTypeDescriptor table](/descriptorTables/ProgramTypeDescriptor.csv).
 
 ## Ed-Fi Model Dependency
 Ed-Fi uses a data-dependency security model that enforces the order of creation when inserting various records via the API. This is often encountered via API errors such as the following:
