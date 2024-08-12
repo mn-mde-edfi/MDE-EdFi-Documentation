@@ -13,13 +13,13 @@ _Note_: occasionally special characters, such as em dashes, are stored in the da
 As of the most recent run, these tables are derived from the following database at MDE:
 - **Version**: 5.2
 - **School Year**: 2024-2025
-- **Environment**: Staging
+- **Environment**: Production
 - **Database**: EdFi_Ods_2025
-- **Date Exported**: 2024-07-23 (checked against staging ODS; no changes from prior QA export)
+- **Date Exported**: 2024-08-12 (small changes from prior staging export - see updated [AssessmentToolDescriptor](AssessmentToolDescriptor.csv), [CurriculumUsedDescriptor](CurriculumUsedDescriptor.csv), and [KindergartenScheduleDescriptor](KindergartenScheduleDescriptor.csv))
 
 **Exceptions** will be marked with details below as necessary.
-- **NOTE:** For school year 2024-25, the 'Responsibility Descriptor' has been exported. This is a **NEW** descriptor used for Joint Powers solutions. We are in the process of validating and double checking the remaining custom descriptors for the 2024-25 school year. When the above run is marked as "Production", this process will be finished.
-- **NOTE:** For school year 2023-24, the "HK" grade level was retired on legislative direction. Instead of removing it entirely from the ODS API, it was updated to show "DO NOT USE". For school year 2024-25, it will not be available in the API at all.
+- **NOTE:** For school year 2024-25, the 'Responsibility Descriptor' has been exported. This is a **NEW** descriptor used for Joint Powers solutions. We have now completed validating and double checking the remaining custom descriptors for the 2024-25 school year, as noted by the "Production" environment designation above.
+- **NOTE:** For school year 2023-24, the "HK" grade level was retired on legislative direction. Instead of removing it entirely from the ODS API, it was updated to show "DO NOT USE". For school year 2024-25, it will not be available in the API at all. This also holds true for the "H" Kindergarten Schedule Descriptor.
 
 Vendors may also wish to refer to the change/commit log in GitHub to see what the latest changes are for the tables in this folder.
 
