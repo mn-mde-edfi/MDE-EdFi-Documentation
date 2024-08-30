@@ -5,7 +5,7 @@ For more information, see the [Early Education Enrollment and Parent collection 
 
 ## Resource: StudentSchoolAssociations
 **Description:**
-This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation. Please take the time to read the [Instructions on Constructing SSAs for Multiple Early Education Program Associations](/2023-24%20MDE%20Ed-Fi%20Documentation/ssa_construction_for_multiple_ee.md) document with respect to handling SSAs when multiple SEEPAs are involved.
+This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation. Please take the time to read the [Instructions on Constructing SSAs for Multiple Early Education Program Associations](/2024-25%20MDE%20Ed-Fi%20Documentation/ssa_construction_for_multiple_ee.md) document with respect to handling SSAs when multiple SEEPAs are involved.
 
 **Prerequisite Data:**
 - Students (create 6 students, referenced as students A-F below)
