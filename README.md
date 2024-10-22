@@ -12,7 +12,7 @@ This repository contains technical documentation for Minnesota's implementation 
 The primary audience for this documentation is SIS vendors and State of Minnesota technical staff (from MDE and MNIT).
 
 ## Markdown Documentation
-MNIT supporting MDE is now complementing each collection year's documentation in markdown and CSV files. While some documentation remains in Word and Excel within this repository, the markdown files at the top level of this repository represent an effort to store and maintain the documentation in markdown and CSV, in particular:
+MNIT supporting MDE composes each collection year's documentation in markdown and CSV files. While some documentation remains in Word and Excel within this repository, the markdown files at the top level of this repository represent an effort to store and maintain the documentation in markdown and CSV, in particular:
 
 - [SIS and Vendor Test Plan](sis_test_plan_a_toc.md)
 - [Sandbox Certification Scenarios](sandbox_cert_a_toc.md)
@@ -58,7 +58,7 @@ We will also use this repository to store additional documentation and links tha
 JSON files of sample data can be found in the [data directory](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/tree/master/data). These files are intended to assist developers with understanding the Ed-Fi ODS API.
 
 ## Issues List
-As part of this documentation effort, we are also using Github to manage technical issues. See the [Issue List](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/issues) for examples.
+As part of this documentation effort, we attempted using Github to manage technical issues. See the [Issue List](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/issues) for examples. This effort has mostly been abandoned for lack of use. However, the MDE team is maintaining a [list of known issues and bugs](https://education.mn.gov/MDE/dse/datasub/edfi/issues/) in order to keep LEAs informed.
 
 ## Viewing Options
 There are two ways to view this documentation: 
