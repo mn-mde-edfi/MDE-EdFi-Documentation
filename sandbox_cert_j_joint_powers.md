@@ -43,8 +43,9 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - HomeboundService: N
  - SpecialPupil: N
  - ResidentLEAReference: 10271000
- - AttendanceDays: 0
- - MembershipDays: 0
+ - MembershipAttendanceUnit: Days
+ - Attendance: 0.0
+ - Membership: 0
  - PercentEnrolled: 100
  - TransportationCategory: 0
  - TransportationLEA: 10271000
@@ -73,8 +74,9 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - HomeboundService: N
  - SpecialPupil: N
  - ResidentLEAReference: 10271000
- - AttendanceDays: 1510
- - MembershipDays: 168
+ - MembershipAttendanceUnit: Days
+ - Attendance: 151.0
+ - Membership: 168
  - PercentEnrolled: 100
  - TransportationCategory: 3
  - TransportationLEA: 10271000
@@ -103,8 +105,9 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - HomeboundService: N
  - SpecialPupil: N
  - ResidentLEAReference: 10194000
- - AttendanceDays: 130
- - MembershipDays: 13
+ - MembershipAttendanceUnit: Hours 
+ - Attendance: 13.0
+ - Membership: 13
  - PercentEnrolled: 999
  - TransportationCategory: 0
  - TransportationLEA: 10194000
@@ -133,8 +136,9 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - HomeboundService: N
  - SpecialPupil: N
  - ResidentLEAReference: 10194000
- - AttendanceDays: 950
- - MembershipDays: 95
+ - MembershipAttendanceUnit: Hours
+ - Attendance: 95.0
+ - Membership: 95
  - PercentEnrolled: 999
  - TransportationCategory: 0
  - TransportationLEA: 10194000
@@ -163,8 +167,9 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - HomeboundService: N
  - SpecialPupil: N
  - ResidentLEAReference: 10199000
- - AttendanceDays: 1055
- - MembershipDays: 106
+ - MembershipAttendanceUnit: Hours
+ - Attendance: 105.5
+ - Membership: 106
  - PercentEnrolled: 999
  - TransportationCategory: 0
  - TransportationLEA: 10199000
@@ -193,8 +198,9 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - HomeboundService: N
  - SpecialPupil: N
  - ResidentLEAReference: 10199000
- - AttendanceDays: 5653
- - MembershipDays: 627
+ - MembershipAttendanceUnit: Hours
+ - Attendance: 565.3
+ - Membership: 627
  - PercentEnrolled: 999
  - TransportationCategory: 6
  - TransportationLEA: 10199000
@@ -223,9 +229,10 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - HomeboundService: N
  - SpecialPupil: N
  - ResidentLEAReference: 10271000
- - AttendanceDays: See EE record
- - MembershipDays: See EE record
- - PercentEnrolled: See EE record
+ - MembershipAttendanceUnit: Hours
+ - Attendance: 46.0
+ - Membership: 59
+ - PercentEnrolled: 999
  - TransportationCategory: 3
  - TransportationLEA: 10271000
 
@@ -253,8 +260,9 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - HomeboundService: N
  - SpecialPupil: N
  - ResidentLEAReference: 10199000
- - AttendanceDays: 2131
- - MembershipDays: 258
+ - MembershipAttendanceUnit: Hours
+ - Attendance: 213.1
+ - Membership: 258
  - PercentEnrolled: 999
  - TransportationCategory: 0
  - TransportationLEA: 10199000
@@ -283,8 +291,9 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - HomeboundService: N
  - SpecialPupil: N
  - ResidentLEAReference: 10199000
- - AttendanceDays: 5928
- - MembershipDays: 780
+ - MembershipAttendanceUnit: Hours
+ - Attendance: 592.8
+ - Membership: 780
  - PercentEnrolled: 999
  - TransportationCategory: 0
  - TransportationLEA: 10199000
@@ -318,8 +327,9 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - HomeboundService: N
  - SpecialPupil: N
  - ResidentLEAReference: 10549000
- - AttendanceDays: 9
- - MembershipDays: 9
+ - MembershipAttendanceUnit: Hours
+ - Attendance: 9.0
+ - Membership: 9
  - PercentEnrolled: 999
  - TransportationCategory: 0
  - TransportationLEA: 10549000
@@ -348,8 +358,9 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - HomeboundService: N
  - SpecialPupil: N
  - ResidentLEAReference: 10549000
- - AttendanceDays: 390
- - MembershipDays: 390
+ - MembershipAttendanceUnit: Hours
+ - Attendance: 39.0
+ - Membership: 39
  - PercentEnrolled: 999
  - TransportationCategory: 0
  - TransportationLEA: 10549000
@@ -378,8 +389,9 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - HomeboundService: N
  - SpecialPupil: N
  - ResidentLEAReference: 10549000
- - AttendanceDays: 3
- - MembershipDays: 3
+ - MembershipAttendanceUnit: Hours
+ - Attendance: 3.0
+ - Membership: 3
  - PercentEnrolled: 999
  - TransportationCategory: 0
  - TransportationLEA: 10549000
@@ -408,8 +420,9 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - HomeboundService: N
  - SpecialPupil: N
  - ResidentLEAReference: 10549000
- - AttendanceDays: 390
- - MembershipDays: 390
+ - MembershipAttendanceUnit: Hours
+ - Attendance: 39.0
+ - Membership: 39
  - PercentEnrolled: 999
  - TransportationCategory: 0
  - TransportationLEA: 10549000
