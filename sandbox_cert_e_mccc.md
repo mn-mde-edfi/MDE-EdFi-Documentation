@@ -111,7 +111,7 @@ Ed-Fi Description: A term in the school year, generally a unit of time into whic
 
 ### Description
 
-Ed-Fi Description: This educational entity represents the organization of subject matter and related learning experiences provided for the instruction of students on a regular or systematic basis. The MCCC collection in Ed-Fi will use Course for collection of District, College and State Courses. For more information on the course resource, see the [Course Records for MCCC](descriptors_resources.md#course-records-for-mccc) section of the Descriptors and Resources document.
+Ed-Fi Description: This educational entity represents the organization of subject matter and related learning experiences provided for the instruction of students on a regular or systematic basis. The MCCC collection in Ed-Fi will use Course for collection of District, College and State Courses. For more information on the course resource, see the [Course Records for MCCC](descriptors_resources.md#course-records-for-mccc) section of the Descriptors and Resources document. MCCC data is collected by course work types of scheduled, independent study and direct pay PSEO. The certification will verify that the MCCC data by each of the course work types reports.
 
 **Important Note on College Course Codes:** To ensure uniqueness, the College Course Code must include a district's LocalEducationAgencyId followed by a hyphen with no spaces, then followed by the College's Course Identifier for that course. For example, a college course code submitted by Saint Paul Public School District would be submitted as ```10625000-ENG1000```.
 
@@ -123,20 +123,15 @@ Ed-Fi Description: This educational entity represents the organization of subjec
 
 ### Scenarios
 
-1. Create 8 **District** Courses (set up at least 1 course per school type - Elementary, Middle and High School)
-    - Course 1 Course Level Type = B
-    - Course 2 Course Level Type = G
-    - Course 3 Course Level Type = E
-    - Course 4 Course Level Type = D
-    - Course 5 Course Level Type = A
-    - Course 6 Course Level Type = C
-    - Course 7 Course Level Type = X
-    - Course 8 Course Level Type = N
+1. Create 3 **District** Courses (set up at least 1 course per school type - Elementary, Middle and High School)
+    - Course 1 Course Level Type = (B or G or E) Elementary
+    - Course 2 Course Level Type = (D or A) HS
+    - Course 3 Course Level Type = (C or X or N) Middle
 
 Including the following elements:
   - CourseDescription (only when associated with an Unclassified State Course)
   - HighSchoolCourseRequirement
-  - CourseLevelCharacteristic for End of Course Indicator (when applicable)
+  - CourseLevelCharacteristic for End of Course Indicator (when applicable - only on a qualifing HS course).
   - Course Code (this can be defined or created using a local pattern but **must** be unique across the LEA)
   - Number of Parts
   - LocalEducationAgencyId (this **must** be the LEA organization ID - local courses cannot be validated via a school/site ID)
@@ -166,13 +161,12 @@ Including the following elements:
       - CourseIdentificationSystemDescriptor = 'LEA course code'
     - LearningStandardid 99.E5.1 (see [details](#learning-standards))
 
-3. Prepare District Courses 4 & 5 to associate with College courses
-    - Review data for District Courses 4 & 5 (levels D and A) to prepare for the next section (and CourseCourseAssociation records in Scenario step 9).
+3. Prepare District Course 2 to associate with College courses
+    - Review data for District Courses 2 (levels D or A) to prepare for the next section (and CourseCourseAssociation records in Scenario step 9).
 
 4. Create **College** Courses
     - 1 with Course Level Type = D
-    - 1 with Course Level Type = A
-    - 2 college courses to be used for Direct Pay PSEO.
+    - 1 college courses to be used for Direct Pay PSEO.
    Each college course should include the following elements:
       - EducationOrganizationId for the college (use the PostSecondaryInstitutionId as detailed in the [College Courses](descriptors_resources.md#college-courses) section)
       - MaximumAvailableCredits
@@ -212,7 +206,7 @@ Including the following elements:
       - High School Course Requirement of '0' (false)
       - Number of Parts = 1.
 
-7. **(UNDER DEVELOPMENT) Scenario for Project-Based Student enrollment record.** (_The data model for Project Based learning is still under development, and vendors will not be tested for the pilot year._) Create a course for Project Based section enrollments - While these types of enrollments do not include MDE course, course offering or section requirements - the Ed-Fi Model enforces these entities in the Master Schedule. At minimum, a **single Placeholder course, course offering, and section will be required for your district** to report Project Based Student Section Association records. Please also note the validation rules described in the [Level Characteristics section](descriptors_resources.md#level-characteristics) of the Descriptors and Resources document. Ed-Fi required elements:
+7. **(UNDER DEVELOPMENT) Scenario for Project-Based Student enrollment record.** (_The data model for Project Based learning is still under development, and vendors will not be tested.) Create a course for Project Based section enrollments - While these types of enrollments do not include MDE course, course offering or section requirements - the Ed-Fi Model enforces these entities in the Master Schedule. At minimum, a **single Placeholder course, course offering, and section will be required for your district** to report Project Based Student Section Association records. Please also note the validation rules described in the [Level Characteristics section](descriptors_resources.md#level-characteristics) of the Descriptors and Resources document. Ed-Fi required elements:
     - Course Code: Project Based
     - Course Title
     - Course Identification Code
@@ -237,17 +231,17 @@ Including the following elements:
       - IS can only be related to state courses with CourseLevelCharacteristicDescription = IS and Project Based can be related to state courses with CourseLevelCharacteristicDescription = PBL. See the [Level Characteristics section](descriptors_resources.md#level-characteristics) for validation details.
       - Scheduled course work type cannot use CourseLevelCharacteristicDescription = PBL.
 
-2. Create CourseCourseAssociation records between the College Courses A and D and the District Courses 4 & 5, which were created for this association.
+2. Create CourseCourseAssociation records between the College Courses D or A and the District Course 2, which were created for this association.
     - EducationOrganizationId = District ID
     - CourseCode = District Course Code
     - ToCourseEducationOrganizationId = College Course's PostSecondaryInstitutionId
     - ToCourseCode = College Course Code
 
-10. Create CourseCourseAssociation records between the 2 Direct Pay College Courses and the applicable State Course (PSEO Direct Pay)
+10. Create CourseCourseAssociation records between the 1 Direct Pay College Courses and the applicable State Course (PSEO Direct Pay)
     - EducationOrganizationId = College Education Organization ID
     - CourseCode = College Course Code
     - ToCourseEducationOrganizationId = State Education Agency ID (999999000)
-    - ToCourseCode = State Course Code
+    - ToCourseCode = 23010 ONLY
 
 _Note:_ CourseCourseAssociation records are not required between the District Direct Pay PSEO course and the PSEO college courses.
 
@@ -295,47 +289,22 @@ Ed-Fi Description: This entity represents an entry in the course catalog of avai
 
 Create the following CourseOffering Records:
 
-1. CourseOffering 1 References the District Course with Level Type = B
+1. CourseOffering 1 References the District Course with Level Type = B or G or E
     - CourseReference
     - LocalCourseCode (this can match the District Course's Course Code - at the discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
-2. CourseOffering 2 References the District Course with Course Level Type = G
+2. CourseOffering 2 References the District Course with Course Level Type = D or A
     - CourseReference
     - LocalCourseCode (District Course's Code - at discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
-3. CourseOffering 3 References the District Course with Course Level Type = E
-    - CourseReference
-    - LocalCourseCode (District Course's Code - at discretion of district)
-    - SchoolId
-    - SessionReference (SchoolYear, SchoolId, SessionName)
-4. CourseOffering 4 References the District Course with Course Level Type = D
-    - CourseReference
-    - LocalCourseCode (District Course's Code - at discretion of district)
-    - SchoolId
-    - SessionReference (SchoolYear, SchoolId, SessionName)
-5. CourseOffering 5 References the District Course with Course Level Type = A
-    - CourseReference
-    - LocalCourseCode (District Course's Code - at discretion of district)
-    - SchoolId
-    - SessionReference (SchoolYear, SchoolId, SessionName)
-6. CourseOffering 6 References the District Course Associated with Course Level Type = C 
+3. CourseOffering 3 References the District Course Associated with Course Level Type = C or X or N
     - CourseReference
     - LocalCourseCode (this can match the District Course's Course Code - at the discretion of district)
     - SchoolId
     - SessionReference (SchoolYear, SchoolId, SessionName)
-7. CourseOffering 7 References the District Course with Course Level Type = X
-    - CourseReference
-    - LocalCourseCode (District Course's Code - at discretion of district)
-    - SchoolId
-    - SessionReference (SchoolYear, SchoolId, SessionName)
-8. CourseOffering 8 References the District Course with Course Level Type = N
-    - CourseReference
-    - LocalCourseCode (District Course's Code - at discretion of district)
-    - SchoolId
-    - SessionReference (SchoolYear, SchoolId, SessionName)
-9. CourseOffering 9 References the District Course Associated with Course Level Type = P
+4. CourseOffering 4 References the District Course Associated with Course Level Type = P
     - CourseReference
     - LocalCourseCode (District Course's Code - at discretion of district)
     - SchoolId
@@ -346,21 +315,21 @@ Create the following CourseOffering Records:
     - siteBasedInitiative
       - siteBasedInitiativeDescriptor
       - ImplementationStatusDescriptor
-10. CourseOffering 10 for Independent Study **(you will have one course offering for every Independent Study district course)**
+5. CourseOffering 5 for Independent Study **(you will have one course offering for every Independent Study district course)**
     - CourseReference (reference to district course)
     - LocalCourseCode (District Course's Code - at discretion of district)
     - Schoolid
     - SessionReference (SchoolYear, SchoolId, SessionName. Should reference a session with TermDescriptor 'Non-Scheduled'.)
-11. CourseOffering 11 for Direct Pay PSEO **(you will have a single course offering linked to a single district course set up as a placeholder)**
+6. CourseOffering 6 for Direct Pay PSEO **(you will have a single course offering linked to a single district course set up as a placeholder)**
     - CourseReference (reference to district course)
     - LocalCourseCode (District Course's Code - at discretion of district)
     - Schoolid
     - SessionReference (SchoolYear, SchoolId, SessionName. Should reference a session with TermDescriptor 'Non-Scheduled'.)
-12. CourseOffering 12 for Project Based **(not submitted by SIS vendors)** **- (Requires****a single course offering linked to a single course which is associated to all project-based college courses)**
+7. *CourseOffering 7 for Project Based **(not submitted by SIS vendors)** **- (Requires****a single course offering linked to a single course which is associated to all project-based college courses)**
     - CourseReference (reference to district course)
     - LocalCourseCode (District Course's Code - at discretion of district)
     - Schoolid
-    - SessionReference (SchoolYear, SchoolId, SessionName. Should reference a session with TermDescriptor 'Non-Scheduled'.)
+    - SessionReference (SchoolYear, SchoolId, SessionName. Should reference a session with TermDescriptor 'Non-Scheduled'.) *
 
 ## Resource: Section
 
@@ -378,7 +347,7 @@ Ed-Fi Description: This entity represents a setting in which organized instructi
 
 ### Scenarios
 
-1. Create 9 Section Records to associate with the first 9 course offerings (not the IS, Project Based or Direct Pay PSEO courses yet - those will be done in step 2). Include the following elements:
+1. Create 4 Section Records to associate with the first 9 course offerings (not the IS, Project Based or Direct Pay PSEO courses yet - those will be done in step 2). Include the following elements:
     - SectionIdentifier
     - CourseOfferingReference
     - ClassPeriod (for Scheduled Section Enrollments)*
@@ -394,7 +363,7 @@ Ed-Fi Description: This entity represents a setting in which organized instructi
     - Direct Pay PSEO (a single placeholder section is required all Direct Pay PSEO)
       - SectionIdentifier: DirectPayPSEO_Section
       - CourseOfferingReference
-    - Project Based (a single placeholder section is required all Project Based)
+    - *Project Based* (a single placeholder section is required all Project Based)
       - SectionIdentifier: ProjectBased_Section
       - CourseOfferingReference
 
@@ -415,7 +384,7 @@ Ed-Fi Description: This association indicates the class sections to which a staf
 
 ### Scenarios
 
-1. Create StaffSectionAssociation for sections created for Course Level Types (A, B, C, D, E, G, N, X, P). Include the following elements:
+1. Create StaffSectionAssociation for sections created for each of the 5 sections (Direct Pay PSEO does not get a staff reported). Include the following elements:
     - StaffReference.staffUniqueId (FFN)
     - ClassroomPositionDescriptor = 'TOR'
     - SectionReference
@@ -450,7 +419,7 @@ Ed-Fi Description: This association indicates the course sections to which a stu
         - **SC**: Scheduled
         - **AI**: Independent Study
         - **DP**: Direct Pay PSEO
-        - **PB**: Project Based (if available)
+        - **PB**: *Project Based* (if available)
 
 Please note the importance of the SectionEnrollmentType Descriptor in validating Project-Based and Independent Study courses as describe in the [Level Characteristics section](descriptors_resources.md#level-characteristics) of the Descriptors and Resources document.
 
@@ -482,40 +451,6 @@ Ed-Fi Description: This educational entity represents an overall score or assess
 Notes: 
 1. Letter Grades can also contain numeric codes, such as those on a 0-4 (Failing-Outstanding) scale. Note that 'numeric grade earned' was removed from the sandbox API on June 7, 2021, reflecting the MCCC program desire to limit grade submissions to the ```LetterGradeEarned``` element.
 2. As of April 2021, LocalCreditEarned has an erroneous label/definition in Swagger of ""College credit earned". It should say "LEA credit earned".
-
-## Online Learning
-**Postponed until further notice.**
-
-The Online Learning (OLL) Course Completion information is submitted by state-approved OLL programs to request OLL aid for public school students who complete OLL supplemental courses but who are enrolled in another Minnesota school district. Certification Scenarios for Online Learning are being placed in this document due to the integration with MCCC.
-
-### Prerequisites for Vendor
-  - Certified on MCCC
-
-### Prerequisite Data
-  - Schools
-  - Students
-  - Student School Associations
-  - Courses
-  - Sessions
-  - Course Offerings
-
-### Scenarios
-**Course Scenario**
-  - Create a course and demonstrate population of credits attempted within the maximum available credits element
-
-**Section Scenario**
-  - Create a Section for a Course Offering with a Medium of Instruction of type "SFSL" (*note that this is replacing the former "SL" value*)
-  - Demonstrate that such a section creation is only possible on a school with a classification of 46
-
-**Student Section Association Scenario**
-  - Associate a student to the Section created above, including all required elements
-  - Demonstrate that an end date is being recorded
-  - Demonstrate that the record's begin and end dates are within the Student's School Association enrollment dates
-
-**Multiple District Enrollment Scenario**
-Description: a student is enrolled in school X (district A) for traditional in-person classes, and enrolled in school Y (district B) for online learning. (The schools could be in the same district or different districts.)
-*Scenarios in development as of May 27, 2022.*
-
 
 # Navigation
 - [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
