@@ -161,10 +161,10 @@ Including the following elements:
       - CourseIdentificationSystemDescriptor = 'LEA course code'
     - LearningStandardid 99.E5.1 (see [details](#learning-standards))
 
-3. Prepare District Course 1 to associate with College courses
-    - Review data for District Courses 1 (levels D or A) to prepare for the next section (and CourseCourseAssociation records in Scenario step 9).
+3. Prepare District Course 2 (as described in Scenario 1 above) to associate with College courses
+    - Review data for District Course 2 (levels D or A) to prepare for the next section (and CourseCourseAssociation records in Scenario 4).
 
-4. Create **College** Courses
+4. Create 2 **College** Courses
     - 1 with Course Level Type = D
     - 1 college courses to be used for Direct Pay PSEO.
    Each college course should include the following elements:
