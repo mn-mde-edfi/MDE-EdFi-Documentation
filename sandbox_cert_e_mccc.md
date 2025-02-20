@@ -162,7 +162,7 @@ Including the following elements:
     - LearningStandardid 99.E5.1 (see [details](#learning-standards))
 
 3. Prepare District Course 2 (as described in Scenario 1 above) to associate with College courses
-    - Review data for District Course 2 (levels D or A) to prepare for the next section (and CourseCourseAssociation records in Scenario 4).
+    - Review data for District Course 2 (levels D or A) to prepare for the next section (CourseCourseAssociation records in Scenario 4).
 
 4. Create 2 **College** Courses
     - 1 with Course Level Type = D
