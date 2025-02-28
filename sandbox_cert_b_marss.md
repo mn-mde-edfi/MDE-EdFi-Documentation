@@ -44,7 +44,7 @@ This association represents the School in which a student is enrolled. Note that
     - Withdrawal 
     - Re-enrollment of a student who changes resident districts but does not change schools.  Place a 20 day gap between records. 
 6.	Update Student 1's Percent Enrolled to 50% and set membershipAttendanceUnitDescriptor to days, set membership and attendance.
-7.	Update Student **1's Percent Enrolled to 100%**, membershipAttendanceUnitDescriptor to hours and adjust membership and attendance accordingly.
+7.	Update Student **1's Percent Enrolled to 100%**, membershipAttendanceUnitDescriptor to Days and adjust membership and attendance accordingly.
 8.	Update Student 2's Transportation Category.
 9.	Update Student 3's StateAid Category.
 10.	Create 2 enrollment records (a, b) for a student that is in two different schools within the same district at the same time.  Enrollment dates 09/10/17 through 06/10/18.  

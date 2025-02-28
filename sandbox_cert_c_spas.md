@@ -234,11 +234,11 @@ This association represents the school food services program(s), such as the **F
 
 **Direct Certification**
 
-The following scenarios were  added in school year 2022-23 to test for _Direct Certification_:
-  1. Associate Student 1 as code **2 (Free)** based on the application for educational benefits. Demonstrate that this student's default value for Direct Certification is **false**. Then set the Direct Certification element to **true** for this student.
-  2. Associate Student 2 as **1 (Reduced)** on the application for educational benefits. Demonstrate that this student's default value for Direct Certification is **false**. Then set the Direct Certification element to **True** for this student. Then, set the Direct Certification element to **False**.
-  3. Demonstrate that Student 3 is not eligible by default (no assocation). Now associate this student to **2 (Free)** and set the Direct Certification element to **True**.
-  4. Return to Student 1, and change the Direct Certification value back to **false**.
+The following scenarios were added in school year 2022-23 to test for _Direct Certification_:
+  1. Associate Student 1 as code **2 (Free)** based on the application for educational benefits. Demonstrate that this student's default value for Direct Certification is **False**. Then set the Direct Certification element to **True** for this student, which will display as a 7 after the MARSS translation.
+  2. Associate Student 2 as **1 (Reduced)** on the application for educational benefits. Demonstrate that this student's default value for Direct Certification is **False**. Then set the Direct Certification element to **True** for this student. Which will then display as an 8 after the MARSS translation. Then, set the Direct Certification element to **False**.
+  3. Demonstrate that Student 3 is not eligible by default (no association). Now associate this student to **2 (Free)** and set the Direct Certification element to **True**, which will display as a 7 after the MARSS translation.
+  4. Return to Student 1, and change the Direct Certification value back to **False**.
   5. Return to Student 2 and set the **end date** for the entire program association to the end of the school year in order to demonstrate that they will no longer be eligible after this year.
 
 ## Resource: StudentSection504PlanProgramAssociation
