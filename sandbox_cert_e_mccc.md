@@ -111,7 +111,7 @@ Ed-Fi Description: A term in the school year, generally a unit of time into whic
 
 ### Description
 
-Ed-Fi Description: This educational entity represents the organization of subject matter and related learning experiences provided for the instruction of students on a regular or systematic basis. The MCCC collection in Ed-Fi will use Course for collection of District, College and State Courses. For more information on the course resource, see the [Course Records for MCCC](descriptors_resources.md#course-records-for-mccc) section of the Descriptors and Resources document. MCCC data is collected by course work types of scheduled, independent study and direct pay PSEO. The certification will verify that the MCCC data by each of the course work types reports.
+Ed-Fi Description: This educational entity represents the organization of subject matter and related learning experiences provided for the instruction of students on a regular or systematic basis. The MCCC collection in Ed-Fi will use Course for collection of District, College and State Courses. For more information on the course resource, see the [Course Records for MCCC](descriptors_resources.md#course-records-for-mccc) section of the Descriptors and Resources document. MCCC data is collected by "course work types" that include _scheduled_, _independent study_ and _direct pay PSEO_. The certification will verify that the MCCC data for each of the course work types is loaded correctly.
 
 **Important Note on College Course Codes:** To ensure uniqueness, the College Course Code must include a district's LocalEducationAgencyId followed by a hyphen with no spaces, then followed by the College's Course Identifier for that course. For example, a college course code submitted by Saint Paul Public School District would be submitted as ```10625000-ENG1000```.
 
@@ -161,10 +161,10 @@ Including the following elements:
       - CourseIdentificationSystemDescriptor = 'LEA course code'
     - LearningStandardid 99.E5.1 (see [details](#learning-standards))
 
-3. Prepare District Course 1 to associate with College courses
-    - Review data for District Courses 1 (levels D or A) to prepare for the next section (and CourseCourseAssociation records in Scenario step 9).
+3. Prepare District Course 2 (as described in Scenario 1 above) to associate with College courses
+    - Review data for District Course 2 (levels D or A) to prepare for the next section (and the CourseCourseAssociation scenarios).
 
-4. Create **College** Courses
+4. Create 2 **College** Courses
     - 1 with Course Level Type = D
     - 1 college courses to be used for Direct Pay PSEO.
    Each college course should include the following elements:
