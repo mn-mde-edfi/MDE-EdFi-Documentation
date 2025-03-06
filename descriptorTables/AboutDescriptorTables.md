@@ -11,11 +11,11 @@ _Note_: occasionally special characters, such as em dashes, are stored in the da
 
 ## Source Details
 As of the most recent run, these tables are derived from the following database at MDE:
-- **Version**: 5.2
-- **School Year**: 2024-2025
-- **Environment**: Production
-- **Database**: EdFi_Ods_2025
-- **Date Exported**: 2024-08-12 (small changes from prior staging export - see updated [AssessmentToolDescriptor](AssessmentToolDescriptor.csv), [CurriculumUsedDescriptor](CurriculumUsedDescriptor.csv), and [KindergartenScheduleDescriptor](KindergartenScheduleDescriptor.csv))
+- **Version**: 6.x
+- **School Year**: 2025-26
+- **Environment**: Development
+- **Database**: EdFi_Ods_2026
+- **Date Exported**: 2025-03-05 (work in progress for coming school year - see updated [SectionEnrollmentTypeDescriptor](./SectionEnrollmentTypeDescriptor.csv), [ImplementationStatusDescriptor ](./ImplementationStatusDescriptor.csv), and [MediumOfInstructionDescriptor](./MediumOfInstructionDescriptor.csv))
 
 **Exceptions** will be marked with details below as necessary.
 - **NOTE:** For school year 2024-25, the 'Responsibility Descriptor' has been exported. This is a **NEW** descriptor used for Joint Powers solutions. We have now completed validating and double checking the remaining custom descriptors for the 2024-25 school year, as noted by the "Production" environment designation above.

@@ -12,6 +12,7 @@
 "Core","uri://education.mn.gov/GradeLevelDescriptor","GradeLevelDescriptor","8","Grade 8","Grade 8","7"
 "Core","uri://education.mn.gov/GradeLevelDescriptor","GradeLevelDescriptor","9","Grade 9","Grade 9","7"
 "Core","uri://education.mn.gov/GradeLevelDescriptor","GradeLevelDescriptor","EE","Early Education Enrollment","A child enrolled in an Early Education program: School Readiness or Early Childhood Family Education","26"
+"Core","uri://education.mn.gov/GradeLevelDescriptor","GradeLevelDescriptor","HK","Kindergarten Disabled","Students in kindergarten and have an IFSP/IEP, irrespective of the special education program to which they are assigned. HK students should not be included in regular kindergarten.","21"
 "Core","uri://education.mn.gov/GradeLevelDescriptor","GradeLevelDescriptor","KA","Kindergarten Section A","Kindergarten Section A","22"
 "Core","uri://education.mn.gov/GradeLevelDescriptor","GradeLevelDescriptor","KB","Kindergarten Section B","Kindergarten Section B","22"
 "Core","uri://education.mn.gov/GradeLevelDescriptor","GradeLevelDescriptor","KC","Kindergarten Section C","Kindergarten Section C","22"
