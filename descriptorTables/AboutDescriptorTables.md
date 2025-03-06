@@ -10,6 +10,7 @@ Refer to the CSVs in this folder for either the coming school year (spring), or 
 _Note_: occasionally special characters, such as em dashes, are stored in the database but do not translate well into CSV exports. An example is in code value 2 for ``SpecialEducationEvaluationStatusDescriptor``: "Shared-Time K-12 – Evaluated, EC – Evaluated" appears as "Shared-Time K-12 ? Evaluated, EC ? Evaluated". This is merely an artifact of character translations to CSV files and can be ignored. Several other examples appear in the [LanguageDescriptor Export](LanguageDescriptor.csv); when you pull from the API, you should be able to see the full special characters instead of what you see in these CSVs.
 
 ## Source Details
+**WE ARE AWARE THAT SOME UNINTENDED DESCRIPTOR CHANGES EXIST ON THIS BRANCH.**
 As of the most recent run, these tables are derived from the following database at MDE:
 - **Version**: 6.x
 - **School Year**: 2025-26
