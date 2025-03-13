@@ -29,13 +29,13 @@ Student and School Identifiers used in the scenarios below are **for reference o
 
 #### Student A Enrollment 1
 ##### SSA
- - SchoolYear: 2024
+ - SchoolYear: 2025
  - SchoolReference SchoolID: 10271009
  - StudentUniqueId: 0009000001111
- - EntryDate: 2023-07-11
+ - EntryDate: 2024-07-11
  - EntryType: 0
  - EntryGradeLevel: 12
- - ExitWithdrawDate: 2023-08-03
+ - ExitWithdrawDate: 2024-08-03
  - ExitWithdrawType: 99
  - CalendarReference: {fillAsNecessary}
  - SpecialEdEvalStatus: 4
@@ -54,19 +54,19 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - EdOrgReference SchoolID: 10271009
  - StudentUniqueId: 0009000001111
  - ReportingEdOrgReference SchoolID: 60917600
- - BeginDate: 2023-07-11
- - EndDate: 2023-08-03
+ - BeginDate: 2024-07-11
+ - EndDate: 2024-08-03
  - ResponsibiltyDescriptor: MARSS
 
 #### Student A Enrollment 2
 ##### SSA
- - SchoolYear: 2024
+ - SchoolYear: 2025
  - SchoolReference SchoolID: 10271009
  - StudentUniqueId: 0009000001111
- - EntryDate: 2023-08-28
+ - EntryDate: 2024-08-28
  - EntryType: 0
  - EntryGradeLevel: 12
- - ExitWithdrawDate: 2024-05-30
+ - ExitWithdrawDate: 2025-05-30
  - ExitWithdrawType: 8
  - CalendarReference: {fillAsNecessary}
  - SpecialEdEvalStatus: 4
@@ -85,19 +85,19 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - EdOrgReference SchoolID: 10271009
  - StudentUniqueId: 0009000001111
  - ReportingEdOrgReference SchoolID: 60917030
- - BeginDate: 2023-08-28
- - EndDate: 2024-05-30
+ - BeginDate: 2024-08-28
+ - EndDate: 2025-05-30
  - ResponsibiltyDescriptor: MARSS
 
 #### Student B Enrollment 1
 ##### SSA
- - SchoolYear: 2024
+ - SchoolYear: 2025
  - SchoolReference SchoolID: 10194510
  - StudentUniqueId: 0009000001112
- - EntryDate: 2023-07-31
+ - EntryDate: 2024-07-31
  - EntryType: 4
  - EntryGradeLevel: 10
- - ExitWithdrawDate: 2023-08-04
+ - ExitWithdrawDate: 2024-08-04
  - ExitWithdrawType: 99
  - CalendarReference: {fillAsNecessary}
  - SpecialEdEvalStatus: 1
@@ -116,19 +116,19 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - EdOrgReference SchoolID: 10194510
  - StudentUniqueId: 0009000001112
  - ReportingEdOrgReference SchoolID: 60917105
- - BeginDate: 2023-07-31
- - EndDate: 2023-08-04
+ - BeginDate: 2024-07-31
+ - EndDate: 2024-08-04
  - ResponsibiltyDescriptor: MARSS
 
 #### Student B Enrollment 2
 ##### SSA
- - SchoolYear: 2024
+ - SchoolYear: 2025
  - SchoolReference SchoolID: 10194510
  - StudentUniqueId: 0009000001112
- - EntryDate: 2023-09-08
+ - EntryDate: 2024-09-08
  - EntryType: 24
  - EntryGradeLevel: 11
- - ExitWithdrawDate: 2023-10-17
+ - ExitWithdrawDate: 2024-10-17
  - ExitWithdrawType: 20
  - CalendarReference: {fillAsNecessary}
  - SpecialEdEvalStatus: 4
@@ -147,8 +147,8 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - EdOrgReference SchoolID: 10194510
  - StudentUniqueId: 0009000001112
  - ReportingEdOrgReference SchoolID: 60917105
- - BeginDate: 2023-09-08
- - EndDate: 2023-10-17
+ - BeginDate: 2024-09-08
+ - EndDate: 2024-10-17
  - ResponsibiltyDescriptor: MARSS
 
 #### Student C Enrollment 1
@@ -156,10 +156,10 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - SchoolYear: 2024
  - SchoolReference SchoolID: 10199027
  - StudentUniqueId: 0009000001113
- - EntryDate: 2023-09-05
+ - EntryDate: 2024-09-05
  - EntryType: 4
  - EntryGradeLevel: 11
- - ExitWithdrawDate: 2023-10-17
+ - ExitWithdrawDate: 2024-10-17
  - ExitWithdrawType: 99
  - CalendarReference: {fillAsNecessary}
  - SpecialEdEvalStatus: 4
@@ -178,19 +178,19 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - EdOrgReference SchoolID: 10199027
  - StudentUniqueId: 0009000001113
  - ReportingEdOrgReference SchoolID: 60917105
- - BeginDate: 2023-09-05
- - EndDate: 2023-10-17
+ - BeginDate: 2024-09-05
+ - EndDate: 2024-10-17
  - ResponsibiltyDescriptor: MARSS
 
 #### Student C Enrollment 2
 ##### SSA
- - SchoolYear: 2024
+ - SchoolYear: 2025
  - SchoolReference SchoolID: 10199027
  - StudentUniqueId: 0009000001113
- - EntryDate: 2023-10-23
+ - EntryDate: 2024-10-23
  - EntryType: 24
  - EntryGradeLevel: 11
- - ExitWithdrawDate: 2024-06-06
+ - ExitWithdrawDate: 2025-06-06
  - ExitWithdrawType: 40
  - CalendarReference: {fillAsNecessary}
  - SpecialEdEvalStatus: 4
@@ -209,19 +209,19 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - EdOrgReference SchoolID: 10199027
  - StudentUniqueId: 0009000001113
  - ReportingEdOrgReference SchoolID: 60917104
- - BeginDate: 2023-10-23
- - EndDate: 2024-06-06
+ - BeginDate: 2024-10-23
+ - EndDate: 2025-06-06
  - ResponsibiltyDescriptor: MARSS
 
 #### Student D Enrollment
 ##### SSA
- - SchoolYear: 2024
+ - SchoolYear: 2025
  - SchoolReference SchoolID: 10271502
  - StudentUniqueId: 0009000001114
- - EntryDate: 2023-12-01
+ - EntryDate: 2024-12-01
  - EntryType: 4
  - EntryGradeLevel: EE
- - ExitWithdrawDate: 2024-05-24
+ - ExitWithdrawDate: 2025-05-24
  - ExitWithdrawType: 40
  - CalendarReference: {fillAsNecessary}
  - SpecialEdEvalStatus: 4
@@ -240,19 +240,19 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - EdOrgReference SchoolID: 10271502
  - StudentUniqueId: 0009000001114
  - ReportingEdOrgReference SchoolID: 60917700
- - BeginDate: 2023-12-01
- - EndDate: 2024-05-24
+ - BeginDate: 2024-12-01
+ - EndDate: 2025-05-24
  - ResponsibiltyDescriptor: MARSS
 
 #### Student E Enrollment 1
 ##### SSA
- - SchoolYear: 2024
+ - SchoolYear: 2025
  - SchoolReference SchoolID: 10199226
  - StudentUniqueId: 0009000001115
- - EntryDate: 2023-09-05
+ - EntryDate: 2024-09-05
  - EntryType: 4
  - EntryGradeLevel: 11
- - ExitWithdrawDate: 2023-11-08
+ - ExitWithdrawDate: 2024-11-08
  - ExitWithdrawType: 99
  - CalendarReference: {fillAsNecessary}
  - SpecialEdEvalStatus: 1
@@ -271,8 +271,8 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - EdOrgReference SchoolID: 10199226
  - StudentUniqueId: 0009000001115
  - ReportingEdOrgReference SchoolID: 60917080
- - BeginDate: 2023-09-05
- - EndDate: 2023-11-08
+ - BeginDate: 2024-09-05
+ - EndDate: 2024-11-08
  - ResponsibiltyDescriptor: MARSS
 
 #### Student E Enrollment 2
@@ -280,10 +280,10 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - SchoolYear: 2024
  - SchoolReference SchoolID: 10199226
  - StudentUniqueId: 0009000001115
- - EntryDate: 2023-11-09
+ - EntryDate: 2024-11-09
  - EntryType: 24
  - EntryGradeLevel: 11
- - ExitWithdrawDate: 2024-06-06
+ - ExitWithdrawDate: 2025-06-06
  - ExitWithdrawType: 40
  - CalendarReference: {fillAsNecessary}
  - SpecialEdEvalStatus: 1
@@ -302,8 +302,8 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - EdOrgReference SchoolID: 10199226
  - StudentUniqueId: 0009000001115
  - ReportingEdOrgReference SchoolID: 60917080
- - BeginDate: 2023-11-09
- - EndDate: 2024-06-06
+ - BeginDate: 2024-11-09
+ - EndDate: 2025-06-06
  - ResponsibiltyDescriptor: MARSS
 
 ### Pattern 2: JP SEORA
@@ -313,13 +313,13 @@ Student and School Identifiers used in the scenarios below are **for reference o
 
 #### Student I Enrollment 1
 ##### SSA
- - SchoolYear: 2024
+ - SchoolYear: 2025
  - SchoolReference SchoolID: 616004070
  - StudentUniqueId: 0009000002211
- - EntryDate: 2023-07-03
+ - EntryDate: 2024-07-03
  - EntryType: 0
  - EntryGradeLevel: EE
- - ExitWithdrawDate: 2023-07-31
+ - ExitWithdrawDate: 2024-07-31
  - ExitWithdrawType: 99
  - CalendarReference: {fillAsNecessary}
  - SpecialEdEvalStatus: 4
@@ -338,19 +338,19 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - EdOrgReference SchoolID: 616004070
  - StudentUniqueId: 0009000002211
  - ReportingEdOrgReference SchoolID: 10549010
- - BeginDate: 2023-07-03
- - EndDate: 2023-07-31
+ - BeginDate: 2024-07-03
+ - EndDate: 2024-07-31
  - ResponsibiltyDescriptor: MARSS
 
 #### Student I Enrollment 2
 ##### SSA
- - SchoolYear: 2024
+ - SchoolYear: 2025
  - SchoolReference SchoolID: 616004070
  - StudentUniqueId: 0009000002211
- - EntryDate: 2023-09-05
+ - EntryDate: 2024-09-05
  - EntryType: 24
  - EntryGradeLevel: EE
- - ExitWithdrawDate: 2024-05-31
+ - ExitWithdrawDate: 2025-05-31
  - ExitWithdrawType: 40
  - CalendarReference: {fillAsNecessary}
  - SpecialEdEvalStatus: 4
@@ -369,19 +369,19 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - EdOrgReference SchoolID: 616004070
  - StudentUniqueId: 0009000002211
  - ReportingEdOrgReference SchoolID: 10549010
- - BeginDate: 2023-09-05
- - EndDate: 2024-05-31
+ - BeginDate: 2024-09-05
+ - EndDate: 2025-05-31
  - ResponsibiltyDescriptor: MARSS
 
 #### Student J Enrollment 1
 ##### SSA
- - SchoolYear: 2024
+ - SchoolYear: 2025
  - SchoolReference SchoolID: 616004070
  - StudentUniqueId: 0009000002212
- - EntryDate: 2023-09-12
+ - EntryDate: 2024-09-12
  - EntryType: 5
  - EntryGradeLevel: EE
- - ExitWithdrawDate: 2023-10-13
+ - ExitWithdrawDate: 2024-10-13
  - ExitWithdrawType: 99
  - CalendarReference: {fillAsNecessary}
  - SpecialEdEvalStatus: 2
@@ -400,19 +400,19 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - EdOrgReference SchoolID: 616004070
  - StudentUniqueId: 0009000002212
  - ReportingEdOrgReference SchoolID: 10549010
- - BeginDate: 2023-09-12
- - EndDate: 2023-10-13
+ - BeginDate: 2024-09-12
+ - EndDate: 2024-10-13
  - ResponsibiltyDescriptor: MARSS
 
 #### Student J Enrollment 2
 ##### SSA
- - SchoolYear: 2024
+ - SchoolYear: 2025
  - SchoolReference SchoolID: 616004070
  - StudentUniqueId: 0009000002212
- - EntryDate: 2023-10-16
+ - EntryDate: 2024-10-16
  - EntryType: 24
  - EntryGradeLevel: EE
- - ExitWithdrawDate: 2024-05-31
+ - ExitWithdrawDate: 2025-05-31
  - ExitWithdrawType: 40
  - CalendarReference: {fillAsNecessary}
  - SpecialEdEvalStatus: 4
@@ -431,6 +431,6 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - EdOrgReference SchoolID: 616004070
  - StudentUniqueId: 0009000002212
  - ReportingEdOrgReference SchoolID: 10549010
- - BeginDate: 2023-10-16
- - EndDate: 2024-05-31
+ - BeginDate: 2024-10-16
+ - EndDate: 2025-05-31
  - ResponsibiltyDescriptor: MARSS
