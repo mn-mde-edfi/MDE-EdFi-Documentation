@@ -15,12 +15,15 @@ As of the most recent run, these tables are derived from the following database 
 - **School Year**: 2025-26
 - **Environment**: Production
 - **Database**: EdFi_Ods_2026
-- **Date Exported**: 2025-06-09 (likely final for coming school year - see updated:
+- **Date Exported**: 2025-06-09 (likely final for coming school year) - see important updates:
     - [ImplementationStatusDescriptor ](./ImplementationStatusDescriptor.csv)
     - [LanguageDescriptor](./LanguageDescriptor.csv)
     - [LanguageInstructionProgramServiceDescriptor]( ./LanguageInstructionProgramServiceDescriptor.csv)
-    - [MediumOfInstructionDescriptor](./MediumOfInstructionDescriptor.csv))
+    - [MediumOfInstructionDescriptor](./MediumOfInstructionDescriptor.csv)
+    - [ProgramTypeDescriptor](./ProgramTypeDescriptor.csv)
     - [SectionEnrollmentTypeDescriptor](./SectionEnrollmentTypeDescriptor.csv)
+    - [SexDescriptor](./SexDescriptor.csv)
+    - [SpecialEducationSettingDescriptor](./SpecialEducationSettingDescriptor.csv)
 
 **Exceptions** and **Unique Situations** will be marked with details below as necessary.
 - **NOTE:** For school year 2025-26, the Sex Descriptor is no longer within the ``ed-fi.org`` namespace, but within the ``education.mn.gov`` namespace, ie ``uri://education.mn.gov/SexDescriptor``.
