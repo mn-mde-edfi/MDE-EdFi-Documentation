@@ -10,22 +10,22 @@ Refer to the CSVs in this folder for either the coming school year (spring), or 
 _Note_: occasionally special characters, such as em dashes, are stored in the database but do not translate well into CSV exports. An example is in code value 2 for ``SpecialEducationEvaluationStatusDescriptor``: "Shared-Time K-12 – Evaluated, EC – Evaluated" appears as "Shared-Time K-12 ? Evaluated, EC ? Evaluated". This is merely an artifact of character translations to CSV files and can be ignored. Several other examples appear in the [LanguageDescriptor Export](LanguageDescriptor.csv); when you pull from the API, you should be able to see the full special characters instead of what you see in these CSVs.
 
 ## Source Details
-**WE ARE AWARE THAT SOME UNINTENDED DESCRIPTOR CHANGES EXIST ON THIS BRANCH.**
 As of the most recent run, these tables are derived from the following database at MDE:
 - **Version**: 6.x
 - **School Year**: 2025-26
-- **Environment**: Development
+- **Environment**: Production
 - **Database**: EdFi_Ods_2026
-- **Date Exported**: 2025-05-08 (work in progress for coming school year - see updated:
+- **Date Exported**: 2025-06-09 (likely final for coming school year - see updated:
     - [ImplementationStatusDescriptor ](./ImplementationStatusDescriptor.csv)
     - [LanguageDescriptor](./LanguageDescriptor.csv)
     - [LanguageInstructionProgramServiceDescriptor]( ./LanguageInstructionProgramServiceDescriptor.csv)
     - [MediumOfInstructionDescriptor](./MediumOfInstructionDescriptor.csv))
     - [SectionEnrollmentTypeDescriptor](./SectionEnrollmentTypeDescriptor.csv)
 
-**Exceptions** will be marked with details below as necessary.
+**Exceptions** and **Unique Situations** will be marked with details below as necessary.
+- **NOTE:** For school year 2025-26, the Sex Descriptor is no longer within the ``ed-fi.org`` namespace, but within the ``education.mn.gov`` namespace, ie ``uri://education.mn.gov/SexDescriptor``.
 - **NOTE:** For school year 2024-25, the 'Responsibility Descriptor' has been exported. This is a **NEW** descriptor used for Joint Powers solutions. We have now completed validating and double checking the remaining custom descriptors for the 2024-25 school year, as noted by the "Production" environment designation above.
-- **NOTE:** For school year 2023-24, the "HK" grade level was retired on legislative direction. Instead of removing it entirely from the ODS API, it was updated to show "DO NOT USE". For school year 2024-25, it will not be available in the API at all. This also holds true for the "H" Kindergarten Schedule Descriptor.
+- **NOTE:** For school year 2023-24, the "HK" grade level was retired on legislative direction. Instead of removing it entirely from the ODS API, it was updated to show "DO NOT USE". For school year 2024-25 and beyond, it will not be available in the API at all. This also holds true for the "H" Kindergarten Schedule Descriptor.
 
 Vendors may also wish to refer to the change/commit log in GitHub to see what the latest changes are for the tables in this folder.
 
