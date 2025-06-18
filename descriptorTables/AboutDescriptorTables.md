@@ -16,6 +16,7 @@ As of the most recent run, these tables are derived from the following database 
 - **Environment**: Production
 - **Database**: EdFi_Ods_2026
 - **Date Exported**: 2025-06-09 (likely final for coming school year) - see important updates:
+    - [AcademicSubjectDescriptor](./AcademicSubjectDescriptor.csv)
     - [ImplementationStatusDescriptor ](./ImplementationStatusDescriptor.csv)
     - [LanguageDescriptor](./LanguageDescriptor.csv)
     - [LanguageInstructionProgramServiceDescriptor]( ./LanguageInstructionProgramServiceDescriptor.csv)
@@ -27,6 +28,7 @@ As of the most recent run, these tables are derived from the following database 
 
 **Exceptions** and **Unique Situations** will be marked with details below as necessary.
 - **NOTE:** For school year 2025-26, the Sex Descriptor is no longer within the ``ed-fi.org`` namespace, but within the ``education.mn.gov`` namespace, ie ``uri://education.mn.gov/SexDescriptor``.
+- **NOTE:** For school year 2025-26, the valid value list for ``edfi.SchoolYearType`` is limited to just one valid value per year (e.g. ``2026`` for the 2025-26 school year).
 - **NOTE:** For school year 2024-25, the 'Responsibility Descriptor' has been exported. This is a **NEW** descriptor used for Joint Powers solutions. We have now completed validating and double checking the remaining custom descriptors for the 2024-25 school year, as noted by the "Production" environment designation above.
 - **NOTE:** For school year 2023-24, the "HK" grade level was retired on legislative direction. Instead of removing it entirely from the ODS API, it was updated to show "DO NOT USE". For school year 2024-25 and beyond, it will not be available in the API at all. This also holds true for the "H" Kindergarten Schedule Descriptor.
 

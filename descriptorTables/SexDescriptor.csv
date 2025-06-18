@@ -1,4 +1,4 @@
 "Mapping Method","Namespace","Descriptor Name","Code Value","Short Description","Description","Length of Short Desc"
-"Extension","uri://education.mn.gov/SexDescriptor","SexDescriptor","Female","Female","Female","6"
-"Extension","uri://education.mn.gov/SexDescriptor","SexDescriptor","Male","Male","Male","4"
-"Extension","uri://education.mn.gov/SexDescriptor","SexDescriptor","Not Selected","Not Selected","Not Selected","12"
+"Core","uri://education.mn.gov/SexDescriptor","SexDescriptor","Female","Female","Female","6"
+"Core","uri://education.mn.gov/SexDescriptor","SexDescriptor","Male","Male","Male","4"
+"Core","uri://education.mn.gov/SexDescriptor","SexDescriptor","Not Selected","Not Selected","Not Selected","12"
