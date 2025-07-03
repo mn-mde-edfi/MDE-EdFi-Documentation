@@ -2,7 +2,7 @@
 This document will store various knowledge items and articles about the MDE Ed-Fi ODS/API, especially with respect to Minnesota extensions and customizations that differ from the Core Ed-Fi Data Standard and ODS/API. Some of these issues have been resolved by subsequent updates of the ODS/API.
 
 ## Descriptors
-Sections below will have additional information about various descriptors. Note that the latest information about custom descriptors can be found in the [descriptorTables folder](./descriptorTables/).
+Sections below will have additional information about various descriptors. Note that the latest information about custom descriptors can be found in the [descriptorTables folder](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/descriptorTables/).
 
 ### Naming Pattern for Extension Descriptors
 When MDE extends a pre-existing Ed-Fi descriptor for the MN extension, it may rename the implementation of that descriptor when additional context clarifies the intended use of the descriptor. For example, the [core Ed-Fi descriptor](https://api.ed-fi.org/v3.4.0/docs/index.html?urls.primaryName=Descriptors#/levelOfEducationDescriptors) ```levelOfEducationDescriptors``` is implemented as ```highestCompletedLevelOfEducationDescriptor``` within the "parents" resource (the namespace remains ```uri://education.mn.gov/LevelOfEducationDescriptor```). This can be visualized in the example value for the "parents" resource:
@@ -60,7 +60,7 @@ In the transition to Ed-Fi, MDE is collecting less detail around classroom volun
 |     99    |     Others    |     **2861**    |     PartTimeVolunteer    |     Code **2860** for FullTimeVolunteer is also available if necessary    |
 
 ### LevelOfEducationDescriptors
-Another descriptor in Ed-Fi that benefits from a translation from EES is **levelOfEducationDescriptors**. See the [descriptorTables folder](./descriptorTables/) for the latest list of codes. With one exception, these values are a direct translation from the _EducationBackground_ codes used in the EE system. For example, code value ```1050``` for Associate's degree. The only exception is that EE code ```0000``` for "Not Specified" should be mapped into Ed-Fi code ```9999``` for "Other". The following table details the translation:
+Another descriptor in Ed-Fi that benefits from a translation from EES is **levelOfEducationDescriptors**. See the [descriptorTables folder](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/descriptorTables/) for the latest list of codes. With one exception, these values are a direct translation from the _EducationBackground_ codes used in the EE system. For example, code value ```1050``` for Associate's degree. The only exception is that EE code ```0000``` for "Not Specified" should be mapped into Ed-Fi code ```9999``` for "Other". The following table details the translation:
 |EES BackgroundCode|EES BackgroundShortName|Ed-Fi levelOfEducationDescriptorId|Ed-Fi codeValue|Ed-Fi description|
 |---|----|-------|------|---|
 |0000              |Not Specified          |3403                              |9999           |09999 - Other                                     |
@@ -110,7 +110,7 @@ MDE is aware that vendors have access to parent records for students **not** par
 #### Avoiding Conflicts in Identifiers
 Parent records are shared among and between Local Education Authorities (LEAs) like student records. But unlike student records, MDE does not have a system of uniquely identifying parents. That means that duplicate parent records are likely to be created.
 
-Similarly, there's the possibility for conflicting information to be overwritten on updates to parent records if the same unique ID is used. In order to reduce the changes of that, MDE is requiring that a parent ID be prefixed with a district/organization number and dash (using the [Ed-Fi identifier conventions](sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids)), such as this:
+Similarly, there's the possibility for conflicting information to be overwritten on updates to parent records if the same unique ID is used. In order to reduce the changes of that, MDE is requiring that a parent ID be prefixed with a district/organization number and dash (using the [Ed-Fi identifier conventions](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/sis_test_plan/sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids)), such as this:
 - "10625000-" for [SPPS](https://public.education.mn.gov/MdeOrgView/organization/show/566)
 - "526095000-" for [AALASEC](https://public.education.mn.gov/MdeOrgView/organization/show/14583)
 
@@ -204,7 +204,7 @@ LEAs and vendors will need to understand the validation rules around course leve
 In 2021 MDE staff determined that our Ed-Fi implementation contains redundant elements in the "course" entity: numberOfParts (Ed-Fi core) and sequenceLimit (MN extension). In order to increase alignment with core Ed-Fi components, we decided to remove the use of sequenceLimit and rely on numberOfParts for the same information.
 
 #### College Courses
-When setting up College Courses (i.e. for Dual Enrollment, Articulation and Direct Pay PSEO), you will need an ```educationOrganizationId``` within the ```educationOrganizationReference```. The IDs to use in this element come from MDE ORG and follow the [district pattern](sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids). The identifiers can be acquired via the API at the ```/ed-fi/postSecondaryInstitutions``` endpoint, within the ```postSecondaryInstitutionId``` element. Each record in that list will also contain a cross-reference to the USDE OPE IDs inside the ```educationOrganizationIdentificationSystemDescriptor```, labeled as ```uri://ed-fi.org/EducationOrganizationIdentificationSystemDescriptor#USDE - OPE```. 
+When setting up College Courses (i.e. for Dual Enrollment, Articulation and Direct Pay PSEO), you will need an ```educationOrganizationId``` within the ```educationOrganizationReference```. The IDs to use in this element come from MDE ORG and follow the [district pattern](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/sis_test_plan/sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids). The identifiers can be acquired via the API at the ```/ed-fi/postSecondaryInstitutions``` endpoint, within the ```postSecondaryInstitutionId``` element. Each record in that list will also contain a cross-reference to the USDE OPE IDs inside the ```educationOrganizationIdentificationSystemDescriptor```, labeled as ```uri://ed-fi.org/EducationOrganizationIdentificationSystemDescriptor#USDE - OPE```. 
 
 _Note_: Sandboxes created before May 7, 2021 had only approximately 12 post-secondary institutions loaded in. Sandboxes created on or after that date had at least 100 records for testing. In development, staging, and production servers, records will be updated during regular synch processes.
 
@@ -227,7 +227,7 @@ A vendor raised a question about how a complex "modified block" schedule should 
 >B Days: periods 5-8 (block length)
 >AB Day (Friday): periods 1-8 (skinny length)
 
-As referenced in the [certification scenario for class period](sandbox_cert_e_mccc.md#resource-classperiod), class periods should be named uniquely enough to fit your scheduling needs, and each one should only have one set of meeting times. And as described in the [section scenario](sandbox_cert_e_mccc.md#resource-section), a 1:M relationship between section and class periods is allowed. Therefore, the following partial JSON examples for class periods and a single section detail how a modified block schedule could work for a single class that meets all days of the week. (You may need more or less detail in the names used to identify individual elements uniquely.)
+As referenced in the [certification scenario for class period](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/sandbox_cert/sandbox_cert_e_mccc.md#resource-classperiod), class periods should be named uniquely enough to fit your scheduling needs, and each one should only have one set of meeting times. And as described in the [section scenario](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/sandbox_cert/sandbox_cert_e_mccc.md#resource-section), a 1:M relationship between section and class periods is allowed. Therefore, the following partial JSON examples for class periods and a single section detail how a modified block schedule could work for a single class that meets all days of the week. (You may need more or less detail in the names used to identify individual elements uniquely.)
 
 _Please note: MCCC does not **require** data replicating the complex schedules in place at many schools. If a single simplified & representative schedule can be set up and used for reporting to MCCC, that is acceptable - as long as it accurately communicates the **time of day** instruction is provided for the course._
 
