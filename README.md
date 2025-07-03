@@ -15,7 +15,7 @@ The primary audience for this documentation is SIS vendors and State of Minnesot
 MNIT supporting MDE composes each collection year's documentation in markdown and CSV files. While some documentation remains in Word and Excel within this repository, the markdown files at the top level of this repository represent an effort to store and maintain the documentation in markdown and CSV, in particular:
 
 - [SIS and Vendor Test Plan](./sis_test_plan/README.md)
-- [Sandbox Certification Scenarios](./sandbox_cert/REAMDE.md)
+- [Sandbox Certification Scenarios](./sandbox_cert/README.md)
 - [Descriptor Tables](./descriptorTables/)
 
 By serving documentation in multiple formats, our goal is to increase vendor access to the documentation as well as provide options for understanding and visualization changes over time.
