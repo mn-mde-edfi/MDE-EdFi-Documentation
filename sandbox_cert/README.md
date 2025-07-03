@@ -2,7 +2,7 @@
 This document holds the overview and table of contents for the MDE Ed-Fi Sandbox Certification Scenarios. You may wish to review the Word, Excel, and PDF documents inside this repository as complements to this documentation - see the "YYYY-YY MDE Ed-Fi Documentation" folder for the latest.
 
 ## References
-Before reading this documentation, please refer to the [SIS Vendor and District Test Plan](sis_test_plan_a_toc.md), particularly the [Data Requirements and API Resources](sis_test_plan_c_data_reqs.md) section.
+Before reading this documentation, please refer to the [SIS Vendor and District Test Plan](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/sis_test_plan/README.md), particularly the [Data Requirements and API Resources](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/sis_test_plan/sis_test_plan_c_data_reqs.md) section.
 
 Then advance to the specific sections on Sandbox Certification Scenarios:
 - [MARSS and Ancestry of Ethnic Origin Certification Scenarios](sandbox_cert_b_marss.md)
