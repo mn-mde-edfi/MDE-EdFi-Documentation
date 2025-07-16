@@ -117,5 +117,5 @@ Error|Description|Details
 - Vendor Captures error and displays for district user
 
 # Navigation
-- [Return to SIS Test Plan Overview](sis_test_plan_a_toc.md)
+- [Return to SIS Test Plan Overview](README.md)
 

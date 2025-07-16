@@ -98,5 +98,5 @@ This association indicates any relationship between a student and an education o
 3. Remove Digital Equity Student Indicators from Student 4
 
 # Navigation
-- [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
+- [Return to Sandbox Certification Overview](README.md)
 - [Advance to School Attribute](sandbox_cert_g_school_attribute.md)

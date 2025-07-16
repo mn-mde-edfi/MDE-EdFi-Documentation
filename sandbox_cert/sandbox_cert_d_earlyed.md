@@ -277,5 +277,5 @@ This association represents the Title III Language Instruction for Limited Engli
     - EL Participation = 1
 
 # Navigation
-- [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
+- [Return to Sandbox Certification Overview](README.md)
 - [Advance to MCCC](sandbox_cert_e_mccc.md)

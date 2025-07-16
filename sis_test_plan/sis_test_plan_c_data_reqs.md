@@ -1,5 +1,5 @@
 # Data Requirements and API Resources
-This document is part of the MDE Ed-Fi [Vendor and District Test Plan](sis_test_plan_a_toc.md).  For details on the API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](sandbox_cert_a_toc.md)
+This document is part of the MDE Ed-Fi [Vendor and District Test Plan](README.md).  For details on the API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](/sandbox_cert/README.md)
 
 ## API Documentation
 For each of the resources described in this document, the elements/properties required are included and browseable in the Sandbox Swagger UI (aka "Swagger") under the current profile. (More information about Swagger is in the [Sandbox Certification Testing document](sis_test_plan_b_cert_testing.md).)
@@ -38,7 +38,7 @@ Education Organization References in the Ed-Fi API allow an API client to submit
 | GradingPeriod | SchoolReference | SchoolId |
 
 ## API Resources and Certification Scenarios
-For details on the current API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](sandbox_cert_a_toc.md). That documentation contains resources and scenarios for the various programs MDE has incorporated into Ed-Fi.
+For details on the current API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](/sandbox_cert/README.md). That documentation contains resources and scenarios for the various programs MDE has incorporated into Ed-Fi.
 
 ## Read-Only API endpoints 
 Several of the required data elements are provided by MDE within the ODS. This section details those elements. Vendors can pull this data into their SIS databases by using GET requests against the ODS API. (See the Schools section below for details)
@@ -197,5 +197,5 @@ The above image describes the dependencies required to work with the MDE Ed-Fi m
 As described above, each student must first have a StudentSchoolAssociation record (an enrollment record). Starting in SY2023-24, all EE enrollments used grade 'EE' due to the resolution described in the [EE-MARSS conflict resolution document](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_marss_conflict_resolution.pdf).
 
 # Navigation
-- [Return to SIS Test Plan Overview](sis_test_plan_a_toc.md)
+- [Return to SIS Test Plan Overview](README.md)
 - [Advance to Staging Environment Load and Quality Check](sis_test_plan_d_staging.md)

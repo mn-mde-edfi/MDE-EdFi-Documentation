@@ -287,5 +287,5 @@ This association represents the Title I Part A program(s) that a student partici
 1.	Associate Student 14 with this StudentProgramAssociation
 
 # Navigation
-- [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
+- [Return to Sandbox Certification Overview](README.md)
 - [Advance Early Education Enrollment Certification Scenarios](sandbox_cert_d_earlyed.md)

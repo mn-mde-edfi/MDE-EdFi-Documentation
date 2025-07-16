@@ -251,5 +251,5 @@ Program Records for each of the following program types will be loaded by MDE fo
 For more information, see the [Student Program Association scenarios](./sandbox_cert_c_spas.md) and the [Education Organization Id usage by Resource](./sis_test_plan_c_data_reqs.md#education-organization-id-usage-by-resource) section.
 
 # Navigation
-- [Return to Sandbox Certification Overview](sandbox_cert_a_toc.md)
+- [Return to Sandbox Certification Overview](README.md)
 - [Advance to StudentProgramAssociations](sandbox_cert_c_spas.md)

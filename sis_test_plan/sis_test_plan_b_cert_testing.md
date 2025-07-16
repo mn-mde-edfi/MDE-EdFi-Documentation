@@ -103,5 +103,5 @@ For example, the Comfrey Public School District (0081-01, or ```10081000000```) 
 - *Comfrey Secondary*: Ed-Fi school ID: ```10081020``` (formatted ID: 0081-01-020)
 
 # Navigation
-- [Return to SIS Test Plan Overview](sis_test_plan_a_toc.md)
+- [Return to SIS Test Plan Overview](README.md)
 - [Advance to Data Requirements and API Resources](sis_test_plan_c_data_reqs.md)
