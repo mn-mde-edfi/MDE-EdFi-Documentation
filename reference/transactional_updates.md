@@ -30,7 +30,7 @@ Using that ID, a DELETE request can be sent to the API with the ID at the end of
 
 Or using a CURL request:
 ```
-curl -X DELETE "https://test.edfi5.education.mn.gov:443/api/data/v3/ed-fi/studentSchoolAssociations/571133bc3d69462f9c07399c873278b3" -H  "accept: application/json" -H  "authorization: Bearer <token>"
+curl -X DELETE "https://test.education.mn.gov:443/api/data/v3/ed-fi/studentSchoolAssociations/571133bc3d69462f9c07399c873278b3" -H  "accept: application/json" -H  "authorization: Bearer <token>"
 
 ```
 

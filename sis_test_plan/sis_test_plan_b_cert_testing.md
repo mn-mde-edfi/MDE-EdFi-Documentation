@@ -2,18 +2,18 @@
 When certification begins, vendors will be required to generate a key and secret to a "Minimal" sandbox [Operational Data Store (ODS)](https://techdocs.ed-fi.org/display/ETKB/Ed-Fi+Operational+Data+Store+and+API) with no sample data pre-loaded. This ODS will contain the Minnesota Education School and District records synchronized with [MDE ORG](https://public.education.mn.gov/MdeOrgView/), MN specific descriptors, District Programs, and the State Course Catalog and Staff records required for the MCCC data collection. When submitting data for each of the Certification scenarios, we ask that you use a district you have access to, and schools within the district.
 
 ## Accessing the Sandbox
-_Please note_: In school years ending 2020 though 2022, sandbox environments were given ```sbYY_``` in the base paths for the API, affecting sandbox and Swagger URLs. For school year 2022-2023, the base sandbox URL was merely ``https://test.edfi5.education.mn.gov/swagger/`` - note the "edfi5" portion of the URL, but no ```sbYY_``` portion. For the 2023-2024 school year, a sandbox identifier returned without an underscore: ``https://test.edfi5.education.mn.gov/sb24/api/``. For the 2024-25 school year, given minimal changes, we have merely added a 2024-25 profile to that same sandbox environment.
+_Please note_: In school years ending 2020 though 2022, sandbox environments were given ```sbYY_``` in the base paths for the API, affecting sandbox and Swagger URLs. For school year 2025-26, the base sandbox URL is merely ``https://test.pub.education.mn.gov/edfiswag/``. The test API is available at ``https://test.api.education.mn.gov/edfiapi/``.
 
 ### Sandbox Admin Website
-As part of Sandbox certification, you will need access to the [Sandbox Admin Site](https://test.edfi5.education.mn.gov/sb24/admin). To request an account, [contact MDE by email](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us). In the Sandbox Admin Site, you will be able to create ODS instances to use for development and testing of your integrations. ([The Ed-Fi TechDocs](https://techdocs.ed-fi.org/display/ODSAPI31/Using+the+Sandbox+Administration+Portal) have more detailed instructions on setting up sandboxes.)
+As part of Sandbox certification, you will need access to the [Sandbox Admin Site](https://test.pub.education.mn.gov/edfisbadmin/). To request an account, [contact MDE by email](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us). In the Sandbox Admin Site, you will be able to create ODS instances to use for development and testing of your integrations. ([The Ed-Fi TechDocs](https://techdocs.ed-fi.org/display/ODSAPI31/Using+the+Sandbox+Administration+Portal) have more detailed instructions on setting up sandboxes.)
 
 ### Swagger UI
-We continue to use the [Swagger UI tool](https://swagger.io/tools/swagger-ui/) to visualize and interact with the ODS API. Developers can access this [UI for MDE's Sandbox](https://test.edfi5.education.mn.gov/sb24/swagger) to test-drive Create, Read, Update, and Delete (CRUD) actions before building integrations as necessary.
+We continue to use the [Swagger UI tool](https://swagger.io/tools/swagger-ui/) to visualize and interact with the ODS API. Developers can access this [UI for MDE's Sandbox](https://test.pub.education.mn.gov/edfiswag/) to test-drive Create, Read, Update, and Delete (CRUD) actions before building integrations as necessary.
 
 _Please note:_ When using Swagger, always double-check the "API Section" listed in the upper right drop-down, and note:
 
 - The listings in the drop-down are alphabetical, not chronological
-- All MN Specific resources defined for the **2024-2025** School Collection can be found under the **Minnesota-Twenty-Four-Twenty-Five-SISVendor-Profile**. It includes the ``StudentEducationOrganizationResponsibilityAssociation`` and ``ResponsibilityDescriptor`` with the MDE extension for the Joint Powers solution.
+- All MN Specific resources defined for the **2025-2026** School Collection can be found under the **Minnesota-Twenty-Five-Twenty-Six-SISVendor-Profile**. It includes the ``StudentEducationOrganizationResponsibilityAssociation`` and ``ResponsibilityDescriptor`` with the MDE extension for the Joint Powers solution.
 - A preview of future releases is under the generic-named _Minnesota-Preview-SISVendor-Profile_.
 - The Identities Section is not functional in the Sandbox and is provided as documentation only
 - Please ignore the "Assessment-Read-Only" and "Assessment-Read-Write" profiles at this time.
@@ -22,8 +22,8 @@ _Please note:_ When using Swagger, always double-check the "API Section" listed 
 
 ### Sandbox Base and OAuth URLs
 Developers can further test their code integrations at the URLs in this section.
-- The base URL for the ODS/API is: ```https://test.edfi5.education.mn.gov/sb24/api/```
-- The Data Management URL is: ```https://test.edfi5.education.mn.gov/sb24/api/data/v3```
+- The base URL for the test ODS/API is: ```https://test.api.education.mn.gov/edfiapi/```
+- The Data Management URL is: ```test.api.education.mn.gov/edfiapi/data/v3```
 
 #### Extension vs. Core Resources
 Note that Ed-Fi URLs vary based on whether or not core Ed-Fi standard or MN extensions are being accessed:
@@ -31,10 +31,10 @@ Note that Ed-Fi URLs vary based on whether or not core Ed-Fi standard or MN exte
 - **Core**: The URL for addressing core resources should include 'ed-fi' after v3. For example, when addressing _StudentSchoolAssociation_, a core Ed-Fi entity, the URL is: ```…/api/data/v3/ed-fi/StudentSchoolAssociation```
 
 **Important Note:** the school year must be included after **“/v3/”** and before the core/extension namespace in Stage and Production, but **not in Sandbox**. For example:
-```…/api/data/v3/2024/ed-fi/StudentSchoolAssociation```
-```…/api/data/v3/2024/MN/studentSection504PlanProgramAssociations```
+```…/api/data/v3/2026/ed-fi/StudentSchoolAssociation```
+```…/api/data/v3/2026/MN/studentSection504PlanProgramAssociations```
 
-The Sandbox ODS/API oauth URL is: ```https://test.edfi5.education.mn.gov/sb24/api/oauth/```
+The Sandbox ODS/API oauth URL is: ```https://test.api.education.mn.gov/edfiapi/oauth/```
 
 Authentication In Ed-Fi 3.x ODS/API uses two-legged OAuth 2.0 Client Credentials Grant Flow. More information and sample API calls are located in [the Ed-Fi tech docs](https://techdocs.ed-fi.org/display/ODSAPIS3V520/Authorization).
 

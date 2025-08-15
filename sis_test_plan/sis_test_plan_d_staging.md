@@ -2,9 +2,9 @@
 
 At the completion of Scenario based testing in the Sandbox environment, MNIT will grant vendors a key and secret for the district(s) they are working with in the staging environment. In the staging environment, vendors will load actual student data, with student enrollment (studentSchoolAssociation), demographic (studentEducationOrganizationAssociation), program and calendar information. 
 
-The main URL for the Staging Environment is: ```https://stage.edfi5.education.mn.gov/api/```.
+The main URL for the Staging Environment is: ```https://test.api.education.mn.gov/edfiapi/```.
 
-As is MDE convention, the production URL is the same as staging, except with the "stage." prefix removed.
+As is MDE convention, the production URL is the same as test, except with the "test." prefix removed. **Please note the new URL format for connecting to MDE's Ed-Fi API for the 2025-26 school year and version 6.2.**
 
 ## Ed-Fi / MARSS Identities API Integrations
 

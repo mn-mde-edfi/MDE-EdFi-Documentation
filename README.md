@@ -1,7 +1,9 @@
 # MDE-EdFi-Documentation
 
 ## SCHEDULE NOTES
-- This documentation now partially reflects the MDE Ed-Fi implementation for **School Year 2025-26**. Note that an Azure migration is changing several details compared to the 2024-25 school year, and the MDE team is still working on integrating those changes. Note that the [descriptor tables](./descriptorTables/) contents should be correct.
+- This documentation now mostly reflects the MDE Ed-Fi implementation for **School Year 2025-26**. Note that an Azure migration is changing several details compared to the 2024-25 school year, and the MDE team has completed most of those changes. Note that the [descriptor tables](./descriptorTables/) contents should be correct.
+
+The focus of Ed-Fi development for the 2025-26 school year was migrating to Azure (requiring new API URLs) and upgrading to EdFi version 6.2.
 
 Very few changes were implemented for the 2024-25 school year outside of some additional certification testing such as the [Deleting Resources Certification Scenarios](./sandbox_cert/sandbox_cert_h_deleting_resources.md) and [Joint Powers Certification Scenarios](./sandbox_cert/sandbox_cert_j_joint_powers.md). Overview documentation is available in [this folder](./2024-25%20MDE%20Ed-Fi%20Documentation/), including [this Joint Powers diagram](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/2024-25%20MDE%20Ed-Fi%20Documentation/Joint%20Powers%20District%20Scenarios%20Diagram.pdf).
  - _NOTE: Several new elements remain delayed for future years_. When found in this repository, those elements are marked as **"Postponed until further notice"**.
