@@ -75,8 +75,6 @@ Authentication In Ed-Fi 3.x ODS/API uses two-legged OAuth 2.0 Client Credentials
   }
   ```
 
-
-
 ## Minnesota District and School IDs
 The MDE **stateOrganizationID** (assigned in MDE ORG) is formatted as follows: ```ttddddsssmmm```, where:
 - ``tt`` = district/LEA type (note most LEA types are a single digit)

@@ -248,7 +248,7 @@ Program Records for each of the following program types will be loaded by MDE fo
 - The educationOrganizationReference near the top of the StudentProgramAssociation - this should carry the **school ID**
 - The educationOrganizationReference inside the programReference element of the StudentProgramAssociation - this should be the **LEA ID**.
 
-For more information, see the [Student Program Association scenarios](./sandbox_cert_c_spas.md) and the [Education Organization Id usage by Resource](./sis_test_plan_c_data_reqs.md#education-organization-id-usage-by-resource) section.
+For more information, see the [Student Program Association scenarios](./sandbox_cert_c_spas.md) and the [Education Organization Id usage by Resource](../sis_test_plan/sis_test_plan_c_data_reqs.md#education-organization-id-usage-by-resource) section.
 
 # Navigation
 - [Return to Sandbox Certification Overview](README.md)
