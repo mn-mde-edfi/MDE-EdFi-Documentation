@@ -1,5 +1,5 @@
 # Sandbox Certification Testing
-When certification begins, vendors will be required to generate a key and secret to a "Minimal" sandbox [Operational Data Store (ODS)](https://techdocs.ed-fi.org/display/ETKB/Ed-Fi+Operational+Data+Store+and+API) with no sample data pre-loaded. This ODS will contain the Minnesota Education School and District records synchronized with [MDE ORG](https://public.education.mn.gov/MdeOrgView/), MN specific descriptors, District Programs, and the State Course Catalog and Staff records required for the MCCC data collection. When submitting data for each of the Certification scenarios, we ask that you use a district you have access to, and schools within the district.
+When certification begins, vendors will be required to generate a key and secret to a "Minimal" sandbox [Operational Data Store (ODS)](https://techdocs.ed-fi.org/display/ETKB/Ed-Fi+Operational+Data+Store+and+API) with no sample data pre-loaded. This ODS will contain the Minnesota Education School and District records synchronized with [MDE ORG](https://pub.education.mn.gov/MdeOrgView/), MN specific descriptors, District Programs, and the State Course Catalog and Staff records required for the MCCC data collection. When submitting data for each of the Certification scenarios, we ask that you use a district you have access to, and schools within the district.
 
 ## Accessing the Sandbox
 _Please note_: In school years ending 2020 though 2022, sandbox environments were given ```sbYY_``` in the base paths for the API, affecting sandbox and Swagger URLs. For school year 2025-26, the base sandbox URL is merely ``https://test.pub.education.mn.gov/edfiswag/``. The test API is available at ``https://test.api.education.mn.gov/edfiapi/``.
@@ -87,16 +87,16 @@ The MDE **stateOrganizationID** value is stored in Ed-Fi on the Ed-Fi **Educatio
 The Ed-Fi **LocalEducationAgencyId** and **SchoolId** are derived as follows: ```ttddddsss```.  The final three digits in ```sss``` are always zero filled (```000```) for the LocalEducationAgencyId. **Do not** use a leading zero in the LEA *type* portion.
 
 Examples: 
-- The MDE State Organization ID for [Mayo Senior High](https://public.education.mn.gov/MdeOrgView/organization/show/2734) (an individual school) is ```10535315000```. The corresponding Ed-Fi SchoolId is ```10535315```.
-- The MDE State Organization ID for [Rochester Public School District](https://public.education.mn.gov/MdeOrgView/organization/show/527) (an LEA) is ```10535000000```. The corresponding Ed-Fi LocalEducationAgencyId is ```10535000```
-- The MDE State Organization ID for [University of Minnesota Morris](https://public.education.mn.gov/MdeOrgView/organization/show/137) (a Post Secondary Institution) is ```230005000000```. The corresponding Ed-Fi postSecondaryInstitutionId is ```230005000```
+- The MDE State Organization ID for [Mayo Senior High](https://pub.education.mn.gov/MdeOrgView/organization/show/2734) (an individual school) is ```10535315000```. The corresponding Ed-Fi SchoolId is ```10535315```.
+- The MDE State Organization ID for [Rochester Public School District](https://pub.education.mn.gov/MdeOrgView/organization/show/527) (an LEA) is ```10535000000```. The corresponding Ed-Fi LocalEducationAgencyId is ```10535000```
+- The MDE State Organization ID for [University of Minnesota Morris](https://pub.education.mn.gov/MdeOrgView/organization/show/137) (a Post Secondary Institution) is ```230005000000```. The corresponding Ed-Fi postSecondaryInstitutionId is ```230005000```
 
-More information is available in [MDE ORG](https://public.education.mn.gov/MdeOrgView/), including [this reference on LEA (organization) types](https://public.education.mn.gov/MdeOrgView/reference/orgTypes).
+More information is available in [MDE ORG](https://pub.education.mn.gov/MdeOrgView/), including [this reference on LEA (organization) types](https://pub.education.mn.gov/MdeOrgView/reference/orgTypes).
 
 ### Identifiers: Schools vs. Buildings
-MDE's system for identifying individual schools is independent of building or physical address. Therefore, a district may have multiple school identifiers assigned for the same building, especially if that building houses several different [school classifications](https://public.education.mn.gov/MdeOrgView/reference/schoolClassTypes). 
+MDE's system for identifying individual schools is independent of building or physical address. Therefore, a district may have multiple school identifiers assigned for the same building, especially if that building houses several different [school classifications](https://pub.education.mn.gov/MdeOrgView/reference/schoolClassTypes). 
 
-For example, the Comfrey Public School District (0081-01, or ```10081000000```) houses its district office, [elementary](https://public.education.mn.gov/MdeOrgView/organization/show/1135), and [secondary](https://public.education.mn.gov/MdeOrgView/organization/show/1136) schools (along with several other programs) at 305 Ochre Street West in Comfrey (as of December 2020). However, each program gets an individual identifier, such as:
+For example, the Comfrey Public School District (0081-01, or ```10081000000```) houses its district office, [elementary](https://pub.education.mn.gov/MdeOrgView/organization/show/1135), and [secondary](https://pub.education.mn.gov/MdeOrgView/organization/show/1136) schools (along with several other programs) at 305 Ochre Street West in Comfrey (as of December 2020). However, each program gets an individual identifier, such as:
 - *Comfrey Elementary*: Ed-Fi school ID: ```10081010``` (formatted ID: 0081-01-010)
 - *Comfrey Secondary*: Ed-Fi school ID: ```10081020``` (formatted ID: 0081-01-020)
 

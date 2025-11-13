@@ -58,7 +58,7 @@ GET requests against the API can be used to obtain lists of schools, which can b
 
 Some example requests:
 - ``{{ApiUrl}}/ed-fi/schools?totalCount=true&limit=50&offset=0`` will obtain the first 50 schools in the ODS, and a total count will be returned in the Header of the response. That total count can be used to determine how many paginated requests to make in order to acquire a complete list. (The default limit is 25, and the maximum is 500.)
-- ``{{ApiUrl}}/ed-fi/schools?limit=50&offset=0&localEducationAgencyId=616004000`` will obtain the first 50 schools for [Freshwater Education District 6004-61](https://public.education.mn.gov/MdeOrgView/organization/show/7878).
+- ``{{ApiUrl}}/ed-fi/schools?limit=50&offset=0&localEducationAgencyId=616004000`` will obtain the first 50 schools for [Freshwater Education District 6004-61](https://pub.education.mn.gov/MdeOrgView/organization/show/7878).
 
 An example JSON response, with some annotations, is below. The response will include the "schoolId", which is the Ed-Fi style organization ID, which can be further broken down into district type, district number, and school number, as detailed in [this section on MN district and school IDs](./sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids).
 ```JSON
