@@ -1,4 +1,4 @@
-# StudentProgramAssociations
+# Student Program Association Certification Scenarios: API Resources
 
 ## Resource: Student21stCenturyLearningCenterGrantProgramAssociation
 **Description**
@@ -60,7 +60,7 @@ This association represents Students in the Gifted Talented Program.
 1.	Associate Student 4 with this StudentProgramAssociation
 2.	Change the gifted talented participation code to 'Full-time services'
 
-**Note:** As of summer 2022, our Ed-Fi API implementation does not allow the same student to be submitted in multiple gifted & talented programs, at the same school, with the same start date. If you have a need to describe associate a student to multiple gifted & talented programs, an acceptable workaround is to use multiple records with a slight offset in the begin date. We are aware this is less than ideal and are investigating a solution.
+**Note:** This implementation does not allow the same student to be submitted in multiple gifted & talented programs at the same school with the same start date. If you have a need to describe associate a student to multiple gifted & talented programs, an acceptable workaround is to use multiple records with a slight offset in the begin date. 
 
 ## Resource: StudentADSISProgramAssociation
 **Description**
@@ -105,78 +105,6 @@ This association represents the Title III Language Instruction for Limited Engli
 2.	Change the English Learner Participation to False, to Indicate EL Identified, but not served
 3.	Associate another student with this program and set the language service code to 'Newcomer Program'
 
-## Resource: StudentNeglectedOrDelinquentProgramAssociation
-**Postponed until further notice.**
-
-### **Description**
-This association represents the Title I Part D Neglected or Delinquent program(s) that a student participates in or from which the Student receives services. Vendors may want to use [the sample JSON](/data/2022-2023%20Extensions/StudentNeglectedOrDelinquentProgramAssociations.json) for this association to better understand the data model.
-
-### **Prerequisite Data**
-- 5 Students
-- Student School Association
-- Program - where ProgramTypeDescriptor = "Neglected or Delinquent" (MDE should have one of these pre-loaded for each LEA in the API, with a ```programName``` of "Neglected or Delinquent Program", and a ```programTypeDescriptor``` of ```"uri://education.mn.gov/ProgramTypeDescriptor#Neglected or Delinquent"```.)
-
-Note: be sure to be testing code with a new, minimal sandbox in order to get the latest descriptor values, etc.
-
-### **Scenarios**
-Using the ```/ed-fi/studentNeglectedOrDelinquentProgramAssociations``` resource, create a Neglected or Delinquent Program Association for 5 students as detailed below. For each scenario:
-1. The programReference element should point to the appropriate LEA program preloaded (as described above in Prerequisite Data). 
-2. Use the ```neglectedOrDelinquentProgramDescriptor``` element, and the appropriate descriptor value (see [this table](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables/NeglectedOrDelinquentProgramDescriptor.csv)), to assign the specific Program Association (Neglected, Juvenile detention, At-risk, etc)
-3. Begin Date and End Date for the Program Association are at the top level of the resource.
-4. Math and ELA progress level descriptors are at the top level of the resource.
-5. Program *Service* data, since there can be multiples, are in a collection called ```neglectedOrDelinquentProgramServices```. See [this table](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables/NeglectedOrDelinquentProgramServiceDescriptor.csv) for descriptor values. Each of these needs a begin and end date and one value needs to be indicated as primary.
-6. "In Program" and "Exited" outcomes are within the "mn" extension. Both types of outcomes reference the same outcome descriptor values (see [this table](/2022-23%20MDE%20Ed-Fi%20Documentation/descriptorTables/NeglectedOrDelinquentProgramOutcomeDescriptor.csv)). Use ```neglectedOrDelinquentProgramOutcomeDescriptor``` to designate an in-program outcome, and ```exitedNeglectedOrDelinquentProgramOutcomeDescriptor``` to designate an exited outcome.
-
-Then, unique elements for each student are further described below:
- - Assign Program Association of **"Neglected" to Student 1**, including a begin date and an end date
-   - Attach Program Service descriptors, including begin and end dates for each:
-      - Attach a Program Service of "GED" to this student. Indicate this service as the Primary service.
-      - Attach a Program Service of "Credit" to this student
-      - Attach a Program Service of "Transitional Career Counseling Services" to        this student
-      - Demonstrate that the Program Service begin and end dates cannot be entered outside the Program Association begin and end dates
-   - Assign a Progress Level of "up to one full grade" to this student for Math
-   - Assign a Progress Level of "no change" to this student for ELA
-   - Assign a Program Outcome of "Earned high school course credits" as an in-program outcome for this student
-   - Assign a Program Outcome of "Earned a GED" as an exited outcome for this student
-   - Assign a Program Outcome of "Obtained employment" as an exited outcome for this student
- - Assign Program Association of **"Juvenile detention" to Student 2**, including only a begin date
-    - Attach Program Service descriptors:
-      - Attach a Program Service of "Mental Health Services" to this student. Indicate this service as the Primary service and include a begin date.
-      - Attach a Program Service of "Credit" to this student. Include a begin date and end date.
-   - Assign a Progress Level of "negative change" to this student for Math
-   - Assign a Progress Level of "more than one full grade" to this student for ELA
-   - Assign a Program Outcome of "Earned high school course credits" as an in-program outcome for this student
-   - Assign a Program Outcome of "Enrolled in job training courses/programs" as an exited outcome for this student
- - Assign Program Association of **"At-risk programs" to Student 3**
-   - Attach Program Service descriptors, including begin and end dates for each:
-     - Attach a Program Service of "GED" to this student. Indicate this service as the Primary    service.
-     - Attach a Program Service of "Tutoring, Mentoring Services" to this student
-     - Attach a Program Service of "College and Career Readiness" to this student
-     - Attach a Program Service of "Industrial Certification" to this student
-     - Attach a Program Service of "Personal Education Plans" to this student
-     - Attach a Program Service of "Family and Student involvement" to this student
-     - Attach a Program Service of "Job Placement Services or Apprenticeship" to this student
-     - Attach a Program Service of "Assistance Obtaining Student Financial Aid" to this student
-   - Assign a Progress Level of "no change" to this student for Math
-   - Assign a Progress Level of "no change" to this student for ELA
-   - Assign a Program Outcome of "Obtained high school diploma" as an in-program outcome for this student
-   - Assign a Program Outcome of "Were accepted and/or enrolled into post-secondary education" as an exited outcome for this student
- - Assign Program Association of **"Juvenile correction" to Student 4**
-   - Attach Program Service descriptors, including begin and end dates for each:
-      - Attach a Program Service of "Family and Student involvement" to this student. Indicate this     service as the Primary service.
-      - Attach a Program Service of "Job Placement Services or Apprenticeship" to this student
-      - Attach a Program Service of "Assistance Obtaining Student Financial Aid" to this student
-   - Assign a Progress Level of "no change" to this student for Math
-   - Assign a Progress Level of "no change" to this student for ELA
-   - Assign a Program Outcome of "Obtained high school diploma" as an in-program outcome for this student
-   - Assign a Program Outcome of "Enrolled in job training courses/programs" as an exited outcome for this student
- - Assign Program Association of **"Other" to Student 5**
-   - Attach Program Service descriptors, including begin and end dates for each:
-      - Attach a Program Service of "Family and Student involvement" to this student. Indicate this service as the Primary service.
-    - Assign a Progress Level of "no change" to this student for Math
-    - Assign a Progress Level of "no change" to this student for ELA
-    - Assign a Program Outcome of "Enrolled in job training courses/programs" as an exited outcome for this student
-
 ## Resource: StudentPSEOConcurrentProgramAssociation
 **Description**
 This association represents Students in the PSEO Concurrent Enrollment Program.
@@ -219,20 +147,16 @@ This association represents Students in a State Approved Alternative Program.
 **Description** 
 This association represents the school food services program(s), such as the **Free or Reduced Price Lunch Program**, that a student participates in, or from which the Student receives services. This includes the ability for a district to identify whether or not the "Direct Certification" report was used to determine student eligibility. (See [this quick reference document](/2022-23%20MDE%20Ed-Fi%20Documentation/MDE%20MARSS%20Translation%20Logic%20for%20School%20Food%20Service%20with%20Direct%20Certification.docx) for MARSS translation logic.)
 
-**Notes:** 
-1. In early Ed-Fi implementations, schoolFoodServicesEligibility was tracked as a separate field under StudentSchoolAssociation. This element is now tracked using SchoolFoodServiceProgramService on studentSchoolFoodServicesProgramAssociation.
-2. Usage of the [Applied but Did Not Qualify](sandbox_cert_b_marss.md#applied-but-did-not-qualify) element in the Student Education Organization Association has been **Postponed until further notice.**
-
 **Prerequisite Data**
 - Schools
 - Program - where ProgramTypeDescriptor = "School Food Service"
 - Students
 
-**Scenarios**
+**Free or Reduced Price Scenarios**
 1. Associate Student 11 with this StudentProgramAssociation using SchoolFoodServiceProgramServiceDescriptor = 2 (Free)
 2. Change SchoolFoodServiceProgramServiceDescriptor to 1 (Reduced)
 
-**Direct Certification**
+**Direct Certification Scenarios**
 
 The following scenarios were added in school year 2022-23 to test for _Direct Certification_:
   1. Associate Student 1 as code **2 (Free)** based on the application for educational benefits. Demonstrate that this student's default value for Direct Certification is **False**. Then set the Direct Certification element to **True** for this student, which will display as a 7 after the MARSS translation.
@@ -255,7 +179,7 @@ Students who have a Section 504 plan.
 
 ## Resource: StudentSpecialEducationProgramAssociation
 **Description**
-This association represents the special education program(s) that a student participates in or receives services from. The association is an extension of the StudentProgramAssociation particular for special education programs. _Note_: Placing Local Education Agency Reference is an optional element, intended only for students with IEPs who are enrolled in a joint powers or intermediate district. See the [notes on Placing LEA](descriptors_resources.md#placing-local-education-agency-reference).
+This association represents the special education program(s) that a student participates in or receives services from. The association is an extension of the StudentProgramAssociation particular for special education programs. _Note_: Placing Local Education Agency Reference is an optional element, intended only for students with IEPs who are enrolled in a joint powers or intermediate district. See the [notes on Placing LEA](../reference/descriptors_resources.md#placing-local-education-agency-reference).
 
 **Important Notes on Order of Disability**
 
