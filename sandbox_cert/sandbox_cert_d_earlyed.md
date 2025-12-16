@@ -1,11 +1,11 @@
 # Early Education Enrollment Certification Scenarios: API Resources
-_Please note: the following scenarios are example situations, intended to demonstrate that your application can update the MDE Ed-Fi ODS appropriately. They do not necessarily demonstrate all valid combinations; for example, all funding source codes can be used for both School Readiness (SR) and Early Childhood Family Education (ECFE). Early Education scenarios also involve [Calendar recsources](./sandbox_cert_b_marss.md#resource-calendar) and [StudentEarlyChildhoodScreeningProgramAssociations](./sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations)._
+_Please note: the following scenarios are example situations, intended to demonstrate that your application can update the MDE Ed-Fi ODS appropriately. They do not necessarily demonstrate all valid combinations; for example, all funding source codes can be used for both School Readiness (SR) and Early Childhood Family Education (ECFE). Early Education scenarios also involve [Calendar resources](./sandbox_cert_b_marss.md#resource-calendar) and [StudentEarlyChildhoodScreeningProgramAssociations](./sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations)._
 
-For more information, see the [Early Education Enrollment and Parent collection dependencies section](sis_test_plan_c_data_reqs.md#early-education-enrollment-and-parent-collection) of the SIS Vendor test plan data requirements document.
+For more information, see the [Early Education Enrollment and Parent collection dependencies section](../sis_test_plan/sis_test_plan_c_data_reqs.md#early-education-enrollment-and-parent-collection) of the SIS Vendor test plan data requirements document.
 
 ## Resource: StudentSchoolAssociations
 **Description:**
-This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation. Please take the time to read the [Instructions on Constructing SSAs for Multiple Early Education Program Associations](/2024-25%20MDE%20Ed-Fi%20Documentation/ssa_construction_for_multiple_ee.md) document with respect to handling SSAs when multiple SEEPAs are involved.
+This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation. Please take the time to read the [Instructions on Constructing SSAs for Multiple Early Education Program Associations](../2024-25%20MDE%20Ed-Fi%20Documentation/ssa_construction_for_multiple_ee.md) document with respect to handling SSAs when multiple SEEPAs are involved.
 
 **Prerequisite Data:**
 - Students (create 6 students, referenced as students A-F below)
@@ -153,7 +153,7 @@ Notes:
 - MARSS Early Childhood Screening (aka Preschool Screening) is covered in [this program association](./sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations).
 - The "EE-SR" and "EE-ECFE" program types are the programs intended for use with Early Education Data. These can also be used to cover the Early Ed programs formerly described as "SR/AB" and "ECFE/AB", respectively.
 - "End Reason Code" below correlates to "reasonExitedDescriptor" (see the similarly named Data Mapping Matrix tab). Please note that this is important information to include on the SEEPA record especially for non-MARSS program associations.
-- Note that a calendar reference has been added to the VPK scenarios in order to relate specific calendar records to sections of that program. Sample JSON files for calendars and program associations are available in the [EE-MARSS Ambiguity Resolution](/data/EE-MARSS%20Ambiguity%20Resolution/) folder of the data directory.
+- Note that a calendar reference has been added to the VPK scenarios in order to relate specific calendar records to sections of that program. Sample JSON files for calendars and program associations are available in the [EE-MARSS Ambiguity Resolution](../data/EE-MARSS%20Ambiguity%20Resolution/) folder of the data directory.
 - Note that *custom* membership and attendance elements on these associations have been replaced with an element similar to the Student School Association. For ECFE and SR program types, units must be ``Hours`` and percentEnrolled should be either zero or omitted. (A zero is likely the best approach to avoid API errors.) For the other early learning program types, the rules for membership & attendance data elements remain the same as they have been as defined by MARSS; the data elements are merely shifted to this resource instead of on the Student School Association. (For example, percentEnrolled is required for ECSE and VPK.)
 
 **Prerequisite Data:**
@@ -230,7 +230,7 @@ Notes:
     - Create a new SSA record, **setting the begin date to 10/16/2023** and defaulting the end date to the end of the school year
     - Change the EE-SR association to EE-VPK, setting the begin and end dates to match the new SSA
     - Demonstrate how both a Program Section Descriptor and a Calendar Reference will now be required on the EE-VPK program association, describing Section J for this school year
-    - (Note: the main purpose of this scenario is to demonstrate how VPK requires a program section descriptor and calendar reference. But as described in the [SSA construction for multiple EE](./2023-24%20MDE%20Ed-Fi%20Documentation/ssa_construction_for_multiple_ee.md) document, two MARSS programs would overlap only in rare circumstances - which is why we first ask for the ECSE association to be ended here.)
+    - (Note: the main purpose of this scenario is to demonstrate how VPK requires a program section descriptor and calendar reference. But as described in the [SSA construction for multiple EE](../2023-24%20MDE%20Ed-Fi%20Documentation/ssa_construction_for_multiple_ee.md) document, two MARSS programs would overlap only in rare circumstances - which is why we first ask for the ECSE association to be ended here.)
 10.	Please demonstrate how your software differentiates between various program choices, in particular how users will tell the difference between Early Childhood Screening (EE-ECS) and Early Childhood Special Education (EE-ECSE).
 
 ## Resource: StudentHomelessProgramAssociation
@@ -266,5 +266,5 @@ This association represents the Title III Language Instruction for Limited Engli
     - EL Participation = 1
 
 # Navigation
-- [Return to Sandbox Certification Overview](README.md)
+- [Return to Sandbox Certification Overview](../README.md)
 - [Advance to MCCC](sandbox_cert_e_mccc.md)

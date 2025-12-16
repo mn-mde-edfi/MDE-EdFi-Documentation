@@ -7,8 +7,7 @@ Several new data collections originally planned for rollout using Ed-Fi during t
   - [Gender Identity and Preferred Pronouns](#gender-identity-and-preferred-pronouns)
   - [Student Preferred Name ](#student-preferred-name)
   - [Title I Part D Neglected Or Delinquent Program](#title-i-part-d-neglected-or-delinquent-program)
-  - [Online Learning](./sandbox_cert/sandbox_cert_e_mccc.md#online-learning)
-
+  
 **School Attribute Certification Scenarios**
 
 A new resource has been created for the purpose of collecting school-level data. Ed-Fi School records are currently created and maintained by MDE. A separate SchoolAttributes extension captures school-level data to be provided by the districts for their respective schools.

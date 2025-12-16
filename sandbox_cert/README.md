@@ -9,7 +9,6 @@ Then advance to the specific sections on Sandbox Certification Scenarios:
 - [StudentProgramAssociations](sandbox_cert_c_spas.md)
 - [Early Education Enrollment Certification Scenarios](sandbox_cert_d_earlyed.md)
 - [Minnesota Common Course Catalog (MCCC) Certification Scenarios](sandbox_cert_e_mccc.md)
-- [School Attribute Certification Scenarios](sandbox_cert_g_school_attribute.md)
 - [Deleting Resources Certification Scenarios](sandbox_cert_h_deleting_resources.md)
 - [Joint Powers Certification Scenarios](sandbox_cert_j_joint_powers.md)
 

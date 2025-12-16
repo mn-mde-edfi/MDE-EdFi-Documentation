@@ -2,7 +2,7 @@
 For school year 2024-25, vendors will be required to demonstrate their customer's ability to delete data from MDE's Ed-Fi ODS/API. This document will outline scenarios for these capabilities, focusing on the MARSS-related data resources and elements.
 
 ## References and Background
-Before reading these scenarios, please refer to the [Ed-Fi Model Dependency Diagrams](sis_test_plan_c_data_reqs.md#ed-fi-model-dependency), particularly the [MARSS collection diagram](sis_test_plan_c_data_reqs.md#marss-collection) section. Understanding data dependencies in the Ed-Fi data model is critical to implementing the ability to delete data. For example, a student record cannot be deleted before a related student school association record, because the latter relies on the former.
+Before reading these scenarios, please refer to the [Ed-Fi Model Dependency Diagrams](../sis_test_plan/sis_test_plan_c_data_reqs.md#ed-fi-model-dependency), particularly the [MARSS collection diagram](../sis_test_plan/sis_test_plan_c_data_reqs.md#marss-collection) section. Understanding data dependencies in the Ed-Fi data model is critical to implementing the ability to delete data. For example, a student record cannot be deleted before a related student school association record, because the latter relies on the former.
 
 Districts and LEAs should not be expected to understand the entirety of these dependencies in order to delete data. Instead, MDE suggests that vendors build warnings and logic dialogs into SIS software asking users for confirmation/reversal of deletion attempts, if the vendor deems it necessary for their users.
 
@@ -12,7 +12,7 @@ For example, if Student XYZ has the following associated records:
 - Student Program Association (ie ``StudentCEISProgramAssociation``)
 ...then an attempt to delete Student XYZ *could* come with a prompt asking the user to confirm deletion of each of the above records, or to reverse the decision. Such a prompt is **not** required to pass these scenarios.
 
-These scenarios assume the ability to successfully **create** new data as outlined in other certification documents, such as for [MARSS enrollment](sandbox_cert_b_marss.md) and [Student Program Associations](./sandbox_cert_c_spas.md).
+These scenarios assume the ability to successfully **create** new data as outlined in other certification documents, such as for [MARSS enrollment](sandbox_cert_b_marss.md) and [Student Program Associations](sandbox_cert_c_spas.md).
 
 ## Prerequisite Data
 - Schools, Programs, Descriptors

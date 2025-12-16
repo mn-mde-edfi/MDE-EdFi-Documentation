@@ -145,7 +145,7 @@ This association represents Students in a State Approved Alternative Program.
 
 ## Resource: StudentSchoolFoodServiceProgramAssociation
 **Description** 
-This association represents the school food services program(s), such as the **Free or Reduced Price Lunch Program**, that a student participates in, or from which the Student receives services. This includes the ability for a district to identify whether or not the "Direct Certification" report was used to determine student eligibility. (See [this quick reference document](/2022-23%20MDE%20Ed-Fi%20Documentation/MDE%20MARSS%20Translation%20Logic%20for%20School%20Food%20Service%20with%20Direct%20Certification.docx) for MARSS translation logic.)
+This association represents the school food services program(s), such as the **Free or Reduced Price Lunch Program**, that a student participates in, or from which the Student receives services. This includes the ability for a district to identify whether or not the "Direct Certification" report was used to determine student eligibility. (See [this quick reference document](../reference/school_food_service_codes.md) for MARSS translation logic.)
 
 **Prerequisite Data**
 - Schools
@@ -211,5 +211,5 @@ This association represents the Title I Part A program(s) that a student partici
 1.	Associate Student 14 with this StudentProgramAssociation
 
 # Navigation
-- [Return to Sandbox Certification Overview](README.md)
+- [Return to Sandbox Certification Overview](../README.md)
 - [Advance Early Education Enrollment Certification Scenarios](sandbox_cert_d_earlyed.md)

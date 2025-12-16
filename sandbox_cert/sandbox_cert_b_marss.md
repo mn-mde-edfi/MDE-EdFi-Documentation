@@ -20,13 +20,13 @@ This entity represents an individual for whom instruction, services, and/or care
     - middleName
 
 _Notes:_ 
-- You will not be able to view or edit students until you claim them with the creation of an enrollment record via ```StudentSchoolAssociation``` (see next section). Within Swagger, only one record can be created at a time. See [this example record](data/example_value_student_record.json) for specific JSON formatting.
+- You will not be able to view or edit students until you claim them with the creation of an enrollment record via ```StudentSchoolAssociation``` (see next section). Within Swagger, only one record can be created at a time. See [this example record](../data/example_value_student_record.json) for specific JSON formatting.
 - The student's legal name should be used and stay consistent over time unless the student legally changes their name.
 
 ## Resource: StudentSchoolAssociations
 
 **Description**
-This association represents the School in which a student is enrolled. Note that the semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation. _Remember_: when loading in data that references a Descriptor, you need to include a namespace, i.e. ```uri://education.mn.gov/[name of descriptor]#[code value]```. See more details in [this example record](data/example_value_studentSchoolAssociation.json).
+This association represents the School in which a student is enrolled. Note that the semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation. _Remember_: when loading in data that references a Descriptor, you need to include a namespace, i.e. ```uri://education.mn.gov/[name of descriptor]#[code value]```. See more details in [this example record](../data/example_value_studentSchoolAssociation.json).
 
 **Prerequisite Data**
 - Students
@@ -57,8 +57,6 @@ This association represents the School in which a student is enrolled. Note that
 **Description**
 
 The Student Education Organization Association (SEOA) indicates any relationship between a student and an education organization other than how the state views enrollment. (Enrollment relationship semantics are covered by StudentSchoolAssociation.) **MDE allows for the capture of student demographic data by school enrollment.** Therefore, a StudentEducationOrganizationAssociation record must be submitted for each ***school*** in which the student is enrolled to provide the student demographic data provided to the enrolling school by the parent(s).
-
-Please note that additional collections integrated into SEOA have been [postponed until further notice](sandbox_cert_k_postponed.md).
 
 **Prerequisite Data**
 - Students
@@ -165,5 +163,5 @@ Program Records for each of the following program types will be loaded by MDE fo
 For more information, see the [Student Program Association scenarios](./sandbox_cert_c_spas.md) and the [Education Organization Id usage by Resource](../sis_test_plan/sis_test_plan_c_data_reqs.md#education-organization-id-usage-by-resource) section.
 
 # Navigation
-- [Return to Sandbox Certification Overview](README.md)
+- [Return to Sandbox Certification Overview](../README.md)
 - [Advance to StudentProgramAssociations](sandbox_cert_c_spas.md)
