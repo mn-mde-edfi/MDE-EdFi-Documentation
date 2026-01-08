@@ -1,6 +1,6 @@
 # MDE-EdFi-Documentation
 
-This repository contains technical documentation for Minnesota's implementation of Ed-Fi ODS/API v6.2 and Ed-Fi Data Standard 4.0. The Minnesota Department of Education (MDE) is implementing Ed-Fi to help improve the collection of required educational data from Minnesota school districts. Learn more at [MDE's Ed-Fi web page](https://education.mn.gov/MDE/dse/datasub/edfi/) and [Ed-Fi Technology Reference](https://docs.ed-fi.org/reference/).
+This repository contains technical documentation for Minnesota's implementation of [Ed-Fi ODS/API v6.2](https://docs.ed-fi.org/reference/ods-api/6.2) and [Ed-Fi Data Standard 4.0](https://docs.ed-fi.org/reference/data-exchange/data-standard/4/). The Minnesota Department of Education (MDE) is implementing Ed-Fi to help improve the collection of required educational data from Minnesota school districts. Learn more at [MDE's Ed-Fi data submissions web page](https://education.mn.gov/MDE/dse/datasub/edfi/).
 
 The primary audience for this documentation is SIS vendors and State of Minnesota technical staff from MDE and MNIT.
 
@@ -14,16 +14,16 @@ MNIT supporting MDE composes each collection year's documentation in markdown an
 By serving documentation in multiple formats, our goal is to increase vendor access to the documentation as well as provide options for understanding and visualization changes over time.
 
 #### Custom Descriptor Tables
-The MDE Ed-Fi custom [descriptor tables folder](./descriptorTables/) reflects the most recent information about desciptor tables, either planned for the coming year (spring) or in effect for the current year (summer through winter). The current state of the tables within the folder will be detailed in the[ About Descriptor Tables](./descriptorTables/AboutDescriptorTables.md) markdown file. Viewing the commit history of the folder will allow vendors to more easily visualize changes from year to year.
+The MDE Ed-Fi custom [descriptor tables folder](./descriptorTables/) reflects the most recent information about desciptor tables, either planned for the coming year (spring) or in effect for the current year (summer through winter). This folder contains CSV files exported from the current year Ed-Fi ODS database and should be used as the "source of truth" reference.
 
-The folder contains a suite of CSV files that are exported from our Ed-Fi database(s) and should be used as the "source of truth" reference.
+See [About Descriptor Tables](./descriptorTables/AboutDescriptorTables.md) for the current state of the tables within the descriptor tables folder. Viewing the commit history of the folder will allow vendors to more easily visualize changes from year to year.
 
 ## Additional Documentation
 We will also use this repository to store additional documentation and links that may be useful to Districts and Vendors. See the following:
 - [Descriptors and Resources](./reference/descriptors_resources.md). This document contains additional information about specific descriptors and data resources that can prove useful in understanding MDE's Ed-Fi implementation.
 - [Transactional Update Procedures](./reference/transactional_updates.md) covers some of the core concepts of updating records with individual transactions in lieu of bulk uploads, including some examples from Ed-Fi to illustrate.
+- [Common Ed-Fi Errors](./reference/common_errors.md) provides additional documentation on some types of API errors that can arise for vendors and LEAs.
 - Additional Documentation, particularly useful to districts/LEAs, is available on [MDE's Ed-Fi Documentation page](https://education.mn.gov/MDE/dse/datasub/edfi/doc/)
-- The [Common Ed-Fi Errors page](./reference/common_errors.md) will attempt to provide additional documentation on the types of API errors that can arise for vendors and LEAs.
 
 ## Sample Data
 JSON files of sample data can be found in the [data directory](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/tree/master/data). These files are intended to assist developers with understanding the Ed-Fi ODS API.
@@ -42,5 +42,5 @@ In general we recommend using the GitHub repository version, given the limitatio
 
 However, the web version is occasionally advantageous, such as when viewing PDFs. For example:
 - The [Ed-Fi EE-MARSS Program Ambiguity Resolution](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_marss_conflict_resolution.pdf) for school year 2023-24.
-- The [Joint Powers Diagram](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/2024-25%20MDE%20Ed-Fi%20Documentation/Joint%20Powers%20District%20Scenarios%20Diagram.pdf) for school year 2024-25.
+- The [Joint Powers Diagram](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/2024-25%20MDE%20Ed-Fi%20Documentation/Joint%20Powers%20District%20Scenarios%20Diagram.pdf).
 

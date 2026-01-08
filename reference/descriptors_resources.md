@@ -2,10 +2,10 @@
 This document will store various knowledge items and articles about the MDE Ed-Fi ODS/API, especially with respect to Minnesota extensions and customizations that differ from the Core Ed-Fi Data Standard and ODS/API. Some of these issues have been resolved by subsequent updates of the ODS/API.
 
 ## Descriptors
-Sections below will have additional information about various descriptors. Note that the latest information about custom descriptors can be found in the [descriptorTables folder](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/descriptorTables/).
+Sections below will have additional information about various descriptors. Note that the latest information about custom descriptors can be found in the [descriptor tables folder](../descriptorTables/).
 
 ### Naming Pattern for Extension Descriptors
-When MDE extends a pre-existing Ed-Fi descriptor for the MN extension, it may rename the implementation of that descriptor when additional context clarifies the intended use of the descriptor. For example, the [core Ed-Fi descriptor](https://api.ed-fi.org/v3.4.0/docs/index.html?urls.primaryName=Descriptors#/levelOfEducationDescriptors) ```levelOfEducationDescriptors``` is implemented as ```highestCompletedLevelOfEducationDescriptor``` within the "parents" resource (the namespace remains ```uri://education.mn.gov/LevelOfEducationDescriptor```). This can be visualized in the example value for the "parents" resource:
+When MDE extends a pre-existing Ed-Fi descriptor for the MN extension, it may rename the implementation of that descriptor when additional context clarifies the intended use of the descriptor. For example, the [core Ed-Fi descriptor](https://edfidocs.blob.core.windows.net/$web/handbook/v4.0/index.html#/LevelOfEducation192) ```levelOfEducationDescriptor``` is implemented as ```highestCompletedLevelOfEducationDescriptor``` within the "parents" resource (the namespace remains ```uri://education.mn.gov/LevelOfEducationDescriptor```). This can be visualized in the example value for the "parents" resource:
 
 ```javascript
 {
@@ -41,13 +41,7 @@ Since some descriptors are used for multiple data elements, within the ODS API t
 - Within the Language Academic Honors collection (inside ```studentEducationOrganizationAssociation```), there is an ```assessedGradeLevelDescriptor```. Use the GradeLevelDescriptor values for this element.  
 - Within the for Neglected or Delinquent collection, there are elements titled ``elaProgressLevelDescriptor`` and ``mathematicsProgressLevelDescriptor``. Use the ProgressLevelDescriptor values for this element.
 
-
 Usually the required relationship can be found within the Data Mapping Matrix. Vendors that spot any discrepancies or missing elements are encouraged to contact the [Ed-Fi vendor support team](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us) by email. 
-
-### Duplicate "BR" value within accommodationDescriptors
-**As of 2023-02-28, the duplicate descriptor within the "access" namespace has been deleted from SY2022-23 ODS instances.** For 2023-24, the duplicate issue described below is no longer an issue, given expanded re-classification of Braille accommodation descriptors.
-
->When viewing SY2021 descriptors, you might note that the code value of "BR" is repeated within ```accommodationDescriptors```, causing problems with database loads that assume that code value is unique across all of those descriptors. However, when incorporating namespace, those values become unique: the value to describe "BR - Accomodation" is within "access" and the value for "Braille" is within "mcamtas", as shown in the descriptor JSON below (available from Swagger). Note that for now this descriptor can be ignored because it's only used by assessment precode which isn't in scope until at least SY22-23 or later.
 
 ### ClassroomVolunteerDescriptors
 In the transition to Ed-Fi, MDE is collecting less detail around classroom volunteers compared to past collections in the [Early Education Student Data System](https://education.mn.gov/MDE/dse/datasub/EarlyLearnServDataReport). The table below provides a translation between EES and EdFi:
@@ -59,8 +53,8 @@ In the transition to Ed-Fi, MDE is collecting less detail around classroom volun
 |     03    |     Parent Advisory Council    |     **2861**    |     PartTimeVolunteer    |     Code **2860** for FullTimeVolunteer is also available if necessary    |
 |     99    |     Others    |     **2861**    |     PartTimeVolunteer    |     Code **2860** for FullTimeVolunteer is also available if necessary    |
 
-### LevelOfEducationDescriptors
-Another descriptor in Ed-Fi that benefits from a translation from EES is **levelOfEducationDescriptors**. See the [descriptorTables folder](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/descriptorTables/) for the latest list of codes. With one exception, these values are a direct translation from the _EducationBackground_ codes used in the EE system. For example, code value ```1050``` for Associate's degree. The only exception is that EE code ```0000``` for "Not Specified" should be mapped into Ed-Fi code ```9999``` for "Other". The following table details the translation:
+### LevelOfEducationDescriptor
+Another descriptor in Ed-Fi that benefits from a translation from EES is [levelOfEducationDescriptor](../descriptorTables/LevelOfEducationDescriptor.csv). With one exception, these values are a direct translation from the _EducationBackground_ codes used in the EE system. For example, code value ```1050``` for Associate's degree. The only exception is that EE code ```0000``` for "Not Specified" should be mapped into Ed-Fi code ```9999``` for "Other". The following table details the translation:
 |EES BackgroundCode|EES BackgroundShortName|Ed-Fi levelOfEducationDescriptorId|Ed-Fi codeValue|Ed-Fi description|
 |---|----|-------|------|---|
 |0000              |Not Specified          |3403                              |9999           |09999 - Other                                     |
@@ -129,7 +123,7 @@ When working with MARSS, LEAs previously would enter in State Aid Categories wit
 
 ### Student Special Education Program Associations Resource
 #### Placing Local Education Agency Reference
-For SY2021-2022, MDE implemented a new element on the StudentSpecialEducationProgramAssociations resource called ```placingLocalEducationAgencyReference ```. Commonly referred to as "Placing District", this optional element is intended for only students with IEPs who are enrolled in a joint powers or intermediate district. It is intended for a subset of students, and should not be automatically associated with any other LEA reference.
+Starting SY2021-2022, MDE implemented a data element on the StudentSpecialEducationProgramAssociations resource called ```placingLocalEducationAgencyReference ```. Commonly referred to as "Placing District", this optional element is intended for only students with IEPs who are enrolled in a joint powers or intermediate district. It is intended for a subset of students, and should not be automatically associated with any other LEA reference.
 
 The scenario in which a student record would need ```placingLocalEducationAgencyReference ``` is:
 - Student is a resident of district A and has an IEP.
@@ -204,7 +198,7 @@ LEAs and vendors will need to understand the validation rules around course leve
 In 2021 MDE staff determined that our Ed-Fi implementation contains redundant elements in the "course" entity: numberOfParts (Ed-Fi core) and sequenceLimit (MN extension). In order to increase alignment with core Ed-Fi components, we decided to remove the use of sequenceLimit and rely on numberOfParts for the same information.
 
 #### College Courses
-When setting up College Courses (i.e. for Dual Enrollment, Articulation and Direct Pay PSEO), you will need an ```educationOrganizationId``` within the ```educationOrganizationReference```. The IDs to use in this element come from MDE ORG and follow the [district pattern](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/sis_test_plan/sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids). The identifiers can be acquired via the API at the ```/ed-fi/postSecondaryInstitutions``` endpoint, within the ```postSecondaryInstitutionId``` element. Each record in that list will also contain a cross-reference to the USDE OPE IDs inside the ```educationOrganizationIdentificationSystemDescriptor```, labeled as ```uri://ed-fi.org/EducationOrganizationIdentificationSystemDescriptor#USDE - OPE```. 
+When setting up College Courses (i.e. for Dual Enrollment, Articulation and Direct Pay PSEO), you will need an ```educationOrganizationId``` within the ```educationOrganizationReference```. The IDs to use in this element come from MDE ORG and follow the [district pattern](../sis_test_plan/sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids). The identifiers can be acquired via the API at the ```/ed-fi/postSecondaryInstitutions``` endpoint, within the ```postSecondaryInstitutionId``` element. Each record in that list will also contain a cross-reference to the USDE OPE IDs inside the ```educationOrganizationIdentificationSystemDescriptor```, labeled as ```uri://ed-fi.org/EducationOrganizationIdentificationSystemDescriptor#USDE - OPE```. 
 
 _Note_: Sandboxes created before May 7, 2021 had only approximately 12 post-secondary institutions loaded in. Sandboxes created on or after that date had at least 100 records for testing. In development, staging, and production servers, records will be updated during regular synch processes.
 

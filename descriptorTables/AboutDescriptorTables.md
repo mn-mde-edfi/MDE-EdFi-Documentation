@@ -1,9 +1,9 @@
 # Descriptor Tables
-This folder contains a series of CSV tables that list various descriptor values, typically of descriptors that are custom to the Minnesota Ed-Fi implementation. By moving such tables out of the "Mapping Matrix" Excel spreadsheet and into individual files, we accomplish several goals:
-1. Allowing full names of descriptors to label a table, instead of being limited by Excel's character limit for tabs.
-2. Reducing the size of the Mapping Matrix spreadsheet.
-3. Enabling viewers to see when each individual descriptor was last updated
-4. Enabling viewers a quick preview of each table when selecting it within GitHub
+This folder contains a series of CSV tables that list various descriptor values, typically of descriptors that are custom to the Minnesota Ed-Fi implementation. By managing these tables in individual CSV files instead of an Excel workbook, we accomplish several goals:
+1. Allows full names of descriptors to label a table instead of being limited by Excel's character limit for tabs.
+2. Reduces the size of the Mapping Matrix Excel spreadsheet.
+3. Enables viewers to see when each individual descriptor was last updated
+4. Enables viewers a quick preview of each table when selecting it within GitHub
 
 Refer to the CSVs in this folder for either the coming school year (spring), or the current school year in effect (summer, fall, and winter). See details below.
 
@@ -11,7 +11,7 @@ _Note_: occasionally special characters, such as em dashes, are stored in the da
 
 ## Source Details
 As of the most recent run, these tables are derived from the following database at MDE:
-- **Version**: 6.x
+- **Version**: 6.2
 - **School Year**: 2025-26
 - **Environment**: Production
 - **Database**: EdFi_Ods_2026
@@ -27,10 +27,10 @@ As of the most recent run, these tables are derived from the following database 
     - [SpecialEducationSettingDescriptor](./SpecialEducationSettingDescriptor.csv)
 
 **Exceptions** and **Unique Situations** will be marked with details below as necessary.
-- **NOTE:** For school year 2025-26, the Sex Descriptor is no longer within the ``ed-fi.org`` namespace, but within the ``education.mn.gov`` namespace, ie ``uri://education.mn.gov/SexDescriptor``.
-- **NOTE:** For school year 2025-26, the valid value list for ``edfi.SchoolYearType`` is limited to just one valid value per year (e.g. ``2026`` for the 2025-26 school year).
-- **NOTE:** For school year 2024-25, the 'Responsibility Descriptor' has been exported. This is a **NEW** descriptor used for Joint Powers solutions. We have now completed validating and double checking the remaining custom descriptors for the 2024-25 school year, as noted by the "Production" environment designation above.
-- **NOTE:** For school year 2023-24, the "HK" grade level was retired on legislative direction. Instead of removing it entirely from the ODS API, it was updated to show "DO NOT USE". For school year 2024-25 and beyond, it will not be available in the API at all. This also holds true for the "H" Kindergarten Schedule Descriptor.
+
+**NOTES:** 
+- Starting in school year 2025-26, the SexDescriptor uses the ``education.mn.gov`` namespace, i.e. ``uri://education.mn.gov/SexDescriptor``.
+- Starting in school year 2025-26, the valid value list for ``edfi.SchoolYearType`` is limited to just one valid value per year (e.g. ``2026`` for the 2025-26 school year).
 
 Vendors may also wish to refer to the change/commit log in GitHub to see what the latest changes are for the tables in this folder.
 
@@ -49,6 +49,11 @@ The following Descriptors used for **Assessment** purposes are now being exporte
 
 Note that Assessment vendors will also want to make use of the [AcademicSubjectDescriptor](AcademicSubjectDescriptor.csv) and [GradeLevelDescriptor](GradeLevelDescriptor.csv) tables listed below.
 
+## List of Ed-Fi Core Descriptors and Links
+Below is a list of known custom descriptors, typically using the ```uri://ed-fi.org``` namespace. Links are to the CSV files that you can view inside this directory. This list is automatically generated out of the same database as above, but we've manually removed links here if the descriptor has not yet been exported.
+- [CourseIdentificationSystemDescriptor](CourseIdentificationSystemDescriptor.csv)
+- [LanguageUseDescriptor](LanguageUseDescriptor.csv)
+- [SchoolCategoryDescriptor](SchoolCategoryDescriptor.csv)
 
 ## List of Custom Descriptors and Links
 Below is a list of known custom descriptors, typically using the ```uri://education.mn.gov``` namespace, excluding any subfolders within that space. Links are to the CSV files that you can view inside this directory. This list is automatically generated out of the same database as above, but we've manually removed links here if the descriptor has not yet been exported.
@@ -71,7 +76,6 @@ Below is a list of known custom descriptors, typically using the ```uri://educat
 - [CourseDefinedByDescriptor](CourseDefinedByDescriptor.csv)
 - [CourseLevelCharacteristicDescriptor](CourseLevelCharacteristicDescriptor.csv)
 - [CourseLevelTypeDescriptor](CourseLevelTypeDescriptor.csv)
-- [CrisisEventDescriptor](CrisisEventDescriptor.csv)
 - [CurriculumUsedDescriptor](CurriculumUsedDescriptor.csv)
 - [DisabilityDescriptor](DisabilityDescriptor.csv)
 - DisciplineDescriptor
@@ -80,10 +84,6 @@ Below is a list of known custom descriptors, typically using the ```uri://educat
 - [EarlyChildhoodScreenerDescriptor](EarlyChildhoodScreenerDescriptor.csv)
 - [EarlyChildhoodScreeningExitStatusDescriptor](EarlyChildhoodScreeningExitStatusDescriptor.csv)
 - [EarlyEducationCourseLocationDescriptor](EarlyEducationCourseLocationDescriptor.csv)
-- [Ed-Fi Core: CourseIdentificationSystemDescriptor](CourseIdentificationSystemDescriptor.csv)
-- [Ed-Fi Core: LanguageUseDescriptor](LanguageUseDescriptor.csv)
-- [Ed-Fi Core: SchoolCategoryDescriptor](SchoolCategoryDescriptor.csv)
-- [Ed-Fi Core: SexDescriptor](SexDescriptor.csv)
 - [EdFiSubmissionAccessDescriptor](EdFiSubmissionAccessDescriptor.csv)
 - [EntryTypeDescriptor](EntryTypeDescriptor.csv)
 - [ExitWithdrawTypeDescriptor](ExitWithdrawTypeDescriptor.csv)
@@ -119,13 +119,14 @@ Below is a list of known custom descriptors, typically using the ```uri://educat
 - [ProgressLevelDescriptor](ProgressLevelDescriptor.csv)
 - [RaceDescriptor](RaceDescriptor.csv)
 - [ReasonExitedDescriptor](ReasonExitedDescriptor.csv)
-- [ResponsibilityDescriptor](ResponsibilityDescriptor.csv) ::NEW::
+- [ResponsibilityDescriptor](ResponsibilityDescriptor.csv)
 - [RelationDescriptor](RelationDescriptor.csv)
 - [SchoolClassificationDescriptor](SchoolClassificationDescriptor.csv)
 - [SchoolFoodServiceProgramServiceDescriptor](SchoolFoodServiceProgramServiceDescriptor.csv)
 - [SecondaryBehaviorDescriptor](SecondaryBehaviorDescriptor.csv)
 - [SectionCharacteristicDescriptor](SectionCharacteristicDescriptor.csv)
 - [SectionEnrollmentTypeDescriptor](SectionEnrollmentTypeDescriptor.csv)
+- [SexDescriptor](SexDescriptor.csv)
 - [SiteBasedInitiativeDescriptor](SiteBasedInitiativeDescriptor.csv)
 - [SpecialEducationEvaluationStatusDescriptor](SpecialEducationEvaluationStatusDescriptor.csv)
 - [SpecialEducationSettingDescriptor](SpecialEducationSettingDescriptor.csv)

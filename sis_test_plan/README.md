@@ -1,15 +1,13 @@
 # SIS Vendor and District Test Plan
-This document contains an overview and references for the Student Information Systems (SIS) and District Test Plan for the Minnesota **2024-2025 School Year**, aligning with Ed-Fi **version 5.2** and **Data Standard 3.3.0-a**. The documentation in this repository is maintained by Minnesota IT Services (MNIT), partnering with the the Minnesota Department of Education (MDE).
+This document contains an overview and references for the Student Information Systems (SIS) and District Test Plan for the Minnesota **2026-2027 School Year**, aligning with [Ed-Fi ODS/API v6.2](https://docs.ed-fi.org/reference/ods-api/6.2) and [Ed-Fi Data Standard 4.0](https://docs.ed-fi.org/reference/data-exchange/data-standard/4/). The documentation in this repository is maintained by Minnesota IT Services (MNIT), partnering with the the Minnesota Department of Education (MDE).
 
 ## Overview
-The current School Year Certification is currently aligned with the [Ed-Fi 3.3.0-a Data Standard](https://github.com/Ed-Fi-Alliance-OSS/Ed-Fi-Standard/releases/tag/v3.3.0-a) and ODS/API, with extensions customized for MDE.
-
 Student Information System (SIS) vendors integrating with MDE's Ed-Fi Automated Student Data Collection System are required to pass 2 levels of testing prior to being granted a district's API key and secret to the Production environment.
 
-**First**, vendors are required to demonstrate their ability to submit the specific API resources and elements encompassed within the various program (MARSS, Early Education, MCCC, etc) elements. This first phase is executed in the MNIT Ed-Fi Sandbox environment. Note two unique qualities of the Sandbox:
+**First**, vendors are required to demonstrate their ability to submit the specific API resources and elements encompassed within the various program (MARSS, Early Education, MCCC, etc) elements. This first phase is executed in the MNIT Ed-Fi Test Sandbox environment. Note two unique qualities of the Sandbox:
 
 - The Sandbox environment does not include integration with the **Identities API endpoint**.
-- API profiles are **not enforced** in the Sandbox environment, however you may be required to demonstrate appropriate implementation of API profile use in your API transactions.
+- API profiles are **not enforced** in the Sandbox environment. However you may be required to demonstrate appropriate implementation of API profile use in your API transactions.
 
 **Second**, when all scenarios are verified in the Sandbox environment, the SIS vendor is granted access to the Staging environment. Vendors must perform a test load of their district's real student demographic data in the Staging environment. During this test, Student IDs will be validated against the Ed-Fi Identities Service to ensure valid ids are being inserted to the Ed-Fi ODS. MARSS comparison checks and additional data quality verifications are also executed in the Staging Environment. 
 
