@@ -27,6 +27,7 @@ As of the most recent run, these tables are derived from the following database 
     - [SpecialEducationSettingDescriptor](./SpecialEducationSettingDescriptor.csv)
 
 **Exceptions** and **Unique Situations** will be marked with details below as necessary.
+- **NOTE:** For school year 2025-26, the Grading Period Descriptor was updated in January for newly required descriptors.
 - **NOTE:** For school year 2025-26, the Sex Descriptor is no longer within the ``ed-fi.org`` namespace, but within the ``education.mn.gov`` namespace, ie ``uri://education.mn.gov/SexDescriptor``.
 - **NOTE:** For school year 2025-26, the valid value list for ``edfi.SchoolYearType`` is limited to just one valid value per year (e.g. ``2026`` for the 2025-26 school year).
 - **NOTE:** For school year 2024-25, the 'Responsibility Descriptor' has been exported. This is a **NEW** descriptor used for Joint Powers solutions. We have now completed validating and double checking the remaining custom descriptors for the 2024-25 school year, as noted by the "Production" environment designation above.
