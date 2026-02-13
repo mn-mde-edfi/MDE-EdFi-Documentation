@@ -1,4 +1,4 @@
-# MCCC Certification Scenarios - API Resources
+# MCCC Certification Scenarios: API Resources
 The Minnesota Common Course Catalog (MCCC) is a course classification and data collection system intended to provide uniform information about courses that are taught by Minnesota teachers and completed by Minnesota students. This document contains sandbox certification scenarios for this collection.
 
 ## Resource: Students
@@ -83,7 +83,7 @@ Ed-Fi Description: This entity represents the time span for which grades are rep
     - BeginDate
     - EndDate
 
-_Note:_ you may notice the _totalInstructionalDays_ element in the API for the **gradingPeriods** resource. This exists because it is [a required field by the Ed-Fi model](https://schema.ed-fi.org/datahandbook-v31/Ed-Fi-UDM-Handbook-Index.html#/GradingPeriod561). But MDE is **not** using it for MCCC, so please submit zero as the value and provide total instructional days as part of the Session resource.
+_Note:_ you may notice the _totalInstructionalDays_ element in the API for the **gradingPeriods** resource. This exists because it is [a required field by the Ed-Fi model](https://edfidocs.blob.core.windows.net/$web/handbook/v4.0/index.html#/GradingPeriod178). But MDE is **not** using it for MCCC, so please submit zero as the value and provide total instructional days as part of the Session resource.
 
 ## Resource: Session
 
@@ -98,7 +98,7 @@ Ed-Fi Description: A term in the school year, generally a unit of time into whic
 ### Scenarios
 
 1. Create Sessions for elementary, middle and high school (Fall, Spring, and non-scheduled). Each Period must include:
-    - TermDescriptor (i.e. "Non-Scheduled", "Fall Semester", etc. See [TermDescriptor](./descriptorTables/TermDescriptor.csv) table)
+    - TermDescriptor (i.e. "Non-Scheduled", "Fall Semester", etc. See [TermDescriptor](../descriptorTables/TermDescriptor.csv) table)
     - School Year
     - SchoolId
     - DaysInSession
@@ -111,7 +111,7 @@ Ed-Fi Description: A term in the school year, generally a unit of time into whic
 
 ### Description
 
-Ed-Fi Description: This educational entity represents the organization of subject matter and related learning experiences provided for the instruction of students on a regular or systematic basis. The MCCC collection in Ed-Fi will use Course for collection of District, College and State Courses. For more information on the course resource, see the [Course Records for MCCC](descriptors_resources.md#course-records-for-mccc) section of the Descriptors and Resources document. MCCC data is collected by "course work types" that include _scheduled_, _independent study_ and _direct pay PSEO_. The certification will verify that the MCCC data for each of the course work types is loaded correctly.
+Ed-Fi Description: This educational entity represents the organization of subject matter and related learning experiences provided for the instruction of students on a regular or systematic basis. The MCCC collection in Ed-Fi will use Course for collection of District, College and State Courses. For more information on the course resource, see the [Course Records for MCCC](../reference/descriptors_resources.md#course-records-for-mccc) section of the Descriptors and Resources document. MCCC data is collected by "course work types" that include _scheduled_, _independent study_ and _direct pay PSEO_. The certification will verify that the MCCC data for each of the course work types is loaded correctly.
 
 **Important Note on College Course Codes:** To ensure uniqueness, the College Course Code must include a district's LocalEducationAgencyId followed by a hyphen with no spaces, then followed by the College's Course Identifier for that course. For example, a college course code submitted by Saint Paul Public School District would be submitted as ```10625000-ENG1000```.
 
@@ -168,7 +168,7 @@ Including the following elements:
     - 1 with Course Level Type = D
     - 1 college courses to be used for Direct Pay PSEO.
    Each college course should include the following elements:
-      - EducationOrganizationId for the college (use the PostSecondaryInstitutionId as detailed in the [College Courses](descriptors_resources.md#college-courses) section)
+      - EducationOrganizationId for the college (use the PostSecondaryInstitutionId as detailed in the [College Courses](../reference/descriptors_resources.md#college-courses) section)
       - MaximumAvailableCredits
       - CourseCode (District ID plus '-' and College Course Identifier - generally dept letters & course number)
       - CourseTitle
@@ -181,7 +181,7 @@ Including the following elements:
 
     - Separate course, course offering and section records are required for your district to report ALC Independent Study records; however Course Offering and Section will not be used by MDE for reporting. (The Ed-Fi Model requires an entry in Course Offering linked to the non-scheduled term, and a section default.)
 
-    Please also note the validation rules described in the [Level Characteristics section](descriptors_resources.md#level-characteristics) of the Descriptors and Resources document.
+    Please also note the validation rules described in the [Level Characteristics section](../reference/descriptors_resources.md#level-characteristics) of the Descriptors and Resources document.
 
     Include the following elements:
       - Course Code
@@ -206,7 +206,7 @@ Including the following elements:
       - High School Course Requirement of '0' (false)
       - Number of Parts = 1.
 
-7. **(UNDER DEVELOPMENT) Scenario for Project-Based Student enrollment record.** (_The data model for Project Based learning is still under development, and vendors will not be tested.) Create a course for Project Based section enrollments - While these types of enrollments do not include MDE course, course offering or section requirements - the Ed-Fi Model enforces these entities in the Master Schedule. At minimum, a **single Placeholder course, course offering, and section will be required for your district** to report Project Based Student Section Association records. Please also note the validation rules described in the [Level Characteristics section](descriptors_resources.md#level-characteristics) of the Descriptors and Resources document. Ed-Fi required elements:
+7. **(UNDER DEVELOPMENT) Scenario for Project-Based Student enrollment record.** (_The data model for Project Based learning is still under development, and vendors will not be tested.) Create a course for Project Based section enrollments - While these types of enrollments do not include MDE course, course offering or section requirements - the Ed-Fi Model enforces these entities in the Master Schedule. At minimum, a **single Placeholder course, course offering, and section will be required for your district** to report Project Based Student Section Association records. Please also note the validation rules described in the [Level Characteristics section](../reference/descriptors_resources.md#level-characteristics) of the Descriptors and Resources document. Ed-Fi required elements:
     - Course Code: Project Based
     - Course Title
     - Course Identification Code
@@ -228,7 +228,7 @@ Including the following elements:
     - CourseCode = District Course Code
     - ToCourseEducationOrganizationId = State Education Agency ID (999999000)
     - ToCourseCode = State Course Code
-      - IS can only be related to state courses with CourseLevelCharacteristicDescription = IS and Project Based can be related to state courses with CourseLevelCharacteristicDescription = PBL. See the [Level Characteristics section](descriptors_resources.md#level-characteristics) for validation details.
+      - IS can only be related to state courses with CourseLevelCharacteristicDescription = IS and Project Based can be related to state courses with CourseLevelCharacteristicDescription = PBL. See the [Level Characteristics section](../reference/descriptors_resources.md#level-characteristics) for validation details.
       - Scheduled course work type cannot use CourseLevelCharacteristicDescription = PBL.
 
 2. Create CourseCourseAssociation records between the College Courses D or A and the District Course 2, which were created for this association.
@@ -335,7 +335,7 @@ Create the following CourseOffering Records:
 
 ### Description
 
-Ed-Fi Description: This entity represents a setting in which organized instruction of course content is provided, in-person or otherwise, to one or more students for a given period of time. A course offering may be offered to more than one section. Most MCCC CourseSectionInfo elements will be collected in the Ed-Fi Section Entity. _Note: in late 2021, the ``instructionMinutesPerTerm`` element was moved from the courseOffering resource to the section resource. Sandbox instances created prior to 12/22/2021 will not include this change, requiring vendors to initialize new sandbox instances in order to work with the latest configuration._
+Ed-Fi Description: This entity represents a setting in which organized instruction of course content is provided, in-person or otherwise, to one or more students for a given period of time. A course offering may be offered to more than one section. Most MCCC CourseSectionInfo elements will be collected in the Ed-Fi Section Entity. 
 
 ### Prerequisite Data
 
@@ -421,7 +421,7 @@ Ed-Fi Description: This association indicates the course sections to which a stu
         - **DP**: Direct Pay PSEO
         - **PB**: *Project Based* (if available)
 
-Please note the importance of the SectionEnrollmentType Descriptor in validating Project-Based and Independent Study courses as describe in the [Level Characteristics section](descriptors_resources.md#level-characteristics) of the Descriptors and Resources document.
+Please note the importance of the SectionEnrollmentType Descriptor in validating Project-Based and Independent Study courses as describe in the [Level Characteristics section](../reference/descriptors_resources.md#level-characteristics) of the Descriptors and Resources document.
 
 ## Resource: Grade
 
@@ -453,5 +453,4 @@ Notes:
 2. As of April 2021, LocalCreditEarned has an erroneous label/definition in Swagger of ""College credit earned". It should say "LEA credit earned".
 
 # Navigation
-- [Return to Sandbox Certification Overview](README.md)
-- [Advance to Digital Equity](sandbox_cert_f_digital_equity.md)
+- [Return to Sandbox Certification Overview](../README.md)
