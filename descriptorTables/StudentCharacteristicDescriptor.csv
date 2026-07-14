@@ -1,8 +1,0 @@
-"Mapping Method","Namespace","Descriptor Name","Code Value","Short Description","Description","Length of Short Desc"
-"Core","uri://education.mn.gov/StudentCharacteristicDescriptor","StudentCharacteristicDescriptor","1","Active Duty Parent (ADP)","Active Duty Parent (ADP)","24"
-"Core","uri://education.mn.gov/StudentCharacteristicDescriptor","StudentCharacteristicDescriptor","10","Applied for NSLP but did not qualify","Applied for National School Lunch Program but did not qualify","36"
-"Core","uri://education.mn.gov/StudentCharacteristicDescriptor","StudentCharacteristicDescriptor","2","American Indian - Alaskan Native (Minnesota)","American Indian - Alaskan Native (Minnesota)","44"
-"Core","uri://education.mn.gov/StudentCharacteristicDescriptor","StudentCharacteristicDescriptor","3","Migrant","Migrant","7"
-"Core","uri://education.mn.gov/StudentCharacteristicDescriptor","StudentCharacteristicDescriptor","4","Immigrant","Immigrant","9"
-"Core","uri://education.mn.gov/StudentCharacteristicDescriptor","StudentCharacteristicDescriptor","5","Recently Arrived English Learner (RAEL)","Recently Arrived English Learner (RAEL)","39"
-"Core","uri://education.mn.gov/StudentCharacteristicDescriptor","StudentCharacteristicDescriptor","6","Student with Limited or Interrupted Formal Education (SLIFE)","Student with Limited or Interrupted Formal Education (SLIFE)","60"

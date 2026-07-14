@@ -1,8 +1,0 @@
-"Mapping Method","Namespace","Descriptor Name","Code Value","Short Description","Description","Length of Short Desc"
-"Core","uri://education.mn.gov/RelationDescriptor","RelationDescriptor","CourtAppointedGuardian","CourtAppointedGuardian","CourtAppointedGuardian","22"
-"Core","uri://education.mn.gov/RelationDescriptor","RelationDescriptor","Father","Father","Father","6"
-"Core","uri://education.mn.gov/RelationDescriptor","RelationDescriptor","FathersSignificantOther","FathersSignificantOther","FathersSignificantOther","23"
-"Core","uri://education.mn.gov/RelationDescriptor","RelationDescriptor","Grandfather","Grandfather","Grandfather","11"
-"Core","uri://education.mn.gov/RelationDescriptor","RelationDescriptor","Grandmother","Grandmother","Grandmother","11"
-"Core","uri://education.mn.gov/RelationDescriptor","RelationDescriptor","Mother","Mother","Mother","6"
-"Core","uri://education.mn.gov/RelationDescriptor","RelationDescriptor","MothersSignificantOther","MothersSignificantOther","MothersSignificantOther","23"

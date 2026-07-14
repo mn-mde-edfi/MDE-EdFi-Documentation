@@ -1,8 +1,0 @@
-"Mapping Method","Namespace","Descriptor Name","Code Value","Short Description","Description","Length of Short Desc"
-"Extension","uri://education.mn.gov/EarlyEducationCourseLocationDescriptor","EarlyEducationCourseLocationDescriptor","1","Child's home","Child's home","12"
-"Extension","uri://education.mn.gov/EarlyEducationCourseLocationDescriptor","EarlyEducationCourseLocationDescriptor","2","School District","School District","15"
-"Extension","uri://education.mn.gov/EarlyEducationCourseLocationDescriptor","EarlyEducationCourseLocationDescriptor","3","Child care center","Child care center","17"
-"Extension","uri://education.mn.gov/EarlyEducationCourseLocationDescriptor","EarlyEducationCourseLocationDescriptor","4","Family child care home","Family child care home","22"
-"Extension","uri://education.mn.gov/EarlyEducationCourseLocationDescriptor","EarlyEducationCourseLocationDescriptor","7","Preschool (Community based)","Preschool (Community based)","27"
-"Extension","uri://education.mn.gov/EarlyEducationCourseLocationDescriptor","EarlyEducationCourseLocationDescriptor","8","Hospital or Medical Facility","Hospital or Medical Facility","28"
-"Extension","uri://education.mn.gov/EarlyEducationCourseLocationDescriptor","EarlyEducationCourseLocationDescriptor","9","Other","Other","5"
