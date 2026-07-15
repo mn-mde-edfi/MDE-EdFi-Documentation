@@ -1,8 +1,9 @@
 /* 
 Example JSON demonstrating a calendar record to be used in relation to a VPK program association.
 Notes:
-- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, using the Postman syntax convention.
-- Note that the grade no longer references a section for SR Plus, only "EE".
+- Variables are enclosed in double {{brackets}}, i.e. {{districtid}}, to represent variables that can be entered, 
+  using the Postman syntax convention.
+- Note that the grade no longer references a section for VPK, only "EE".
 */
 {
     "calendarCode": "VPKGradeEE",
