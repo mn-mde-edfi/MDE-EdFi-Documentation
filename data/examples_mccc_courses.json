@@ -29,7 +29,7 @@ Notes:
   "educationOrganizationReference": {
     "educationOrganizationId": {{districtid}}
   },
-  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA",
   "courseTitle": "HS Biology",
   "dateCourseAdopted": "2021-09-01",
   "highSchoolCourseRequirement": 0,
@@ -67,7 +67,7 @@ Notes:
   "educationOrganizationReference": {
     "educationOrganizationId": {{districtid}}
   },
-  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA",
   "courseTitle": "Algebra I",
   "dateCourseAdopted": "2021-09-01",
   "highSchoolCourseRequirement": 1,
@@ -102,7 +102,7 @@ Notes:
   "educationOrganizationReference": {
     "educationOrganizationId": {{districtid}}
   },
-  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA",
   "courseTitle": "Honors Spanish 400",
   "dateCourseAdopted": "2021-09-01",
   "highSchoolCourseRequirement": 0,
@@ -138,7 +138,7 @@ Notes:
   "educationOrganizationReference": {
     "educationOrganizationId": {{districtid}}
   },
-  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA",
   "courseTitle": "Intro College Economics 401",
   "dateCourseAdopted": "2021-09-01",
   "highSchoolCourseRequirement": 1,
@@ -173,7 +173,7 @@ Notes:
   "educationOrganizationReference": {
     "educationOrganizationId": {{districtid}}
   },
-  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA",
   "courseTitle": "Small Engines 101-A",
   "dateCourseAdopted": "2021-09-01",
   "highSchoolCourseRequirement": 0,
@@ -206,7 +206,7 @@ Notes:
   "educationOrganizationReference": {
     "educationOrganizationId": {{districtid}}
   },
-  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA",
   "courseTitle": "Surveying Certification",
   "dateCourseAdopted": "2021-09-01",
   "highSchoolCourseRequirement": 0,
@@ -239,7 +239,7 @@ Notes:
   "educationOrganizationReference": {
     "educationOrganizationId": {{districtid}}
   },
-  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA",
   "courseTitle": "SpecEd Life Science",
   "dateCourseAdopted": "2021-09-01",
   "highSchoolCourseRequirement": 0,
@@ -272,7 +272,7 @@ Notes:
   "educationOrganizationReference": {
     "educationOrganizationId": {{districtid}}
   },
-  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA",
   "courseTitle": "Individual-Duo Sports",
   "dateCourseAdopted": "2021-09-01",
   "highSchoolCourseRequirement": 0,
@@ -306,7 +306,7 @@ Notes:
   "educationOrganizationReference": {
     "educationOrganizationId": {{districtid}}
   },
-  "courseDefinedByDescriptor": "uri://ed-fi.org/CourseDefinedByDescriptor#LEA",
+  "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#LEA",
   "courseTitle": "Preschool ECSE",
   "dateCourseAdopted": "2021-09-01",
   "highSchoolCourseRequirement": 0,
