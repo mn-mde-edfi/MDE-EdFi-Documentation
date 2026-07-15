@@ -1,5 +1,9 @@
 # 2026-27 MDE Ed-Fi v6.2 ODS/API Documentation README
 
+## Additions
+The [CareerPathwayDescriptor](https://pub.education.mn.gov/edfidocs/CareerPathwayDescriptor.html) has been added to the Common Course Catalog (MCCC) Course resource starting in the 2026-2027 school year to support Career & Tech Education (CTE) courses.
+
+## Removals
 The following data collections are removed from MDE's Ed-Fi v6.2 ODS/API Data Model starting in the 2026-2027 school year:
 | # | Data Collection | Data Model Implementation | Implementation Date |
 | --- | ------------- | -------------- | ---------- |
