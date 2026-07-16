@@ -18,7 +18,7 @@
         "languages": [],
         "races": [
             {
-                "raceDescriptor": "uri://ed-fi.org/RaceDescriptor#Asian"
+                "raceDescriptor": "uri://education.mn.gov/RaceDescriptor#Asian"
             }
             ],
         "sexDescriptor": "uri://education.mn.gov/SexDescriptor#Male",
