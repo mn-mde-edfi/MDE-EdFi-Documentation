@@ -12,9 +12,6 @@ Then advance to the specific sections on Sandbox Certification Scenarios:
 - [Deleting Resources Certification Scenarios](sandbox_cert_h_deleting_resources.md)
 - [Joint Powers Certification Scenarios](sandbox_cert_j_joint_powers.md)
 
-The following section documents certification scenarios for future data collections that are currently postponed:
-- [**Postponed Data Collection** Certification Scenarios](sandbox_cert_k_postponed.md)
-
 ## Deadlines and Logistics
 Please consult MDE's [Ed-Fi web pages](https://education.mn.gov/MDE/dse/datasub/edfi/) or reach out to the Ed-Fi vendor support team by email (EdFiProjectSupportMNIT.MDE@state.mn.us) if you have questions on deadlines or any other vendor logistics.
 
