@@ -1,0 +1,45 @@
+{
+  
+        "educationOrganizationReference": {
+            "educationOrganizationId": 10625001
+        },
+        "studentReference": {
+            "studentUniqueId": "1010102"
+        },
+        "ancestryEthnicOrigins": [
+            {
+                "ancestryEthnicOriginDescriptor": "uri://education.mn.gov/AncestryEthnicOriginDescriptor#ai-notindicated"
+            },
+            {
+                "ancestryEthnicOriginDescriptor": "uri://education.mn.gov/AncestryEthnicOriginDescriptor#as-notindicated"
+            }
+        ],
+        "hispanicLatinoEthnicity": false,
+        "languages": [],
+        "races": [
+            {
+                "raceDescriptor": "uri://ed-fi.org/RaceDescriptor#Asian"
+            }
+            ],
+        "sexDescriptor": "uri://education.mn.gov/SexDescriptor#Male",
+        "studentCharacteristics": [
+            {
+            "studentCharacteristicDescriptor": "uri://education.mn.gov/StudentCharacteristicDescriptor#1"
+            }
+        ],
+        "studentIdentificationCodes": [],
+        "_ext": {
+            "mn": {
+                "birthDate": "2011-05-04",
+                "firstName": "Dustin",
+                "generationCodeSuffix": "Jr",
+                "lastSurname": "Baker",
+                "middleName": "John",
+                "optOutIndicators": [
+                    {
+                        "optOutIndicatorsDescriptor": "uri://education.mn.gov/OptOutIndicatorsDescriptor#MNC"
+                    }
+                ]
+            }
+        }
+    }
