@@ -1,18 +1,16 @@
-# Staging Environment Load and Quality Check
+# Student ID System Integration Testing
 
-At the completion of Scenario based testing in the Sandbox environment, MNIT will grant vendors a key and secret for the district(s) they are working with in the staging environment. In the staging environment, vendors will load actual student data, with student enrollment (studentSchoolAssociation), demographic (studentEducationOrganizationAssociation), program and calendar information. 
+MDE's Ed-Fi 6.2 API Test Sandbox environment does not support testing of MDE's Student ID System integrations. For SIS vendor testing of Student ID System integration, vendors must coordinate with MDE for a key and secret to test in the staging environment. In the staging environment, vendors will load actual student data, with student enrollment (studentSchoolAssociation), demographic (studentEducationOrganizationAssociation), program and calendar information. 
 
-The main URL for the Staging Environment is: ```https://test.api.education.mn.gov/edfiapi/```.
-
-As is MDE convention, the production URL is the same as test, except with the "test." prefix removed. **Please note the new URL format for connecting to MDE's Ed-Fi API for the 2025-26 school year and version 6.2.**
+The Ed-Fi 6.2 API URL for the Staging Environment is: ```https://stage.api.education.mn.gov/edfiapi/```.
 
 ## Ed-Fi / MARSS Identities API Integrations
 
-Vendors have the option of building in support for interfacing with the MN Student Identity System to create new MARSS Student IDs (Ed-Fi Unique Id) through an Ed-Fi Identities API implementation. Vendors will be able to test their State ID creation integrations in the Staging environment. 
+Vendors have the option of building in support for interfacing with the MN Student ID System to create new MARSS Student IDs (Ed-Fi Unique Id) through an Ed-Fi Identities API implementation. Vendors will be able to test their State ID creation integrations in the Staging environment. 
 
 Vendors must demonstrate their ability to create new Student IDs when a Student is created in the Student Information System. This would be accomplished by posting to the ```/identities``` endpoint. 
 
-Testing for the identities API can be conducted in the Staging environment. [Contact the MNIT Team](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us) partnering with MDE on EdFi for more details.
+Testing for the identities API can be conducted in the Staging environment. [Contact the MNIT Team](mailto:EdFiProjectSupportMNIT.MDE@state.mn.us) partnering with MDE on Ed-Fi for more details.
 
 ### Student Identity Process Overview
 The general process for identity creation is as follows: 
@@ -31,7 +29,7 @@ The general process for identity creation is as follows:
 }
 ```
 
-- The identities API validates the student information against the MN Student Identity System.
+- The identities API validates the student information against the MN Student ID System.
 - If no match is found in the Student Id System – the student id is created (this is equivalent to code 3002 in the SIS)
 - An HTTP response code ```201``` created is returned from the ODS/API.
 - If the Student ID System returns an error, the student id will fail to be created, and the ODS/API returns an HTTP status code ```400 Bad Request``` with the corresponding message for the error given (see specific errors below under Test 2).
@@ -80,9 +78,11 @@ Error|Description|Details
 Vendors will be expected to demonstrate a mechanism for timely reporting of ID creation errors back to users, either through the SIS user interface, or through a separate interface, or reporting method.
 
 ## Ed-Fi / MARSS Student Record Validation Test
-When Student Records are created or updated in the Ed-Fi ODS, the API will perform a look up against the MN State Student ID System to determine whether the student is associated to a valid student id.
+When Student records are initially created in the Ed-Fi ODS for the specified school year, MDE's Ed-Fi API performs a validation check against MDE's Student ID System to determine whether the student is associated to a valid state student ID (SSID). If the validation check passes, the Student record will be added to the Ed-Fi ODS.
 
-This validation feature will be enabled in the Staging Environment. Vendors must capture validation errors returned in the API response and surface these errors to district users. 
+NOTE: Once a Student record is created in the Ed-Fi ODS for the specified school year, the Ed-Fi API doesn't validate subsequent updates to that Student record in that school year. 
+
+This validation feature is enabled in the Staging Environment. Vendors must capture validation errors returned in the Ed-Fi API response and surface these errors to district users. 
 
 ### Student Validation Process Overview
 
