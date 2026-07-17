@@ -19,14 +19,14 @@ On the Swagger ODS / API Documentation v6.2 title page, please note:
 - The API Profile list is alphabetical, not chronological, and includes SIS Vendor API Profiles for both the current school year and the prior school year.
 - The year-specific SIS Vendor API Profiles are named by the school year. For example, the **2026-2027** school year data collection profile is named _Minnesota-Twenty-Six-Twenty-Seven-SISVendor-Profile_. 
 - The Profile _Minnesota-Preview-SISVendor-Profile_ includes some resources that are currently not released and may not be used for production data submission to MDE's Ed-Fi API.
-- The _Assessment-Read-Only_ and _Assessment-Read-Write"_ profile are only used for statewide assessment vendor integration.
+- The _Assessment-Read-Only_ and _Assessment-Read-Write_ profile are only used for statewide assessment vendor integration.
 
- Once inside the Swagger UI, click the "Authorize" button to enter in the client id (key) and client secret you created in the Sandbox Admin site. This will allow you to test GET, PUT, and other API request via the Swagger UI. Do not use the "populated" credentials provided by default for anything other than general exploration.
+ Once inside the Swagger UI, click the "Authorize" button to enter in the client id (key) and client secret you created in the Test Sandbox Administration Portal. This will allow you to test GET, PUT, and other API request via the Swagger UI. Do not use the "populated" credentials provided by default for anything other than general exploration.
 
 ### Sandbox Base and OAuth URLs
 Developers can further test their code integrations at the URLs in this section.
 - The base URL for the test ODS/API is: ```https://test.api.education.mn.gov/edfiapi/```
-- The Data Management URL is: ```test.api.education.mn.gov/edfiapi/data/v3```
+- The Data Management URL is: ```https://test.api.education.mn.gov/edfiapi/data/v3```
 
 #### Extension vs. Core Resources
 Note that Ed-Fi URLs vary based on whether or not core Ed-Fi standard or MN extensions are being accessed:
@@ -39,7 +39,7 @@ Note that Ed-Fi URLs vary based on whether or not core Ed-Fi standard or MN exte
 
 The Sandbox ODS/API oauth URL is: ```https://test.api.education.mn.gov/edfiapi/oauth/```
 
-Authentication In Ed-Fi 3.x ODS/API uses two-legged OAuth 2.0 Client Credentials Grant Flow. More information and sample API calls are located in [the Ed-Fi tech docs](https://techdocs.ed-fi.org/display/ODSAPIS3V520/Authorization).
+See the Ed-Fi 6.2 [API Client Developer's Guide](https://docs.ed-fi.org/reference/ed-fi-api/6.2/client-developers-guide/) for documentation on Ed-Fi API authentication and authorization.
 
 ## Sandbox Tips
 - In the staging and production environments, SIS vendor API keys will be associated with a claim set limiting access to only the API resources included in this documentation. This claim set has been enabled in the Sandbox environment. When you access a resource not included in the claim set you will receive the following message in the response: ```Access to the resource could not be authorized. Are you missing a claim?```
