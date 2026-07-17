@@ -453,4 +453,4 @@ Notes:
 2. As of April 2021, LocalCreditEarned has an erroneous label/definition in Swagger of ""College credit earned". It should say "LEA credit earned".
 
 # Navigation
-- [Return to Sandbox Certification Overview](../README.md)
+- [Return to Sandbox Certification Overview](README.md)
