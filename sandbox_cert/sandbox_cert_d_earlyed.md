@@ -5,7 +5,7 @@ For more information, see the [Early Education Enrollment and Parent collection 
 
 ## Resource: StudentSchoolAssociations
 **Description:**
-This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation. Please take the time to read the [Instructions on Constructing SSAs for Multiple Early Education Program Associations](../2024-25%20MDE%20Ed-Fi%20Documentation/ssa_construction_for_multiple_ee.md) document with respect to handling SSAs when multiple SEEPAs are involved.
+This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation. Please take the time to read the [Instructions on Constructing SSAs for Multiple Early Education Program Associations](../reference/ssa_construction_for_multiple_ee.md) document with respect to handling SSAs when multiple SEEPAs are involved.
 
 **Prerequisite Data:**
 - Students (create 6 students, referenced as students A-F below)
@@ -102,7 +102,7 @@ None
         - lastSurname
         - MiddleName
         - generationCodeSuffix
-        - [highestCompletedLevelOfEducationDescriptor](../reference/descriptors_resources.md#levelofeducationdescriptors)
+        - [highestCompletedLevelOfEducationDescriptor](../reference/early_ed_data_reporting.md)
         - householdIncome
         - householdSize
         - receivingInterpreterAssistance
@@ -120,7 +120,7 @@ This association relates students to their parents, guardians, or caretakers.
 - Students
 - Parents
 - StudentSchoolAssociations
-- Calendar Records with an "EE" grade, but with specific length of day and instructional days for VPK and School Readiness Plus
+- Calendar Records with an "EE" grade, but with specific length of day and instructional days for VPK
 
 **Scenarios:**
 1.	Submit Student Parent Association Record for the Early Education Student in Gradelevel EE
@@ -150,7 +150,7 @@ This association indicates any relationship between a student and an education o
 This association now represents Students in either MARSS (Early Childhood Special Education or Voluntary Pre-Kindergarten) or non-MARSS (School Readiness or Early Childhood Family Education) early education programs. 
 
 Notes:
-- MARSS Early Childhood Screening (aka Preschool Screening) is covered in [this program association](./sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations).
+- MARSS Early Childhood Screening (aka Preschool Screening) is covered in the [StudentEarlyChildhoodScreeningProgramAssociation](./sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations).
 - The "EE-SR" and "EE-ECFE" program types are the programs intended for use with Early Education Data. These can also be used to cover the Early Ed programs formerly described as "SR/AB" and "ECFE/AB", respectively.
 - "End Reason Code" below correlates to "reasonExitedDescriptor" (see the similarly named Data Mapping Matrix tab). Please note that this is important information to include on the SEEPA record especially for non-MARSS program associations.
 - Note that a calendar reference has been added to the VPK scenarios in order to relate specific calendar records to sections of that program. Sample JSON files for calendars and program associations are available in the [EE-MARSS Ambiguity Resolution](../data/EE-MARSS%20Ambiguity%20Resolution/) folder of the data directory.
@@ -230,7 +230,7 @@ Notes:
     - Create a new SSA record, **setting the begin date to 10/16/2023** and defaulting the end date to the end of the school year
     - Change the EE-SR association to EE-VPK, setting the begin and end dates to match the new SSA
     - Demonstrate how both a Program Section Descriptor and a Calendar Reference will now be required on the EE-VPK program association, describing Section J for this school year
-    - (Note: the main purpose of this scenario is to demonstrate how VPK requires a program section descriptor and calendar reference. But as described in the [SSA construction for multiple EE](../2023-24%20MDE%20Ed-Fi%20Documentation/ssa_construction_for_multiple_ee.md) document, two MARSS programs would overlap only in rare circumstances - which is why we first ask for the ECSE association to be ended here.)
+    - (Note: the main purpose of this scenario is to demonstrate how VPK requires a program section descriptor and calendar reference. But as described in the [SSA construction for multiple EE](../reference/ssa_construction_for_multiple_ee.md) document, two MARSS programs would overlap only in rare circumstances - which is why we first ask for the ECSE association to be ended here.)
 10.	Please demonstrate how your software differentiates between various program choices, in particular how users will tell the difference between Early Childhood Screening (EE-ECS) and Early Childhood Special Education (EE-ECSE).
 
 ## Resource: StudentHomelessProgramAssociation
