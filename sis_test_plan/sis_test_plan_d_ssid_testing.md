@@ -15,7 +15,7 @@ Testing for the identities API can only be conducted in MDE's Ed-Fi Staging envi
 ### Student Identity Process Overview
 The general process for identity creation is as follows: 
 
-- A Vendor posts a new Student Identity including the following properties to the ODS/API identities end-point:
+- A Vendor posts a new Student Identity including the following properties to the identities API end-point:
 ```javascript
 {
  "stateStudentId": "000010000000",
@@ -113,7 +113,7 @@ Error|Description|Details
 
 **Response** 
 - The Ed-Fi Student record is unable to post.
-- An HTTP status code ```400 Bad Request``` and the corresponding message for the error given is returned from the ODS/API.
+- An HTTP status code ```400 Bad Request``` and the corresponding message for the error given is returned from the API endpoint.
 - Vendor Captures error and displays for district user
 
 # Navigation
