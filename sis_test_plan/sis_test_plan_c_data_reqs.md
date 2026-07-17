@@ -141,7 +141,7 @@ This entity represents an individual who performs specified activities for any p
 
 **Description**
 
-*Ed-Fi Description*: This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students. **MDE automatically creates programs for each LEA** with the program types identified in the [ProgramTypeDescriptor table](https://pub.education.mn.gov/edfidocs/ProgramTypeDescriptor.html).
+*Ed-Fi Description*: This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students. **MDE automatically creates programs for each LEA** with the program types identified in the [ProgramTypeDescriptor](https://pub.education.mn.gov/edfidocs/ProgramTypeDescriptor.html) table.
 
 ## Ed-Fi Model Dependency
 Ed-Fi uses a data-dependency security model that enforces the order of creation when inserting various records via the API. This is often encountered via API errors such as the following:
@@ -149,7 +149,7 @@ Ed-Fi uses a data-dependency security model that enforces the order of creation 
 
 The Ed-Fi Alliance calls this type of error "Dependency order enforced by authorization". More documentation on dependency order by entity relationships or by authorization is available in the Ed-Fi 6.2 Tech Docs [Resource Dependency Order](https://docs.ed-fi.org/reference/ed-fi-api/6.2/client-developers-guide/resource-dependency-order/) documentation.
 
-The [Ed-Fi Data Record Dependency Model](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_mde_collections.pdf?raw=true) provides a dependency order overview for resources supported by MDE's Ed-Fi API. Graphs demonstrating the dependencies of various data resources in MDE's collections are below. 
+The [Ed-Fi Data Record Dependency Model](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_mde_collections.pdf) provides a dependency order overview for resources supported by MDE's Ed-Fi API. Graphs demonstrating the dependencies of various data resources in MDE's collections are below. 
 
 ### MARSS collection
 ![Ed-Fi Model Dependency Graph for MARSS](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_marss_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for MARSS")
