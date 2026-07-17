@@ -1,6 +1,6 @@
 # Student ID System Integration Testing
 
-MDE's Ed-Fi 6.2 API Test Sandbox environment does not support testing of MDE's Student ID System integrations. For SIS vendor testing of Student ID System integration, vendors must coordinate with MDE for a key and secret to test in the MDE's Ed-Fi Staging environment. In the Staging environment, vendors will load actual student data, with student enrollment (studentSchoolAssociation), demographic (studentEducationOrganizationAssociation), program and calendar information. 
+MDE's Ed-Fi 6.2 API Test Sandbox environment does not support testing of MDE's Student ID System integrations. For SIS vendor testing of Student ID System integration, vendors must coordinate with MDE for a key and secret to test in the MDE's Ed-Fi Staging environment. In the Staging environment, vendors will load actual student data to validate against MDE's Student ID System. 
 
 The Ed-Fi 6.2 API URL for the Staging environment is: ```https://stage.api.education.mn.gov/edfiapi/```.
 
@@ -31,14 +31,14 @@ The general process for identity creation is as follows:
 
 - The identities API validates the State Student ID against the MN Student ID System.
 - If no match is found in the Student ID System – the State Student ID is created (this is equivalent to code 3002 in the SIS)
-- An HTTP response code ```201``` created is returned from the ODS/API.
-- If the Student ID System returns an error, the State Student ID will not be created, and the Ed-Fi API returns an HTTP status code ```400 Bad Request``` with the corresponding message for the error given (see specific errors below under Test 2).
+- An HTTP response code ```201``` created is returned from the API endpoint.
+- If the Student ID System returns an error, the State Student ID will not be created, and the API endpoint returns an HTTP status code ```400 Bad Request``` with the corresponding message for the error given (see specific errors below under Test 2).
 - If an error is returned, that error should be displayed by the SIS to the district user, who will then need to use MDE's Student ID System to resolve the issue. More information about that system is in [Appendix C of the MARSS manual](https://education.mn.gov/mdeprod/idcplg?IdcService=GET_FILE&dDocName=MDE074459&RevisionSelectionMethod=latestReleased&Rendition=primary).
 
 #### Notes
 - SIS Vendors are expected to create initial student identifiers for students, similar to MARSS. Typically the first four digits of the identifier is the district number of the first district to enroll the student. If the State Student ID is less than 13 characters long, the Student ID System will prepend zeroes in order to make the length of the ID exactly 13 characters long.
-- The Identities API is only intended to create a new student **ID**, so that the creation of the student resource via Ed-Fi can succeed.
-- The endpoint does not enable a "GET" or "search" function, so unsuccessful creation attempts will not return a list of close matches.
+- The Identities API is only intended to create a new **State Student ID**, so that the creation of the student resource via Ed-Fi can succeed.
+- The API endpoint does not enable a "GET" or "search" function, so unsuccessful creation attempts will not return a list of close matches.
 
 ### Create State Student ID Test 1
 
@@ -62,7 +62,7 @@ A successful test will produce a response of ```201: created```.
 
 ### Create State Student ID Test 2 
 
-**Description**: Vendor posts a new Ed-Fi Student ID to the API identities endpoint in order to generate the following error conditions: 
+**Description**: Vendor posts a new Ed-Fi Student ID to the API endpoint in order to generate the following error conditions: 
 Error|Description|Details
 ---|---|---
 3000|(Input SSID not equal SSID)|Student identifying information given matches a single student, but the State Student Id specified as input does not match the official State Student Id of the matched student.
@@ -93,14 +93,14 @@ This validation feature is enabled in the Staging Environment. Vendors must capt
 
 #### Validate Student ID Test 1
 
-**Description**: Vendor posts a new valid Ed-Fi Student record to the ODS/API Student end-point. Vendor submits Ed-Fi student record to the student's resource endpoint using a valid student id and associated to the same student.
+**Description**: Vendor posts a new valid Ed-Fi Student record to the Student API end-point. Vendor submits Ed-Fi student record to the student's resource endpoint using a valid State Student ID and associated to the same student.
 
 **Response** 
 ```201: created```
 
 #### Validate Student ID Test 2
 
-**Description**: Vendor posts a new Ed-Fi Student record to the ODS/API Student end-point for the following error conditions:
+**Description**: Vendor posts a new Ed-Fi Student record to the Student API end-point for the following error conditions:
 Error|Description|Details
 ---|---|---
 3000|(Input SSID not equal SSID)|Student identifying information given matches a single student, but the State Student Id specified as input does not match the official State Student Id of the matched student.
