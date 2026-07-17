@@ -22,7 +22,7 @@ The [reference](./reference) folder contains additional documentation and links 
 - [Ed-Fi Resources](https://education.mn.gov/MDE/dse/datasub/edfi/doc/) on MDE's website hosts additional documentation for districts / LEAs on state data reporting using Ed-Fi.
 
 ## Sample Data
-JSON files of sample data can be found in the [data directory](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/tree/master/data). These files are intended to assist developers with understanding the Ed-Fi ODS API.
+JSON files of sample data can be found in the [data](./data) folder. These files are intended to assist developers with understanding the Ed-Fi ODS API.
 
 ## Issues List
 The MDE team maintains a [list of known issues and bugs](https://education.mn.gov/MDE/dse/datasub/edfi/issues/) on MDE's public web site.
