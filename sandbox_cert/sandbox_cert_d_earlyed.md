@@ -150,7 +150,7 @@ This association indicates any relationship between a student and an education o
 This association now represents Students in either MARSS (Early Childhood Special Education or Voluntary Pre-Kindergarten) or non-MARSS (School Readiness or Early Childhood Family Education) early education programs. 
 
 Notes:
-- MARSS Early Childhood Screening (aka Preschool Screening) is covered in the certification scenario for[StudentEarlyChildhoodScreeningProgramAssociation](./sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations).
+- MARSS Early Childhood Screening (aka Preschool Screening) is covered in the certification scenario for [StudentEarlyChildhoodScreeningProgramAssociation](./sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations).
 - The "EE-SR" and "EE-ECFE" program types are the programs intended for use with Early Education Data. These can also be used to cover the Early Ed programs formerly described as "SR/AB" and "ECFE/AB", respectively.
 - "End Reason Code" below correlates to "reasonExitedDescriptor" (see the similarly named Data Mapping Matrix tab). Please note that this is important information to include on the SEEPA record especially for non-MARSS program associations.
 - Note that a calendar reference has been added to the VPK scenarios in order to relate specific calendar records to sections of that program. Sample JSON files for calendars and program associations are available in the [EE-MARSS Ambiguity Resolution](../data/EE-MARSS%20Ambiguity%20Resolution/) folder of the data directory.
@@ -184,7 +184,7 @@ Notes:
     - Membership = 40
     - Attendance = 30
     - Submit funding sources PF, CC and TITLE
-3.	Demonstrate how **Student A** can be simultaneously associated with an Early Childhood Screening Association (aka Preschool Screening) with the same Begin Date of 9/5/2023. (In other words, add an Early Childhood Screening Association record for Student A. Reference the specific [StudentEarlyChildhoodScreeningProgramAssociation scenario](sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations) for more information.)
+3.	Demonstrate how **Student A** can be simultaneously associated with an Early Childhood Screening Association (aka Preschool Screening) with the same Begin Date of 9/5/2023. (In other words, add an Early Childhood Screening Association record for Student A. Reference the specific [StudentEarlyChildhoodScreeningProgramAssociation](sandbox_cert_c_spas.md#resource-studentearlychildhoodscreeningprogramassociations) scenario for more information.)
 4.	Associate **Student B** with an EE-ECFE Program 
     - Begin Date: 10/6/2023
     - End Date: 6/11/2024 (default to last day in the school year)
