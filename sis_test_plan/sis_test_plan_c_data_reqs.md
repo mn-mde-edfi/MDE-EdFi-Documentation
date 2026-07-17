@@ -198,4 +198,3 @@ As described above, each student must first have a StudentSchoolAssociation reco
 
 # Navigation
 - [Return to SIS Test Plan Overview](README.md)
-- [Advance to Staging Environment Load and Quality Check](sis_test_plan_d_staging.md)
