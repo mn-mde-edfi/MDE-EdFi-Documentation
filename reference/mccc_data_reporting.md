@@ -19,6 +19,7 @@ To get the list of SEA-defined courses, perform a GET operation against the "cou
       }
     },
     "courseCode": "10001",
+    "careerPathwayDescriptor": "uri://education.mn.gov/CareerPathwayDescriptor#802",  /* for CTE courses */
     "courseDefinedByDescriptor": "uri://education.mn.gov/CourseDefinedByDescriptor#SEA",
     "courseDescription": "Courses introduce computers and peripheral devices, the functions and uses of computers, the language used in the computer industry, and computer applications. They typically explore legal and ethical issues associated with computer use, as well as how computers influence modern society. Students may also be required to perform some computer operations.  Careers related to computer hardware and software are often investigated.",
     "courseTitle": "Introduction to Computers",
@@ -41,7 +42,7 @@ To get the list of SEA-defined courses, perform a GET operation against the "cou
 
 ```
 
-Given those course records, districts will be able to relate local course records to SEA-defined courses via course-to-course association records. From there, student attendance, grades, etc can be submitted on the local courses. __Note:__ As of April 12, 2021, MDE and its contractors identified an issue with the levelCharacteristics of courses loaded into the 2021-2022 Sandboxes, which was rectified on April 29,2021. Sandboxes created before that date will have extra characteristics on the SEA courses.
+Given those course records, districts will be able to relate local course records to SEA-defined courses via course-to-course association records. From there, student attendance, grades, etc can be submitted on the local courses. 
 
 #### Course Data Elements and Validation
 This section contains information about the Course resource, including data elements within it and specific validation scenarios we want vendors to be aware of. See the individual sections below. In addition:
@@ -58,13 +59,8 @@ LEAs and vendors will need to understand the validation rules around course leve
 
 *It is important to note that UC, MM, IS, and PBL characteristics are **not actually carried** on the LEA-defined (District) course records. Instead, when they are associated the SEA-defined courses via ```courseCourseAssociation``` records, the validations should occur through other data elements, as described above. Getting the SEA-defined course records (see [SEA Defined Courses](#sea-defined-courses)) reveals which of those courses are assigned these level characteristics.
 
-#### sequenceLimit vs. Number of Parts
-In 2021 MDE staff determined that our Ed-Fi implementation contains redundant elements in the "course" entity: numberOfParts (Ed-Fi core) and sequenceLimit (MN extension). In order to increase alignment with core Ed-Fi components, we decided to remove the use of sequenceLimit and rely on numberOfParts for the same information.
-
 #### College Courses
 When setting up College Courses (i.e. for Dual Enrollment, Articulation and Direct Pay PSEO), you will need an ```educationOrganizationId``` within the ```educationOrganizationReference```. The IDs to use in this element come from MDE ORG and follow the [district pattern](../sis_test_plan/sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids). The identifiers can be acquired via the API at the ```/ed-fi/postSecondaryInstitutions``` endpoint, within the ```postSecondaryInstitutionId``` element. Each record in that list will also contain a cross-reference to the USDE OPE IDs inside the ```educationOrganizationIdentificationSystemDescriptor```, labeled as ```uri://ed-fi.org/EducationOrganizationIdentificationSystemDescriptor#USDE - OPE```. 
-
-_Note_: Sandboxes created before May 7, 2021 had only approximately 12 post-secondary institutions loaded in. Sandboxes created on or after that date had at least 100 records for testing. In development, staging, and production servers, records will be updated during regular synch processes.
 
 ### Section Enrollment Type Descriptor for MCCC
 MCCC uses the Section enrollment Type Descriptor to handle what was previously called _Student Record Type_. The Ed-Fi implementation uses this descriptor on the student section association. The table below "maps" the MCCC student record types to the Ed-Fi descriptor code values.

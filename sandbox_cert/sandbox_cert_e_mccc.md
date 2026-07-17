@@ -136,6 +136,7 @@ Including the following elements:
   - Number of Parts
   - LocalEducationAgencyId (this **must** be the LEA organization ID - local courses cannot be validated via a school/site ID)
   - CourseTitle
+  - CareerPathwayDescriptor (for Career and Technical Education courses only)
   - CourseDefinedByDescriptorId = "LEA"
   - CourseIdentificationCode - repeat the CourseCode (this is an ed-fi requirement)
   - CourseIdentificationSystemDescriptor = "LEA course code"
