@@ -1,5 +1,5 @@
 # Data Requirements and API Resources
-This document is part of the MDE Ed-Fi [Vendor and District Test Plan](README.md).  For details on the API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios](../sandbox_cert/README.md) document.
+This document is part of the MDE Ed-Fi [SIS Vendor and District Test Plan](README.md).  For details on the API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios](../sandbox_cert/README.md) document.
 
 ## API Documentation
 For each of the resources described in this document, the elements/properties required are included and browseable in the Sandbox Swagger UI (aka "Swagger") under the current profile. (More information about Swagger is in the [Sandbox Certification Testing](sis_test_plan_b_cert_testing.md) document.)
@@ -147,9 +147,9 @@ This entity represents an individual who performs specified activities for any p
 Ed-Fi uses a data-dependency security model that enforces the order of creation when inserting various records via the API. This is often encountered via API errors such as the following:
 >```Authorization denied. The claim does not have any established relationships with the requested resource.```
 
-The Ed-Fi Alliance calls this type of error "Dependency order enforced by authorization". More documentation on dependency order by entity relationships or by authorization is available in the Ed-Fi 6.v Tech Docs [Resource Dependency Order](https://docs.ed-fi.org/reference/ed-fi-api/6.2/client-developers-guide/resource-dependency-order/) documentation.
+The Ed-Fi Alliance calls this type of error "Dependency order enforced by authorization". More documentation on dependency order by entity relationships or by authorization is available in the Ed-Fi 6.2 Tech Docs [Resource Dependency Order](https://docs.ed-fi.org/reference/ed-fi-api/6.2/client-developers-guide/resource-dependency-order/) documentation.
 
-Graphs demonstrating the dependencies of various data resources in MDE's collections are below, and a [basic overview PDF](images/ed-fi_model_dependency_mde_collections.pdf) of the various MDE collections is available.
+The [Ed-Fi Data Record Dependency Model](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_mde_collections.pdf?raw=true) provides a dependency order overview for resources supported by MDE's Ed-Fi API. Graphs demonstrating the dependencies of various data resources in MDE's collections are below. 
 
 ### MARSS collection
 ![Ed-Fi Model Dependency Graph for MARSS](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ed-fi_model_dependency_marss_3.1.1.PNG?raw=true "Ed-Fi Model Dependency Graph for MARSS")
