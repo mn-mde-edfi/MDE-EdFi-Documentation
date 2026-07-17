@@ -1,23 +1,23 @@
 # Data Requirements and API Resources
-This document is part of the MDE Ed-Fi [Vendor and District Test Plan](README.md).  For details on the API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](/sandbox_cert/README.md)
+This document is part of the MDE Ed-Fi [Vendor and District Test Plan](README.md).  For details on the API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios](../sandbox_cert/README.md) document.
 
 ## API Documentation
-For each of the resources described in this document, the elements/properties required are included and browseable in the Sandbox Swagger UI (aka "Swagger") under the current profile. (More information about Swagger is in the [Sandbox Certification Testing document](sis_test_plan_b_cert_testing.md).)
+For each of the resources described in this document, the elements/properties required are included and browseable in the Sandbox Swagger UI (aka "Swagger") under the current profile. (More information about Swagger is in the [Sandbox Certification Testing](sis_test_plan_b_cert_testing.md) document.)
 
 ### Example
 As an example, to view the required resource properties for a **studentSchoolAssociation**, open the "POST" action in Swagger:
 ```POST /ed-fi/studentSchoolAssociations Creates or updates resources based on the natural key values of the supplied resource.```
 - _Note:_ "ed-fi" in the path above indicates that this is a core resource.
 
-Properties in a **studentSchoolAssociation** can be viewed as an [example/template JSON object](data\example_template_studentSchoolAssociation.json) by selecting **"Example Value"**:
+Properties in a **studentSchoolAssociation** can be viewed as an [example/template JSON object](../data/example_template_studentSchoolAssociation.json) by selecting **"Example Value"**:
 ![ODS API Swagger studentSchoolAssociations Screen Capture](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/ods_api_swagger_studentSchoolAssociations_3.1.1.png?raw=true "ODS API studentSchoolAssociations Example Value")
 
-Definitions and Data Types in the **studentSchoolAssociation** can be viewed by selecting **“Model”** just to the right of the "Example Value" option. Required components are marked with a red *. Often, the actual data posting for an individual record can be much less than what is in the model, as demonstrated in [this example record](data\example_value_studentSchoolAssociation.json).
+Definitions and Data Types in the **studentSchoolAssociation** can be viewed by selecting **“Model”** just to the right of the "Example Value" option. Required components are marked with a red *. Often, the actual data posting for an individual record can be much less than what is in the model, as demonstrated in [this example record](../data/example_value_studentSchoolAssociation.json).
 
 ## Mapping Documentation
 For context around how each MDE collection "maps" to the Ed-Fi Data Standard please view the Mapping Matrix spreadsheets published in the "(YYYY-YY School Year) MDE Ed-Fi Documentation" folders [at the top of this repository](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation).
 
-Each school year's Data Mapping Matrix spreadsheet includes the mappings between MDE elements and Ed-Fi core and extension entities and elements, in the **Data Elements** tab. Whereas previously these spreadsheets also contained tabs for custome descriptor values, those are now accessible within the [descriptorTables folder](./descriptorTables/). (See the "AboutDescriptorTables" markdown document within that folder.)
+Each school year's Data Mapping Matrix spreadsheet includes the mappings between MDE elements and Ed-Fi core and extension entities and elements, in the **MCCC Elements** tab. See the [MDE Ed-Fi API Descriptor Tables](https://pub.education.mn.gov/edfidocs/index.html) website for descriptor code values.
 
 ## Education Organization Id usage by Resource
 
@@ -38,7 +38,7 @@ Education Organization References in the Ed-Fi API allow an API client to submit
 | GradingPeriod | SchoolReference | SchoolId |
 
 ## API Resources and Certification Scenarios
-For details on the current API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](/sandbox_cert/README.md). That documentation contains resources and scenarios for the various programs MDE has incorporated into Ed-Fi.
+For details on the current API Resources and Certification Scenarios, see the [Sandbox Certification Scenarios documentation](../sandbox_cert/README.md). That documentation contains resources and scenarios for the various programs MDE has incorporated into Ed-Fi.
 
 ## Read-Only API endpoints 
 Several of the required data elements are provided by MDE within the ODS. This section details those elements. Vendors can pull this data into their SIS databases by using GET requests against the ODS API. (See the Schools section below for details)
@@ -54,13 +54,13 @@ This entity represents an administrative unit at the local level which exists pr
 This entity represents an educational organization that includes staff and students who participate in classes and educational activity groups **All required School data are loaded by MDE.**
 
 #### Requesting Schools from the API
-GET requests against the API can be used to obtain lists of schools, which can be useful for populating a list of reporting organizations to be used in a Student Education Organization Responsibility Association (see the [Joint Powers Certification](./sandbox_cert_j_joint_powers.md) document).
+GET requests against the API can be used to obtain lists of schools, which can be useful for populating a list of reporting organizations to be used in a Student Education Organization Responsibility Association (see the [Joint Powers Certification](../sandbox_cert/sandbox_cert_j_joint_powers.md) document).
 
 Some example requests:
 - ``{{ApiUrl}}/ed-fi/schools?totalCount=true&limit=50&offset=0`` will obtain the first 50 schools in the ODS, and a total count will be returned in the Header of the response. That total count can be used to determine how many paginated requests to make in order to acquire a complete list. (The default limit is 25, and the maximum is 500.)
 - ``{{ApiUrl}}/ed-fi/schools?limit=50&offset=0&localEducationAgencyId=616004000`` will obtain the first 50 schools for [Freshwater Education District 6004-61](https://pub.education.mn.gov/MdeOrgView/organization/show/7878).
 
-An example JSON response, with some annotations, is below. The response will include the "schoolId", which is the Ed-Fi style organization ID, which can be further broken down into district type, district number, and school number, as detailed in [this section on MN district and school IDs](./sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids).
+An example JSON response, with some annotations, is below. The response will include the "schoolId", which is the Ed-Fi style organization ID, which can be further broken down into district type, district number, and school number, as detailed in [this section on MN district and school IDs](sis_test_plan_b_cert_testing.md#minnesota-district-and-school-ids).
 ```JSON
 {
         "id": "745bfcdfe80a44d0bdeebf881f245266",
@@ -141,13 +141,13 @@ This entity represents an individual who performs specified activities for any p
 
 **Description**
 
-*Ed-Fi Description*: This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students. **MDE automatically creates programs for each LEA** with the program types identified in the [ProgramTypeDescriptor table](/descriptorTables/ProgramTypeDescriptor.csv).
+*Ed-Fi Description*: This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students. **MDE automatically creates programs for each LEA** with the program types identified in the [ProgramTypeDescriptor table](https://pub.education.mn.gov/edfidocs/ProgramTypeDescriptor.html).
 
 ## Ed-Fi Model Dependency
 Ed-Fi uses a data-dependency security model that enforces the order of creation when inserting various records via the API. This is often encountered via API errors such as the following:
 >```Authorization denied. The claim does not have any established relationships with the requested resource.```
 
-The Ed-Fi Alliance calls this type of error "Dependency order enforced by authorization". More documentation on dependency order by entity relationships or by authorization is available in the [Ed-Fi 5.2 tech docs](https://techdocs.ed-fi.org/display/ODSAPIS3V520/Resource+Dependency+Order).
+The Ed-Fi Alliance calls this type of error "Dependency order enforced by authorization". More documentation on dependency order by entity relationships or by authorization is available in the Ed-Fi 6.v Tech Docs [Resource Dependency Order](https://docs.ed-fi.org/reference/ed-fi-api/6.2/client-developers-guide/resource-dependency-order/) documentation.
 
 Graphs demonstrating the dependencies of various data resources in MDE's collections are below, and a [basic overview PDF](images/ed-fi_model_dependency_mde_collections.pdf) of the various MDE collections is available.
 
