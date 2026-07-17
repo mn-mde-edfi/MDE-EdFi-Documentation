@@ -16,8 +16,7 @@ By serving documentation in multiple formats, our goal is to increase vendor acc
 The new MDE [Ed-Fi API Descriptor Tables](https://pub.education.mn.gov/edfidocs/) website is generated from MDE's Ed-Fi API for the current school year.  This website replaces the old descriptor table CSV export files.
 
 ## Additional Documentation
-The following additional documentation and links may be useful to Districts and Vendors:
-- [Descriptors and Resources](./reference/descriptors_resources.md). This document contains additional information about specific descriptors and data resources that can prove useful in understanding MDE's Ed-Fi implementation.
+The [reference](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/reference) folder contains additional documentation and links may be useful to Districts and Vendors, including:
 - [Transactional Update Procedures](./reference/transactional_updates.md) covers some of the core concepts of updating records with individual transactions in lieu of bulk uploads, including some examples from Ed-Fi to illustrate.
 - [Common Ed-Fi Errors](./reference/common_errors.md) provides additional documentation on some types of API errors that can arise for vendors and LEAs.
 - [Ed-Fi Resources](https://education.mn.gov/MDE/dse/datasub/edfi/doc/) on MDE's website hosts additional documentation for districts / LEAs on state data reporting using Ed-Fi.
