@@ -3,11 +3,11 @@ For MARSS data reporting, Minnesota has several education organizations with a j
 
 These joint powers agreements pose a challenge for syncing MARSS data to MDE using Ed-Fi. Typically student data must first be shared between the joint powers district and their member districts before reporting MARSS data to MDE.
 
-During the 2024-25 school year, MDE will pilot Ed-Fi support for students served in programs under these joint powers agreements. The patterns and scenarios listed here are intended to help vendors understand how the Ed-Fi API can support a data submission via the Student Education Organization Responsibility Association (SEORA), and typical situations when such a submission is desirable.
+The patterns and scenarios listed here are intended to help vendors understand how the Ed-Fi API can support a data submission via the Student Education Organization Responsibility Association (SEORA), and typical situations when such a submission is desirable.
 
 ## Reference Information
 In order to facilitate understanding of these situations, patterns, and scenarios, we have provided the following reference documents for vendors:
-- The [Joint Powers Diagram](../2024-25%20MDE%20Ed-Fi%20Documentation/Joint%20Powers%20District%20Scenarios%20Diagram.pdf) that compares typical Ed-Fi submissions for MARSS data to a submission that leverages a SEORA record. This diagram explains the purpose behind those two situations and provides other useful notes.
+- The [Joint Powers Diagram](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/2024-25%20MDE%20Ed-Fi%20Documentation/Joint%20Powers%20District%20Scenarios%20Diagram.pdf) that compares typical Ed-Fi submissions for MARSS data to a submission that leverages a SEORA record. This diagram explains the purpose behind those two situations and provides other useful notes.
 - The [Certification Pattern Spreadsheet](../2024-25%20MDE%20Ed-Fi%20Documentation/Joint_Powers_Vendor_Certification_Pattern_Data.xlsx) that provides a readme explanatory tab, and tabs with example data for each of the two patterns below, along with additional useful information.
 
 The MDE and MNIT teams highly recommend reviewing these documents before programming an implementation of SEORA records, and asking questions of the Ed-Fi Project Support team (EdFiProjectSupportMNIT.MDE@state.mn.us) as necessary.
