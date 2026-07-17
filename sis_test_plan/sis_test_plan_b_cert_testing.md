@@ -17,7 +17,7 @@ Developers can access the [Ed-Fi API Swagger](https://test.pub.education.mn.gov/
 
 On the Swagger ODS / API Documentation v6.2 title page, please note:
 - The API Profile list is alphabetical, not chronological, and includes SIS Vendor API Profiles for both the current school year and the prior school year.
-- The year-specific SIS Vendor API Profiles are named by the school year. For example, the **2026-2027** school year data collection profile is named **Minnesota-Twenty-Six-Twenty-Seven-SISVendor-Profile**. 
+- The year-specific SIS Vendor API Profiles are named by the school year. For example, the **2026-2027** school year data collection profile is named _Minnesota-Twenty-Six-Twenty-Seven-SISVendor-Profile_. 
 - The Profile _Minnesota-Preview-SISVendor-Profile_ includes some resources that are currently not released and may not be used for production data submission to MDE's Ed-Fi API.
 - The _Assessment-Read-Only_ and _Assessment-Read-Write"_ profile are only used for statewide assessment vendor integration.
 
