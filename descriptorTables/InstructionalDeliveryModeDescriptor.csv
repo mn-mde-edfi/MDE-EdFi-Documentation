@@ -1,5 +1,0 @@
-"Mapping Method","Namespace","Descriptor Name","Code Value","Short Description","Description","Length of Short Desc"
-"Extension","uri://education.mn.gov/InstructionalDeliveryModeDescriptor","InstructionalDeliveryModeDescriptor","GD","On ground","The delivery and learning occur with the instructor and students in the same place and time.","9"
-"Extension","uri://education.mn.gov/InstructionalDeliveryModeDescriptor","InstructionalDeliveryModeDescriptor","HB","Hybrid","A mix of any on ground, asynchronous and synchronous.","6"
-"Extension","uri://education.mn.gov/InstructionalDeliveryModeDescriptor","InstructionalDeliveryModeDescriptor","OA","Online asynchronous","The delivery of instuction is completely online. The delivery and learning would not occur in same time and place.","19"
-"Extension","uri://education.mn.gov/InstructionalDeliveryModeDescriptor","InstructionalDeliveryModeDescriptor","OS","Online synchronous","The delivery of instruction is completely online. The delivery and learning would not be in the same place but will occur at the same time.","18"

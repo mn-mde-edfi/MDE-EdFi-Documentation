@@ -9,21 +9,18 @@ MNIT supporting MDE composes each collection year's documentation in markdown an
 
 - [SIS and Vendor Test Plan](./sis_test_plan/README.md)
 - [Sandbox Certification Scenarios](./sandbox_cert/README.md)
-- [Descriptor Tables](./descriptorTables/)
 
 By serving documentation in multiple formats, our goal is to increase vendor access to the documentation as well as provide options for understanding and visualization changes over time.
 
-#### Custom Descriptor Tables
-The MDE Ed-Fi custom [descriptor tables folder](./descriptorTables/) reflects the most recent information about desciptor tables, either planned for the coming year (spring) or in effect for the current year (summer through winter). This folder contains CSV files exported from the current year Ed-Fi ODS database and should be used as the "source of truth" reference.
-
-See [About Descriptor Tables](./descriptorTables/AboutDescriptorTables.md) for the current state of the tables within the descriptor tables folder. Viewing the commit history of the folder will allow vendors to more easily visualize changes from year to year.
+## Descriptor Tables
+The new MDE [Ed-Fi API Descriptor Tables](https://pub.education.mn.gov/edfidocs/) website is generated from MDE's Ed-Fi API for the current school year.  This website replaces the old descriptor table CSV export files.
 
 ## Additional Documentation
-We will also use this repository to store additional documentation and links that may be useful to Districts and Vendors. See the following:
+The following additional documentation and links may be useful to Districts and Vendors:
 - [Descriptors and Resources](./reference/descriptors_resources.md). This document contains additional information about specific descriptors and data resources that can prove useful in understanding MDE's Ed-Fi implementation.
 - [Transactional Update Procedures](./reference/transactional_updates.md) covers some of the core concepts of updating records with individual transactions in lieu of bulk uploads, including some examples from Ed-Fi to illustrate.
 - [Common Ed-Fi Errors](./reference/common_errors.md) provides additional documentation on some types of API errors that can arise for vendors and LEAs.
-- Additional Documentation, particularly useful to districts/LEAs, is available on [MDE's Ed-Fi Documentation page](https://education.mn.gov/MDE/dse/datasub/edfi/doc/)
+- [Ed-Fi Resources](https://education.mn.gov/MDE/dse/datasub/edfi/doc/) on MDE's website hosts additional documentation for districts / LEAs on state data reporting using Ed-Fi.
 
 ## Sample Data
 JSON files of sample data can be found in the [data directory](https://github.com/mn-mde-edfi/MDE-EdFi-Documentation/tree/master/data). These files are intended to assist developers with understanding the Ed-Fi ODS API.

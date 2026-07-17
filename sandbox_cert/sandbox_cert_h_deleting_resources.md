@@ -1,5 +1,5 @@
 # Deleting Resources Certification Scenarios
-For school year 2024-25, vendors will be required to demonstrate their customer's ability to delete data from MDE's Ed-Fi ODS/API. This document will outline scenarios for these capabilities, focusing on the MARSS-related data resources and elements.
+SIS vendors are required to demonstrate their customer's ability to delete data from MDE's Ed-Fi ODS/API. This document will outline scenarios for these capabilities, focusing on the MARSS-related data resources and elements.
 
 ## References and Background
 Before reading these scenarios, please refer to the [Ed-Fi Model Dependency Diagrams](../sis_test_plan/sis_test_plan_c_data_reqs.md#ed-fi-model-dependency), particularly the [MARSS collection diagram](../sis_test_plan/sis_test_plan_c_data_reqs.md#marss-collection) section. Understanding data dependencies in the Ed-Fi data model is critical to implementing the ability to delete data. For example, a student record cannot be deleted before a related student school association record, because the latter relies on the former.
@@ -71,3 +71,6 @@ This scenario assumes that the district wants to delete most of the dependent re
 For **Student C**, if a district deletes the high school ``StudentSchoolAssociation`` in the SIS, demonstrate how both the ``StudentEducationOrganizationAssociation`` and the ``StudentLanguageInstructionProgramAssociation`` will first be deleted from the ODS before the ``StudentSchoolAssociation`` is also deleted.
 
 At the end of the scenario, all but the **student** record for Student C should be eliminated from the ODS.
+
+# Navigation
+- [Return to Sandbox Certification Overview](README.md)

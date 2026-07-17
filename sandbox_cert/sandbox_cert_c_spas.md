@@ -157,8 +157,6 @@ This association represents the school food services program(s), such as the **F
 2. Change SchoolFoodServiceProgramServiceDescriptor to 1 (Reduced)
 
 **Direct Certification Scenarios**
-
-The following scenarios were added in school year 2022-23 to test for _Direct Certification_:
   1. Associate Student 1 as code **2 (Free)** based on the application for educational benefits. Demonstrate that this student's default value for Direct Certification is **False**. Then set the Direct Certification element to **True** for this student, which will display as a 7 after the MARSS translation.
   2. Associate Student 2 as **1 (Reduced)** on the application for educational benefits. Demonstrate that this student's default value for Direct Certification is **False**. Then set the Direct Certification element to **True** for this student. Which will then display as an 8 after the MARSS translation. Then, set the Direct Certification element to **False**.
   3. Demonstrate that Student 3 is not eligible by default (no association). Now associate this student to **2 (Free)** and set the Direct Certification element to **True**, which will display as a 7 after the MARSS translation.
@@ -179,7 +177,7 @@ Students who have a Section 504 plan.
 
 ## Resource: StudentSpecialEducationProgramAssociation
 **Description**
-This association represents the special education program(s) that a student participates in or receives services from. The association is an extension of the StudentProgramAssociation particular for special education programs. _Note_: Placing Local Education Agency Reference is an optional element, intended only for students with IEPs who are enrolled in a joint powers or intermediate district. See the [notes on Placing LEA](../reference/descriptors_resources.md#placing-local-education-agency-reference).
+This association represents the special education program(s) that a student participates in or receives services from. The association is an extension of the StudentProgramAssociation particular for special education programs. _Note_: Placing Local Education Agency Reference is an optional element, intended only for students with IEPs who are enrolled in a joint powers or intermediate district. See the [notes on Placing LEA](../reference/special_ed_data_reporting.md).
 
 **Important Notes on Order of Disability**
 
@@ -211,5 +209,5 @@ This association represents the Title I Part A program(s) that a student partici
 1.	Associate Student 14 with this StudentProgramAssociation
 
 # Navigation
-- [Return to Sandbox Certification Overview](../README.md)
+- [Return to Sandbox Certification Overview](README.md)
 - [Advance Early Education Enrollment Certification Scenarios](sandbox_cert_d_earlyed.md)

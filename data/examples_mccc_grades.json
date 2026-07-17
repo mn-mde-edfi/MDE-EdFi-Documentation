@@ -11,7 +11,7 @@ Notes:
 {
     "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
     "gradingPeriodReference": {
-        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "gradingPeriodDescriptor": "uri://education.mn.gov/GradingPeriodDescriptor#First Semester",
         "periodSequence": "1",
         "schoolId": {{highschoolid}},
         "schoolYear": 2022
@@ -32,7 +32,7 @@ Notes:
 {
     "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
     "gradingPeriodReference": {
-        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "gradingPeriodDescriptor": "uri://education.mn.gov/GradingPeriodDescriptor#First Semester",
         "periodSequence": "1",
         "schoolId": {{highschoolid}},
         "schoolYear": 2022
@@ -53,7 +53,7 @@ Notes:
 {
     "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
     "gradingPeriodReference": {
-        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "gradingPeriodDescriptor": "uri://education.mn.gov/GradingPeriodDescriptor#First Semester",
         "periodSequence": "1",
         "schoolId": {{highschoolid}},
         "schoolYear": 2022
@@ -80,7 +80,7 @@ Notes:
 {
     "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
     "gradingPeriodReference": {
-        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "gradingPeriodDescriptor": "uri://education.mn.gov/GradingPeriodDescriptor#First Semester",
         "periodSequence": "1",
         "schoolId": {{highschoolid}},
         "schoolYear": 2022
@@ -108,7 +108,7 @@ Notes:
 {
     "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
     "gradingPeriodReference": {
-        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "gradingPeriodDescriptor": "uri://education.mn.gov/GradingPeriodDescriptor#First Semester",
         "periodSequence": "1",
         "schoolId": {{highschoolid}},
         "schoolYear": 2022
@@ -136,7 +136,7 @@ Notes:
 {
     "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
     "gradingPeriodReference": {
-        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "gradingPeriodDescriptor": "uri://education.mn.gov/GradingPeriodDescriptor#First Semester",
         "periodSequence": "1",
         "schoolId": {{highschoolid}},
         "schoolYear": 2022
@@ -164,7 +164,7 @@ Notes:
 {
     "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
     "gradingPeriodReference": {
-        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "gradingPeriodDescriptor": "uri://education.mn.gov/GradingPeriodDescriptor#First Semester",
         "periodSequence": "1",
         "schoolId": {{highschoolid}},
         "schoolYear": 2022
@@ -190,7 +190,7 @@ Notes:
 {
     "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
     "gradingPeriodReference": {
-        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "gradingPeriodDescriptor": "uri://education.mn.gov/GradingPeriodDescriptor#First Semester",
         "periodSequence": "1",
         "schoolId": {{middleschoolid}},
         "schoolYear": 2022
@@ -216,7 +216,7 @@ Notes:
 {
     "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
     "gradingPeriodReference": {
-        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "gradingPeriodDescriptor": "uri://education.mn.gov/GradingPeriodDescriptor#First Semester",
         "periodSequence": "1",
         "schoolId": {{highschoolid}},
         "schoolYear": 2022
@@ -242,7 +242,7 @@ Notes:
 {
     "gradeTypeDescriptor": "uri://education.mn.gov/GradeTypeDescriptor#FG",
     "gradingPeriodReference": {
-        "gradingPeriodDescriptor": "uri://ed-fi.org/GradingPeriodDescriptor#First Semester",
+        "gradingPeriodDescriptor": "uri://education.mn.gov/GradingPeriodDescriptor#First Semester",
         "periodSequence": "1",
         "schoolId": {{highschoolid}},
         "schoolYear": 2022
