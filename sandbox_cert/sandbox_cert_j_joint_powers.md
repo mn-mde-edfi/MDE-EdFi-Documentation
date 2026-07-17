@@ -434,3 +434,6 @@ Student and School Identifiers used in the scenarios below are **for reference o
  - BeginDate: 2024-10-16
  - EndDate: 2025-05-31
  - ResponsibiltyDescriptor: MARSS
+
+# Navigation
+- [Return to Sandbox Certification Overview](README.md)

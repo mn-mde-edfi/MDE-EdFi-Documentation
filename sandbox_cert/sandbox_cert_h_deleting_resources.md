@@ -71,3 +71,6 @@ This scenario assumes that the district wants to delete most of the dependent re
 For **Student C**, if a district deletes the high school ``StudentSchoolAssociation`` in the SIS, demonstrate how both the ``StudentEducationOrganizationAssociation`` and the ``StudentLanguageInstructionProgramAssociation`` will first be deleted from the ODS before the ``StudentSchoolAssociation`` is also deleted.
 
 At the end of the scenario, all but the **student** record for Student C should be eliminated from the ODS.
+
+# Navigation
+- [Return to Sandbox Certification Overview](README.md)
