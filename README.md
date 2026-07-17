@@ -38,6 +38,6 @@ In general we recommend using the GitHub repository version, given the limitatio
 - Viewing markdown files directly within GitHub also allows you to use their [table of contents functionality](https://github.blog/changelog/2021-04-13-table-of-contents-support-in-markdown-files/) to navigate.
 
 However, the web version is occasionally advantageous, such as when viewing PDFs. For example:
-- The [Ed-Fi EE-MARSS Program Ambiguity Resolution](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/2023-24%20MDE%20Ed-Fi%20Documentation/early_ed_marss_conflict_resolution.pdf) for school year 2023-24.
+- The [Ed-Fi EE-MARSS Program Ambiguity Resolution](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/images/early_ed_marss_conflict_resolution.pdf) for school year 2023-24.
 - The [Joint Powers Diagram](https://mn-mde-edfi.github.io/MDE-EdFi-Documentation/2024-25%20MDE%20Ed-Fi%20Documentation/Joint%20Powers%20District%20Scenarios%20Diagram.pdf).
 
