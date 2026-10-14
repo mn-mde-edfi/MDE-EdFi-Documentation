@@ -151,6 +151,7 @@ Including the following elements:
     - StandardId (State)
     - High School Course Requirement (False)
     - **Must NOT include CourseLevelCharacteristic for End of Course Indicator**
+    - **Must NOT include CareerPathwayDescriptor**
     - CurriculumUsed
       - CurriculumUsedDescriptor (CRCUE, HWOT)
       - ImplementationStatusDescriptor (FULL, CEXP)
